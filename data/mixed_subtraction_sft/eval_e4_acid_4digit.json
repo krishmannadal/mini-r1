@@ -1,0 +1,5002 @@
+[
+  {
+    "example_id": "e4_acid4d_0001",
+    "prompt": "Question: Calculate: 1654 - 1144\n",
+    "expression": "1654 - 1144",
+    "lhs": 1654,
+    "rhs": 1144,
+    "final_answer": "510",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0002",
+    "prompt": "Question: Calculate: 1478 - 1268\n",
+    "expression": "1478 - 1268",
+    "lhs": 1478,
+    "rhs": 1268,
+    "final_answer": "210",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0003",
+    "prompt": "Question: Calculate: 1998 - 1620\n",
+    "expression": "1998 - 1620",
+    "lhs": 1998,
+    "rhs": 1620,
+    "final_answer": "378",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0004",
+    "prompt": "Question: Calculate: 1384 - 1130\n",
+    "expression": "1384 - 1130",
+    "lhs": 1384,
+    "rhs": 1130,
+    "final_answer": "254",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0005",
+    "prompt": "Question: Calculate: 1760 - 1710\n",
+    "expression": "1760 - 1710",
+    "lhs": 1760,
+    "rhs": 1710,
+    "final_answer": "50",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0006",
+    "prompt": "Question: Calculate: 1881 - 1258\n",
+    "expression": "1881 - 1258",
+    "lhs": 1881,
+    "rhs": 1258,
+    "final_answer": "623",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0007",
+    "prompt": "Question: Calculate: 1158 - 1135\n",
+    "expression": "1158 - 1135",
+    "lhs": 1158,
+    "rhs": 1135,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0008",
+    "prompt": "Question: Calculate: 1995 - 1096\n",
+    "expression": "1995 - 1096",
+    "lhs": 1995,
+    "rhs": 1096,
+    "final_answer": "899",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0009",
+    "prompt": "Question: Calculate: 1559 - 1514\n",
+    "expression": "1559 - 1514",
+    "lhs": 1559,
+    "rhs": 1514,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0010",
+    "prompt": "Question: Calculate: 1726 - 1242\n",
+    "expression": "1726 - 1242",
+    "lhs": 1726,
+    "rhs": 1242,
+    "final_answer": "484",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0011",
+    "prompt": "Question: Calculate: 1839 - 1261\n",
+    "expression": "1839 - 1261",
+    "lhs": 1839,
+    "rhs": 1261,
+    "final_answer": "578",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0012",
+    "prompt": "Question: Calculate: 1818 - 1644\n",
+    "expression": "1818 - 1644",
+    "lhs": 1818,
+    "rhs": 1644,
+    "final_answer": "174",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0013",
+    "prompt": "Question: Calculate: 1692 - 1330\n",
+    "expression": "1692 - 1330",
+    "lhs": 1692,
+    "rhs": 1330,
+    "final_answer": "362",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0014",
+    "prompt": "Question: Calculate: 1955 - 1718\n",
+    "expression": "1955 - 1718",
+    "lhs": 1955,
+    "rhs": 1718,
+    "final_answer": "237",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0015",
+    "prompt": "Question: Calculate: 1811 - 1553\n",
+    "expression": "1811 - 1553",
+    "lhs": 1811,
+    "rhs": 1553,
+    "final_answer": "258",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0016",
+    "prompt": "Question: Calculate: 1605 - 1113\n",
+    "expression": "1605 - 1113",
+    "lhs": 1605,
+    "rhs": 1113,
+    "final_answer": "492",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0017",
+    "prompt": "Question: Calculate: 1754 - 1185\n",
+    "expression": "1754 - 1185",
+    "lhs": 1754,
+    "rhs": 1185,
+    "final_answer": "569",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0018",
+    "prompt": "Question: Calculate: 1993 - 1950\n",
+    "expression": "1993 - 1950",
+    "lhs": 1993,
+    "rhs": 1950,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0019",
+    "prompt": "Question: Calculate: 1310 - 1008\n",
+    "expression": "1310 - 1008",
+    "lhs": 1310,
+    "rhs": 1008,
+    "final_answer": "302",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0020",
+    "prompt": "Question: Calculate: 1791 - 1556\n",
+    "expression": "1791 - 1556",
+    "lhs": 1791,
+    "rhs": 1556,
+    "final_answer": "235",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0021",
+    "prompt": "Question: Calculate: 1505 - 1495\n",
+    "expression": "1505 - 1495",
+    "lhs": 1505,
+    "rhs": 1495,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0022",
+    "prompt": "Question: Calculate: 1442 - 1043\n",
+    "expression": "1442 - 1043",
+    "lhs": 1442,
+    "rhs": 1043,
+    "final_answer": "399",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0023",
+    "prompt": "Question: Calculate: 1650 - 1505\n",
+    "expression": "1650 - 1505",
+    "lhs": 1650,
+    "rhs": 1505,
+    "final_answer": "145",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0024",
+    "prompt": "Question: Calculate: 1850 - 1392\n",
+    "expression": "1850 - 1392",
+    "lhs": 1850,
+    "rhs": 1392,
+    "final_answer": "458",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0025",
+    "prompt": "Question: Calculate: 1589 - 1204\n",
+    "expression": "1589 - 1204",
+    "lhs": 1589,
+    "rhs": 1204,
+    "final_answer": "385",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0026",
+    "prompt": "Question: Calculate: 1985 - 1214\n",
+    "expression": "1985 - 1214",
+    "lhs": 1985,
+    "rhs": 1214,
+    "final_answer": "771",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0027",
+    "prompt": "Question: Calculate: 1902 - 1241\n",
+    "expression": "1902 - 1241",
+    "lhs": 1902,
+    "rhs": 1241,
+    "final_answer": "661",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0028",
+    "prompt": "Question: Calculate: 1776 - 1175\n",
+    "expression": "1776 - 1175",
+    "lhs": 1776,
+    "rhs": 1175,
+    "final_answer": "601",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0029",
+    "prompt": "Question: Calculate: 1604 - 1604\n",
+    "expression": "1604 - 1604",
+    "lhs": 1604,
+    "rhs": 1604,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0030",
+    "prompt": "Question: Calculate: 1572 - 1441\n",
+    "expression": "1572 - 1441",
+    "lhs": 1572,
+    "rhs": 1441,
+    "final_answer": "131",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0031",
+    "prompt": "Question: Calculate: 1363 - 1098\n",
+    "expression": "1363 - 1098",
+    "lhs": 1363,
+    "rhs": 1098,
+    "final_answer": "265",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0032",
+    "prompt": "Question: Calculate: 1894 - 1367\n",
+    "expression": "1894 - 1367",
+    "lhs": 1894,
+    "rhs": 1367,
+    "final_answer": "527",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0033",
+    "prompt": "Question: Calculate: 1966 - 1633\n",
+    "expression": "1966 - 1633",
+    "lhs": 1966,
+    "rhs": 1633,
+    "final_answer": "333",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0034",
+    "prompt": "Question: Calculate: 1170 - 1059\n",
+    "expression": "1170 - 1059",
+    "lhs": 1170,
+    "rhs": 1059,
+    "final_answer": "111",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0035",
+    "prompt": "Question: Calculate: 1479 - 1349\n",
+    "expression": "1479 - 1349",
+    "lhs": 1479,
+    "rhs": 1349,
+    "final_answer": "130",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0036",
+    "prompt": "Question: Calculate: 1734 - 1556\n",
+    "expression": "1734 - 1556",
+    "lhs": 1734,
+    "rhs": 1556,
+    "final_answer": "178",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0037",
+    "prompt": "Question: Calculate: 1682 - 1297\n",
+    "expression": "1682 - 1297",
+    "lhs": 1682,
+    "rhs": 1297,
+    "final_answer": "385",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0038",
+    "prompt": "Question: Calculate: 1984 - 1444\n",
+    "expression": "1984 - 1444",
+    "lhs": 1984,
+    "rhs": 1444,
+    "final_answer": "540",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0039",
+    "prompt": "Question: Calculate: 1282 - 1059\n",
+    "expression": "1282 - 1059",
+    "lhs": 1282,
+    "rhs": 1059,
+    "final_answer": "223",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0040",
+    "prompt": "Question: Calculate: 1905 - 1533\n",
+    "expression": "1905 - 1533",
+    "lhs": 1905,
+    "rhs": 1533,
+    "final_answer": "372",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0041",
+    "prompt": "Question: Calculate: 1652 - 1342\n",
+    "expression": "1652 - 1342",
+    "lhs": 1652,
+    "rhs": 1342,
+    "final_answer": "310",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0042",
+    "prompt": "Question: Calculate: 1805 - 1516\n",
+    "expression": "1805 - 1516",
+    "lhs": 1805,
+    "rhs": 1516,
+    "final_answer": "289",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0043",
+    "prompt": "Question: Calculate: 1804 - 1368\n",
+    "expression": "1804 - 1368",
+    "lhs": 1804,
+    "rhs": 1368,
+    "final_answer": "436",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0044",
+    "prompt": "Question: Calculate: 1753 - 1540\n",
+    "expression": "1753 - 1540",
+    "lhs": 1753,
+    "rhs": 1540,
+    "final_answer": "213",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0045",
+    "prompt": "Question: Calculate: 1544 - 1197\n",
+    "expression": "1544 - 1197",
+    "lhs": 1544,
+    "rhs": 1197,
+    "final_answer": "347",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0046",
+    "prompt": "Question: Calculate: 1850 - 1757\n",
+    "expression": "1850 - 1757",
+    "lhs": 1850,
+    "rhs": 1757,
+    "final_answer": "93",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0047",
+    "prompt": "Question: Calculate: 1555 - 1176\n",
+    "expression": "1555 - 1176",
+    "lhs": 1555,
+    "rhs": 1176,
+    "final_answer": "379",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0048",
+    "prompt": "Question: Calculate: 1997 - 1794\n",
+    "expression": "1997 - 1794",
+    "lhs": 1997,
+    "rhs": 1794,
+    "final_answer": "203",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0049",
+    "prompt": "Question: Calculate: 1717 - 1329\n",
+    "expression": "1717 - 1329",
+    "lhs": 1717,
+    "rhs": 1329,
+    "final_answer": "388",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0050",
+    "prompt": "Question: Calculate: 1728 - 1448\n",
+    "expression": "1728 - 1448",
+    "lhs": 1728,
+    "rhs": 1448,
+    "final_answer": "280",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0051",
+    "prompt": "Question: Calculate: 1813 - 1490\n",
+    "expression": "1813 - 1490",
+    "lhs": 1813,
+    "rhs": 1490,
+    "final_answer": "323",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0052",
+    "prompt": "Question: Calculate: 1415 - 1139\n",
+    "expression": "1415 - 1139",
+    "lhs": 1415,
+    "rhs": 1139,
+    "final_answer": "276",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0053",
+    "prompt": "Question: Calculate: 1808 - 1177\n",
+    "expression": "1808 - 1177",
+    "lhs": 1808,
+    "rhs": 1177,
+    "final_answer": "631",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0054",
+    "prompt": "Question: Calculate: 1758 - 1019\n",
+    "expression": "1758 - 1019",
+    "lhs": 1758,
+    "rhs": 1019,
+    "final_answer": "739",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0055",
+    "prompt": "Question: Calculate: 1521 - 1273\n",
+    "expression": "1521 - 1273",
+    "lhs": 1521,
+    "rhs": 1273,
+    "final_answer": "248",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0056",
+    "prompt": "Question: Calculate: 1494 - 1408\n",
+    "expression": "1494 - 1408",
+    "lhs": 1494,
+    "rhs": 1408,
+    "final_answer": "86",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0057",
+    "prompt": "Question: Calculate: 1675 - 1129\n",
+    "expression": "1675 - 1129",
+    "lhs": 1675,
+    "rhs": 1129,
+    "final_answer": "546",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0058",
+    "prompt": "Question: Calculate: 1798 - 1599\n",
+    "expression": "1798 - 1599",
+    "lhs": 1798,
+    "rhs": 1599,
+    "final_answer": "199",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0059",
+    "prompt": "Question: Calculate: 1372 - 1173\n",
+    "expression": "1372 - 1173",
+    "lhs": 1372,
+    "rhs": 1173,
+    "final_answer": "199",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0060",
+    "prompt": "Question: Calculate: 1947 - 1313\n",
+    "expression": "1947 - 1313",
+    "lhs": 1947,
+    "rhs": 1313,
+    "final_answer": "634",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0061",
+    "prompt": "Question: Calculate: 1883 - 1222\n",
+    "expression": "1883 - 1222",
+    "lhs": 1883,
+    "rhs": 1222,
+    "final_answer": "661",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0062",
+    "prompt": "Question: Calculate: 1799 - 1653\n",
+    "expression": "1799 - 1653",
+    "lhs": 1799,
+    "rhs": 1653,
+    "final_answer": "146",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0063",
+    "prompt": "Question: Calculate: 1896 - 1327\n",
+    "expression": "1896 - 1327",
+    "lhs": 1896,
+    "rhs": 1327,
+    "final_answer": "569",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0064",
+    "prompt": "Question: Calculate: 1755 - 1383\n",
+    "expression": "1755 - 1383",
+    "lhs": 1755,
+    "rhs": 1383,
+    "final_answer": "372",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0065",
+    "prompt": "Question: Calculate: 1805 - 1083\n",
+    "expression": "1805 - 1083",
+    "lhs": 1805,
+    "rhs": 1083,
+    "final_answer": "722",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0066",
+    "prompt": "Question: Calculate: 1600 - 1402\n",
+    "expression": "1600 - 1402",
+    "lhs": 1600,
+    "rhs": 1402,
+    "final_answer": "198",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0067",
+    "prompt": "Question: Calculate: 1569 - 1173\n",
+    "expression": "1569 - 1173",
+    "lhs": 1569,
+    "rhs": 1173,
+    "final_answer": "396",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0068",
+    "prompt": "Question: Calculate: 1177 - 1163\n",
+    "expression": "1177 - 1163",
+    "lhs": 1177,
+    "rhs": 1163,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0069",
+    "prompt": "Question: Calculate: 1891 - 1188\n",
+    "expression": "1891 - 1188",
+    "lhs": 1891,
+    "rhs": 1188,
+    "final_answer": "703",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0070",
+    "prompt": "Question: Calculate: 1359 - 1009\n",
+    "expression": "1359 - 1009",
+    "lhs": 1359,
+    "rhs": 1009,
+    "final_answer": "350",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0071",
+    "prompt": "Question: Calculate: 1774 - 1109\n",
+    "expression": "1774 - 1109",
+    "lhs": 1774,
+    "rhs": 1109,
+    "final_answer": "665",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0072",
+    "prompt": "Question: Calculate: 1547 - 1188\n",
+    "expression": "1547 - 1188",
+    "lhs": 1547,
+    "rhs": 1188,
+    "final_answer": "359",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0073",
+    "prompt": "Question: Calculate: 1747 - 1362\n",
+    "expression": "1747 - 1362",
+    "lhs": 1747,
+    "rhs": 1362,
+    "final_answer": "385",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0074",
+    "prompt": "Question: Calculate: 1815 - 1680\n",
+    "expression": "1815 - 1680",
+    "lhs": 1815,
+    "rhs": 1680,
+    "final_answer": "135",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0075",
+    "prompt": "Question: Calculate: 1957 - 1651\n",
+    "expression": "1957 - 1651",
+    "lhs": 1957,
+    "rhs": 1651,
+    "final_answer": "306",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0076",
+    "prompt": "Question: Calculate: 1416 - 1173\n",
+    "expression": "1416 - 1173",
+    "lhs": 1416,
+    "rhs": 1173,
+    "final_answer": "243",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0077",
+    "prompt": "Question: Calculate: 1905 - 1776\n",
+    "expression": "1905 - 1776",
+    "lhs": 1905,
+    "rhs": 1776,
+    "final_answer": "129",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0078",
+    "prompt": "Question: Calculate: 1458 - 1308\n",
+    "expression": "1458 - 1308",
+    "lhs": 1458,
+    "rhs": 1308,
+    "final_answer": "150",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0079",
+    "prompt": "Question: Calculate: 1566 - 1177\n",
+    "expression": "1566 - 1177",
+    "lhs": 1566,
+    "rhs": 1177,
+    "final_answer": "389",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0080",
+    "prompt": "Question: Calculate: 1422 - 1194\n",
+    "expression": "1422 - 1194",
+    "lhs": 1422,
+    "rhs": 1194,
+    "final_answer": "228",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0081",
+    "prompt": "Question: Calculate: 1779 - 1604\n",
+    "expression": "1779 - 1604",
+    "lhs": 1779,
+    "rhs": 1604,
+    "final_answer": "175",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0082",
+    "prompt": "Question: Calculate: 1902 - 1258\n",
+    "expression": "1902 - 1258",
+    "lhs": 1902,
+    "rhs": 1258,
+    "final_answer": "644",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0083",
+    "prompt": "Question: Calculate: 1662 - 1185\n",
+    "expression": "1662 - 1185",
+    "lhs": 1662,
+    "rhs": 1185,
+    "final_answer": "477",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0084",
+    "prompt": "Question: Calculate: 1093 - 1014\n",
+    "expression": "1093 - 1014",
+    "lhs": 1093,
+    "rhs": 1014,
+    "final_answer": "79",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0085",
+    "prompt": "Question: Calculate: 1969 - 1872\n",
+    "expression": "1969 - 1872",
+    "lhs": 1969,
+    "rhs": 1872,
+    "final_answer": "97",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0086",
+    "prompt": "Question: Calculate: 1812 - 1174\n",
+    "expression": "1812 - 1174",
+    "lhs": 1812,
+    "rhs": 1174,
+    "final_answer": "638",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0087",
+    "prompt": "Question: Calculate: 1252 - 1167\n",
+    "expression": "1252 - 1167",
+    "lhs": 1252,
+    "rhs": 1167,
+    "final_answer": "85",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0088",
+    "prompt": "Question: Calculate: 1945 - 1281\n",
+    "expression": "1945 - 1281",
+    "lhs": 1945,
+    "rhs": 1281,
+    "final_answer": "664",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0089",
+    "prompt": "Question: Calculate: 1295 - 1090\n",
+    "expression": "1295 - 1090",
+    "lhs": 1295,
+    "rhs": 1090,
+    "final_answer": "205",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0090",
+    "prompt": "Question: Calculate: 1588 - 1584\n",
+    "expression": "1588 - 1584",
+    "lhs": 1588,
+    "rhs": 1584,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0091",
+    "prompt": "Question: Calculate: 1609 - 1180\n",
+    "expression": "1609 - 1180",
+    "lhs": 1609,
+    "rhs": 1180,
+    "final_answer": "429",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0092",
+    "prompt": "Question: Calculate: 1807 - 1012\n",
+    "expression": "1807 - 1012",
+    "lhs": 1807,
+    "rhs": 1012,
+    "final_answer": "795",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0093",
+    "prompt": "Question: Calculate: 1621 - 1014\n",
+    "expression": "1621 - 1014",
+    "lhs": 1621,
+    "rhs": 1014,
+    "final_answer": "607",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0094",
+    "prompt": "Question: Calculate: 1720 - 1671\n",
+    "expression": "1720 - 1671",
+    "lhs": 1720,
+    "rhs": 1671,
+    "final_answer": "49",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0095",
+    "prompt": "Question: Calculate: 1428 - 1404\n",
+    "expression": "1428 - 1404",
+    "lhs": 1428,
+    "rhs": 1404,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0096",
+    "prompt": "Question: Calculate: 1852 - 1175\n",
+    "expression": "1852 - 1175",
+    "lhs": 1852,
+    "rhs": 1175,
+    "final_answer": "677",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0097",
+    "prompt": "Question: Calculate: 1711 - 1455\n",
+    "expression": "1711 - 1455",
+    "lhs": 1711,
+    "rhs": 1455,
+    "final_answer": "256",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0098",
+    "prompt": "Question: Calculate: 1138 - 1041\n",
+    "expression": "1138 - 1041",
+    "lhs": 1138,
+    "rhs": 1041,
+    "final_answer": "97",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0099",
+    "prompt": "Question: Calculate: 1420 - 1409\n",
+    "expression": "1420 - 1409",
+    "lhs": 1420,
+    "rhs": 1409,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0100",
+    "prompt": "Question: Calculate: 1269 - 1001\n",
+    "expression": "1269 - 1001",
+    "lhs": 1269,
+    "rhs": 1001,
+    "final_answer": "268",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0101",
+    "prompt": "Question: Calculate: 1941 - 1851\n",
+    "expression": "1941 - 1851",
+    "lhs": 1941,
+    "rhs": 1851,
+    "final_answer": "90",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0102",
+    "prompt": "Question: Calculate: 1914 - 1351\n",
+    "expression": "1914 - 1351",
+    "lhs": 1914,
+    "rhs": 1351,
+    "final_answer": "563",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0103",
+    "prompt": "Question: Calculate: 1860 - 1848\n",
+    "expression": "1860 - 1848",
+    "lhs": 1860,
+    "rhs": 1848,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0104",
+    "prompt": "Question: Calculate: 1986 - 1054\n",
+    "expression": "1986 - 1054",
+    "lhs": 1986,
+    "rhs": 1054,
+    "final_answer": "932",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0105",
+    "prompt": "Question: Calculate: 1595 - 1370\n",
+    "expression": "1595 - 1370",
+    "lhs": 1595,
+    "rhs": 1370,
+    "final_answer": "225",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0106",
+    "prompt": "Question: Calculate: 1441 - 1199\n",
+    "expression": "1441 - 1199",
+    "lhs": 1441,
+    "rhs": 1199,
+    "final_answer": "242",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0107",
+    "prompt": "Question: Calculate: 1190 - 1069\n",
+    "expression": "1190 - 1069",
+    "lhs": 1190,
+    "rhs": 1069,
+    "final_answer": "121",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0108",
+    "prompt": "Question: Calculate: 1857 - 1489\n",
+    "expression": "1857 - 1489",
+    "lhs": 1857,
+    "rhs": 1489,
+    "final_answer": "368",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0109",
+    "prompt": "Question: Calculate: 1663 - 1292\n",
+    "expression": "1663 - 1292",
+    "lhs": 1663,
+    "rhs": 1292,
+    "final_answer": "371",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0110",
+    "prompt": "Question: Calculate: 1041 - 1020\n",
+    "expression": "1041 - 1020",
+    "lhs": 1041,
+    "rhs": 1020,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0111",
+    "prompt": "Question: Calculate: 1735 - 1238\n",
+    "expression": "1735 - 1238",
+    "lhs": 1735,
+    "rhs": 1238,
+    "final_answer": "497",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0112",
+    "prompt": "Question: Calculate: 1630 - 1077\n",
+    "expression": "1630 - 1077",
+    "lhs": 1630,
+    "rhs": 1077,
+    "final_answer": "553",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0113",
+    "prompt": "Question: Calculate: 1756 - 1052\n",
+    "expression": "1756 - 1052",
+    "lhs": 1756,
+    "rhs": 1052,
+    "final_answer": "704",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0114",
+    "prompt": "Question: Calculate: 1779 - 1087\n",
+    "expression": "1779 - 1087",
+    "lhs": 1779,
+    "rhs": 1087,
+    "final_answer": "692",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0115",
+    "prompt": "Question: Calculate: 1589 - 1225\n",
+    "expression": "1589 - 1225",
+    "lhs": 1589,
+    "rhs": 1225,
+    "final_answer": "364",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0116",
+    "prompt": "Question: Calculate: 1380 - 1252\n",
+    "expression": "1380 - 1252",
+    "lhs": 1380,
+    "rhs": 1252,
+    "final_answer": "128",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0117",
+    "prompt": "Question: Calculate: 1782 - 1206\n",
+    "expression": "1782 - 1206",
+    "lhs": 1782,
+    "rhs": 1206,
+    "final_answer": "576",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0118",
+    "prompt": "Question: Calculate: 1635 - 1552\n",
+    "expression": "1635 - 1552",
+    "lhs": 1635,
+    "rhs": 1552,
+    "final_answer": "83",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0119",
+    "prompt": "Question: Calculate: 1182 - 1138\n",
+    "expression": "1182 - 1138",
+    "lhs": 1182,
+    "rhs": 1138,
+    "final_answer": "44",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0120",
+    "prompt": "Question: Calculate: 1306 - 1165\n",
+    "expression": "1306 - 1165",
+    "lhs": 1306,
+    "rhs": 1165,
+    "final_answer": "141",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0121",
+    "prompt": "Question: Calculate: 1857 - 1475\n",
+    "expression": "1857 - 1475",
+    "lhs": 1857,
+    "rhs": 1475,
+    "final_answer": "382",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0122",
+    "prompt": "Question: Calculate: 1096 - 1089\n",
+    "expression": "1096 - 1089",
+    "lhs": 1096,
+    "rhs": 1089,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0123",
+    "prompt": "Question: Calculate: 1973 - 1607\n",
+    "expression": "1973 - 1607",
+    "lhs": 1973,
+    "rhs": 1607,
+    "final_answer": "366",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0124",
+    "prompt": "Question: Calculate: 1392 - 1228\n",
+    "expression": "1392 - 1228",
+    "lhs": 1392,
+    "rhs": 1228,
+    "final_answer": "164",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0125",
+    "prompt": "Question: Calculate: 1873 - 1006\n",
+    "expression": "1873 - 1006",
+    "lhs": 1873,
+    "rhs": 1006,
+    "final_answer": "867",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0126",
+    "prompt": "Question: Calculate: 1712 - 1048\n",
+    "expression": "1712 - 1048",
+    "lhs": 1712,
+    "rhs": 1048,
+    "final_answer": "664",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0127",
+    "prompt": "Question: Calculate: 1989 - 1430\n",
+    "expression": "1989 - 1430",
+    "lhs": 1989,
+    "rhs": 1430,
+    "final_answer": "559",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0128",
+    "prompt": "Question: Calculate: 1955 - 1022\n",
+    "expression": "1955 - 1022",
+    "lhs": 1955,
+    "rhs": 1022,
+    "final_answer": "933",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0129",
+    "prompt": "Question: Calculate: 1542 - 1148\n",
+    "expression": "1542 - 1148",
+    "lhs": 1542,
+    "rhs": 1148,
+    "final_answer": "394",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0130",
+    "prompt": "Question: Calculate: 1498 - 1473\n",
+    "expression": "1498 - 1473",
+    "lhs": 1498,
+    "rhs": 1473,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0131",
+    "prompt": "Question: Calculate: 1675 - 1039\n",
+    "expression": "1675 - 1039",
+    "lhs": 1675,
+    "rhs": 1039,
+    "final_answer": "636",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0132",
+    "prompt": "Question: Calculate: 1410 - 1329\n",
+    "expression": "1410 - 1329",
+    "lhs": 1410,
+    "rhs": 1329,
+    "final_answer": "81",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0133",
+    "prompt": "Question: Calculate: 1410 - 1288\n",
+    "expression": "1410 - 1288",
+    "lhs": 1410,
+    "rhs": 1288,
+    "final_answer": "122",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0134",
+    "prompt": "Question: Calculate: 1946 - 1114\n",
+    "expression": "1946 - 1114",
+    "lhs": 1946,
+    "rhs": 1114,
+    "final_answer": "832",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0135",
+    "prompt": "Question: Calculate: 1767 - 1702\n",
+    "expression": "1767 - 1702",
+    "lhs": 1767,
+    "rhs": 1702,
+    "final_answer": "65",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0136",
+    "prompt": "Question: Calculate: 1851 - 1429\n",
+    "expression": "1851 - 1429",
+    "lhs": 1851,
+    "rhs": 1429,
+    "final_answer": "422",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0137",
+    "prompt": "Question: Calculate: 1861 - 1057\n",
+    "expression": "1861 - 1057",
+    "lhs": 1861,
+    "rhs": 1057,
+    "final_answer": "804",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0138",
+    "prompt": "Question: Calculate: 1486 - 1447\n",
+    "expression": "1486 - 1447",
+    "lhs": 1486,
+    "rhs": 1447,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0139",
+    "prompt": "Question: Calculate: 1892 - 1133\n",
+    "expression": "1892 - 1133",
+    "lhs": 1892,
+    "rhs": 1133,
+    "final_answer": "759",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0140",
+    "prompt": "Question: Calculate: 1401 - 1289\n",
+    "expression": "1401 - 1289",
+    "lhs": 1401,
+    "rhs": 1289,
+    "final_answer": "112",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0141",
+    "prompt": "Question: Calculate: 1726 - 1224\n",
+    "expression": "1726 - 1224",
+    "lhs": 1726,
+    "rhs": 1224,
+    "final_answer": "502",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0142",
+    "prompt": "Question: Calculate: 1731 - 1539\n",
+    "expression": "1731 - 1539",
+    "lhs": 1731,
+    "rhs": 1539,
+    "final_answer": "192",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0143",
+    "prompt": "Question: Calculate: 1962 - 1363\n",
+    "expression": "1962 - 1363",
+    "lhs": 1962,
+    "rhs": 1363,
+    "final_answer": "599",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0144",
+    "prompt": "Question: Calculate: 1016 - 1011\n",
+    "expression": "1016 - 1011",
+    "lhs": 1016,
+    "rhs": 1011,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0145",
+    "prompt": "Question: Calculate: 1587 - 1334\n",
+    "expression": "1587 - 1334",
+    "lhs": 1587,
+    "rhs": 1334,
+    "final_answer": "253",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0146",
+    "prompt": "Question: Calculate: 1475 - 1234\n",
+    "expression": "1475 - 1234",
+    "lhs": 1475,
+    "rhs": 1234,
+    "final_answer": "241",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0147",
+    "prompt": "Question: Calculate: 1205 - 1178\n",
+    "expression": "1205 - 1178",
+    "lhs": 1205,
+    "rhs": 1178,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0148",
+    "prompt": "Question: Calculate: 1434 - 1278\n",
+    "expression": "1434 - 1278",
+    "lhs": 1434,
+    "rhs": 1278,
+    "final_answer": "156",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0149",
+    "prompt": "Question: Calculate: 1456 - 1093\n",
+    "expression": "1456 - 1093",
+    "lhs": 1456,
+    "rhs": 1093,
+    "final_answer": "363",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0150",
+    "prompt": "Question: Calculate: 1846 - 1436\n",
+    "expression": "1846 - 1436",
+    "lhs": 1846,
+    "rhs": 1436,
+    "final_answer": "410",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0151",
+    "prompt": "Question: Calculate: 1675 - 1151\n",
+    "expression": "1675 - 1151",
+    "lhs": 1675,
+    "rhs": 1151,
+    "final_answer": "524",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0152",
+    "prompt": "Question: Calculate: 1878 - 1229\n",
+    "expression": "1878 - 1229",
+    "lhs": 1878,
+    "rhs": 1229,
+    "final_answer": "649",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0153",
+    "prompt": "Question: Calculate: 1690 - 1114\n",
+    "expression": "1690 - 1114",
+    "lhs": 1690,
+    "rhs": 1114,
+    "final_answer": "576",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0154",
+    "prompt": "Question: Calculate: 1889 - 1211\n",
+    "expression": "1889 - 1211",
+    "lhs": 1889,
+    "rhs": 1211,
+    "final_answer": "678",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0155",
+    "prompt": "Question: Calculate: 1908 - 1203\n",
+    "expression": "1908 - 1203",
+    "lhs": 1908,
+    "rhs": 1203,
+    "final_answer": "705",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0156",
+    "prompt": "Question: Calculate: 1806 - 1421\n",
+    "expression": "1806 - 1421",
+    "lhs": 1806,
+    "rhs": 1421,
+    "final_answer": "385",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0157",
+    "prompt": "Question: Calculate: 1118 - 1013\n",
+    "expression": "1118 - 1013",
+    "lhs": 1118,
+    "rhs": 1013,
+    "final_answer": "105",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0158",
+    "prompt": "Question: Calculate: 1960 - 1659\n",
+    "expression": "1960 - 1659",
+    "lhs": 1960,
+    "rhs": 1659,
+    "final_answer": "301",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0159",
+    "prompt": "Question: Calculate: 1812 - 1633\n",
+    "expression": "1812 - 1633",
+    "lhs": 1812,
+    "rhs": 1633,
+    "final_answer": "179",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0160",
+    "prompt": "Question: Calculate: 1290 - 1266\n",
+    "expression": "1290 - 1266",
+    "lhs": 1290,
+    "rhs": 1266,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0161",
+    "prompt": "Question: Calculate: 1730 - 1096\n",
+    "expression": "1730 - 1096",
+    "lhs": 1730,
+    "rhs": 1096,
+    "final_answer": "634",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0162",
+    "prompt": "Question: Calculate: 1989 - 1446\n",
+    "expression": "1989 - 1446",
+    "lhs": 1989,
+    "rhs": 1446,
+    "final_answer": "543",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0163",
+    "prompt": "Question: Calculate: 1307 - 1141\n",
+    "expression": "1307 - 1141",
+    "lhs": 1307,
+    "rhs": 1141,
+    "final_answer": "166",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0164",
+    "prompt": "Question: Calculate: 1962 - 1205\n",
+    "expression": "1962 - 1205",
+    "lhs": 1962,
+    "rhs": 1205,
+    "final_answer": "757",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0165",
+    "prompt": "Question: Calculate: 1733 - 1102\n",
+    "expression": "1733 - 1102",
+    "lhs": 1733,
+    "rhs": 1102,
+    "final_answer": "631",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0166",
+    "prompt": "Question: Calculate: 1399 - 1358\n",
+    "expression": "1399 - 1358",
+    "lhs": 1399,
+    "rhs": 1358,
+    "final_answer": "41",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0167",
+    "prompt": "Question: Calculate: 1922 - 1283\n",
+    "expression": "1922 - 1283",
+    "lhs": 1922,
+    "rhs": 1283,
+    "final_answer": "639",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0168",
+    "prompt": "Question: Calculate: 1837 - 1295\n",
+    "expression": "1837 - 1295",
+    "lhs": 1837,
+    "rhs": 1295,
+    "final_answer": "542",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0169",
+    "prompt": "Question: Calculate: 1938 - 1120\n",
+    "expression": "1938 - 1120",
+    "lhs": 1938,
+    "rhs": 1120,
+    "final_answer": "818",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0170",
+    "prompt": "Question: Calculate: 1767 - 1202\n",
+    "expression": "1767 - 1202",
+    "lhs": 1767,
+    "rhs": 1202,
+    "final_answer": "565",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0171",
+    "prompt": "Question: Calculate: 1471 - 1183\n",
+    "expression": "1471 - 1183",
+    "lhs": 1471,
+    "rhs": 1183,
+    "final_answer": "288",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0172",
+    "prompt": "Question: Calculate: 1482 - 1476\n",
+    "expression": "1482 - 1476",
+    "lhs": 1482,
+    "rhs": 1476,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0173",
+    "prompt": "Question: Calculate: 1917 - 1675\n",
+    "expression": "1917 - 1675",
+    "lhs": 1917,
+    "rhs": 1675,
+    "final_answer": "242",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0174",
+    "prompt": "Question: Calculate: 1536 - 1398\n",
+    "expression": "1536 - 1398",
+    "lhs": 1536,
+    "rhs": 1398,
+    "final_answer": "138",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0175",
+    "prompt": "Question: Calculate: 1489 - 1371\n",
+    "expression": "1489 - 1371",
+    "lhs": 1489,
+    "rhs": 1371,
+    "final_answer": "118",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0176",
+    "prompt": "Question: Calculate: 1974 - 1431\n",
+    "expression": "1974 - 1431",
+    "lhs": 1974,
+    "rhs": 1431,
+    "final_answer": "543",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0177",
+    "prompt": "Question: Calculate: 1941 - 1916\n",
+    "expression": "1941 - 1916",
+    "lhs": 1941,
+    "rhs": 1916,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0178",
+    "prompt": "Question: Calculate: 1771 - 1033\n",
+    "expression": "1771 - 1033",
+    "lhs": 1771,
+    "rhs": 1033,
+    "final_answer": "738",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0179",
+    "prompt": "Question: Calculate: 1880 - 1433\n",
+    "expression": "1880 - 1433",
+    "lhs": 1880,
+    "rhs": 1433,
+    "final_answer": "447",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0180",
+    "prompt": "Question: Calculate: 1710 - 1214\n",
+    "expression": "1710 - 1214",
+    "lhs": 1710,
+    "rhs": 1214,
+    "final_answer": "496",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0181",
+    "prompt": "Question: Calculate: 1810 - 1258\n",
+    "expression": "1810 - 1258",
+    "lhs": 1810,
+    "rhs": 1258,
+    "final_answer": "552",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0182",
+    "prompt": "Question: Calculate: 1619 - 1300\n",
+    "expression": "1619 - 1300",
+    "lhs": 1619,
+    "rhs": 1300,
+    "final_answer": "319",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0183",
+    "prompt": "Question: Calculate: 1639 - 1185\n",
+    "expression": "1639 - 1185",
+    "lhs": 1639,
+    "rhs": 1185,
+    "final_answer": "454",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0184",
+    "prompt": "Question: Calculate: 1999 - 1047\n",
+    "expression": "1999 - 1047",
+    "lhs": 1999,
+    "rhs": 1047,
+    "final_answer": "952",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0185",
+    "prompt": "Question: Calculate: 1839 - 1285\n",
+    "expression": "1839 - 1285",
+    "lhs": 1839,
+    "rhs": 1285,
+    "final_answer": "554",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0186",
+    "prompt": "Question: Calculate: 1902 - 1439\n",
+    "expression": "1902 - 1439",
+    "lhs": 1902,
+    "rhs": 1439,
+    "final_answer": "463",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0187",
+    "prompt": "Question: Calculate: 1829 - 1072\n",
+    "expression": "1829 - 1072",
+    "lhs": 1829,
+    "rhs": 1072,
+    "final_answer": "757",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0188",
+    "prompt": "Question: Calculate: 1485 - 1336\n",
+    "expression": "1485 - 1336",
+    "lhs": 1485,
+    "rhs": 1336,
+    "final_answer": "149",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0189",
+    "prompt": "Question: Calculate: 1879 - 1349\n",
+    "expression": "1879 - 1349",
+    "lhs": 1879,
+    "rhs": 1349,
+    "final_answer": "530",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0190",
+    "prompt": "Question: Calculate: 1524 - 1103\n",
+    "expression": "1524 - 1103",
+    "lhs": 1524,
+    "rhs": 1103,
+    "final_answer": "421",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0191",
+    "prompt": "Question: Calculate: 1564 - 1452\n",
+    "expression": "1564 - 1452",
+    "lhs": 1564,
+    "rhs": 1452,
+    "final_answer": "112",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0192",
+    "prompt": "Question: Calculate: 1089 - 1021\n",
+    "expression": "1089 - 1021",
+    "lhs": 1089,
+    "rhs": 1021,
+    "final_answer": "68",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0193",
+    "prompt": "Question: Calculate: 1867 - 1856\n",
+    "expression": "1867 - 1856",
+    "lhs": 1867,
+    "rhs": 1856,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0194",
+    "prompt": "Question: Calculate: 1635 - 1507\n",
+    "expression": "1635 - 1507",
+    "lhs": 1635,
+    "rhs": 1507,
+    "final_answer": "128",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0195",
+    "prompt": "Question: Calculate: 1631 - 1579\n",
+    "expression": "1631 - 1579",
+    "lhs": 1631,
+    "rhs": 1579,
+    "final_answer": "52",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0196",
+    "prompt": "Question: Calculate: 1194 - 1177\n",
+    "expression": "1194 - 1177",
+    "lhs": 1194,
+    "rhs": 1177,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0197",
+    "prompt": "Question: Calculate: 1715 - 1307\n",
+    "expression": "1715 - 1307",
+    "lhs": 1715,
+    "rhs": 1307,
+    "final_answer": "408",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0198",
+    "prompt": "Question: Calculate: 1188 - 1043\n",
+    "expression": "1188 - 1043",
+    "lhs": 1188,
+    "rhs": 1043,
+    "final_answer": "145",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0199",
+    "prompt": "Question: Calculate: 1904 - 1173\n",
+    "expression": "1904 - 1173",
+    "lhs": 1904,
+    "rhs": 1173,
+    "final_answer": "731",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0200",
+    "prompt": "Question: Calculate: 1574 - 1294\n",
+    "expression": "1574 - 1294",
+    "lhs": 1574,
+    "rhs": 1294,
+    "final_answer": "280",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0201",
+    "prompt": "Question: Calculate: 1456 - 1225\n",
+    "expression": "1456 - 1225",
+    "lhs": 1456,
+    "rhs": 1225,
+    "final_answer": "231",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0202",
+    "prompt": "Question: Calculate: 1316 - 1274\n",
+    "expression": "1316 - 1274",
+    "lhs": 1316,
+    "rhs": 1274,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0203",
+    "prompt": "Question: Calculate: 1791 - 1274\n",
+    "expression": "1791 - 1274",
+    "lhs": 1791,
+    "rhs": 1274,
+    "final_answer": "517",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0204",
+    "prompt": "Question: Calculate: 1788 - 1080\n",
+    "expression": "1788 - 1080",
+    "lhs": 1788,
+    "rhs": 1080,
+    "final_answer": "708",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0205",
+    "prompt": "Question: Calculate: 1509 - 1173\n",
+    "expression": "1509 - 1173",
+    "lhs": 1509,
+    "rhs": 1173,
+    "final_answer": "336",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0206",
+    "prompt": "Question: Calculate: 1276 - 1225\n",
+    "expression": "1276 - 1225",
+    "lhs": 1276,
+    "rhs": 1225,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0207",
+    "prompt": "Question: Calculate: 1439 - 1354\n",
+    "expression": "1439 - 1354",
+    "lhs": 1439,
+    "rhs": 1354,
+    "final_answer": "85",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0208",
+    "prompt": "Question: Calculate: 1800 - 1344\n",
+    "expression": "1800 - 1344",
+    "lhs": 1800,
+    "rhs": 1344,
+    "final_answer": "456",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0209",
+    "prompt": "Question: Calculate: 1816 - 1202\n",
+    "expression": "1816 - 1202",
+    "lhs": 1816,
+    "rhs": 1202,
+    "final_answer": "614",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0210",
+    "prompt": "Question: Calculate: 1844 - 1514\n",
+    "expression": "1844 - 1514",
+    "lhs": 1844,
+    "rhs": 1514,
+    "final_answer": "330",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0211",
+    "prompt": "Question: Calculate: 1587 - 1399\n",
+    "expression": "1587 - 1399",
+    "lhs": 1587,
+    "rhs": 1399,
+    "final_answer": "188",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0212",
+    "prompt": "Question: Calculate: 1460 - 1262\n",
+    "expression": "1460 - 1262",
+    "lhs": 1460,
+    "rhs": 1262,
+    "final_answer": "198",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0213",
+    "prompt": "Question: Calculate: 1780 - 1584\n",
+    "expression": "1780 - 1584",
+    "lhs": 1780,
+    "rhs": 1584,
+    "final_answer": "196",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0214",
+    "prompt": "Question: Calculate: 1170 - 1012\n",
+    "expression": "1170 - 1012",
+    "lhs": 1170,
+    "rhs": 1012,
+    "final_answer": "158",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0215",
+    "prompt": "Question: Calculate: 1896 - 1368\n",
+    "expression": "1896 - 1368",
+    "lhs": 1896,
+    "rhs": 1368,
+    "final_answer": "528",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0216",
+    "prompt": "Question: Calculate: 1792 - 1301\n",
+    "expression": "1792 - 1301",
+    "lhs": 1792,
+    "rhs": 1301,
+    "final_answer": "491",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0217",
+    "prompt": "Question: Calculate: 1549 - 1379\n",
+    "expression": "1549 - 1379",
+    "lhs": 1549,
+    "rhs": 1379,
+    "final_answer": "170",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0218",
+    "prompt": "Question: Calculate: 1764 - 1231\n",
+    "expression": "1764 - 1231",
+    "lhs": 1764,
+    "rhs": 1231,
+    "final_answer": "533",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0219",
+    "prompt": "Question: Calculate: 1863 - 1388\n",
+    "expression": "1863 - 1388",
+    "lhs": 1863,
+    "rhs": 1388,
+    "final_answer": "475",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0220",
+    "prompt": "Question: Calculate: 1780 - 1141\n",
+    "expression": "1780 - 1141",
+    "lhs": 1780,
+    "rhs": 1141,
+    "final_answer": "639",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0221",
+    "prompt": "Question: Calculate: 1573 - 1429\n",
+    "expression": "1573 - 1429",
+    "lhs": 1573,
+    "rhs": 1429,
+    "final_answer": "144",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0222",
+    "prompt": "Question: Calculate: 1582 - 1043\n",
+    "expression": "1582 - 1043",
+    "lhs": 1582,
+    "rhs": 1043,
+    "final_answer": "539",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0223",
+    "prompt": "Question: Calculate: 1705 - 1288\n",
+    "expression": "1705 - 1288",
+    "lhs": 1705,
+    "rhs": 1288,
+    "final_answer": "417",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0224",
+    "prompt": "Question: Calculate: 1479 - 1178\n",
+    "expression": "1479 - 1178",
+    "lhs": 1479,
+    "rhs": 1178,
+    "final_answer": "301",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0225",
+    "prompt": "Question: Calculate: 1529 - 1203\n",
+    "expression": "1529 - 1203",
+    "lhs": 1529,
+    "rhs": 1203,
+    "final_answer": "326",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0226",
+    "prompt": "Question: Calculate: 1752 - 1445\n",
+    "expression": "1752 - 1445",
+    "lhs": 1752,
+    "rhs": 1445,
+    "final_answer": "307",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0227",
+    "prompt": "Question: Calculate: 1724 - 1273\n",
+    "expression": "1724 - 1273",
+    "lhs": 1724,
+    "rhs": 1273,
+    "final_answer": "451",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0228",
+    "prompt": "Question: Calculate: 1669 - 1065\n",
+    "expression": "1669 - 1065",
+    "lhs": 1669,
+    "rhs": 1065,
+    "final_answer": "604",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0229",
+    "prompt": "Question: Calculate: 1981 - 1013\n",
+    "expression": "1981 - 1013",
+    "lhs": 1981,
+    "rhs": 1013,
+    "final_answer": "968",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0230",
+    "prompt": "Question: Calculate: 1610 - 1004\n",
+    "expression": "1610 - 1004",
+    "lhs": 1610,
+    "rhs": 1004,
+    "final_answer": "606",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0231",
+    "prompt": "Question: Calculate: 1348 - 1233\n",
+    "expression": "1348 - 1233",
+    "lhs": 1348,
+    "rhs": 1233,
+    "final_answer": "115",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0232",
+    "prompt": "Question: Calculate: 1896 - 1513\n",
+    "expression": "1896 - 1513",
+    "lhs": 1896,
+    "rhs": 1513,
+    "final_answer": "383",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0233",
+    "prompt": "Question: Calculate: 1641 - 1346\n",
+    "expression": "1641 - 1346",
+    "lhs": 1641,
+    "rhs": 1346,
+    "final_answer": "295",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0234",
+    "prompt": "Question: Calculate: 1907 - 1321\n",
+    "expression": "1907 - 1321",
+    "lhs": 1907,
+    "rhs": 1321,
+    "final_answer": "586",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0235",
+    "prompt": "Question: Calculate: 1760 - 1494\n",
+    "expression": "1760 - 1494",
+    "lhs": 1760,
+    "rhs": 1494,
+    "final_answer": "266",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0236",
+    "prompt": "Question: Calculate: 1967 - 1275\n",
+    "expression": "1967 - 1275",
+    "lhs": 1967,
+    "rhs": 1275,
+    "final_answer": "692",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0237",
+    "prompt": "Question: Calculate: 1179 - 1094\n",
+    "expression": "1179 - 1094",
+    "lhs": 1179,
+    "rhs": 1094,
+    "final_answer": "85",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0238",
+    "prompt": "Question: Calculate: 1744 - 1401\n",
+    "expression": "1744 - 1401",
+    "lhs": 1744,
+    "rhs": 1401,
+    "final_answer": "343",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0239",
+    "prompt": "Question: Calculate: 1286 - 1241\n",
+    "expression": "1286 - 1241",
+    "lhs": 1286,
+    "rhs": 1241,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0240",
+    "prompt": "Question: Calculate: 1799 - 1329\n",
+    "expression": "1799 - 1329",
+    "lhs": 1799,
+    "rhs": 1329,
+    "final_answer": "470",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0241",
+    "prompt": "Question: Calculate: 1618 - 1605\n",
+    "expression": "1618 - 1605",
+    "lhs": 1618,
+    "rhs": 1605,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0242",
+    "prompt": "Question: Calculate: 1856 - 1017\n",
+    "expression": "1856 - 1017",
+    "lhs": 1856,
+    "rhs": 1017,
+    "final_answer": "839",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0243",
+    "prompt": "Question: Calculate: 1818 - 1034\n",
+    "expression": "1818 - 1034",
+    "lhs": 1818,
+    "rhs": 1034,
+    "final_answer": "784",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0244",
+    "prompt": "Question: Calculate: 1800 - 1596\n",
+    "expression": "1800 - 1596",
+    "lhs": 1800,
+    "rhs": 1596,
+    "final_answer": "204",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0245",
+    "prompt": "Question: Calculate: 1489 - 1226\n",
+    "expression": "1489 - 1226",
+    "lhs": 1489,
+    "rhs": 1226,
+    "final_answer": "263",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0246",
+    "prompt": "Question: Calculate: 1547 - 1080\n",
+    "expression": "1547 - 1080",
+    "lhs": 1547,
+    "rhs": 1080,
+    "final_answer": "467",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0247",
+    "prompt": "Question: Calculate: 1689 - 1269\n",
+    "expression": "1689 - 1269",
+    "lhs": 1689,
+    "rhs": 1269,
+    "final_answer": "420",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0248",
+    "prompt": "Question: Calculate: 1438 - 1052\n",
+    "expression": "1438 - 1052",
+    "lhs": 1438,
+    "rhs": 1052,
+    "final_answer": "386",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0249",
+    "prompt": "Question: Calculate: 1501 - 1313\n",
+    "expression": "1501 - 1313",
+    "lhs": 1501,
+    "rhs": 1313,
+    "final_answer": "188",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0250",
+    "prompt": "Question: Calculate: 1867 - 1664\n",
+    "expression": "1867 - 1664",
+    "lhs": 1867,
+    "rhs": 1664,
+    "final_answer": "203",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0251",
+    "prompt": "Question: Calculate: 1651 - 1421\n",
+    "expression": "1651 - 1421",
+    "lhs": 1651,
+    "rhs": 1421,
+    "final_answer": "230",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0252",
+    "prompt": "Question: Calculate: 1755 - 1097\n",
+    "expression": "1755 - 1097",
+    "lhs": 1755,
+    "rhs": 1097,
+    "final_answer": "658",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0253",
+    "prompt": "Question: Calculate: 1301 - 1228\n",
+    "expression": "1301 - 1228",
+    "lhs": 1301,
+    "rhs": 1228,
+    "final_answer": "73",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0254",
+    "prompt": "Question: Calculate: 1518 - 1467\n",
+    "expression": "1518 - 1467",
+    "lhs": 1518,
+    "rhs": 1467,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0255",
+    "prompt": "Question: Calculate: 1980 - 1929\n",
+    "expression": "1980 - 1929",
+    "lhs": 1980,
+    "rhs": 1929,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0256",
+    "prompt": "Question: Calculate: 1536 - 1269\n",
+    "expression": "1536 - 1269",
+    "lhs": 1536,
+    "rhs": 1269,
+    "final_answer": "267",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0257",
+    "prompt": "Question: Calculate: 1283 - 1218\n",
+    "expression": "1283 - 1218",
+    "lhs": 1283,
+    "rhs": 1218,
+    "final_answer": "65",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0258",
+    "prompt": "Question: Calculate: 1469 - 1053\n",
+    "expression": "1469 - 1053",
+    "lhs": 1469,
+    "rhs": 1053,
+    "final_answer": "416",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0259",
+    "prompt": "Question: Calculate: 1746 - 1406\n",
+    "expression": "1746 - 1406",
+    "lhs": 1746,
+    "rhs": 1406,
+    "final_answer": "340",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0260",
+    "prompt": "Question: Calculate: 1385 - 1085\n",
+    "expression": "1385 - 1085",
+    "lhs": 1385,
+    "rhs": 1085,
+    "final_answer": "300",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0261",
+    "prompt": "Question: Calculate: 1771 - 1556\n",
+    "expression": "1771 - 1556",
+    "lhs": 1771,
+    "rhs": 1556,
+    "final_answer": "215",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0262",
+    "prompt": "Question: Calculate: 1864 - 1463\n",
+    "expression": "1864 - 1463",
+    "lhs": 1864,
+    "rhs": 1463,
+    "final_answer": "401",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0263",
+    "prompt": "Question: Calculate: 1987 - 1668\n",
+    "expression": "1987 - 1668",
+    "lhs": 1987,
+    "rhs": 1668,
+    "final_answer": "319",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0264",
+    "prompt": "Question: Calculate: 1877 - 1360\n",
+    "expression": "1877 - 1360",
+    "lhs": 1877,
+    "rhs": 1360,
+    "final_answer": "517",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0265",
+    "prompt": "Question: Calculate: 1900 - 1426\n",
+    "expression": "1900 - 1426",
+    "lhs": 1900,
+    "rhs": 1426,
+    "final_answer": "474",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0266",
+    "prompt": "Question: Calculate: 1918 - 1263\n",
+    "expression": "1918 - 1263",
+    "lhs": 1918,
+    "rhs": 1263,
+    "final_answer": "655",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0267",
+    "prompt": "Question: Calculate: 1870 - 1425\n",
+    "expression": "1870 - 1425",
+    "lhs": 1870,
+    "rhs": 1425,
+    "final_answer": "445",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0268",
+    "prompt": "Question: Calculate: 1479 - 1135\n",
+    "expression": "1479 - 1135",
+    "lhs": 1479,
+    "rhs": 1135,
+    "final_answer": "344",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0269",
+    "prompt": "Question: Calculate: 1898 - 1696\n",
+    "expression": "1898 - 1696",
+    "lhs": 1898,
+    "rhs": 1696,
+    "final_answer": "202",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0270",
+    "prompt": "Question: Calculate: 1774 - 1398\n",
+    "expression": "1774 - 1398",
+    "lhs": 1774,
+    "rhs": 1398,
+    "final_answer": "376",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0271",
+    "prompt": "Question: Calculate: 1414 - 1240\n",
+    "expression": "1414 - 1240",
+    "lhs": 1414,
+    "rhs": 1240,
+    "final_answer": "174",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0272",
+    "prompt": "Question: Calculate: 1947 - 1567\n",
+    "expression": "1947 - 1567",
+    "lhs": 1947,
+    "rhs": 1567,
+    "final_answer": "380",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0273",
+    "prompt": "Question: Calculate: 1923 - 1829\n",
+    "expression": "1923 - 1829",
+    "lhs": 1923,
+    "rhs": 1829,
+    "final_answer": "94",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0274",
+    "prompt": "Question: Calculate: 1988 - 1801\n",
+    "expression": "1988 - 1801",
+    "lhs": 1988,
+    "rhs": 1801,
+    "final_answer": "187",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0275",
+    "prompt": "Question: Calculate: 1377 - 1069\n",
+    "expression": "1377 - 1069",
+    "lhs": 1377,
+    "rhs": 1069,
+    "final_answer": "308",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0276",
+    "prompt": "Question: Calculate: 1675 - 1305\n",
+    "expression": "1675 - 1305",
+    "lhs": 1675,
+    "rhs": 1305,
+    "final_answer": "370",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0277",
+    "prompt": "Question: Calculate: 1904 - 1711\n",
+    "expression": "1904 - 1711",
+    "lhs": 1904,
+    "rhs": 1711,
+    "final_answer": "193",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0278",
+    "prompt": "Question: Calculate: 1532 - 1090\n",
+    "expression": "1532 - 1090",
+    "lhs": 1532,
+    "rhs": 1090,
+    "final_answer": "442",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0279",
+    "prompt": "Question: Calculate: 1837 - 1382\n",
+    "expression": "1837 - 1382",
+    "lhs": 1837,
+    "rhs": 1382,
+    "final_answer": "455",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0280",
+    "prompt": "Question: Calculate: 1765 - 1530\n",
+    "expression": "1765 - 1530",
+    "lhs": 1765,
+    "rhs": 1530,
+    "final_answer": "235",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0281",
+    "prompt": "Question: Calculate: 1624 - 1585\n",
+    "expression": "1624 - 1585",
+    "lhs": 1624,
+    "rhs": 1585,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0282",
+    "prompt": "Question: Calculate: 1961 - 1035\n",
+    "expression": "1961 - 1035",
+    "lhs": 1961,
+    "rhs": 1035,
+    "final_answer": "926",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0283",
+    "prompt": "Question: Calculate: 1153 - 1062\n",
+    "expression": "1153 - 1062",
+    "lhs": 1153,
+    "rhs": 1062,
+    "final_answer": "91",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0284",
+    "prompt": "Question: Calculate: 1487 - 1464\n",
+    "expression": "1487 - 1464",
+    "lhs": 1487,
+    "rhs": 1464,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0285",
+    "prompt": "Question: Calculate: 1947 - 1713\n",
+    "expression": "1947 - 1713",
+    "lhs": 1947,
+    "rhs": 1713,
+    "final_answer": "234",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0286",
+    "prompt": "Question: Calculate: 1591 - 1171\n",
+    "expression": "1591 - 1171",
+    "lhs": 1591,
+    "rhs": 1171,
+    "final_answer": "420",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0287",
+    "prompt": "Question: Calculate: 1864 - 1113\n",
+    "expression": "1864 - 1113",
+    "lhs": 1864,
+    "rhs": 1113,
+    "final_answer": "751",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0288",
+    "prompt": "Question: Calculate: 1796 - 1012\n",
+    "expression": "1796 - 1012",
+    "lhs": 1796,
+    "rhs": 1012,
+    "final_answer": "784",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0289",
+    "prompt": "Question: Calculate: 1530 - 1316\n",
+    "expression": "1530 - 1316",
+    "lhs": 1530,
+    "rhs": 1316,
+    "final_answer": "214",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0290",
+    "prompt": "Question: Calculate: 1343 - 1042\n",
+    "expression": "1343 - 1042",
+    "lhs": 1343,
+    "rhs": 1042,
+    "final_answer": "301",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0291",
+    "prompt": "Question: Calculate: 1715 - 1466\n",
+    "expression": "1715 - 1466",
+    "lhs": 1715,
+    "rhs": 1466,
+    "final_answer": "249",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0292",
+    "prompt": "Question: Calculate: 1862 - 1666\n",
+    "expression": "1862 - 1666",
+    "lhs": 1862,
+    "rhs": 1666,
+    "final_answer": "196",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0293",
+    "prompt": "Question: Calculate: 1858 - 1576\n",
+    "expression": "1858 - 1576",
+    "lhs": 1858,
+    "rhs": 1576,
+    "final_answer": "282",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0294",
+    "prompt": "Question: Calculate: 1395 - 1021\n",
+    "expression": "1395 - 1021",
+    "lhs": 1395,
+    "rhs": 1021,
+    "final_answer": "374",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0295",
+    "prompt": "Question: Calculate: 1298 - 1242\n",
+    "expression": "1298 - 1242",
+    "lhs": 1298,
+    "rhs": 1242,
+    "final_answer": "56",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0296",
+    "prompt": "Question: Calculate: 1422 - 1373\n",
+    "expression": "1422 - 1373",
+    "lhs": 1422,
+    "rhs": 1373,
+    "final_answer": "49",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0297",
+    "prompt": "Question: Calculate: 1904 - 1771\n",
+    "expression": "1904 - 1771",
+    "lhs": 1904,
+    "rhs": 1771,
+    "final_answer": "133",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0298",
+    "prompt": "Question: Calculate: 1439 - 1035\n",
+    "expression": "1439 - 1035",
+    "lhs": 1439,
+    "rhs": 1035,
+    "final_answer": "404",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0299",
+    "prompt": "Question: Calculate: 1922 - 1346\n",
+    "expression": "1922 - 1346",
+    "lhs": 1922,
+    "rhs": 1346,
+    "final_answer": "576",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0300",
+    "prompt": "Question: Calculate: 1234 - 1038\n",
+    "expression": "1234 - 1038",
+    "lhs": 1234,
+    "rhs": 1038,
+    "final_answer": "196",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0301",
+    "prompt": "Question: Calculate: 1723 - 1254\n",
+    "expression": "1723 - 1254",
+    "lhs": 1723,
+    "rhs": 1254,
+    "final_answer": "469",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0302",
+    "prompt": "Question: Calculate: 1455 - 1274\n",
+    "expression": "1455 - 1274",
+    "lhs": 1455,
+    "rhs": 1274,
+    "final_answer": "181",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0303",
+    "prompt": "Question: Calculate: 1937 - 1436\n",
+    "expression": "1937 - 1436",
+    "lhs": 1937,
+    "rhs": 1436,
+    "final_answer": "501",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0304",
+    "prompt": "Question: Calculate: 1607 - 1522\n",
+    "expression": "1607 - 1522",
+    "lhs": 1607,
+    "rhs": 1522,
+    "final_answer": "85",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0305",
+    "prompt": "Question: Calculate: 1252 - 1217\n",
+    "expression": "1252 - 1217",
+    "lhs": 1252,
+    "rhs": 1217,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0306",
+    "prompt": "Question: Calculate: 1406 - 1028\n",
+    "expression": "1406 - 1028",
+    "lhs": 1406,
+    "rhs": 1028,
+    "final_answer": "378",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0307",
+    "prompt": "Question: Calculate: 1661 - 1495\n",
+    "expression": "1661 - 1495",
+    "lhs": 1661,
+    "rhs": 1495,
+    "final_answer": "166",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0308",
+    "prompt": "Question: Calculate: 1682 - 1451\n",
+    "expression": "1682 - 1451",
+    "lhs": 1682,
+    "rhs": 1451,
+    "final_answer": "231",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0309",
+    "prompt": "Question: Calculate: 1217 - 1023\n",
+    "expression": "1217 - 1023",
+    "lhs": 1217,
+    "rhs": 1023,
+    "final_answer": "194",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0310",
+    "prompt": "Question: Calculate: 1838 - 1415\n",
+    "expression": "1838 - 1415",
+    "lhs": 1838,
+    "rhs": 1415,
+    "final_answer": "423",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0311",
+    "prompt": "Question: Calculate: 1718 - 1483\n",
+    "expression": "1718 - 1483",
+    "lhs": 1718,
+    "rhs": 1483,
+    "final_answer": "235",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0312",
+    "prompt": "Question: Calculate: 1909 - 1811\n",
+    "expression": "1909 - 1811",
+    "lhs": 1909,
+    "rhs": 1811,
+    "final_answer": "98",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0313",
+    "prompt": "Question: Calculate: 1927 - 1124\n",
+    "expression": "1927 - 1124",
+    "lhs": 1927,
+    "rhs": 1124,
+    "final_answer": "803",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0314",
+    "prompt": "Question: Calculate: 1956 - 1562\n",
+    "expression": "1956 - 1562",
+    "lhs": 1956,
+    "rhs": 1562,
+    "final_answer": "394",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0315",
+    "prompt": "Question: Calculate: 1188 - 1139\n",
+    "expression": "1188 - 1139",
+    "lhs": 1188,
+    "rhs": 1139,
+    "final_answer": "49",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0316",
+    "prompt": "Question: Calculate: 1753 - 1188\n",
+    "expression": "1753 - 1188",
+    "lhs": 1753,
+    "rhs": 1188,
+    "final_answer": "565",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0317",
+    "prompt": "Question: Calculate: 1431 - 1421\n",
+    "expression": "1431 - 1421",
+    "lhs": 1431,
+    "rhs": 1421,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0318",
+    "prompt": "Question: Calculate: 1910 - 1879\n",
+    "expression": "1910 - 1879",
+    "lhs": 1910,
+    "rhs": 1879,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0319",
+    "prompt": "Question: Calculate: 1934 - 1487\n",
+    "expression": "1934 - 1487",
+    "lhs": 1934,
+    "rhs": 1487,
+    "final_answer": "447",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0320",
+    "prompt": "Question: Calculate: 1658 - 1589\n",
+    "expression": "1658 - 1589",
+    "lhs": 1658,
+    "rhs": 1589,
+    "final_answer": "69",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0321",
+    "prompt": "Question: Calculate: 1795 - 1288\n",
+    "expression": "1795 - 1288",
+    "lhs": 1795,
+    "rhs": 1288,
+    "final_answer": "507",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0322",
+    "prompt": "Question: Calculate: 1630 - 1084\n",
+    "expression": "1630 - 1084",
+    "lhs": 1630,
+    "rhs": 1084,
+    "final_answer": "546",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0323",
+    "prompt": "Question: Calculate: 1790 - 1017\n",
+    "expression": "1790 - 1017",
+    "lhs": 1790,
+    "rhs": 1017,
+    "final_answer": "773",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0324",
+    "prompt": "Question: Calculate: 1525 - 1463\n",
+    "expression": "1525 - 1463",
+    "lhs": 1525,
+    "rhs": 1463,
+    "final_answer": "62",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0325",
+    "prompt": "Question: Calculate: 1663 - 1521\n",
+    "expression": "1663 - 1521",
+    "lhs": 1663,
+    "rhs": 1521,
+    "final_answer": "142",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0326",
+    "prompt": "Question: Calculate: 1520 - 1442\n",
+    "expression": "1520 - 1442",
+    "lhs": 1520,
+    "rhs": 1442,
+    "final_answer": "78",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0327",
+    "prompt": "Question: Calculate: 1337 - 1224\n",
+    "expression": "1337 - 1224",
+    "lhs": 1337,
+    "rhs": 1224,
+    "final_answer": "113",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0328",
+    "prompt": "Question: Calculate: 1779 - 1515\n",
+    "expression": "1779 - 1515",
+    "lhs": 1779,
+    "rhs": 1515,
+    "final_answer": "264",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0329",
+    "prompt": "Question: Calculate: 1693 - 1338\n",
+    "expression": "1693 - 1338",
+    "lhs": 1693,
+    "rhs": 1338,
+    "final_answer": "355",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0330",
+    "prompt": "Question: Calculate: 1828 - 1613\n",
+    "expression": "1828 - 1613",
+    "lhs": 1828,
+    "rhs": 1613,
+    "final_answer": "215",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0331",
+    "prompt": "Question: Calculate: 1847 - 1048\n",
+    "expression": "1847 - 1048",
+    "lhs": 1847,
+    "rhs": 1048,
+    "final_answer": "799",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0332",
+    "prompt": "Question: Calculate: 1483 - 1397\n",
+    "expression": "1483 - 1397",
+    "lhs": 1483,
+    "rhs": 1397,
+    "final_answer": "86",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0333",
+    "prompt": "Question: Calculate: 1770 - 1211\n",
+    "expression": "1770 - 1211",
+    "lhs": 1770,
+    "rhs": 1211,
+    "final_answer": "559",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0334",
+    "prompt": "Question: Calculate: 1587 - 1425\n",
+    "expression": "1587 - 1425",
+    "lhs": 1587,
+    "rhs": 1425,
+    "final_answer": "162",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0335",
+    "prompt": "Question: Calculate: 1312 - 1210\n",
+    "expression": "1312 - 1210",
+    "lhs": 1312,
+    "rhs": 1210,
+    "final_answer": "102",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0336",
+    "prompt": "Question: Calculate: 1833 - 1697\n",
+    "expression": "1833 - 1697",
+    "lhs": 1833,
+    "rhs": 1697,
+    "final_answer": "136",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0337",
+    "prompt": "Question: Calculate: 1714 - 1174\n",
+    "expression": "1714 - 1174",
+    "lhs": 1714,
+    "rhs": 1174,
+    "final_answer": "540",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0338",
+    "prompt": "Question: Calculate: 1711 - 1528\n",
+    "expression": "1711 - 1528",
+    "lhs": 1711,
+    "rhs": 1528,
+    "final_answer": "183",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0339",
+    "prompt": "Question: Calculate: 1890 - 1633\n",
+    "expression": "1890 - 1633",
+    "lhs": 1890,
+    "rhs": 1633,
+    "final_answer": "257",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0340",
+    "prompt": "Question: Calculate: 1869 - 1516\n",
+    "expression": "1869 - 1516",
+    "lhs": 1869,
+    "rhs": 1516,
+    "final_answer": "353",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0341",
+    "prompt": "Question: Calculate: 1775 - 1494\n",
+    "expression": "1775 - 1494",
+    "lhs": 1775,
+    "rhs": 1494,
+    "final_answer": "281",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0342",
+    "prompt": "Question: Calculate: 1410 - 1025\n",
+    "expression": "1410 - 1025",
+    "lhs": 1410,
+    "rhs": 1025,
+    "final_answer": "385",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0343",
+    "prompt": "Question: Calculate: 1865 - 1760\n",
+    "expression": "1865 - 1760",
+    "lhs": 1865,
+    "rhs": 1760,
+    "final_answer": "105",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0344",
+    "prompt": "Question: Calculate: 1818 - 1323\n",
+    "expression": "1818 - 1323",
+    "lhs": 1818,
+    "rhs": 1323,
+    "final_answer": "495",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0345",
+    "prompt": "Question: Calculate: 1653 - 1331\n",
+    "expression": "1653 - 1331",
+    "lhs": 1653,
+    "rhs": 1331,
+    "final_answer": "322",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0346",
+    "prompt": "Question: Calculate: 1869 - 1023\n",
+    "expression": "1869 - 1023",
+    "lhs": 1869,
+    "rhs": 1023,
+    "final_answer": "846",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0347",
+    "prompt": "Question: Calculate: 1865 - 1687\n",
+    "expression": "1865 - 1687",
+    "lhs": 1865,
+    "rhs": 1687,
+    "final_answer": "178",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0348",
+    "prompt": "Question: Calculate: 1653 - 1310\n",
+    "expression": "1653 - 1310",
+    "lhs": 1653,
+    "rhs": 1310,
+    "final_answer": "343",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0349",
+    "prompt": "Question: Calculate: 1585 - 1142\n",
+    "expression": "1585 - 1142",
+    "lhs": 1585,
+    "rhs": 1142,
+    "final_answer": "443",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0350",
+    "prompt": "Question: Calculate: 1849 - 1143\n",
+    "expression": "1849 - 1143",
+    "lhs": 1849,
+    "rhs": 1143,
+    "final_answer": "706",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0351",
+    "prompt": "Question: Calculate: 1712 - 1121\n",
+    "expression": "1712 - 1121",
+    "lhs": 1712,
+    "rhs": 1121,
+    "final_answer": "591",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0352",
+    "prompt": "Question: Calculate: 1467 - 1061\n",
+    "expression": "1467 - 1061",
+    "lhs": 1467,
+    "rhs": 1061,
+    "final_answer": "406",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0353",
+    "prompt": "Question: Calculate: 1664 - 1269\n",
+    "expression": "1664 - 1269",
+    "lhs": 1664,
+    "rhs": 1269,
+    "final_answer": "395",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0354",
+    "prompt": "Question: Calculate: 1878 - 1575\n",
+    "expression": "1878 - 1575",
+    "lhs": 1878,
+    "rhs": 1575,
+    "final_answer": "303",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0355",
+    "prompt": "Question: Calculate: 1784 - 1433\n",
+    "expression": "1784 - 1433",
+    "lhs": 1784,
+    "rhs": 1433,
+    "final_answer": "351",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0356",
+    "prompt": "Question: Calculate: 1784 - 1717\n",
+    "expression": "1784 - 1717",
+    "lhs": 1784,
+    "rhs": 1717,
+    "final_answer": "67",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0357",
+    "prompt": "Question: Calculate: 1559 - 1080\n",
+    "expression": "1559 - 1080",
+    "lhs": 1559,
+    "rhs": 1080,
+    "final_answer": "479",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0358",
+    "prompt": "Question: Calculate: 1886 - 1412\n",
+    "expression": "1886 - 1412",
+    "lhs": 1886,
+    "rhs": 1412,
+    "final_answer": "474",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0359",
+    "prompt": "Question: Calculate: 1741 - 1700\n",
+    "expression": "1741 - 1700",
+    "lhs": 1741,
+    "rhs": 1700,
+    "final_answer": "41",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0360",
+    "prompt": "Question: Calculate: 1454 - 1031\n",
+    "expression": "1454 - 1031",
+    "lhs": 1454,
+    "rhs": 1031,
+    "final_answer": "423",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0361",
+    "prompt": "Question: Calculate: 1417 - 1401\n",
+    "expression": "1417 - 1401",
+    "lhs": 1417,
+    "rhs": 1401,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0362",
+    "prompt": "Question: Calculate: 1211 - 1192\n",
+    "expression": "1211 - 1192",
+    "lhs": 1211,
+    "rhs": 1192,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0363",
+    "prompt": "Question: Calculate: 1860 - 1063\n",
+    "expression": "1860 - 1063",
+    "lhs": 1860,
+    "rhs": 1063,
+    "final_answer": "797",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0364",
+    "prompt": "Question: Calculate: 1781 - 1072\n",
+    "expression": "1781 - 1072",
+    "lhs": 1781,
+    "rhs": 1072,
+    "final_answer": "709",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0365",
+    "prompt": "Question: Calculate: 1782 - 1412\n",
+    "expression": "1782 - 1412",
+    "lhs": 1782,
+    "rhs": 1412,
+    "final_answer": "370",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0366",
+    "prompt": "Question: Calculate: 1592 - 1167\n",
+    "expression": "1592 - 1167",
+    "lhs": 1592,
+    "rhs": 1167,
+    "final_answer": "425",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0367",
+    "prompt": "Question: Calculate: 1986 - 1954\n",
+    "expression": "1986 - 1954",
+    "lhs": 1986,
+    "rhs": 1954,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0368",
+    "prompt": "Question: Calculate: 1918 - 1693\n",
+    "expression": "1918 - 1693",
+    "lhs": 1918,
+    "rhs": 1693,
+    "final_answer": "225",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0369",
+    "prompt": "Question: Calculate: 1901 - 1016\n",
+    "expression": "1901 - 1016",
+    "lhs": 1901,
+    "rhs": 1016,
+    "final_answer": "885",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0370",
+    "prompt": "Question: Calculate: 1486 - 1197\n",
+    "expression": "1486 - 1197",
+    "lhs": 1486,
+    "rhs": 1197,
+    "final_answer": "289",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0371",
+    "prompt": "Question: Calculate: 1967 - 1830\n",
+    "expression": "1967 - 1830",
+    "lhs": 1967,
+    "rhs": 1830,
+    "final_answer": "137",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0372",
+    "prompt": "Question: Calculate: 1596 - 1595\n",
+    "expression": "1596 - 1595",
+    "lhs": 1596,
+    "rhs": 1595,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0373",
+    "prompt": "Question: Calculate: 1786 - 1182\n",
+    "expression": "1786 - 1182",
+    "lhs": 1786,
+    "rhs": 1182,
+    "final_answer": "604",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0374",
+    "prompt": "Question: Calculate: 1858 - 1522\n",
+    "expression": "1858 - 1522",
+    "lhs": 1858,
+    "rhs": 1522,
+    "final_answer": "336",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0375",
+    "prompt": "Question: Calculate: 1860 - 1631\n",
+    "expression": "1860 - 1631",
+    "lhs": 1860,
+    "rhs": 1631,
+    "final_answer": "229",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0376",
+    "prompt": "Question: Calculate: 1690 - 1083\n",
+    "expression": "1690 - 1083",
+    "lhs": 1690,
+    "rhs": 1083,
+    "final_answer": "607",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0377",
+    "prompt": "Question: Calculate: 1836 - 1581\n",
+    "expression": "1836 - 1581",
+    "lhs": 1836,
+    "rhs": 1581,
+    "final_answer": "255",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0378",
+    "prompt": "Question: Calculate: 1953 - 1550\n",
+    "expression": "1953 - 1550",
+    "lhs": 1953,
+    "rhs": 1550,
+    "final_answer": "403",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0379",
+    "prompt": "Question: Calculate: 1503 - 1164\n",
+    "expression": "1503 - 1164",
+    "lhs": 1503,
+    "rhs": 1164,
+    "final_answer": "339",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0380",
+    "prompt": "Question: Calculate: 1576 - 1123\n",
+    "expression": "1576 - 1123",
+    "lhs": 1576,
+    "rhs": 1123,
+    "final_answer": "453",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0381",
+    "prompt": "Question: Calculate: 1429 - 1158\n",
+    "expression": "1429 - 1158",
+    "lhs": 1429,
+    "rhs": 1158,
+    "final_answer": "271",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0382",
+    "prompt": "Question: Calculate: 1720 - 1331\n",
+    "expression": "1720 - 1331",
+    "lhs": 1720,
+    "rhs": 1331,
+    "final_answer": "389",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0383",
+    "prompt": "Question: Calculate: 1989 - 1905\n",
+    "expression": "1989 - 1905",
+    "lhs": 1989,
+    "rhs": 1905,
+    "final_answer": "84",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0384",
+    "prompt": "Question: Calculate: 1788 - 1209\n",
+    "expression": "1788 - 1209",
+    "lhs": 1788,
+    "rhs": 1209,
+    "final_answer": "579",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0385",
+    "prompt": "Question: Calculate: 1824 - 1792\n",
+    "expression": "1824 - 1792",
+    "lhs": 1824,
+    "rhs": 1792,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0386",
+    "prompt": "Question: Calculate: 1475 - 1239\n",
+    "expression": "1475 - 1239",
+    "lhs": 1475,
+    "rhs": 1239,
+    "final_answer": "236",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0387",
+    "prompt": "Question: Calculate: 1469 - 1093\n",
+    "expression": "1469 - 1093",
+    "lhs": 1469,
+    "rhs": 1093,
+    "final_answer": "376",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0388",
+    "prompt": "Question: Calculate: 1937 - 1756\n",
+    "expression": "1937 - 1756",
+    "lhs": 1937,
+    "rhs": 1756,
+    "final_answer": "181",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0389",
+    "prompt": "Question: Calculate: 1945 - 1007\n",
+    "expression": "1945 - 1007",
+    "lhs": 1945,
+    "rhs": 1007,
+    "final_answer": "938",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0390",
+    "prompt": "Question: Calculate: 1547 - 1434\n",
+    "expression": "1547 - 1434",
+    "lhs": 1547,
+    "rhs": 1434,
+    "final_answer": "113",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0391",
+    "prompt": "Question: Calculate: 1851 - 1843\n",
+    "expression": "1851 - 1843",
+    "lhs": 1851,
+    "rhs": 1843,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0392",
+    "prompt": "Question: Calculate: 1626 - 1316\n",
+    "expression": "1626 - 1316",
+    "lhs": 1626,
+    "rhs": 1316,
+    "final_answer": "310",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0393",
+    "prompt": "Question: Calculate: 1269 - 1176\n",
+    "expression": "1269 - 1176",
+    "lhs": 1269,
+    "rhs": 1176,
+    "final_answer": "93",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0394",
+    "prompt": "Question: Calculate: 1602 - 1415\n",
+    "expression": "1602 - 1415",
+    "lhs": 1602,
+    "rhs": 1415,
+    "final_answer": "187",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0395",
+    "prompt": "Question: Calculate: 1299 - 1162\n",
+    "expression": "1299 - 1162",
+    "lhs": 1299,
+    "rhs": 1162,
+    "final_answer": "137",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0396",
+    "prompt": "Question: Calculate: 1212 - 1031\n",
+    "expression": "1212 - 1031",
+    "lhs": 1212,
+    "rhs": 1031,
+    "final_answer": "181",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0397",
+    "prompt": "Question: Calculate: 1736 - 1713\n",
+    "expression": "1736 - 1713",
+    "lhs": 1736,
+    "rhs": 1713,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0398",
+    "prompt": "Question: Calculate: 1606 - 1549\n",
+    "expression": "1606 - 1549",
+    "lhs": 1606,
+    "rhs": 1549,
+    "final_answer": "57",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0399",
+    "prompt": "Question: Calculate: 1977 - 1704\n",
+    "expression": "1977 - 1704",
+    "lhs": 1977,
+    "rhs": 1704,
+    "final_answer": "273",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0400",
+    "prompt": "Question: Calculate: 1681 - 1241\n",
+    "expression": "1681 - 1241",
+    "lhs": 1681,
+    "rhs": 1241,
+    "final_answer": "440",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0401",
+    "prompt": "Question: Calculate: 1996 - 1906\n",
+    "expression": "1996 - 1906",
+    "lhs": 1996,
+    "rhs": 1906,
+    "final_answer": "90",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0402",
+    "prompt": "Question: Calculate: 1691 - 1090\n",
+    "expression": "1691 - 1090",
+    "lhs": 1691,
+    "rhs": 1090,
+    "final_answer": "601",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0403",
+    "prompt": "Question: Calculate: 1790 - 1244\n",
+    "expression": "1790 - 1244",
+    "lhs": 1790,
+    "rhs": 1244,
+    "final_answer": "546",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0404",
+    "prompt": "Question: Calculate: 1981 - 1335\n",
+    "expression": "1981 - 1335",
+    "lhs": 1981,
+    "rhs": 1335,
+    "final_answer": "646",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0405",
+    "prompt": "Question: Calculate: 1704 - 1310\n",
+    "expression": "1704 - 1310",
+    "lhs": 1704,
+    "rhs": 1310,
+    "final_answer": "394",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0406",
+    "prompt": "Question: Calculate: 1656 - 1616\n",
+    "expression": "1656 - 1616",
+    "lhs": 1656,
+    "rhs": 1616,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0407",
+    "prompt": "Question: Calculate: 1709 - 1020\n",
+    "expression": "1709 - 1020",
+    "lhs": 1709,
+    "rhs": 1020,
+    "final_answer": "689",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0408",
+    "prompt": "Question: Calculate: 1290 - 1116\n",
+    "expression": "1290 - 1116",
+    "lhs": 1290,
+    "rhs": 1116,
+    "final_answer": "174",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0409",
+    "prompt": "Question: Calculate: 1794 - 1368\n",
+    "expression": "1794 - 1368",
+    "lhs": 1794,
+    "rhs": 1368,
+    "final_answer": "426",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0410",
+    "prompt": "Question: Calculate: 1626 - 1580\n",
+    "expression": "1626 - 1580",
+    "lhs": 1626,
+    "rhs": 1580,
+    "final_answer": "46",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0411",
+    "prompt": "Question: Calculate: 1461 - 1429\n",
+    "expression": "1461 - 1429",
+    "lhs": 1461,
+    "rhs": 1429,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0412",
+    "prompt": "Question: Calculate: 1390 - 1028\n",
+    "expression": "1390 - 1028",
+    "lhs": 1390,
+    "rhs": 1028,
+    "final_answer": "362",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0413",
+    "prompt": "Question: Calculate: 1614 - 1184\n",
+    "expression": "1614 - 1184",
+    "lhs": 1614,
+    "rhs": 1184,
+    "final_answer": "430",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0414",
+    "prompt": "Question: Calculate: 1632 - 1066\n",
+    "expression": "1632 - 1066",
+    "lhs": 1632,
+    "rhs": 1066,
+    "final_answer": "566",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0415",
+    "prompt": "Question: Calculate: 1840 - 1349\n",
+    "expression": "1840 - 1349",
+    "lhs": 1840,
+    "rhs": 1349,
+    "final_answer": "491",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0416",
+    "prompt": "Question: Calculate: 1552 - 1450\n",
+    "expression": "1552 - 1450",
+    "lhs": 1552,
+    "rhs": 1450,
+    "final_answer": "102",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0417",
+    "prompt": "Question: Calculate: 1195 - 1003\n",
+    "expression": "1195 - 1003",
+    "lhs": 1195,
+    "rhs": 1003,
+    "final_answer": "192",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0418",
+    "prompt": "Question: Calculate: 1377 - 1265\n",
+    "expression": "1377 - 1265",
+    "lhs": 1377,
+    "rhs": 1265,
+    "final_answer": "112",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0419",
+    "prompt": "Question: Calculate: 1622 - 1544\n",
+    "expression": "1622 - 1544",
+    "lhs": 1622,
+    "rhs": 1544,
+    "final_answer": "78",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0420",
+    "prompt": "Question: Calculate: 1982 - 1167\n",
+    "expression": "1982 - 1167",
+    "lhs": 1982,
+    "rhs": 1167,
+    "final_answer": "815",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0421",
+    "prompt": "Question: Calculate: 1279 - 1238\n",
+    "expression": "1279 - 1238",
+    "lhs": 1279,
+    "rhs": 1238,
+    "final_answer": "41",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0422",
+    "prompt": "Question: Calculate: 1935 - 1575\n",
+    "expression": "1935 - 1575",
+    "lhs": 1935,
+    "rhs": 1575,
+    "final_answer": "360",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0423",
+    "prompt": "Question: Calculate: 1761 - 1525\n",
+    "expression": "1761 - 1525",
+    "lhs": 1761,
+    "rhs": 1525,
+    "final_answer": "236",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0424",
+    "prompt": "Question: Calculate: 1795 - 1285\n",
+    "expression": "1795 - 1285",
+    "lhs": 1795,
+    "rhs": 1285,
+    "final_answer": "510",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0425",
+    "prompt": "Question: Calculate: 1806 - 1675\n",
+    "expression": "1806 - 1675",
+    "lhs": 1806,
+    "rhs": 1675,
+    "final_answer": "131",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0426",
+    "prompt": "Question: Calculate: 1832 - 1252\n",
+    "expression": "1832 - 1252",
+    "lhs": 1832,
+    "rhs": 1252,
+    "final_answer": "580",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0427",
+    "prompt": "Question: Calculate: 1715 - 1056\n",
+    "expression": "1715 - 1056",
+    "lhs": 1715,
+    "rhs": 1056,
+    "final_answer": "659",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0428",
+    "prompt": "Question: Calculate: 1802 - 1151\n",
+    "expression": "1802 - 1151",
+    "lhs": 1802,
+    "rhs": 1151,
+    "final_answer": "651",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0429",
+    "prompt": "Question: Calculate: 1893 - 1711\n",
+    "expression": "1893 - 1711",
+    "lhs": 1893,
+    "rhs": 1711,
+    "final_answer": "182",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0430",
+    "prompt": "Question: Calculate: 1842 - 1695\n",
+    "expression": "1842 - 1695",
+    "lhs": 1842,
+    "rhs": 1695,
+    "final_answer": "147",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0431",
+    "prompt": "Question: Calculate: 1759 - 1078\n",
+    "expression": "1759 - 1078",
+    "lhs": 1759,
+    "rhs": 1078,
+    "final_answer": "681",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0432",
+    "prompt": "Question: Calculate: 1743 - 1478\n",
+    "expression": "1743 - 1478",
+    "lhs": 1743,
+    "rhs": 1478,
+    "final_answer": "265",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0433",
+    "prompt": "Question: Calculate: 1552 - 1115\n",
+    "expression": "1552 - 1115",
+    "lhs": 1552,
+    "rhs": 1115,
+    "final_answer": "437",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0434",
+    "prompt": "Question: Calculate: 1483 - 1425\n",
+    "expression": "1483 - 1425",
+    "lhs": 1483,
+    "rhs": 1425,
+    "final_answer": "58",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0435",
+    "prompt": "Question: Calculate: 1881 - 1515\n",
+    "expression": "1881 - 1515",
+    "lhs": 1881,
+    "rhs": 1515,
+    "final_answer": "366",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0436",
+    "prompt": "Question: Calculate: 1950 - 1006\n",
+    "expression": "1950 - 1006",
+    "lhs": 1950,
+    "rhs": 1006,
+    "final_answer": "944",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0437",
+    "prompt": "Question: Calculate: 1650 - 1396\n",
+    "expression": "1650 - 1396",
+    "lhs": 1650,
+    "rhs": 1396,
+    "final_answer": "254",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0438",
+    "prompt": "Question: Calculate: 1977 - 1386\n",
+    "expression": "1977 - 1386",
+    "lhs": 1977,
+    "rhs": 1386,
+    "final_answer": "591",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0439",
+    "prompt": "Question: Calculate: 1657 - 1278\n",
+    "expression": "1657 - 1278",
+    "lhs": 1657,
+    "rhs": 1278,
+    "final_answer": "379",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0440",
+    "prompt": "Question: Calculate: 1680 - 1228\n",
+    "expression": "1680 - 1228",
+    "lhs": 1680,
+    "rhs": 1228,
+    "final_answer": "452",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0441",
+    "prompt": "Question: Calculate: 1695 - 1117\n",
+    "expression": "1695 - 1117",
+    "lhs": 1695,
+    "rhs": 1117,
+    "final_answer": "578",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0442",
+    "prompt": "Question: Calculate: 1905 - 1352\n",
+    "expression": "1905 - 1352",
+    "lhs": 1905,
+    "rhs": 1352,
+    "final_answer": "553",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0443",
+    "prompt": "Question: Calculate: 1661 - 1541\n",
+    "expression": "1661 - 1541",
+    "lhs": 1661,
+    "rhs": 1541,
+    "final_answer": "120",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0444",
+    "prompt": "Question: Calculate: 1885 - 1594\n",
+    "expression": "1885 - 1594",
+    "lhs": 1885,
+    "rhs": 1594,
+    "final_answer": "291",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0445",
+    "prompt": "Question: Calculate: 1777 - 1774\n",
+    "expression": "1777 - 1774",
+    "lhs": 1777,
+    "rhs": 1774,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0446",
+    "prompt": "Question: Calculate: 1944 - 1925\n",
+    "expression": "1944 - 1925",
+    "lhs": 1944,
+    "rhs": 1925,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0447",
+    "prompt": "Question: Calculate: 1106 - 1054\n",
+    "expression": "1106 - 1054",
+    "lhs": 1106,
+    "rhs": 1054,
+    "final_answer": "52",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0448",
+    "prompt": "Question: Calculate: 1667 - 1389\n",
+    "expression": "1667 - 1389",
+    "lhs": 1667,
+    "rhs": 1389,
+    "final_answer": "278",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0449",
+    "prompt": "Question: Calculate: 1872 - 1259\n",
+    "expression": "1872 - 1259",
+    "lhs": 1872,
+    "rhs": 1259,
+    "final_answer": "613",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0450",
+    "prompt": "Question: Calculate: 1904 - 1791\n",
+    "expression": "1904 - 1791",
+    "lhs": 1904,
+    "rhs": 1791,
+    "final_answer": "113",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0451",
+    "prompt": "Question: Calculate: 1944 - 1595\n",
+    "expression": "1944 - 1595",
+    "lhs": 1944,
+    "rhs": 1595,
+    "final_answer": "349",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0452",
+    "prompt": "Question: Calculate: 1741 - 1674\n",
+    "expression": "1741 - 1674",
+    "lhs": 1741,
+    "rhs": 1674,
+    "final_answer": "67",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0453",
+    "prompt": "Question: Calculate: 1923 - 1146\n",
+    "expression": "1923 - 1146",
+    "lhs": 1923,
+    "rhs": 1146,
+    "final_answer": "777",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0454",
+    "prompt": "Question: Calculate: 1871 - 1670\n",
+    "expression": "1871 - 1670",
+    "lhs": 1871,
+    "rhs": 1670,
+    "final_answer": "201",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0455",
+    "prompt": "Question: Calculate: 1524 - 1096\n",
+    "expression": "1524 - 1096",
+    "lhs": 1524,
+    "rhs": 1096,
+    "final_answer": "428",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0456",
+    "prompt": "Question: Calculate: 1337 - 1002\n",
+    "expression": "1337 - 1002",
+    "lhs": 1337,
+    "rhs": 1002,
+    "final_answer": "335",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0457",
+    "prompt": "Question: Calculate: 1963 - 1205\n",
+    "expression": "1963 - 1205",
+    "lhs": 1963,
+    "rhs": 1205,
+    "final_answer": "758",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0458",
+    "prompt": "Question: Calculate: 1794 - 1460\n",
+    "expression": "1794 - 1460",
+    "lhs": 1794,
+    "rhs": 1460,
+    "final_answer": "334",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0459",
+    "prompt": "Question: Calculate: 1118 - 1048\n",
+    "expression": "1118 - 1048",
+    "lhs": 1118,
+    "rhs": 1048,
+    "final_answer": "70",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0460",
+    "prompt": "Question: Calculate: 1488 - 1056\n",
+    "expression": "1488 - 1056",
+    "lhs": 1488,
+    "rhs": 1056,
+    "final_answer": "432",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0461",
+    "prompt": "Question: Calculate: 1960 - 1614\n",
+    "expression": "1960 - 1614",
+    "lhs": 1960,
+    "rhs": 1614,
+    "final_answer": "346",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0462",
+    "prompt": "Question: Calculate: 1423 - 1160\n",
+    "expression": "1423 - 1160",
+    "lhs": 1423,
+    "rhs": 1160,
+    "final_answer": "263",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0463",
+    "prompt": "Question: Calculate: 1646 - 1306\n",
+    "expression": "1646 - 1306",
+    "lhs": 1646,
+    "rhs": 1306,
+    "final_answer": "340",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0464",
+    "prompt": "Question: Calculate: 1457 - 1044\n",
+    "expression": "1457 - 1044",
+    "lhs": 1457,
+    "rhs": 1044,
+    "final_answer": "413",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0465",
+    "prompt": "Question: Calculate: 1901 - 1050\n",
+    "expression": "1901 - 1050",
+    "lhs": 1901,
+    "rhs": 1050,
+    "final_answer": "851",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0466",
+    "prompt": "Question: Calculate: 1209 - 1032\n",
+    "expression": "1209 - 1032",
+    "lhs": 1209,
+    "rhs": 1032,
+    "final_answer": "177",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0467",
+    "prompt": "Question: Calculate: 1645 - 1526\n",
+    "expression": "1645 - 1526",
+    "lhs": 1645,
+    "rhs": 1526,
+    "final_answer": "119",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0468",
+    "prompt": "Question: Calculate: 1553 - 1033\n",
+    "expression": "1553 - 1033",
+    "lhs": 1553,
+    "rhs": 1033,
+    "final_answer": "520",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0469",
+    "prompt": "Question: Calculate: 1656 - 1531\n",
+    "expression": "1656 - 1531",
+    "lhs": 1656,
+    "rhs": 1531,
+    "final_answer": "125",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0470",
+    "prompt": "Question: Calculate: 1920 - 1887\n",
+    "expression": "1920 - 1887",
+    "lhs": 1920,
+    "rhs": 1887,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0471",
+    "prompt": "Question: Calculate: 1985 - 1880\n",
+    "expression": "1985 - 1880",
+    "lhs": 1985,
+    "rhs": 1880,
+    "final_answer": "105",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0472",
+    "prompt": "Question: Calculate: 1466 - 1068\n",
+    "expression": "1466 - 1068",
+    "lhs": 1466,
+    "rhs": 1068,
+    "final_answer": "398",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0473",
+    "prompt": "Question: Calculate: 1412 - 1164\n",
+    "expression": "1412 - 1164",
+    "lhs": 1412,
+    "rhs": 1164,
+    "final_answer": "248",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0474",
+    "prompt": "Question: Calculate: 1542 - 1154\n",
+    "expression": "1542 - 1154",
+    "lhs": 1542,
+    "rhs": 1154,
+    "final_answer": "388",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0475",
+    "prompt": "Question: Calculate: 1616 - 1170\n",
+    "expression": "1616 - 1170",
+    "lhs": 1616,
+    "rhs": 1170,
+    "final_answer": "446",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0476",
+    "prompt": "Question: Calculate: 1969 - 1425\n",
+    "expression": "1969 - 1425",
+    "lhs": 1969,
+    "rhs": 1425,
+    "final_answer": "544",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0477",
+    "prompt": "Question: Calculate: 1564 - 1179\n",
+    "expression": "1564 - 1179",
+    "lhs": 1564,
+    "rhs": 1179,
+    "final_answer": "385",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0478",
+    "prompt": "Question: Calculate: 1892 - 1667\n",
+    "expression": "1892 - 1667",
+    "lhs": 1892,
+    "rhs": 1667,
+    "final_answer": "225",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0479",
+    "prompt": "Question: Calculate: 1789 - 1304\n",
+    "expression": "1789 - 1304",
+    "lhs": 1789,
+    "rhs": 1304,
+    "final_answer": "485",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0480",
+    "prompt": "Question: Calculate: 1853 - 1307\n",
+    "expression": "1853 - 1307",
+    "lhs": 1853,
+    "rhs": 1307,
+    "final_answer": "546",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0481",
+    "prompt": "Question: Calculate: 1863 - 1540\n",
+    "expression": "1863 - 1540",
+    "lhs": 1863,
+    "rhs": 1540,
+    "final_answer": "323",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0482",
+    "prompt": "Question: Calculate: 1771 - 1335\n",
+    "expression": "1771 - 1335",
+    "lhs": 1771,
+    "rhs": 1335,
+    "final_answer": "436",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0483",
+    "prompt": "Question: Calculate: 1970 - 1031\n",
+    "expression": "1970 - 1031",
+    "lhs": 1970,
+    "rhs": 1031,
+    "final_answer": "939",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0484",
+    "prompt": "Question: Calculate: 1872 - 1677\n",
+    "expression": "1872 - 1677",
+    "lhs": 1872,
+    "rhs": 1677,
+    "final_answer": "195",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0485",
+    "prompt": "Question: Calculate: 1469 - 1020\n",
+    "expression": "1469 - 1020",
+    "lhs": 1469,
+    "rhs": 1020,
+    "final_answer": "449",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0486",
+    "prompt": "Question: Calculate: 1529 - 1151\n",
+    "expression": "1529 - 1151",
+    "lhs": 1529,
+    "rhs": 1151,
+    "final_answer": "378",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0487",
+    "prompt": "Question: Calculate: 1676 - 1520\n",
+    "expression": "1676 - 1520",
+    "lhs": 1676,
+    "rhs": 1520,
+    "final_answer": "156",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0488",
+    "prompt": "Question: Calculate: 1990 - 1594\n",
+    "expression": "1990 - 1594",
+    "lhs": 1990,
+    "rhs": 1594,
+    "final_answer": "396",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0489",
+    "prompt": "Question: Calculate: 1975 - 1348\n",
+    "expression": "1975 - 1348",
+    "lhs": 1975,
+    "rhs": 1348,
+    "final_answer": "627",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0490",
+    "prompt": "Question: Calculate: 1579 - 1189\n",
+    "expression": "1579 - 1189",
+    "lhs": 1579,
+    "rhs": 1189,
+    "final_answer": "390",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0491",
+    "prompt": "Question: Calculate: 1663 - 1657\n",
+    "expression": "1663 - 1657",
+    "lhs": 1663,
+    "rhs": 1657,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0492",
+    "prompt": "Question: Calculate: 1647 - 1479\n",
+    "expression": "1647 - 1479",
+    "lhs": 1647,
+    "rhs": 1479,
+    "final_answer": "168",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0493",
+    "prompt": "Question: Calculate: 1283 - 1091\n",
+    "expression": "1283 - 1091",
+    "lhs": 1283,
+    "rhs": 1091,
+    "final_answer": "192",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0494",
+    "prompt": "Question: Calculate: 1430 - 1078\n",
+    "expression": "1430 - 1078",
+    "lhs": 1430,
+    "rhs": 1078,
+    "final_answer": "352",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0495",
+    "prompt": "Question: Calculate: 1553 - 1003\n",
+    "expression": "1553 - 1003",
+    "lhs": 1553,
+    "rhs": 1003,
+    "final_answer": "550",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0496",
+    "prompt": "Question: Calculate: 1960 - 1434\n",
+    "expression": "1960 - 1434",
+    "lhs": 1960,
+    "rhs": 1434,
+    "final_answer": "526",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0497",
+    "prompt": "Question: Calculate: 1702 - 1607\n",
+    "expression": "1702 - 1607",
+    "lhs": 1702,
+    "rhs": 1607,
+    "final_answer": "95",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0498",
+    "prompt": "Question: Calculate: 1737 - 1116\n",
+    "expression": "1737 - 1116",
+    "lhs": 1737,
+    "rhs": 1116,
+    "final_answer": "621",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0499",
+    "prompt": "Question: Calculate: 1906 - 1615\n",
+    "expression": "1906 - 1615",
+    "lhs": 1906,
+    "rhs": 1615,
+    "final_answer": "291",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e4_acid4d_0500",
+    "prompt": "Question: Calculate: 1916 - 1395\n",
+    "expression": "1916 - 1395",
+    "lhs": 1916,
+    "rhs": 1395,
+    "final_answer": "521",
+    "ans_digits": 3,
+    "operand_digits": 4
+  }
+]

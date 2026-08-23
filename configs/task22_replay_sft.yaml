@@ -1,0 +1,86 @@
+# ---------------------------------------------------------------------------
+# Task 22: Operator-Matched Replay SFT with Parameter Isolation
+#
+# Diagnosis this config responds to:
+#   Task 20 trained SUBTRACTION ONLY over [50,99] u [101,199] u [1001,1999].
+#   The compact GSM8K traces are dominated by '*' and '+' over small operands
+#   (measured: * 37.40%, + 28.97%, / 17.13%, - 16.50%; 40.85% of operands in
+#   1-9, 39.60% in 10-99). Cross-regime extrapolation was 0.00%. The arithmetic
+#   substrate therefore never covered GSM8K's operator/range distribution.
+#
+# Response:
+#   1. Interleave a distribution-matched verified arithmetic replay corpus 50/50
+#      with the compact GSM8K reasoning corpus.
+#   2. Freeze the lower half of the network so the arithmetic substrate laid
+#      down by Task 20 cannot be overwritten by GSM8K prompt statistics.
+#
+# Step budget, seed, batch shape and LR are held IDENTICAL to Task 21B
+# (artifacts/sft/compact_transfer/arithmetic_init/config.json) for comparability.
+# ---------------------------------------------------------------------------
+
+experiment:
+  name: task22_replay_sft
+  model_label: "Model E (Task 22: Replay + Parameter Isolation)"
+  output_dir: artifacts/sft/task22_replay_isolated
+  training_log: reports/task22_training_log.json
+
+init:
+  # Task 20 progressive-subtraction checkpoint. NOT modified by this run.
+  checkpoint: artifacts/sft/progressive_subtraction/best.pt
+  expected_sha256: fdcecade71afafc1857d5ee56d221d31928ae1321d0f963dc0f566482af56d5c
+
+tokenizer:
+  path: artifacts/tokenizer/tokenizer.model
+
+data:
+  # 50/50 strictly interleaved mixture: with micro_batch_size=8 every micro-batch
+  # contains exactly 4 GSM8K examples and 4 replay-arithmetic examples.
+  mixture:
+    - name: compact_gsm8k
+      train: data/gsm8k_compact_reasoning/train.jsonl
+      dev: data/gsm8k_compact_reasoning/dev.jsonl
+      weight: 0.5
+    - name: replay_arithmetic
+      train: data/replay_arithmetic/train.jsonl
+      dev: data/replay_arithmetic/dev.jsonl
+      weight: 0.5
+  max_seq_len: 512
+
+# ---------------------------------------------------------------------------
+# Parameter isolation.
+#
+# NOTE: this checkpoint has tie_word_embeddings=True, so lm_head.weight IS
+# embeddings.tok_emb.weight (verified identical storage). Freezing tok_emb
+# therefore also freezes the output projection. ln_f remains trainable, which
+# is the only remaining degree of freedom before the frozen head.
+# ---------------------------------------------------------------------------
+parameter_isolation:
+  enabled: true
+  # Trained: transformer blocks 6-11 and the final layer norm. Nothing else.
+  trainable_patterns:
+    - "^blocks\\.(6|7|8|9|10|11)\\."
+    - "^ln_f\\."
+  # Everything else is frozen (requires_grad=False and excluded from AdamW):
+  #   embeddings.tok_emb.weight  (tied to lm_head.weight)
+  #   embeddings.pos_emb.weight
+  #   blocks.0..5.*
+
+optim:
+  peak_lr: 1.0e-4        # identical to Task 21B (peak_lr=0.0001)
+  min_lr: 1.0e-5
+  warmup_steps: 50
+  weight_decay: 0.01
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  max_grad_norm: 1.0
+
+train:
+  max_steps: 650         # identical to Task 21B
+  micro_batch_size: 8
+  grad_accum_steps: 4    # effective batch 32, identical to Task 21B
+  eval_interval: 50
+  seed: 42               # identical to Task 21B
+  amp: true
+  # Best-checkpoint selection uses the mixture dev loss (the actual training
+  # objective). Per-source dev losses are logged at every eval as well.
+  select_on: mixture_dev_loss

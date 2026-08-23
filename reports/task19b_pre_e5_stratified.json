@@ -1,0 +1,511 @@
+{
+  "metadata": {
+    "task": "Task 19B-PRE Addendum: E5 Stratified Overlap Analysis",
+    "timestamp": "2026-08-20 21:46:04"
+  },
+  "overall": {
+    "total": 313,
+    "correct": 76,
+    "accuracy": 24.281150159744406
+  },
+  "by_training_overlap": {
+    "training_match": {
+      "n": 111,
+      "correct": 71,
+      "accuracy": 63.96396396396396
+    },
+    "non_training": {
+      "n": 202,
+      "correct": 5,
+      "accuracy": 2.4752475247524752
+    }
+  },
+  "by_quotient_range": {
+    "Quotient [2,25]": {
+      "n": 92,
+      "correct": 71,
+      "accuracy": 77.17391304347827
+    },
+    "Quotient [26+]": {
+      "n": 221,
+      "correct": 5,
+      "accuracy": 2.262443438914027
+    }
+  },
+  "cross_stratification": {
+    "Train + Q[2,25]": {
+      "n": 90,
+      "correct": 71,
+      "accuracy": 78.88888888888889
+    },
+    "Train + Q[26+]": {
+      "n": 21,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "NonTrain + Q[2,25]": {
+      "n": 2,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "NonTrain + Q[26+]": {
+      "n": 200,
+      "correct": 5,
+      "accuracy": 2.5
+    }
+  },
+  "non_training_correct_examples": [
+    {
+      "dividend": 217,
+      "divisor": 7,
+      "quotient": 31,
+      "in_training": false,
+      "q_range": "[26+]",
+      "gold_answer": "31",
+      "extracted_answer": "31",
+      "is_correct": true
+    },
+    {
+      "dividend": 240,
+      "divisor": 8,
+      "quotient": 30,
+      "in_training": false,
+      "q_range": "[26+]",
+      "gold_answer": "30",
+      "extracted_answer": "30",
+      "is_correct": true
+    },
+    {
+      "dividend": 250,
+      "divisor": 5,
+      "quotient": 50,
+      "in_training": false,
+      "q_range": "[26+]",
+      "gold_answer": "50",
+      "extracted_answer": "50",
+      "is_correct": true
+    },
+    {
+      "dividend": 240,
+      "divisor": 6,
+      "quotient": 40,
+      "in_training": false,
+      "q_range": "[26+]",
+      "gold_answer": "40",
+      "extracted_answer": "40",
+      "is_correct": true
+    },
+    {
+      "dividend": 246,
+      "divisor": 6,
+      "quotient": 41,
+      "in_training": false,
+      "q_range": "[26+]",
+      "gold_answer": "41",
+      "extracted_answer": "41",
+      "is_correct": true
+    }
+  ],
+  "training_incorrect_examples": [
+    {
+      "dividend": 154,
+      "divisor": 2,
+      "quotient": 77,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "77",
+      "extracted_answer": "19",
+      "is_correct": false
+    },
+    {
+      "dividend": 140,
+      "divisor": 2,
+      "quotient": 70,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "70",
+      "extracted_answer": "20",
+      "is_correct": false
+    },
+    {
+      "dividend": 144,
+      "divisor": 6,
+      "quotient": 24,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "24",
+      "extracted_answer": "22",
+      "is_correct": false
+    },
+    {
+      "dividend": 184,
+      "divisor": 8,
+      "quotient": 23,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "23",
+      "extracted_answer": "22",
+      "is_correct": false
+    },
+    {
+      "dividend": 104,
+      "divisor": 2,
+      "quotient": 52,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "52",
+      "extracted_answer": "17",
+      "is_correct": false
+    },
+    {
+      "dividend": 176,
+      "divisor": 2,
+      "quotient": 88,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "88",
+      "extracted_answer": "19",
+      "is_correct": false
+    },
+    {
+      "dividend": 112,
+      "divisor": 2,
+      "quotient": 56,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "56",
+      "extracted_answer": "16",
+      "is_correct": false
+    },
+    {
+      "dividend": 136,
+      "divisor": 8,
+      "quotient": 17,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "17",
+      "extracted_answer": "18",
+      "is_correct": false
+    },
+    {
+      "dividend": 180,
+      "divisor": 12,
+      "quotient": 15,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "15",
+      "extracted_answer": "17",
+      "is_correct": false
+    },
+    {
+      "dividend": 114,
+      "divisor": 2,
+      "quotient": 57,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "57",
+      "extracted_answer": "17",
+      "is_correct": false
+    },
+    {
+      "dividend": 174,
+      "divisor": 3,
+      "quotient": 58,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "58",
+      "extracted_answer": "22",
+      "is_correct": false
+    },
+    {
+      "dividend": 200,
+      "divisor": 8,
+      "quotient": 25,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "25",
+      "extracted_answer": "20",
+      "is_correct": false
+    },
+    {
+      "dividend": 216,
+      "divisor": 12,
+      "quotient": 18,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "18",
+      "extracted_answer": "14",
+      "is_correct": false
+    },
+    {
+      "dividend": 120,
+      "divisor": 2,
+      "quotient": 60,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "60",
+      "extracted_answer": "15",
+      "is_correct": false
+    },
+    {
+      "dividend": 132,
+      "divisor": 6,
+      "quotient": 22,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "22",
+      "extracted_answer": "19",
+      "is_correct": false
+    },
+    {
+      "dividend": 198,
+      "divisor": 11,
+      "quotient": 18,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "18",
+      "extracted_answer": "14",
+      "is_correct": false
+    },
+    {
+      "dividend": 168,
+      "divisor": 2,
+      "quotient": 84,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "84",
+      "extracted_answer": "17",
+      "is_correct": false
+    },
+    {
+      "dividend": 144,
+      "divisor": 2,
+      "quotient": 72,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "72",
+      "extracted_answer": "16",
+      "is_correct": false
+    },
+    {
+      "dividend": 123,
+      "divisor": 3,
+      "quotient": 41,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "41",
+      "extracted_answer": "19",
+      "is_correct": false
+    },
+    {
+      "dividend": 105,
+      "divisor": 3,
+      "quotient": 35,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "35",
+      "extracted_answer": "25",
+      "is_correct": false
+    },
+    {
+      "dividend": 192,
+      "divisor": 2,
+      "quotient": 96,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "96",
+      "extracted_answer": "17",
+      "is_correct": false
+    },
+    {
+      "dividend": 102,
+      "divisor": 2,
+      "quotient": 51,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "51",
+      "extracted_answer": "17",
+      "is_correct": false
+    },
+    {
+      "dividend": 153,
+      "divisor": 9,
+      "quotient": 17,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "17",
+      "extracted_answer": "13",
+      "is_correct": false
+    },
+    {
+      "dividend": 160,
+      "divisor": 2,
+      "quotient": 80,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "80",
+      "extracted_answer": "16",
+      "is_correct": false
+    },
+    {
+      "dividend": 180,
+      "divisor": 9,
+      "quotient": 20,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "20",
+      "extracted_answer": "10",
+      "is_correct": false
+    },
+    {
+      "dividend": 144,
+      "divisor": 8,
+      "quotient": 18,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "18",
+      "extracted_answer": "16",
+      "is_correct": false
+    },
+    {
+      "dividend": 154,
+      "divisor": 7,
+      "quotient": 22,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "22",
+      "extracted_answer": "21",
+      "is_correct": false
+    },
+    {
+      "dividend": 168,
+      "divisor": 8,
+      "quotient": 21,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "21",
+      "extracted_answer": "24",
+      "is_correct": false
+    },
+    {
+      "dividend": 117,
+      "divisor": 3,
+      "quotient": 39,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "39",
+      "extracted_answer": "17",
+      "is_correct": false
+    },
+    {
+      "dividend": 126,
+      "divisor": 6,
+      "quotient": 21,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "21",
+      "extracted_answer": "18",
+      "is_correct": false
+    },
+    {
+      "dividend": 120,
+      "divisor": 5,
+      "quotient": 24,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "24",
+      "extracted_answer": "20",
+      "is_correct": false
+    },
+    {
+      "dividend": 147,
+      "divisor": 3,
+      "quotient": 49,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "49",
+      "extracted_answer": "21",
+      "is_correct": false
+    },
+    {
+      "dividend": 159,
+      "divisor": 3,
+      "quotient": 53,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "53",
+      "extracted_answer": "17",
+      "is_correct": false
+    },
+    {
+      "dividend": 105,
+      "divisor": 5,
+      "quotient": 21,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "21",
+      "extracted_answer": "15",
+      "is_correct": false
+    },
+    {
+      "dividend": 207,
+      "divisor": 9,
+      "quotient": 23,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "23",
+      "extracted_answer": "21",
+      "is_correct": false
+    },
+    {
+      "dividend": 108,
+      "divisor": 6,
+      "quotient": 18,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "18",
+      "extracted_answer": "13",
+      "is_correct": false
+    },
+    {
+      "dividend": 114,
+      "divisor": 6,
+      "quotient": 19,
+      "in_training": true,
+      "q_range": "[2,25]",
+      "gold_answer": "19",
+      "extracted_answer": "13",
+      "is_correct": false
+    },
+    {
+      "dividend": 114,
+      "divisor": 3,
+      "quotient": 38,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "38",
+      "extracted_answer": "17",
+      "is_correct": false
+    },
+    {
+      "dividend": 108,
+      "divisor": 2,
+      "quotient": 54,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "54",
+      "extracted_answer": "17",
+      "is_correct": false
+    },
+    {
+      "dividend": 132,
+      "divisor": 2,
+      "quotient": 66,
+      "in_training": true,
+      "q_range": "[26+]",
+      "gold_answer": "66",
+      "extracted_answer": "16",
+      "is_correct": false
+    }
+  ]
+}

@@ -1,0 +1,5002 @@
+[
+  {
+    "example_id": "e2_ood2d_0001",
+    "prompt": "Question: Calculate: 46 - 29\n",
+    "expression": "46 - 29",
+    "lhs": 46,
+    "rhs": 29,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0002",
+    "prompt": "Question: Calculate: 24 - 5\n",
+    "expression": "24 - 5",
+    "lhs": 24,
+    "rhs": 5,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0003",
+    "prompt": "Question: Calculate: 31 - 22\n",
+    "expression": "31 - 22",
+    "lhs": 31,
+    "rhs": 22,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0004",
+    "prompt": "Question: Calculate: 38 - 29\n",
+    "expression": "38 - 29",
+    "lhs": 38,
+    "rhs": 29,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0005",
+    "prompt": "Question: Calculate: 47 - 3\n",
+    "expression": "47 - 3",
+    "lhs": 47,
+    "rhs": 3,
+    "final_answer": "44",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0006",
+    "prompt": "Question: Calculate: 49 - 29\n",
+    "expression": "49 - 29",
+    "lhs": 49,
+    "rhs": 29,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0007",
+    "prompt": "Question: Calculate: 43 - 8\n",
+    "expression": "43 - 8",
+    "lhs": 43,
+    "rhs": 8,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0008",
+    "prompt": "Question: Calculate: 12 - 9\n",
+    "expression": "12 - 9",
+    "lhs": 12,
+    "rhs": 9,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0009",
+    "prompt": "Question: Calculate: 38 - 36\n",
+    "expression": "38 - 36",
+    "lhs": 38,
+    "rhs": 36,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0010",
+    "prompt": "Question: Calculate: 26 - 21\n",
+    "expression": "26 - 21",
+    "lhs": 26,
+    "rhs": 21,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0011",
+    "prompt": "Question: Calculate: 11 - 9\n",
+    "expression": "11 - 9",
+    "lhs": 11,
+    "rhs": 9,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0012",
+    "prompt": "Question: Calculate: 47 - 10\n",
+    "expression": "47 - 10",
+    "lhs": 47,
+    "rhs": 10,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0013",
+    "prompt": "Question: Calculate: 14 - 9\n",
+    "expression": "14 - 9",
+    "lhs": 14,
+    "rhs": 9,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0014",
+    "prompt": "Question: Calculate: 18 - 15\n",
+    "expression": "18 - 15",
+    "lhs": 18,
+    "rhs": 15,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0015",
+    "prompt": "Question: Calculate: 22 - 4\n",
+    "expression": "22 - 4",
+    "lhs": 22,
+    "rhs": 4,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0016",
+    "prompt": "Question: Calculate: 26 - 20\n",
+    "expression": "26 - 20",
+    "lhs": 26,
+    "rhs": 20,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0017",
+    "prompt": "Question: Calculate: 16 - 6\n",
+    "expression": "16 - 6",
+    "lhs": 16,
+    "rhs": 6,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0018",
+    "prompt": "Question: Calculate: 15 - 9\n",
+    "expression": "15 - 9",
+    "lhs": 15,
+    "rhs": 9,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0019",
+    "prompt": "Question: Calculate: 38 - 23\n",
+    "expression": "38 - 23",
+    "lhs": 38,
+    "rhs": 23,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0020",
+    "prompt": "Question: Calculate: 36 - 27\n",
+    "expression": "36 - 27",
+    "lhs": 36,
+    "rhs": 27,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0021",
+    "prompt": "Question: Calculate: 46 - 42\n",
+    "expression": "46 - 42",
+    "lhs": 46,
+    "rhs": 42,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0022",
+    "prompt": "Question: Calculate: 33 - 18\n",
+    "expression": "33 - 18",
+    "lhs": 33,
+    "rhs": 18,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0023",
+    "prompt": "Question: Calculate: 13 - 7\n",
+    "expression": "13 - 7",
+    "lhs": 13,
+    "rhs": 7,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0024",
+    "prompt": "Question: Calculate: 12 - 11\n",
+    "expression": "12 - 11",
+    "lhs": 12,
+    "rhs": 11,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0025",
+    "prompt": "Question: Calculate: 35 - 27\n",
+    "expression": "35 - 27",
+    "lhs": 35,
+    "rhs": 27,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0026",
+    "prompt": "Question: Calculate: 47 - 4\n",
+    "expression": "47 - 4",
+    "lhs": 47,
+    "rhs": 4,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0027",
+    "prompt": "Question: Calculate: 33 - 10\n",
+    "expression": "33 - 10",
+    "lhs": 33,
+    "rhs": 10,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0028",
+    "prompt": "Question: Calculate: 18 - 3\n",
+    "expression": "18 - 3",
+    "lhs": 18,
+    "rhs": 3,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0029",
+    "prompt": "Question: Calculate: 24 - 20\n",
+    "expression": "24 - 20",
+    "lhs": 24,
+    "rhs": 20,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0030",
+    "prompt": "Question: Calculate: 46 - 26\n",
+    "expression": "46 - 26",
+    "lhs": 46,
+    "rhs": 26,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0031",
+    "prompt": "Question: Calculate: 25 - 15\n",
+    "expression": "25 - 15",
+    "lhs": 25,
+    "rhs": 15,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0032",
+    "prompt": "Question: Calculate: 27 - 17\n",
+    "expression": "27 - 17",
+    "lhs": 27,
+    "rhs": 17,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0033",
+    "prompt": "Question: Calculate: 30 - 30\n",
+    "expression": "30 - 30",
+    "lhs": 30,
+    "rhs": 30,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0034",
+    "prompt": "Question: Calculate: 35 - 6\n",
+    "expression": "35 - 6",
+    "lhs": 35,
+    "rhs": 6,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0035",
+    "prompt": "Question: Calculate: 27 - 16\n",
+    "expression": "27 - 16",
+    "lhs": 27,
+    "rhs": 16,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0036",
+    "prompt": "Question: Calculate: 39 - 27\n",
+    "expression": "39 - 27",
+    "lhs": 39,
+    "rhs": 27,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0037",
+    "prompt": "Question: Calculate: 40 - 9\n",
+    "expression": "40 - 9",
+    "lhs": 40,
+    "rhs": 9,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0038",
+    "prompt": "Question: Calculate: 30 - 24\n",
+    "expression": "30 - 24",
+    "lhs": 30,
+    "rhs": 24,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0039",
+    "prompt": "Question: Calculate: 32 - 10\n",
+    "expression": "32 - 10",
+    "lhs": 32,
+    "rhs": 10,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0040",
+    "prompt": "Question: Calculate: 36 - 15\n",
+    "expression": "36 - 15",
+    "lhs": 36,
+    "rhs": 15,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0041",
+    "prompt": "Question: Calculate: 10 - 2\n",
+    "expression": "10 - 2",
+    "lhs": 10,
+    "rhs": 2,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0042",
+    "prompt": "Question: Calculate: 29 - 24\n",
+    "expression": "29 - 24",
+    "lhs": 29,
+    "rhs": 24,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0043",
+    "prompt": "Question: Calculate: 24 - 18\n",
+    "expression": "24 - 18",
+    "lhs": 24,
+    "rhs": 18,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0044",
+    "prompt": "Question: Calculate: 22 - 17\n",
+    "expression": "22 - 17",
+    "lhs": 22,
+    "rhs": 17,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0045",
+    "prompt": "Question: Calculate: 47 - 33\n",
+    "expression": "47 - 33",
+    "lhs": 47,
+    "rhs": 33,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0046",
+    "prompt": "Question: Calculate: 28 - 28\n",
+    "expression": "28 - 28",
+    "lhs": 28,
+    "rhs": 28,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0047",
+    "prompt": "Question: Calculate: 39 - 34\n",
+    "expression": "39 - 34",
+    "lhs": 39,
+    "rhs": 34,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0048",
+    "prompt": "Question: Calculate: 39 - 8\n",
+    "expression": "39 - 8",
+    "lhs": 39,
+    "rhs": 8,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0049",
+    "prompt": "Question: Calculate: 47 - 20\n",
+    "expression": "47 - 20",
+    "lhs": 47,
+    "rhs": 20,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0050",
+    "prompt": "Question: Calculate: 37 - 9\n",
+    "expression": "37 - 9",
+    "lhs": 37,
+    "rhs": 9,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0051",
+    "prompt": "Question: Calculate: 45 - 26\n",
+    "expression": "45 - 26",
+    "lhs": 45,
+    "rhs": 26,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0052",
+    "prompt": "Question: Calculate: 32 - 26\n",
+    "expression": "32 - 26",
+    "lhs": 32,
+    "rhs": 26,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0053",
+    "prompt": "Question: Calculate: 45 - 8\n",
+    "expression": "45 - 8",
+    "lhs": 45,
+    "rhs": 8,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0054",
+    "prompt": "Question: Calculate: 46 - 39\n",
+    "expression": "46 - 39",
+    "lhs": 46,
+    "rhs": 39,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0055",
+    "prompt": "Question: Calculate: 31 - 14\n",
+    "expression": "31 - 14",
+    "lhs": 31,
+    "rhs": 14,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0056",
+    "prompt": "Question: Calculate: 25 - 24\n",
+    "expression": "25 - 24",
+    "lhs": 25,
+    "rhs": 24,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0057",
+    "prompt": "Question: Calculate: 41 - 25\n",
+    "expression": "41 - 25",
+    "lhs": 41,
+    "rhs": 25,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0058",
+    "prompt": "Question: Calculate: 27 - 7\n",
+    "expression": "27 - 7",
+    "lhs": 27,
+    "rhs": 7,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0059",
+    "prompt": "Question: Calculate: 42 - 37\n",
+    "expression": "42 - 37",
+    "lhs": 42,
+    "rhs": 37,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0060",
+    "prompt": "Question: Calculate: 40 - 6\n",
+    "expression": "40 - 6",
+    "lhs": 40,
+    "rhs": 6,
+    "final_answer": "34",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0061",
+    "prompt": "Question: Calculate: 46 - 44\n",
+    "expression": "46 - 44",
+    "lhs": 46,
+    "rhs": 44,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0062",
+    "prompt": "Question: Calculate: 33 - 6\n",
+    "expression": "33 - 6",
+    "lhs": 33,
+    "rhs": 6,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0063",
+    "prompt": "Question: Calculate: 37 - 10\n",
+    "expression": "37 - 10",
+    "lhs": 37,
+    "rhs": 10,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0064",
+    "prompt": "Question: Calculate: 44 - 35\n",
+    "expression": "44 - 35",
+    "lhs": 44,
+    "rhs": 35,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0065",
+    "prompt": "Question: Calculate: 43 - 28\n",
+    "expression": "43 - 28",
+    "lhs": 43,
+    "rhs": 28,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0066",
+    "prompt": "Question: Calculate: 32 - 29\n",
+    "expression": "32 - 29",
+    "lhs": 32,
+    "rhs": 29,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0067",
+    "prompt": "Question: Calculate: 46 - 20\n",
+    "expression": "46 - 20",
+    "lhs": 46,
+    "rhs": 20,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0068",
+    "prompt": "Question: Calculate: 45 - 6\n",
+    "expression": "45 - 6",
+    "lhs": 45,
+    "rhs": 6,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0069",
+    "prompt": "Question: Calculate: 39 - 36\n",
+    "expression": "39 - 36",
+    "lhs": 39,
+    "rhs": 36,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0070",
+    "prompt": "Question: Calculate: 28 - 10\n",
+    "expression": "28 - 10",
+    "lhs": 28,
+    "rhs": 10,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0071",
+    "prompt": "Question: Calculate: 29 - 21\n",
+    "expression": "29 - 21",
+    "lhs": 29,
+    "rhs": 21,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0072",
+    "prompt": "Question: Calculate: 20 - 3\n",
+    "expression": "20 - 3",
+    "lhs": 20,
+    "rhs": 3,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0073",
+    "prompt": "Question: Calculate: 30 - 2\n",
+    "expression": "30 - 2",
+    "lhs": 30,
+    "rhs": 2,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0074",
+    "prompt": "Question: Calculate: 15 - 7\n",
+    "expression": "15 - 7",
+    "lhs": 15,
+    "rhs": 7,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0075",
+    "prompt": "Question: Calculate: 49 - 26\n",
+    "expression": "49 - 26",
+    "lhs": 49,
+    "rhs": 26,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0076",
+    "prompt": "Question: Calculate: 45 - 16\n",
+    "expression": "45 - 16",
+    "lhs": 45,
+    "rhs": 16,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0077",
+    "prompt": "Question: Calculate: 46 - 25\n",
+    "expression": "46 - 25",
+    "lhs": 46,
+    "rhs": 25,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0078",
+    "prompt": "Question: Calculate: 49 - 12\n",
+    "expression": "49 - 12",
+    "lhs": 49,
+    "rhs": 12,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0079",
+    "prompt": "Question: Calculate: 38 - 20\n",
+    "expression": "38 - 20",
+    "lhs": 38,
+    "rhs": 20,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0080",
+    "prompt": "Question: Calculate: 30 - 12\n",
+    "expression": "30 - 12",
+    "lhs": 30,
+    "rhs": 12,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0081",
+    "prompt": "Question: Calculate: 23 - 5\n",
+    "expression": "23 - 5",
+    "lhs": 23,
+    "rhs": 5,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0082",
+    "prompt": "Question: Calculate: 26 - 26\n",
+    "expression": "26 - 26",
+    "lhs": 26,
+    "rhs": 26,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0083",
+    "prompt": "Question: Calculate: 16 - 13\n",
+    "expression": "16 - 13",
+    "lhs": 16,
+    "rhs": 13,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0084",
+    "prompt": "Question: Calculate: 44 - 26\n",
+    "expression": "44 - 26",
+    "lhs": 44,
+    "rhs": 26,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0085",
+    "prompt": "Question: Calculate: 47 - 44\n",
+    "expression": "47 - 44",
+    "lhs": 47,
+    "rhs": 44,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0086",
+    "prompt": "Question: Calculate: 20 - 15\n",
+    "expression": "20 - 15",
+    "lhs": 20,
+    "rhs": 15,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0087",
+    "prompt": "Question: Calculate: 48 - 32\n",
+    "expression": "48 - 32",
+    "lhs": 48,
+    "rhs": 32,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0088",
+    "prompt": "Question: Calculate: 48 - 30\n",
+    "expression": "48 - 30",
+    "lhs": 48,
+    "rhs": 30,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0089",
+    "prompt": "Question: Calculate: 23 - 6\n",
+    "expression": "23 - 6",
+    "lhs": 23,
+    "rhs": 6,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0090",
+    "prompt": "Question: Calculate: 35 - 17\n",
+    "expression": "35 - 17",
+    "lhs": 35,
+    "rhs": 17,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0091",
+    "prompt": "Question: Calculate: 39 - 29\n",
+    "expression": "39 - 29",
+    "lhs": 39,
+    "rhs": 29,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0092",
+    "prompt": "Question: Calculate: 36 - 28\n",
+    "expression": "36 - 28",
+    "lhs": 36,
+    "rhs": 28,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0093",
+    "prompt": "Question: Calculate: 44 - 10\n",
+    "expression": "44 - 10",
+    "lhs": 44,
+    "rhs": 10,
+    "final_answer": "34",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0094",
+    "prompt": "Question: Calculate: 29 - 28\n",
+    "expression": "29 - 28",
+    "lhs": 29,
+    "rhs": 28,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0095",
+    "prompt": "Question: Calculate: 38 - 17\n",
+    "expression": "38 - 17",
+    "lhs": 38,
+    "rhs": 17,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0096",
+    "prompt": "Question: Calculate: 17 - 15\n",
+    "expression": "17 - 15",
+    "lhs": 17,
+    "rhs": 15,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0097",
+    "prompt": "Question: Calculate: 34 - 22\n",
+    "expression": "34 - 22",
+    "lhs": 34,
+    "rhs": 22,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0098",
+    "prompt": "Question: Calculate: 41 - 20\n",
+    "expression": "41 - 20",
+    "lhs": 41,
+    "rhs": 20,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0099",
+    "prompt": "Question: Calculate: 11 - 5\n",
+    "expression": "11 - 5",
+    "lhs": 11,
+    "rhs": 5,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0100",
+    "prompt": "Question: Calculate: 31 - 30\n",
+    "expression": "31 - 30",
+    "lhs": 31,
+    "rhs": 30,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0101",
+    "prompt": "Question: Calculate: 33 - 12\n",
+    "expression": "33 - 12",
+    "lhs": 33,
+    "rhs": 12,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0102",
+    "prompt": "Question: Calculate: 37 - 23\n",
+    "expression": "37 - 23",
+    "lhs": 37,
+    "rhs": 23,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0103",
+    "prompt": "Question: Calculate: 43 - 37\n",
+    "expression": "43 - 37",
+    "lhs": 43,
+    "rhs": 37,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0104",
+    "prompt": "Question: Calculate: 45 - 2\n",
+    "expression": "45 - 2",
+    "lhs": 45,
+    "rhs": 2,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0105",
+    "prompt": "Question: Calculate: 44 - 34\n",
+    "expression": "44 - 34",
+    "lhs": 44,
+    "rhs": 34,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0106",
+    "prompt": "Question: Calculate: 47 - 45\n",
+    "expression": "47 - 45",
+    "lhs": 47,
+    "rhs": 45,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0107",
+    "prompt": "Question: Calculate: 29 - 3\n",
+    "expression": "29 - 3",
+    "lhs": 29,
+    "rhs": 3,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0108",
+    "prompt": "Question: Calculate: 19 - 17\n",
+    "expression": "19 - 17",
+    "lhs": 19,
+    "rhs": 17,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0109",
+    "prompt": "Question: Calculate: 45 - 12\n",
+    "expression": "45 - 12",
+    "lhs": 45,
+    "rhs": 12,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0110",
+    "prompt": "Question: Calculate: 27 - 20\n",
+    "expression": "27 - 20",
+    "lhs": 27,
+    "rhs": 20,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0111",
+    "prompt": "Question: Calculate: 22 - 6\n",
+    "expression": "22 - 6",
+    "lhs": 22,
+    "rhs": 6,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0112",
+    "prompt": "Question: Calculate: 35 - 33\n",
+    "expression": "35 - 33",
+    "lhs": 35,
+    "rhs": 33,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0113",
+    "prompt": "Question: Calculate: 33 - 30\n",
+    "expression": "33 - 30",
+    "lhs": 33,
+    "rhs": 30,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0114",
+    "prompt": "Question: Calculate: 45 - 32\n",
+    "expression": "45 - 32",
+    "lhs": 45,
+    "rhs": 32,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0115",
+    "prompt": "Question: Calculate: 25 - 14\n",
+    "expression": "25 - 14",
+    "lhs": 25,
+    "rhs": 14,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0116",
+    "prompt": "Question: Calculate: 22 - 9\n",
+    "expression": "22 - 9",
+    "lhs": 22,
+    "rhs": 9,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0117",
+    "prompt": "Question: Calculate: 29 - 19\n",
+    "expression": "29 - 19",
+    "lhs": 29,
+    "rhs": 19,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0118",
+    "prompt": "Question: Calculate: 45 - 7\n",
+    "expression": "45 - 7",
+    "lhs": 45,
+    "rhs": 7,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0119",
+    "prompt": "Question: Calculate: 23 - 21\n",
+    "expression": "23 - 21",
+    "lhs": 23,
+    "rhs": 21,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0120",
+    "prompt": "Question: Calculate: 24 - 17\n",
+    "expression": "24 - 17",
+    "lhs": 24,
+    "rhs": 17,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0121",
+    "prompt": "Question: Calculate: 20 - 11\n",
+    "expression": "20 - 11",
+    "lhs": 20,
+    "rhs": 11,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0122",
+    "prompt": "Question: Calculate: 19 - 14\n",
+    "expression": "19 - 14",
+    "lhs": 19,
+    "rhs": 14,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0123",
+    "prompt": "Question: Calculate: 41 - 32\n",
+    "expression": "41 - 32",
+    "lhs": 41,
+    "rhs": 32,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0124",
+    "prompt": "Question: Calculate: 22 - 18\n",
+    "expression": "22 - 18",
+    "lhs": 22,
+    "rhs": 18,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0125",
+    "prompt": "Question: Calculate: 32 - 21\n",
+    "expression": "32 - 21",
+    "lhs": 32,
+    "rhs": 21,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0126",
+    "prompt": "Question: Calculate: 35 - 20\n",
+    "expression": "35 - 20",
+    "lhs": 35,
+    "rhs": 20,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0127",
+    "prompt": "Question: Calculate: 44 - 11\n",
+    "expression": "44 - 11",
+    "lhs": 44,
+    "rhs": 11,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0128",
+    "prompt": "Question: Calculate: 45 - 35\n",
+    "expression": "45 - 35",
+    "lhs": 45,
+    "rhs": 35,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0129",
+    "prompt": "Question: Calculate: 44 - 15\n",
+    "expression": "44 - 15",
+    "lhs": 44,
+    "rhs": 15,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0130",
+    "prompt": "Question: Calculate: 44 - 33\n",
+    "expression": "44 - 33",
+    "lhs": 44,
+    "rhs": 33,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0131",
+    "prompt": "Question: Calculate: 38 - 8\n",
+    "expression": "38 - 8",
+    "lhs": 38,
+    "rhs": 8,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0132",
+    "prompt": "Question: Calculate: 43 - 24\n",
+    "expression": "43 - 24",
+    "lhs": 43,
+    "rhs": 24,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0133",
+    "prompt": "Question: Calculate: 39 - 11\n",
+    "expression": "39 - 11",
+    "lhs": 39,
+    "rhs": 11,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0134",
+    "prompt": "Question: Calculate: 28 - 7\n",
+    "expression": "28 - 7",
+    "lhs": 28,
+    "rhs": 7,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0135",
+    "prompt": "Question: Calculate: 7 - 5\n",
+    "expression": "7 - 5",
+    "lhs": 7,
+    "rhs": 5,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0136",
+    "prompt": "Question: Calculate: 25 - 25\n",
+    "expression": "25 - 25",
+    "lhs": 25,
+    "rhs": 25,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0137",
+    "prompt": "Question: Calculate: 39 - 30\n",
+    "expression": "39 - 30",
+    "lhs": 39,
+    "rhs": 30,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0138",
+    "prompt": "Question: Calculate: 38 - 35\n",
+    "expression": "38 - 35",
+    "lhs": 38,
+    "rhs": 35,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0139",
+    "prompt": "Question: Calculate: 41 - 14\n",
+    "expression": "41 - 14",
+    "lhs": 41,
+    "rhs": 14,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0140",
+    "prompt": "Question: Calculate: 27 - 26\n",
+    "expression": "27 - 26",
+    "lhs": 27,
+    "rhs": 26,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0141",
+    "prompt": "Question: Calculate: 48 - 3\n",
+    "expression": "48 - 3",
+    "lhs": 48,
+    "rhs": 3,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0142",
+    "prompt": "Question: Calculate: 49 - 44\n",
+    "expression": "49 - 44",
+    "lhs": 49,
+    "rhs": 44,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0143",
+    "prompt": "Question: Calculate: 48 - 6\n",
+    "expression": "48 - 6",
+    "lhs": 48,
+    "rhs": 6,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0144",
+    "prompt": "Question: Calculate: 49 - 36\n",
+    "expression": "49 - 36",
+    "lhs": 49,
+    "rhs": 36,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0145",
+    "prompt": "Question: Calculate: 20 - 5\n",
+    "expression": "20 - 5",
+    "lhs": 20,
+    "rhs": 5,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0146",
+    "prompt": "Question: Calculate: 36 - 14\n",
+    "expression": "36 - 14",
+    "lhs": 36,
+    "rhs": 14,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0147",
+    "prompt": "Question: Calculate: 41 - 12\n",
+    "expression": "41 - 12",
+    "lhs": 41,
+    "rhs": 12,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0148",
+    "prompt": "Question: Calculate: 35 - 14\n",
+    "expression": "35 - 14",
+    "lhs": 35,
+    "rhs": 14,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0149",
+    "prompt": "Question: Calculate: 26 - 15\n",
+    "expression": "26 - 15",
+    "lhs": 26,
+    "rhs": 15,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0150",
+    "prompt": "Question: Calculate: 39 - 4\n",
+    "expression": "39 - 4",
+    "lhs": 39,
+    "rhs": 4,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0151",
+    "prompt": "Question: Calculate: 16 - 11\n",
+    "expression": "16 - 11",
+    "lhs": 16,
+    "rhs": 11,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0152",
+    "prompt": "Question: Calculate: 5 - 3\n",
+    "expression": "5 - 3",
+    "lhs": 5,
+    "rhs": 3,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0153",
+    "prompt": "Question: Calculate: 16 - 5\n",
+    "expression": "16 - 5",
+    "lhs": 16,
+    "rhs": 5,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0154",
+    "prompt": "Question: Calculate: 37 - 24\n",
+    "expression": "37 - 24",
+    "lhs": 37,
+    "rhs": 24,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0155",
+    "prompt": "Question: Calculate: 14 - 3\n",
+    "expression": "14 - 3",
+    "lhs": 14,
+    "rhs": 3,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0156",
+    "prompt": "Question: Calculate: 49 - 48\n",
+    "expression": "49 - 48",
+    "lhs": 49,
+    "rhs": 48,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0157",
+    "prompt": "Question: Calculate: 40 - 13\n",
+    "expression": "40 - 13",
+    "lhs": 40,
+    "rhs": 13,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0158",
+    "prompt": "Question: Calculate: 25 - 6\n",
+    "expression": "25 - 6",
+    "lhs": 25,
+    "rhs": 6,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0159",
+    "prompt": "Question: Calculate: 19 - 11\n",
+    "expression": "19 - 11",
+    "lhs": 19,
+    "rhs": 11,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0160",
+    "prompt": "Question: Calculate: 42 - 6\n",
+    "expression": "42 - 6",
+    "lhs": 42,
+    "rhs": 6,
+    "final_answer": "36",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0161",
+    "prompt": "Question: Calculate: 33 - 27\n",
+    "expression": "33 - 27",
+    "lhs": 33,
+    "rhs": 27,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0162",
+    "prompt": "Question: Calculate: 38 - 34\n",
+    "expression": "38 - 34",
+    "lhs": 38,
+    "rhs": 34,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0163",
+    "prompt": "Question: Calculate: 48 - 23\n",
+    "expression": "48 - 23",
+    "lhs": 48,
+    "rhs": 23,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0164",
+    "prompt": "Question: Calculate: 44 - 43\n",
+    "expression": "44 - 43",
+    "lhs": 44,
+    "rhs": 43,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0165",
+    "prompt": "Question: Calculate: 35 - 30\n",
+    "expression": "35 - 30",
+    "lhs": 35,
+    "rhs": 30,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0166",
+    "prompt": "Question: Calculate: 31 - 25\n",
+    "expression": "31 - 25",
+    "lhs": 31,
+    "rhs": 25,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0167",
+    "prompt": "Question: Calculate: 19 - 6\n",
+    "expression": "19 - 6",
+    "lhs": 19,
+    "rhs": 6,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0168",
+    "prompt": "Question: Calculate: 22 - 8\n",
+    "expression": "22 - 8",
+    "lhs": 22,
+    "rhs": 8,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0169",
+    "prompt": "Question: Calculate: 33 - 4\n",
+    "expression": "33 - 4",
+    "lhs": 33,
+    "rhs": 4,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0170",
+    "prompt": "Question: Calculate: 10 - 4\n",
+    "expression": "10 - 4",
+    "lhs": 10,
+    "rhs": 4,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0171",
+    "prompt": "Question: Calculate: 42 - 36\n",
+    "expression": "42 - 36",
+    "lhs": 42,
+    "rhs": 36,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0172",
+    "prompt": "Question: Calculate: 48 - 2\n",
+    "expression": "48 - 2",
+    "lhs": 48,
+    "rhs": 2,
+    "final_answer": "46",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0173",
+    "prompt": "Question: Calculate: 10 - 8\n",
+    "expression": "10 - 8",
+    "lhs": 10,
+    "rhs": 8,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0174",
+    "prompt": "Question: Calculate: 42 - 12\n",
+    "expression": "42 - 12",
+    "lhs": 42,
+    "rhs": 12,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0175",
+    "prompt": "Question: Calculate: 15 - 14\n",
+    "expression": "15 - 14",
+    "lhs": 15,
+    "rhs": 14,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0176",
+    "prompt": "Question: Calculate: 15 - 12\n",
+    "expression": "15 - 12",
+    "lhs": 15,
+    "rhs": 12,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0177",
+    "prompt": "Question: Calculate: 46 - 11\n",
+    "expression": "46 - 11",
+    "lhs": 46,
+    "rhs": 11,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0178",
+    "prompt": "Question: Calculate: 23 - 9\n",
+    "expression": "23 - 9",
+    "lhs": 23,
+    "rhs": 9,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0179",
+    "prompt": "Question: Calculate: 49 - 11\n",
+    "expression": "49 - 11",
+    "lhs": 49,
+    "rhs": 11,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0180",
+    "prompt": "Question: Calculate: 47 - 25\n",
+    "expression": "47 - 25",
+    "lhs": 47,
+    "rhs": 25,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0181",
+    "prompt": "Question: Calculate: 45 - 9\n",
+    "expression": "45 - 9",
+    "lhs": 45,
+    "rhs": 9,
+    "final_answer": "36",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0182",
+    "prompt": "Question: Calculate: 33 - 15\n",
+    "expression": "33 - 15",
+    "lhs": 33,
+    "rhs": 15,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0183",
+    "prompt": "Question: Calculate: 31 - 19\n",
+    "expression": "31 - 19",
+    "lhs": 31,
+    "rhs": 19,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0184",
+    "prompt": "Question: Calculate: 22 - 10\n",
+    "expression": "22 - 10",
+    "lhs": 22,
+    "rhs": 10,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0185",
+    "prompt": "Question: Calculate: 35 - 31\n",
+    "expression": "35 - 31",
+    "lhs": 35,
+    "rhs": 31,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0186",
+    "prompt": "Question: Calculate: 37 - 13\n",
+    "expression": "37 - 13",
+    "lhs": 37,
+    "rhs": 13,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0187",
+    "prompt": "Question: Calculate: 18 - 6\n",
+    "expression": "18 - 6",
+    "lhs": 18,
+    "rhs": 6,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0188",
+    "prompt": "Question: Calculate: 22 - 16\n",
+    "expression": "22 - 16",
+    "lhs": 22,
+    "rhs": 16,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0189",
+    "prompt": "Question: Calculate: 29 - 22\n",
+    "expression": "29 - 22",
+    "lhs": 29,
+    "rhs": 22,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0190",
+    "prompt": "Question: Calculate: 18 - 9\n",
+    "expression": "18 - 9",
+    "lhs": 18,
+    "rhs": 9,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0191",
+    "prompt": "Question: Calculate: 38 - 7\n",
+    "expression": "38 - 7",
+    "lhs": 38,
+    "rhs": 7,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0192",
+    "prompt": "Question: Calculate: 24 - 14\n",
+    "expression": "24 - 14",
+    "lhs": 24,
+    "rhs": 14,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0193",
+    "prompt": "Question: Calculate: 47 - 19\n",
+    "expression": "47 - 19",
+    "lhs": 47,
+    "rhs": 19,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0194",
+    "prompt": "Question: Calculate: 37 - 12\n",
+    "expression": "37 - 12",
+    "lhs": 37,
+    "rhs": 12,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0195",
+    "prompt": "Question: Calculate: 8 - 4\n",
+    "expression": "8 - 4",
+    "lhs": 8,
+    "rhs": 4,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0196",
+    "prompt": "Question: Calculate: 34 - 23\n",
+    "expression": "34 - 23",
+    "lhs": 34,
+    "rhs": 23,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0197",
+    "prompt": "Question: Calculate: 40 - 7\n",
+    "expression": "40 - 7",
+    "lhs": 40,
+    "rhs": 7,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0198",
+    "prompt": "Question: Calculate: 29 - 29\n",
+    "expression": "29 - 29",
+    "lhs": 29,
+    "rhs": 29,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0199",
+    "prompt": "Question: Calculate: 42 - 32\n",
+    "expression": "42 - 32",
+    "lhs": 42,
+    "rhs": 32,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0200",
+    "prompt": "Question: Calculate: 20 - 8\n",
+    "expression": "20 - 8",
+    "lhs": 20,
+    "rhs": 8,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0201",
+    "prompt": "Question: Calculate: 35 - 12\n",
+    "expression": "35 - 12",
+    "lhs": 35,
+    "rhs": 12,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0202",
+    "prompt": "Question: Calculate: 25 - 20\n",
+    "expression": "25 - 20",
+    "lhs": 25,
+    "rhs": 20,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0203",
+    "prompt": "Question: Calculate: 44 - 7\n",
+    "expression": "44 - 7",
+    "lhs": 44,
+    "rhs": 7,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0204",
+    "prompt": "Question: Calculate: 38 - 14\n",
+    "expression": "38 - 14",
+    "lhs": 38,
+    "rhs": 14,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0205",
+    "prompt": "Question: Calculate: 49 - 19\n",
+    "expression": "49 - 19",
+    "lhs": 49,
+    "rhs": 19,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0206",
+    "prompt": "Question: Calculate: 27 - 22\n",
+    "expression": "27 - 22",
+    "lhs": 27,
+    "rhs": 22,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0207",
+    "prompt": "Question: Calculate: 33 - 17\n",
+    "expression": "33 - 17",
+    "lhs": 33,
+    "rhs": 17,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0208",
+    "prompt": "Question: Calculate: 9 - 9\n",
+    "expression": "9 - 9",
+    "lhs": 9,
+    "rhs": 9,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0209",
+    "prompt": "Question: Calculate: 49 - 15\n",
+    "expression": "49 - 15",
+    "lhs": 49,
+    "rhs": 15,
+    "final_answer": "34",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0210",
+    "prompt": "Question: Calculate: 19 - 10\n",
+    "expression": "19 - 10",
+    "lhs": 19,
+    "rhs": 10,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0211",
+    "prompt": "Question: Calculate: 13 - 5\n",
+    "expression": "13 - 5",
+    "lhs": 13,
+    "rhs": 5,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0212",
+    "prompt": "Question: Calculate: 21 - 19\n",
+    "expression": "21 - 19",
+    "lhs": 21,
+    "rhs": 19,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0213",
+    "prompt": "Question: Calculate: 12 - 12\n",
+    "expression": "12 - 12",
+    "lhs": 12,
+    "rhs": 12,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0214",
+    "prompt": "Question: Calculate: 34 - 31\n",
+    "expression": "34 - 31",
+    "lhs": 34,
+    "rhs": 31,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0215",
+    "prompt": "Question: Calculate: 36 - 35\n",
+    "expression": "36 - 35",
+    "lhs": 36,
+    "rhs": 35,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0216",
+    "prompt": "Question: Calculate: 48 - 46\n",
+    "expression": "48 - 46",
+    "lhs": 48,
+    "rhs": 46,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0217",
+    "prompt": "Question: Calculate: 17 - 8\n",
+    "expression": "17 - 8",
+    "lhs": 17,
+    "rhs": 8,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0218",
+    "prompt": "Question: Calculate: 43 - 13\n",
+    "expression": "43 - 13",
+    "lhs": 43,
+    "rhs": 13,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0219",
+    "prompt": "Question: Calculate: 14 - 13\n",
+    "expression": "14 - 13",
+    "lhs": 14,
+    "rhs": 13,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0220",
+    "prompt": "Question: Calculate: 45 - 14\n",
+    "expression": "45 - 14",
+    "lhs": 45,
+    "rhs": 14,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0221",
+    "prompt": "Question: Calculate: 36 - 10\n",
+    "expression": "36 - 10",
+    "lhs": 36,
+    "rhs": 10,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0222",
+    "prompt": "Question: Calculate: 37 - 37\n",
+    "expression": "37 - 37",
+    "lhs": 37,
+    "rhs": 37,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0223",
+    "prompt": "Question: Calculate: 40 - 29\n",
+    "expression": "40 - 29",
+    "lhs": 40,
+    "rhs": 29,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0224",
+    "prompt": "Question: Calculate: 42 - 9\n",
+    "expression": "42 - 9",
+    "lhs": 42,
+    "rhs": 9,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0225",
+    "prompt": "Question: Calculate: 49 - 18\n",
+    "expression": "49 - 18",
+    "lhs": 49,
+    "rhs": 18,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0226",
+    "prompt": "Question: Calculate: 44 - 30\n",
+    "expression": "44 - 30",
+    "lhs": 44,
+    "rhs": 30,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0227",
+    "prompt": "Question: Calculate: 49 - 42\n",
+    "expression": "49 - 42",
+    "lhs": 49,
+    "rhs": 42,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0228",
+    "prompt": "Question: Calculate: 40 - 15\n",
+    "expression": "40 - 15",
+    "lhs": 40,
+    "rhs": 15,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0229",
+    "prompt": "Question: Calculate: 27 - 3\n",
+    "expression": "27 - 3",
+    "lhs": 27,
+    "rhs": 3,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0230",
+    "prompt": "Question: Calculate: 49 - 22\n",
+    "expression": "49 - 22",
+    "lhs": 49,
+    "rhs": 22,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0231",
+    "prompt": "Question: Calculate: 22 - 3\n",
+    "expression": "22 - 3",
+    "lhs": 22,
+    "rhs": 3,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0232",
+    "prompt": "Question: Calculate: 49 - 46\n",
+    "expression": "49 - 46",
+    "lhs": 49,
+    "rhs": 46,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0233",
+    "prompt": "Question: Calculate: 18 - 13\n",
+    "expression": "18 - 13",
+    "lhs": 18,
+    "rhs": 13,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0234",
+    "prompt": "Question: Calculate: 30 - 9\n",
+    "expression": "30 - 9",
+    "lhs": 30,
+    "rhs": 9,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0235",
+    "prompt": "Question: Calculate: 37 - 5\n",
+    "expression": "37 - 5",
+    "lhs": 37,
+    "rhs": 5,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0236",
+    "prompt": "Question: Calculate: 37 - 30\n",
+    "expression": "37 - 30",
+    "lhs": 37,
+    "rhs": 30,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0237",
+    "prompt": "Question: Calculate: 41 - 24\n",
+    "expression": "41 - 24",
+    "lhs": 41,
+    "rhs": 24,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0238",
+    "prompt": "Question: Calculate: 18 - 18\n",
+    "expression": "18 - 18",
+    "lhs": 18,
+    "rhs": 18,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0239",
+    "prompt": "Question: Calculate: 42 - 26\n",
+    "expression": "42 - 26",
+    "lhs": 42,
+    "rhs": 26,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0240",
+    "prompt": "Question: Calculate: 16 - 16\n",
+    "expression": "16 - 16",
+    "lhs": 16,
+    "rhs": 16,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0241",
+    "prompt": "Question: Calculate: 35 - 9\n",
+    "expression": "35 - 9",
+    "lhs": 35,
+    "rhs": 9,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0242",
+    "prompt": "Question: Calculate: 15 - 5\n",
+    "expression": "15 - 5",
+    "lhs": 15,
+    "rhs": 5,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0243",
+    "prompt": "Question: Calculate: 39 - 21\n",
+    "expression": "39 - 21",
+    "lhs": 39,
+    "rhs": 21,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0244",
+    "prompt": "Question: Calculate: 46 - 27\n",
+    "expression": "46 - 27",
+    "lhs": 46,
+    "rhs": 27,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0245",
+    "prompt": "Question: Calculate: 48 - 34\n",
+    "expression": "48 - 34",
+    "lhs": 48,
+    "rhs": 34,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0246",
+    "prompt": "Question: Calculate: 44 - 42\n",
+    "expression": "44 - 42",
+    "lhs": 44,
+    "rhs": 42,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0247",
+    "prompt": "Question: Calculate: 40 - 10\n",
+    "expression": "40 - 10",
+    "lhs": 40,
+    "rhs": 10,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0248",
+    "prompt": "Question: Calculate: 39 - 13\n",
+    "expression": "39 - 13",
+    "lhs": 39,
+    "rhs": 13,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0249",
+    "prompt": "Question: Calculate: 40 - 11\n",
+    "expression": "40 - 11",
+    "lhs": 40,
+    "rhs": 11,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0250",
+    "prompt": "Question: Calculate: 29 - 15\n",
+    "expression": "29 - 15",
+    "lhs": 29,
+    "rhs": 15,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0251",
+    "prompt": "Question: Calculate: 43 - 25\n",
+    "expression": "43 - 25",
+    "lhs": 43,
+    "rhs": 25,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0252",
+    "prompt": "Question: Calculate: 43 - 39\n",
+    "expression": "43 - 39",
+    "lhs": 43,
+    "rhs": 39,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0253",
+    "prompt": "Question: Calculate: 31 - 20\n",
+    "expression": "31 - 20",
+    "lhs": 31,
+    "rhs": 20,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0254",
+    "prompt": "Question: Calculate: 34 - 10\n",
+    "expression": "34 - 10",
+    "lhs": 34,
+    "rhs": 10,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0255",
+    "prompt": "Question: Calculate: 15 - 4\n",
+    "expression": "15 - 4",
+    "lhs": 15,
+    "rhs": 4,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0256",
+    "prompt": "Question: Calculate: 36 - 19\n",
+    "expression": "36 - 19",
+    "lhs": 36,
+    "rhs": 19,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0257",
+    "prompt": "Question: Calculate: 6 - 6\n",
+    "expression": "6 - 6",
+    "lhs": 6,
+    "rhs": 6,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0258",
+    "prompt": "Question: Calculate: 43 - 43\n",
+    "expression": "43 - 43",
+    "lhs": 43,
+    "rhs": 43,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0259",
+    "prompt": "Question: Calculate: 43 - 33\n",
+    "expression": "43 - 33",
+    "lhs": 43,
+    "rhs": 33,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0260",
+    "prompt": "Question: Calculate: 14 - 8\n",
+    "expression": "14 - 8",
+    "lhs": 14,
+    "rhs": 8,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0261",
+    "prompt": "Question: Calculate: 29 - 11\n",
+    "expression": "29 - 11",
+    "lhs": 29,
+    "rhs": 11,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0262",
+    "prompt": "Question: Calculate: 44 - 6\n",
+    "expression": "44 - 6",
+    "lhs": 44,
+    "rhs": 6,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0263",
+    "prompt": "Question: Calculate: 25 - 12\n",
+    "expression": "25 - 12",
+    "lhs": 25,
+    "rhs": 12,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0264",
+    "prompt": "Question: Calculate: 34 - 7\n",
+    "expression": "34 - 7",
+    "lhs": 34,
+    "rhs": 7,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0265",
+    "prompt": "Question: Calculate: 31 - 10\n",
+    "expression": "31 - 10",
+    "lhs": 31,
+    "rhs": 10,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0266",
+    "prompt": "Question: Calculate: 39 - 3\n",
+    "expression": "39 - 3",
+    "lhs": 39,
+    "rhs": 3,
+    "final_answer": "36",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0267",
+    "prompt": "Question: Calculate: 42 - 21\n",
+    "expression": "42 - 21",
+    "lhs": 42,
+    "rhs": 21,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0268",
+    "prompt": "Question: Calculate: 22 - 11\n",
+    "expression": "22 - 11",
+    "lhs": 22,
+    "rhs": 11,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0269",
+    "prompt": "Question: Calculate: 48 - 38\n",
+    "expression": "48 - 38",
+    "lhs": 48,
+    "rhs": 38,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0270",
+    "prompt": "Question: Calculate: 25 - 18\n",
+    "expression": "25 - 18",
+    "lhs": 25,
+    "rhs": 18,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0271",
+    "prompt": "Question: Calculate: 8 - 3\n",
+    "expression": "8 - 3",
+    "lhs": 8,
+    "rhs": 3,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0272",
+    "prompt": "Question: Calculate: 20 - 20\n",
+    "expression": "20 - 20",
+    "lhs": 20,
+    "rhs": 20,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0273",
+    "prompt": "Question: Calculate: 39 - 9\n",
+    "expression": "39 - 9",
+    "lhs": 39,
+    "rhs": 9,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0274",
+    "prompt": "Question: Calculate: 46 - 24\n",
+    "expression": "46 - 24",
+    "lhs": 46,
+    "rhs": 24,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0275",
+    "prompt": "Question: Calculate: 34 - 24\n",
+    "expression": "34 - 24",
+    "lhs": 34,
+    "rhs": 24,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0276",
+    "prompt": "Question: Calculate: 43 - 16\n",
+    "expression": "43 - 16",
+    "lhs": 43,
+    "rhs": 16,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0277",
+    "prompt": "Question: Calculate: 41 - 16\n",
+    "expression": "41 - 16",
+    "lhs": 41,
+    "rhs": 16,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0278",
+    "prompt": "Question: Calculate: 41 - 9\n",
+    "expression": "41 - 9",
+    "lhs": 41,
+    "rhs": 9,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0279",
+    "prompt": "Question: Calculate: 30 - 15\n",
+    "expression": "30 - 15",
+    "lhs": 30,
+    "rhs": 15,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0280",
+    "prompt": "Question: Calculate: 39 - 24\n",
+    "expression": "39 - 24",
+    "lhs": 39,
+    "rhs": 24,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0281",
+    "prompt": "Question: Calculate: 34 - 25\n",
+    "expression": "34 - 25",
+    "lhs": 34,
+    "rhs": 25,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0282",
+    "prompt": "Question: Calculate: 40 - 23\n",
+    "expression": "40 - 23",
+    "lhs": 40,
+    "rhs": 23,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0283",
+    "prompt": "Question: Calculate: 28 - 12\n",
+    "expression": "28 - 12",
+    "lhs": 28,
+    "rhs": 12,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0284",
+    "prompt": "Question: Calculate: 21 - 17\n",
+    "expression": "21 - 17",
+    "lhs": 21,
+    "rhs": 17,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0285",
+    "prompt": "Question: Calculate: 24 - 13\n",
+    "expression": "24 - 13",
+    "lhs": 24,
+    "rhs": 13,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0286",
+    "prompt": "Question: Calculate: 49 - 30\n",
+    "expression": "49 - 30",
+    "lhs": 49,
+    "rhs": 30,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0287",
+    "prompt": "Question: Calculate: 16 - 7\n",
+    "expression": "16 - 7",
+    "lhs": 16,
+    "rhs": 7,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0288",
+    "prompt": "Question: Calculate: 27 - 15\n",
+    "expression": "27 - 15",
+    "lhs": 27,
+    "rhs": 15,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0289",
+    "prompt": "Question: Calculate: 22 - 21\n",
+    "expression": "22 - 21",
+    "lhs": 22,
+    "rhs": 21,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0290",
+    "prompt": "Question: Calculate: 48 - 35\n",
+    "expression": "48 - 35",
+    "lhs": 48,
+    "rhs": 35,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0291",
+    "prompt": "Question: Calculate: 38 - 19\n",
+    "expression": "38 - 19",
+    "lhs": 38,
+    "rhs": 19,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0292",
+    "prompt": "Question: Calculate: 39 - 22\n",
+    "expression": "39 - 22",
+    "lhs": 39,
+    "rhs": 22,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0293",
+    "prompt": "Question: Calculate: 13 - 2\n",
+    "expression": "13 - 2",
+    "lhs": 13,
+    "rhs": 2,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0294",
+    "prompt": "Question: Calculate: 5 - 4\n",
+    "expression": "5 - 4",
+    "lhs": 5,
+    "rhs": 4,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0295",
+    "prompt": "Question: Calculate: 37 - 19\n",
+    "expression": "37 - 19",
+    "lhs": 37,
+    "rhs": 19,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0296",
+    "prompt": "Question: Calculate: 31 - 6\n",
+    "expression": "31 - 6",
+    "lhs": 31,
+    "rhs": 6,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0297",
+    "prompt": "Question: Calculate: 26 - 22\n",
+    "expression": "26 - 22",
+    "lhs": 26,
+    "rhs": 22,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0298",
+    "prompt": "Question: Calculate: 21 - 8\n",
+    "expression": "21 - 8",
+    "lhs": 21,
+    "rhs": 8,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0299",
+    "prompt": "Question: Calculate: 33 - 21\n",
+    "expression": "33 - 21",
+    "lhs": 33,
+    "rhs": 21,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0300",
+    "prompt": "Question: Calculate: 31 - 4\n",
+    "expression": "31 - 4",
+    "lhs": 31,
+    "rhs": 4,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0301",
+    "prompt": "Question: Calculate: 16 - 15\n",
+    "expression": "16 - 15",
+    "lhs": 16,
+    "rhs": 15,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0302",
+    "prompt": "Question: Calculate: 45 - 25\n",
+    "expression": "45 - 25",
+    "lhs": 45,
+    "rhs": 25,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0303",
+    "prompt": "Question: Calculate: 33 - 3\n",
+    "expression": "33 - 3",
+    "lhs": 33,
+    "rhs": 3,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0304",
+    "prompt": "Question: Calculate: 21 - 4\n",
+    "expression": "21 - 4",
+    "lhs": 21,
+    "rhs": 4,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0305",
+    "prompt": "Question: Calculate: 42 - 18\n",
+    "expression": "42 - 18",
+    "lhs": 42,
+    "rhs": 18,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0306",
+    "prompt": "Question: Calculate: 36 - 5\n",
+    "expression": "36 - 5",
+    "lhs": 36,
+    "rhs": 5,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0307",
+    "prompt": "Question: Calculate: 49 - 40\n",
+    "expression": "49 - 40",
+    "lhs": 49,
+    "rhs": 40,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0308",
+    "prompt": "Question: Calculate: 43 - 10\n",
+    "expression": "43 - 10",
+    "lhs": 43,
+    "rhs": 10,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0309",
+    "prompt": "Question: Calculate: 26 - 12\n",
+    "expression": "26 - 12",
+    "lhs": 26,
+    "rhs": 12,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0310",
+    "prompt": "Question: Calculate: 44 - 29\n",
+    "expression": "44 - 29",
+    "lhs": 44,
+    "rhs": 29,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0311",
+    "prompt": "Question: Calculate: 46 - 13\n",
+    "expression": "46 - 13",
+    "lhs": 46,
+    "rhs": 13,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0312",
+    "prompt": "Question: Calculate: 35 - 8\n",
+    "expression": "35 - 8",
+    "lhs": 35,
+    "rhs": 8,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0313",
+    "prompt": "Question: Calculate: 41 - 37\n",
+    "expression": "41 - 37",
+    "lhs": 41,
+    "rhs": 37,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0314",
+    "prompt": "Question: Calculate: 39 - 32\n",
+    "expression": "39 - 32",
+    "lhs": 39,
+    "rhs": 32,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0315",
+    "prompt": "Question: Calculate: 47 - 42\n",
+    "expression": "47 - 42",
+    "lhs": 47,
+    "rhs": 42,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0316",
+    "prompt": "Question: Calculate: 25 - 21\n",
+    "expression": "25 - 21",
+    "lhs": 25,
+    "rhs": 21,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0317",
+    "prompt": "Question: Calculate: 41 - 35\n",
+    "expression": "41 - 35",
+    "lhs": 41,
+    "rhs": 35,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0318",
+    "prompt": "Question: Calculate: 32 - 27\n",
+    "expression": "32 - 27",
+    "lhs": 32,
+    "rhs": 27,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0319",
+    "prompt": "Question: Calculate: 49 - 2\n",
+    "expression": "49 - 2",
+    "lhs": 49,
+    "rhs": 2,
+    "final_answer": "47",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0320",
+    "prompt": "Question: Calculate: 26 - 18\n",
+    "expression": "26 - 18",
+    "lhs": 26,
+    "rhs": 18,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0321",
+    "prompt": "Question: Calculate: 33 - 29\n",
+    "expression": "33 - 29",
+    "lhs": 33,
+    "rhs": 29,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0322",
+    "prompt": "Question: Calculate: 28 - 22\n",
+    "expression": "28 - 22",
+    "lhs": 28,
+    "rhs": 22,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0323",
+    "prompt": "Question: Calculate: 18 - 14\n",
+    "expression": "18 - 14",
+    "lhs": 18,
+    "rhs": 14,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0324",
+    "prompt": "Question: Calculate: 46 - 8\n",
+    "expression": "46 - 8",
+    "lhs": 46,
+    "rhs": 8,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0325",
+    "prompt": "Question: Calculate: 36 - 18\n",
+    "expression": "36 - 18",
+    "lhs": 36,
+    "rhs": 18,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0326",
+    "prompt": "Question: Calculate: 42 - 2\n",
+    "expression": "42 - 2",
+    "lhs": 42,
+    "rhs": 2,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0327",
+    "prompt": "Question: Calculate: 15 - 11\n",
+    "expression": "15 - 11",
+    "lhs": 15,
+    "rhs": 11,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0328",
+    "prompt": "Question: Calculate: 48 - 11\n",
+    "expression": "48 - 11",
+    "lhs": 48,
+    "rhs": 11,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0329",
+    "prompt": "Question: Calculate: 13 - 6\n",
+    "expression": "13 - 6",
+    "lhs": 13,
+    "rhs": 6,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0330",
+    "prompt": "Question: Calculate: 44 - 21\n",
+    "expression": "44 - 21",
+    "lhs": 44,
+    "rhs": 21,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0331",
+    "prompt": "Question: Calculate: 9 - 3\n",
+    "expression": "9 - 3",
+    "lhs": 9,
+    "rhs": 3,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0332",
+    "prompt": "Question: Calculate: 47 - 26\n",
+    "expression": "47 - 26",
+    "lhs": 47,
+    "rhs": 26,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0333",
+    "prompt": "Question: Calculate: 45 - 37\n",
+    "expression": "45 - 37",
+    "lhs": 45,
+    "rhs": 37,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0334",
+    "prompt": "Question: Calculate: 49 - 9\n",
+    "expression": "49 - 9",
+    "lhs": 49,
+    "rhs": 9,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0335",
+    "prompt": "Question: Calculate: 20 - 17\n",
+    "expression": "20 - 17",
+    "lhs": 20,
+    "rhs": 17,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0336",
+    "prompt": "Question: Calculate: 18 - 5\n",
+    "expression": "18 - 5",
+    "lhs": 18,
+    "rhs": 5,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0337",
+    "prompt": "Question: Calculate: 34 - 6\n",
+    "expression": "34 - 6",
+    "lhs": 34,
+    "rhs": 6,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0338",
+    "prompt": "Question: Calculate: 23 - 14\n",
+    "expression": "23 - 14",
+    "lhs": 23,
+    "rhs": 14,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0339",
+    "prompt": "Question: Calculate: 4 - 2\n",
+    "expression": "4 - 2",
+    "lhs": 4,
+    "rhs": 2,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0340",
+    "prompt": "Question: Calculate: 23 - 11\n",
+    "expression": "23 - 11",
+    "lhs": 23,
+    "rhs": 11,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0341",
+    "prompt": "Question: Calculate: 41 - 6\n",
+    "expression": "41 - 6",
+    "lhs": 41,
+    "rhs": 6,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0342",
+    "prompt": "Question: Calculate: 44 - 40\n",
+    "expression": "44 - 40",
+    "lhs": 44,
+    "rhs": 40,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0343",
+    "prompt": "Question: Calculate: 19 - 9\n",
+    "expression": "19 - 9",
+    "lhs": 19,
+    "rhs": 9,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0344",
+    "prompt": "Question: Calculate: 32 - 16\n",
+    "expression": "32 - 16",
+    "lhs": 32,
+    "rhs": 16,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0345",
+    "prompt": "Question: Calculate: 49 - 33\n",
+    "expression": "49 - 33",
+    "lhs": 49,
+    "rhs": 33,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0346",
+    "prompt": "Question: Calculate: 42 - 7\n",
+    "expression": "42 - 7",
+    "lhs": 42,
+    "rhs": 7,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0347",
+    "prompt": "Question: Calculate: 37 - 14\n",
+    "expression": "37 - 14",
+    "lhs": 37,
+    "rhs": 14,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0348",
+    "prompt": "Question: Calculate: 38 - 16\n",
+    "expression": "38 - 16",
+    "lhs": 38,
+    "rhs": 16,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0349",
+    "prompt": "Question: Calculate: 18 - 17\n",
+    "expression": "18 - 17",
+    "lhs": 18,
+    "rhs": 17,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0350",
+    "prompt": "Question: Calculate: 41 - 38\n",
+    "expression": "41 - 38",
+    "lhs": 41,
+    "rhs": 38,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0351",
+    "prompt": "Question: Calculate: 21 - 18\n",
+    "expression": "21 - 18",
+    "lhs": 21,
+    "rhs": 18,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0352",
+    "prompt": "Question: Calculate: 49 - 13\n",
+    "expression": "49 - 13",
+    "lhs": 49,
+    "rhs": 13,
+    "final_answer": "36",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0353",
+    "prompt": "Question: Calculate: 37 - 26\n",
+    "expression": "37 - 26",
+    "lhs": 37,
+    "rhs": 26,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0354",
+    "prompt": "Question: Calculate: 12 - 4\n",
+    "expression": "12 - 4",
+    "lhs": 12,
+    "rhs": 4,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0355",
+    "prompt": "Question: Calculate: 47 - 38\n",
+    "expression": "47 - 38",
+    "lhs": 47,
+    "rhs": 38,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0356",
+    "prompt": "Question: Calculate: 46 - 34\n",
+    "expression": "46 - 34",
+    "lhs": 46,
+    "rhs": 34,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0357",
+    "prompt": "Question: Calculate: 49 - 6\n",
+    "expression": "49 - 6",
+    "lhs": 49,
+    "rhs": 6,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0358",
+    "prompt": "Question: Calculate: 41 - 3\n",
+    "expression": "41 - 3",
+    "lhs": 41,
+    "rhs": 3,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0359",
+    "prompt": "Question: Calculate: 31 - 15\n",
+    "expression": "31 - 15",
+    "lhs": 31,
+    "rhs": 15,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0360",
+    "prompt": "Question: Calculate: 43 - 29\n",
+    "expression": "43 - 29",
+    "lhs": 43,
+    "rhs": 29,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0361",
+    "prompt": "Question: Calculate: 44 - 38\n",
+    "expression": "44 - 38",
+    "lhs": 44,
+    "rhs": 38,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0362",
+    "prompt": "Question: Calculate: 36 - 8\n",
+    "expression": "36 - 8",
+    "lhs": 36,
+    "rhs": 8,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0363",
+    "prompt": "Question: Calculate: 48 - 27\n",
+    "expression": "48 - 27",
+    "lhs": 48,
+    "rhs": 27,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0364",
+    "prompt": "Question: Calculate: 30 - 26\n",
+    "expression": "30 - 26",
+    "lhs": 30,
+    "rhs": 26,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0365",
+    "prompt": "Question: Calculate: 31 - 16\n",
+    "expression": "31 - 16",
+    "lhs": 31,
+    "rhs": 16,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0366",
+    "prompt": "Question: Calculate: 47 - 36\n",
+    "expression": "47 - 36",
+    "lhs": 47,
+    "rhs": 36,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0367",
+    "prompt": "Question: Calculate: 44 - 37\n",
+    "expression": "44 - 37",
+    "lhs": 44,
+    "rhs": 37,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0368",
+    "prompt": "Question: Calculate: 20 - 2\n",
+    "expression": "20 - 2",
+    "lhs": 20,
+    "rhs": 2,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0369",
+    "prompt": "Question: Calculate: 46 - 14\n",
+    "expression": "46 - 14",
+    "lhs": 46,
+    "rhs": 14,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0370",
+    "prompt": "Question: Calculate: 40 - 30\n",
+    "expression": "40 - 30",
+    "lhs": 40,
+    "rhs": 30,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0371",
+    "prompt": "Question: Calculate: 40 - 8\n",
+    "expression": "40 - 8",
+    "lhs": 40,
+    "rhs": 8,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0372",
+    "prompt": "Question: Calculate: 44 - 9\n",
+    "expression": "44 - 9",
+    "lhs": 44,
+    "rhs": 9,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0373",
+    "prompt": "Question: Calculate: 46 - 38\n",
+    "expression": "46 - 38",
+    "lhs": 46,
+    "rhs": 38,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0374",
+    "prompt": "Question: Calculate: 45 - 44\n",
+    "expression": "45 - 44",
+    "lhs": 45,
+    "rhs": 44,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0375",
+    "prompt": "Question: Calculate: 35 - 32\n",
+    "expression": "35 - 32",
+    "lhs": 35,
+    "rhs": 32,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0376",
+    "prompt": "Question: Calculate: 29 - 7\n",
+    "expression": "29 - 7",
+    "lhs": 29,
+    "rhs": 7,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0377",
+    "prompt": "Question: Calculate: 10 - 6\n",
+    "expression": "10 - 6",
+    "lhs": 10,
+    "rhs": 6,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0378",
+    "prompt": "Question: Calculate: 16 - 10\n",
+    "expression": "16 - 10",
+    "lhs": 16,
+    "rhs": 10,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0379",
+    "prompt": "Question: Calculate: 30 - 23\n",
+    "expression": "30 - 23",
+    "lhs": 30,
+    "rhs": 23,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0380",
+    "prompt": "Question: Calculate: 44 - 12\n",
+    "expression": "44 - 12",
+    "lhs": 44,
+    "rhs": 12,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0381",
+    "prompt": "Question: Calculate: 40 - 16\n",
+    "expression": "40 - 16",
+    "lhs": 40,
+    "rhs": 16,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0382",
+    "prompt": "Question: Calculate: 28 - 21\n",
+    "expression": "28 - 21",
+    "lhs": 28,
+    "rhs": 21,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0383",
+    "prompt": "Question: Calculate: 37 - 8\n",
+    "expression": "37 - 8",
+    "lhs": 37,
+    "rhs": 8,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0384",
+    "prompt": "Question: Calculate: 46 - 28\n",
+    "expression": "46 - 28",
+    "lhs": 46,
+    "rhs": 28,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0385",
+    "prompt": "Question: Calculate: 39 - 38\n",
+    "expression": "39 - 38",
+    "lhs": 39,
+    "rhs": 38,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0386",
+    "prompt": "Question: Calculate: 44 - 13\n",
+    "expression": "44 - 13",
+    "lhs": 44,
+    "rhs": 13,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0387",
+    "prompt": "Question: Calculate: 45 - 28\n",
+    "expression": "45 - 28",
+    "lhs": 45,
+    "rhs": 28,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0388",
+    "prompt": "Question: Calculate: 42 - 13\n",
+    "expression": "42 - 13",
+    "lhs": 42,
+    "rhs": 13,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0389",
+    "prompt": "Question: Calculate: 28 - 17\n",
+    "expression": "28 - 17",
+    "lhs": 28,
+    "rhs": 17,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0390",
+    "prompt": "Question: Calculate: 45 - 13\n",
+    "expression": "45 - 13",
+    "lhs": 45,
+    "rhs": 13,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0391",
+    "prompt": "Question: Calculate: 29 - 26\n",
+    "expression": "29 - 26",
+    "lhs": 29,
+    "rhs": 26,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0392",
+    "prompt": "Question: Calculate: 44 - 41\n",
+    "expression": "44 - 41",
+    "lhs": 44,
+    "rhs": 41,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0393",
+    "prompt": "Question: Calculate: 35 - 3\n",
+    "expression": "35 - 3",
+    "lhs": 35,
+    "rhs": 3,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0394",
+    "prompt": "Question: Calculate: 29 - 23\n",
+    "expression": "29 - 23",
+    "lhs": 29,
+    "rhs": 23,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0395",
+    "prompt": "Question: Calculate: 23 - 18\n",
+    "expression": "23 - 18",
+    "lhs": 23,
+    "rhs": 18,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0396",
+    "prompt": "Question: Calculate: 48 - 42\n",
+    "expression": "48 - 42",
+    "lhs": 48,
+    "rhs": 42,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0397",
+    "prompt": "Question: Calculate: 45 - 19\n",
+    "expression": "45 - 19",
+    "lhs": 45,
+    "rhs": 19,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0398",
+    "prompt": "Question: Calculate: 28 - 19\n",
+    "expression": "28 - 19",
+    "lhs": 28,
+    "rhs": 19,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0399",
+    "prompt": "Question: Calculate: 24 - 7\n",
+    "expression": "24 - 7",
+    "lhs": 24,
+    "rhs": 7,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0400",
+    "prompt": "Question: Calculate: 8 - 2\n",
+    "expression": "8 - 2",
+    "lhs": 8,
+    "rhs": 2,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0401",
+    "prompt": "Question: Calculate: 23 - 20\n",
+    "expression": "23 - 20",
+    "lhs": 23,
+    "rhs": 20,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0402",
+    "prompt": "Question: Calculate: 22 - 13\n",
+    "expression": "22 - 13",
+    "lhs": 22,
+    "rhs": 13,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0403",
+    "prompt": "Question: Calculate: 31 - 27\n",
+    "expression": "31 - 27",
+    "lhs": 31,
+    "rhs": 27,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0404",
+    "prompt": "Question: Calculate: 41 - 11\n",
+    "expression": "41 - 11",
+    "lhs": 41,
+    "rhs": 11,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0405",
+    "prompt": "Question: Calculate: 8 - 8\n",
+    "expression": "8 - 8",
+    "lhs": 8,
+    "rhs": 8,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0406",
+    "prompt": "Question: Calculate: 43 - 36\n",
+    "expression": "43 - 36",
+    "lhs": 43,
+    "rhs": 36,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0407",
+    "prompt": "Question: Calculate: 39 - 10\n",
+    "expression": "39 - 10",
+    "lhs": 39,
+    "rhs": 10,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0408",
+    "prompt": "Question: Calculate: 31 - 9\n",
+    "expression": "31 - 9",
+    "lhs": 31,
+    "rhs": 9,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0409",
+    "prompt": "Question: Calculate: 37 - 20\n",
+    "expression": "37 - 20",
+    "lhs": 37,
+    "rhs": 20,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0410",
+    "prompt": "Question: Calculate: 45 - 41\n",
+    "expression": "45 - 41",
+    "lhs": 45,
+    "rhs": 41,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0411",
+    "prompt": "Question: Calculate: 37 - 15\n",
+    "expression": "37 - 15",
+    "lhs": 37,
+    "rhs": 15,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0412",
+    "prompt": "Question: Calculate: 32 - 13\n",
+    "expression": "32 - 13",
+    "lhs": 32,
+    "rhs": 13,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0413",
+    "prompt": "Question: Calculate: 33 - 22\n",
+    "expression": "33 - 22",
+    "lhs": 33,
+    "rhs": 22,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0414",
+    "prompt": "Question: Calculate: 9 - 2\n",
+    "expression": "9 - 2",
+    "lhs": 9,
+    "rhs": 2,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0415",
+    "prompt": "Question: Calculate: 38 - 38\n",
+    "expression": "38 - 38",
+    "lhs": 38,
+    "rhs": 38,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0416",
+    "prompt": "Question: Calculate: 34 - 18\n",
+    "expression": "34 - 18",
+    "lhs": 34,
+    "rhs": 18,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0417",
+    "prompt": "Question: Calculate: 22 - 5\n",
+    "expression": "22 - 5",
+    "lhs": 22,
+    "rhs": 5,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0418",
+    "prompt": "Question: Calculate: 31 - 18\n",
+    "expression": "31 - 18",
+    "lhs": 31,
+    "rhs": 18,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0419",
+    "prompt": "Question: Calculate: 44 - 32\n",
+    "expression": "44 - 32",
+    "lhs": 44,
+    "rhs": 32,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0420",
+    "prompt": "Question: Calculate: 40 - 2\n",
+    "expression": "40 - 2",
+    "lhs": 40,
+    "rhs": 2,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0421",
+    "prompt": "Question: Calculate: 28 - 20\n",
+    "expression": "28 - 20",
+    "lhs": 28,
+    "rhs": 20,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0422",
+    "prompt": "Question: Calculate: 40 - 20\n",
+    "expression": "40 - 20",
+    "lhs": 40,
+    "rhs": 20,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0423",
+    "prompt": "Question: Calculate: 16 - 2\n",
+    "expression": "16 - 2",
+    "lhs": 16,
+    "rhs": 2,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0424",
+    "prompt": "Question: Calculate: 38 - 25\n",
+    "expression": "38 - 25",
+    "lhs": 38,
+    "rhs": 25,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0425",
+    "prompt": "Question: Calculate: 48 - 25\n",
+    "expression": "48 - 25",
+    "lhs": 48,
+    "rhs": 25,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0426",
+    "prompt": "Question: Calculate: 44 - 3\n",
+    "expression": "44 - 3",
+    "lhs": 44,
+    "rhs": 3,
+    "final_answer": "41",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0427",
+    "prompt": "Question: Calculate: 33 - 24\n",
+    "expression": "33 - 24",
+    "lhs": 33,
+    "rhs": 24,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0428",
+    "prompt": "Question: Calculate: 18 - 10\n",
+    "expression": "18 - 10",
+    "lhs": 18,
+    "rhs": 10,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0429",
+    "prompt": "Question: Calculate: 33 - 20\n",
+    "expression": "33 - 20",
+    "lhs": 33,
+    "rhs": 20,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0430",
+    "prompt": "Question: Calculate: 35 - 15\n",
+    "expression": "35 - 15",
+    "lhs": 35,
+    "rhs": 15,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0431",
+    "prompt": "Question: Calculate: 41 - 7\n",
+    "expression": "41 - 7",
+    "lhs": 41,
+    "rhs": 7,
+    "final_answer": "34",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0432",
+    "prompt": "Question: Calculate: 28 - 8\n",
+    "expression": "28 - 8",
+    "lhs": 28,
+    "rhs": 8,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0433",
+    "prompt": "Question: Calculate: 26 - 13\n",
+    "expression": "26 - 13",
+    "lhs": 26,
+    "rhs": 13,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0434",
+    "prompt": "Question: Calculate: 46 - 37\n",
+    "expression": "46 - 37",
+    "lhs": 46,
+    "rhs": 37,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0435",
+    "prompt": "Question: Calculate: 48 - 12\n",
+    "expression": "48 - 12",
+    "lhs": 48,
+    "rhs": 12,
+    "final_answer": "36",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0436",
+    "prompt": "Question: Calculate: 21 - 12\n",
+    "expression": "21 - 12",
+    "lhs": 21,
+    "rhs": 12,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0437",
+    "prompt": "Question: Calculate: 45 - 4\n",
+    "expression": "45 - 4",
+    "lhs": 45,
+    "rhs": 4,
+    "final_answer": "41",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0438",
+    "prompt": "Question: Calculate: 39 - 31\n",
+    "expression": "39 - 31",
+    "lhs": 39,
+    "rhs": 31,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0439",
+    "prompt": "Question: Calculate: 44 - 16\n",
+    "expression": "44 - 16",
+    "lhs": 44,
+    "rhs": 16,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0440",
+    "prompt": "Question: Calculate: 24 - 22\n",
+    "expression": "24 - 22",
+    "lhs": 24,
+    "rhs": 22,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0441",
+    "prompt": "Question: Calculate: 42 - 14\n",
+    "expression": "42 - 14",
+    "lhs": 42,
+    "rhs": 14,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0442",
+    "prompt": "Question: Calculate: 37 - 21\n",
+    "expression": "37 - 21",
+    "lhs": 37,
+    "rhs": 21,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0443",
+    "prompt": "Question: Calculate: 38 - 33\n",
+    "expression": "38 - 33",
+    "lhs": 38,
+    "rhs": 33,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0444",
+    "prompt": "Question: Calculate: 29 - 4\n",
+    "expression": "29 - 4",
+    "lhs": 29,
+    "rhs": 4,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0445",
+    "prompt": "Question: Calculate: 41 - 23\n",
+    "expression": "41 - 23",
+    "lhs": 41,
+    "rhs": 23,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0446",
+    "prompt": "Question: Calculate: 26 - 23\n",
+    "expression": "26 - 23",
+    "lhs": 26,
+    "rhs": 23,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0447",
+    "prompt": "Question: Calculate: 48 - 20\n",
+    "expression": "48 - 20",
+    "lhs": 48,
+    "rhs": 20,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0448",
+    "prompt": "Question: Calculate: 27 - 27\n",
+    "expression": "27 - 27",
+    "lhs": 27,
+    "rhs": 27,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0449",
+    "prompt": "Question: Calculate: 42 - 19\n",
+    "expression": "42 - 19",
+    "lhs": 42,
+    "rhs": 19,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0450",
+    "prompt": "Question: Calculate: 41 - 21\n",
+    "expression": "41 - 21",
+    "lhs": 41,
+    "rhs": 21,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0451",
+    "prompt": "Question: Calculate: 41 - 34\n",
+    "expression": "41 - 34",
+    "lhs": 41,
+    "rhs": 34,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0452",
+    "prompt": "Question: Calculate: 33 - 5\n",
+    "expression": "33 - 5",
+    "lhs": 33,
+    "rhs": 5,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0453",
+    "prompt": "Question: Calculate: 40 - 28\n",
+    "expression": "40 - 28",
+    "lhs": 40,
+    "rhs": 28,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0454",
+    "prompt": "Question: Calculate: 36 - 7\n",
+    "expression": "36 - 7",
+    "lhs": 36,
+    "rhs": 7,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0455",
+    "prompt": "Question: Calculate: 44 - 17\n",
+    "expression": "44 - 17",
+    "lhs": 44,
+    "rhs": 17,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0456",
+    "prompt": "Question: Calculate: 7 - 7\n",
+    "expression": "7 - 7",
+    "lhs": 7,
+    "rhs": 7,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0457",
+    "prompt": "Question: Calculate: 49 - 23\n",
+    "expression": "49 - 23",
+    "lhs": 49,
+    "rhs": 23,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0458",
+    "prompt": "Question: Calculate: 36 - 33\n",
+    "expression": "36 - 33",
+    "lhs": 36,
+    "rhs": 33,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0459",
+    "prompt": "Question: Calculate: 33 - 32\n",
+    "expression": "33 - 32",
+    "lhs": 33,
+    "rhs": 32,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0460",
+    "prompt": "Question: Calculate: 14 - 6\n",
+    "expression": "14 - 6",
+    "lhs": 14,
+    "rhs": 6,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0461",
+    "prompt": "Question: Calculate: 40 - 17\n",
+    "expression": "40 - 17",
+    "lhs": 40,
+    "rhs": 17,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0462",
+    "prompt": "Question: Calculate: 35 - 25\n",
+    "expression": "35 - 25",
+    "lhs": 35,
+    "rhs": 25,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0463",
+    "prompt": "Question: Calculate: 21 - 7\n",
+    "expression": "21 - 7",
+    "lhs": 21,
+    "rhs": 7,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0464",
+    "prompt": "Question: Calculate: 26 - 3\n",
+    "expression": "26 - 3",
+    "lhs": 26,
+    "rhs": 3,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0465",
+    "prompt": "Question: Calculate: 16 - 4\n",
+    "expression": "16 - 4",
+    "lhs": 16,
+    "rhs": 4,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0466",
+    "prompt": "Question: Calculate: 27 - 25\n",
+    "expression": "27 - 25",
+    "lhs": 27,
+    "rhs": 25,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0467",
+    "prompt": "Question: Calculate: 39 - 19\n",
+    "expression": "39 - 19",
+    "lhs": 39,
+    "rhs": 19,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0468",
+    "prompt": "Question: Calculate: 34 - 16\n",
+    "expression": "34 - 16",
+    "lhs": 34,
+    "rhs": 16,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0469",
+    "prompt": "Question: Calculate: 39 - 23\n",
+    "expression": "39 - 23",
+    "lhs": 39,
+    "rhs": 23,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0470",
+    "prompt": "Question: Calculate: 49 - 21\n",
+    "expression": "49 - 21",
+    "lhs": 49,
+    "rhs": 21,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0471",
+    "prompt": "Question: Calculate: 43 - 34\n",
+    "expression": "43 - 34",
+    "lhs": 43,
+    "rhs": 34,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0472",
+    "prompt": "Question: Calculate: 13 - 12\n",
+    "expression": "13 - 12",
+    "lhs": 13,
+    "rhs": 12,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0473",
+    "prompt": "Question: Calculate: 25 - 5\n",
+    "expression": "25 - 5",
+    "lhs": 25,
+    "rhs": 5,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0474",
+    "prompt": "Question: Calculate: 28 - 15\n",
+    "expression": "28 - 15",
+    "lhs": 28,
+    "rhs": 15,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0475",
+    "prompt": "Question: Calculate: 29 - 27\n",
+    "expression": "29 - 27",
+    "lhs": 29,
+    "rhs": 27,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0476",
+    "prompt": "Question: Calculate: 32 - 9\n",
+    "expression": "32 - 9",
+    "lhs": 32,
+    "rhs": 9,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0477",
+    "prompt": "Question: Calculate: 26 - 11\n",
+    "expression": "26 - 11",
+    "lhs": 26,
+    "rhs": 11,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0478",
+    "prompt": "Question: Calculate: 35 - 22\n",
+    "expression": "35 - 22",
+    "lhs": 35,
+    "rhs": 22,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0479",
+    "prompt": "Question: Calculate: 29 - 13\n",
+    "expression": "29 - 13",
+    "lhs": 29,
+    "rhs": 13,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0480",
+    "prompt": "Question: Calculate: 43 - 4\n",
+    "expression": "43 - 4",
+    "lhs": 43,
+    "rhs": 4,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0481",
+    "prompt": "Question: Calculate: 18 - 7\n",
+    "expression": "18 - 7",
+    "lhs": 18,
+    "rhs": 7,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0482",
+    "prompt": "Question: Calculate: 25 - 2\n",
+    "expression": "25 - 2",
+    "lhs": 25,
+    "rhs": 2,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0483",
+    "prompt": "Question: Calculate: 42 - 35\n",
+    "expression": "42 - 35",
+    "lhs": 42,
+    "rhs": 35,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0484",
+    "prompt": "Question: Calculate: 47 - 34\n",
+    "expression": "47 - 34",
+    "lhs": 47,
+    "rhs": 34,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0485",
+    "prompt": "Question: Calculate: 31 - 24\n",
+    "expression": "31 - 24",
+    "lhs": 31,
+    "rhs": 24,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0486",
+    "prompt": "Question: Calculate: 37 - 25\n",
+    "expression": "37 - 25",
+    "lhs": 37,
+    "rhs": 25,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0487",
+    "prompt": "Question: Calculate: 43 - 9\n",
+    "expression": "43 - 9",
+    "lhs": 43,
+    "rhs": 9,
+    "final_answer": "34",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0488",
+    "prompt": "Question: Calculate: 47 - 23\n",
+    "expression": "47 - 23",
+    "lhs": 47,
+    "rhs": 23,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0489",
+    "prompt": "Question: Calculate: 48 - 39\n",
+    "expression": "48 - 39",
+    "lhs": 48,
+    "rhs": 39,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0490",
+    "prompt": "Question: Calculate: 38 - 21\n",
+    "expression": "38 - 21",
+    "lhs": 38,
+    "rhs": 21,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0491",
+    "prompt": "Question: Calculate: 45 - 36\n",
+    "expression": "45 - 36",
+    "lhs": 45,
+    "rhs": 36,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0492",
+    "prompt": "Question: Calculate: 48 - 10\n",
+    "expression": "48 - 10",
+    "lhs": 48,
+    "rhs": 10,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0493",
+    "prompt": "Question: Calculate: 48 - 21\n",
+    "expression": "48 - 21",
+    "lhs": 48,
+    "rhs": 21,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0494",
+    "prompt": "Question: Calculate: 34 - 34\n",
+    "expression": "34 - 34",
+    "lhs": 34,
+    "rhs": 34,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0495",
+    "prompt": "Question: Calculate: 44 - 23\n",
+    "expression": "44 - 23",
+    "lhs": 44,
+    "rhs": 23,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0496",
+    "prompt": "Question: Calculate: 18 - 11\n",
+    "expression": "18 - 11",
+    "lhs": 18,
+    "rhs": 11,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0497",
+    "prompt": "Question: Calculate: 8 - 6\n",
+    "expression": "8 - 6",
+    "lhs": 8,
+    "rhs": 6,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 1
+  },
+  {
+    "example_id": "e2_ood2d_0498",
+    "prompt": "Question: Calculate: 33 - 26\n",
+    "expression": "33 - 26",
+    "lhs": 33,
+    "rhs": 26,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0499",
+    "prompt": "Question: Calculate: 23 - 13\n",
+    "expression": "23 - 13",
+    "lhs": 23,
+    "rhs": 13,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 2
+  },
+  {
+    "example_id": "e2_ood2d_0500",
+    "prompt": "Question: Calculate: 40 - 22\n",
+    "expression": "40 - 22",
+    "lhs": 40,
+    "rhs": 22,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 2
+  }
+]

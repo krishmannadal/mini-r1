@@ -1,0 +1,72 @@
+{
+  "dataset_name": "Task 19C Clean Subtraction SFT",
+  "seed": 42,
+  "splits": {
+    "train": {
+      "file": "data/subtraction_sft\\train.jsonl",
+      "count": 12000,
+      "unique_pairs": 1000,
+      "sha256": "eb1eaea324f14f1089acf0d5bab9f232212d8ac931f696a884a3e9a7b0c0b64a",
+      "answer_digit_distribution": {
+        "2": 7740,
+        "1": 4260
+      }
+    },
+    "dev": {
+      "file": "data/subtraction_sft\\dev.jsonl",
+      "count": 1200,
+      "unique_pairs": 688,
+      "sha256": "b7e0246a806f871b675df64af1abfae9050c063ed38365f344a7e03a8dcc1284",
+      "answer_digit_distribution": {
+        "1": 409,
+        "2": 791
+      }
+    },
+    "e1_iid_holdout": {
+      "file": "data/subtraction_sft\\eval_e1_iid_holdout.json",
+      "count": 500,
+      "unique_pairs": 275,
+      "sha256": "868c981af2f87d93c51003ea92dbcc7e3e1ffe83e0ac989eef8cff922f0f704c",
+      "answer_digit_distribution": {
+        "1": 182,
+        "2": 318
+      }
+    },
+    "e2_heldout_2digit": {
+      "file": "data/subtraction_sft\\eval_e2_heldout_2digit.json",
+      "count": 500,
+      "unique_pairs": 500,
+      "sha256": "1b605e7df3c7171b6f09a137ce6e2f1e5fefcf9412a0260b11f640ed6c65c71c",
+      "answer_digit_distribution": {
+        "2": 314,
+        "1": 186
+      }
+    },
+    "e3_ood_3digit": {
+      "file": "data/subtraction_sft\\eval_e3_ood_3digit.json",
+      "count": 500,
+      "unique_pairs": 500,
+      "sha256": "efa42f9d2535f4d37f11ec117f7d4aa844ca694c1435afdee4cfa545bd233b83",
+      "answer_digit_distribution": {
+        "1": 93,
+        "2": 407
+      }
+    },
+    "e3_ext_3digit_ans": {
+      "file": "data/subtraction_sft\\eval_e3_ext_3digit_ans.json",
+      "count": 500,
+      "unique_pairs": 500,
+      "sha256": "28b1afa5584d6dc0d498af8761e990a56ce2a3b9f85175ed08894841a36d63df",
+      "answer_digit_distribution": {
+        "3": 500
+      }
+    }
+  },
+  "overlap_audit": {
+    "e1_overlap": 0,
+    "e2_overlap": 0,
+    "e3_overlap": 0,
+    "e3_ext_overlap": 0,
+    "status": "PASSED_ZERO_OVERLAP"
+  }
+}

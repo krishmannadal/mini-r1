@@ -1,0 +1,122 @@
+# ===========================================================================
+# Mini-R1 .gitignore
+#
+# Repository is ~55 GB on disk; ~54 GB of that is model checkpoints (.pt) and
+# regenerable pretraining shards. Only ~82 MB belongs in normal Git.
+#
+# NOTHING IS DELETED BY THIS FILE. Ignored paths remain on local disk.
+# See reports/github_repository_audit.md for the full classification.
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.egg-info/
+*.egg
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------------------
+# Virtual environments
+# ---------------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+
+# ---------------------------------------------------------------------------
+# IDE / editor / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Secrets — never commit
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+.netrc
+.git-credentials
+secrets.json
+
+# ---------------------------------------------------------------------------
+# LARGE TRAINING ARTIFACTS  (~54 GB, local-only)
+#
+# runs/        19 GB  per-step SFT checkpoints from Task 15C
+# checkpoints/ 2.4 GB base pretraining checkpoints (step_28000/29000/30000/latest)
+# artifacts/   32 GB  SFT + sweep + smoke + dry-run checkpoints
+#
+# The release checkpoints are distributed via GitHub Releases, not Git.
+# ---------------------------------------------------------------------------
+runs/
+checkpoints/
+outputs/
+wandb/
+
+# Ignore everything directly under artifacts/ ...
+/artifacts/*
+# ... then re-admit ONLY the tokenizer and the per-run config.json files.
+# Note: a directory must be un-ignored before Git will look inside it, hence
+# the alternating ignore/negate pairs. A bare `!artifacts/` would re-admit the
+# entire 32 GB tree, so do not simplify this.
+!/artifacts/tokenizer/
+!/artifacts/sft/
+/artifacts/sft/*
+!/artifacts/sft/*/
+/artifacts/sft/*/*
+!/artifacts/sft/*/config.json
+!/artifacts/sft/*/*/
+/artifacts/sft/*/*/*
+!/artifacts/sft/*/*/config.json
+
+# Belt and braces: no model weights in normal Git under any path.
+# (Release checkpoints are attached to GitHub Releases; if you deliberately
+#  choose Git LFS instead, see .gitattributes and remove the relevant line.)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# ---------------------------------------------------------------------------
+# Pretraining token shards (973 MB, 60 files, fully regenerable)
+# Rebuild with: python scripts/build_pretrain_shards.py
+# Manifests ARE tracked so the shards can be verified after rebuild.
+# ---------------------------------------------------------------------------
+data/pretrain/shards/
+*.bin
+
+# ---------------------------------------------------------------------------
+# Scratch / temporary
+# ---------------------------------------------------------------------------
+*.tmp
+*.partial.json
+*.bak
+.agents/scratch/
+scratch/
+tmp/
+
+# ---------------------------------------------------------------------------
+# Explicitly TRACKED (documented here so nobody re-ignores them later):
+#   src/ scripts/ tests/ configs/ web/ reports/ submission/ release/
+#   logs/            1.8 MB of train_log.jsonl — small and cited by reports
+#   data/**          82 MB of research datasets, manifests and eval suites
+#   *.md *.txt *.yaml *.json  requirements.txt  pytest.ini
+# ---------------------------------------------------------------------------

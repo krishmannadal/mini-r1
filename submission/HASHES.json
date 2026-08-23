@@ -1,0 +1,71 @@
+{
+  "generated": "2026-08-23",
+  "algorithm": "SHA256",
+  "files": {
+    "final_checkpoint": {
+      "path": "artifacts/sft/task23_75_25/best.pt",
+      "sha256": "d630daacbf75bc8239d625ea8e270bfcaecaffe6e7665abaea9722de2ca0e49c",
+      "bytes": 508892602
+    },
+    "init_checkpoint_task20": {
+      "path": "artifacts/sft/progressive_subtraction/best.pt",
+      "sha256": "fdcecade71afafc1857d5ee56d221d31928ae1321d0f963dc0f566482af56d5c",
+      "bytes": 171718078
+    },
+    "base_pretrained": {
+      "path": "checkpoints/mini_r1_500m_pretrain/best.pt",
+      "sha256": "f058a558edc2020b1a4a7a7b54312b97fb0b0a20e16c42da92018686e66462a4",
+      "bytes": 508907318
+    },
+    "tokenizer": {
+      "path": "artifacts/tokenizer/tokenizer.model",
+      "sha256": "c1143f6e3b1e45811301e4a11392acbe367083712056d19c41ad2fe7f29f7044",
+      "bytes": 129316
+    },
+    "train_gsm8k_compact": {
+      "path": "data/gsm8k_compact_reasoning/train.jsonl",
+      "sha256": "1f687b8970972dbf1a83d9467f8dc2310b46b789c8293b986b5237f8ecbd3ea0",
+      "bytes": 8896129
+    },
+    "train_replay_arithmetic": {
+      "path": "data/replay_arithmetic/train.jsonl",
+      "sha256": "4bd131c4e31ce89aa9423b8a879fd1afe463a50267aed386e4b7676c5aba7d14",
+      "bytes": 5352716
+    },
+    "train_progressive_subtraction": {
+      "path": "data/progressive_subtraction_sft/train.jsonl",
+      "sha256": "ee18cd7b2de5acde36c4234f45a704e67b0c6e76fb000b16c54435366d7314c2",
+      "bytes": 3350841
+    },
+    "config_task23_75_25": {
+      "path": "configs/task23_75_25.yaml",
+      "sha256": "bb2caf41b4092d6ea7a058070b8a36e6f8878bee75357dcdc76a99bf57ac5b5b",
+      "bytes": 2116
+    },
+    "model_card": {
+      "path": "submission/reports/Mini-R1_model_card.md",
+      "sha256": "f3dd0a9d34b3469e386e1cabd96ed83901f4734acdb28a64b4ab63dc77482f9d",
+      "bytes": 6560
+    },
+    "research_summary": {
+      "path": "submission/reports/Mini-R1_final_research_summary.md",
+      "sha256": "491e11081d97779e1a7de6ec8e025aed5a07c132dacb89fdb024d2b60a230cd6",
+      "bytes": 12072
+    },
+    "benchmarks_json": {
+      "path": "submission/reports/task24_final_benchmarks.json",
+      "sha256": "a9ee2533f59b553c24d0d2bc16bd0f337d97aff56c3a75fa899d400370eadda2",
+      "bytes": 37514
+    },
+    "inference_doc": {
+      "path": "submission/INFERENCE.md",
+      "sha256": "53d427424f4a328e5c40ec62d23e58dd664e3f024fd993d4ad2286b67648af04",
+      "bytes": 5046
+    },
+    "api_doc": {
+      "path": "submission/API.md",
+      "sha256": "b2f7d87be05197de6519345ffaa960ab4eebf67ad82d8a52507146517d3c803f",
+      "bytes": 5753
+    }
+  }
+}

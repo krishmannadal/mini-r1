@@ -1,0 +1,45 @@
+# =============================================================================
+# Mini-R1 -- Scaled SLM Training Configuration (RTX 4050 6 GB Target)
+# =============================================================================
+
+training:
+  # Random seed for reproducibility
+  seed: 42
+
+  # Device: "cuda" or "cpu"
+  device: "cuda"
+
+  # Mixed precision mode: "float16", "bfloat16", or "float32"
+  amp_dtype: "float16"
+
+  # Batch sizing & Gradient Accumulation
+  # Effective batch size = micro_batch_size * gradient_accumulation_steps (8 * 4 = 32)
+  micro_batch_size: 8
+  gradient_accumulation_steps: 4
+
+  # Learning rate and Optimizer
+  lr: 0.0003            # Peak learning rate (3e-4)
+  min_lr: 0.00003       # Minimum learning rate after decay (3e-5)
+  weight_decay: 0.01    # AdamW decoupled weight decay
+  max_grad_norm: 1.0    # Gradient clipping threshold
+
+  # Learning rate schedule
+  warmup_steps: 20      # Linear warmup steps
+  max_steps: 100        # Total optimization steps (for LR decay target)
+  epochs: 2             # Training epochs
+
+  # Intervals (in optimizer steps)
+  val_interval_steps: 20
+  checkpoint_interval_steps: 20
+  log_interval_steps: 5
+
+  # Checkpoint retention
+  retained_checkpoints: 3  # Maximum periodic step checkpoints to keep
+
+  # Output paths
+  checkpoint_dir: "checkpoints"
+  log_dir: "logs"
+
+  # Dataset limits for controlled runs
+  max_train_samples: 3000
+  max_val_samples: 300

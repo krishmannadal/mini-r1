@@ -1,0 +1,75 @@
+# ===========================================================================
+# Mini-R1 .gitattributes
+# ===========================================================================
+#
+# GIT LFS IS DELIBERATELY NOT ENABLED FOR MODEL WEIGHTS BY DEFAULT.
+#
+# Why: the recommended distribution channel for this project's checkpoints is
+# GitHub Releases, not Git LFS.
+#
+#   Final checkpoint (Model H)            485.3 MB
+#   Optional comparison (Model G)         485.3 MB
+#   Optional base pretrained              485.3 MB
+#   Optional Task 20 init                 163.8 MB
+#
+#   GitHub LFS free tier: 1 GB storage AND 1 GB/month bandwidth.
+#   The final checkpoint alone consumes ~48% of storage, and TWO clones in a
+#   month exhaust the bandwidth quota. Adding Model G as well would exceed
+#   storage on the first push.
+#
+#   GitHub Releases: 2 GB per file, no LFS quota consumed, no bandwidth
+#   metering. Strictly better for immutable, versioned model artifacts.
+#
+# See README.md "Downloading the model" and reports/github_repository_audit.md.
+#
+# ---------------------------------------------------------------------------
+# IF you decide to use LFS anyway (e.g. on GitHub Enterprise with a larger
+# quota), uncomment ONLY the specific release paths below. Do NOT uncomment a
+# blanket `*.pt` rule — that would sweep in all 126 checkpoints (54 GB).
+# ---------------------------------------------------------------------------
+
+# artifacts/sft/task23_75_25/best.pt  filter=lfs diff=lfs merge=lfs -text
+# artifacts/sft/task23_90_10/best.pt  filter=lfs diff=lfs merge=lfs -text
+
+# ---------------------------------------------------------------------------
+# Line endings — this repo was authored on Windows and will be read on Linux.
+# Normalise text in the index, leave binaries alone.
+# ---------------------------------------------------------------------------
+* text=auto
+
+*.py     text diff=python
+*.md     text
+*.txt    text
+*.json   text
+*.jsonl  text
+*.yaml   text
+*.yml    text
+*.cfg    text
+*.ini    text
+*.html   text
+*.css    text
+*.js     text
+*.sh     text eol=lf
+*.ps1    text eol=crlf
+
+# ---------------------------------------------------------------------------
+# Binary — never diff, never normalise
+# ---------------------------------------------------------------------------
+*.model  binary
+*.bin    binary
+*.pt     binary
+*.pth    binary
+*.ckpt   binary
+*.safetensors binary
+*.png    binary
+*.jpg    binary
+*.gz     binary
+*.zip    binary
+
+# ---------------------------------------------------------------------------
+# GitHub language statistics: stop generated data/reports dominating the
+# language bar so the repo reads as a Python project.
+# ---------------------------------------------------------------------------
+data/**       linguist-generated=true
+logs/**       linguist-generated=true
+reports/*.json linguist-generated=true

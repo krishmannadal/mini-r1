@@ -1,0 +1,9 @@
+{
+  "run_id": "run_20260816_145157_ac5c7f",
+  "python_version": "3.11.0 (main, Oct 24 2022, 18:26:48) [MSC v.1933 64 bit (AMD64)]",
+  "torch_version": "2.6.0+cu124",
+  "cuda_available": true,
+  "cuda_version": "12.4",
+  "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_vram_total_mb": 6140.5
+}

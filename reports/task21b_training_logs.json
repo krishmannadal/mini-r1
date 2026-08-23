@@ -1,0 +1,207 @@
+{
+  "task": "Task 21B: Compact Verified Reasoning Transfer Training",
+  "model_a": {
+    "model_name": "Model A (Arithmetic -> Compact GSM8K)",
+    "best_checkpoint": "artifacts/sft/compact_transfer/arithmetic_init\\best.pt",
+    "best_checkpoint_sha256": "8c55e2d302fd2aed2a12dca3b381f33bf6eceae9058814c162401e8f8961fa0f",
+    "final_checkpoint_sha256": "2d27c55a6ce9f499c01faf47fdee687de23372827a3b61f60c66d4d19ca06624",
+    "best_step": 600,
+    "best_dev_loss": 0.5587971360301082,
+    "best_dev_ppl": 1.748567945422783,
+    "history": [
+      {
+        "step": 50,
+        "dev_loss": 0.8604935101296531,
+        "dev_ppl": 2.3643272252700327,
+        "lr": 9.82e-05,
+        "is_best": true
+      },
+      {
+        "step": 100,
+        "dev_loss": 0.7650991001052081,
+        "dev_ppl": 2.149207350776644,
+        "lr": 9.852704887491446e-05,
+        "is_best": true
+      },
+      {
+        "step": 150,
+        "dev_loss": 0.7174127699301117,
+        "dev_ppl": 2.0491247892795292,
+        "lr": 9.408841814971861e-05,
+        "is_best": true
+      },
+      {
+        "step": 200,
+        "dev_loss": 0.6869391844013609,
+        "dev_ppl": 1.9876224672723197,
+        "lr": 8.698597632428466e-05,
+        "is_best": true
+      },
+      {
+        "step": 250,
+        "dev_loss": 0.6687904029432671,
+        "dev_ppl": 1.9518749099952613,
+        "lr": 7.770374307167587e-05,
+        "is_best": true
+      },
+      {
+        "step": 300,
+        "dev_loss": 0.6437416368994487,
+        "dev_ppl": 1.9035901139353535,
+        "lr": 6.687428724844179e-05,
+        "is_best": true
+      },
+      {
+        "step": 350,
+        "dev_loss": 0.6240274713594279,
+        "dev_ppl": 1.8664299179493273,
+        "lr": 5.523561837241388e-05,
+        "is_best": true
+      },
+      {
+        "step": 400,
+        "dev_loss": 0.5960079925014097,
+        "dev_ppl": 1.8148593879310864,
+        "lr": 4.358089249368375e-05,
+        "is_best": true
+      },
+      {
+        "step": 450,
+        "dev_loss": 0.5859796124435679,
+        "dev_ppl": 1.796750242699891,
+        "lr": 3.270435992054166e-05,
+        "is_best": true
+      },
+      {
+        "step": 500,
+        "dev_loss": 0.5732003464844294,
+        "dev_ppl": 1.7739351838312665,
+        "lr": 2.3347238373527333e-05,
+        "is_best": true
+      },
+      {
+        "step": 550,
+        "dev_loss": 0.5651517764130425,
+        "dev_ppl": 1.759714845661627,
+        "lr": 1.6147200222695275e-05,
+        "is_best": true
+      },
+      {
+        "step": 600,
+        "dev_loss": 0.5587971360301082,
+        "dev_ppl": 1.748567945422783,
+        "lr": 1.1594916169399088e-05,
+        "is_best": true
+      },
+      {
+        "step": 650,
+        "dev_loss": 0.559068118970585,
+        "dev_ppl": 1.749041841712262,
+        "lr": 1.0000616848865797e-05,
+        "is_best": false
+      }
+    ]
+  },
+  "model_b": {
+    "model_name": "Model B (Base -> Compact GSM8K)",
+    "best_checkpoint": "artifacts/sft/compact_transfer/base_init\\best.pt",
+    "best_checkpoint_sha256": "c1b3b28576244aee15cc006f52f6254fa1202148f5ef3bfce7659e50b76597aa",
+    "final_checkpoint_sha256": "ebaa832ddc170dacc304fa6ba3fa4b5e2a096bf52af05f0d2b3e6ded4bd62d78",
+    "best_step": 650,
+    "best_dev_loss": 0.5688546531393416,
+    "best_dev_ppl": 1.7662429316984354,
+    "history": [
+      {
+        "step": 50,
+        "dev_loss": 1.0332929896364906,
+        "dev_ppl": 2.8103049192197775,
+        "lr": 9.82e-05,
+        "is_best": true
+      },
+      {
+        "step": 100,
+        "dev_loss": 0.7738097588918849,
+        "dev_ppl": 2.168010136105498,
+        "lr": 9.852704887491446e-05,
+        "is_best": true
+      },
+      {
+        "step": 150,
+        "dev_loss": 0.7180508631347952,
+        "dev_ppl": 2.0504327391356956,
+        "lr": 9.408841814971861e-05,
+        "is_best": true
+      },
+      {
+        "step": 200,
+        "dev_loss": 0.6835280530856127,
+        "dev_ppl": 1.9808539766984758,
+        "lr": 8.698597632428466e-05,
+        "is_best": true
+      },
+      {
+        "step": 250,
+        "dev_loss": 0.668545494807768,
+        "dev_ppl": 1.9513969384822722,
+        "lr": 7.770374307167587e-05,
+        "is_best": true
+      },
+      {
+        "step": 300,
+        "dev_loss": 0.646801003200146,
+        "dev_ppl": 1.909422811009335,
+        "lr": 6.687428724844179e-05,
+        "is_best": true
+      },
+      {
+        "step": 350,
+        "dev_loss": 0.6423699050002576,
+        "dev_ppl": 1.900980688778115,
+        "lr": 5.523561837241388e-05,
+        "is_best": true
+      },
+      {
+        "step": 400,
+        "dev_loss": 0.6066357259726891,
+        "dev_ppl": 1.8342500868714073,
+        "lr": 4.358089249368375e-05,
+        "is_best": true
+      },
+      {
+        "step": 450,
+        "dev_loss": 0.5975279623563753,
+        "dev_ppl": 1.8176200169967314,
+        "lr": 3.270435992054166e-05,
+        "is_best": true
+      },
+      {
+        "step": 500,
+        "dev_loss": 0.5845575855742883,
+        "dev_ppl": 1.7941970313751905,
+        "lr": 2.3347238373527333e-05,
+        "is_best": true
+      },
+      {
+        "step": 550,
+        "dev_loss": 0.5731028187906663,
+        "dev_ppl": 1.7737621844601539,
+        "lr": 1.6147200222695275e-05,
+        "is_best": true
+      },
+      {
+        "step": 600,
+        "dev_loss": 0.5688622906837997,
+        "dev_ppl": 1.7662564215088643,
+        "lr": 1.1594916169399088e-05,
+        "is_best": true
+      },
+      {
+        "step": 650,
+        "dev_loss": 0.5688546531393416,
+        "dev_ppl": 1.7662429316984354,
+        "lr": 1.0000616848865797e-05,
+        "is_best": true
+      }
+    ]
+  }
+}

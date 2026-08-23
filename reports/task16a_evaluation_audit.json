@@ -1,0 +1,42 @@
+{
+  "val_manifest_path": "data/pretrain/val_manifest.json",
+  "val_manifest_sha256": "0011c0cb1a848a76ac0c6331a69e6c7d57bb16b7ee9d9721d2bc34152a59640c",
+  "base": {
+    "name": "Base Model (Pretrained step 18k)",
+    "path": "checkpoints/mini_r1_500m_pretrain/best.pt",
+    "sha256": "f058a558edc2020b1a4a7a7b54312b97fb0b0a20e16c42da92018686e66462a4",
+    "avg_loss": 2.8724186200234287,
+    "perplexity": 17.679727072656927,
+    "total_sequences": 19532,
+    "total_tokens": 9980852,
+    "elapsed_sec": 165.09903089998988,
+    "tokens_per_sec": 60453.72856274356,
+    "checkpoint_val_loss": 2.8726140131821505
+  },
+  "direct_sft": {
+    "name": "Direct-Answer SFT (best.pt)",
+    "path": "artifacts/sft/direct/best.pt",
+    "sha256": "79323e228f222da6f55ada9bccc84ea5c49d5bb1b0c0a1d20a3746b1b431dacd",
+    "avg_loss": 3.0834070553233723,
+    "perplexity": 21.83266090650266,
+    "total_sequences": 19532,
+    "total_tokens": 9980852,
+    "elapsed_sec": 160.1495932000107,
+    "tokens_per_sec": 62322.05652583158,
+    "checkpoint_val_loss": 0.9514295275777104
+  },
+  "cot_sft": {
+    "name": "Chain-of-Thought SFT (best.pt)",
+    "path": "artifacts/sft/cot/best.pt",
+    "sha256": "0df4b0d86730e72c15e1cf8c3aaeebf58a834fc36232b804520760adb0311d93",
+    "avg_loss": 3.160298875968475,
+    "perplexity": 23.57764166660233,
+    "total_sequences": 19532,
+    "total_tokens": 9980852,
+    "elapsed_sec": 159.95171560000745,
+    "tokens_per_sec": 62399.15566119464,
+    "checkpoint_val_loss": 1.3431691664632226
+  },
+  "direct_ppl_shift_pct": 23.489807375299183,
+  "cot_ppl_shift_pct": 33.359760417721525
+}

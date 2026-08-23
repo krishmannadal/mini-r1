@@ -1,0 +1,117 @@
+{
+  "dataset_name": "Task 20 Progressive Numeric-Regime Subtraction SFT",
+  "seed": 42,
+  "curriculum_composition": {
+    "2D_regime": {
+      "range": "[50, 99]",
+      "count": 4000,
+      "unique_pairs": 1000
+    },
+    "3D_regime": {
+      "range": "[101, 199]",
+      "count": 4000,
+      "unique_pairs": 4000
+    },
+    "4D_regime": {
+      "range": "[1001, 1999]",
+      "count": 4000,
+      "unique_pairs": 4000
+    },
+    "total_train": 12000,
+    "total_dev": 1200
+  },
+  "splits": {
+    "train": {
+      "file": "data/progressive_subtraction_sft\\train.jsonl",
+      "count": 12000,
+      "sha256": "ee18cd7b2de5acde36c4234f45a704e67b0c6e76fb000b16c54435366d7314c2"
+    },
+    "dev": {
+      "file": "data/progressive_subtraction_sft\\dev.jsonl",
+      "count": 1200,
+      "sha256": "5c2de342d543ee8705a2881240f42a5f4c3d995a9ff7f6f4db26515579197656"
+    },
+    "e1_iid_2digit": {
+      "file": "data/progressive_subtraction_sft\\eval_e1_iid_2digit.json",
+      "count": 500,
+      "sha256": "f8fc5c782a5317aaf6102b0fe53be1b802b265a9617eba6963f1b29fecad5c5e"
+    },
+    "e2_ood_2digit": {
+      "file": "data/progressive_subtraction_sft\\eval_e2_ood_2digit.json",
+      "count": 500,
+      "sha256": "45b26b7d2cd92064f6ac1fd9161df17cf2416dfcf1ff95c28911ee6589fc325f"
+    },
+    "e3_iid_3digit": {
+      "file": "data/progressive_subtraction_sft\\eval_e3_iid_3digit.json",
+      "count": 500,
+      "sha256": "c854cff98b9e91d4638b4a7f0e7e57c9b18492e7d67ab43f14a3499f928672ef"
+    },
+    "e4_ood_3digit": {
+      "file": "data/progressive_subtraction_sft\\eval_e4_ood_3digit.json",
+      "count": 500,
+      "sha256": "1ad19d26993ec7a77755252b00138210a80cb0f59583523efc7f9779f6bb37e8"
+    },
+    "e5_iid_4digit": {
+      "file": "data/progressive_subtraction_sft\\eval_e5_iid_4digit.json",
+      "count": 500,
+      "sha256": "52447760cb706c1262a860609cce73b21c19c22d7e994214a046f535b834b5fb"
+    },
+    "e6_ood_4digit": {
+      "file": "data/progressive_subtraction_sft\\eval_e6_ood_4digit.json",
+      "count": 500,
+      "sha256": "32a7620560d6b15c9db81df88569d55d56b17cfbccc085cfc30d019b6b4d024f"
+    },
+    "e7_acid_5digit": {
+      "file": "data/progressive_subtraction_sft\\eval_e7_acid_5digit.json",
+      "count": 500,
+      "sha256": "801964dcb1d617862f4cb1ead4e74db5980ce6fd490e24335b8048df5d9caded"
+    }
+  },
+  "overlap_audit": {
+    "status": "PASSED_ZERO_OVERLAP",
+    "per_benchmark": {
+      "E1": {
+        "N": 275,
+        "train_overlap": 0,
+        "dev_overlap": 0,
+        "status": "PASS"
+      },
+      "E2": {
+        "N": 500,
+        "train_overlap": 0,
+        "dev_overlap": 0,
+        "status": "PASS"
+      },
+      "E3": {
+        "N": 500,
+        "train_overlap": 0,
+        "dev_overlap": 0,
+        "status": "PASS"
+      },
+      "E4": {
+        "N": 500,
+        "train_overlap": 0,
+        "dev_overlap": 0,
+        "status": "PASS"
+      },
+      "E5": {
+        "N": 500,
+        "train_overlap": 0,
+        "dev_overlap": 0,
+        "status": "PASS"
+      },
+      "E6": {
+        "N": 500,
+        "train_overlap": 0,
+        "dev_overlap": 0,
+        "status": "PASS"
+      },
+      "E7": {
+        "N": 500,
+        "train_overlap": 0,
+        "dev_overlap": 0,
+        "status": "PASS"
+      }
+    }
+  }
+}

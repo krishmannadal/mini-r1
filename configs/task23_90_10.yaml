@@ -1,0 +1,69 @@
+# ---------------------------------------------------------------------------
+# Task 23 Arm 1: GSM8K : replay = 90 : 10, ALL parameters trainable.
+#
+# Point on the trainable replay-ratio curve 0 / 10 / 25 / 50:
+#   0%  = Model A (21B arithmetic-init, no replay)
+#   10% = this arm
+#   25% = configs/task23_75_25.yaml
+#   50% = Model F (Task 22B)
+#
+# Replay block is split 50/50 between the GSM8K-matched replay corpus and the
+# Task 20 progressive-subtraction corpus, because the retention probe measures
+# subtraction over [50,99]/[101,199]/[1001,1999] -- a regime the GSM8K-matched
+# replay corpus barely covers.
+#
+# Everything except the mixture is identical to Task 22B.
+# ---------------------------------------------------------------------------
+
+experiment:
+  name: task23_90_10
+  model_label: "Model G (Task 23: 90/10 replay, all trainable)"
+  output_dir: artifacts/sft/task23_90_10
+  training_log: reports/task23_90_10_training_log.json
+
+init:
+  checkpoint: artifacts/sft/progressive_subtraction/best.pt
+  expected_sha256: fdcecade71afafc1857d5ee56d221d31928ae1321d0f963dc0f566482af56d5c
+
+tokenizer:
+  path: artifacts/tokenizer/tokenizer.model
+
+data:
+  primary:
+    name: compact_gsm8k
+    train: data/gsm8k_compact_reasoning/train.jsonl
+    dev: data/gsm8k_compact_reasoning/dev.jsonl
+  replay_sources:
+    - name: replay_arithmetic
+      train: data/replay_arithmetic/train.jsonl
+      dev: data/replay_arithmetic/dev.jsonl
+    - name: progressive_subtraction
+      train: data/progressive_subtraction_sft/train.jsonl
+      dev: data/progressive_subtraction_sft/dev.jsonl
+  ratio_schedule:
+    # is_replay = (idx % 10 == 0)  ->  exactly 10% replay slots
+    period: 10
+  max_seq_len: 512
+
+parameter_isolation:
+  enabled: false
+  trainable_patterns:
+    - "^.*$"          # all 42,132,480 parameters trainable; nothing frozen
+
+optim:
+  peak_lr: 1.0e-4
+  min_lr: 1.0e-5
+  warmup_steps: 50
+  weight_decay: 0.01
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  max_grad_norm: 1.0
+
+train:
+  max_steps: 650
+  micro_batch_size: 8
+  grad_accum_steps: 4
+  eval_interval: 50
+  seed: 42
+  amp: true
+  select_on: mixture_dev_loss

@@ -1,0 +1,37 @@
+{
+  "source_dataset": "HuggingFaceTB/smollm-corpus",
+  "dataset_configurations": [
+    "cosmopedia-v2"
+  ],
+  "seed": 42,
+  "tokenizer": {
+    "path": "artifacts/tokenizer/tokenizer.model",
+    "md5": "e7ef63605f920bf411f0c897c44e31e3",
+    "vocab_size": 8000
+  },
+  "target_token_budget": 100000,
+  "token_statistics": {
+    "raw_examples": 107,
+    "cleaned_examples": 107,
+    "raw_tokens_untruncated": 100862,
+    "packed_sequences": 196,
+    "packed_tokens": 100352,
+    "train_tokens": 95232,
+    "validation_tokens": 5120,
+    "discarded_tokens": 510,
+    "token_utilization_ratio": 0.9949435862862128
+  },
+  "preprocessing_version": "1.0.0",
+  "packing": {
+    "enabled": true,
+    "sequence_length": 512,
+    "delimiter": "</s> (eos_id)"
+  },
+  "splits": {
+    "train_sequences": 186,
+    "train_tokens": 95232,
+    "validation_sequences": 10,
+    "validation_tokens": 5120
+  },
+  "created_at": "2026-08-16 16:40:10 UTC"
+}

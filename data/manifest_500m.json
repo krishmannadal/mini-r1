@@ -1,0 +1,43 @@
+{
+  "manifest_name": "Mini-R1 500M General Pretraining Corpus",
+  "target_token_budget": 500000000,
+  "source_dataset": "HuggingFaceTB/smollm-corpus",
+  "dataset_configurations": [
+    "cosmopedia-v2",
+    "fineweb-edu-dedup",
+    "python-edu"
+  ],
+  "seed": 42,
+  "tokenizer": {
+    "path": "artifacts/tokenizer/tokenizer.model",
+    "md5": "e7ef63605f920bf411f0c897c44e31e3",
+    "vocab_size": 8000
+  },
+  "preprocessing_version": "1.0.0",
+  "packing_strategy": {
+    "enabled": true,
+    "sequence_length": 512,
+    "delimiter_token": "</s> (eos_id=2)",
+    "compute_efficiency": "100.0%"
+  },
+  "deduplication_strategy": {
+    "method": "Exact text MD5 fingerprinting (whitespace-normalized)",
+    "scope": "Cross-document & cross-shard within streaming window"
+  },
+  "splits": {
+    "train_tokens": 490000000,
+    "train_sequences_512": 957031,
+    "validation_tokens": 10000000,
+    "validation_sequences_512": 19531,
+    "train_val_overlap_guarantee": "0 collisions (strictly disjoint)"
+  },
+  "training_plan": {
+    "effective_batch_size": 32,
+    "tokens_per_optimizer_step": 16384,
+    "total_optimizer_steps": 30517,
+    "peak_learning_rate": 0.0006,
+    "min_learning_rate": 6e-05,
+    "precision": "FP16 AMP"
+  },
+  "created_at": "2026-08-16 18:12:51 UTC"
+}

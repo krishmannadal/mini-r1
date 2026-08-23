@@ -1,0 +1,132 @@
+{
+  "model_name": "Mini-R1 (Task 23 Model H)",
+  "version": "1.0.0",
+  "release_date": "2026-08-23",
+  "description": "42.1M-parameter decoder-only Transformer trained from scratch; final checkpoint of the Mini-R1 arithmetic-retention study.",
+  "model_path": {
+    "repository_path": "artifacts/sft/task23_75_25/best.pt",
+    "release_asset_name": "mini-r1-final-model-h.pt",
+    "distribution": "GitHub Releases (not Git LFS)"
+  },
+  "parameter_count": 42132480,
+  "checkpoint": {
+    "sha256": "d630daacbf75bc8239d625ea8e270bfcaecaffe6e7665abaea9722de2ca0e49c",
+    "size_bytes": 508892602,
+    "size_mb": 485.3,
+    "contains_optimizer_state": true,
+    "note": "Strip optimizer_state_dict for inference-only distribution (~169 MB)."
+  },
+  "tokenizer": {
+    "path": "artifacts/tokenizer/tokenizer.model",
+    "sha256": "c1143f6e3b1e45811301e4a11392acbe367083712056d19c41ad2fe7f29f7044",
+    "size_bytes": 129316,
+    "type": "SentencePiece BPE",
+    "vocab_size": 8000,
+    "special_tokens": {
+      "bos_id": 1,
+      "eos_id": 2,
+      "pad_id": 3,
+      "think_close_id": 5,
+      "answer_open_id": 6,
+      "answer_close_id": 7
+    },
+    "note": "Every digit 0-9 is an individual token; <think>/<answer> tags are atomic single tokens.",
+    "compatibility_verified": true
+  },
+  "architecture": {
+    "vocab_size": 8000,
+    "d_model": 512,
+    "n_layers": 12,
+    "n_heads": 8,
+    "d_ff": 2048,
+    "max_seq_len": 512,
+    "dropout": 0.0,
+    "bias": false,
+    "tie_word_embeddings": true
+  },
+  "training_configuration": {
+    "initialized_from": {
+      "path": "artifacts/sft/progressive_subtraction/best.pt",
+      "sha256": "fdcecade71afafc1857d5ee56d221d31928ae1321d0f963dc0f566482af56d5c"
+    },
+    "optimizer": "AdamW",
+    "peak_lr": 0.0001,
+    "min_lr": 1e-05,
+    "schedule": "cosine",
+    "warmup_steps": 50,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "max_grad_norm": 1.0,
+    "max_steps": 650,
+    "micro_batch_size": 8,
+    "grad_accum_steps": 4,
+    "effective_batch_size": 32,
+    "max_seq_len": 512,
+    "precision": "FP16 AMP with GradScaler",
+    "seed": 42,
+    "trainable_parameters": 42132480,
+    "frozen_parameters": 0,
+    "total_active_completion_tokens": 920031,
+    "selected_at_step": 650,
+    "data_mixture": {
+      "schedule": "deterministic global index: is_replay = (idx % 4 == 0)",
+      "compact_gsm8k": "75.000%",
+      "replay_arithmetic": "12.506%",
+      "progressive_subtraction": "12.494%"
+    },
+    "config_file": "configs/task23_75_25.yaml"
+  },
+  "benchmarks": {
+    "gsm8k_test_greedy_strict_accuracy_pct": 2.4260803639120545,
+    "gsm8k_step_level_equation_validity_pct": 31.644562334217508,
+    "svamp_test_pct": 1.6666666666666667,
+    "aqua_test_pct": 0.0,
+    "arithmetic_E1_iid_2digit_pct": 89.60000000000001,
+    "arithmetic_E3_iid_3digit_pct": 84.6,
+    "arithmetic_E5_iid_4digit_pct": 38.4,
+    "arithmetic_E7_acid_5digit_pct": 0.6,
+    "retention_2D_pct": 94.8,
+    "retention_3D_pct": 78.2,
+    "retention_4D_pct": 32.4,
+    "general_language_perplexity": 50.73820560570125,
+    "base_model_perplexity_reference": 17.68,
+    "source": "reports/task24_final_benchmarks.json"
+  },
+  "intended_use": {
+    "primary": "Research artifact for studying catastrophic forgetting, replay strategies and arithmetic generalization in small language models.",
+    "appropriate": [
+      "Reproducing the Mini-R1 experiments",
+      "Continual-learning / replay research baselines",
+      "Studying verified arithmetic supervision at small scale",
+      "Educational reference for a from-scratch Transformer"
+    ],
+    "not_appropriate": [
+      "Any production use",
+      "Education or tutoring",
+      "Finance, health, or any decision where a wrong number carries cost",
+      "General-purpose assistant or chat"
+    ]
+  },
+  "known_limitations": [
+    "NOT a reasoning model: GSM8K 2.43% is statistically indistinguishable from direct-answer SFT (2.35%) - one problem out of 1,319.",
+    "Arithmetic is regime-local: 89.60% on trained 2-digit ranges, 20.00% just outside, 0.60% at 5 digits.",
+    "General-language perplexity regressed 2.9x from the 17.68 base to 50.74.",
+    "Zero multiple-choice capability: AQuA 0.00% with 0.0% full-format compliance.",
+    "77.3% 4-gram repetition on GSM8K under greedy decoding.",
+    "512-token context limit.",
+    "Single seed (42); no variance estimates for any result.",
+    "Benchmark numbers are conservative: the evaluation harness left-pads without an attention mask while the model uses learned absolute positions, measured at roughly 3-14 points of equation validity.",
+    "Emits fluent, correctly formatted, confidently wrong arithmetic - verify every equation deterministically before use.",
+    "No safety tuning, alignment, or content filtering was applied."
+  ],
+  "verification": {
+    "integrity_report": "reports/task24_final_integrity.md",
+    "checks_passed": "8/8",
+    "verify_command": "Get-FileHash \"artifacts\\sft\task23_75_25\best.pt\" -Algorithm SHA256"
+  },
+  "license": "See LICENSE (not yet selected).",
+  "citation_note": "Cite the report set; see reports/Mini-R1_final_research_summary.md"
+}

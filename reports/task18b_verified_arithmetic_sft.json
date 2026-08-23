@@ -1,0 +1,467 @@
+{
+  "Base Pretrained (18k)": {
+    "IID Arithmetic Dev (N=1,200)": {
+      "total": 1200,
+      "correct": 0,
+      "accuracy": 0.0,
+      "parse_rate": 0.0,
+      "eos_rate": 0.0,
+      "rep_rate": 77.83333333333333,
+      "mean_tokens": 111.27333333333333,
+      "step_valid_equations": 0,
+      "step_total_equations": 7,
+      "step_equation_accuracy": 0.0,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 0.0,
+        "4_op_acc": 0.0
+      }
+    },
+    "OOD Numeric Range (N=1,200)": {
+      "total": 1200,
+      "correct": 0,
+      "accuracy": 0.0,
+      "parse_rate": 0.0,
+      "eos_rate": 0.0,
+      "rep_rate": 82.33333333333334,
+      "mean_tokens": 113.87416666666667,
+      "step_valid_equations": 0,
+      "step_total_equations": 0,
+      "step_equation_accuracy": 0.0,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 0.0,
+        "4_op_acc": 0.0
+      }
+    },
+    "OOD Composition (N=1,200)": {
+      "total": 1200,
+      "correct": 0,
+      "accuracy": 0.0,
+      "parse_rate": 0.0,
+      "eos_rate": 0.0,
+      "rep_rate": 100.0,
+      "mean_tokens": 127.7625,
+      "step_valid_equations": 0,
+      "step_total_equations": 0,
+      "step_equation_accuracy": 0.0,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 0.0,
+        "4_op_acc": 0.0
+      }
+    },
+    "Word-Wrapped Arithmetic (N=1,200)": {
+      "total": 1200,
+      "correct": 0,
+      "accuracy": 0.0,
+      "parse_rate": 0.0,
+      "eos_rate": 0.0,
+      "rep_rate": 22.583333333333332,
+      "mean_tokens": 59.009166666666665,
+      "step_valid_equations": 0,
+      "step_total_equations": 0,
+      "step_equation_accuracy": 0.0,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 0.0,
+        "4_op_acc": 0.0
+      }
+    },
+    "qualitative_audit": {
+      "counts": {
+        "1_correct_ans_all_correct_steps": 0,
+        "2_correct_ans_incorrect_steps": 0,
+        "3_incorrect_ans_valid_arithmetic": 0,
+        "4_repetition": 0,
+        "5_format_failure": 200,
+        "6_irrelevant_incoherent": 0
+      },
+      "percentages": {
+        "1_correct_ans_all_correct_steps": 0.0,
+        "2_correct_ans_incorrect_steps": 0.0,
+        "3_incorrect_ans_valid_arithmetic": 0.0,
+        "4_repetition": 0.0,
+        "5_format_failure": 100.0,
+        "6_irrelevant_incoherent": 0.0
+      },
+      "total_sampled": 200
+    }
+  },
+  "Direct GSM8K SFT (650)": {
+    "IID Arithmetic Dev (N=1,200)": {
+      "total": 1200,
+      "correct": 15,
+      "accuracy": 1.25,
+      "parse_rate": 100.0,
+      "eos_rate": 100.0,
+      "rep_rate": 0.0,
+      "mean_tokens": 4.149166666666667,
+      "step_valid_equations": 0,
+      "step_total_equations": 0,
+      "step_equation_accuracy": 0.0,
+      "op_accuracies": {
+        "1_op_acc": 2.952029520295203,
+        "2_op_acc": 0.5830903790087464,
+        "3_op_acc": 1.1940298507462688,
+        "4_op_acc": 0.398406374501992
+      }
+    },
+    "OOD Numeric Range (N=1,200)": {
+      "total": 1200,
+      "correct": 6,
+      "accuracy": 0.5,
+      "parse_rate": 99.83333333333333,
+      "eos_rate": 99.83333333333333,
+      "rep_rate": 0.0,
+      "mean_tokens": 4.621666666666667,
+      "step_valid_equations": 0,
+      "step_total_equations": 0,
+      "step_equation_accuracy": 0.0,
+      "op_accuracies": {
+        "1_op_acc": 0.5,
+        "2_op_acc": 0.5,
+        "3_op_acc": 0.75,
+        "4_op_acc": 0.0
+      }
+    },
+    "OOD Composition (N=1,200)": {
+      "total": 1200,
+      "correct": 21,
+      "accuracy": 1.7500000000000002,
+      "parse_rate": 100.0,
+      "eos_rate": 100.0,
+      "rep_rate": 0.0,
+      "mean_tokens": 4.115833333333334,
+      "step_valid_equations": 0,
+      "step_total_equations": 0,
+      "step_equation_accuracy": 0.0,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 1.7500000000000002,
+        "4_op_acc": 0.0
+      }
+    },
+    "Word-Wrapped Arithmetic (N=1,200)": {
+      "total": 1200,
+      "correct": 0,
+      "accuracy": 0.0,
+      "parse_rate": 100.0,
+      "eos_rate": 100.0,
+      "rep_rate": 0.0,
+      "mean_tokens": 4.0008333333333335,
+      "step_valid_equations": 0,
+      "step_total_equations": 0,
+      "step_equation_accuracy": 0.0,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 0.0,
+        "4_op_acc": 0.0
+      }
+    },
+    "qualitative_audit": {
+      "counts": {
+        "1_correct_ans_all_correct_steps": 0,
+        "2_correct_ans_incorrect_steps": 0,
+        "3_incorrect_ans_valid_arithmetic": 0,
+        "4_repetition": 0,
+        "5_format_failure": 200,
+        "6_irrelevant_incoherent": 0
+      },
+      "percentages": {
+        "1_correct_ans_all_correct_steps": 0.0,
+        "2_correct_ans_incorrect_steps": 0.0,
+        "3_incorrect_ans_valid_arithmetic": 0.0,
+        "4_repetition": 0.0,
+        "5_format_failure": 100.0,
+        "6_irrelevant_incoherent": 0.0
+      },
+      "total_sampled": 200
+    }
+  },
+  "Verbose GSM8K CoT (650)": {
+    "IID Arithmetic Dev (N=1,200)": {
+      "total": 1200,
+      "correct": 3,
+      "accuracy": 0.25,
+      "parse_rate": 72.66666666666667,
+      "eos_rate": 72.66666666666667,
+      "rep_rate": 39.5,
+      "mean_tokens": 43.6025,
+      "step_valid_equations": 17,
+      "step_total_equations": 561,
+      "step_equation_accuracy": 3.0303030303030303,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.2915451895043732,
+        "3_op_acc": 0.5970149253731344,
+        "4_op_acc": 0.0
+      }
+    },
+    "OOD Numeric Range (N=1,200)": {
+      "total": 1200,
+      "correct": 3,
+      "accuracy": 0.25,
+      "parse_rate": 77.5,
+      "eos_rate": 77.5,
+      "rep_rate": 40.166666666666664,
+      "mean_tokens": 40.92583333333334,
+      "step_valid_equations": 1,
+      "step_total_equations": 211,
+      "step_equation_accuracy": 0.47393364928909953,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.5,
+        "3_op_acc": 0.25,
+        "4_op_acc": 0.5
+      }
+    },
+    "OOD Composition (N=1,200)": {
+      "total": 1200,
+      "correct": 7,
+      "accuracy": 0.5833333333333334,
+      "parse_rate": 98.08333333333333,
+      "eos_rate": 98.08333333333333,
+      "rep_rate": 1.9166666666666665,
+      "mean_tokens": 8.065,
+      "step_valid_equations": 0,
+      "step_total_equations": 4,
+      "step_equation_accuracy": 0.0,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 0.5833333333333334,
+        "4_op_acc": 0.0
+      }
+    },
+    "Word-Wrapped Arithmetic (N=1,200)": {
+      "total": 1200,
+      "correct": 5,
+      "accuracy": 0.4166666666666667,
+      "parse_rate": 89.58333333333334,
+      "eos_rate": 89.58333333333334,
+      "rep_rate": 100.0,
+      "mean_tokens": 78.3475,
+      "step_valid_equations": 143,
+      "step_total_equations": 2736,
+      "step_equation_accuracy": 5.226608187134503,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 0.4166666666666667,
+        "4_op_acc": 0.0
+      }
+    },
+    "qualitative_audit": {
+      "counts": {
+        "1_correct_ans_all_correct_steps": 0,
+        "2_correct_ans_incorrect_steps": 0,
+        "3_incorrect_ans_valid_arithmetic": 0,
+        "4_repetition": 0,
+        "5_format_failure": 200,
+        "6_irrelevant_incoherent": 0
+      },
+      "percentages": {
+        "1_correct_ans_all_correct_steps": 0.0,
+        "2_correct_ans_incorrect_steps": 0.0,
+        "3_incorrect_ans_valid_arithmetic": 0.0,
+        "4_repetition": 0.0,
+        "5_format_failure": 100.0,
+        "6_irrelevant_incoherent": 0.0
+      },
+      "total_sampled": 200
+    }
+  },
+  "Compact Arithmetic SFT (18B)": {
+    "IID Arithmetic Dev (N=1,200)": {
+      "total": 1200,
+      "correct": 545,
+      "accuracy": 45.416666666666664,
+      "parse_rate": 98.75,
+      "eos_rate": 98.75,
+      "rep_rate": 30.416666666666664,
+      "mean_tokens": 36.12,
+      "step_valid_equations": 2378,
+      "step_total_equations": 3135,
+      "step_equation_accuracy": 75.85326953748006,
+      "op_accuracies": {
+        "1_op_acc": 46.125461254612546,
+        "2_op_acc": 35.56851311953353,
+        "3_op_acc": 44.47761194029851,
+        "4_op_acc": 59.36254980079681
+      }
+    },
+    "OOD Numeric Range (N=1,200)": {
+      "total": 1200,
+      "correct": 12,
+      "accuracy": 1.0,
+      "parse_rate": 98.75,
+      "eos_rate": 98.75,
+      "rep_rate": 12.666666666666668,
+      "mean_tokens": 37.87,
+      "step_valid_equations": 191,
+      "step_total_equations": 2705,
+      "step_equation_accuracy": 7.060998151571164,
+      "op_accuracies": {
+        "1_op_acc": 1.7500000000000002,
+        "2_op_acc": 2.0,
+        "3_op_acc": 0.25,
+        "4_op_acc": 0.0
+      }
+    },
+    "OOD Composition (N=1,200)": {
+      "total": 1200,
+      "correct": 103,
+      "accuracy": 8.583333333333334,
+      "parse_rate": 99.0,
+      "eos_rate": 99.0,
+      "rep_rate": 45.08333333333333,
+      "mean_tokens": 40.895,
+      "step_valid_equations": 2109,
+      "step_total_equations": 3562,
+      "step_equation_accuracy": 59.208309938236944,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 8.583333333333334,
+        "4_op_acc": 0.0
+      }
+    },
+    "Word-Wrapped Arithmetic (N=1,200)": {
+      "total": 1200,
+      "correct": 5,
+      "accuracy": 0.4166666666666667,
+      "parse_rate": 99.83333333333333,
+      "eos_rate": 99.83333333333333,
+      "rep_rate": 9.5,
+      "mean_tokens": 30.89666666666667,
+      "step_valid_equations": 824,
+      "step_total_equations": 2318,
+      "step_equation_accuracy": 35.54788610871441,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 0.4166666666666667,
+        "4_op_acc": 0.0
+      }
+    },
+    "qualitative_audit": {
+      "counts": {
+        "1_correct_ans_all_correct_steps": 119,
+        "2_correct_ans_incorrect_steps": 0,
+        "3_incorrect_ans_valid_arithmetic": 75,
+        "4_repetition": 0,
+        "5_format_failure": 5,
+        "6_irrelevant_incoherent": 1
+      },
+      "percentages": {
+        "1_correct_ans_all_correct_steps": 59.5,
+        "2_correct_ans_incorrect_steps": 0.0,
+        "3_incorrect_ans_valid_arithmetic": 37.5,
+        "4_repetition": 0.0,
+        "5_format_failure": 2.5,
+        "6_irrelevant_incoherent": 0.5
+      },
+      "total_sampled": 200
+    }
+  },
+  "Verbose Arithmetic SFT (18B)": {
+    "IID Arithmetic Dev (N=1,200)": {
+      "total": 1200,
+      "correct": 593,
+      "accuracy": 49.416666666666664,
+      "parse_rate": 99.66666666666667,
+      "eos_rate": 99.66666666666667,
+      "rep_rate": 36.16666666666667,
+      "mean_tokens": 48.424166666666665,
+      "step_valid_equations": 2357,
+      "step_total_equations": 2998,
+      "step_equation_accuracy": 78.61907938625751,
+      "op_accuracies": {
+        "1_op_acc": 49.07749077490775,
+        "2_op_acc": 48.10495626822158,
+        "3_op_acc": 46.56716417910447,
+        "4_op_acc": 55.37848605577689
+      }
+    },
+    "OOD Numeric Range (N=1,200)": {
+      "total": 1200,
+      "correct": 26,
+      "accuracy": 2.166666666666667,
+      "parse_rate": 99.66666666666667,
+      "eos_rate": 99.66666666666667,
+      "rep_rate": 49.416666666666664,
+      "mean_tokens": 47.48,
+      "step_valid_equations": 240,
+      "step_total_equations": 2726,
+      "step_equation_accuracy": 8.804108584005869,
+      "op_accuracies": {
+        "1_op_acc": 6.25,
+        "2_op_acc": 0.0,
+        "3_op_acc": 0.25,
+        "4_op_acc": 0.0
+      }
+    },
+    "OOD Composition (N=1,200)": {
+      "total": 1200,
+      "correct": 124,
+      "accuracy": 10.333333333333334,
+      "parse_rate": 100.0,
+      "eos_rate": 100.0,
+      "rep_rate": 33.33333333333333,
+      "mean_tokens": 49.9,
+      "step_valid_equations": 1917,
+      "step_total_equations": 3139,
+      "step_equation_accuracy": 61.07040458744824,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 10.333333333333334,
+        "4_op_acc": 0.0
+      }
+    },
+    "Word-Wrapped Arithmetic (N=1,200)": {
+      "total": 1200,
+      "correct": 7,
+      "accuracy": 0.5833333333333334,
+      "parse_rate": 100.0,
+      "eos_rate": 100.0,
+      "rep_rate": 47.41666666666667,
+      "mean_tokens": 38.700833333333335,
+      "step_valid_equations": 771,
+      "step_total_equations": 2073,
+      "step_equation_accuracy": 37.192474674384954,
+      "op_accuracies": {
+        "1_op_acc": 0.0,
+        "2_op_acc": 0.0,
+        "3_op_acc": 0.5833333333333334,
+        "4_op_acc": 0.0
+      }
+    },
+    "qualitative_audit": {
+      "counts": {
+        "1_correct_ans_all_correct_steps": 106,
+        "2_correct_ans_incorrect_steps": 0,
+        "3_incorrect_ans_valid_arithmetic": 94,
+        "4_repetition": 0,
+        "5_format_failure": 0,
+        "6_irrelevant_incoherent": 0
+      },
+      "percentages": {
+        "1_correct_ans_all_correct_steps": 53.0,
+        "2_correct_ans_incorrect_steps": 0.0,
+        "3_incorrect_ans_valid_arithmetic": 47.0,
+        "4_repetition": 0.0,
+        "5_format_failure": 0.0,
+        "6_irrelevant_incoherent": 0.0
+      },
+      "total_sampled": 200
+    }
+  }
+}

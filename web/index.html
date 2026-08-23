@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini-R1 Reasoning Playground | 42.1M SLM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand-section">
+        <div class="logo-badge">R1</div>
+        <div>
+          <h1 class="app-title">Mini-R1 Reasoning Playground</h1>
+          <p class="app-subtitle">42.1M Parameter Small Language Model • Architectural & SFT Arena</p>
+        </div>
+      </div>
+      <div class="status-badge" id="gpu-status">
+        <span class="status-dot"></span>
+        <span id="gpu-text">Detecting GPU...</span>
+      </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="main-layout">
+      <!-- Left Panel: Controls & Prompts -->
+      <aside class="sidebar-panel">
+        <!-- Model Selection Card -->
+        <section class="card control-card">
+          <label class="section-label" for="model-select">Target Model Checkpoint</label>
+          <div class="select-wrapper">
+            <select id="model-select">
+              <option value="compact_arith" selected>Model A: Compact Arithmetic Transfer (Task 21B)</option>
+              <option value="compact_base">Model B: Compact Base Transfer (Task 21B)</option>
+              <option value="direct">Model C: Direct GSM8K Baseline</option>
+              <option value="cot">Model D: Verbose CoT Baseline</option>
+              <option value="progressive_arith">Task 20: Progressive Subtraction</option>
+              <option value="base">Base Pretrained 500M (Zero-shot)</option>
+            </select>
+          </div>
+          <p class="model-description" id="model-desc">
+            Progressive Subtraction SFT -> Compact Equation Reasoning SFT.
+          </p>
+        </section>
+
+        <!-- Quick Presets Card -->
+        <section class="card presets-card">
+          <label class="section-label">Quick Sample Benchmarks</label>
+          <div class="preset-chips">
+            <button class="chip" data-prompt="Calculate: 85 - 29">2D Subtraction (85 - 29)</button>
+            <button class="chip" data-prompt="Calculate: 162 - 78">3D Subtraction (162 - 78)</button>
+            <button class="chip" data-prompt="Calculate: 1428 - 659">4D Subtraction (1428 - 659)</button>
+            <button class="chip" data-prompt="Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?">GSM8K: Duck Eggs ($18)</button>
+            <button class="chip" data-prompt="James decides to run 3 sprints 3 times a week. He runs 60 meters each sprint. How many total meters does he run a week?">GSM8K: Sprints (540m)</button>
+            <button class="chip" data-prompt="There are 41 bird families living near the mountain. If 35 bird families flew away for winter, and later 21 returned, how many bird families are near the mountain now?">SVAMP: Bird Families (27)</button>
+            <button class="chip" data-prompt="A robe takes 2 bolts of blue fiber and half that much white fiber. How many bolts in total does it take?">GSM8K: Robe Bolts (3)</button>
+          </div>
+        </section>
+
+        <!-- Generation Hyperparameters -->
+        <section class="card params-card">
+          <div class="params-header" id="params-toggle">
+            <span class="section-label">Decoding Hyperparameters</span>
+            <span class="toggle-icon">⚙️</span>
+          </div>
+
+          <div class="params-body" id="params-body">
+            <div class="param-row">
+              <div class="param-label-group">
+                <label for="temperature">Temperature</label>
+                <span class="param-value" id="val-temperature">0.0</span>
+              </div>
+              <input type="range" id="temperature" min="0.0" max="1.2" step="0.05" value="0.0">
+            </div>
+
+            <div class="param-row">
+              <div class="param-label-group">
+                <label for="top_p">Top-p (Nucleus)</label>
+                <span class="param-value" id="val-top_p">1.0</span>
+              </div>
+              <input type="range" id="top_p" min="0.1" max="1.0" step="0.05" value="1.0">
+            </div>
+
+            <div class="param-row">
+              <div class="param-label-group">
+                <label for="rep-penalty">Repetition Penalty</label>
+                <span class="param-value" id="val-rep-penalty">1.00</span>
+              </div>
+              <input type="range" id="rep-penalty" min="1.0" max="1.5" step="0.05" value="1.0">
+            </div>
+
+            <div class="param-row">
+              <div class="param-label-group">
+                <label for="max-tokens">Max Tokens</label>
+                <span class="param-value" id="val-max-tokens">256</span>
+              </div>
+              <input type="range" id="max-tokens" min="16" max="384" step="16" value="256">
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Right Panel: Input & Live Output -->
+      <section class="workspace-panel">
+        <!-- Prompt Box -->
+        <div class="card prompt-card">
+          <div class="prompt-header">
+            <label class="section-label" for="prompt-input">Input Question / Prompt</label>
+            <button class="btn-secondary" id="btn-clear">Clear</button>
+          </div>
+          <textarea id="prompt-input" rows="4" placeholder="Enter a math problem, arithmetic query, or reasoning prompt... (e.g. Calculate: 154 - 38)"></textarea>
+          <div class="prompt-footer">
+            <span class="hint-text">Press <kbd>Ctrl</kbd> + <kbd>Enter</kbd> to generate</span>
+            <button class="btn-primary" id="btn-generate">
+              <span class="btn-icon">⚡</span> Run Model
+            </button>
+          </div>
+        </div>
+
+        <!-- Output Card -->
+        <div class="card output-card" id="output-container">
+          <div class="output-header">
+            <div class="tabs">
+              <button class="tab-btn active" data-tab="formatted">Structured View</button>
+              <button class="tab-btn" data-tab="raw">Raw Output</button>
+            </div>
+            <div class="telemetry-bar" id="telemetry-bar" style="display: none;">
+              <span class="telemetry-item"><strong id="tel-tokens">0</strong> tokens</span>
+              <span class="telemetry-item"><strong id="tel-speed">0</strong> tok/s</span>
+              <span class="telemetry-item"><strong id="tel-latency">0</strong> ms</span>
+            </div>
+          </div>
+
+          <!-- Empty State -->
+          <div class="empty-state" id="empty-state">
+            <div class="empty-icon">💡</div>
+            <h3>Ready for Input</h3>
+            <p>Select a model, pick a sample benchmark prompt on the left, or type your own question above to run inference.</p>
+          </div>
+
+          <!-- Loading State -->
+          <div class="loading-state" id="loading-state" style="display: none;">
+            <div class="spinner"></div>
+            <p>Generating token stream on GPU...</p>
+          </div>
+
+          <!-- Structured View -->
+          <div class="tab-content active" id="tab-formatted" style="display: none;">
+            <!-- Reasoning Container -->
+            <div class="reasoning-block" id="reasoning-block">
+              <div class="block-title">
+                <span class="title-icon">💭</span>
+                <span>Internal Reasoning Scratchpad (<code>&lt;think&gt;</code>)</span>
+              </div>
+              <pre class="trace-code" id="output-think"></pre>
+            </div>
+
+            <!-- Answer Container -->
+            <div class="answer-block" id="answer-block">
+              <div class="block-title">
+                <span class="title-icon">🎯</span>
+                <span>Final Extracted Answer (<code>&lt;answer&gt;</code>)</span>
+              </div>
+              <div class="answer-value-badge" id="output-answer">--</div>
+            </div>
+          </div>
+
+          <!-- Raw View -->
+          <div class="tab-content" id="tab-raw" style="display: none;">
+            <pre class="raw-output-code" id="output-raw"></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

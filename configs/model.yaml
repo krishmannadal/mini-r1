@@ -1,0 +1,34 @@
+# =============================================================================
+# Mini-R1 -- Model Architecture Configuration (Architecture B: ~42M parameters)
+# =============================================================================
+# Reasoning-oriented Small Language Model for mathematical reasoning.
+# Sized for training on NVIDIA GeForce RTX 4050 Laptop GPU (6 GB VRAM).
+# =============================================================================
+
+model:
+  # Vocabulary size (SentencePiece BPE tokenizer)
+  vocab_size: 8000
+
+  # Embedding / Hidden dimension (d_model)
+  d_model: 512
+
+  # Number of Transformer decoder layers
+  n_layers: 12
+
+  # Number of causal self-attention heads
+  n_heads: 8
+
+  # Feed-forward hidden dimension (4 * d_model)
+  d_ff: 2048
+
+  # Maximum sequence length (target reasoning context length)
+  max_seq_len: 512
+
+  # Dropout probability (0.0 during standard pretraining/SFT)
+  dropout: 0.0
+
+  # Bias terms in linear projections (False for modern LLaMA/GPT-style simplicity)
+  bias: false
+
+  # Weight tying between token embedding and LM head projection
+  tie_word_embeddings: true

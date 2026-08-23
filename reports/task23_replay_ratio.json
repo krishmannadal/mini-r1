@@ -1,0 +1,1903 @@
+{
+  "metadata": {
+    "task": "Task 22: Operator-Matched Replay SFT with Parameter Isolation",
+    "timestamp": "2026-08-23 16:46:44",
+    "decode_configs": {
+      "sampled_t06_p095_rp12": {
+        "label": "T=0.6, top_p=0.95, rep_pen=1.2 (Task 16B best)",
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "repetition_penalty": 1.2,
+        "role": "primary"
+      },
+      "greedy": {
+        "label": "greedy argmax (Task 21B setting)",
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "repetition_penalty": 1.0,
+        "role": "secondary"
+      }
+    },
+    "primary_metric": "step_level_equation_validity",
+    "generation_contract": "Task 21B batching contract preserved verbatim: BOS-prefixed prompt, left padding, no attention mask passed to the model, max_new_tokens=256.",
+    "retention_probe_decoding": "greedy (matches Task 20 baseline and Task 21B report)",
+    "generation_stop_rule": "Generation halts on EOS or on the </answer> token (a single dedicated token id). Equation validity, strict accuracy and full-format compliance are byte-identical to running to 256 tokens, because all three read only the first <think>..</think> and the first <answer>..</answer>. Reported generation LENGTH and REPETITION are therefore measured up to and including </answer>, and are NOT comparable to the Task 21B report's length/repetition figures, which included post-answer continuation.",
+    "deltas": {
+      "primary_decode": "sampled_t06_p095_rp12",
+      "equation_validity": {
+        "E_minus_A_primary": -13.9965334792921,
+        "E_minus_B_primary": -19.448772161619278,
+        "E_minus_A_greedy": -11.48954002915168,
+        "E_minus_B_greedy": -12.571909921772356
+      },
+      "delta_replay_trainability": {
+        "_definition": "Model F (replay, all trainable) minus Model E (replay, frozen). Isolates parameter freezing from replay data.",
+        "equation_validity_primary": 25.318782121470043,
+        "equation_validity_greedy": 30.379581381088503,
+        "gsm8k_acc_primary": 0.3032600454890071,
+        "gsm8k_acc_greedy": 0.7581501137225173
+      },
+      "task22b_vs_21b_baselines": {
+        "F_minus_A_primary_validity": 11.322248642177943,
+        "F_minus_B_primary_validity": 5.870009959850766
+      },
+      "gsm8k_strict_accuracy": {
+        "E_minus_A_primary": 0.30326004548900665,
+        "E_minus_B_primary": 0.22744503411675487,
+        "E_minus_A_greedy": 0.6065200909780136,
+        "E_minus_B_greedy": 0.30326004548900687
+      }
+    },
+    "verdict": "Conclusion D: Step-level equation validity regressed (-14.00 pts vs Task 21B Model A)."
+  },
+  "models": {
+    "Model_F_Task22B_Replay_All_Trainable": {
+      "model_label": "Model F (Task 22B: Replay, All Params Trainable)",
+      "checkpoint_path": "artifacts/sft/task22b_replay_only/best.pt",
+      "checkpoint_sha256": "99d5e64270aa4f11d662bd1fac29da573290b2fad1e226ee78909fc20a2ebcc8",
+      "gsm8k_by_decode": {
+        "sampled_t06_p095_rp12": {
+          "N": 1319,
+          "correct": 31,
+          "strict_accuracy": 2.350265352539803,
+          "think_compliance_rate": 100.0,
+          "answer_compliance_rate": 100.0,
+          "full_format_compliance_rate": 99.54510993176649,
+          "eos_rate": 100.0,
+          "repetition_rate": 13.191811978771797,
+          "generation_length": {
+            "mean": 24.017437452615617,
+            "p50": 25.0,
+            "p90": 34.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 8,
+              "accuracy": 2.5396825396825395
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 9,
+              "accuracy": 2.5
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 14,
+              "accuracy": 2.1739130434782608
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "40",
+              "is_correct": false,
+              "generation": "<think>\n3 * 5 = 40\n</think>\n<answer>40</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": "3",
+              "is_correct": true,
+              "generation": "<think>\n10 / 5 = 3\n</think>\n<answer>3</answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "9",
+              "is_correct": false,
+              "generation": "<think>\n2 * 4 = 6\n8 + 3 = 9\n</think>\n<answer>9</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": "10",
+              "is_correct": false,
+              "generation": "<think>\n3 * 2 = 8\n8 + 4 = 10\n</think>\n<answer>10</answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "8",
+              "is_correct": false,
+              "generation": "<think>\n3 * 4 = 20\n20 - 6 = 8\n</think>\n<answer>8</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "30",
+              "is_correct": false,
+              "generation": "<think>\n2 * 7 = 30\n</think>\n<answer>30</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "36",
+              "is_correct": false,
+              "generation": "<think>\n2 * 12 = 36\n</think>\n<answer>36</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": "3",
+              "is_correct": false,
+              "generation": "<think>\n5 * 2 = 12\n6 / 2 = 3\n</think>\n<answer>3</answer>"
+            }
+          ],
+          "eval_time_sec": 141.19923496246338,
+          "equation_metrics": {
+            "total_generated_equations": 2263,
+            "valid_generated_equations": 719,
+            "step_level_equation_validity": 31.771984091913392,
+            "generations_with_at_least_one_equation": 1319,
+            "pct_generations_with_equation": 100.0,
+            "mean_equations_per_generation": 1.7156937073540561,
+            "valid_equations_per_generation": 0.5451099317664898,
+            "final_step_answer_consistency": 98.86277482941622,
+            "final_step_checked": 1319,
+            "invalid_equation_examples": [
+              "3 * 5 = 40",
+              "10 / 5 = 3",
+              "2 * 4 = 6",
+              "8 + 3 = 9",
+              "3 * 2 = 8",
+              "8 + 4 = 10",
+              "3 * 4 = 20",
+              "20 - 6 = 8",
+              "2 * 7 = 30",
+              "2 * 12 = 36",
+              "5 * 2 = 12",
+              "20 + 45 = 30",
+              "24 + 5 = 9",
+              "4 * 7 = 12",
+              "12 / 2 = 3"
+            ]
+          }
+        },
+        "greedy": {
+          "N": 1319,
+          "correct": 30,
+          "strict_accuracy": 2.2744503411675514,
+          "think_compliance_rate": 98.71114480667173,
+          "answer_compliance_rate": 98.71114480667173,
+          "full_format_compliance_rate": 98.55951478392721,
+          "eos_rate": 98.71114480667173,
+          "repetition_rate": 84.53373768006065,
+          "generation_length": {
+            "mean": 41.45716451857468,
+            "p50": 35.0,
+            "p90": 59.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 8,
+              "accuracy": 2.5396825396825395
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 4,
+              "accuracy": 1.1111111111111112
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 18,
+              "accuracy": 2.7950310559006213
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "8",
+              "is_correct": false,
+              "generation": "<think>\n2 * 2 = 4\n2 * 4 = 8\n</think>\n<answer>8</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": "6",
+              "is_correct": false,
+              "generation": "<think>\n2 * 2 = 6\n</think>\n<answer>6</answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "2000",
+              "is_correct": false,
+              "generation": "<think>\n8000 * 2 = 12000\n12000 * 2 = 20000\n20000 + 2000 = 20000\n</think>\n<answer>2000</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": "30",
+              "is_correct": false,
+              "generation": "<think>\n3 * 60 = 120\n120 / 2 = 30\n</think>\n<answer>30</answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "120",
+              "is_correct": false,
+              "generation": "<think>\n20 * 2 = 40\n40 * 2 = 80\n80 + 15 = 120\n</think>\n<answer>120</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "240",
+              "is_correct": false,
+              "generation": "<think>\n16 * 2 = 30\n30 * 2 = 120\n30 + 120 + 120 = 240\n</think>\n<answer>240</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "1200",
+              "is_correct": false,
+              "generation": "<think>\n20 * 2 = 40\n40 * 2 = 80\n80 + 40 + 80 = 1200\n</think>\n<answer>1200</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": "240",
+              "is_correct": false,
+              "generation": "<think>\n20 * 2 = 4\n4 * 20 = 80\n80 * 2 = 120\n80 + 120 = 240\n</think>\n<answer>240</answer>"
+            }
+          ],
+          "eval_time_sec": 852.7637541294098,
+          "equation_metrics": {
+            "total_generated_equations": 3618,
+            "valid_generated_equations": 1540,
+            "step_level_equation_validity": 42.564953012714206,
+            "generations_with_at_least_one_equation": 1317,
+            "pct_generations_with_equation": 99.84836997725549,
+            "mean_equations_per_generation": 2.7429871114480666,
+            "valid_equations_per_generation": 1.1675511751326764,
+            "final_step_answer_consistency": 97.92626728110599,
+            "final_step_checked": 1302,
+            "invalid_equation_examples": [
+              "2 * 2 = 6",
+              "8000 * 2 = 12000",
+              "12000 * 2 = 20000",
+              "20000 + 2000 = 20000",
+              "3 * 60 = 120",
+              "120 / 2 = 30",
+              "80 + 15 = 120",
+              "16 * 2 = 30",
+              "30 * 2 = 120",
+              "30 + 120 + 120 = 240",
+              "80 + 40 + 80 = 1200",
+              "20 * 2 = 4",
+              "80 * 2 = 120",
+              "80 + 120 = 240",
+              "120 / 4 = 60"
+            ]
+          }
+        }
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 19,
+          "accuracy": 3.8
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 9,
+          "accuracy": 1.7999999999999998
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "replay_regime_holdout": {
+        "N": 500,
+        "correct": 19,
+        "accuracy": 3.8,
+        "step_level_equation_validity": 19.786535303776684,
+        "total_generated_equations": 1218
+      },
+      "general_language": {
+        "val_loss": 4.094712505129647,
+        "perplexity": 60.02208063641044
+      }
+    },
+    "Model_E_Task22_Replay_Isolated": {
+      "model_label": "Model E (Task 22: Replay + Parameter Isolation)",
+      "checkpoint_path": "artifacts/sft/task22_replay_isolated/best.pt",
+      "checkpoint_sha256": "f339f5432de85fd28757f9ca5395704636e694a6b6b821537eb8d66ded96a300",
+      "gsm8k_by_decode": {
+        "sampled_t06_p095_rp12": {
+          "N": 1319,
+          "correct": 27,
+          "strict_accuracy": 2.047005307050796,
+          "full_format_compliance_rate": 85.44351781652767,
+          "repetition_rate": 47.460197119029566,
+          "generation_length": {
+            "mean": 39.62319939347991,
+            "p50": 38.0,
+            "p90": 56.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 7,
+              "accuracy": 2.2222222222222223
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 4,
+              "accuracy": 1.1111111111111112
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 16,
+              "accuracy": 2.484472049689441
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "7",
+              "is_correct": false,
+              "generation": "<think>\n4 * 5 = 30\n30 + 8 = 15\n3 * 2 = 7\n</think>\n<answer>7</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": null,
+              "is_correct": false,
+              "generation": "<think>\n10 / 5 = 3\n2 * 60 = 40 - 80 + 60 + 36 = 90\n</think>\n<answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "7",
+              "is_correct": false,
+              "generation": "<think>\n2 * 4 = 3\n6 + 2 = 7\n</think>\n<answer>\n<answer>7</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": null,
+              "is_correct": false,
+              "generation": "<think>\n3 * 2 = 4\n1 + 3 = 8\n25 / 5 = 3\n3 - 3 = 2\n2 / 5 + 2 + 3 + 6 = 3\n</think>\n<answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "2",
+              "is_correct": false,
+              "generation": "<think>\n3 * 4 = 8\n25 / 25 = 6\n6 + 15 = 9\n2 * 5 = 7\n25 - 6 = 2\n</think>\n<answer>2</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "35",
+              "is_correct": false,
+              "generation": "<think>\n5 * 7 = 20\n8 / 3 = 4\n2 * 20 = 90\n3 + 5 = 35\n</think>\n<answer>35</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "3",
+              "is_correct": false,
+              "generation": "<think>\n5 * 6 = 18\n6 / 3 = 2\n2 + 2 = 7\n15 - 2 = 3\n</think>\n<answer>3</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": "30",
+              "is_correct": false,
+              "generation": "<think>\n5 * 2 = 12\n6 / 3 * 5 = 8\n12 + 6 + 7 = 30\n</think>\n<answer>30</answer>"
+            }
+          ],
+          "eval_time_sec": 268.20267248153687,
+          "equation_metrics": {
+            "total_generated_equations": 4060,
+            "valid_generated_equations": 262,
+            "step_level_equation_validity": 6.45320197044335,
+            "generations_with_at_least_one_equation": 1303,
+            "pct_generations_with_equation": 98.78695981804397,
+            "mean_equations_per_generation": 3.0780894617134194,
+            "valid_equations_per_generation": 0.19863532979529946,
+            "final_step_answer_consistency": 90.93333333333334,
+            "final_step_checked": 1125,
+            "invalid_equation_examples": [
+              "4 * 5 = 30",
+              "30 + 8 = 15",
+              "3 * 2 = 7",
+              "10 / 5 = 3",
+              "2 * 4 = 3",
+              "6 + 2 = 7",
+              "3 * 2 = 4",
+              "1 + 3 = 8",
+              "25 / 5 = 3",
+              "3 - 3 = 2",
+              "2 / 5 + 2 + 3 + 6 = 3",
+              "3 * 4 = 8",
+              "25 / 25 = 6",
+              "6 + 15 = 9",
+              "2 * 5 = 7"
+            ]
+          }
+        },
+        "greedy": {
+          "N": 1319,
+          "correct": 20,
+          "strict_accuracy": 1.5163002274450341,
+          "full_format_compliance_rate": 72.78241091736164,
+          "repetition_rate": 99.92418498862776,
+          "generation_length": {
+            "mean": 126.86580742987111,
+            "p50": 86.0,
+            "p90": 256.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 3,
+              "accuracy": 0.9523809523809524
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 6,
+              "accuracy": 1.6666666666666667
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 11,
+              "accuracy": 1.7080745341614907
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": null,
+              "is_correct": false,
+              "generation": "<think>\n16 / 2 = 3\n3 * 2 = 6\n3 * 3 = 12\n16 + 3 + 12 + 6 = 12\n16 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 +"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": null,
+              "is_correct": false,
+              "generation": "<think>\n12 / 2 = 3\n3 * 3 = 12\n12 + 3 = 24\n24 / 2 = 12\n12 + 3 + 24 + 12 + 3 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "200",
+              "is_correct": false,
+              "generation": "<think>\n8000 * 2 = 1200\n1500 * 2 = 200\n1500 + 200 + 200 = 2000\n200 + 200 + 200 = 200\n200 + 200 + 200 = 200\n</think>\n<answer>200</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": null,
+              "is_correct": false,
+              "generation": "<think>\n3 * 3 = 12\n3 * 3 = 12\n12 + 3 = 24\n24 + 3 + 12 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 + 24 +"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "120",
+              "is_correct": false,
+              "generation": "<think>\n20 * 2 = 60\n60 * 2 = 120\n15 * 2 = 120\n120 + 120 + 120 + 120 = 250\n250 - 250 = 120\n</think>\n<answer>120</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "240",
+              "is_correct": false,
+              "generation": "<think>\n16 * 2 = 12\n12 * 6 = 24\n24 * 2 = 120\n16 * 2 = 36\n120 + 36 = 240\n240 / 240 = 240\n240 / 240 = 240\n</think>\n<answer>240</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "20",
+              "is_correct": false,
+              "generation": "<think>\n4 * 20 = 120\n120 / 2 = 20\n20 / 20 = 20\n20 + 20 + 20 = 20\n20 + 20 + 20 = 20\n20 + 20 + 20 = 20\n</think>\n<answer>20</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": null,
+              "is_correct": false,
+              "generation": "<think>\n2 * 2 = 6\n2 * 3 = 6\n2 * 2 = 6\n6 + 2 = 12\n2 * 6 = 12\n12 + 6 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 12 + 1"
+            }
+          ],
+          "eval_time_sec": 5514.482510089874,
+          "equation_metrics": {
+            "total_generated_equations": 6754,
+            "valid_generated_equations": 823,
+            "step_level_equation_validity": 12.185371631625703,
+            "generations_with_at_least_one_equation": 1318,
+            "pct_generations_with_equation": 99.92418498862776,
+            "mean_equations_per_generation": 5.12054586808188,
+            "valid_equations_per_generation": 0.6239575435936315,
+            "final_step_answer_consistency": 94.79166666666666,
+            "final_step_checked": 960,
+            "invalid_equation_examples": [
+              "16 / 2 = 3",
+              "3 * 3 = 12",
+              "16 + 3 + 12 + 6 = 12",
+              "12 / 2 = 3",
+              "3 * 3 = 12",
+              "12 + 3 = 24",
+              "8000 * 2 = 1200",
+              "1500 * 2 = 200",
+              "1500 + 200 + 200 = 2000",
+              "200 + 200 + 200 = 200",
+              "200 + 200 + 200 = 200",
+              "3 * 3 = 12",
+              "3 * 3 = 12",
+              "12 + 3 = 24",
+              "20 * 2 = 60"
+            ]
+          }
+        }
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 28,
+          "accuracy": 5.6000000000000005
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 21,
+          "accuracy": 4.2
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "replay_regime_holdout": {
+        "N": 500,
+        "correct": 16,
+        "accuracy": 3.2,
+        "step_level_equation_validity": 10.236686390532544,
+        "total_generated_equations": 1690
+      },
+      "general_language": {
+        "val_loss": 3.4122272807263263,
+        "perplexity": 30.332728579981982
+      }
+    },
+    "Model_A_21B_Compact_Transfer": {
+      "model_label": "Model A (21B: Arithmetic -> Compact GSM8K)",
+      "checkpoint_path": "artifacts/sft/compact_transfer/arithmetic_init/best.pt",
+      "checkpoint_sha256": "8c55e2d302fd2aed2a12dca3b381f33bf6eceae9058814c162401e8f8961fa0f",
+      "gsm8k_by_decode": {
+        "sampled_t06_p095_rp12": {
+          "N": 1319,
+          "correct": 23,
+          "strict_accuracy": 1.7437452615617892,
+          "full_format_compliance_rate": 99.62092494313875,
+          "repetition_rate": 37.07354056103108,
+          "generation_length": {
+            "mean": 36.558756633813495,
+            "p50": 35.0,
+            "p90": 49.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 4,
+              "accuracy": 1.2698412698412698
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 5,
+              "accuracy": 1.3888888888888888
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 14,
+              "accuracy": 2.1739130434782608
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "9",
+              "is_correct": false,
+              "generation": "<think>\n3 + 5 = 7\n16 * 2 = 4\n16 - 2 = 8\n8 + 2 = 9\n</think>\n<answer>9</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": "5",
+              "is_correct": false,
+              "generation": "<think>\n10 - 6 = 3\n1 / 2 * 5 = 5\n</think>\n<answer>5</answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "1600",
+              "is_correct": false,
+              "generation": "<think>\n2 * 4 = 2\n80000 - 7200 = 16000\n</think>\n<answer>1600</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": "10",
+              "is_correct": false,
+              "generation": "<think>\n3 * 2 = 4\n1 + 3 = 1\n4 + 6 = 8\n7 + 5 = 10\n</think>\n<answer>10</answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "28",
+              "is_correct": false,
+              "generation": "<think>\n3 * 15 = 70\n15 - 6 = 4\n20 + 70 + 4 = 28\n</think>\n<answer>28</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "9",
+              "is_correct": false,
+              "generation": "<think>\n2 * 7 = 8\n2 + 4 = 6\n16 - 3 = 9\n</think>\n<answer>9</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "7",
+              "is_correct": false,
+              "generation": "<think>\n2 * 12 = 30\n4 * 12 = 8\n20 + 6 + 5 = 24\n30 - 24 = 7\n</think>\n<answer>7</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": "50",
+              "is_correct": false,
+              "generation": "<think>\n2 * 1 = 2\n2 + 3 = 6\n5 * 100 = 50\n</think>\n<answer>50</answer>"
+            }
+          ],
+          "eval_time_sec": 396.9462375640869,
+          "equation_metrics": {
+            "total_generated_equations": 3780,
+            "valid_generated_equations": 773,
+            "step_level_equation_validity": 20.44973544973545,
+            "generations_with_at_least_one_equation": 1318,
+            "pct_generations_with_equation": 99.92418498862776,
+            "mean_equations_per_generation": 2.8658074298711145,
+            "valid_equations_per_generation": 0.5860500379075056,
+            "final_step_answer_consistency": 97.6425855513308,
+            "final_step_checked": 1315,
+            "invalid_equation_examples": [
+              "3 + 5 = 7",
+              "16 * 2 = 4",
+              "16 - 2 = 8",
+              "8 + 2 = 9",
+              "10 - 6 = 3",
+              "1 / 2 * 5 = 5",
+              "2 * 4 = 2",
+              "80000 - 7200 = 16000",
+              "3 * 2 = 4",
+              "1 + 3 = 1",
+              "4 + 6 = 8",
+              "7 + 5 = 10",
+              "3 * 15 = 70",
+              "15 - 6 = 4",
+              "20 + 70 + 4 = 28"
+            ]
+          }
+        },
+        "greedy": {
+          "N": 1319,
+          "correct": 12,
+          "strict_accuracy": 0.9097801364670205,
+          "full_format_compliance_rate": 97.8013646702047,
+          "repetition_rate": 96.36087945413192,
+          "generation_length": {
+            "mean": 62.9226686884003,
+            "p50": 57.0,
+            "p90": 82.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 3,
+              "accuracy": 0.9523809523809524
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 3,
+              "accuracy": 0.8333333333333334
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 6,
+              "accuracy": 0.9316770186335404
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "44",
+              "is_correct": false,
+              "generation": "<think>\n16 * 2 = 12\n2 * 12 = 24\n24 + 12 = 24\n24 + 24 = 44\n</think>\n<answer>44</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": "12",
+              "is_correct": false,
+              "generation": "<think>\n2 * 2 = 4\n2 * 2 = 4\n4 + 2 = 4\n4 + 4 + 4 = 12\n</think>\n<answer>12</answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "20000",
+              "is_correct": false,
+              "generation": "<think>\n80000 - 50000 = 20000\n20000 - 20000 = 20000\n20000 - 2000 = 20000\n</think>\n<answer>20000</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": "240",
+              "is_correct": false,
+              "generation": "<think>\n3 * 60 = 120\n120 + 60 = 120\n120 + 120 = 240\n120 + 240 = 240\n</think>\n<answer>240</answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "50",
+              "is_correct": false,
+              "generation": "<think>\n20 * 3 = 60\n60 + 25 = 150\n150 / 3 = 50\n</think>\n<answer>50</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "4",
+              "is_correct": false,
+              "generation": "<think>\n16 * 2 = 20\n20 * 60 * 01 = 16\n20 + 16 = 24\n24 * 16 = 72\n72 - 24 = 4\n</think>\n<answer>4</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "240",
+              "is_correct": false,
+              "generation": "<think>\n20 * 2 = 4\n4 * 20 = 40\n40 + 40 = 60\n40 + 60 = 120\n120 + 40 = 120\n120 + 40 + 120 = 240\n</think>\n<answer>240</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": "360",
+              "is_correct": false,
+              "generation": "<think>\n20 * 2 = 4\n40 * 2 = 4\n4 + 4 = 8\n8 + 4 = 10\n10 + 4 = 12\n12 * 20 = 240\n240 + 240 + 10 = 360\n</think>\n<answer>360</answer>"
+            }
+          ],
+          "eval_time_sec": 1246.0746068954468,
+          "equation_metrics": {
+            "total_generated_equations": 5660,
+            "valid_generated_equations": 1340,
+            "step_level_equation_validity": 23.674911660777383,
+            "generations_with_at_least_one_equation": 1314,
+            "pct_generations_with_equation": 99.62092494313875,
+            "mean_equations_per_generation": 4.291129643669446,
+            "valid_equations_per_generation": 1.0159211523881728,
+            "final_step_answer_consistency": 99.30232558139535,
+            "final_step_checked": 1290,
+            "invalid_equation_examples": [
+              "16 * 2 = 12",
+              "24 + 12 = 24",
+              "24 + 24 = 44",
+              "4 + 2 = 4",
+              "80000 - 50000 = 20000",
+              "20000 - 20000 = 20000",
+              "20000 - 2000 = 20000",
+              "3 * 60 = 120",
+              "120 + 60 = 120",
+              "120 + 240 = 240",
+              "60 + 25 = 150",
+              "16 * 2 = 20",
+              "20 * 60 * 01 = 16",
+              "20 + 16 = 24",
+              "24 * 16 = 72"
+            ]
+          }
+        }
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 22,
+          "accuracy": 4.3999999999999995
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 26,
+          "accuracy": 5.2
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 3,
+          "accuracy": 0.6
+        }
+      },
+      "replay_regime_holdout": {
+        "N": 500,
+        "correct": 15,
+        "accuracy": 3.0,
+        "step_level_equation_validity": 30.17751479289941,
+        "total_generated_equations": 338
+      },
+      "general_language": {
+        "val_loss": 3.781451452420477,
+        "perplexity": 43.87968481168208
+      }
+    },
+    "Model_B_21B_Compact_Transfer": {
+      "model_label": "Model B (21B: Base -> Compact GSM8K)",
+      "checkpoint_path": "artifacts/sft/compact_transfer/base_init/best.pt",
+      "checkpoint_sha256": "c1b3b28576244aee15cc006f52f6254fa1202148f5ef3bfce7659e50b76597aa",
+      "gsm8k_by_decode": {
+        "sampled_t06_p095_rp12": {
+          "N": 1319,
+          "correct": 24,
+          "strict_accuracy": 1.819560272934041,
+          "full_format_compliance_rate": 96.89158453373769,
+          "repetition_rate": 32.52463987869598,
+          "generation_length": {
+            "mean": 34.3199393479909,
+            "p50": 30.0,
+            "p90": 48.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 2,
+              "accuracy": 0.6349206349206349
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 10,
+              "accuracy": 2.7777777777777777
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 12,
+              "accuracy": 1.8633540372670807
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "7",
+              "is_correct": false,
+              "generation": "<think>\n3 * 4 = 12\n1 / 2 + 1 = 5\n12 - 8 = 7\n</think>\n<answer>7</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": "30",
+              "is_correct": false,
+              "generation": "<think>\n10 * 6 = 30\n</think>\n<answer>30</answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "3000",
+              "is_correct": false,
+              "generation": "<think>\n2 * 4 = 6\n80000 / 7 = 3000\n</think>\n<answer>3000</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": "186",
+              "is_correct": false,
+              "generation": "<think>\n12 * 4 = 186\n</think>\n<answer>186</answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "4",
+              "is_correct": false,
+              "generation": "<think>\n3 * 4 = 16\n16 - 20 = 4\n</think>\n<answer>4</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "14",
+              "is_correct": false,
+              "generation": "<think>\n2 * 7 = 14\n</think>\n<answer>14</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "60",
+              "is_correct": false,
+              "generation": "<think>\n20 + 1 = 30\n30 * 2 = 60\n</think>\n<answer>60</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": "18",
+              "is_correct": false,
+              "generation": "<think>\n12 * 3 = 6\n6 + 20 = 18\n</think>\n<answer>18</answer>"
+            }
+          ],
+          "eval_time_sec": 7076.874099493027,
+          "equation_metrics": {
+            "total_generated_equations": 2938,
+            "valid_generated_equations": 761,
+            "step_level_equation_validity": 25.901974132062627,
+            "generations_with_at_least_one_equation": 1274,
+            "pct_generations_with_equation": 96.58832448824867,
+            "mean_equations_per_generation": 2.227445034116755,
+            "valid_equations_per_generation": 0.5769522365428355,
+            "final_step_answer_consistency": 97.53577106518283,
+            "final_step_checked": 1258,
+            "invalid_equation_examples": [
+              "1 / 2 + 1 = 5",
+              "12 - 8 = 7",
+              "10 * 6 = 30",
+              "2 * 4 = 6",
+              "80000 / 7 = 3000",
+              "12 * 4 = 186",
+              "3 * 4 = 16",
+              "16 - 20 = 4",
+              "20 + 1 = 30",
+              "12 * 3 = 6",
+              "6 + 20 = 18",
+              "1 / 4 * 5 = 10",
+              "1 + 2 + 1 = 9",
+              "3 * 1 = 7",
+              "10 + 7 + 1 = 9"
+            ]
+          }
+        },
+        "greedy": {
+          "N": 1319,
+          "correct": 16,
+          "strict_accuracy": 1.2130401819560273,
+          "full_format_compliance_rate": 91.58453373768006,
+          "repetition_rate": 95.37528430629266,
+          "generation_length": {
+            "mean": 79.74222896133435,
+            "p50": 63.0,
+            "p90": 123.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 3,
+              "accuracy": 0.9523809523809524
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 4,
+              "accuracy": 1.1111111111111112
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 9,
+              "accuracy": 1.3975155279503106
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "3",
+              "is_correct": false,
+              "generation": "<think>\n2 * 12 = 24\n24 + 1 = 12\n24 - 12 = 12\n12 - 1 = 1\n1 * 1 = 2\n2 * 1 = 2\n2 + 1 + 2 = 3\n1 + 2 + 1 = 3\n</think>\n<answer>3</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": "112",
+              "is_correct": false,
+              "generation": "<think>\n2 * 12 = 24\n2 * 12 = 24\n24 + 24 + 1 = 112\n</think>\n<answer>112</answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "300000",
+              "is_correct": false,
+              "generation": "<think>\n800000 * 2 = 100000\n10000 * 2 = 10000\n10000 + 10000 + 10000 = 300000\n</think>\n<answer>300000</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": "136",
+              "is_correct": false,
+              "generation": "<think>\n2 * 60 = 120\n120 + 120 + 120 + 3 = 136\n</think>\n<answer>136</answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "10",
+              "is_correct": false,
+              "generation": "<think>\n20 * 3 = 60\n60 * 3 = 180\n180 + 60 + 180 = 180\n180 - 180 = 10\n</think>\n<answer>10</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "12",
+              "is_correct": false,
+              "generation": "<think>\n16 * 2 = 12\n12 * 2 = 36\n12 + 12 + 36 = 36\n12 + 36 = 36\n36 - 12 = 12\n</think>\n<answer>12</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "120",
+              "is_correct": false,
+              "generation": "<think>\n20 * 2 = 40\n40 + 1 = 4\n4 * 20 = 10\n4 * 20 = 10\n4 + 10 + 10 = 120\n</think>\n<answer>120</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": "6",
+              "is_correct": false,
+              "generation": "<think>\n2 * 20 = 40\n40 / 100 = 2\n2 * 2 = 4\n40 + 2 = 6\n</think>\n<answer>6</answer>"
+            }
+          ],
+          "eval_time_sec": 9069.984190225601,
+          "equation_metrics": {
+            "total_generated_equations": 5974,
+            "valid_generated_equations": 1479,
+            "step_level_equation_validity": 24.75728155339806,
+            "generations_with_at_least_one_equation": 1311,
+            "pct_generations_with_equation": 99.39347990902199,
+            "mean_equations_per_generation": 4.529188779378317,
+            "valid_equations_per_generation": 1.1213040181956027,
+            "final_step_answer_consistency": 98.34162520729684,
+            "final_step_checked": 1206,
+            "invalid_equation_examples": [
+              "24 + 1 = 12",
+              "12 - 1 = 1",
+              "1 * 1 = 2",
+              "2 + 1 + 2 = 3",
+              "1 + 2 + 1 = 3",
+              "24 + 24 + 1 = 112",
+              "800000 * 2 = 100000",
+              "10000 * 2 = 10000",
+              "10000 + 10000 + 10000 = 300000",
+              "120 + 120 + 120 + 3 = 136",
+              "180 + 60 + 180 = 180",
+              "180 - 180 = 10",
+              "16 * 2 = 12",
+              "12 * 2 = 36",
+              "12 + 12 + 36 = 36"
+            ]
+          }
+        }
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 3,
+          "accuracy": 0.6
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "replay_regime_holdout": {
+        "N": 500,
+        "correct": 4,
+        "accuracy": 0.8,
+        "step_level_equation_validity": 36.84210526315789,
+        "total_generated_equations": 57
+      },
+      "general_language": {
+        "val_loss": 3.0840193158457714,
+        "perplexity": 21.84603227583772
+      }
+    },
+    "Model_G_Task23_90_10": {
+      "model_label": "Model G (Task 23: 90/10 replay, all trainable)",
+      "checkpoint_path": "artifacts/sft/task23_90_10/best.pt",
+      "checkpoint_sha256": "fa4ef4e0f3ff2159d5256a01c6b01f3384fd6dc31bf427a9ab0bf35b9566924b",
+      "gsm8k_by_decode": {
+        "sampled_t06_p095_rp12": {
+          "N": 1319,
+          "correct": 22,
+          "strict_accuracy": 1.6679302501895377,
+          "think_compliance_rate": 99.77255496588324,
+          "answer_compliance_rate": 99.62092494313875,
+          "full_format_compliance_rate": 99.39347990902199,
+          "eos_rate": 99.92418498862776,
+          "repetition_rate": 20.01516300227445,
+          "generation_length": {
+            "mean": 29.155420773313114,
+            "p50": 28.0,
+            "p90": 39.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 6,
+              "accuracy": 1.9047619047619049
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 5,
+              "accuracy": 1.3888888888888888
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 11,
+              "accuracy": 1.7080745341614907
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "9",
+              "is_correct": false,
+              "generation": "<think>\n3 * 5 = 10\n4 * 7 = 8\n16 - 2 = 9\n</think>\n<answer>9</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": "3",
+              "is_correct": true,
+              "generation": "<think>\n10 - 6 = 3\n</think>\n<answer>3</answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "13200",
+              "is_correct": false,
+              "generation": "<think>\n2 * 4 = 6\n80000 - 7200 = 13200\n</think>\n<answer>13200</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": "96",
+              "is_correct": false,
+              "generation": "<think>\n3 * 2 = 4\n18 * 52 = 96\n</think>\n<answer>96</answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "6",
+              "is_correct": false,
+              "generation": "<think>\n3 * 4 = 12\n4 * 25 = 80\n20 - 7 = 6\n</think>\n<answer>6</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "3",
+              "is_correct": false,
+              "generation": "<think>\n2 * 7 = 14\n8 - 14 = 3\n</think>\n<answer>3</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "36",
+              "is_correct": false,
+              "generation": "<think>\n20 + 15 = 36\n</think>\n<answer>36</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": "36",
+              "is_correct": false,
+              "generation": "<think>\n12 * 60 = 640\n640 - 20 - 80 = 36\n</think>\n<answer>36</answer>"
+            }
+          ],
+          "eval_time_sec": 251.2336151599884,
+          "equation_metrics": {
+            "total_generated_equations": 2805,
+            "valid_generated_equations": 652,
+            "step_level_equation_validity": 23.24420677361854,
+            "generations_with_at_least_one_equation": 1308,
+            "pct_generations_with_equation": 99.16603487490522,
+            "mean_equations_per_generation": 2.1266110689916604,
+            "valid_equations_per_generation": 0.4943138741470811,
+            "final_step_answer_consistency": 99.77029096477796,
+            "final_step_checked": 1306,
+            "invalid_equation_examples": [
+              "3 * 5 = 10",
+              "4 * 7 = 8",
+              "16 - 2 = 9",
+              "10 - 6 = 3",
+              "2 * 4 = 6",
+              "80000 - 7200 = 13200",
+              "3 * 2 = 4",
+              "18 * 52 = 96",
+              "4 * 25 = 80",
+              "20 - 7 = 6",
+              "8 - 14 = 3",
+              "20 + 15 = 36",
+              "12 * 60 = 640",
+              "640 - 20 - 80 = 36",
+              "6 / 3 = 3"
+            ]
+          }
+        },
+        "greedy": {
+          "N": 1319,
+          "correct": 28,
+          "strict_accuracy": 2.122820318423048,
+          "think_compliance_rate": 97.11902956785443,
+          "answer_compliance_rate": 97.11902956785443,
+          "full_format_compliance_rate": 97.11902956785443,
+          "eos_rate": 97.11902956785443,
+          "repetition_rate": 76.19408642911296,
+          "generation_length": {
+            "mean": 49.44275966641395,
+            "p50": 41.0,
+            "p90": 64.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 9,
+              "accuracy": 2.857142857142857
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 5,
+              "accuracy": 1.3888888888888888
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 14,
+              "accuracy": 2.1739130434782608
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "36",
+              "is_correct": false,
+              "generation": "<think>\n2 * 16 = 32\n32 - 2 = 18\n18 * 2 = 36\n</think>\n<answer>36</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": "6",
+              "is_correct": false,
+              "generation": "<think>\n2 * 12 = 24\n24 - 24 = 6\n</think>\n<answer>6</answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "2000",
+              "is_correct": false,
+              "generation": "<think>\n8000 - 5000 = 2000\n20000 - 15000 = 2000\n</think>\n<answer>2000</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": "68",
+              "is_correct": false,
+              "generation": "<think>\n3 * 60 = 120\n120 - 60 = 12\n120 - 12 = 68\n</think>\n<answer>68</answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "15",
+              "is_correct": false,
+              "generation": "<think>\n20 * 3 = 60\n60 - 20 = 30\n30 / 2 = 15\n</think>\n<answer>15</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "2",
+              "is_correct": false,
+              "generation": "<think>\n16 * 2 = 32\n32 - 16 = 14\n14 - 16 = 2\n</think>\n<answer>2</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "20",
+              "is_correct": false,
+              "generation": "<think>\n20 * 2 = 40\n40 + 40 = 60\n40 + 60 = 120\n120 - 120 = 20\n</think>\n<answer>20</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": null,
+              "is_correct": false,
+              "generation": "<think>\n20 * 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+            }
+          ],
+          "eval_time_sec": 1001.9849736690521,
+          "equation_metrics": {
+            "total_generated_equations": 4000,
+            "valid_generated_equations": 1250,
+            "step_level_equation_validity": 31.25,
+            "generations_with_at_least_one_equation": 1301,
+            "pct_generations_with_equation": 98.63532979529947,
+            "mean_equations_per_generation": 3.0326004548900682,
+            "valid_equations_per_generation": 0.9476876421531463,
+            "final_step_answer_consistency": 99.76580796252928,
+            "final_step_checked": 1281,
+            "invalid_equation_examples": [
+              "32 - 2 = 18",
+              "24 - 24 = 6",
+              "8000 - 5000 = 2000",
+              "20000 - 15000 = 2000",
+              "3 * 60 = 120",
+              "120 - 60 = 12",
+              "120 - 12 = 68",
+              "60 - 20 = 30",
+              "32 - 16 = 14",
+              "14 - 16 = 2",
+              "40 + 40 = 60",
+              "40 + 60 = 120",
+              "120 - 120 = 20",
+              "3 * 60 = 120",
+              "120 - 4 = 160"
+            ]
+          }
+        }
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 328,
+          "accuracy": 65.60000000000001
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 274,
+          "accuracy": 54.800000000000004
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 67,
+          "accuracy": 13.4
+        }
+      },
+      "replay_regime_holdout": {
+        "N": 500,
+        "correct": 5,
+        "accuracy": 1.0,
+        "step_level_equation_validity": 21.71717171717172,
+        "total_generated_equations": 990
+      },
+      "general_language": {
+        "val_loss": 3.869089034012344,
+        "perplexity": 47.898732084404415
+      }
+    },
+    "Model_H_Task23_75_25": {
+      "model_label": "Model H (Task 23: 75/25 replay, all trainable)",
+      "checkpoint_path": "artifacts/sft/task23_75_25/best.pt",
+      "checkpoint_sha256": "d630daacbf75bc8239d625ea8e270bfcaecaffe6e7665abaea9722de2ca0e49c",
+      "gsm8k_by_decode": {
+        "sampled_t06_p095_rp12": {
+          "N": 1319,
+          "correct": 16,
+          "strict_accuracy": 1.2130401819560273,
+          "think_compliance_rate": 100.0,
+          "answer_compliance_rate": 99.92418498862776,
+          "full_format_compliance_rate": 99.92418498862776,
+          "eos_rate": 100.0,
+          "repetition_rate": 16.376042456406367,
+          "generation_length": {
+            "mean": 26.98786959818044,
+            "p50": 26.0,
+            "p90": 37.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 3,
+              "accuracy": 0.9523809523809524
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 5,
+              "accuracy": 1.3888888888888888
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 8,
+              "accuracy": 1.2422360248447204
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "8",
+              "is_correct": false,
+              "generation": "<think>\n3 * 5 = 4\n16 / 2 = 8\n</think>\n<answer>8</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": "30",
+              "is_correct": false,
+              "generation": "<think>\n10 / 5 = 30\n</think>\n<answer>30</answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "3",
+              "is_correct": false,
+              "generation": "<think>\n7 * 2 = 3\n</think>\n<answer>3</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": "1",
+              "is_correct": false,
+              "generation": "<think>\n3 * 2 = 4\n8 - 3 = 1\n</think>\n<answer>1</answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "7",
+              "is_correct": false,
+              "generation": "<think>\n3 * 4 = 8\n20 - 6 = 7\n</think>\n<answer>7</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "9",
+              "is_correct": false,
+              "generation": "<think>\n6 * 2 = 8\n7 + 4 = 9\n</think>\n<answer>9</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "2",
+              "is_correct": false,
+              "generation": "<think>\n2 * 12 = 36\n5 - 12 = 2\n</think>\n<answer>2</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": "12",
+              "is_correct": false,
+              "generation": "<think>\n12 * 6 = 9\n3 * 20 = 60\n8 + 5 = 12\n</think>\n<answer>12</answer>"
+            }
+          ],
+          "eval_time_sec": 166.6857624053955,
+          "equation_metrics": {
+            "total_generated_equations": 2598,
+            "valid_generated_equations": 629,
+            "step_level_equation_validity": 24.210931485758273,
+            "generations_with_at_least_one_equation": 1313,
+            "pct_generations_with_equation": 99.54510993176649,
+            "mean_equations_per_generation": 1.9696739954510993,
+            "valid_equations_per_generation": 0.47687642153146326,
+            "final_step_answer_consistency": 99.16158536585365,
+            "final_step_checked": 1312,
+            "invalid_equation_examples": [
+              "3 * 5 = 4",
+              "10 / 5 = 30",
+              "7 * 2 = 3",
+              "3 * 2 = 4",
+              "8 - 3 = 1",
+              "3 * 4 = 8",
+              "20 - 6 = 7",
+              "6 * 2 = 8",
+              "7 + 4 = 9",
+              "2 * 12 = 36",
+              "5 - 12 = 2",
+              "12 * 6 = 9",
+              "8 + 5 = 12",
+              "5 * 30 + 4 = 90",
+              "90 - 4 = 12"
+            ]
+          }
+        },
+        "greedy": {
+          "N": 1319,
+          "correct": 32,
+          "strict_accuracy": 2.4260803639120545,
+          "think_compliance_rate": 98.18043972706596,
+          "answer_compliance_rate": 98.18043972706596,
+          "full_format_compliance_rate": 98.18043972706596,
+          "eos_rate": 98.18043972706596,
+          "repetition_rate": 77.25549658832449,
+          "generation_length": {
+            "mean": 44.73540561031084,
+            "p50": 38.0,
+            "p90": 61.0
+          },
+          "complexity_stratification": {
+            "2_step": {
+              "N": 315,
+              "correct": 13,
+              "accuracy": 4.1269841269841265
+            },
+            "3_step": {
+              "N": 360,
+              "correct": 8,
+              "accuracy": 2.2222222222222223
+            },
+            "4plus_step": {
+              "N": 644,
+              "correct": 11,
+              "accuracy": 1.7080745341614907
+            }
+          },
+          "samples": [
+            {
+              "id": "gsm8k_test_0",
+              "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+              "gold_answer": "18",
+              "extracted_answer": "12",
+              "is_correct": false,
+              "generation": "<think>\n2 * 16 = 32\n32 + 2 = 14\n14 + 2 = 12\n</think>\n<answer>12</answer>"
+            },
+            {
+              "id": "gsm8k_test_1",
+              "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+              "gold_answer": "3",
+              "extracted_answer": "12",
+              "is_correct": false,
+              "generation": "<think>\n2 * 12 = 24\n24 - 2 = 12\n</think>\n<answer>12</answer>"
+            },
+            {
+              "id": "gsm8k_test_2",
+              "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+              "gold_answer": "70000",
+              "extracted_answer": "2000",
+              "is_correct": false,
+              "generation": "<think>\n8000 - 5000 = 2000\n20000 - 1500 = 20000\n</think>\n<answer>2000</answer>"
+            },
+            {
+              "id": "gsm8k_test_3",
+              "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+              "gold_answer": "540",
+              "extracted_answer": "240",
+              "is_correct": false,
+              "generation": "<think>\n3 * 60 = 120\n120 + 60 + 120 = 240\n</think>\n<answer>240</answer>"
+            },
+            {
+              "id": "gsm8k_test_4",
+              "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+              "gold_answer": "20",
+              "extracted_answer": "150",
+              "is_correct": false,
+              "generation": "<think>\n20 * 3 = 60\n60 / 2 = 30\n60 + 30 + 15 = 150\n</think>\n<answer>150</answer>"
+            },
+            {
+              "id": "gsm8k_test_5",
+              "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+              "gold_answer": "64",
+              "extracted_answer": "32",
+              "is_correct": false,
+              "generation": "<think>\n16 * 2 = 3\n3 * 60 = 120\n16 * 2 = 32\n</think>\n<answer>32</answer>"
+            },
+            {
+              "id": "gsm8k_test_6",
+              "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have togeth",
+              "gold_answer": "260",
+              "extracted_answer": "200",
+              "is_correct": false,
+              "generation": "<think>\n20 * 2 = 40\n40 + 40 = 100\n40 + 100 = 200\n</think>\n<answer>200</answer>"
+            },
+            {
+              "id": "gsm8k_test_7",
+              "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates,",
+              "gold_answer": "160",
+              "extracted_answer": "12",
+              "is_correct": false,
+              "generation": "<think>\n20 * 2 = 4\n4 * 20 = 80\n80 + 4 = 12\n12 + 20 = 12\n</think>\n<answer>12</answer>"
+            }
+          ],
+          "eval_time_sec": 2642.886667728424,
+          "equation_metrics": {
+            "total_generated_equations": 3770,
+            "valid_generated_equations": 1193,
+            "step_level_equation_validity": 31.644562334217508,
+            "generations_with_at_least_one_equation": 1309,
+            "pct_generations_with_equation": 99.24184988627748,
+            "mean_equations_per_generation": 2.8582259287338894,
+            "valid_equations_per_generation": 0.9044730856709629,
+            "final_step_answer_consistency": 99.45945945945947,
+            "final_step_checked": 1295,
+            "invalid_equation_examples": [
+              "32 + 2 = 14",
+              "14 + 2 = 12",
+              "24 - 2 = 12",
+              "8000 - 5000 = 2000",
+              "20000 - 1500 = 20000",
+              "3 * 60 = 120",
+              "120 + 60 + 120 = 240",
+              "60 + 30 + 15 = 150",
+              "16 * 2 = 3",
+              "3 * 60 = 120",
+              "40 + 40 = 100",
+              "40 + 100 = 200",
+              "20 * 2 = 4",
+              "80 + 4 = 12",
+              "12 + 20 = 12"
+            ]
+          }
+        }
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 474,
+          "accuracy": 94.8
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 391,
+          "accuracy": 78.2
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 162,
+          "accuracy": 32.4
+        }
+      },
+      "replay_regime_holdout": {
+        "N": 500,
+        "correct": 11,
+        "accuracy": 2.1999999999999997,
+        "step_level_equation_validity": 21.16991643454039,
+        "total_generated_equations": 1077
+      },
+      "general_language": {
+        "val_loss": 3.9266791890542967,
+        "perplexity": 50.73820560570125
+      }
+    }
+  },
+  "task23": {
+    "replay_ratio_curve_trainable_only": [
+      {
+        "model_id": "Model_A_21B_Compact_Transfer",
+        "label": "A (0% replay)",
+        "replay_pct": 0.0,
+        "retention_2D": 4.3999999999999995,
+        "retention_3D": 5.2,
+        "retention_4D": 0.6,
+        "general_ppl": 43.87968481168208,
+        "equation_validity_greedy": 23.674911660777383,
+        "equation_validity_sampled": 20.44973544973545,
+        "valid_eqs_per_generation_greedy": 1.0159211523881728,
+        "gsm8k_acc_sampled": 1.7437452615617892,
+        "gsm8k_acc_greedy": 0.9097801364670205,
+        "eos_rate_greedy": null,
+        "full_format_greedy": 97.8013646702047,
+        "p90_length_greedy": 82.0,
+        "repetition_greedy": 96.36087945413192,
+        "total_active_completion_tokens": 986608,
+        "gate_G1": false,
+        "gate_G2": false,
+        "gate_G3": false,
+        "gate_floor": true,
+        "RCS": 0.16605404347414524,
+        "all_gates_pass": false
+      },
+      {
+        "model_id": "Model_G_Task23_90_10",
+        "label": "G (10% replay)",
+        "replay_pct": 10.0,
+        "retention_2D": 65.60000000000001,
+        "retention_3D": 54.800000000000004,
+        "retention_4D": 13.4,
+        "general_ppl": 47.898732084404415,
+        "equation_validity_greedy": 31.25,
+        "equation_validity_sampled": 23.24420677361854,
+        "valid_eqs_per_generation_greedy": 0.9476876421531463,
+        "gsm8k_acc_sampled": 1.6679302501895377,
+        "gsm8k_acc_greedy": 2.122820318423048,
+        "eos_rate_greedy": 97.11902956785443,
+        "full_format_greedy": 97.11902956785443,
+        "p90_length_greedy": 64.0,
+        "repetition_greedy": 76.19408642911296,
+        "total_active_completion_tokens": 959171,
+        "gate_G1": true,
+        "gate_G2": false,
+        "gate_G3": true,
+        "gate_floor": true,
+        "RCS": 0.4110250132862115,
+        "all_gates_pass": false
+      },
+      {
+        "model_id": "Model_H_Task23_75_25",
+        "label": "H (25% replay)",
+        "replay_pct": 25.0,
+        "retention_2D": 94.8,
+        "retention_3D": 78.2,
+        "retention_4D": 32.4,
+        "general_ppl": 50.73820560570125,
+        "equation_validity_greedy": 31.644562334217508,
+        "equation_validity_sampled": 24.210931485758273,
+        "valid_eqs_per_generation_greedy": 0.9044730856709629,
+        "gsm8k_acc_sampled": 1.2130401819560273,
+        "gsm8k_acc_greedy": 2.4260803639120545,
+        "eos_rate_greedy": 98.18043972706596,
+        "full_format_greedy": 98.18043972706596,
+        "p90_length_greedy": 61.0,
+        "repetition_greedy": 77.25549658832449,
+        "total_active_completion_tokens": 920031,
+        "gate_G1": true,
+        "gate_G2": false,
+        "gate_G3": true,
+        "gate_floor": true,
+        "RCS": 0.45689960843679717,
+        "all_gates_pass": false
+      },
+      {
+        "model_id": "Model_F_Task22B_Replay_All_Trainable",
+        "label": "F (50% replay)",
+        "replay_pct": 50.0,
+        "retention_2D": 3.8,
+        "retention_3D": 1.7999999999999998,
+        "retention_4D": 0.0,
+        "general_ppl": 60.02208063641044,
+        "equation_validity_greedy": 42.564953012714206,
+        "equation_validity_sampled": 31.771984091913392,
+        "valid_eqs_per_generation_greedy": 1.1675511751326764,
+        "gsm8k_acc_sampled": 2.350265352539803,
+        "gsm8k_acc_greedy": 2.2744503411675514,
+        "eos_rate_greedy": 98.71114480667173,
+        "full_format_greedy": 98.55951478392721,
+        "p90_length_greedy": 59.0,
+        "repetition_greedy": 84.53373768006065,
+        "total_active_completion_tokens": 982943,
+        "gate_G1": false,
+        "gate_G2": false,
+        "gate_G3": true,
+        "gate_floor": true,
+        "RCS": 0.15198257608013943,
+        "all_gates_pass": false
+      }
+    ],
+    "freezing_control_model_E": {
+      "note": "NOT a point on the ratio curve",
+      "retention_2D": 5.6,
+      "retention_3D": 4.2,
+      "general_ppl": 30.33,
+      "equation_validity_greedy": 12.19,
+      "RCS": 0.1515
+    },
+    "gates": {
+      "G1": "2D>=20 and 3D>=15",
+      "G2": "PPL<=35.0",
+      "G3": "EOS>=95 and full_format>=95 and p90<128 and greedy_repetition<90",
+      "floor": "GSM8K acc>=1.5%"
+    },
+    "rcs_formula": "(S_arith * S_eq * S_lang)^(1/3); S_arith=mean(2D,3D)/100, S_eq=greedy_eq_validity/100, S_lang=min(1,17.68/PPL)",
+    "outcome": "No arm passes all gates; G2 (PPL<=35) failed by every trainable arm including the 0% baseline (43.88).",
+    "selected_final_model": {
+      "id": "Model_H_Task23_75_25",
+      "path": "artifacts/sft/task23_75_25/best.pt",
+      "RCS": 0.4569,
+      "rule": "protocol fallback: best existing trainable model by RCS when no arm passes"
+    },
+    "confound": "0/10/25/50 is not a pure ratio curve: F's replay is 100% replay_arithmetic (no target-regime subtraction), while G/H replay is 50/50 replay_arithmetic + progressive_subtraction. Ratio and composition cannot be separated here.",
+    "conclusions": [
+      "small replay dose improves retention",
+      "replay helps but language cost remains high",
+      "replay ratio is not the only lever - composition matters at least as much"
+    ]
+  }
+}

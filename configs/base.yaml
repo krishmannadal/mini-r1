@@ -1,0 +1,50 @@
+# =============================================================================
+# Mini-R1 — Base Project Configuration
+# =============================================================================
+# This file contains ONLY project-level settings (seed, device, directories).
+# Model hyperparameters (d_model, n_layers, etc.) will be added in a future
+# task after we calculate what fits in 6 GB VRAM.
+# =============================================================================
+
+project:
+  name: "Mini-R1"
+  description: "Small decoder-only LM for mathematical reasoning, trained from scratch"
+
+# Reproducibility seed — used for torch, random, and numpy
+seed: 42
+
+# Device: "cuda" for GPU, "cpu" for fallback
+device: "cuda"
+
+# Mixed-precision dtype: set to "auto" until gpu_check.py determines
+# whether FP16 or BF16 is the better choice for this hardware.
+# Valid future values: "float16", "bfloat16", "float32"
+dtype: "auto"
+
+# Tokenizer configuration
+tokenizer:
+  model_type: "bpe"
+  vocab_size: 8000  # Target vocabulary size for SentencePiece BPE (8k-16k range)
+  model_prefix: "artifacts/tokenizer/tokenizer"
+  training_corpus: "data/clean/tokenizer_corpus.txt"
+  special_tokens:
+    unk_id: 0
+    bos_id: 1
+    eos_id: 2
+    pad_id: 3
+    user_defined_symbols:
+      - "<think>"
+      - "</think>"
+      - "<answer>"
+      - "</answer>"
+
+# Output and data directories — all relative to project root
+paths:
+  checkpoints: "checkpoints"
+  outputs: "outputs"
+  logs: "logs"
+  tokenizer: "artifacts/tokenizer"
+  data_raw: "data/raw"
+  data_clean: "data/clean"
+
+

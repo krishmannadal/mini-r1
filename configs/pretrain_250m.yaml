@@ -1,0 +1,26 @@
+# Mini-R1: 250M General Pretraining Configuration
+corpus:
+  source: "HuggingFaceTB/smollm-corpus"
+  subsets:
+    - "cosmopedia-v2"
+  seed: 42
+  target_token_budget: 250000000  # 250M tokens
+  val_ratio: 0.02                 # 5M validation tokens
+  packing:
+    enabled: true
+    sequence_length: 512
+    delimiter_token: "</s>"
+
+training:
+  micro_batch_size: 8
+  gradient_accumulation_steps: 4
+  effective_batch_size: 32        # 16,384 tokens/step
+  total_optimizer_steps: 15258   # 250,000,000 / 16,384
+  warmup_steps: 500
+  peak_learning_rate: 6.0e-4
+  min_learning_rate: 6.0e-5
+  max_grad_norm: 1.0
+  weight_decay: 0.01
+  amp_precision: "float16"
+  checkpoint_interval_steps: 1000
+  val_interval_steps: 250

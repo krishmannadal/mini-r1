@@ -1,0 +1,172 @@
+Question: What is 25 + 47?
+<think>
+To calculate 25 + 47:
+1. Add the tens digits: 20 + 40 = 60.
+2. Add the units digits: 5 + 7 = 12.
+3. Combine both intermediate sums: 60 + 12 = 72.
+Therefore, the final answer is 72.
+</think>
+<answer>72</answer>
+
+Question: Solve for x: 3*x + 15 = 45.
+<think>
+Step 1: Subtract 15 from both sides of the equation.
+3*x = 45 - 15
+3*x = 30
+Step 2: Divide both sides by 3.
+x = 30 / 3
+x = 10.
+</think>
+<answer>10</answer>
+
+Question: Find the area of a rectangle with length 8 cm and width 5 cm.
+<think>
+The formula for the area of a rectangle is Area = length * width.
+Given length = 8 and width = 5.
+Area = 8 * 5 = 40 square centimeters.
+</think>
+<answer>40</answer>
+
+Question: What is 12 * 15?
+<think>
+We can decompose 15 as 10 + 5.
+12 * 10 = 120
+12 * 5 = 60
+120 + 60 = 180.
+</think>
+<answer>180</answer>
+
+Question: A train travels at 60 km/h for 2.5 hours. How far does it travel?
+<think>
+Distance is calculated as speed multiplied by time:
+Distance = speed * time = 60 * 2.5.
+60 * 2 = 120.
+60 * 0.5 = 30.
+120 + 30 = 150 km.
+</think>
+<answer>150</answer>
+
+Question: Simplify (x + 2)*(x + 3).
+<think>
+Using the distributive property (FOIL method):
+First: x * x = x^2
+Outer: x * 3 = 3*x
+Inner: 2 * x = 2*x
+Last: 2 * 3 = 6
+Summing all terms: x^2 + 3*x + 2*x + 6 = x^2 + 5*x + 6.
+</think>
+<answer>x^2 + 5*x + 6</answer>
+
+Question: If a car uses 8 liters of fuel for 100 km, how much fuel is needed for 350 km?
+<think>
+Rate of fuel consumption is 8 / 100 = 0.08 liters per km.
+For 350 km, total fuel = 350 * 0.08 = 28 liters.
+</think>
+<answer>28</answer>
+
+Question: What is 100 - 37?
+<think>
+Break down 37 into 30 and 7.
+100 - 30 = 70.
+70 - 7 = 63.
+</think>
+<answer>63</answer>
+
+Question: Compute the value of 2^5.
+<think>
+2^1 = 2
+2^2 = 4
+2^3 = 8
+2^4 = 16
+2^5 = 32.
+</think>
+<answer>32</answer>
+
+Question: If 4 apples cost $12, what is the cost of 7 apples?
+<think>
+Cost per apple = 12 / 4 = 3 dollars.
+Cost for 7 apples = 7 * 3 = 21 dollars.
+</think>
+<answer>21</answer>
+
+Question: What is the greatest common divisor (GCD) of 24 and 36?
+<think>
+Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24.
+Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36.
+Common factors: 1, 2, 3, 4, 6, 12.
+The greatest common factor is 12.
+</think>
+<answer>12</answer>
+
+Question: Solve the quadratic equation x^2 - 5*x + 6 = 0.
+<think>
+We look for two numbers that multiply to 6 and add to -5.
+The numbers are -2 and -3 because (-2)*(-3) = 6 and -2 + (-3) = -5.
+Factoring: (x - 2)*(x - 3) = 0.
+Roots: x = 2 or x = 3.
+</think>
+<answer>x = 2 or x = 3</answer>
+
+Question: Calculate the perimeter of a square with side length 9 meters.
+<think>
+Perimeter of a square = 4 * side.
+Perimeter = 4 * 9 = 36 meters.
+</think>
+<answer>36</answer>
+
+Question: What is 15% of 80?
+<think>
+10% of 80 is 8.
+5% of 80 is 4.
+15% of 80 is 8 + 4 = 12.
+</think>
+<answer>12</answer>
+
+Question: If y = 2*x + 1 and x = 4, find y.
+<think>
+Substitute x = 4 into the equation:
+y = 2*(4) + 1 = 8 + 1 = 9.
+</think>
+<answer>9</answer>
+
+Question: What is the derivative of f(x) = 3*x^2 + 4*x - 5?
+<think>
+Using the power rule d/dx(x^n) = n*x^(n-1):
+Derivative of 3*x^2 is 6*x.
+Derivative of 4*x is 4.
+Derivative of constant -5 is 0.
+Sum: f'(x) = 6*x + 4.
+</think>
+<answer>6*x + 4</answer>
+
+Question: What is the mean of the numbers 4, 8, 6, 5, 7?
+<think>
+Sum of numbers = 4 + 8 + 6 + 5 + 7 = 30.
+Count of numbers = 5.
+Mean = 30 / 5 = 6.
+</think>
+<answer>6</answer>
+
+Question: Evaluate the expression 3 * (4 + 2) - 5.
+<think>
+Following the order of operations (PEMDAS):
+1. Parentheses: (4 + 2) = 6.
+2. Multiplication: 3 * 6 = 18.
+3. Subtraction: 18 - 5 = 13.
+</think>
+<answer>13</answer>
+
+Question: A box contains 3 red balls and 7 blue balls. What is the probability of picking a red ball?
+<think>
+Total balls = 3 + 7 = 10.
+Red balls = 3.
+Probability = favorable outcomes / total outcomes = 3 / 10 = 0.3.
+</think>
+<answer>0.3</answer>
+
+Question: What is 7 cubed (7^3)?
+<think>
+7^2 = 7 * 7 = 49.
+7^3 = 49 * 7 = (50 - 1) * 7 = 350 - 7 = 343.
+</think>
+<answer>343</answer>

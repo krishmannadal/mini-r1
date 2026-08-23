@@ -1,0 +1,558 @@
+{
+  "timestamp": "2026-08-20 20:56:57",
+  "tokenizer": {
+    "vocab_size": 8000,
+    "model_path": "artifacts/tokenizer/tokenizer.model",
+    "digit_ranges": {
+      "single_digits": {
+        "0": {
+          "number": "0",
+          "token_ids": [
+            7812
+          ],
+          "pieces": [
+            "0"
+          ],
+          "num_tokens": 1
+        },
+        "1": {
+          "number": "1",
+          "token_ids": [
+            7815
+          ],
+          "pieces": [
+            "1"
+          ],
+          "num_tokens": 1
+        },
+        "2": {
+          "number": "2",
+          "token_ids": [
+            7816
+          ],
+          "pieces": [
+            "2"
+          ],
+          "num_tokens": 1
+        },
+        "3": {
+          "number": "3",
+          "token_ids": [
+            7823
+          ],
+          "pieces": [
+            "3"
+          ],
+          "num_tokens": 1
+        },
+        "4": {
+          "number": "4",
+          "token_ids": [
+            7822
+          ],
+          "pieces": [
+            "4"
+          ],
+          "num_tokens": 1
+        },
+        "5": {
+          "number": "5",
+          "token_ids": [
+            7820
+          ],
+          "pieces": [
+            "5"
+          ],
+          "num_tokens": 1
+        },
+        "6": {
+          "number": "6",
+          "token_ids": [
+            7829
+          ],
+          "pieces": [
+            "6"
+          ],
+          "num_tokens": 1
+        },
+        "7": {
+          "number": "7",
+          "token_ids": [
+            7843
+          ],
+          "pieces": [
+            "7"
+          ],
+          "num_tokens": 1
+        },
+        "8": {
+          "number": "8",
+          "token_ids": [
+            7833
+          ],
+          "pieces": [
+            "8"
+          ],
+          "num_tokens": 1
+        },
+        "9": {
+          "number": "9",
+          "token_ids": [
+            7847
+          ],
+          "pieces": [
+            "9"
+          ],
+          "num_tokens": 1
+        }
+      },
+      "two_digit_token_length_dist": {
+        "2": 90
+      },
+      "three_digit_token_length_dist": {
+        "3": 900
+      },
+      "selected_samples": {
+        "1000": {
+          "number": "1000",
+          "token_ids": [
+            7815,
+            7812,
+            7812,
+            7812
+          ],
+          "pieces": [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "num_tokens": 4
+        },
+        "2026": {
+          "number": "2026",
+          "token_ids": [
+            7816,
+            7812,
+            7816,
+            7829
+          ],
+          "pieces": [
+            "2",
+            "0",
+            "2",
+            "6"
+          ],
+          "num_tokens": 4
+        },
+        "9999": {
+          "number": "9999",
+          "token_ids": [
+            7847,
+            7847,
+            7847,
+            7847
+          ],
+          "pieces": [
+            "9",
+            "9",
+            "9",
+            "9"
+          ],
+          "num_tokens": 4
+        },
+        "12345": {
+          "number": "12345",
+          "token_ids": [
+            7815,
+            7816,
+            7823,
+            7822,
+            7820
+          ],
+          "pieces": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "num_tokens": 5
+        },
+        "654321": {
+          "number": "654321",
+          "token_ids": [
+            7829,
+            7820,
+            7822,
+            7823,
+            7816,
+            7815
+          ],
+          "pieces": [
+            "6",
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"
+          ],
+          "num_tokens": 6
+        },
+        "1000000": {
+          "number": "1000000",
+          "token_ids": [
+            7815,
+            7812,
+            7812,
+            7812,
+            7812,
+            7812,
+            7812
+          ],
+          "pieces": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "num_tokens": 7
+        }
+      }
+    },
+    "integer_10k_stats": {
+      "total_sampled": 10000,
+      "mean_tokens": 4.789,
+      "median_tokens": 5,
+      "p90_tokens": 6,
+      "p99_tokens": 6,
+      "min_tokens": 1,
+      "max_tokens": 6,
+      "by_digit_length": {
+        "1_digits": {
+          "count": 10,
+          "mean_tokens": 1.0,
+          "median": 1,
+          "p90": 1,
+          "min": 1,
+          "max": 1,
+          "token_length_counts": {
+            "1": 10
+          }
+        },
+        "2_digits": {
+          "count": 90,
+          "mean_tokens": 2.0,
+          "median": 2,
+          "p90": 2,
+          "min": 2,
+          "max": 2,
+          "token_length_counts": {
+            "2": 90
+          }
+        },
+        "3_digits": {
+          "count": 900,
+          "mean_tokens": 3.0,
+          "median": 3,
+          "p90": 3,
+          "min": 3,
+          "max": 3,
+          "token_length_counts": {
+            "3": 900
+          }
+        },
+        "4_digits": {
+          "count": 3000,
+          "mean_tokens": 4.0,
+          "median": 4,
+          "p90": 4,
+          "min": 4,
+          "max": 4,
+          "token_length_counts": {
+            "4": 3000
+          }
+        },
+        "5_digits": {
+          "count": 3000,
+          "mean_tokens": 5.0,
+          "median": 5,
+          "p90": 5,
+          "min": 5,
+          "max": 5,
+          "token_length_counts": {
+            "5": 3000
+          }
+        },
+        "6_digits": {
+          "count": 3000,
+          "mean_tokens": 6.0,
+          "median": 6,
+          "p90": 6,
+          "min": 6,
+          "max": 6,
+          "token_length_counts": {
+            "6": 3000
+          }
+        }
+      }
+    },
+    "digit_representation_classification": {
+      "representation_type": "Pure Character / Digit-by-digit",
+      "total_vocab_size": 8000,
+      "total_pure_numeric_tokens": 20,
+      "total_mixed_tokens": 0,
+      "pure_numeric_by_digit_length": {
+        "1": 20
+      },
+      "single_digits_present": true,
+      "sample_multi_digit_tokens": [
+        [
+          56,
+          "0"
+        ],
+        [
+          57,
+          "1"
+        ],
+        [
+          58,
+          "2"
+        ],
+        [
+          59,
+          "3"
+        ],
+        [
+          60,
+          "4"
+        ],
+        [
+          61,
+          "5"
+        ],
+        [
+          62,
+          "6"
+        ],
+        [
+          63,
+          "7"
+        ],
+        [
+          64,
+          "8"
+        ],
+        [
+          65,
+          "9"
+        ],
+        [
+          7812,
+          "0"
+        ],
+        [
+          7815,
+          "1"
+        ],
+        [
+          7816,
+          "2"
+        ],
+        [
+          7820,
+          "5"
+        ],
+        [
+          7822,
+          "4"
+        ],
+        [
+          7823,
+          "3"
+        ],
+        [
+          7829,
+          "6"
+        ],
+        [
+          7833,
+          "8"
+        ],
+        [
+          7843,
+          "7"
+        ],
+        [
+          7847,
+          "9"
+        ]
+      ]
+    }
+  },
+  "train_vs_ood_token_analysis": {
+    "train_unique_numbers_count": 418,
+    "ood_numbers_unique_count": 754,
+    "ood_composition_unique_count": 405,
+    "word_wrapped_unique_count": 377,
+    "train_numeric_token_ids_count": 10,
+    "all_ood_numeric_token_ids_count": 10,
+    "token_id_overlap_count": 10,
+    "novel_token_ids_in_ood_count": 0,
+    "novel_token_ids_in_ood_list": [],
+    "token_overlap_percentage": 100.0,
+    "mean_tokens_per_train_number": 2.736842105263158,
+    "mean_tokens_per_ood_number": 3.0053050397877983,
+    "mean_tokens_per_ood_comp_number": 2.8790123456790124,
+    "mean_tokens_per_word_number": 2.726790450928382,
+    "number_value_overlap": {
+      "ood_numbers_in_train": 396,
+      "ood_composition_in_train": 257,
+      "word_wrapped_in_train": 340
+    }
+  },
+  "training_distribution_template_analysis": {
+    "total_training_examples": 12000,
+    "unique_expressions_count": 7293,
+    "unique_operand_step_tuples_count": 8741,
+    "unique_intermediate_results_count": 421,
+    "unique_final_answers_count": 419,
+    "unique_structural_templates_count": 135,
+    "structural_template_counts": {
+      "Question: Calculate: (((N * N) + N) - N) * N\n": 2000,
+      "Question: A warehouse received N pallets of N boxes each. The manager found N loose boxes in the back and shipped out N boxes. How many boxes remain in the warehouse?\n": 703,
+      "Question: Calculate: ((N + N) * N) - N\n": 538,
+      "Question: Calculate: N / N\n": 529,
+      "Question: Calculate: ((N * N) + N) - N\n": 504,
+      "Question: Calculate: N - N\n": 502,
+      "Question: Calculate: ((N + N) - N) * N\n": 497,
+      "Question: Calculate: N * N\n": 487,
+      "Question: Calculate: N + N\n": 482,
+      "Question: Calculate: ((N * N) + N) / N\n": 461
+    },
+    "operator_sequence_diversity": {
+      "('+',)": 654,
+      "('*',)": 640,
+      "('-',)": 657,
+      "('/',)": 701,
+      "('+', '*')": 574,
+      "('/', '+')": 542,
+      "('+', '-')": 608,
+      "('*', '+')": 624,
+      "('*', '-')": 602,
+      "('*', '+', '-')": 699,
+      "('*', '+', '/')": 633,
+      "('+', '*', '-')": 753,
+      "('+', '-', '*')": 718,
+      "('*', '+', '-', '*')": 2006,
+      "('-', '*', '-')": 29,
+      "('+', '+')": 64,
+      "('*', '+', '+')": 32,
+      "('*', '*', '+', '+')": 7,
+      "('-', '-', '*')": 30,
+      "('*', '-', '+', '+')": 21,
+      "('-', '-', '*', '*')": 9,
+      "('+', '-', '-')": 28,
+      "('*', '-', '+')": 43,
+      "('*', '+', '*', '-')": 6,
+      "('*', '-', '-', '+')": 19,
+      "('*', '-', '+', '-')": 23,
+      "('*', '*')": 44,
+      "('*', '-', '*')": 18,
+      "('*', '+', '+', '*')": 4,
+      "('*', '*', '-')": 20,
+      "('-', '+', '-')": 33,
+      "('*', '-', '+', '*')": 1,
+      "('-', '*')": 63,
+      "('-', '-', '-', '*')": 5,
+      "('-', '*', '*')": 29,
+      "('-', '+')": 73,
+      "('*', '-', '-')": 29,
+      "('-', '*', '+', '+')": 10,
+      "('+', '+', '*')": 26,
+      "('*', '*', '+')": 27,
+      "('-', '*', '-', '-')": 13,
+      "('-', '-')": 78,
+      "('*', '+', '+', '-')": 11,
+      "('-', '+', '+', '-')": 16,
+      "('+', '-', '-', '-')": 5,
+      "('+', '+', '+')": 25,
+      "('-', '*', '*', '-')": 8,
+      "('+', '+', '*', '-')": 19,
+      "('-', '+', '*', '-')": 14,
+      "('*', '*', '+', '-')": 7,
+      "('+', '-', '*', '-')": 4,
+      "('-', '-', '+', '*')": 8,
+      "('+', '-', '+', '*')": 4,
+      "('-', '+', '-', '*')": 9,
+      "('-', '-', '+')": 33,
+      "('-', '+', '*')": 24,
+      "('*', '-', '*', '-')": 6,
+      "('+', '+', '*', '+')": 14,
+      "('-', '+', '*', '+')": 11,
+      "('+', '*', '+')": 32,
+      "('+', '-', '*', '+')": 11,
+      "('*', '+', '+', '+')": 18,
+      "('-', '+', '+')": 27,
+      "('+', '+', '-', '*')": 10,
+      "('*', '+', '*', '*')": 2,
+      "('+', '*', '-', '-')": 18,
+      "('+', '+', '-', '-')": 3,
+      "('+', '+', '-', '+')": 9,
+      "('+', '+', '+', '+')": 8,
+      "('-', '-', '+', '+')": 9,
+      "('+', '-', '+')": 20,
+      "('-', '-', '-', '-')": 10,
+      "('*', '-', '-', '-')": 13,
+      "('-', '*', '*', '+')": 8,
+      "('-', '*', '-', '*')": 11,
+      "('-', '-', '*', '+')": 10,
+      "('+', '-', '+', '-')": 10,
+      "('-', '-', '-')": 37,
+      "('*', '+', '*')": 14,
+      "('*', '*', '-', '-')": 8,
+      "('+', '*', '+', '-')": 10,
+      "('+', '*', '+', '+')": 17,
+      "('*', '+', '-', '-')": 18,
+      "('-', '+', '+', '+')": 5,
+      "('*', '+', '-', '+')": 13,
+      "('-', '*', '+', '*')": 6,
+      "('+', '+', '-')": 19,
+      "('-', '-', '*', '-')": 6,
+      "('+', '-', '-', '*')": 7,
+      "('+', '*', '-', '*')": 7,
+      "('*', '*', '-', '+')": 17,
+      "('+', '-', '*', '*')": 9,
+      "('*', '*', '*', '+')": 3,
+      "('+', '*', '*', '-')": 2,
+      "('*', '-', '*', '+')": 7,
+      "('-', '+', '-', '-')": 8,
+      "('+', '+', '+', '*')": 12,
+      "('-', '*', '-', '+')": 4,
+      "('+', '+', '*', '*')": 1,
+      "('-', '*', '+', '-')": 7,
+      "('-', '*', '+')": 38,
+      "('-', '*', '*', '*')": 1,
+      "('-', '-', '-', '+')": 8,
+      "('-', '+', '+', '*')": 8,
+      "('+', '*', '*', '+')": 5,
+      "('+', '*', '-', '+')": 13,
+      "('-', '-', '+', '-')": 7,
+      "('-', '+', '-', '+')": 7,
+      "('+', '-', '+', '+')": 3,
+      "('-', '+', '*', '*')": 3,
+      "('+', '-', '-', '+')": 2,
+      "('*', '+', '*', '+')": 7,
+      "('+', '+', '+', '-')": 10,
+      "('*', '*', '*')": 2,
+      "('+', '*', '*')": 4,
+      "('*', '-', '*', '*')": 1,
+      "('*', '*', '*', '-')": 1,
+      "('*', '-', '-', '*')": 1
+    }
+  },
+  "generalization_hypothesis_classification": "D. Combination of A/B/C"
+}

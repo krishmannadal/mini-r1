@@ -1,0 +1,18 @@
+{
+  "model_name": "Model B (Base -> Compact GSM8K)",
+  "init_checkpoint": "checkpoints/mini_r1_500m_pretrain/best.pt",
+  "init_checkpoint_sha256": "f058a558edc2020b1a4a7a7b54312b97fb0b0a20e16c42da92018686e66462a4",
+  "best_checkpoint_sha256": "c1b3b28576244aee15cc006f52f6254fa1202148f5ef3bfce7659e50b76597aa",
+  "final_checkpoint_sha256": "ebaa832ddc170dacc304fa6ba3fa4b5e2a096bf52af05f0d2b3e6ded4bd62d78",
+  "max_steps": 650,
+  "peak_lr": 0.0001,
+  "min_lr": 1e-05,
+  "warmup_steps": 50,
+  "micro_batch_size": 8,
+  "grad_accum_steps": 4,
+  "effective_batch_size": 32,
+  "best_step": 650,
+  "best_dev_loss": 0.5688546531393416,
+  "best_dev_ppl": 1.7662429316984354,
+  "total_active_tokens_trained": 986608
+}

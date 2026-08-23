@@ -1,0 +1,5002 @@
+[
+  {
+    "example_id": "e7_acid5d_0001",
+    "prompt": "Question: Calculate: 17873 - 10367\n",
+    "expression": "17873 - 10367",
+    "lhs": 17873,
+    "rhs": 10367,
+    "final_answer": "7506",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0002",
+    "prompt": "Question: Calculate: 15627 - 11347\n",
+    "expression": "15627 - 11347",
+    "lhs": 15627,
+    "rhs": 11347,
+    "final_answer": "4280",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0003",
+    "prompt": "Question: Calculate: 19331 - 19218\n",
+    "expression": "19331 - 19218",
+    "lhs": 19331,
+    "rhs": 19218,
+    "final_answer": "113",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0004",
+    "prompt": "Question: Calculate: 19948 - 11640\n",
+    "expression": "19948 - 11640",
+    "lhs": 19948,
+    "rhs": 11640,
+    "final_answer": "8308",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0005",
+    "prompt": "Question: Calculate: 18272 - 11060\n",
+    "expression": "18272 - 11060",
+    "lhs": 18272,
+    "rhs": 11060,
+    "final_answer": "7212",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0006",
+    "prompt": "Question: Calculate: 17918 - 17473\n",
+    "expression": "17918 - 17473",
+    "lhs": 17918,
+    "rhs": 17473,
+    "final_answer": "445",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0007",
+    "prompt": "Question: Calculate: 16139 - 16068\n",
+    "expression": "16139 - 16068",
+    "lhs": 16139,
+    "rhs": 16068,
+    "final_answer": "71",
+    "ans_digits": 2,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0008",
+    "prompt": "Question: Calculate: 12510 - 11123\n",
+    "expression": "12510 - 11123",
+    "lhs": 12510,
+    "rhs": 11123,
+    "final_answer": "1387",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0009",
+    "prompt": "Question: Calculate: 19382 - 14544\n",
+    "expression": "19382 - 14544",
+    "lhs": 19382,
+    "rhs": 14544,
+    "final_answer": "4838",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0010",
+    "prompt": "Question: Calculate: 14898 - 11573\n",
+    "expression": "14898 - 11573",
+    "lhs": 14898,
+    "rhs": 11573,
+    "final_answer": "3325",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0011",
+    "prompt": "Question: Calculate: 19897 - 15027\n",
+    "expression": "19897 - 15027",
+    "lhs": 19897,
+    "rhs": 15027,
+    "final_answer": "4870",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0012",
+    "prompt": "Question: Calculate: 15556 - 12707\n",
+    "expression": "15556 - 12707",
+    "lhs": 15556,
+    "rhs": 12707,
+    "final_answer": "2849",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0013",
+    "prompt": "Question: Calculate: 13376 - 11644\n",
+    "expression": "13376 - 11644",
+    "lhs": 13376,
+    "rhs": 11644,
+    "final_answer": "1732",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0014",
+    "prompt": "Question: Calculate: 17037 - 14516\n",
+    "expression": "17037 - 14516",
+    "lhs": 17037,
+    "rhs": 14516,
+    "final_answer": "2521",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0015",
+    "prompt": "Question: Calculate: 18872 - 12914\n",
+    "expression": "18872 - 12914",
+    "lhs": 18872,
+    "rhs": 12914,
+    "final_answer": "5958",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0016",
+    "prompt": "Question: Calculate: 18520 - 14007\n",
+    "expression": "18520 - 14007",
+    "lhs": 18520,
+    "rhs": 14007,
+    "final_answer": "4513",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0017",
+    "prompt": "Question: Calculate: 18477 - 15511\n",
+    "expression": "18477 - 15511",
+    "lhs": 18477,
+    "rhs": 15511,
+    "final_answer": "2966",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0018",
+    "prompt": "Question: Calculate: 19345 - 17797\n",
+    "expression": "19345 - 17797",
+    "lhs": 19345,
+    "rhs": 17797,
+    "final_answer": "1548",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0019",
+    "prompt": "Question: Calculate: 17209 - 14459\n",
+    "expression": "17209 - 14459",
+    "lhs": 17209,
+    "rhs": 14459,
+    "final_answer": "2750",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0020",
+    "prompt": "Question: Calculate: 17290 - 17117\n",
+    "expression": "17290 - 17117",
+    "lhs": 17290,
+    "rhs": 17117,
+    "final_answer": "173",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0021",
+    "prompt": "Question: Calculate: 16214 - 15743\n",
+    "expression": "16214 - 15743",
+    "lhs": 16214,
+    "rhs": 15743,
+    "final_answer": "471",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0022",
+    "prompt": "Question: Calculate: 19542 - 15231\n",
+    "expression": "19542 - 15231",
+    "lhs": 19542,
+    "rhs": 15231,
+    "final_answer": "4311",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0023",
+    "prompt": "Question: Calculate: 17888 - 10602\n",
+    "expression": "17888 - 10602",
+    "lhs": 17888,
+    "rhs": 10602,
+    "final_answer": "7286",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0024",
+    "prompt": "Question: Calculate: 15926 - 10308\n",
+    "expression": "15926 - 10308",
+    "lhs": 15926,
+    "rhs": 10308,
+    "final_answer": "5618",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0025",
+    "prompt": "Question: Calculate: 15344 - 14965\n",
+    "expression": "15344 - 14965",
+    "lhs": 15344,
+    "rhs": 14965,
+    "final_answer": "379",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0026",
+    "prompt": "Question: Calculate: 14315 - 13445\n",
+    "expression": "14315 - 13445",
+    "lhs": 14315,
+    "rhs": 13445,
+    "final_answer": "870",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0027",
+    "prompt": "Question: Calculate: 15013 - 13648\n",
+    "expression": "15013 - 13648",
+    "lhs": 15013,
+    "rhs": 13648,
+    "final_answer": "1365",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0028",
+    "prompt": "Question: Calculate: 18799 - 17077\n",
+    "expression": "18799 - 17077",
+    "lhs": 18799,
+    "rhs": 17077,
+    "final_answer": "1722",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0029",
+    "prompt": "Question: Calculate: 18072 - 17713\n",
+    "expression": "18072 - 17713",
+    "lhs": 18072,
+    "rhs": 17713,
+    "final_answer": "359",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0030",
+    "prompt": "Question: Calculate: 15510 - 11669\n",
+    "expression": "15510 - 11669",
+    "lhs": 15510,
+    "rhs": 11669,
+    "final_answer": "3841",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0031",
+    "prompt": "Question: Calculate: 19236 - 16727\n",
+    "expression": "19236 - 16727",
+    "lhs": 19236,
+    "rhs": 16727,
+    "final_answer": "2509",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0032",
+    "prompt": "Question: Calculate: 12863 - 12308\n",
+    "expression": "12863 - 12308",
+    "lhs": 12863,
+    "rhs": 12308,
+    "final_answer": "555",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0033",
+    "prompt": "Question: Calculate: 19540 - 10044\n",
+    "expression": "19540 - 10044",
+    "lhs": 19540,
+    "rhs": 10044,
+    "final_answer": "9496",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0034",
+    "prompt": "Question: Calculate: 14353 - 10881\n",
+    "expression": "14353 - 10881",
+    "lhs": 14353,
+    "rhs": 10881,
+    "final_answer": "3472",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0035",
+    "prompt": "Question: Calculate: 17977 - 16635\n",
+    "expression": "17977 - 16635",
+    "lhs": 17977,
+    "rhs": 16635,
+    "final_answer": "1342",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0036",
+    "prompt": "Question: Calculate: 14890 - 13949\n",
+    "expression": "14890 - 13949",
+    "lhs": 14890,
+    "rhs": 13949,
+    "final_answer": "941",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0037",
+    "prompt": "Question: Calculate: 15666 - 11845\n",
+    "expression": "15666 - 11845",
+    "lhs": 15666,
+    "rhs": 11845,
+    "final_answer": "3821",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0038",
+    "prompt": "Question: Calculate: 15898 - 13449\n",
+    "expression": "15898 - 13449",
+    "lhs": 15898,
+    "rhs": 13449,
+    "final_answer": "2449",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0039",
+    "prompt": "Question: Calculate: 19728 - 17600\n",
+    "expression": "19728 - 17600",
+    "lhs": 19728,
+    "rhs": 17600,
+    "final_answer": "2128",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0040",
+    "prompt": "Question: Calculate: 17646 - 12048\n",
+    "expression": "17646 - 12048",
+    "lhs": 17646,
+    "rhs": 12048,
+    "final_answer": "5598",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0041",
+    "prompt": "Question: Calculate: 10835 - 10783\n",
+    "expression": "10835 - 10783",
+    "lhs": 10835,
+    "rhs": 10783,
+    "final_answer": "52",
+    "ans_digits": 2,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0042",
+    "prompt": "Question: Calculate: 12017 - 11799\n",
+    "expression": "12017 - 11799",
+    "lhs": 12017,
+    "rhs": 11799,
+    "final_answer": "218",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0043",
+    "prompt": "Question: Calculate: 15457 - 14134\n",
+    "expression": "15457 - 14134",
+    "lhs": 15457,
+    "rhs": 14134,
+    "final_answer": "1323",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0044",
+    "prompt": "Question: Calculate: 17576 - 17453\n",
+    "expression": "17576 - 17453",
+    "lhs": 17576,
+    "rhs": 17453,
+    "final_answer": "123",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0045",
+    "prompt": "Question: Calculate: 14715 - 13748\n",
+    "expression": "14715 - 13748",
+    "lhs": 14715,
+    "rhs": 13748,
+    "final_answer": "967",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0046",
+    "prompt": "Question: Calculate: 14307 - 13939\n",
+    "expression": "14307 - 13939",
+    "lhs": 14307,
+    "rhs": 13939,
+    "final_answer": "368",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0047",
+    "prompt": "Question: Calculate: 14300 - 11176\n",
+    "expression": "14300 - 11176",
+    "lhs": 14300,
+    "rhs": 11176,
+    "final_answer": "3124",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0048",
+    "prompt": "Question: Calculate: 18791 - 17926\n",
+    "expression": "18791 - 17926",
+    "lhs": 18791,
+    "rhs": 17926,
+    "final_answer": "865",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0049",
+    "prompt": "Question: Calculate: 12834 - 12188\n",
+    "expression": "12834 - 12188",
+    "lhs": 12834,
+    "rhs": 12188,
+    "final_answer": "646",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0050",
+    "prompt": "Question: Calculate: 15985 - 15774\n",
+    "expression": "15985 - 15774",
+    "lhs": 15985,
+    "rhs": 15774,
+    "final_answer": "211",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0051",
+    "prompt": "Question: Calculate: 18200 - 17673\n",
+    "expression": "18200 - 17673",
+    "lhs": 18200,
+    "rhs": 17673,
+    "final_answer": "527",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0052",
+    "prompt": "Question: Calculate: 16575 - 15518\n",
+    "expression": "16575 - 15518",
+    "lhs": 16575,
+    "rhs": 15518,
+    "final_answer": "1057",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0053",
+    "prompt": "Question: Calculate: 14171 - 11702\n",
+    "expression": "14171 - 11702",
+    "lhs": 14171,
+    "rhs": 11702,
+    "final_answer": "2469",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0054",
+    "prompt": "Question: Calculate: 15614 - 13658\n",
+    "expression": "15614 - 13658",
+    "lhs": 15614,
+    "rhs": 13658,
+    "final_answer": "1956",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0055",
+    "prompt": "Question: Calculate: 17993 - 14430\n",
+    "expression": "17993 - 14430",
+    "lhs": 17993,
+    "rhs": 14430,
+    "final_answer": "3563",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0056",
+    "prompt": "Question: Calculate: 15063 - 11561\n",
+    "expression": "15063 - 11561",
+    "lhs": 15063,
+    "rhs": 11561,
+    "final_answer": "3502",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0057",
+    "prompt": "Question: Calculate: 18749 - 16448\n",
+    "expression": "18749 - 16448",
+    "lhs": 18749,
+    "rhs": 16448,
+    "final_answer": "2301",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0058",
+    "prompt": "Question: Calculate: 16130 - 15388\n",
+    "expression": "16130 - 15388",
+    "lhs": 16130,
+    "rhs": 15388,
+    "final_answer": "742",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0059",
+    "prompt": "Question: Calculate: 17662 - 13507\n",
+    "expression": "17662 - 13507",
+    "lhs": 17662,
+    "rhs": 13507,
+    "final_answer": "4155",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0060",
+    "prompt": "Question: Calculate: 15146 - 12485\n",
+    "expression": "15146 - 12485",
+    "lhs": 15146,
+    "rhs": 12485,
+    "final_answer": "2661",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0061",
+    "prompt": "Question: Calculate: 13896 - 12369\n",
+    "expression": "13896 - 12369",
+    "lhs": 13896,
+    "rhs": 12369,
+    "final_answer": "1527",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0062",
+    "prompt": "Question: Calculate: 18789 - 16009\n",
+    "expression": "18789 - 16009",
+    "lhs": 18789,
+    "rhs": 16009,
+    "final_answer": "2780",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0063",
+    "prompt": "Question: Calculate: 16110 - 15727\n",
+    "expression": "16110 - 15727",
+    "lhs": 16110,
+    "rhs": 15727,
+    "final_answer": "383",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0064",
+    "prompt": "Question: Calculate: 19056 - 10290\n",
+    "expression": "19056 - 10290",
+    "lhs": 19056,
+    "rhs": 10290,
+    "final_answer": "8766",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0065",
+    "prompt": "Question: Calculate: 19537 - 15637\n",
+    "expression": "19537 - 15637",
+    "lhs": 19537,
+    "rhs": 15637,
+    "final_answer": "3900",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0066",
+    "prompt": "Question: Calculate: 19795 - 17963\n",
+    "expression": "19795 - 17963",
+    "lhs": 19795,
+    "rhs": 17963,
+    "final_answer": "1832",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0067",
+    "prompt": "Question: Calculate: 17993 - 14939\n",
+    "expression": "17993 - 14939",
+    "lhs": 17993,
+    "rhs": 14939,
+    "final_answer": "3054",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0068",
+    "prompt": "Question: Calculate: 18218 - 15934\n",
+    "expression": "18218 - 15934",
+    "lhs": 18218,
+    "rhs": 15934,
+    "final_answer": "2284",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0069",
+    "prompt": "Question: Calculate: 16698 - 11602\n",
+    "expression": "16698 - 11602",
+    "lhs": 16698,
+    "rhs": 11602,
+    "final_answer": "5096",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0070",
+    "prompt": "Question: Calculate: 16594 - 10726\n",
+    "expression": "16594 - 10726",
+    "lhs": 16594,
+    "rhs": 10726,
+    "final_answer": "5868",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0071",
+    "prompt": "Question: Calculate: 18699 - 12546\n",
+    "expression": "18699 - 12546",
+    "lhs": 18699,
+    "rhs": 12546,
+    "final_answer": "6153",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0072",
+    "prompt": "Question: Calculate: 14301 - 11927\n",
+    "expression": "14301 - 11927",
+    "lhs": 14301,
+    "rhs": 11927,
+    "final_answer": "2374",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0073",
+    "prompt": "Question: Calculate: 16727 - 13169\n",
+    "expression": "16727 - 13169",
+    "lhs": 16727,
+    "rhs": 13169,
+    "final_answer": "3558",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0074",
+    "prompt": "Question: Calculate: 13905 - 12747\n",
+    "expression": "13905 - 12747",
+    "lhs": 13905,
+    "rhs": 12747,
+    "final_answer": "1158",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0075",
+    "prompt": "Question: Calculate: 14948 - 13497\n",
+    "expression": "14948 - 13497",
+    "lhs": 14948,
+    "rhs": 13497,
+    "final_answer": "1451",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0076",
+    "prompt": "Question: Calculate: 17276 - 10031\n",
+    "expression": "17276 - 10031",
+    "lhs": 17276,
+    "rhs": 10031,
+    "final_answer": "7245",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0077",
+    "prompt": "Question: Calculate: 14925 - 10299\n",
+    "expression": "14925 - 10299",
+    "lhs": 14925,
+    "rhs": 10299,
+    "final_answer": "4626",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0078",
+    "prompt": "Question: Calculate: 17619 - 11668\n",
+    "expression": "17619 - 11668",
+    "lhs": 17619,
+    "rhs": 11668,
+    "final_answer": "5951",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0079",
+    "prompt": "Question: Calculate: 16561 - 14123\n",
+    "expression": "16561 - 14123",
+    "lhs": 16561,
+    "rhs": 14123,
+    "final_answer": "2438",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0080",
+    "prompt": "Question: Calculate: 19715 - 17285\n",
+    "expression": "19715 - 17285",
+    "lhs": 19715,
+    "rhs": 17285,
+    "final_answer": "2430",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0081",
+    "prompt": "Question: Calculate: 14170 - 11574\n",
+    "expression": "14170 - 11574",
+    "lhs": 14170,
+    "rhs": 11574,
+    "final_answer": "2596",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0082",
+    "prompt": "Question: Calculate: 19665 - 18073\n",
+    "expression": "19665 - 18073",
+    "lhs": 19665,
+    "rhs": 18073,
+    "final_answer": "1592",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0083",
+    "prompt": "Question: Calculate: 18015 - 14024\n",
+    "expression": "18015 - 14024",
+    "lhs": 18015,
+    "rhs": 14024,
+    "final_answer": "3991",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0084",
+    "prompt": "Question: Calculate: 14766 - 12040\n",
+    "expression": "14766 - 12040",
+    "lhs": 14766,
+    "rhs": 12040,
+    "final_answer": "2726",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0085",
+    "prompt": "Question: Calculate: 19110 - 15723\n",
+    "expression": "19110 - 15723",
+    "lhs": 19110,
+    "rhs": 15723,
+    "final_answer": "3387",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0086",
+    "prompt": "Question: Calculate: 19371 - 15233\n",
+    "expression": "19371 - 15233",
+    "lhs": 19371,
+    "rhs": 15233,
+    "final_answer": "4138",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0087",
+    "prompt": "Question: Calculate: 15572 - 10684\n",
+    "expression": "15572 - 10684",
+    "lhs": 15572,
+    "rhs": 10684,
+    "final_answer": "4888",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0088",
+    "prompt": "Question: Calculate: 18491 - 13552\n",
+    "expression": "18491 - 13552",
+    "lhs": 18491,
+    "rhs": 13552,
+    "final_answer": "4939",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0089",
+    "prompt": "Question: Calculate: 18181 - 14644\n",
+    "expression": "18181 - 14644",
+    "lhs": 18181,
+    "rhs": 14644,
+    "final_answer": "3537",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0090",
+    "prompt": "Question: Calculate: 16594 - 16109\n",
+    "expression": "16594 - 16109",
+    "lhs": 16594,
+    "rhs": 16109,
+    "final_answer": "485",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0091",
+    "prompt": "Question: Calculate: 12010 - 10608\n",
+    "expression": "12010 - 10608",
+    "lhs": 12010,
+    "rhs": 10608,
+    "final_answer": "1402",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0092",
+    "prompt": "Question: Calculate: 17561 - 10417\n",
+    "expression": "17561 - 10417",
+    "lhs": 17561,
+    "rhs": 10417,
+    "final_answer": "7144",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0093",
+    "prompt": "Question: Calculate: 19970 - 13129\n",
+    "expression": "19970 - 13129",
+    "lhs": 19970,
+    "rhs": 13129,
+    "final_answer": "6841",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0094",
+    "prompt": "Question: Calculate: 16362 - 11652\n",
+    "expression": "16362 - 11652",
+    "lhs": 16362,
+    "rhs": 11652,
+    "final_answer": "4710",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0095",
+    "prompt": "Question: Calculate: 11276 - 10317\n",
+    "expression": "11276 - 10317",
+    "lhs": 11276,
+    "rhs": 10317,
+    "final_answer": "959",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0096",
+    "prompt": "Question: Calculate: 17539 - 15701\n",
+    "expression": "17539 - 15701",
+    "lhs": 17539,
+    "rhs": 15701,
+    "final_answer": "1838",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0097",
+    "prompt": "Question: Calculate: 10645 - 10512\n",
+    "expression": "10645 - 10512",
+    "lhs": 10645,
+    "rhs": 10512,
+    "final_answer": "133",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0098",
+    "prompt": "Question: Calculate: 17182 - 11719\n",
+    "expression": "17182 - 11719",
+    "lhs": 17182,
+    "rhs": 11719,
+    "final_answer": "5463",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0099",
+    "prompt": "Question: Calculate: 16279 - 10578\n",
+    "expression": "16279 - 10578",
+    "lhs": 16279,
+    "rhs": 10578,
+    "final_answer": "5701",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0100",
+    "prompt": "Question: Calculate: 19385 - 17537\n",
+    "expression": "19385 - 17537",
+    "lhs": 19385,
+    "rhs": 17537,
+    "final_answer": "1848",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0101",
+    "prompt": "Question: Calculate: 19415 - 14419\n",
+    "expression": "19415 - 14419",
+    "lhs": 19415,
+    "rhs": 14419,
+    "final_answer": "4996",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0102",
+    "prompt": "Question: Calculate: 18010 - 10548\n",
+    "expression": "18010 - 10548",
+    "lhs": 18010,
+    "rhs": 10548,
+    "final_answer": "7462",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0103",
+    "prompt": "Question: Calculate: 18897 - 17086\n",
+    "expression": "18897 - 17086",
+    "lhs": 18897,
+    "rhs": 17086,
+    "final_answer": "1811",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0104",
+    "prompt": "Question: Calculate: 19788 - 12918\n",
+    "expression": "19788 - 12918",
+    "lhs": 19788,
+    "rhs": 12918,
+    "final_answer": "6870",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0105",
+    "prompt": "Question: Calculate: 18668 - 15122\n",
+    "expression": "18668 - 15122",
+    "lhs": 18668,
+    "rhs": 15122,
+    "final_answer": "3546",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0106",
+    "prompt": "Question: Calculate: 15142 - 11604\n",
+    "expression": "15142 - 11604",
+    "lhs": 15142,
+    "rhs": 11604,
+    "final_answer": "3538",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0107",
+    "prompt": "Question: Calculate: 16519 - 12558\n",
+    "expression": "16519 - 12558",
+    "lhs": 16519,
+    "rhs": 12558,
+    "final_answer": "3961",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0108",
+    "prompt": "Question: Calculate: 15983 - 11800\n",
+    "expression": "15983 - 11800",
+    "lhs": 15983,
+    "rhs": 11800,
+    "final_answer": "4183",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0109",
+    "prompt": "Question: Calculate: 19475 - 13873\n",
+    "expression": "19475 - 13873",
+    "lhs": 19475,
+    "rhs": 13873,
+    "final_answer": "5602",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0110",
+    "prompt": "Question: Calculate: 19591 - 19006\n",
+    "expression": "19591 - 19006",
+    "lhs": 19591,
+    "rhs": 19006,
+    "final_answer": "585",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0111",
+    "prompt": "Question: Calculate: 17294 - 16951\n",
+    "expression": "17294 - 16951",
+    "lhs": 17294,
+    "rhs": 16951,
+    "final_answer": "343",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0112",
+    "prompt": "Question: Calculate: 16584 - 14096\n",
+    "expression": "16584 - 14096",
+    "lhs": 16584,
+    "rhs": 14096,
+    "final_answer": "2488",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0113",
+    "prompt": "Question: Calculate: 15783 - 13244\n",
+    "expression": "15783 - 13244",
+    "lhs": 15783,
+    "rhs": 13244,
+    "final_answer": "2539",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0114",
+    "prompt": "Question: Calculate: 17976 - 17020\n",
+    "expression": "17976 - 17020",
+    "lhs": 17976,
+    "rhs": 17020,
+    "final_answer": "956",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0115",
+    "prompt": "Question: Calculate: 16030 - 13935\n",
+    "expression": "16030 - 13935",
+    "lhs": 16030,
+    "rhs": 13935,
+    "final_answer": "2095",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0116",
+    "prompt": "Question: Calculate: 18638 - 15834\n",
+    "expression": "18638 - 15834",
+    "lhs": 18638,
+    "rhs": 15834,
+    "final_answer": "2804",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0117",
+    "prompt": "Question: Calculate: 19738 - 16677\n",
+    "expression": "19738 - 16677",
+    "lhs": 19738,
+    "rhs": 16677,
+    "final_answer": "3061",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0118",
+    "prompt": "Question: Calculate: 18013 - 10746\n",
+    "expression": "18013 - 10746",
+    "lhs": 18013,
+    "rhs": 10746,
+    "final_answer": "7267",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0119",
+    "prompt": "Question: Calculate: 17446 - 10947\n",
+    "expression": "17446 - 10947",
+    "lhs": 17446,
+    "rhs": 10947,
+    "final_answer": "6499",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0120",
+    "prompt": "Question: Calculate: 12177 - 12099\n",
+    "expression": "12177 - 12099",
+    "lhs": 12177,
+    "rhs": 12099,
+    "final_answer": "78",
+    "ans_digits": 2,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0121",
+    "prompt": "Question: Calculate: 18821 - 18749\n",
+    "expression": "18821 - 18749",
+    "lhs": 18821,
+    "rhs": 18749,
+    "final_answer": "72",
+    "ans_digits": 2,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0122",
+    "prompt": "Question: Calculate: 14426 - 13513\n",
+    "expression": "14426 - 13513",
+    "lhs": 14426,
+    "rhs": 13513,
+    "final_answer": "913",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0123",
+    "prompt": "Question: Calculate: 13501 - 11399\n",
+    "expression": "13501 - 11399",
+    "lhs": 13501,
+    "rhs": 11399,
+    "final_answer": "2102",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0124",
+    "prompt": "Question: Calculate: 15660 - 13777\n",
+    "expression": "15660 - 13777",
+    "lhs": 15660,
+    "rhs": 13777,
+    "final_answer": "1883",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0125",
+    "prompt": "Question: Calculate: 13177 - 11745\n",
+    "expression": "13177 - 11745",
+    "lhs": 13177,
+    "rhs": 11745,
+    "final_answer": "1432",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0126",
+    "prompt": "Question: Calculate: 11220 - 10120\n",
+    "expression": "11220 - 10120",
+    "lhs": 11220,
+    "rhs": 10120,
+    "final_answer": "1100",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0127",
+    "prompt": "Question: Calculate: 14459 - 13106\n",
+    "expression": "14459 - 13106",
+    "lhs": 14459,
+    "rhs": 13106,
+    "final_answer": "1353",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0128",
+    "prompt": "Question: Calculate: 19890 - 10773\n",
+    "expression": "19890 - 10773",
+    "lhs": 19890,
+    "rhs": 10773,
+    "final_answer": "9117",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0129",
+    "prompt": "Question: Calculate: 17670 - 15078\n",
+    "expression": "17670 - 15078",
+    "lhs": 17670,
+    "rhs": 15078,
+    "final_answer": "2592",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0130",
+    "prompt": "Question: Calculate: 18070 - 12703\n",
+    "expression": "18070 - 12703",
+    "lhs": 18070,
+    "rhs": 12703,
+    "final_answer": "5367",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0131",
+    "prompt": "Question: Calculate: 15076 - 13715\n",
+    "expression": "15076 - 13715",
+    "lhs": 15076,
+    "rhs": 13715,
+    "final_answer": "1361",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0132",
+    "prompt": "Question: Calculate: 17082 - 16639\n",
+    "expression": "17082 - 16639",
+    "lhs": 17082,
+    "rhs": 16639,
+    "final_answer": "443",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0133",
+    "prompt": "Question: Calculate: 15139 - 13687\n",
+    "expression": "15139 - 13687",
+    "lhs": 15139,
+    "rhs": 13687,
+    "final_answer": "1452",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0134",
+    "prompt": "Question: Calculate: 19303 - 17861\n",
+    "expression": "19303 - 17861",
+    "lhs": 19303,
+    "rhs": 17861,
+    "final_answer": "1442",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0135",
+    "prompt": "Question: Calculate: 17236 - 16784\n",
+    "expression": "17236 - 16784",
+    "lhs": 17236,
+    "rhs": 16784,
+    "final_answer": "452",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0136",
+    "prompt": "Question: Calculate: 14392 - 11025\n",
+    "expression": "14392 - 11025",
+    "lhs": 14392,
+    "rhs": 11025,
+    "final_answer": "3367",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0137",
+    "prompt": "Question: Calculate: 18523 - 10367\n",
+    "expression": "18523 - 10367",
+    "lhs": 18523,
+    "rhs": 10367,
+    "final_answer": "8156",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0138",
+    "prompt": "Question: Calculate: 13212 - 10181\n",
+    "expression": "13212 - 10181",
+    "lhs": 13212,
+    "rhs": 10181,
+    "final_answer": "3031",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0139",
+    "prompt": "Question: Calculate: 17476 - 10845\n",
+    "expression": "17476 - 10845",
+    "lhs": 17476,
+    "rhs": 10845,
+    "final_answer": "6631",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0140",
+    "prompt": "Question: Calculate: 15968 - 13741\n",
+    "expression": "15968 - 13741",
+    "lhs": 15968,
+    "rhs": 13741,
+    "final_answer": "2227",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0141",
+    "prompt": "Question: Calculate: 17160 - 15977\n",
+    "expression": "17160 - 15977",
+    "lhs": 17160,
+    "rhs": 15977,
+    "final_answer": "1183",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0142",
+    "prompt": "Question: Calculate: 19187 - 12513\n",
+    "expression": "19187 - 12513",
+    "lhs": 19187,
+    "rhs": 12513,
+    "final_answer": "6674",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0143",
+    "prompt": "Question: Calculate: 16388 - 10413\n",
+    "expression": "16388 - 10413",
+    "lhs": 16388,
+    "rhs": 10413,
+    "final_answer": "5975",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0144",
+    "prompt": "Question: Calculate: 18416 - 12853\n",
+    "expression": "18416 - 12853",
+    "lhs": 18416,
+    "rhs": 12853,
+    "final_answer": "5563",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0145",
+    "prompt": "Question: Calculate: 15615 - 12974\n",
+    "expression": "15615 - 12974",
+    "lhs": 15615,
+    "rhs": 12974,
+    "final_answer": "2641",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0146",
+    "prompt": "Question: Calculate: 16801 - 13888\n",
+    "expression": "16801 - 13888",
+    "lhs": 16801,
+    "rhs": 13888,
+    "final_answer": "2913",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0147",
+    "prompt": "Question: Calculate: 19688 - 17715\n",
+    "expression": "19688 - 17715",
+    "lhs": 19688,
+    "rhs": 17715,
+    "final_answer": "1973",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0148",
+    "prompt": "Question: Calculate: 14333 - 11120\n",
+    "expression": "14333 - 11120",
+    "lhs": 14333,
+    "rhs": 11120,
+    "final_answer": "3213",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0149",
+    "prompt": "Question: Calculate: 18300 - 12319\n",
+    "expression": "18300 - 12319",
+    "lhs": 18300,
+    "rhs": 12319,
+    "final_answer": "5981",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0150",
+    "prompt": "Question: Calculate: 18571 - 16396\n",
+    "expression": "18571 - 16396",
+    "lhs": 18571,
+    "rhs": 16396,
+    "final_answer": "2175",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0151",
+    "prompt": "Question: Calculate: 19557 - 17032\n",
+    "expression": "19557 - 17032",
+    "lhs": 19557,
+    "rhs": 17032,
+    "final_answer": "2525",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0152",
+    "prompt": "Question: Calculate: 11699 - 11450\n",
+    "expression": "11699 - 11450",
+    "lhs": 11699,
+    "rhs": 11450,
+    "final_answer": "249",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0153",
+    "prompt": "Question: Calculate: 12105 - 12069\n",
+    "expression": "12105 - 12069",
+    "lhs": 12105,
+    "rhs": 12069,
+    "final_answer": "36",
+    "ans_digits": 2,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0154",
+    "prompt": "Question: Calculate: 13214 - 12724\n",
+    "expression": "13214 - 12724",
+    "lhs": 13214,
+    "rhs": 12724,
+    "final_answer": "490",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0155",
+    "prompt": "Question: Calculate: 14323 - 11238\n",
+    "expression": "14323 - 11238",
+    "lhs": 14323,
+    "rhs": 11238,
+    "final_answer": "3085",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0156",
+    "prompt": "Question: Calculate: 15281 - 12727\n",
+    "expression": "15281 - 12727",
+    "lhs": 15281,
+    "rhs": 12727,
+    "final_answer": "2554",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0157",
+    "prompt": "Question: Calculate: 16187 - 12607\n",
+    "expression": "16187 - 12607",
+    "lhs": 16187,
+    "rhs": 12607,
+    "final_answer": "3580",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0158",
+    "prompt": "Question: Calculate: 11773 - 11354\n",
+    "expression": "11773 - 11354",
+    "lhs": 11773,
+    "rhs": 11354,
+    "final_answer": "419",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0159",
+    "prompt": "Question: Calculate: 19595 - 18016\n",
+    "expression": "19595 - 18016",
+    "lhs": 19595,
+    "rhs": 18016,
+    "final_answer": "1579",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0160",
+    "prompt": "Question: Calculate: 19300 - 18955\n",
+    "expression": "19300 - 18955",
+    "lhs": 19300,
+    "rhs": 18955,
+    "final_answer": "345",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0161",
+    "prompt": "Question: Calculate: 15459 - 12405\n",
+    "expression": "15459 - 12405",
+    "lhs": 15459,
+    "rhs": 12405,
+    "final_answer": "3054",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0162",
+    "prompt": "Question: Calculate: 16461 - 15016\n",
+    "expression": "16461 - 15016",
+    "lhs": 16461,
+    "rhs": 15016,
+    "final_answer": "1445",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0163",
+    "prompt": "Question: Calculate: 17398 - 15218\n",
+    "expression": "17398 - 15218",
+    "lhs": 17398,
+    "rhs": 15218,
+    "final_answer": "2180",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0164",
+    "prompt": "Question: Calculate: 14471 - 14328\n",
+    "expression": "14471 - 14328",
+    "lhs": 14471,
+    "rhs": 14328,
+    "final_answer": "143",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0165",
+    "prompt": "Question: Calculate: 16186 - 16100\n",
+    "expression": "16186 - 16100",
+    "lhs": 16186,
+    "rhs": 16100,
+    "final_answer": "86",
+    "ans_digits": 2,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0166",
+    "prompt": "Question: Calculate: 13519 - 12964\n",
+    "expression": "13519 - 12964",
+    "lhs": 13519,
+    "rhs": 12964,
+    "final_answer": "555",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0167",
+    "prompt": "Question: Calculate: 16141 - 15195\n",
+    "expression": "16141 - 15195",
+    "lhs": 16141,
+    "rhs": 15195,
+    "final_answer": "946",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0168",
+    "prompt": "Question: Calculate: 14693 - 14591\n",
+    "expression": "14693 - 14591",
+    "lhs": 14693,
+    "rhs": 14591,
+    "final_answer": "102",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0169",
+    "prompt": "Question: Calculate: 11793 - 11252\n",
+    "expression": "11793 - 11252",
+    "lhs": 11793,
+    "rhs": 11252,
+    "final_answer": "541",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0170",
+    "prompt": "Question: Calculate: 18533 - 11599\n",
+    "expression": "18533 - 11599",
+    "lhs": 18533,
+    "rhs": 11599,
+    "final_answer": "6934",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0171",
+    "prompt": "Question: Calculate: 18722 - 15614\n",
+    "expression": "18722 - 15614",
+    "lhs": 18722,
+    "rhs": 15614,
+    "final_answer": "3108",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0172",
+    "prompt": "Question: Calculate: 13504 - 11399\n",
+    "expression": "13504 - 11399",
+    "lhs": 13504,
+    "rhs": 11399,
+    "final_answer": "2105",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0173",
+    "prompt": "Question: Calculate: 17376 - 16260\n",
+    "expression": "17376 - 16260",
+    "lhs": 17376,
+    "rhs": 16260,
+    "final_answer": "1116",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0174",
+    "prompt": "Question: Calculate: 18376 - 13074\n",
+    "expression": "18376 - 13074",
+    "lhs": 18376,
+    "rhs": 13074,
+    "final_answer": "5302",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0175",
+    "prompt": "Question: Calculate: 15540 - 10300\n",
+    "expression": "15540 - 10300",
+    "lhs": 15540,
+    "rhs": 10300,
+    "final_answer": "5240",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0176",
+    "prompt": "Question: Calculate: 12366 - 10950\n",
+    "expression": "12366 - 10950",
+    "lhs": 12366,
+    "rhs": 10950,
+    "final_answer": "1416",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0177",
+    "prompt": "Question: Calculate: 19055 - 13377\n",
+    "expression": "19055 - 13377",
+    "lhs": 19055,
+    "rhs": 13377,
+    "final_answer": "5678",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0178",
+    "prompt": "Question: Calculate: 18846 - 11643\n",
+    "expression": "18846 - 11643",
+    "lhs": 18846,
+    "rhs": 11643,
+    "final_answer": "7203",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0179",
+    "prompt": "Question: Calculate: 19718 - 13546\n",
+    "expression": "19718 - 13546",
+    "lhs": 19718,
+    "rhs": 13546,
+    "final_answer": "6172",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0180",
+    "prompt": "Question: Calculate: 17284 - 17027\n",
+    "expression": "17284 - 17027",
+    "lhs": 17284,
+    "rhs": 17027,
+    "final_answer": "257",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0181",
+    "prompt": "Question: Calculate: 18405 - 14931\n",
+    "expression": "18405 - 14931",
+    "lhs": 18405,
+    "rhs": 14931,
+    "final_answer": "3474",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0182",
+    "prompt": "Question: Calculate: 18800 - 11634\n",
+    "expression": "18800 - 11634",
+    "lhs": 18800,
+    "rhs": 11634,
+    "final_answer": "7166",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0183",
+    "prompt": "Question: Calculate: 18138 - 14579\n",
+    "expression": "18138 - 14579",
+    "lhs": 18138,
+    "rhs": 14579,
+    "final_answer": "3559",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0184",
+    "prompt": "Question: Calculate: 14263 - 11316\n",
+    "expression": "14263 - 11316",
+    "lhs": 14263,
+    "rhs": 11316,
+    "final_answer": "2947",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0185",
+    "prompt": "Question: Calculate: 16259 - 12205\n",
+    "expression": "16259 - 12205",
+    "lhs": 16259,
+    "rhs": 12205,
+    "final_answer": "4054",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0186",
+    "prompt": "Question: Calculate: 12717 - 10458\n",
+    "expression": "12717 - 10458",
+    "lhs": 12717,
+    "rhs": 10458,
+    "final_answer": "2259",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0187",
+    "prompt": "Question: Calculate: 14277 - 11221\n",
+    "expression": "14277 - 11221",
+    "lhs": 14277,
+    "rhs": 11221,
+    "final_answer": "3056",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0188",
+    "prompt": "Question: Calculate: 18557 - 13995\n",
+    "expression": "18557 - 13995",
+    "lhs": 18557,
+    "rhs": 13995,
+    "final_answer": "4562",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0189",
+    "prompt": "Question: Calculate: 13981 - 13250\n",
+    "expression": "13981 - 13250",
+    "lhs": 13981,
+    "rhs": 13250,
+    "final_answer": "731",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0190",
+    "prompt": "Question: Calculate: 15303 - 14374\n",
+    "expression": "15303 - 14374",
+    "lhs": 15303,
+    "rhs": 14374,
+    "final_answer": "929",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0191",
+    "prompt": "Question: Calculate: 11597 - 10978\n",
+    "expression": "11597 - 10978",
+    "lhs": 11597,
+    "rhs": 10978,
+    "final_answer": "619",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0192",
+    "prompt": "Question: Calculate: 13025 - 11824\n",
+    "expression": "13025 - 11824",
+    "lhs": 13025,
+    "rhs": 11824,
+    "final_answer": "1201",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0193",
+    "prompt": "Question: Calculate: 17257 - 12769\n",
+    "expression": "17257 - 12769",
+    "lhs": 17257,
+    "rhs": 12769,
+    "final_answer": "4488",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0194",
+    "prompt": "Question: Calculate: 18876 - 13393\n",
+    "expression": "18876 - 13393",
+    "lhs": 18876,
+    "rhs": 13393,
+    "final_answer": "5483",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0195",
+    "prompt": "Question: Calculate: 16377 - 10188\n",
+    "expression": "16377 - 10188",
+    "lhs": 16377,
+    "rhs": 10188,
+    "final_answer": "6189",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0196",
+    "prompt": "Question: Calculate: 13205 - 10027\n",
+    "expression": "13205 - 10027",
+    "lhs": 13205,
+    "rhs": 10027,
+    "final_answer": "3178",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0197",
+    "prompt": "Question: Calculate: 18326 - 17892\n",
+    "expression": "18326 - 17892",
+    "lhs": 18326,
+    "rhs": 17892,
+    "final_answer": "434",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0198",
+    "prompt": "Question: Calculate: 16470 - 14770\n",
+    "expression": "16470 - 14770",
+    "lhs": 16470,
+    "rhs": 14770,
+    "final_answer": "1700",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0199",
+    "prompt": "Question: Calculate: 17912 - 17680\n",
+    "expression": "17912 - 17680",
+    "lhs": 17912,
+    "rhs": 17680,
+    "final_answer": "232",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0200",
+    "prompt": "Question: Calculate: 19389 - 10758\n",
+    "expression": "19389 - 10758",
+    "lhs": 19389,
+    "rhs": 10758,
+    "final_answer": "8631",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0201",
+    "prompt": "Question: Calculate: 16911 - 10174\n",
+    "expression": "16911 - 10174",
+    "lhs": 16911,
+    "rhs": 10174,
+    "final_answer": "6737",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0202",
+    "prompt": "Question: Calculate: 17917 - 17136\n",
+    "expression": "17917 - 17136",
+    "lhs": 17917,
+    "rhs": 17136,
+    "final_answer": "781",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0203",
+    "prompt": "Question: Calculate: 18905 - 11777\n",
+    "expression": "18905 - 11777",
+    "lhs": 18905,
+    "rhs": 11777,
+    "final_answer": "7128",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0204",
+    "prompt": "Question: Calculate: 17620 - 13887\n",
+    "expression": "17620 - 13887",
+    "lhs": 17620,
+    "rhs": 13887,
+    "final_answer": "3733",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0205",
+    "prompt": "Question: Calculate: 16181 - 12366\n",
+    "expression": "16181 - 12366",
+    "lhs": 16181,
+    "rhs": 12366,
+    "final_answer": "3815",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0206",
+    "prompt": "Question: Calculate: 19892 - 16115\n",
+    "expression": "19892 - 16115",
+    "lhs": 19892,
+    "rhs": 16115,
+    "final_answer": "3777",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0207",
+    "prompt": "Question: Calculate: 17917 - 10043\n",
+    "expression": "17917 - 10043",
+    "lhs": 17917,
+    "rhs": 10043,
+    "final_answer": "7874",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0208",
+    "prompt": "Question: Calculate: 17910 - 16899\n",
+    "expression": "17910 - 16899",
+    "lhs": 17910,
+    "rhs": 16899,
+    "final_answer": "1011",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0209",
+    "prompt": "Question: Calculate: 16817 - 11077\n",
+    "expression": "16817 - 11077",
+    "lhs": 16817,
+    "rhs": 11077,
+    "final_answer": "5740",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0210",
+    "prompt": "Question: Calculate: 13040 - 11537\n",
+    "expression": "13040 - 11537",
+    "lhs": 13040,
+    "rhs": 11537,
+    "final_answer": "1503",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0211",
+    "prompt": "Question: Calculate: 18176 - 12414\n",
+    "expression": "18176 - 12414",
+    "lhs": 18176,
+    "rhs": 12414,
+    "final_answer": "5762",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0212",
+    "prompt": "Question: Calculate: 14620 - 10685\n",
+    "expression": "14620 - 10685",
+    "lhs": 14620,
+    "rhs": 10685,
+    "final_answer": "3935",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0213",
+    "prompt": "Question: Calculate: 18940 - 18578\n",
+    "expression": "18940 - 18578",
+    "lhs": 18940,
+    "rhs": 18578,
+    "final_answer": "362",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0214",
+    "prompt": "Question: Calculate: 18457 - 16468\n",
+    "expression": "18457 - 16468",
+    "lhs": 18457,
+    "rhs": 16468,
+    "final_answer": "1989",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0215",
+    "prompt": "Question: Calculate: 19191 - 10809\n",
+    "expression": "19191 - 10809",
+    "lhs": 19191,
+    "rhs": 10809,
+    "final_answer": "8382",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0216",
+    "prompt": "Question: Calculate: 14912 - 11688\n",
+    "expression": "14912 - 11688",
+    "lhs": 14912,
+    "rhs": 11688,
+    "final_answer": "3224",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0217",
+    "prompt": "Question: Calculate: 18209 - 16389\n",
+    "expression": "18209 - 16389",
+    "lhs": 18209,
+    "rhs": 16389,
+    "final_answer": "1820",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0218",
+    "prompt": "Question: Calculate: 19410 - 13644\n",
+    "expression": "19410 - 13644",
+    "lhs": 19410,
+    "rhs": 13644,
+    "final_answer": "5766",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0219",
+    "prompt": "Question: Calculate: 13706 - 10733\n",
+    "expression": "13706 - 10733",
+    "lhs": 13706,
+    "rhs": 10733,
+    "final_answer": "2973",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0220",
+    "prompt": "Question: Calculate: 16343 - 12652\n",
+    "expression": "16343 - 12652",
+    "lhs": 16343,
+    "rhs": 12652,
+    "final_answer": "3691",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0221",
+    "prompt": "Question: Calculate: 15383 - 14873\n",
+    "expression": "15383 - 14873",
+    "lhs": 15383,
+    "rhs": 14873,
+    "final_answer": "510",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0222",
+    "prompt": "Question: Calculate: 16564 - 14206\n",
+    "expression": "16564 - 14206",
+    "lhs": 16564,
+    "rhs": 14206,
+    "final_answer": "2358",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0223",
+    "prompt": "Question: Calculate: 17656 - 17036\n",
+    "expression": "17656 - 17036",
+    "lhs": 17656,
+    "rhs": 17036,
+    "final_answer": "620",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0224",
+    "prompt": "Question: Calculate: 14891 - 11789\n",
+    "expression": "14891 - 11789",
+    "lhs": 14891,
+    "rhs": 11789,
+    "final_answer": "3102",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0225",
+    "prompt": "Question: Calculate: 19648 - 11366\n",
+    "expression": "19648 - 11366",
+    "lhs": 19648,
+    "rhs": 11366,
+    "final_answer": "8282",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0226",
+    "prompt": "Question: Calculate: 16575 - 10607\n",
+    "expression": "16575 - 10607",
+    "lhs": 16575,
+    "rhs": 10607,
+    "final_answer": "5968",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0227",
+    "prompt": "Question: Calculate: 15291 - 13780\n",
+    "expression": "15291 - 13780",
+    "lhs": 15291,
+    "rhs": 13780,
+    "final_answer": "1511",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0228",
+    "prompt": "Question: Calculate: 19982 - 10335\n",
+    "expression": "19982 - 10335",
+    "lhs": 19982,
+    "rhs": 10335,
+    "final_answer": "9647",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0229",
+    "prompt": "Question: Calculate: 16340 - 14099\n",
+    "expression": "16340 - 14099",
+    "lhs": 16340,
+    "rhs": 14099,
+    "final_answer": "2241",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0230",
+    "prompt": "Question: Calculate: 19325 - 10544\n",
+    "expression": "19325 - 10544",
+    "lhs": 19325,
+    "rhs": 10544,
+    "final_answer": "8781",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0231",
+    "prompt": "Question: Calculate: 19250 - 17972\n",
+    "expression": "19250 - 17972",
+    "lhs": 19250,
+    "rhs": 17972,
+    "final_answer": "1278",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0232",
+    "prompt": "Question: Calculate: 13760 - 10254\n",
+    "expression": "13760 - 10254",
+    "lhs": 13760,
+    "rhs": 10254,
+    "final_answer": "3506",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0233",
+    "prompt": "Question: Calculate: 14889 - 12142\n",
+    "expression": "14889 - 12142",
+    "lhs": 14889,
+    "rhs": 12142,
+    "final_answer": "2747",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0234",
+    "prompt": "Question: Calculate: 15510 - 11876\n",
+    "expression": "15510 - 11876",
+    "lhs": 15510,
+    "rhs": 11876,
+    "final_answer": "3634",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0235",
+    "prompt": "Question: Calculate: 19768 - 17384\n",
+    "expression": "19768 - 17384",
+    "lhs": 19768,
+    "rhs": 17384,
+    "final_answer": "2384",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0236",
+    "prompt": "Question: Calculate: 12022 - 10870\n",
+    "expression": "12022 - 10870",
+    "lhs": 12022,
+    "rhs": 10870,
+    "final_answer": "1152",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0237",
+    "prompt": "Question: Calculate: 19050 - 11133\n",
+    "expression": "19050 - 11133",
+    "lhs": 19050,
+    "rhs": 11133,
+    "final_answer": "7917",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0238",
+    "prompt": "Question: Calculate: 19153 - 16124\n",
+    "expression": "19153 - 16124",
+    "lhs": 19153,
+    "rhs": 16124,
+    "final_answer": "3029",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0239",
+    "prompt": "Question: Calculate: 19403 - 11636\n",
+    "expression": "19403 - 11636",
+    "lhs": 19403,
+    "rhs": 11636,
+    "final_answer": "7767",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0240",
+    "prompt": "Question: Calculate: 16507 - 13078\n",
+    "expression": "16507 - 13078",
+    "lhs": 16507,
+    "rhs": 13078,
+    "final_answer": "3429",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0241",
+    "prompt": "Question: Calculate: 18927 - 12330\n",
+    "expression": "18927 - 12330",
+    "lhs": 18927,
+    "rhs": 12330,
+    "final_answer": "6597",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0242",
+    "prompt": "Question: Calculate: 19496 - 16411\n",
+    "expression": "19496 - 16411",
+    "lhs": 19496,
+    "rhs": 16411,
+    "final_answer": "3085",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0243",
+    "prompt": "Question: Calculate: 17612 - 10177\n",
+    "expression": "17612 - 10177",
+    "lhs": 17612,
+    "rhs": 10177,
+    "final_answer": "7435",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0244",
+    "prompt": "Question: Calculate: 17576 - 14543\n",
+    "expression": "17576 - 14543",
+    "lhs": 17576,
+    "rhs": 14543,
+    "final_answer": "3033",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0245",
+    "prompt": "Question: Calculate: 12870 - 11932\n",
+    "expression": "12870 - 11932",
+    "lhs": 12870,
+    "rhs": 11932,
+    "final_answer": "938",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0246",
+    "prompt": "Question: Calculate: 15442 - 14041\n",
+    "expression": "15442 - 14041",
+    "lhs": 15442,
+    "rhs": 14041,
+    "final_answer": "1401",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0247",
+    "prompt": "Question: Calculate: 19804 - 11098\n",
+    "expression": "19804 - 11098",
+    "lhs": 19804,
+    "rhs": 11098,
+    "final_answer": "8706",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0248",
+    "prompt": "Question: Calculate: 16521 - 14080\n",
+    "expression": "16521 - 14080",
+    "lhs": 16521,
+    "rhs": 14080,
+    "final_answer": "2441",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0249",
+    "prompt": "Question: Calculate: 15586 - 12270\n",
+    "expression": "15586 - 12270",
+    "lhs": 15586,
+    "rhs": 12270,
+    "final_answer": "3316",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0250",
+    "prompt": "Question: Calculate: 16579 - 12816\n",
+    "expression": "16579 - 12816",
+    "lhs": 16579,
+    "rhs": 12816,
+    "final_answer": "3763",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0251",
+    "prompt": "Question: Calculate: 12304 - 10057\n",
+    "expression": "12304 - 10057",
+    "lhs": 12304,
+    "rhs": 10057,
+    "final_answer": "2247",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0252",
+    "prompt": "Question: Calculate: 12855 - 11853\n",
+    "expression": "12855 - 11853",
+    "lhs": 12855,
+    "rhs": 11853,
+    "final_answer": "1002",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0253",
+    "prompt": "Question: Calculate: 19362 - 16938\n",
+    "expression": "19362 - 16938",
+    "lhs": 19362,
+    "rhs": 16938,
+    "final_answer": "2424",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0254",
+    "prompt": "Question: Calculate: 19018 - 10411\n",
+    "expression": "19018 - 10411",
+    "lhs": 19018,
+    "rhs": 10411,
+    "final_answer": "8607",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0255",
+    "prompt": "Question: Calculate: 18357 - 17463\n",
+    "expression": "18357 - 17463",
+    "lhs": 18357,
+    "rhs": 17463,
+    "final_answer": "894",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0256",
+    "prompt": "Question: Calculate: 16011 - 14528\n",
+    "expression": "16011 - 14528",
+    "lhs": 16011,
+    "rhs": 14528,
+    "final_answer": "1483",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0257",
+    "prompt": "Question: Calculate: 18428 - 10172\n",
+    "expression": "18428 - 10172",
+    "lhs": 18428,
+    "rhs": 10172,
+    "final_answer": "8256",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0258",
+    "prompt": "Question: Calculate: 19888 - 12320\n",
+    "expression": "19888 - 12320",
+    "lhs": 19888,
+    "rhs": 12320,
+    "final_answer": "7568",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0259",
+    "prompt": "Question: Calculate: 13800 - 13261\n",
+    "expression": "13800 - 13261",
+    "lhs": 13800,
+    "rhs": 13261,
+    "final_answer": "539",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0260",
+    "prompt": "Question: Calculate: 18934 - 16031\n",
+    "expression": "18934 - 16031",
+    "lhs": 18934,
+    "rhs": 16031,
+    "final_answer": "2903",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0261",
+    "prompt": "Question: Calculate: 18250 - 13782\n",
+    "expression": "18250 - 13782",
+    "lhs": 18250,
+    "rhs": 13782,
+    "final_answer": "4468",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0262",
+    "prompt": "Question: Calculate: 14884 - 13148\n",
+    "expression": "14884 - 13148",
+    "lhs": 14884,
+    "rhs": 13148,
+    "final_answer": "1736",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0263",
+    "prompt": "Question: Calculate: 11355 - 10070\n",
+    "expression": "11355 - 10070",
+    "lhs": 11355,
+    "rhs": 10070,
+    "final_answer": "1285",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0264",
+    "prompt": "Question: Calculate: 16689 - 15933\n",
+    "expression": "16689 - 15933",
+    "lhs": 16689,
+    "rhs": 15933,
+    "final_answer": "756",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0265",
+    "prompt": "Question: Calculate: 17351 - 13921\n",
+    "expression": "17351 - 13921",
+    "lhs": 17351,
+    "rhs": 13921,
+    "final_answer": "3430",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0266",
+    "prompt": "Question: Calculate: 15346 - 11384\n",
+    "expression": "15346 - 11384",
+    "lhs": 15346,
+    "rhs": 11384,
+    "final_answer": "3962",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0267",
+    "prompt": "Question: Calculate: 17865 - 15104\n",
+    "expression": "17865 - 15104",
+    "lhs": 17865,
+    "rhs": 15104,
+    "final_answer": "2761",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0268",
+    "prompt": "Question: Calculate: 15539 - 14157\n",
+    "expression": "15539 - 14157",
+    "lhs": 15539,
+    "rhs": 14157,
+    "final_answer": "1382",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0269",
+    "prompt": "Question: Calculate: 19403 - 16184\n",
+    "expression": "19403 - 16184",
+    "lhs": 19403,
+    "rhs": 16184,
+    "final_answer": "3219",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0270",
+    "prompt": "Question: Calculate: 15656 - 13567\n",
+    "expression": "15656 - 13567",
+    "lhs": 15656,
+    "rhs": 13567,
+    "final_answer": "2089",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0271",
+    "prompt": "Question: Calculate: 12001 - 10426\n",
+    "expression": "12001 - 10426",
+    "lhs": 12001,
+    "rhs": 10426,
+    "final_answer": "1575",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0272",
+    "prompt": "Question: Calculate: 12670 - 11336\n",
+    "expression": "12670 - 11336",
+    "lhs": 12670,
+    "rhs": 11336,
+    "final_answer": "1334",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0273",
+    "prompt": "Question: Calculate: 14985 - 10772\n",
+    "expression": "14985 - 10772",
+    "lhs": 14985,
+    "rhs": 10772,
+    "final_answer": "4213",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0274",
+    "prompt": "Question: Calculate: 12467 - 11449\n",
+    "expression": "12467 - 11449",
+    "lhs": 12467,
+    "rhs": 11449,
+    "final_answer": "1018",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0275",
+    "prompt": "Question: Calculate: 18898 - 14007\n",
+    "expression": "18898 - 14007",
+    "lhs": 18898,
+    "rhs": 14007,
+    "final_answer": "4891",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0276",
+    "prompt": "Question: Calculate: 13104 - 11422\n",
+    "expression": "13104 - 11422",
+    "lhs": 13104,
+    "rhs": 11422,
+    "final_answer": "1682",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0277",
+    "prompt": "Question: Calculate: 19362 - 15414\n",
+    "expression": "19362 - 15414",
+    "lhs": 19362,
+    "rhs": 15414,
+    "final_answer": "3948",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0278",
+    "prompt": "Question: Calculate: 18409 - 16024\n",
+    "expression": "18409 - 16024",
+    "lhs": 18409,
+    "rhs": 16024,
+    "final_answer": "2385",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0279",
+    "prompt": "Question: Calculate: 19551 - 17901\n",
+    "expression": "19551 - 17901",
+    "lhs": 19551,
+    "rhs": 17901,
+    "final_answer": "1650",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0280",
+    "prompt": "Question: Calculate: 19474 - 19278\n",
+    "expression": "19474 - 19278",
+    "lhs": 19474,
+    "rhs": 19278,
+    "final_answer": "196",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0281",
+    "prompt": "Question: Calculate: 13614 - 10196\n",
+    "expression": "13614 - 10196",
+    "lhs": 13614,
+    "rhs": 10196,
+    "final_answer": "3418",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0282",
+    "prompt": "Question: Calculate: 19878 - 15553\n",
+    "expression": "19878 - 15553",
+    "lhs": 19878,
+    "rhs": 15553,
+    "final_answer": "4325",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0283",
+    "prompt": "Question: Calculate: 17435 - 11638\n",
+    "expression": "17435 - 11638",
+    "lhs": 17435,
+    "rhs": 11638,
+    "final_answer": "5797",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0284",
+    "prompt": "Question: Calculate: 18077 - 18074\n",
+    "expression": "18077 - 18074",
+    "lhs": 18077,
+    "rhs": 18074,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0285",
+    "prompt": "Question: Calculate: 17962 - 11335\n",
+    "expression": "17962 - 11335",
+    "lhs": 17962,
+    "rhs": 11335,
+    "final_answer": "6627",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0286",
+    "prompt": "Question: Calculate: 13150 - 10440\n",
+    "expression": "13150 - 10440",
+    "lhs": 13150,
+    "rhs": 10440,
+    "final_answer": "2710",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0287",
+    "prompt": "Question: Calculate: 15660 - 10536\n",
+    "expression": "15660 - 10536",
+    "lhs": 15660,
+    "rhs": 10536,
+    "final_answer": "5124",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0288",
+    "prompt": "Question: Calculate: 18198 - 16731\n",
+    "expression": "18198 - 16731",
+    "lhs": 18198,
+    "rhs": 16731,
+    "final_answer": "1467",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0289",
+    "prompt": "Question: Calculate: 17404 - 10934\n",
+    "expression": "17404 - 10934",
+    "lhs": 17404,
+    "rhs": 10934,
+    "final_answer": "6470",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0290",
+    "prompt": "Question: Calculate: 19391 - 14972\n",
+    "expression": "19391 - 14972",
+    "lhs": 19391,
+    "rhs": 14972,
+    "final_answer": "4419",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0291",
+    "prompt": "Question: Calculate: 12123 - 11208\n",
+    "expression": "12123 - 11208",
+    "lhs": 12123,
+    "rhs": 11208,
+    "final_answer": "915",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0292",
+    "prompt": "Question: Calculate: 16259 - 14156\n",
+    "expression": "16259 - 14156",
+    "lhs": 16259,
+    "rhs": 14156,
+    "final_answer": "2103",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0293",
+    "prompt": "Question: Calculate: 15407 - 10079\n",
+    "expression": "15407 - 10079",
+    "lhs": 15407,
+    "rhs": 10079,
+    "final_answer": "5328",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0294",
+    "prompt": "Question: Calculate: 16426 - 11528\n",
+    "expression": "16426 - 11528",
+    "lhs": 16426,
+    "rhs": 11528,
+    "final_answer": "4898",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0295",
+    "prompt": "Question: Calculate: 18862 - 14152\n",
+    "expression": "18862 - 14152",
+    "lhs": 18862,
+    "rhs": 14152,
+    "final_answer": "4710",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0296",
+    "prompt": "Question: Calculate: 19098 - 13799\n",
+    "expression": "19098 - 13799",
+    "lhs": 19098,
+    "rhs": 13799,
+    "final_answer": "5299",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0297",
+    "prompt": "Question: Calculate: 19677 - 15256\n",
+    "expression": "19677 - 15256",
+    "lhs": 19677,
+    "rhs": 15256,
+    "final_answer": "4421",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0298",
+    "prompt": "Question: Calculate: 13917 - 13422\n",
+    "expression": "13917 - 13422",
+    "lhs": 13917,
+    "rhs": 13422,
+    "final_answer": "495",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0299",
+    "prompt": "Question: Calculate: 17344 - 16311\n",
+    "expression": "17344 - 16311",
+    "lhs": 17344,
+    "rhs": 16311,
+    "final_answer": "1033",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0300",
+    "prompt": "Question: Calculate: 19153 - 14242\n",
+    "expression": "19153 - 14242",
+    "lhs": 19153,
+    "rhs": 14242,
+    "final_answer": "4911",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0301",
+    "prompt": "Question: Calculate: 19132 - 11890\n",
+    "expression": "19132 - 11890",
+    "lhs": 19132,
+    "rhs": 11890,
+    "final_answer": "7242",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0302",
+    "prompt": "Question: Calculate: 17431 - 16615\n",
+    "expression": "17431 - 16615",
+    "lhs": 17431,
+    "rhs": 16615,
+    "final_answer": "816",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0303",
+    "prompt": "Question: Calculate: 17616 - 17496\n",
+    "expression": "17616 - 17496",
+    "lhs": 17616,
+    "rhs": 17496,
+    "final_answer": "120",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0304",
+    "prompt": "Question: Calculate: 17137 - 10994\n",
+    "expression": "17137 - 10994",
+    "lhs": 17137,
+    "rhs": 10994,
+    "final_answer": "6143",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0305",
+    "prompt": "Question: Calculate: 16354 - 10154\n",
+    "expression": "16354 - 10154",
+    "lhs": 16354,
+    "rhs": 10154,
+    "final_answer": "6200",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0306",
+    "prompt": "Question: Calculate: 14585 - 13678\n",
+    "expression": "14585 - 13678",
+    "lhs": 14585,
+    "rhs": 13678,
+    "final_answer": "907",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0307",
+    "prompt": "Question: Calculate: 15319 - 15082\n",
+    "expression": "15319 - 15082",
+    "lhs": 15319,
+    "rhs": 15082,
+    "final_answer": "237",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0308",
+    "prompt": "Question: Calculate: 19620 - 17456\n",
+    "expression": "19620 - 17456",
+    "lhs": 19620,
+    "rhs": 17456,
+    "final_answer": "2164",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0309",
+    "prompt": "Question: Calculate: 13821 - 11312\n",
+    "expression": "13821 - 11312",
+    "lhs": 13821,
+    "rhs": 11312,
+    "final_answer": "2509",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0310",
+    "prompt": "Question: Calculate: 17741 - 13873\n",
+    "expression": "17741 - 13873",
+    "lhs": 17741,
+    "rhs": 13873,
+    "final_answer": "3868",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0311",
+    "prompt": "Question: Calculate: 13730 - 10731\n",
+    "expression": "13730 - 10731",
+    "lhs": 13730,
+    "rhs": 10731,
+    "final_answer": "2999",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0312",
+    "prompt": "Question: Calculate: 13700 - 12901\n",
+    "expression": "13700 - 12901",
+    "lhs": 13700,
+    "rhs": 12901,
+    "final_answer": "799",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0313",
+    "prompt": "Question: Calculate: 19506 - 14329\n",
+    "expression": "19506 - 14329",
+    "lhs": 19506,
+    "rhs": 14329,
+    "final_answer": "5177",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0314",
+    "prompt": "Question: Calculate: 17393 - 16885\n",
+    "expression": "17393 - 16885",
+    "lhs": 17393,
+    "rhs": 16885,
+    "final_answer": "508",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0315",
+    "prompt": "Question: Calculate: 18190 - 15462\n",
+    "expression": "18190 - 15462",
+    "lhs": 18190,
+    "rhs": 15462,
+    "final_answer": "2728",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0316",
+    "prompt": "Question: Calculate: 15576 - 14326\n",
+    "expression": "15576 - 14326",
+    "lhs": 15576,
+    "rhs": 14326,
+    "final_answer": "1250",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0317",
+    "prompt": "Question: Calculate: 11906 - 10006\n",
+    "expression": "11906 - 10006",
+    "lhs": 11906,
+    "rhs": 10006,
+    "final_answer": "1900",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0318",
+    "prompt": "Question: Calculate: 18894 - 14952\n",
+    "expression": "18894 - 14952",
+    "lhs": 18894,
+    "rhs": 14952,
+    "final_answer": "3942",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0319",
+    "prompt": "Question: Calculate: 18739 - 14603\n",
+    "expression": "18739 - 14603",
+    "lhs": 18739,
+    "rhs": 14603,
+    "final_answer": "4136",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0320",
+    "prompt": "Question: Calculate: 19612 - 10708\n",
+    "expression": "19612 - 10708",
+    "lhs": 19612,
+    "rhs": 10708,
+    "final_answer": "8904",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0321",
+    "prompt": "Question: Calculate: 17190 - 14973\n",
+    "expression": "17190 - 14973",
+    "lhs": 17190,
+    "rhs": 14973,
+    "final_answer": "2217",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0322",
+    "prompt": "Question: Calculate: 13559 - 11919\n",
+    "expression": "13559 - 11919",
+    "lhs": 13559,
+    "rhs": 11919,
+    "final_answer": "1640",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0323",
+    "prompt": "Question: Calculate: 18871 - 11520\n",
+    "expression": "18871 - 11520",
+    "lhs": 18871,
+    "rhs": 11520,
+    "final_answer": "7351",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0324",
+    "prompt": "Question: Calculate: 16341 - 15644\n",
+    "expression": "16341 - 15644",
+    "lhs": 16341,
+    "rhs": 15644,
+    "final_answer": "697",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0325",
+    "prompt": "Question: Calculate: 15586 - 10321\n",
+    "expression": "15586 - 10321",
+    "lhs": 15586,
+    "rhs": 10321,
+    "final_answer": "5265",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0326",
+    "prompt": "Question: Calculate: 14744 - 12658\n",
+    "expression": "14744 - 12658",
+    "lhs": 14744,
+    "rhs": 12658,
+    "final_answer": "2086",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0327",
+    "prompt": "Question: Calculate: 17925 - 10844\n",
+    "expression": "17925 - 10844",
+    "lhs": 17925,
+    "rhs": 10844,
+    "final_answer": "7081",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0328",
+    "prompt": "Question: Calculate: 19738 - 17455\n",
+    "expression": "19738 - 17455",
+    "lhs": 19738,
+    "rhs": 17455,
+    "final_answer": "2283",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0329",
+    "prompt": "Question: Calculate: 19563 - 15897\n",
+    "expression": "19563 - 15897",
+    "lhs": 19563,
+    "rhs": 15897,
+    "final_answer": "3666",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0330",
+    "prompt": "Question: Calculate: 19499 - 14898\n",
+    "expression": "19499 - 14898",
+    "lhs": 19499,
+    "rhs": 14898,
+    "final_answer": "4601",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0331",
+    "prompt": "Question: Calculate: 17821 - 16776\n",
+    "expression": "17821 - 16776",
+    "lhs": 17821,
+    "rhs": 16776,
+    "final_answer": "1045",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0332",
+    "prompt": "Question: Calculate: 11923 - 11724\n",
+    "expression": "11923 - 11724",
+    "lhs": 11923,
+    "rhs": 11724,
+    "final_answer": "199",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0333",
+    "prompt": "Question: Calculate: 11762 - 10840\n",
+    "expression": "11762 - 10840",
+    "lhs": 11762,
+    "rhs": 10840,
+    "final_answer": "922",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0334",
+    "prompt": "Question: Calculate: 19440 - 17932\n",
+    "expression": "19440 - 17932",
+    "lhs": 19440,
+    "rhs": 17932,
+    "final_answer": "1508",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0335",
+    "prompt": "Question: Calculate: 17745 - 16426\n",
+    "expression": "17745 - 16426",
+    "lhs": 17745,
+    "rhs": 16426,
+    "final_answer": "1319",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0336",
+    "prompt": "Question: Calculate: 17366 - 15025\n",
+    "expression": "17366 - 15025",
+    "lhs": 17366,
+    "rhs": 15025,
+    "final_answer": "2341",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0337",
+    "prompt": "Question: Calculate: 15932 - 14751\n",
+    "expression": "15932 - 14751",
+    "lhs": 15932,
+    "rhs": 14751,
+    "final_answer": "1181",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0338",
+    "prompt": "Question: Calculate: 16854 - 15753\n",
+    "expression": "16854 - 15753",
+    "lhs": 16854,
+    "rhs": 15753,
+    "final_answer": "1101",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0339",
+    "prompt": "Question: Calculate: 17559 - 15594\n",
+    "expression": "17559 - 15594",
+    "lhs": 17559,
+    "rhs": 15594,
+    "final_answer": "1965",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0340",
+    "prompt": "Question: Calculate: 18385 - 12456\n",
+    "expression": "18385 - 12456",
+    "lhs": 18385,
+    "rhs": 12456,
+    "final_answer": "5929",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0341",
+    "prompt": "Question: Calculate: 19262 - 17470\n",
+    "expression": "19262 - 17470",
+    "lhs": 19262,
+    "rhs": 17470,
+    "final_answer": "1792",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0342",
+    "prompt": "Question: Calculate: 12727 - 12486\n",
+    "expression": "12727 - 12486",
+    "lhs": 12727,
+    "rhs": 12486,
+    "final_answer": "241",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0343",
+    "prompt": "Question: Calculate: 19448 - 16348\n",
+    "expression": "19448 - 16348",
+    "lhs": 19448,
+    "rhs": 16348,
+    "final_answer": "3100",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0344",
+    "prompt": "Question: Calculate: 14851 - 13443\n",
+    "expression": "14851 - 13443",
+    "lhs": 14851,
+    "rhs": 13443,
+    "final_answer": "1408",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0345",
+    "prompt": "Question: Calculate: 18306 - 15536\n",
+    "expression": "18306 - 15536",
+    "lhs": 18306,
+    "rhs": 15536,
+    "final_answer": "2770",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0346",
+    "prompt": "Question: Calculate: 14397 - 10406\n",
+    "expression": "14397 - 10406",
+    "lhs": 14397,
+    "rhs": 10406,
+    "final_answer": "3991",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0347",
+    "prompt": "Question: Calculate: 19503 - 13330\n",
+    "expression": "19503 - 13330",
+    "lhs": 19503,
+    "rhs": 13330,
+    "final_answer": "6173",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0348",
+    "prompt": "Question: Calculate: 19976 - 10171\n",
+    "expression": "19976 - 10171",
+    "lhs": 19976,
+    "rhs": 10171,
+    "final_answer": "9805",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0349",
+    "prompt": "Question: Calculate: 18315 - 14225\n",
+    "expression": "18315 - 14225",
+    "lhs": 18315,
+    "rhs": 14225,
+    "final_answer": "4090",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0350",
+    "prompt": "Question: Calculate: 18658 - 16230\n",
+    "expression": "18658 - 16230",
+    "lhs": 18658,
+    "rhs": 16230,
+    "final_answer": "2428",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0351",
+    "prompt": "Question: Calculate: 16830 - 15716\n",
+    "expression": "16830 - 15716",
+    "lhs": 16830,
+    "rhs": 15716,
+    "final_answer": "1114",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0352",
+    "prompt": "Question: Calculate: 17109 - 10187\n",
+    "expression": "17109 - 10187",
+    "lhs": 17109,
+    "rhs": 10187,
+    "final_answer": "6922",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0353",
+    "prompt": "Question: Calculate: 19669 - 16209\n",
+    "expression": "19669 - 16209",
+    "lhs": 19669,
+    "rhs": 16209,
+    "final_answer": "3460",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0354",
+    "prompt": "Question: Calculate: 19789 - 12982\n",
+    "expression": "19789 - 12982",
+    "lhs": 19789,
+    "rhs": 12982,
+    "final_answer": "6807",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0355",
+    "prompt": "Question: Calculate: 16681 - 11109\n",
+    "expression": "16681 - 11109",
+    "lhs": 16681,
+    "rhs": 11109,
+    "final_answer": "5572",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0356",
+    "prompt": "Question: Calculate: 18510 - 13580\n",
+    "expression": "18510 - 13580",
+    "lhs": 18510,
+    "rhs": 13580,
+    "final_answer": "4930",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0357",
+    "prompt": "Question: Calculate: 16714 - 12167\n",
+    "expression": "16714 - 12167",
+    "lhs": 16714,
+    "rhs": 12167,
+    "final_answer": "4547",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0358",
+    "prompt": "Question: Calculate: 18977 - 17805\n",
+    "expression": "18977 - 17805",
+    "lhs": 18977,
+    "rhs": 17805,
+    "final_answer": "1172",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0359",
+    "prompt": "Question: Calculate: 17256 - 10554\n",
+    "expression": "17256 - 10554",
+    "lhs": 17256,
+    "rhs": 10554,
+    "final_answer": "6702",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0360",
+    "prompt": "Question: Calculate: 17475 - 17221\n",
+    "expression": "17475 - 17221",
+    "lhs": 17475,
+    "rhs": 17221,
+    "final_answer": "254",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0361",
+    "prompt": "Question: Calculate: 19768 - 17194\n",
+    "expression": "19768 - 17194",
+    "lhs": 19768,
+    "rhs": 17194,
+    "final_answer": "2574",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0362",
+    "prompt": "Question: Calculate: 17675 - 16138\n",
+    "expression": "17675 - 16138",
+    "lhs": 17675,
+    "rhs": 16138,
+    "final_answer": "1537",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0363",
+    "prompt": "Question: Calculate: 13361 - 10670\n",
+    "expression": "13361 - 10670",
+    "lhs": 13361,
+    "rhs": 10670,
+    "final_answer": "2691",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0364",
+    "prompt": "Question: Calculate: 19331 - 19257\n",
+    "expression": "19331 - 19257",
+    "lhs": 19331,
+    "rhs": 19257,
+    "final_answer": "74",
+    "ans_digits": 2,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0365",
+    "prompt": "Question: Calculate: 16657 - 12365\n",
+    "expression": "16657 - 12365",
+    "lhs": 16657,
+    "rhs": 12365,
+    "final_answer": "4292",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0366",
+    "prompt": "Question: Calculate: 16165 - 13651\n",
+    "expression": "16165 - 13651",
+    "lhs": 16165,
+    "rhs": 13651,
+    "final_answer": "2514",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0367",
+    "prompt": "Question: Calculate: 18143 - 17675\n",
+    "expression": "18143 - 17675",
+    "lhs": 18143,
+    "rhs": 17675,
+    "final_answer": "468",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0368",
+    "prompt": "Question: Calculate: 19655 - 13011\n",
+    "expression": "19655 - 13011",
+    "lhs": 19655,
+    "rhs": 13011,
+    "final_answer": "6644",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0369",
+    "prompt": "Question: Calculate: 17276 - 11143\n",
+    "expression": "17276 - 11143",
+    "lhs": 17276,
+    "rhs": 11143,
+    "final_answer": "6133",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0370",
+    "prompt": "Question: Calculate: 11400 - 10904\n",
+    "expression": "11400 - 10904",
+    "lhs": 11400,
+    "rhs": 10904,
+    "final_answer": "496",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0371",
+    "prompt": "Question: Calculate: 17173 - 13906\n",
+    "expression": "17173 - 13906",
+    "lhs": 17173,
+    "rhs": 13906,
+    "final_answer": "3267",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0372",
+    "prompt": "Question: Calculate: 15859 - 12019\n",
+    "expression": "15859 - 12019",
+    "lhs": 15859,
+    "rhs": 12019,
+    "final_answer": "3840",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0373",
+    "prompt": "Question: Calculate: 19076 - 12131\n",
+    "expression": "19076 - 12131",
+    "lhs": 19076,
+    "rhs": 12131,
+    "final_answer": "6945",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0374",
+    "prompt": "Question: Calculate: 19783 - 16873\n",
+    "expression": "19783 - 16873",
+    "lhs": 19783,
+    "rhs": 16873,
+    "final_answer": "2910",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0375",
+    "prompt": "Question: Calculate: 13071 - 12825\n",
+    "expression": "13071 - 12825",
+    "lhs": 13071,
+    "rhs": 12825,
+    "final_answer": "246",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0376",
+    "prompt": "Question: Calculate: 16667 - 10533\n",
+    "expression": "16667 - 10533",
+    "lhs": 16667,
+    "rhs": 10533,
+    "final_answer": "6134",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0377",
+    "prompt": "Question: Calculate: 18842 - 12752\n",
+    "expression": "18842 - 12752",
+    "lhs": 18842,
+    "rhs": 12752,
+    "final_answer": "6090",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0378",
+    "prompt": "Question: Calculate: 14710 - 13305\n",
+    "expression": "14710 - 13305",
+    "lhs": 14710,
+    "rhs": 13305,
+    "final_answer": "1405",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0379",
+    "prompt": "Question: Calculate: 13799 - 12687\n",
+    "expression": "13799 - 12687",
+    "lhs": 13799,
+    "rhs": 12687,
+    "final_answer": "1112",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0380",
+    "prompt": "Question: Calculate: 13963 - 13156\n",
+    "expression": "13963 - 13156",
+    "lhs": 13963,
+    "rhs": 13156,
+    "final_answer": "807",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0381",
+    "prompt": "Question: Calculate: 12345 - 10851\n",
+    "expression": "12345 - 10851",
+    "lhs": 12345,
+    "rhs": 10851,
+    "final_answer": "1494",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0382",
+    "prompt": "Question: Calculate: 19657 - 13534\n",
+    "expression": "19657 - 13534",
+    "lhs": 19657,
+    "rhs": 13534,
+    "final_answer": "6123",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0383",
+    "prompt": "Question: Calculate: 14133 - 13765\n",
+    "expression": "14133 - 13765",
+    "lhs": 14133,
+    "rhs": 13765,
+    "final_answer": "368",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0384",
+    "prompt": "Question: Calculate: 16211 - 14587\n",
+    "expression": "16211 - 14587",
+    "lhs": 16211,
+    "rhs": 14587,
+    "final_answer": "1624",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0385",
+    "prompt": "Question: Calculate: 16573 - 10370\n",
+    "expression": "16573 - 10370",
+    "lhs": 16573,
+    "rhs": 10370,
+    "final_answer": "6203",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0386",
+    "prompt": "Question: Calculate: 16191 - 10452\n",
+    "expression": "16191 - 10452",
+    "lhs": 16191,
+    "rhs": 10452,
+    "final_answer": "5739",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0387",
+    "prompt": "Question: Calculate: 19274 - 14237\n",
+    "expression": "19274 - 14237",
+    "lhs": 19274,
+    "rhs": 14237,
+    "final_answer": "5037",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0388",
+    "prompt": "Question: Calculate: 13713 - 10038\n",
+    "expression": "13713 - 10038",
+    "lhs": 13713,
+    "rhs": 10038,
+    "final_answer": "3675",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0389",
+    "prompt": "Question: Calculate: 16535 - 15633\n",
+    "expression": "16535 - 15633",
+    "lhs": 16535,
+    "rhs": 15633,
+    "final_answer": "902",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0390",
+    "prompt": "Question: Calculate: 13125 - 12139\n",
+    "expression": "13125 - 12139",
+    "lhs": 13125,
+    "rhs": 12139,
+    "final_answer": "986",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0391",
+    "prompt": "Question: Calculate: 17171 - 15588\n",
+    "expression": "17171 - 15588",
+    "lhs": 17171,
+    "rhs": 15588,
+    "final_answer": "1583",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0392",
+    "prompt": "Question: Calculate: 18810 - 16420\n",
+    "expression": "18810 - 16420",
+    "lhs": 18810,
+    "rhs": 16420,
+    "final_answer": "2390",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0393",
+    "prompt": "Question: Calculate: 15294 - 12304\n",
+    "expression": "15294 - 12304",
+    "lhs": 15294,
+    "rhs": 12304,
+    "final_answer": "2990",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0394",
+    "prompt": "Question: Calculate: 19811 - 15006\n",
+    "expression": "19811 - 15006",
+    "lhs": 19811,
+    "rhs": 15006,
+    "final_answer": "4805",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0395",
+    "prompt": "Question: Calculate: 12238 - 11481\n",
+    "expression": "12238 - 11481",
+    "lhs": 12238,
+    "rhs": 11481,
+    "final_answer": "757",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0396",
+    "prompt": "Question: Calculate: 18288 - 15631\n",
+    "expression": "18288 - 15631",
+    "lhs": 18288,
+    "rhs": 15631,
+    "final_answer": "2657",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0397",
+    "prompt": "Question: Calculate: 17904 - 13973\n",
+    "expression": "17904 - 13973",
+    "lhs": 17904,
+    "rhs": 13973,
+    "final_answer": "3931",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0398",
+    "prompt": "Question: Calculate: 10796 - 10541\n",
+    "expression": "10796 - 10541",
+    "lhs": 10796,
+    "rhs": 10541,
+    "final_answer": "255",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0399",
+    "prompt": "Question: Calculate: 16268 - 14341\n",
+    "expression": "16268 - 14341",
+    "lhs": 16268,
+    "rhs": 14341,
+    "final_answer": "1927",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0400",
+    "prompt": "Question: Calculate: 18701 - 14159\n",
+    "expression": "18701 - 14159",
+    "lhs": 18701,
+    "rhs": 14159,
+    "final_answer": "4542",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0401",
+    "prompt": "Question: Calculate: 19105 - 15511\n",
+    "expression": "19105 - 15511",
+    "lhs": 19105,
+    "rhs": 15511,
+    "final_answer": "3594",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0402",
+    "prompt": "Question: Calculate: 18712 - 14707\n",
+    "expression": "18712 - 14707",
+    "lhs": 18712,
+    "rhs": 14707,
+    "final_answer": "4005",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0403",
+    "prompt": "Question: Calculate: 17846 - 15582\n",
+    "expression": "17846 - 15582",
+    "lhs": 17846,
+    "rhs": 15582,
+    "final_answer": "2264",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0404",
+    "prompt": "Question: Calculate: 14021 - 11748\n",
+    "expression": "14021 - 11748",
+    "lhs": 14021,
+    "rhs": 11748,
+    "final_answer": "2273",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0405",
+    "prompt": "Question: Calculate: 19481 - 11908\n",
+    "expression": "19481 - 11908",
+    "lhs": 19481,
+    "rhs": 11908,
+    "final_answer": "7573",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0406",
+    "prompt": "Question: Calculate: 18525 - 10161\n",
+    "expression": "18525 - 10161",
+    "lhs": 18525,
+    "rhs": 10161,
+    "final_answer": "8364",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0407",
+    "prompt": "Question: Calculate: 14194 - 12732\n",
+    "expression": "14194 - 12732",
+    "lhs": 14194,
+    "rhs": 12732,
+    "final_answer": "1462",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0408",
+    "prompt": "Question: Calculate: 15933 - 15736\n",
+    "expression": "15933 - 15736",
+    "lhs": 15933,
+    "rhs": 15736,
+    "final_answer": "197",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0409",
+    "prompt": "Question: Calculate: 15096 - 12346\n",
+    "expression": "15096 - 12346",
+    "lhs": 15096,
+    "rhs": 12346,
+    "final_answer": "2750",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0410",
+    "prompt": "Question: Calculate: 18674 - 10106\n",
+    "expression": "18674 - 10106",
+    "lhs": 18674,
+    "rhs": 10106,
+    "final_answer": "8568",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0411",
+    "prompt": "Question: Calculate: 15309 - 14057\n",
+    "expression": "15309 - 14057",
+    "lhs": 15309,
+    "rhs": 14057,
+    "final_answer": "1252",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0412",
+    "prompt": "Question: Calculate: 17276 - 16721\n",
+    "expression": "17276 - 16721",
+    "lhs": 17276,
+    "rhs": 16721,
+    "final_answer": "555",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0413",
+    "prompt": "Question: Calculate: 14960 - 12163\n",
+    "expression": "14960 - 12163",
+    "lhs": 14960,
+    "rhs": 12163,
+    "final_answer": "2797",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0414",
+    "prompt": "Question: Calculate: 15983 - 15457\n",
+    "expression": "15983 - 15457",
+    "lhs": 15983,
+    "rhs": 15457,
+    "final_answer": "526",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0415",
+    "prompt": "Question: Calculate: 17859 - 10490\n",
+    "expression": "17859 - 10490",
+    "lhs": 17859,
+    "rhs": 10490,
+    "final_answer": "7369",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0416",
+    "prompt": "Question: Calculate: 19129 - 16952\n",
+    "expression": "19129 - 16952",
+    "lhs": 19129,
+    "rhs": 16952,
+    "final_answer": "2177",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0417",
+    "prompt": "Question: Calculate: 19022 - 18685\n",
+    "expression": "19022 - 18685",
+    "lhs": 19022,
+    "rhs": 18685,
+    "final_answer": "337",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0418",
+    "prompt": "Question: Calculate: 18919 - 17318\n",
+    "expression": "18919 - 17318",
+    "lhs": 18919,
+    "rhs": 17318,
+    "final_answer": "1601",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0419",
+    "prompt": "Question: Calculate: 16503 - 10450\n",
+    "expression": "16503 - 10450",
+    "lhs": 16503,
+    "rhs": 10450,
+    "final_answer": "6053",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0420",
+    "prompt": "Question: Calculate: 12957 - 10689\n",
+    "expression": "12957 - 10689",
+    "lhs": 12957,
+    "rhs": 10689,
+    "final_answer": "2268",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0421",
+    "prompt": "Question: Calculate: 19669 - 13747\n",
+    "expression": "19669 - 13747",
+    "lhs": 19669,
+    "rhs": 13747,
+    "final_answer": "5922",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0422",
+    "prompt": "Question: Calculate: 12766 - 12131\n",
+    "expression": "12766 - 12131",
+    "lhs": 12766,
+    "rhs": 12131,
+    "final_answer": "635",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0423",
+    "prompt": "Question: Calculate: 14082 - 12005\n",
+    "expression": "14082 - 12005",
+    "lhs": 14082,
+    "rhs": 12005,
+    "final_answer": "2077",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0424",
+    "prompt": "Question: Calculate: 17874 - 11232\n",
+    "expression": "17874 - 11232",
+    "lhs": 17874,
+    "rhs": 11232,
+    "final_answer": "6642",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0425",
+    "prompt": "Question: Calculate: 11525 - 10561\n",
+    "expression": "11525 - 10561",
+    "lhs": 11525,
+    "rhs": 10561,
+    "final_answer": "964",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0426",
+    "prompt": "Question: Calculate: 19179 - 15342\n",
+    "expression": "19179 - 15342",
+    "lhs": 19179,
+    "rhs": 15342,
+    "final_answer": "3837",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0427",
+    "prompt": "Question: Calculate: 16795 - 16575\n",
+    "expression": "16795 - 16575",
+    "lhs": 16795,
+    "rhs": 16575,
+    "final_answer": "220",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0428",
+    "prompt": "Question: Calculate: 19698 - 13422\n",
+    "expression": "19698 - 13422",
+    "lhs": 19698,
+    "rhs": 13422,
+    "final_answer": "6276",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0429",
+    "prompt": "Question: Calculate: 19449 - 12159\n",
+    "expression": "19449 - 12159",
+    "lhs": 19449,
+    "rhs": 12159,
+    "final_answer": "7290",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0430",
+    "prompt": "Question: Calculate: 18847 - 17733\n",
+    "expression": "18847 - 17733",
+    "lhs": 18847,
+    "rhs": 17733,
+    "final_answer": "1114",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0431",
+    "prompt": "Question: Calculate: 19272 - 18594\n",
+    "expression": "19272 - 18594",
+    "lhs": 19272,
+    "rhs": 18594,
+    "final_answer": "678",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0432",
+    "prompt": "Question: Calculate: 17931 - 12613\n",
+    "expression": "17931 - 12613",
+    "lhs": 17931,
+    "rhs": 12613,
+    "final_answer": "5318",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0433",
+    "prompt": "Question: Calculate: 18510 - 18144\n",
+    "expression": "18510 - 18144",
+    "lhs": 18510,
+    "rhs": 18144,
+    "final_answer": "366",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0434",
+    "prompt": "Question: Calculate: 13326 - 11250\n",
+    "expression": "13326 - 11250",
+    "lhs": 13326,
+    "rhs": 11250,
+    "final_answer": "2076",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0435",
+    "prompt": "Question: Calculate: 14123 - 12581\n",
+    "expression": "14123 - 12581",
+    "lhs": 14123,
+    "rhs": 12581,
+    "final_answer": "1542",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0436",
+    "prompt": "Question: Calculate: 19297 - 15075\n",
+    "expression": "19297 - 15075",
+    "lhs": 19297,
+    "rhs": 15075,
+    "final_answer": "4222",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0437",
+    "prompt": "Question: Calculate: 16697 - 15936\n",
+    "expression": "16697 - 15936",
+    "lhs": 16697,
+    "rhs": 15936,
+    "final_answer": "761",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0438",
+    "prompt": "Question: Calculate: 19442 - 12846\n",
+    "expression": "19442 - 12846",
+    "lhs": 19442,
+    "rhs": 12846,
+    "final_answer": "6596",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0439",
+    "prompt": "Question: Calculate: 17765 - 11854\n",
+    "expression": "17765 - 11854",
+    "lhs": 17765,
+    "rhs": 11854,
+    "final_answer": "5911",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0440",
+    "prompt": "Question: Calculate: 19461 - 16428\n",
+    "expression": "19461 - 16428",
+    "lhs": 19461,
+    "rhs": 16428,
+    "final_answer": "3033",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0441",
+    "prompt": "Question: Calculate: 15075 - 14923\n",
+    "expression": "15075 - 14923",
+    "lhs": 15075,
+    "rhs": 14923,
+    "final_answer": "152",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0442",
+    "prompt": "Question: Calculate: 16998 - 11882\n",
+    "expression": "16998 - 11882",
+    "lhs": 16998,
+    "rhs": 11882,
+    "final_answer": "5116",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0443",
+    "prompt": "Question: Calculate: 13842 - 10137\n",
+    "expression": "13842 - 10137",
+    "lhs": 13842,
+    "rhs": 10137,
+    "final_answer": "3705",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0444",
+    "prompt": "Question: Calculate: 13190 - 12995\n",
+    "expression": "13190 - 12995",
+    "lhs": 13190,
+    "rhs": 12995,
+    "final_answer": "195",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0445",
+    "prompt": "Question: Calculate: 19122 - 18879\n",
+    "expression": "19122 - 18879",
+    "lhs": 19122,
+    "rhs": 18879,
+    "final_answer": "243",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0446",
+    "prompt": "Question: Calculate: 18300 - 10109\n",
+    "expression": "18300 - 10109",
+    "lhs": 18300,
+    "rhs": 10109,
+    "final_answer": "8191",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0447",
+    "prompt": "Question: Calculate: 17717 - 10074\n",
+    "expression": "17717 - 10074",
+    "lhs": 17717,
+    "rhs": 10074,
+    "final_answer": "7643",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0448",
+    "prompt": "Question: Calculate: 15312 - 10318\n",
+    "expression": "15312 - 10318",
+    "lhs": 15312,
+    "rhs": 10318,
+    "final_answer": "4994",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0449",
+    "prompt": "Question: Calculate: 11288 - 10678\n",
+    "expression": "11288 - 10678",
+    "lhs": 11288,
+    "rhs": 10678,
+    "final_answer": "610",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0450",
+    "prompt": "Question: Calculate: 18636 - 12930\n",
+    "expression": "18636 - 12930",
+    "lhs": 18636,
+    "rhs": 12930,
+    "final_answer": "5706",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0451",
+    "prompt": "Question: Calculate: 17990 - 15116\n",
+    "expression": "17990 - 15116",
+    "lhs": 17990,
+    "rhs": 15116,
+    "final_answer": "2874",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0452",
+    "prompt": "Question: Calculate: 15546 - 11300\n",
+    "expression": "15546 - 11300",
+    "lhs": 15546,
+    "rhs": 11300,
+    "final_answer": "4246",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0453",
+    "prompt": "Question: Calculate: 12459 - 10348\n",
+    "expression": "12459 - 10348",
+    "lhs": 12459,
+    "rhs": 10348,
+    "final_answer": "2111",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0454",
+    "prompt": "Question: Calculate: 12609 - 12411\n",
+    "expression": "12609 - 12411",
+    "lhs": 12609,
+    "rhs": 12411,
+    "final_answer": "198",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0455",
+    "prompt": "Question: Calculate: 11348 - 10060\n",
+    "expression": "11348 - 10060",
+    "lhs": 11348,
+    "rhs": 10060,
+    "final_answer": "1288",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0456",
+    "prompt": "Question: Calculate: 18014 - 15913\n",
+    "expression": "18014 - 15913",
+    "lhs": 18014,
+    "rhs": 15913,
+    "final_answer": "2101",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0457",
+    "prompt": "Question: Calculate: 16006 - 14876\n",
+    "expression": "16006 - 14876",
+    "lhs": 16006,
+    "rhs": 14876,
+    "final_answer": "1130",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0458",
+    "prompt": "Question: Calculate: 14450 - 11095\n",
+    "expression": "14450 - 11095",
+    "lhs": 14450,
+    "rhs": 11095,
+    "final_answer": "3355",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0459",
+    "prompt": "Question: Calculate: 16527 - 14513\n",
+    "expression": "16527 - 14513",
+    "lhs": 16527,
+    "rhs": 14513,
+    "final_answer": "2014",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0460",
+    "prompt": "Question: Calculate: 18681 - 18164\n",
+    "expression": "18681 - 18164",
+    "lhs": 18681,
+    "rhs": 18164,
+    "final_answer": "517",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0461",
+    "prompt": "Question: Calculate: 12253 - 11117\n",
+    "expression": "12253 - 11117",
+    "lhs": 12253,
+    "rhs": 11117,
+    "final_answer": "1136",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0462",
+    "prompt": "Question: Calculate: 14409 - 10911\n",
+    "expression": "14409 - 10911",
+    "lhs": 14409,
+    "rhs": 10911,
+    "final_answer": "3498",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0463",
+    "prompt": "Question: Calculate: 16801 - 16649\n",
+    "expression": "16801 - 16649",
+    "lhs": 16801,
+    "rhs": 16649,
+    "final_answer": "152",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0464",
+    "prompt": "Question: Calculate: 17643 - 12157\n",
+    "expression": "17643 - 12157",
+    "lhs": 17643,
+    "rhs": 12157,
+    "final_answer": "5486",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0465",
+    "prompt": "Question: Calculate: 15236 - 10294\n",
+    "expression": "15236 - 10294",
+    "lhs": 15236,
+    "rhs": 10294,
+    "final_answer": "4942",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0466",
+    "prompt": "Question: Calculate: 15825 - 11601\n",
+    "expression": "15825 - 11601",
+    "lhs": 15825,
+    "rhs": 11601,
+    "final_answer": "4224",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0467",
+    "prompt": "Question: Calculate: 16648 - 12804\n",
+    "expression": "16648 - 12804",
+    "lhs": 16648,
+    "rhs": 12804,
+    "final_answer": "3844",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0468",
+    "prompt": "Question: Calculate: 19358 - 17329\n",
+    "expression": "19358 - 17329",
+    "lhs": 19358,
+    "rhs": 17329,
+    "final_answer": "2029",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0469",
+    "prompt": "Question: Calculate: 14519 - 14143\n",
+    "expression": "14519 - 14143",
+    "lhs": 14519,
+    "rhs": 14143,
+    "final_answer": "376",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0470",
+    "prompt": "Question: Calculate: 12799 - 10833\n",
+    "expression": "12799 - 10833",
+    "lhs": 12799,
+    "rhs": 10833,
+    "final_answer": "1966",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0471",
+    "prompt": "Question: Calculate: 16525 - 13766\n",
+    "expression": "16525 - 13766",
+    "lhs": 16525,
+    "rhs": 13766,
+    "final_answer": "2759",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0472",
+    "prompt": "Question: Calculate: 17886 - 10908\n",
+    "expression": "17886 - 10908",
+    "lhs": 17886,
+    "rhs": 10908,
+    "final_answer": "6978",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0473",
+    "prompt": "Question: Calculate: 18759 - 15598\n",
+    "expression": "18759 - 15598",
+    "lhs": 18759,
+    "rhs": 15598,
+    "final_answer": "3161",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0474",
+    "prompt": "Question: Calculate: 18895 - 14790\n",
+    "expression": "18895 - 14790",
+    "lhs": 18895,
+    "rhs": 14790,
+    "final_answer": "4105",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0475",
+    "prompt": "Question: Calculate: 13305 - 13091\n",
+    "expression": "13305 - 13091",
+    "lhs": 13305,
+    "rhs": 13091,
+    "final_answer": "214",
+    "ans_digits": 3,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0476",
+    "prompt": "Question: Calculate: 19386 - 10220\n",
+    "expression": "19386 - 10220",
+    "lhs": 19386,
+    "rhs": 10220,
+    "final_answer": "9166",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0477",
+    "prompt": "Question: Calculate: 18318 - 16103\n",
+    "expression": "18318 - 16103",
+    "lhs": 18318,
+    "rhs": 16103,
+    "final_answer": "2215",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0478",
+    "prompt": "Question: Calculate: 18085 - 12323\n",
+    "expression": "18085 - 12323",
+    "lhs": 18085,
+    "rhs": 12323,
+    "final_answer": "5762",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0479",
+    "prompt": "Question: Calculate: 19100 - 13898\n",
+    "expression": "19100 - 13898",
+    "lhs": 19100,
+    "rhs": 13898,
+    "final_answer": "5202",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0480",
+    "prompt": "Question: Calculate: 16520 - 13542\n",
+    "expression": "16520 - 13542",
+    "lhs": 16520,
+    "rhs": 13542,
+    "final_answer": "2978",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0481",
+    "prompt": "Question: Calculate: 18764 - 10172\n",
+    "expression": "18764 - 10172",
+    "lhs": 18764,
+    "rhs": 10172,
+    "final_answer": "8592",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0482",
+    "prompt": "Question: Calculate: 16984 - 10803\n",
+    "expression": "16984 - 10803",
+    "lhs": 16984,
+    "rhs": 10803,
+    "final_answer": "6181",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0483",
+    "prompt": "Question: Calculate: 14254 - 11441\n",
+    "expression": "14254 - 11441",
+    "lhs": 14254,
+    "rhs": 11441,
+    "final_answer": "2813",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0484",
+    "prompt": "Question: Calculate: 17298 - 15499\n",
+    "expression": "17298 - 15499",
+    "lhs": 17298,
+    "rhs": 15499,
+    "final_answer": "1799",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0485",
+    "prompt": "Question: Calculate: 19739 - 12516\n",
+    "expression": "19739 - 12516",
+    "lhs": 19739,
+    "rhs": 12516,
+    "final_answer": "7223",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0486",
+    "prompt": "Question: Calculate: 13754 - 12205\n",
+    "expression": "13754 - 12205",
+    "lhs": 13754,
+    "rhs": 12205,
+    "final_answer": "1549",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0487",
+    "prompt": "Question: Calculate: 17954 - 16576\n",
+    "expression": "17954 - 16576",
+    "lhs": 17954,
+    "rhs": 16576,
+    "final_answer": "1378",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0488",
+    "prompt": "Question: Calculate: 14390 - 11237\n",
+    "expression": "14390 - 11237",
+    "lhs": 14390,
+    "rhs": 11237,
+    "final_answer": "3153",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0489",
+    "prompt": "Question: Calculate: 18709 - 15608\n",
+    "expression": "18709 - 15608",
+    "lhs": 18709,
+    "rhs": 15608,
+    "final_answer": "3101",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0490",
+    "prompt": "Question: Calculate: 18195 - 11634\n",
+    "expression": "18195 - 11634",
+    "lhs": 18195,
+    "rhs": 11634,
+    "final_answer": "6561",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0491",
+    "prompt": "Question: Calculate: 17542 - 10115\n",
+    "expression": "17542 - 10115",
+    "lhs": 17542,
+    "rhs": 10115,
+    "final_answer": "7427",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0492",
+    "prompt": "Question: Calculate: 15980 - 11568\n",
+    "expression": "15980 - 11568",
+    "lhs": 15980,
+    "rhs": 11568,
+    "final_answer": "4412",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0493",
+    "prompt": "Question: Calculate: 11751 - 10726\n",
+    "expression": "11751 - 10726",
+    "lhs": 11751,
+    "rhs": 10726,
+    "final_answer": "1025",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0494",
+    "prompt": "Question: Calculate: 19266 - 17083\n",
+    "expression": "19266 - 17083",
+    "lhs": 19266,
+    "rhs": 17083,
+    "final_answer": "2183",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0495",
+    "prompt": "Question: Calculate: 19983 - 18133\n",
+    "expression": "19983 - 18133",
+    "lhs": 19983,
+    "rhs": 18133,
+    "final_answer": "1850",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0496",
+    "prompt": "Question: Calculate: 17920 - 12167\n",
+    "expression": "17920 - 12167",
+    "lhs": 17920,
+    "rhs": 12167,
+    "final_answer": "5753",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0497",
+    "prompt": "Question: Calculate: 12116 - 10454\n",
+    "expression": "12116 - 10454",
+    "lhs": 12116,
+    "rhs": 10454,
+    "final_answer": "1662",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0498",
+    "prompt": "Question: Calculate: 15741 - 11207\n",
+    "expression": "15741 - 11207",
+    "lhs": 15741,
+    "rhs": 11207,
+    "final_answer": "4534",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0499",
+    "prompt": "Question: Calculate: 19363 - 12142\n",
+    "expression": "19363 - 12142",
+    "lhs": 19363,
+    "rhs": 12142,
+    "final_answer": "7221",
+    "ans_digits": 4,
+    "operand_digits": 5
+  },
+  {
+    "example_id": "e7_acid5d_0500",
+    "prompt": "Question: Calculate: 11953 - 10758\n",
+    "expression": "11953 - 10758",
+    "lhs": 11953,
+    "rhs": 10758,
+    "final_answer": "1195",
+    "ans_digits": 4,
+    "operand_digits": 5
+  }
+]

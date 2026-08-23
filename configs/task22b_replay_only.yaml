@@ -1,0 +1,74 @@
+# ---------------------------------------------------------------------------
+# Task 22B: the missing control arm from the Task 22 report (section 10).
+#
+# Task 22 changed TWO things at once relative to Task 21B:
+#     (1) 50/50 replay-arithmetic mixture
+#     (2) parameter isolation (freeze tok_emb / pos_emb / blocks 0-5)
+# so their contributions are confounded.
+#
+# This arm holds (1) and removes (2). Everything else is byte-identical to
+# configs/task22_replay_sft.yaml -- same init checkpoint, corpus, split,
+# tokenizer, seed, optimizer, LR, schedule, weight decay, batch, accumulation,
+# steps, max_seq_len and AMP.
+#
+# Independent variable, and the only one: trainable parameter set.
+#     Task 22 Model E : replay + 18,887,680 trainable (44.83%)
+#     Task 22B Model F: replay + ALL 42,132,480 trainable (100%)
+# ---------------------------------------------------------------------------
+
+experiment:
+  name: task22b_replay_only
+  model_label: "Model F (Task 22B: Replay, All Params Trainable)"
+  output_dir: artifacts/sft/task22b_replay_only
+  training_log: reports/task22b_training_log.json
+
+init:
+  # Identical to Task 22. NOT modified by this run.
+  checkpoint: artifacts/sft/progressive_subtraction/best.pt
+  expected_sha256: fdcecade71afafc1857d5ee56d221d31928ae1321d0f963dc0f566482af56d5c
+
+tokenizer:
+  path: artifacts/tokenizer/tokenizer.model
+
+data:
+  # Identical to Task 22: strict 1:1 alternation, every micro-batch is 4+4.
+  mixture:
+    - name: compact_gsm8k
+      train: data/gsm8k_compact_reasoning/train.jsonl
+      dev: data/gsm8k_compact_reasoning/dev.jsonl
+      weight: 0.5
+    - name: replay_arithmetic
+      train: data/replay_arithmetic/train.jsonl
+      dev: data/replay_arithmetic/dev.jsonl
+      weight: 0.5
+  max_seq_len: 512
+
+# ---------------------------------------------------------------------------
+# THE ONLY DIFFERENCE FROM TASK 22.
+#
+# "^.*$" matches every parameter name, so apply_parameter_isolation() sets
+# requires_grad=True on all of them and freezes nothing. tok_emb.weight and
+# lm_head.weight (tied, same tensor) are both trainable here, unlike Task 22.
+# ---------------------------------------------------------------------------
+parameter_isolation:
+  enabled: false
+  trainable_patterns:
+    - "^.*$"
+
+optim:
+  peak_lr: 1.0e-4        # identical to Task 22 and Task 21B
+  min_lr: 1.0e-5
+  warmup_steps: 50
+  weight_decay: 0.01
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  max_grad_norm: 1.0
+
+train:
+  max_steps: 650         # identical to Task 22
+  micro_batch_size: 8
+  grad_accum_steps: 4    # effective batch 32, identical to Task 22
+  eval_interval: 50
+  seed: 42               # identical to Task 22
+  amp: true
+  select_on: mixture_dev_loss

@@ -1,0 +1,52 @@
+MIT License
+
+Copyright (c) 2026 Krishmannadal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+THIRD-PARTY DATA NOTICE
+
+The MIT license above covers the source code, scripts, configuration and
+documentation in this repository. It does NOT relicense third-party data.
+
+Pretraining corpus
+  Derived from HuggingFaceTB/smollm-corpus (`cosmopedia-v2`,
+  `fineweb-edu-dedup`). Subject to that dataset's own terms. Only tokenized
+  shards were produced locally; the shards themselves are not distributed in
+  this repository (see README §14).
+
+Evaluation benchmarks
+  GSM8K (OpenAI), SVAMP, and AQuA-RAT are used under their respective
+  licenses. Derived files under `data/reasoning/` and
+  `data/gsm8k_compact_reasoning/` are transformations of GSM8K and remain
+  subject to its terms.
+
+Synthetic data
+  `data/replay_arithmetic/`, `data/progressive_subtraction_sft/`,
+  `data/arithmetic_sft/`, `data/subtraction_sft/`,
+  `data/mixed_subtraction_sft/` and the E1-E7 evaluation suites are generated
+  deterministically by scripts in this repository and are covered by the MIT
+  license above.
+
+Model weights
+  Checkpoints distributed via GitHub Releases are released under the MIT
+  license. They are research artifacts and are NOT fit for production use;
+  see README §15 (Limitations) and reports/Mini-R1_model_card.md.

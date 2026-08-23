@@ -1,0 +1,481 @@
+{
+  "manifest_name": "Mini-R1 Train Shard Manifest",
+  "split": "train",
+  "creation_timestamp": "2026-08-17 06:30:44 UTC",
+  "tokenizer_path": "artifacts/tokenizer/tokenizer.model",
+  "tokenizer_md5": "e7ef63605f920bf411f0c897c44e31e3",
+  "vocab_size": 8000,
+  "source_dataset": "HuggingFaceTB/smollm-corpus",
+  "source_mixture": {
+    "cosmopedia-v2": 0.6,
+    "fineweb-edu-dedup": 0.4
+  },
+  "seed": 42,
+  "sequence_length": 512,
+  "total_shards": 51,
+  "total_sequences": 976563,
+  "total_tokens": 500000256,
+  "format": "uint16_binary_memmap",
+  "shards": [
+    {
+      "shard_id": 0,
+      "filename": "train_shard_00000.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "05e359f1ff0de8958770428ea501ba5f983137f6fb696d23e3f265e44962e751",
+      "md5": "3261928e77b04763700adefa74083680"
+    },
+    {
+      "shard_id": 1,
+      "filename": "train_shard_00001.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "458409365268c6c672bb5af60232542f7687a3e83f3739336a0d9e94bf118616",
+      "md5": "661adef239f358a4f9a587ec58219e7c"
+    },
+    {
+      "shard_id": 2,
+      "filename": "train_shard_00002.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "f7f50366b61b331521fbdd9e47a0728f0da29e58dd320e7e4cafc6b9a3ec866d",
+      "md5": "6853fe23e7e5ef407fe9ee546a1ebfbd"
+    },
+    {
+      "shard_id": 3,
+      "filename": "train_shard_00003.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "296f2a1e6f93c5b73c62e7d0addf6d59f8490c968caeb3d8ed39a3096151349e",
+      "md5": "8303ec47d0a3efad160005e99f33626a"
+    },
+    {
+      "shard_id": 4,
+      "filename": "train_shard_00004.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "9574c6191e3b901f387ab2731d1be4b149bb1a9d8cd1f197af3f2eae90824ac0",
+      "md5": "065236541602fee571fc2bcedc623572"
+    },
+    {
+      "shard_id": 5,
+      "filename": "train_shard_00005.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "de546db413f1f708311ba9546d51ae11c729ce6079faf5ba40df747645e57e34",
+      "md5": "2b3304726f7590acaf9954e4869bb452"
+    },
+    {
+      "shard_id": 6,
+      "filename": "train_shard_00006.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "30a71e6f5ab11d41094ef9d82ccec2b3ecd123e3fbe1c642e34915f76b05a29a",
+      "md5": "65181a4076d6f60e6ec506190ad407ad"
+    },
+    {
+      "shard_id": 7,
+      "filename": "train_shard_00007.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "c188cb4b99c07493e24e93600b260489dd6e87d558902b0d308a2f37421538ea",
+      "md5": "2e351e894730f0d14f93bb75943968a6"
+    },
+    {
+      "shard_id": 8,
+      "filename": "train_shard_00008.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "dd74f0e57615d4634138f35b5add36f29953cc5504958b17c7e57b450bc121cb",
+      "md5": "8c4f06a39ada91c02252220692bc0001"
+    },
+    {
+      "shard_id": 9,
+      "filename": "train_shard_00009.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "5a42ee6654bae2d1d689e4eb1832607589e885050b913cec1213ecbe87c173c7",
+      "md5": "e00000d848cd35cd00995c3a7c4e1401"
+    },
+    {
+      "shard_id": 10,
+      "filename": "train_shard_00010.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "c0b39b031c80383c9caba351b05316ef202676891e99c840aabdbedc553681cb",
+      "md5": "3d579961597e8f50affdc8f7ff693a41"
+    },
+    {
+      "shard_id": 11,
+      "filename": "train_shard_00011.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "769743e5a038f44f96050122e593b6c0170e79d1934f00be60976660705073db",
+      "md5": "19e9df6192f03d4c71054dea2278eb64"
+    },
+    {
+      "shard_id": 12,
+      "filename": "train_shard_00012.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "4a81539c607de3561ba972ed85e8a51a9e538dbad16b3d695d34a1192f06d7d6",
+      "md5": "c3cd3868cf9c1fa48b9066cd6b85a45a"
+    },
+    {
+      "shard_id": 13,
+      "filename": "train_shard_00013.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "00b0a0a52cf9946d28ffe4e26b247fa4b72aa7b22ad072b6f0262a5e54ea0e1b",
+      "md5": "3d3f109d935f81bcdb379e8d48db9c71"
+    },
+    {
+      "shard_id": 14,
+      "filename": "train_shard_00014.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "0d7e47b8edb75c3dce177db28a3cf832f7c2c222cda601bd5b90c9b4b6615c71",
+      "md5": "de9e1329c9018cd999657eedaf7cbe47"
+    },
+    {
+      "shard_id": 15,
+      "filename": "train_shard_00015.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "46d8ca2161c9610da58474caafb5796688182f9b3c50bb4ff56c5cc7af8bbf7f",
+      "md5": "f2d974c77d039df84ba3f428c724e748"
+    },
+    {
+      "shard_id": 16,
+      "filename": "train_shard_00016.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "caada89a50acaf2eecab0c1838b5806dc16db4f5f55f153d5e43202d579a20dd",
+      "md5": "449779e7ab369c1af9f5ef9825fbefd0"
+    },
+    {
+      "shard_id": 17,
+      "filename": "train_shard_00017.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "f7f33313e145a4c371093f4b06f5ad08a34a2aedeb920b9f2600017f6e359748",
+      "md5": "81da908d2308a3523cbb1f2fc34688a4"
+    },
+    {
+      "shard_id": 18,
+      "filename": "train_shard_00018.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "dec6cb8a1a034e8f7f654f0bdec3fd93b15cdb4513404eef4007ca42a9022d93",
+      "md5": "ef93a7991390330db8a4acd83c1ecce6"
+    },
+    {
+      "shard_id": 19,
+      "filename": "train_shard_00019.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "8b9e06ef76cb3682b9a83e70fcbe43246519dd2486de8cc76bb5972b710e37fe",
+      "md5": "889ad998ae275472e22613cc89d5dbb7"
+    },
+    {
+      "shard_id": 20,
+      "filename": "train_shard_00020.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "98057cb01827651bd998ddb7062938d06d1156447a2d818e3ab47d74f4b92b59",
+      "md5": "e41dd468215dff9dc533e1a3d62d9de2"
+    },
+    {
+      "shard_id": 21,
+      "filename": "train_shard_00021.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "1d5b941cd3c228924dc6f0b2d7708d555244f9e651e3c9f0c59e81e8180bfadf",
+      "md5": "de458e5b51afc415e2e843c3133bc398"
+    },
+    {
+      "shard_id": 22,
+      "filename": "train_shard_00022.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "ba84c29f8c7076422fc21aa4a04f4ff5da76a392296b4b55768e95e77fdd99a8",
+      "md5": "c466ed1e962c9d09f635de90612d1930"
+    },
+    {
+      "shard_id": 23,
+      "filename": "train_shard_00023.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "9b86a1b28156a4ff6eca751e2b5ea63d90dfd9e5f8b3a8043cc1bc4a08124894",
+      "md5": "be4db6f4ac7963cdae80b07ec4c93807"
+    },
+    {
+      "shard_id": 24,
+      "filename": "train_shard_00024.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "b105097681377abe97df122c111e69a7d3ec56818d0a6e4f3b2104d804c80d9e",
+      "md5": "81a49e69b1d6267f2fdede2e14c07b7b"
+    },
+    {
+      "shard_id": 25,
+      "filename": "train_shard_00025.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "969edeb02074a13effafdc2b05e35e62ec7bda7599f74c254249fbebfe9240e7",
+      "md5": "b2f9dd9541c07428fdd8363e0586356b"
+    },
+    {
+      "shard_id": 26,
+      "filename": "train_shard_00026.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "55f7fac66b28292dcfc563fc44d09d38f9e13d751f090cff7bde746815716543",
+      "md5": "5ab85e96e830fce1ca0874785cafa5a3"
+    },
+    {
+      "shard_id": 27,
+      "filename": "train_shard_00027.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "fdd04fc5810791c3c84aef04be13eb2116a61ab00b0a7f8500c80e8ceadff18f",
+      "md5": "667d1e7538545f83300b8fde9beb9726"
+    },
+    {
+      "shard_id": 28,
+      "filename": "train_shard_00028.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "3751b5f2891b9f710e67e1ec137811295bbf3441782a8c58882d2ee4dd25af55",
+      "md5": "29df319b7704a9bdad1765b6d60a9021"
+    },
+    {
+      "shard_id": 29,
+      "filename": "train_shard_00029.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "13c36f747c71443c0211c1fc29a77a3c4e3c4e7e7452907f065348b8430b04cf",
+      "md5": "dcebef4d809d2233229504d989421503"
+    },
+    {
+      "shard_id": 30,
+      "filename": "train_shard_00030.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "79d45872fc061cb1e9e2668b86aa4e087ddfdbbed9cbab71572575a0f7789909",
+      "md5": "a07ce074b5cac02ccc1f5d811a67ee44"
+    },
+    {
+      "shard_id": 31,
+      "filename": "train_shard_00031.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "7f0a243cda796269bc1ddf7024bf21a703c782e4e2d386228b299b26a8752e31",
+      "md5": "be88aa9367005fbbf1045626302d456e"
+    },
+    {
+      "shard_id": 32,
+      "filename": "train_shard_00032.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "b276b720821890f78750b887789b6e631589e2ad6b914449856df1d979cb99a6",
+      "md5": "7d59471b7b869d9aad60efb57e9717ce"
+    },
+    {
+      "shard_id": 33,
+      "filename": "train_shard_00033.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "750f53678fdfeabf32d2285f0136ce19bb116ac315a8e5e669ab8ee56f1cb80c",
+      "md5": "c1addfb3a535ac50354954e8a69e1bad"
+    },
+    {
+      "shard_id": 34,
+      "filename": "train_shard_00034.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "b2a2f0a5220b610c98109bc3370acae53a6eb77919a3b9bc84ec96628a2da6f1",
+      "md5": "904d245bdc3afdcdb7d804ccf833c3df"
+    },
+    {
+      "shard_id": 35,
+      "filename": "train_shard_00035.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "f33e14e0fe64804df5b60e9d4acfa2e8d43e3780b3da8856a7d72d44c22a366b",
+      "md5": "dfbbc40ca8dc5478398ea840bdf3c137"
+    },
+    {
+      "shard_id": 36,
+      "filename": "train_shard_00036.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "eb237244ea37df974578c0bed2db4761f69f051ee048f556da3748e874193605",
+      "md5": "bfcaac1e84d8696d11a0cdadc365f5aa"
+    },
+    {
+      "shard_id": 37,
+      "filename": "train_shard_00037.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "734c413b4139d953319a080159ace032e33db3747afc7a8f5fd9e135b798c390",
+      "md5": "cbbeb9140e769e24f481aabc4b0dd209"
+    },
+    {
+      "shard_id": 38,
+      "filename": "train_shard_00038.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "c01209ca7926b8af16c73e92ee196e9efe921adc2353f1d2fe6dd6ebe000fbd6",
+      "md5": "f66793425320a1eb722ee4da78dd6b42"
+    },
+    {
+      "shard_id": 39,
+      "filename": "train_shard_00039.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "91057d55cc684083041fc2f6f0ea3dc70c79dd3718b2d956e891fb3ef53c3071",
+      "md5": "637c8f5aed21c563ea554caa8ab1fbaa"
+    },
+    {
+      "shard_id": 40,
+      "filename": "train_shard_00040.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "d834324a8fda90d9f04f7230d69d360a7d0679b842055da55d61748b3859187d",
+      "md5": "44de98b0077768b3f49dbdb2d9dd179b"
+    },
+    {
+      "shard_id": 41,
+      "filename": "train_shard_00041.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "af3beb73e6887353c9f46c56e72c60d60db64b05f00811493cfd4c209fadba9c",
+      "md5": "70aae6a564deac97d0b508c4896441dd"
+    },
+    {
+      "shard_id": 42,
+      "filename": "train_shard_00042.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "0220b9592e1ae07507a84bfffdcb65ce4ad367d160022b58046c9fbbf0ab038a",
+      "md5": "88257ce6f750caae9a1f4fcac2d159a4"
+    },
+    {
+      "shard_id": 43,
+      "filename": "train_shard_00043.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "716bd2cf3e0bbb54b7ade3eff3a89d5133e76ad1aae74a0d01c94d9802961cb9",
+      "md5": "3f2b0201e60d95918a2f8d908606eaf4"
+    },
+    {
+      "shard_id": 44,
+      "filename": "train_shard_00044.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "a3f7666696f92775f595f57a6ef55f4cd98677e8e6bd82bbd0885ccaad5886da",
+      "md5": "197eeb3487abd82aea610e070362d3f6"
+    },
+    {
+      "shard_id": 45,
+      "filename": "train_shard_00045.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "88b8baf9cc680865a7ae0a83e40010f32a5d85449aca71ffdc398b94a70ce7ee",
+      "md5": "955823af6f7bb1802660b87bfc2e01b4"
+    },
+    {
+      "shard_id": 46,
+      "filename": "train_shard_00046.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "8241d0c0bbac5bb39d7b63f9aa44aee657eb748b8dc393044ac0ccb5e4b11507",
+      "md5": "1dac732c8f01c0fedbc7a64ffd839aef"
+    },
+    {
+      "shard_id": 47,
+      "filename": "train_shard_00047.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "2b6f612da19d4846a17f036bd4d24d3fd4fb1c54437085efe592395f457e7757",
+      "md5": "9757fad4b2e0272ea2735e89eb367f23"
+    },
+    {
+      "shard_id": 48,
+      "filename": "train_shard_00048.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "a4c0b8a68f2a6d8ede6fdb72270e6446223163ae23674d7e1c88617571899440",
+      "md5": "639af7989ac3b2fa5428e418ff705090"
+    },
+    {
+      "shard_id": 49,
+      "filename": "train_shard_00049.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "0d64f77992802034d04e6128bf2370af86a845b4aa96e76455bdd638dbfb746a",
+      "md5": "307e5af7986f4714df550f6fb973697e"
+    },
+    {
+      "shard_id": 50,
+      "filename": "train_shard_00050.bin",
+      "num_sequences": 13,
+      "num_tokens": 6656,
+      "file_size_bytes": 13312,
+      "sha256": "cc44c3bd831389fcd54ffcede00d4278f13f2d460e54877f48b3f00ca876bdb1",
+      "md5": "0d19cf63c029f3f66ae03f84791f6fbc"
+    }
+  ],
+  "manifest_hash": "259d4876a4bd70eb89dd9666c05725fb89db27627c7c966d45b4af6076e8c04b"
+}

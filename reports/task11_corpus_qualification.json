@@ -1,0 +1,121 @@
+{
+  "total_raw_examples": 7679448,
+  "total_cleaned_examples": 1000,
+  "total_unique_examples": 1000,
+  "total_duplicate_examples": 0,
+  "duplicate_removal_pct": 0.0,
+  "total_discarded_examples": 7678448,
+  "exact_raw_tokens": 1163040,
+  "exact_packed_tokens": 1163776,
+  "exact_train_tokens": 1113088,
+  "exact_validation_tokens": 50688,
+  "train_val_collision_count": 0,
+  "leakage_detected": false,
+  "source_composition": [
+    {
+      "source_name": "cosmopedia-v2",
+      "examples": 500,
+      "raw_tokens": 448704,
+      "percentage_tokens": 38.58027238959967,
+      "doc_types": {
+        "textbook": 306,
+        "textbook_unconditionned_topic": 48,
+        "story_reddit": 13,
+        "story": 25,
+        "wikihow": 24,
+        "story_children": 13,
+        "story_forums": 8,
+        "dialogue": 14,
+        "story_morality": 10,
+        "textbook_narrative": 16,
+        "scientific_article": 1,
+        "story_life_lessons": 22
+      }
+    },
+    {
+      "source_name": "fineweb-edu-dedup",
+      "examples": 500,
+      "raw_tokens": 714336,
+      "percentage_tokens": 61.41972761040033,
+      "doc_types": {
+        "CC-MAIN-2022-05": 40,
+        "CC-MAIN-2018-43": 60,
+        "CC-MAIN-2017-13": 49,
+        "CC-MAIN-2021-39": 48,
+        "CC-MAIN-2014-10": 53,
+        "CC-MAIN-2013-20": 46,
+        "CC-MAIN-2020-05": 34,
+        "CC-MAIN-2024-10": 46,
+        "CC-MAIN-2022-40": 56,
+        "CC-MAIN-2022-27": 61,
+        "CC-MAIN-2023-50": 7
+      }
+    },
+    {
+      "source_name": "python-edu",
+      "examples": 0,
+      "raw_tokens": 0,
+      "percentage_tokens": 0.0,
+      "doc_types": {}
+    }
+  ],
+  "length_distribution": {
+    "mean_length": 1163.04,
+    "median_length": 807.5,
+    "p25": 596.5,
+    "p75": 1172.5,
+    "p90": 1703.7000000000003,
+    "p95": 2356.2,
+    "p99": 6376.2699999999995,
+    "max_length": 61622,
+    "frac_under_128": 0.007,
+    "frac_128_to_255": 0.04,
+    "frac_256_to_511": 0.13,
+    "frac_512_and_above": 0.823
+  },
+  "packing_efficiency": {
+    "total_docs": 1000,
+    "unpacked_sequences": 1000,
+    "unpacked_useful_tokens": 483624,
+    "unpacked_padding_tokens": 28376,
+    "unpacked_utilization_pct": 94.4578125,
+    "unpacked_waste_pct": 5.5421875,
+    "packed_sequences": 2273,
+    "packed_tokens": 1163776,
+    "packed_discarded_tokens": 264,
+    "packed_utilization_pct": 99.9773203669977
+  },
+  "qualitative_samples": [
+    {
+      "subset": "cosmopedia-v2",
+      "token_length": 545,
+      "char_length": 2466,
+      "snippet": "Welcome to the world of Customer Relationship Management, also known as CRM! You might be wondering, \"what does that even mean?\" Well, imagine having a magic tool that helps businesses keep track of all their customers and makes sure they have happy relationships with them. That's exactly what CRM s..."
+    },
+    {
+      "subset": "cosmopedia-v2",
+      "token_length": 757,
+      "char_length": 3222,
+      "snippet": "Course Unit: Understanding Refugees and Displacement\n\nImagine having to leave your home, your neighborhood, and everything you know because it's no longer safe. You would probably feel scared, sad, and unsure about what the future holds. This is exactly what happens to refugees - people who had to f..."
+    },
+    {
+      "subset": "fineweb-edu-dedup",
+      "token_length": 886,
+      "char_length": 2805,
+      "snippet": "|Cultivar group||Chinensis Group, Pekinensis Group|\n|Origin||China, before the 15th century|\n|Cultivar group members||Many; see text|\nChinese cabbage (Brassica rapa, subspecies pekinensis and chinensis) can refer to two cultivar groups of leaf vegetables often used in Chinese cuisine: the Pekinensis..."
+    },
+    {
+      "subset": "fineweb-edu-dedup",
+      "token_length": 5035,
+      "char_length": 17375,
+      "snippet": "November 10, 2017\nAAPD/AAP report discusses oral and dental aspects of child abuse and neglect\nPediatric dentists and oral and maxillofacial surgeons, whose advanced education programs include a mandated child abuse curriculum, can provide valuable information and assistance to other health care pro..."
+    }
+  ],
+  "evaluation_metadata": {
+    "execution_time_sec": 3150.4804072380066,
+    "sample_quota_per_subset": 500,
+    "seed": 42,
+    "manifest_500m_path": "data/manifest_500m.json",
+    "manifest_1b_path": "data/manifest_1b.json"
+  }
+}

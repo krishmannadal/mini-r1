@@ -1,0 +1,51 @@
+{
+  "dataset_name": "Mini-R1-Verified-Arithmetic-SFT",
+  "task": "Task 18A: Verified Computational Training Corpus",
+  "seed": 42,
+  "total_train_examples": 12000,
+  "total_dev_examples": 1200,
+  "curriculum_levels": {
+    "Level 1": "Single Operations (+, -, *, /)",
+    "Level 2": "Two-Operation Compositions",
+    "Level 3": "Three-Operation Compositions",
+    "Level 4": "Four-Operation Compositions",
+    "Level 5": "Sequential State Transitions",
+    "Level 6": "Word-Wrapped Natural Language Problems"
+  },
+  "operand_ranges": {
+    "train_dev_in_distribution": {
+      "addition_subtraction": [
+        2,
+        99
+      ],
+      "multiplication_factors": [
+        2,
+        25
+      ],
+      "division_divisors": [
+        2,
+        12
+      ]
+    },
+    "holdout_evaluation_out_of_distribution": {
+      "addition_subtraction": [
+        101,
+        250
+      ],
+      "multiplication_factors": [
+        26,
+        60
+      ],
+      "division_divisors": [
+        13,
+        30
+      ]
+    }
+  },
+  "files": {
+    "compact_train": "data/arithmetic_sft/compact_train.jsonl",
+    "compact_dev": "data/arithmetic_sft/compact_dev.jsonl",
+    "verbose_train": "data/arithmetic_sft/verbose_train.jsonl",
+    "verbose_dev": "data/arithmetic_sft/verbose_dev.jsonl"
+  }
+}

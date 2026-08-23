@@ -1,0 +1,57 @@
+{
+  "dataset_name": "gsm8k_compact_reasoning",
+  "description": "Compact machine-verified computational reasoning dataset for GSM8K",
+  "source_dataset": "openai/gsm8k (via data/reasoning/)",
+  "tokenizer_sha256": "c1143f6e3b1e45811301e4a11392acbe367083712056d19c41ad2fe7f29f7044",
+  "splits": {
+    "train": {
+      "split": "train",
+      "input_count": 6973,
+      "valid_count": 6531,
+      "invalid_count": 442,
+      "valid_percentage": 93.6612648788183,
+      "invalid_reasons": {
+        "final_step_mismatches_gold_answer": 350,
+        "no_calculator_tags": 92
+      },
+      "token_metrics": {
+        "mean_prompt_tokens": 68.55152350329199,
+        "mean_reasoning_tokens": 37.1059562088501,
+        "mean_answer_tokens": 5.317256162915327,
+        "mean_completion_tokens": 47.42321237176542,
+        "total_completion_tokens": 309721,
+        "p50_completion_tokens": 44.0,
+        "p90_completion_tokens": 72.0
+      },
+      "file_sha256": "1f687b8970972dbf1a83d9467f8dc2310b46b789c8293b986b5237f8ecbd3ea0"
+    },
+    "dev": {
+      "split": "dev",
+      "input_count": 500,
+      "valid_count": 470,
+      "invalid_count": 30,
+      "valid_percentage": 94.0,
+      "invalid_reasons": {
+        "no_calculator_tags": 3,
+        "final_step_mismatches_gold_answer": 27
+      },
+      "token_metrics": {
+        "mean_prompt_tokens": 66.41702127659575,
+        "mean_reasoning_tokens": 35.52978723404255,
+        "mean_answer_tokens": 5.280851063829787,
+        "mean_completion_tokens": 45.81063829787234,
+        "total_completion_tokens": 21531,
+        "p50_completion_tokens": 43.0,
+        "p90_completion_tokens": 67.10000000000002
+      },
+      "file_sha256": "e187dd596ad049b47b145c1e83bbd3f9518447ba06e5d21498c3b4071124267c"
+    }
+  },
+  "token_comparison": {
+    "verbose_train_completion_tokens": 2106652,
+    "compact_train_completion_tokens": 309721,
+    "compact_to_verbose_completion_ratio": 0.14702048558565914,
+    "completion_token_reduction_percent": 85.29795144143408
+  },
+  "validation_status": "100%_DETERMINISTICALLY_VERIFIED"
+}

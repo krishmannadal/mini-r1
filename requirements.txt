@@ -1,0 +1,12 @@
+# Mini-R1 Task 1: Environment Foundation
+# NOTE: PyTorch must be installed with CUDA support.
+# The pip-installable 'torch' defaults to CPU on some platforms.
+# Use the official PyTorch install command for your CUDA version:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+# See: https://pytorch.org/get-started/locally/
+
+torch
+pyyaml
+pytest
+sentencepiece
+datasets

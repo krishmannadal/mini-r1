@@ -1,0 +1,5002 @@
+[
+  {
+    "example_id": "e3_iid3d_0001",
+    "prompt": "Question: Calculate: 149 - 147\n",
+    "expression": "149 - 147",
+    "lhs": 149,
+    "rhs": 147,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0002",
+    "prompt": "Question: Calculate: 168 - 108\n",
+    "expression": "168 - 108",
+    "lhs": 168,
+    "rhs": 108,
+    "final_answer": "60",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0003",
+    "prompt": "Question: Calculate: 148 - 115\n",
+    "expression": "148 - 115",
+    "lhs": 148,
+    "rhs": 115,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0004",
+    "prompt": "Question: Calculate: 145 - 120\n",
+    "expression": "145 - 120",
+    "lhs": 145,
+    "rhs": 120,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0005",
+    "prompt": "Question: Calculate: 192 - 172\n",
+    "expression": "192 - 172",
+    "lhs": 192,
+    "rhs": 172,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0006",
+    "prompt": "Question: Calculate: 140 - 108\n",
+    "expression": "140 - 108",
+    "lhs": 140,
+    "rhs": 108,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0007",
+    "prompt": "Question: Calculate: 163 - 131\n",
+    "expression": "163 - 131",
+    "lhs": 163,
+    "rhs": 131,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0008",
+    "prompt": "Question: Calculate: 171 - 114\n",
+    "expression": "171 - 114",
+    "lhs": 171,
+    "rhs": 114,
+    "final_answer": "57",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0009",
+    "prompt": "Question: Calculate: 147 - 102\n",
+    "expression": "147 - 102",
+    "lhs": 147,
+    "rhs": 102,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0010",
+    "prompt": "Question: Calculate: 175 - 165\n",
+    "expression": "175 - 165",
+    "lhs": 175,
+    "rhs": 165,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0011",
+    "prompt": "Question: Calculate: 181 - 152\n",
+    "expression": "181 - 152",
+    "lhs": 181,
+    "rhs": 152,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0012",
+    "prompt": "Question: Calculate: 173 - 107\n",
+    "expression": "173 - 107",
+    "lhs": 173,
+    "rhs": 107,
+    "final_answer": "66",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0013",
+    "prompt": "Question: Calculate: 190 - 158\n",
+    "expression": "190 - 158",
+    "lhs": 190,
+    "rhs": 158,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0014",
+    "prompt": "Question: Calculate: 177 - 127\n",
+    "expression": "177 - 127",
+    "lhs": 177,
+    "rhs": 127,
+    "final_answer": "50",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0015",
+    "prompt": "Question: Calculate: 184 - 168\n",
+    "expression": "184 - 168",
+    "lhs": 184,
+    "rhs": 168,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0016",
+    "prompt": "Question: Calculate: 180 - 103\n",
+    "expression": "180 - 103",
+    "lhs": 180,
+    "rhs": 103,
+    "final_answer": "77",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0017",
+    "prompt": "Question: Calculate: 174 - 168\n",
+    "expression": "174 - 168",
+    "lhs": 174,
+    "rhs": 168,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0018",
+    "prompt": "Question: Calculate: 199 - 129\n",
+    "expression": "199 - 129",
+    "lhs": 199,
+    "rhs": 129,
+    "final_answer": "70",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0019",
+    "prompt": "Question: Calculate: 197 - 155\n",
+    "expression": "197 - 155",
+    "lhs": 197,
+    "rhs": 155,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0020",
+    "prompt": "Question: Calculate: 194 - 157\n",
+    "expression": "194 - 157",
+    "lhs": 194,
+    "rhs": 157,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0021",
+    "prompt": "Question: Calculate: 166 - 139\n",
+    "expression": "166 - 139",
+    "lhs": 166,
+    "rhs": 139,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0022",
+    "prompt": "Question: Calculate: 186 - 182\n",
+    "expression": "186 - 182",
+    "lhs": 186,
+    "rhs": 182,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0023",
+    "prompt": "Question: Calculate: 161 - 153\n",
+    "expression": "161 - 153",
+    "lhs": 161,
+    "rhs": 153,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0024",
+    "prompt": "Question: Calculate: 138 - 107\n",
+    "expression": "138 - 107",
+    "lhs": 138,
+    "rhs": 107,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0025",
+    "prompt": "Question: Calculate: 189 - 103\n",
+    "expression": "189 - 103",
+    "lhs": 189,
+    "rhs": 103,
+    "final_answer": "86",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0026",
+    "prompt": "Question: Calculate: 151 - 111\n",
+    "expression": "151 - 111",
+    "lhs": 151,
+    "rhs": 111,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0027",
+    "prompt": "Question: Calculate: 156 - 104\n",
+    "expression": "156 - 104",
+    "lhs": 156,
+    "rhs": 104,
+    "final_answer": "52",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0028",
+    "prompt": "Question: Calculate: 166 - 108\n",
+    "expression": "166 - 108",
+    "lhs": 166,
+    "rhs": 108,
+    "final_answer": "58",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0029",
+    "prompt": "Question: Calculate: 195 - 142\n",
+    "expression": "195 - 142",
+    "lhs": 195,
+    "rhs": 142,
+    "final_answer": "53",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0030",
+    "prompt": "Question: Calculate: 174 - 112\n",
+    "expression": "174 - 112",
+    "lhs": 174,
+    "rhs": 112,
+    "final_answer": "62",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0031",
+    "prompt": "Question: Calculate: 196 - 130\n",
+    "expression": "196 - 130",
+    "lhs": 196,
+    "rhs": 130,
+    "final_answer": "66",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0032",
+    "prompt": "Question: Calculate: 168 - 120\n",
+    "expression": "168 - 120",
+    "lhs": 168,
+    "rhs": 120,
+    "final_answer": "48",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0033",
+    "prompt": "Question: Calculate: 194 - 128\n",
+    "expression": "194 - 128",
+    "lhs": 194,
+    "rhs": 128,
+    "final_answer": "66",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0034",
+    "prompt": "Question: Calculate: 165 - 145\n",
+    "expression": "165 - 145",
+    "lhs": 165,
+    "rhs": 145,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0035",
+    "prompt": "Question: Calculate: 134 - 105\n",
+    "expression": "134 - 105",
+    "lhs": 134,
+    "rhs": 105,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0036",
+    "prompt": "Question: Calculate: 191 - 161\n",
+    "expression": "191 - 161",
+    "lhs": 191,
+    "rhs": 161,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0037",
+    "prompt": "Question: Calculate: 193 - 148\n",
+    "expression": "193 - 148",
+    "lhs": 193,
+    "rhs": 148,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0038",
+    "prompt": "Question: Calculate: 177 - 154\n",
+    "expression": "177 - 154",
+    "lhs": 177,
+    "rhs": 154,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0039",
+    "prompt": "Question: Calculate: 195 - 138\n",
+    "expression": "195 - 138",
+    "lhs": 195,
+    "rhs": 138,
+    "final_answer": "57",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0040",
+    "prompt": "Question: Calculate: 183 - 172\n",
+    "expression": "183 - 172",
+    "lhs": 183,
+    "rhs": 172,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0041",
+    "prompt": "Question: Calculate: 185 - 106\n",
+    "expression": "185 - 106",
+    "lhs": 185,
+    "rhs": 106,
+    "final_answer": "79",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0042",
+    "prompt": "Question: Calculate: 195 - 102\n",
+    "expression": "195 - 102",
+    "lhs": 195,
+    "rhs": 102,
+    "final_answer": "93",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0043",
+    "prompt": "Question: Calculate: 187 - 130\n",
+    "expression": "187 - 130",
+    "lhs": 187,
+    "rhs": 130,
+    "final_answer": "57",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0044",
+    "prompt": "Question: Calculate: 171 - 120\n",
+    "expression": "171 - 120",
+    "lhs": 171,
+    "rhs": 120,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0045",
+    "prompt": "Question: Calculate: 180 - 115\n",
+    "expression": "180 - 115",
+    "lhs": 180,
+    "rhs": 115,
+    "final_answer": "65",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0046",
+    "prompt": "Question: Calculate: 164 - 140\n",
+    "expression": "164 - 140",
+    "lhs": 164,
+    "rhs": 140,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0047",
+    "prompt": "Question: Calculate: 158 - 128\n",
+    "expression": "158 - 128",
+    "lhs": 158,
+    "rhs": 128,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0048",
+    "prompt": "Question: Calculate: 141 - 116\n",
+    "expression": "141 - 116",
+    "lhs": 141,
+    "rhs": 116,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0049",
+    "prompt": "Question: Calculate: 175 - 154\n",
+    "expression": "175 - 154",
+    "lhs": 175,
+    "rhs": 154,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0050",
+    "prompt": "Question: Calculate: 158 - 139\n",
+    "expression": "158 - 139",
+    "lhs": 158,
+    "rhs": 139,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0051",
+    "prompt": "Question: Calculate: 135 - 126\n",
+    "expression": "135 - 126",
+    "lhs": 135,
+    "rhs": 126,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0052",
+    "prompt": "Question: Calculate: 159 - 105\n",
+    "expression": "159 - 105",
+    "lhs": 159,
+    "rhs": 105,
+    "final_answer": "54",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0053",
+    "prompt": "Question: Calculate: 151 - 110\n",
+    "expression": "151 - 110",
+    "lhs": 151,
+    "rhs": 110,
+    "final_answer": "41",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0054",
+    "prompt": "Question: Calculate: 197 - 143\n",
+    "expression": "197 - 143",
+    "lhs": 197,
+    "rhs": 143,
+    "final_answer": "54",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0055",
+    "prompt": "Question: Calculate: 112 - 112\n",
+    "expression": "112 - 112",
+    "lhs": 112,
+    "rhs": 112,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0056",
+    "prompt": "Question: Calculate: 140 - 102\n",
+    "expression": "140 - 102",
+    "lhs": 140,
+    "rhs": 102,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0057",
+    "prompt": "Question: Calculate: 130 - 116\n",
+    "expression": "130 - 116",
+    "lhs": 130,
+    "rhs": 116,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0058",
+    "prompt": "Question: Calculate: 176 - 120\n",
+    "expression": "176 - 120",
+    "lhs": 176,
+    "rhs": 120,
+    "final_answer": "56",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0059",
+    "prompt": "Question: Calculate: 188 - 156\n",
+    "expression": "188 - 156",
+    "lhs": 188,
+    "rhs": 156,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0060",
+    "prompt": "Question: Calculate: 168 - 168\n",
+    "expression": "168 - 168",
+    "lhs": 168,
+    "rhs": 168,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0061",
+    "prompt": "Question: Calculate: 199 - 104\n",
+    "expression": "199 - 104",
+    "lhs": 199,
+    "rhs": 104,
+    "final_answer": "95",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0062",
+    "prompt": "Question: Calculate: 145 - 103\n",
+    "expression": "145 - 103",
+    "lhs": 145,
+    "rhs": 103,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0063",
+    "prompt": "Question: Calculate: 175 - 114\n",
+    "expression": "175 - 114",
+    "lhs": 175,
+    "rhs": 114,
+    "final_answer": "61",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0064",
+    "prompt": "Question: Calculate: 192 - 171\n",
+    "expression": "192 - 171",
+    "lhs": 192,
+    "rhs": 171,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0065",
+    "prompt": "Question: Calculate: 135 - 111\n",
+    "expression": "135 - 111",
+    "lhs": 135,
+    "rhs": 111,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0066",
+    "prompt": "Question: Calculate: 156 - 118\n",
+    "expression": "156 - 118",
+    "lhs": 156,
+    "rhs": 118,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0067",
+    "prompt": "Question: Calculate: 183 - 143\n",
+    "expression": "183 - 143",
+    "lhs": 183,
+    "rhs": 143,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0068",
+    "prompt": "Question: Calculate: 180 - 113\n",
+    "expression": "180 - 113",
+    "lhs": 180,
+    "rhs": 113,
+    "final_answer": "67",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0069",
+    "prompt": "Question: Calculate: 171 - 154\n",
+    "expression": "171 - 154",
+    "lhs": 171,
+    "rhs": 154,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0070",
+    "prompt": "Question: Calculate: 177 - 128\n",
+    "expression": "177 - 128",
+    "lhs": 177,
+    "rhs": 128,
+    "final_answer": "49",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0071",
+    "prompt": "Question: Calculate: 172 - 121\n",
+    "expression": "172 - 121",
+    "lhs": 172,
+    "rhs": 121,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0072",
+    "prompt": "Question: Calculate: 199 - 191\n",
+    "expression": "199 - 191",
+    "lhs": 199,
+    "rhs": 191,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0073",
+    "prompt": "Question: Calculate: 137 - 133\n",
+    "expression": "137 - 133",
+    "lhs": 137,
+    "rhs": 133,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0074",
+    "prompt": "Question: Calculate: 163 - 115\n",
+    "expression": "163 - 115",
+    "lhs": 163,
+    "rhs": 115,
+    "final_answer": "48",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0075",
+    "prompt": "Question: Calculate: 169 - 145\n",
+    "expression": "169 - 145",
+    "lhs": 169,
+    "rhs": 145,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0076",
+    "prompt": "Question: Calculate: 121 - 101\n",
+    "expression": "121 - 101",
+    "lhs": 121,
+    "rhs": 101,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0077",
+    "prompt": "Question: Calculate: 194 - 145\n",
+    "expression": "194 - 145",
+    "lhs": 194,
+    "rhs": 145,
+    "final_answer": "49",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0078",
+    "prompt": "Question: Calculate: 197 - 152\n",
+    "expression": "197 - 152",
+    "lhs": 197,
+    "rhs": 152,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0079",
+    "prompt": "Question: Calculate: 169 - 120\n",
+    "expression": "169 - 120",
+    "lhs": 169,
+    "rhs": 120,
+    "final_answer": "49",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0080",
+    "prompt": "Question: Calculate: 169 - 124\n",
+    "expression": "169 - 124",
+    "lhs": 169,
+    "rhs": 124,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0081",
+    "prompt": "Question: Calculate: 180 - 120\n",
+    "expression": "180 - 120",
+    "lhs": 180,
+    "rhs": 120,
+    "final_answer": "60",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0082",
+    "prompt": "Question: Calculate: 189 - 166\n",
+    "expression": "189 - 166",
+    "lhs": 189,
+    "rhs": 166,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0083",
+    "prompt": "Question: Calculate: 180 - 147\n",
+    "expression": "180 - 147",
+    "lhs": 180,
+    "rhs": 147,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0084",
+    "prompt": "Question: Calculate: 173 - 158\n",
+    "expression": "173 - 158",
+    "lhs": 173,
+    "rhs": 158,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0085",
+    "prompt": "Question: Calculate: 189 - 146\n",
+    "expression": "189 - 146",
+    "lhs": 189,
+    "rhs": 146,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0086",
+    "prompt": "Question: Calculate: 147 - 107\n",
+    "expression": "147 - 107",
+    "lhs": 147,
+    "rhs": 107,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0087",
+    "prompt": "Question: Calculate: 162 - 153\n",
+    "expression": "162 - 153",
+    "lhs": 162,
+    "rhs": 153,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0088",
+    "prompt": "Question: Calculate: 170 - 130\n",
+    "expression": "170 - 130",
+    "lhs": 170,
+    "rhs": 130,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0089",
+    "prompt": "Question: Calculate: 115 - 105\n",
+    "expression": "115 - 105",
+    "lhs": 115,
+    "rhs": 105,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0090",
+    "prompt": "Question: Calculate: 172 - 122\n",
+    "expression": "172 - 122",
+    "lhs": 172,
+    "rhs": 122,
+    "final_answer": "50",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0091",
+    "prompt": "Question: Calculate: 175 - 144\n",
+    "expression": "175 - 144",
+    "lhs": 175,
+    "rhs": 144,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0092",
+    "prompt": "Question: Calculate: 185 - 103\n",
+    "expression": "185 - 103",
+    "lhs": 185,
+    "rhs": 103,
+    "final_answer": "82",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0093",
+    "prompt": "Question: Calculate: 197 - 197\n",
+    "expression": "197 - 197",
+    "lhs": 197,
+    "rhs": 197,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0094",
+    "prompt": "Question: Calculate: 186 - 127\n",
+    "expression": "186 - 127",
+    "lhs": 186,
+    "rhs": 127,
+    "final_answer": "59",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0095",
+    "prompt": "Question: Calculate: 181 - 124\n",
+    "expression": "181 - 124",
+    "lhs": 181,
+    "rhs": 124,
+    "final_answer": "57",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0096",
+    "prompt": "Question: Calculate: 171 - 136\n",
+    "expression": "171 - 136",
+    "lhs": 171,
+    "rhs": 136,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0097",
+    "prompt": "Question: Calculate: 192 - 128\n",
+    "expression": "192 - 128",
+    "lhs": 192,
+    "rhs": 128,
+    "final_answer": "64",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0098",
+    "prompt": "Question: Calculate: 142 - 137\n",
+    "expression": "142 - 137",
+    "lhs": 142,
+    "rhs": 137,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0099",
+    "prompt": "Question: Calculate: 174 - 113\n",
+    "expression": "174 - 113",
+    "lhs": 174,
+    "rhs": 113,
+    "final_answer": "61",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0100",
+    "prompt": "Question: Calculate: 178 - 115\n",
+    "expression": "178 - 115",
+    "lhs": 178,
+    "rhs": 115,
+    "final_answer": "63",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0101",
+    "prompt": "Question: Calculate: 117 - 101\n",
+    "expression": "117 - 101",
+    "lhs": 117,
+    "rhs": 101,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0102",
+    "prompt": "Question: Calculate: 188 - 163\n",
+    "expression": "188 - 163",
+    "lhs": 188,
+    "rhs": 163,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0103",
+    "prompt": "Question: Calculate: 170 - 141\n",
+    "expression": "170 - 141",
+    "lhs": 170,
+    "rhs": 141,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0104",
+    "prompt": "Question: Calculate: 190 - 108\n",
+    "expression": "190 - 108",
+    "lhs": 190,
+    "rhs": 108,
+    "final_answer": "82",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0105",
+    "prompt": "Question: Calculate: 174 - 155\n",
+    "expression": "174 - 155",
+    "lhs": 174,
+    "rhs": 155,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0106",
+    "prompt": "Question: Calculate: 170 - 137\n",
+    "expression": "170 - 137",
+    "lhs": 170,
+    "rhs": 137,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0107",
+    "prompt": "Question: Calculate: 180 - 160\n",
+    "expression": "180 - 160",
+    "lhs": 180,
+    "rhs": 160,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0108",
+    "prompt": "Question: Calculate: 152 - 106\n",
+    "expression": "152 - 106",
+    "lhs": 152,
+    "rhs": 106,
+    "final_answer": "46",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0109",
+    "prompt": "Question: Calculate: 172 - 154\n",
+    "expression": "172 - 154",
+    "lhs": 172,
+    "rhs": 154,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0110",
+    "prompt": "Question: Calculate: 193 - 167\n",
+    "expression": "193 - 167",
+    "lhs": 193,
+    "rhs": 167,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0111",
+    "prompt": "Question: Calculate: 199 - 175\n",
+    "expression": "199 - 175",
+    "lhs": 199,
+    "rhs": 175,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0112",
+    "prompt": "Question: Calculate: 149 - 145\n",
+    "expression": "149 - 145",
+    "lhs": 149,
+    "rhs": 145,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0113",
+    "prompt": "Question: Calculate: 187 - 103\n",
+    "expression": "187 - 103",
+    "lhs": 187,
+    "rhs": 103,
+    "final_answer": "84",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0114",
+    "prompt": "Question: Calculate: 188 - 153\n",
+    "expression": "188 - 153",
+    "lhs": 188,
+    "rhs": 153,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0115",
+    "prompt": "Question: Calculate: 196 - 185\n",
+    "expression": "196 - 185",
+    "lhs": 196,
+    "rhs": 185,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0116",
+    "prompt": "Question: Calculate: 147 - 142\n",
+    "expression": "147 - 142",
+    "lhs": 147,
+    "rhs": 142,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0117",
+    "prompt": "Question: Calculate: 125 - 119\n",
+    "expression": "125 - 119",
+    "lhs": 125,
+    "rhs": 119,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0118",
+    "prompt": "Question: Calculate: 199 - 174\n",
+    "expression": "199 - 174",
+    "lhs": 199,
+    "rhs": 174,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0119",
+    "prompt": "Question: Calculate: 126 - 105\n",
+    "expression": "126 - 105",
+    "lhs": 126,
+    "rhs": 105,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0120",
+    "prompt": "Question: Calculate: 191 - 102\n",
+    "expression": "191 - 102",
+    "lhs": 191,
+    "rhs": 102,
+    "final_answer": "89",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0121",
+    "prompt": "Question: Calculate: 181 - 149\n",
+    "expression": "181 - 149",
+    "lhs": 181,
+    "rhs": 149,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0122",
+    "prompt": "Question: Calculate: 157 - 135\n",
+    "expression": "157 - 135",
+    "lhs": 157,
+    "rhs": 135,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0123",
+    "prompt": "Question: Calculate: 149 - 106\n",
+    "expression": "149 - 106",
+    "lhs": 149,
+    "rhs": 106,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0124",
+    "prompt": "Question: Calculate: 177 - 170\n",
+    "expression": "177 - 170",
+    "lhs": 177,
+    "rhs": 170,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0125",
+    "prompt": "Question: Calculate: 193 - 183\n",
+    "expression": "193 - 183",
+    "lhs": 193,
+    "rhs": 183,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0126",
+    "prompt": "Question: Calculate: 178 - 155\n",
+    "expression": "178 - 155",
+    "lhs": 178,
+    "rhs": 155,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0127",
+    "prompt": "Question: Calculate: 180 - 167\n",
+    "expression": "180 - 167",
+    "lhs": 180,
+    "rhs": 167,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0128",
+    "prompt": "Question: Calculate: 140 - 113\n",
+    "expression": "140 - 113",
+    "lhs": 140,
+    "rhs": 113,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0129",
+    "prompt": "Question: Calculate: 146 - 120\n",
+    "expression": "146 - 120",
+    "lhs": 146,
+    "rhs": 120,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0130",
+    "prompt": "Question: Calculate: 144 - 128\n",
+    "expression": "144 - 128",
+    "lhs": 144,
+    "rhs": 128,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0131",
+    "prompt": "Question: Calculate: 199 - 154\n",
+    "expression": "199 - 154",
+    "lhs": 199,
+    "rhs": 154,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0132",
+    "prompt": "Question: Calculate: 186 - 135\n",
+    "expression": "186 - 135",
+    "lhs": 186,
+    "rhs": 135,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0133",
+    "prompt": "Question: Calculate: 191 - 136\n",
+    "expression": "191 - 136",
+    "lhs": 191,
+    "rhs": 136,
+    "final_answer": "55",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0134",
+    "prompt": "Question: Calculate: 180 - 105\n",
+    "expression": "180 - 105",
+    "lhs": 180,
+    "rhs": 105,
+    "final_answer": "75",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0135",
+    "prompt": "Question: Calculate: 198 - 173\n",
+    "expression": "198 - 173",
+    "lhs": 198,
+    "rhs": 173,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0136",
+    "prompt": "Question: Calculate: 169 - 119\n",
+    "expression": "169 - 119",
+    "lhs": 169,
+    "rhs": 119,
+    "final_answer": "50",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0137",
+    "prompt": "Question: Calculate: 177 - 144\n",
+    "expression": "177 - 144",
+    "lhs": 177,
+    "rhs": 144,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0138",
+    "prompt": "Question: Calculate: 156 - 155\n",
+    "expression": "156 - 155",
+    "lhs": 156,
+    "rhs": 155,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0139",
+    "prompt": "Question: Calculate: 129 - 114\n",
+    "expression": "129 - 114",
+    "lhs": 129,
+    "rhs": 114,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0140",
+    "prompt": "Question: Calculate: 181 - 142\n",
+    "expression": "181 - 142",
+    "lhs": 181,
+    "rhs": 142,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0141",
+    "prompt": "Question: Calculate: 127 - 120\n",
+    "expression": "127 - 120",
+    "lhs": 127,
+    "rhs": 120,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0142",
+    "prompt": "Question: Calculate: 177 - 172\n",
+    "expression": "177 - 172",
+    "lhs": 177,
+    "rhs": 172,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0143",
+    "prompt": "Question: Calculate: 181 - 164\n",
+    "expression": "181 - 164",
+    "lhs": 181,
+    "rhs": 164,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0144",
+    "prompt": "Question: Calculate: 177 - 171\n",
+    "expression": "177 - 171",
+    "lhs": 177,
+    "rhs": 171,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0145",
+    "prompt": "Question: Calculate: 199 - 196\n",
+    "expression": "199 - 196",
+    "lhs": 199,
+    "rhs": 196,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0146",
+    "prompt": "Question: Calculate: 147 - 117\n",
+    "expression": "147 - 117",
+    "lhs": 147,
+    "rhs": 117,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0147",
+    "prompt": "Question: Calculate: 184 - 145\n",
+    "expression": "184 - 145",
+    "lhs": 184,
+    "rhs": 145,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0148",
+    "prompt": "Question: Calculate: 142 - 120\n",
+    "expression": "142 - 120",
+    "lhs": 142,
+    "rhs": 120,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0149",
+    "prompt": "Question: Calculate: 112 - 101\n",
+    "expression": "112 - 101",
+    "lhs": 112,
+    "rhs": 101,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0150",
+    "prompt": "Question: Calculate: 168 - 163\n",
+    "expression": "168 - 163",
+    "lhs": 168,
+    "rhs": 163,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0151",
+    "prompt": "Question: Calculate: 188 - 128\n",
+    "expression": "188 - 128",
+    "lhs": 188,
+    "rhs": 128,
+    "final_answer": "60",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0152",
+    "prompt": "Question: Calculate: 190 - 150\n",
+    "expression": "190 - 150",
+    "lhs": 190,
+    "rhs": 150,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0153",
+    "prompt": "Question: Calculate: 168 - 127\n",
+    "expression": "168 - 127",
+    "lhs": 168,
+    "rhs": 127,
+    "final_answer": "41",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0154",
+    "prompt": "Question: Calculate: 196 - 179\n",
+    "expression": "196 - 179",
+    "lhs": 196,
+    "rhs": 179,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0155",
+    "prompt": "Question: Calculate: 128 - 121\n",
+    "expression": "128 - 121",
+    "lhs": 128,
+    "rhs": 121,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0156",
+    "prompt": "Question: Calculate: 195 - 162\n",
+    "expression": "195 - 162",
+    "lhs": 195,
+    "rhs": 162,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0157",
+    "prompt": "Question: Calculate: 197 - 177\n",
+    "expression": "197 - 177",
+    "lhs": 197,
+    "rhs": 177,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0158",
+    "prompt": "Question: Calculate: 163 - 120\n",
+    "expression": "163 - 120",
+    "lhs": 163,
+    "rhs": 120,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0159",
+    "prompt": "Question: Calculate: 187 - 105\n",
+    "expression": "187 - 105",
+    "lhs": 187,
+    "rhs": 105,
+    "final_answer": "82",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0160",
+    "prompt": "Question: Calculate: 191 - 146\n",
+    "expression": "191 - 146",
+    "lhs": 191,
+    "rhs": 146,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0161",
+    "prompt": "Question: Calculate: 180 - 162\n",
+    "expression": "180 - 162",
+    "lhs": 180,
+    "rhs": 162,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0162",
+    "prompt": "Question: Calculate: 138 - 135\n",
+    "expression": "138 - 135",
+    "lhs": 138,
+    "rhs": 135,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0163",
+    "prompt": "Question: Calculate: 119 - 119\n",
+    "expression": "119 - 119",
+    "lhs": 119,
+    "rhs": 119,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0164",
+    "prompt": "Question: Calculate: 197 - 130\n",
+    "expression": "197 - 130",
+    "lhs": 197,
+    "rhs": 130,
+    "final_answer": "67",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0165",
+    "prompt": "Question: Calculate: 171 - 143\n",
+    "expression": "171 - 143",
+    "lhs": 171,
+    "rhs": 143,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0166",
+    "prompt": "Question: Calculate: 190 - 181\n",
+    "expression": "190 - 181",
+    "lhs": 190,
+    "rhs": 181,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0167",
+    "prompt": "Question: Calculate: 187 - 184\n",
+    "expression": "187 - 184",
+    "lhs": 187,
+    "rhs": 184,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0168",
+    "prompt": "Question: Calculate: 190 - 177\n",
+    "expression": "190 - 177",
+    "lhs": 190,
+    "rhs": 177,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0169",
+    "prompt": "Question: Calculate: 151 - 131\n",
+    "expression": "151 - 131",
+    "lhs": 151,
+    "rhs": 131,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0170",
+    "prompt": "Question: Calculate: 156 - 116\n",
+    "expression": "156 - 116",
+    "lhs": 156,
+    "rhs": 116,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0171",
+    "prompt": "Question: Calculate: 172 - 106\n",
+    "expression": "172 - 106",
+    "lhs": 172,
+    "rhs": 106,
+    "final_answer": "66",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0172",
+    "prompt": "Question: Calculate: 173 - 155\n",
+    "expression": "173 - 155",
+    "lhs": 173,
+    "rhs": 155,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0173",
+    "prompt": "Question: Calculate: 151 - 134\n",
+    "expression": "151 - 134",
+    "lhs": 151,
+    "rhs": 134,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0174",
+    "prompt": "Question: Calculate: 164 - 118\n",
+    "expression": "164 - 118",
+    "lhs": 164,
+    "rhs": 118,
+    "final_answer": "46",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0175",
+    "prompt": "Question: Calculate: 183 - 123\n",
+    "expression": "183 - 123",
+    "lhs": 183,
+    "rhs": 123,
+    "final_answer": "60",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0176",
+    "prompt": "Question: Calculate: 179 - 166\n",
+    "expression": "179 - 166",
+    "lhs": 179,
+    "rhs": 166,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0177",
+    "prompt": "Question: Calculate: 169 - 132\n",
+    "expression": "169 - 132",
+    "lhs": 169,
+    "rhs": 132,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0178",
+    "prompt": "Question: Calculate: 199 - 133\n",
+    "expression": "199 - 133",
+    "lhs": 199,
+    "rhs": 133,
+    "final_answer": "66",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0179",
+    "prompt": "Question: Calculate: 140 - 114\n",
+    "expression": "140 - 114",
+    "lhs": 140,
+    "rhs": 114,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0180",
+    "prompt": "Question: Calculate: 148 - 127\n",
+    "expression": "148 - 127",
+    "lhs": 148,
+    "rhs": 127,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0181",
+    "prompt": "Question: Calculate: 164 - 115\n",
+    "expression": "164 - 115",
+    "lhs": 164,
+    "rhs": 115,
+    "final_answer": "49",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0182",
+    "prompt": "Question: Calculate: 186 - 129\n",
+    "expression": "186 - 129",
+    "lhs": 186,
+    "rhs": 129,
+    "final_answer": "57",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0183",
+    "prompt": "Question: Calculate: 166 - 147\n",
+    "expression": "166 - 147",
+    "lhs": 166,
+    "rhs": 147,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0184",
+    "prompt": "Question: Calculate: 145 - 114\n",
+    "expression": "145 - 114",
+    "lhs": 145,
+    "rhs": 114,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0185",
+    "prompt": "Question: Calculate: 187 - 181\n",
+    "expression": "187 - 181",
+    "lhs": 187,
+    "rhs": 181,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0186",
+    "prompt": "Question: Calculate: 163 - 128\n",
+    "expression": "163 - 128",
+    "lhs": 163,
+    "rhs": 128,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0187",
+    "prompt": "Question: Calculate: 172 - 159\n",
+    "expression": "172 - 159",
+    "lhs": 172,
+    "rhs": 159,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0188",
+    "prompt": "Question: Calculate: 142 - 109\n",
+    "expression": "142 - 109",
+    "lhs": 142,
+    "rhs": 109,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0189",
+    "prompt": "Question: Calculate: 199 - 152\n",
+    "expression": "199 - 152",
+    "lhs": 199,
+    "rhs": 152,
+    "final_answer": "47",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0190",
+    "prompt": "Question: Calculate: 146 - 137\n",
+    "expression": "146 - 137",
+    "lhs": 146,
+    "rhs": 137,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0191",
+    "prompt": "Question: Calculate: 198 - 147\n",
+    "expression": "198 - 147",
+    "lhs": 198,
+    "rhs": 147,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0192",
+    "prompt": "Question: Calculate: 175 - 155\n",
+    "expression": "175 - 155",
+    "lhs": 175,
+    "rhs": 155,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0193",
+    "prompt": "Question: Calculate: 172 - 160\n",
+    "expression": "172 - 160",
+    "lhs": 172,
+    "rhs": 160,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0194",
+    "prompt": "Question: Calculate: 198 - 142\n",
+    "expression": "198 - 142",
+    "lhs": 198,
+    "rhs": 142,
+    "final_answer": "56",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0195",
+    "prompt": "Question: Calculate: 199 - 115\n",
+    "expression": "199 - 115",
+    "lhs": 199,
+    "rhs": 115,
+    "final_answer": "84",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0196",
+    "prompt": "Question: Calculate: 175 - 112\n",
+    "expression": "175 - 112",
+    "lhs": 175,
+    "rhs": 112,
+    "final_answer": "63",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0197",
+    "prompt": "Question: Calculate: 158 - 119\n",
+    "expression": "158 - 119",
+    "lhs": 158,
+    "rhs": 119,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0198",
+    "prompt": "Question: Calculate: 187 - 164\n",
+    "expression": "187 - 164",
+    "lhs": 187,
+    "rhs": 164,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0199",
+    "prompt": "Question: Calculate: 189 - 151\n",
+    "expression": "189 - 151",
+    "lhs": 189,
+    "rhs": 151,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0200",
+    "prompt": "Question: Calculate: 183 - 102\n",
+    "expression": "183 - 102",
+    "lhs": 183,
+    "rhs": 102,
+    "final_answer": "81",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0201",
+    "prompt": "Question: Calculate: 185 - 132\n",
+    "expression": "185 - 132",
+    "lhs": 185,
+    "rhs": 132,
+    "final_answer": "53",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0202",
+    "prompt": "Question: Calculate: 151 - 120\n",
+    "expression": "151 - 120",
+    "lhs": 151,
+    "rhs": 120,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0203",
+    "prompt": "Question: Calculate: 131 - 126\n",
+    "expression": "131 - 126",
+    "lhs": 131,
+    "rhs": 126,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0204",
+    "prompt": "Question: Calculate: 135 - 103\n",
+    "expression": "135 - 103",
+    "lhs": 135,
+    "rhs": 103,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0205",
+    "prompt": "Question: Calculate: 198 - 148\n",
+    "expression": "198 - 148",
+    "lhs": 198,
+    "rhs": 148,
+    "final_answer": "50",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0206",
+    "prompt": "Question: Calculate: 170 - 122\n",
+    "expression": "170 - 122",
+    "lhs": 170,
+    "rhs": 122,
+    "final_answer": "48",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0207",
+    "prompt": "Question: Calculate: 182 - 106\n",
+    "expression": "182 - 106",
+    "lhs": 182,
+    "rhs": 106,
+    "final_answer": "76",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0208",
+    "prompt": "Question: Calculate: 163 - 154\n",
+    "expression": "163 - 154",
+    "lhs": 163,
+    "rhs": 154,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0209",
+    "prompt": "Question: Calculate: 189 - 141\n",
+    "expression": "189 - 141",
+    "lhs": 189,
+    "rhs": 141,
+    "final_answer": "48",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0210",
+    "prompt": "Question: Calculate: 170 - 160\n",
+    "expression": "170 - 160",
+    "lhs": 170,
+    "rhs": 160,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0211",
+    "prompt": "Question: Calculate: 169 - 127\n",
+    "expression": "169 - 127",
+    "lhs": 169,
+    "rhs": 127,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0212",
+    "prompt": "Question: Calculate: 190 - 175\n",
+    "expression": "190 - 175",
+    "lhs": 190,
+    "rhs": 175,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0213",
+    "prompt": "Question: Calculate: 122 - 118\n",
+    "expression": "122 - 118",
+    "lhs": 122,
+    "rhs": 118,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0214",
+    "prompt": "Question: Calculate: 194 - 149\n",
+    "expression": "194 - 149",
+    "lhs": 194,
+    "rhs": 149,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0215",
+    "prompt": "Question: Calculate: 159 - 116\n",
+    "expression": "159 - 116",
+    "lhs": 159,
+    "rhs": 116,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0216",
+    "prompt": "Question: Calculate: 166 - 124\n",
+    "expression": "166 - 124",
+    "lhs": 166,
+    "rhs": 124,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0217",
+    "prompt": "Question: Calculate: 197 - 144\n",
+    "expression": "197 - 144",
+    "lhs": 197,
+    "rhs": 144,
+    "final_answer": "53",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0218",
+    "prompt": "Question: Calculate: 136 - 136\n",
+    "expression": "136 - 136",
+    "lhs": 136,
+    "rhs": 136,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0219",
+    "prompt": "Question: Calculate: 122 - 102\n",
+    "expression": "122 - 102",
+    "lhs": 122,
+    "rhs": 102,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0220",
+    "prompt": "Question: Calculate: 126 - 113\n",
+    "expression": "126 - 113",
+    "lhs": 126,
+    "rhs": 113,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0221",
+    "prompt": "Question: Calculate: 174 - 165\n",
+    "expression": "174 - 165",
+    "lhs": 174,
+    "rhs": 165,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0222",
+    "prompt": "Question: Calculate: 153 - 125\n",
+    "expression": "153 - 125",
+    "lhs": 153,
+    "rhs": 125,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0223",
+    "prompt": "Question: Calculate: 195 - 156\n",
+    "expression": "195 - 156",
+    "lhs": 195,
+    "rhs": 156,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0224",
+    "prompt": "Question: Calculate: 153 - 104\n",
+    "expression": "153 - 104",
+    "lhs": 153,
+    "rhs": 104,
+    "final_answer": "49",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0225",
+    "prompt": "Question: Calculate: 191 - 123\n",
+    "expression": "191 - 123",
+    "lhs": 191,
+    "rhs": 123,
+    "final_answer": "68",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0226",
+    "prompt": "Question: Calculate: 195 - 181\n",
+    "expression": "195 - 181",
+    "lhs": 195,
+    "rhs": 181,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0227",
+    "prompt": "Question: Calculate: 196 - 154\n",
+    "expression": "196 - 154",
+    "lhs": 196,
+    "rhs": 154,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0228",
+    "prompt": "Question: Calculate: 145 - 136\n",
+    "expression": "145 - 136",
+    "lhs": 145,
+    "rhs": 136,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0229",
+    "prompt": "Question: Calculate: 167 - 138\n",
+    "expression": "167 - 138",
+    "lhs": 167,
+    "rhs": 138,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0230",
+    "prompt": "Question: Calculate: 157 - 113\n",
+    "expression": "157 - 113",
+    "lhs": 157,
+    "rhs": 113,
+    "final_answer": "44",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0231",
+    "prompt": "Question: Calculate: 164 - 137\n",
+    "expression": "164 - 137",
+    "lhs": 164,
+    "rhs": 137,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0232",
+    "prompt": "Question: Calculate: 193 - 174\n",
+    "expression": "193 - 174",
+    "lhs": 193,
+    "rhs": 174,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0233",
+    "prompt": "Question: Calculate: 168 - 149\n",
+    "expression": "168 - 149",
+    "lhs": 168,
+    "rhs": 149,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0234",
+    "prompt": "Question: Calculate: 175 - 160\n",
+    "expression": "175 - 160",
+    "lhs": 175,
+    "rhs": 160,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0235",
+    "prompt": "Question: Calculate: 161 - 118\n",
+    "expression": "161 - 118",
+    "lhs": 161,
+    "rhs": 118,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0236",
+    "prompt": "Question: Calculate: 173 - 116\n",
+    "expression": "173 - 116",
+    "lhs": 173,
+    "rhs": 116,
+    "final_answer": "57",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0237",
+    "prompt": "Question: Calculate: 152 - 101\n",
+    "expression": "152 - 101",
+    "lhs": 152,
+    "rhs": 101,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0238",
+    "prompt": "Question: Calculate: 152 - 123\n",
+    "expression": "152 - 123",
+    "lhs": 152,
+    "rhs": 123,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0239",
+    "prompt": "Question: Calculate: 171 - 107\n",
+    "expression": "171 - 107",
+    "lhs": 171,
+    "rhs": 107,
+    "final_answer": "64",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0240",
+    "prompt": "Question: Calculate: 150 - 129\n",
+    "expression": "150 - 129",
+    "lhs": 150,
+    "rhs": 129,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0241",
+    "prompt": "Question: Calculate: 145 - 128\n",
+    "expression": "145 - 128",
+    "lhs": 145,
+    "rhs": 128,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0242",
+    "prompt": "Question: Calculate: 130 - 119\n",
+    "expression": "130 - 119",
+    "lhs": 130,
+    "rhs": 119,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0243",
+    "prompt": "Question: Calculate: 195 - 133\n",
+    "expression": "195 - 133",
+    "lhs": 195,
+    "rhs": 133,
+    "final_answer": "62",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0244",
+    "prompt": "Question: Calculate: 184 - 159\n",
+    "expression": "184 - 159",
+    "lhs": 184,
+    "rhs": 159,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0245",
+    "prompt": "Question: Calculate: 146 - 123\n",
+    "expression": "146 - 123",
+    "lhs": 146,
+    "rhs": 123,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0246",
+    "prompt": "Question: Calculate: 155 - 106\n",
+    "expression": "155 - 106",
+    "lhs": 155,
+    "rhs": 106,
+    "final_answer": "49",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0247",
+    "prompt": "Question: Calculate: 146 - 117\n",
+    "expression": "146 - 117",
+    "lhs": 146,
+    "rhs": 117,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0248",
+    "prompt": "Question: Calculate: 175 - 148\n",
+    "expression": "175 - 148",
+    "lhs": 175,
+    "rhs": 148,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0249",
+    "prompt": "Question: Calculate: 192 - 153\n",
+    "expression": "192 - 153",
+    "lhs": 192,
+    "rhs": 153,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0250",
+    "prompt": "Question: Calculate: 187 - 176\n",
+    "expression": "187 - 176",
+    "lhs": 187,
+    "rhs": 176,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0251",
+    "prompt": "Question: Calculate: 186 - 132\n",
+    "expression": "186 - 132",
+    "lhs": 186,
+    "rhs": 132,
+    "final_answer": "54",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0252",
+    "prompt": "Question: Calculate: 196 - 149\n",
+    "expression": "196 - 149",
+    "lhs": 196,
+    "rhs": 149,
+    "final_answer": "47",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0253",
+    "prompt": "Question: Calculate: 172 - 142\n",
+    "expression": "172 - 142",
+    "lhs": 172,
+    "rhs": 142,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0254",
+    "prompt": "Question: Calculate: 145 - 137\n",
+    "expression": "145 - 137",
+    "lhs": 145,
+    "rhs": 137,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0255",
+    "prompt": "Question: Calculate: 135 - 110\n",
+    "expression": "135 - 110",
+    "lhs": 135,
+    "rhs": 110,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0256",
+    "prompt": "Question: Calculate: 182 - 134\n",
+    "expression": "182 - 134",
+    "lhs": 182,
+    "rhs": 134,
+    "final_answer": "48",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0257",
+    "prompt": "Question: Calculate: 195 - 150\n",
+    "expression": "195 - 150",
+    "lhs": 195,
+    "rhs": 150,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0258",
+    "prompt": "Question: Calculate: 189 - 106\n",
+    "expression": "189 - 106",
+    "lhs": 189,
+    "rhs": 106,
+    "final_answer": "83",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0259",
+    "prompt": "Question: Calculate: 199 - 141\n",
+    "expression": "199 - 141",
+    "lhs": 199,
+    "rhs": 141,
+    "final_answer": "58",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0260",
+    "prompt": "Question: Calculate: 171 - 149\n",
+    "expression": "171 - 149",
+    "lhs": 171,
+    "rhs": 149,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0261",
+    "prompt": "Question: Calculate: 198 - 169\n",
+    "expression": "198 - 169",
+    "lhs": 198,
+    "rhs": 169,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0262",
+    "prompt": "Question: Calculate: 138 - 104\n",
+    "expression": "138 - 104",
+    "lhs": 138,
+    "rhs": 104,
+    "final_answer": "34",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0263",
+    "prompt": "Question: Calculate: 146 - 129\n",
+    "expression": "146 - 129",
+    "lhs": 146,
+    "rhs": 129,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0264",
+    "prompt": "Question: Calculate: 188 - 101\n",
+    "expression": "188 - 101",
+    "lhs": 188,
+    "rhs": 101,
+    "final_answer": "87",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0265",
+    "prompt": "Question: Calculate: 178 - 120\n",
+    "expression": "178 - 120",
+    "lhs": 178,
+    "rhs": 120,
+    "final_answer": "58",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0266",
+    "prompt": "Question: Calculate: 177 - 131\n",
+    "expression": "177 - 131",
+    "lhs": 177,
+    "rhs": 131,
+    "final_answer": "46",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0267",
+    "prompt": "Question: Calculate: 197 - 195\n",
+    "expression": "197 - 195",
+    "lhs": 197,
+    "rhs": 195,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0268",
+    "prompt": "Question: Calculate: 196 - 165\n",
+    "expression": "196 - 165",
+    "lhs": 196,
+    "rhs": 165,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0269",
+    "prompt": "Question: Calculate: 162 - 149\n",
+    "expression": "162 - 149",
+    "lhs": 162,
+    "rhs": 149,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0270",
+    "prompt": "Question: Calculate: 148 - 110\n",
+    "expression": "148 - 110",
+    "lhs": 148,
+    "rhs": 110,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0271",
+    "prompt": "Question: Calculate: 157 - 151\n",
+    "expression": "157 - 151",
+    "lhs": 157,
+    "rhs": 151,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0272",
+    "prompt": "Question: Calculate: 145 - 105\n",
+    "expression": "145 - 105",
+    "lhs": 145,
+    "rhs": 105,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0273",
+    "prompt": "Question: Calculate: 161 - 107\n",
+    "expression": "161 - 107",
+    "lhs": 161,
+    "rhs": 107,
+    "final_answer": "54",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0274",
+    "prompt": "Question: Calculate: 191 - 173\n",
+    "expression": "191 - 173",
+    "lhs": 191,
+    "rhs": 173,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0275",
+    "prompt": "Question: Calculate: 177 - 136\n",
+    "expression": "177 - 136",
+    "lhs": 177,
+    "rhs": 136,
+    "final_answer": "41",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0276",
+    "prompt": "Question: Calculate: 153 - 149\n",
+    "expression": "153 - 149",
+    "lhs": 153,
+    "rhs": 149,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0277",
+    "prompt": "Question: Calculate: 151 - 116\n",
+    "expression": "151 - 116",
+    "lhs": 151,
+    "rhs": 116,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0278",
+    "prompt": "Question: Calculate: 170 - 143\n",
+    "expression": "170 - 143",
+    "lhs": 170,
+    "rhs": 143,
+    "final_answer": "27",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0279",
+    "prompt": "Question: Calculate: 169 - 133\n",
+    "expression": "169 - 133",
+    "lhs": 169,
+    "rhs": 133,
+    "final_answer": "36",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0280",
+    "prompt": "Question: Calculate: 133 - 104\n",
+    "expression": "133 - 104",
+    "lhs": 133,
+    "rhs": 104,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0281",
+    "prompt": "Question: Calculate: 175 - 172\n",
+    "expression": "175 - 172",
+    "lhs": 175,
+    "rhs": 172,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0282",
+    "prompt": "Question: Calculate: 172 - 163\n",
+    "expression": "172 - 163",
+    "lhs": 172,
+    "rhs": 163,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0283",
+    "prompt": "Question: Calculate: 138 - 117\n",
+    "expression": "138 - 117",
+    "lhs": 138,
+    "rhs": 117,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0284",
+    "prompt": "Question: Calculate: 185 - 177\n",
+    "expression": "185 - 177",
+    "lhs": 185,
+    "rhs": 177,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0285",
+    "prompt": "Question: Calculate: 153 - 137\n",
+    "expression": "153 - 137",
+    "lhs": 153,
+    "rhs": 137,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0286",
+    "prompt": "Question: Calculate: 186 - 149\n",
+    "expression": "186 - 149",
+    "lhs": 186,
+    "rhs": 149,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0287",
+    "prompt": "Question: Calculate: 135 - 112\n",
+    "expression": "135 - 112",
+    "lhs": 135,
+    "rhs": 112,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0288",
+    "prompt": "Question: Calculate: 199 - 166\n",
+    "expression": "199 - 166",
+    "lhs": 199,
+    "rhs": 166,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0289",
+    "prompt": "Question: Calculate: 145 - 115\n",
+    "expression": "145 - 115",
+    "lhs": 145,
+    "rhs": 115,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0290",
+    "prompt": "Question: Calculate: 157 - 144\n",
+    "expression": "157 - 144",
+    "lhs": 157,
+    "rhs": 144,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0291",
+    "prompt": "Question: Calculate: 190 - 119\n",
+    "expression": "190 - 119",
+    "lhs": 190,
+    "rhs": 119,
+    "final_answer": "71",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0292",
+    "prompt": "Question: Calculate: 168 - 162\n",
+    "expression": "168 - 162",
+    "lhs": 168,
+    "rhs": 162,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0293",
+    "prompt": "Question: Calculate: 159 - 147\n",
+    "expression": "159 - 147",
+    "lhs": 159,
+    "rhs": 147,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0294",
+    "prompt": "Question: Calculate: 186 - 101\n",
+    "expression": "186 - 101",
+    "lhs": 186,
+    "rhs": 101,
+    "final_answer": "85",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0295",
+    "prompt": "Question: Calculate: 165 - 153\n",
+    "expression": "165 - 153",
+    "lhs": 165,
+    "rhs": 153,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0296",
+    "prompt": "Question: Calculate: 165 - 165\n",
+    "expression": "165 - 165",
+    "lhs": 165,
+    "rhs": 165,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0297",
+    "prompt": "Question: Calculate: 144 - 119\n",
+    "expression": "144 - 119",
+    "lhs": 144,
+    "rhs": 119,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0298",
+    "prompt": "Question: Calculate: 180 - 111\n",
+    "expression": "180 - 111",
+    "lhs": 180,
+    "rhs": 111,
+    "final_answer": "69",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0299",
+    "prompt": "Question: Calculate: 192 - 156\n",
+    "expression": "192 - 156",
+    "lhs": 192,
+    "rhs": 156,
+    "final_answer": "36",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0300",
+    "prompt": "Question: Calculate: 190 - 184\n",
+    "expression": "190 - 184",
+    "lhs": 190,
+    "rhs": 184,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0301",
+    "prompt": "Question: Calculate: 155 - 140\n",
+    "expression": "155 - 140",
+    "lhs": 155,
+    "rhs": 140,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0302",
+    "prompt": "Question: Calculate: 121 - 103\n",
+    "expression": "121 - 103",
+    "lhs": 121,
+    "rhs": 103,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0303",
+    "prompt": "Question: Calculate: 143 - 127\n",
+    "expression": "143 - 127",
+    "lhs": 143,
+    "rhs": 127,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0304",
+    "prompt": "Question: Calculate: 164 - 129\n",
+    "expression": "164 - 129",
+    "lhs": 164,
+    "rhs": 129,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0305",
+    "prompt": "Question: Calculate: 168 - 106\n",
+    "expression": "168 - 106",
+    "lhs": 168,
+    "rhs": 106,
+    "final_answer": "62",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0306",
+    "prompt": "Question: Calculate: 172 - 120\n",
+    "expression": "172 - 120",
+    "lhs": 172,
+    "rhs": 120,
+    "final_answer": "52",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0307",
+    "prompt": "Question: Calculate: 181 - 121\n",
+    "expression": "181 - 121",
+    "lhs": 181,
+    "rhs": 121,
+    "final_answer": "60",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0308",
+    "prompt": "Question: Calculate: 178 - 104\n",
+    "expression": "178 - 104",
+    "lhs": 178,
+    "rhs": 104,
+    "final_answer": "74",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0309",
+    "prompt": "Question: Calculate: 194 - 186\n",
+    "expression": "194 - 186",
+    "lhs": 194,
+    "rhs": 186,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0310",
+    "prompt": "Question: Calculate: 135 - 135\n",
+    "expression": "135 - 135",
+    "lhs": 135,
+    "rhs": 135,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0311",
+    "prompt": "Question: Calculate: 193 - 161\n",
+    "expression": "193 - 161",
+    "lhs": 193,
+    "rhs": 161,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0312",
+    "prompt": "Question: Calculate: 178 - 145\n",
+    "expression": "178 - 145",
+    "lhs": 178,
+    "rhs": 145,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0313",
+    "prompt": "Question: Calculate: 178 - 136\n",
+    "expression": "178 - 136",
+    "lhs": 178,
+    "rhs": 136,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0314",
+    "prompt": "Question: Calculate: 186 - 131\n",
+    "expression": "186 - 131",
+    "lhs": 186,
+    "rhs": 131,
+    "final_answer": "55",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0315",
+    "prompt": "Question: Calculate: 150 - 132\n",
+    "expression": "150 - 132",
+    "lhs": 150,
+    "rhs": 132,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0316",
+    "prompt": "Question: Calculate: 123 - 113\n",
+    "expression": "123 - 113",
+    "lhs": 123,
+    "rhs": 113,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0317",
+    "prompt": "Question: Calculate: 179 - 156\n",
+    "expression": "179 - 156",
+    "lhs": 179,
+    "rhs": 156,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0318",
+    "prompt": "Question: Calculate: 177 - 141\n",
+    "expression": "177 - 141",
+    "lhs": 177,
+    "rhs": 141,
+    "final_answer": "36",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0319",
+    "prompt": "Question: Calculate: 177 - 175\n",
+    "expression": "177 - 175",
+    "lhs": 177,
+    "rhs": 175,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0320",
+    "prompt": "Question: Calculate: 162 - 143\n",
+    "expression": "162 - 143",
+    "lhs": 162,
+    "rhs": 143,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0321",
+    "prompt": "Question: Calculate: 133 - 123\n",
+    "expression": "133 - 123",
+    "lhs": 133,
+    "rhs": 123,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0322",
+    "prompt": "Question: Calculate: 145 - 145\n",
+    "expression": "145 - 145",
+    "lhs": 145,
+    "rhs": 145,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0323",
+    "prompt": "Question: Calculate: 124 - 110\n",
+    "expression": "124 - 110",
+    "lhs": 124,
+    "rhs": 110,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0324",
+    "prompt": "Question: Calculate: 185 - 120\n",
+    "expression": "185 - 120",
+    "lhs": 185,
+    "rhs": 120,
+    "final_answer": "65",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0325",
+    "prompt": "Question: Calculate: 148 - 142\n",
+    "expression": "148 - 142",
+    "lhs": 148,
+    "rhs": 142,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0326",
+    "prompt": "Question: Calculate: 198 - 181\n",
+    "expression": "198 - 181",
+    "lhs": 198,
+    "rhs": 181,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0327",
+    "prompt": "Question: Calculate: 151 - 136\n",
+    "expression": "151 - 136",
+    "lhs": 151,
+    "rhs": 136,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0328",
+    "prompt": "Question: Calculate: 192 - 118\n",
+    "expression": "192 - 118",
+    "lhs": 192,
+    "rhs": 118,
+    "final_answer": "74",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0329",
+    "prompt": "Question: Calculate: 177 - 151\n",
+    "expression": "177 - 151",
+    "lhs": 177,
+    "rhs": 151,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0330",
+    "prompt": "Question: Calculate: 182 - 107\n",
+    "expression": "182 - 107",
+    "lhs": 182,
+    "rhs": 107,
+    "final_answer": "75",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0331",
+    "prompt": "Question: Calculate: 135 - 120\n",
+    "expression": "135 - 120",
+    "lhs": 135,
+    "rhs": 120,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0332",
+    "prompt": "Question: Calculate: 131 - 105\n",
+    "expression": "131 - 105",
+    "lhs": 131,
+    "rhs": 105,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0333",
+    "prompt": "Question: Calculate: 167 - 139\n",
+    "expression": "167 - 139",
+    "lhs": 167,
+    "rhs": 139,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0334",
+    "prompt": "Question: Calculate: 184 - 178\n",
+    "expression": "184 - 178",
+    "lhs": 184,
+    "rhs": 178,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0335",
+    "prompt": "Question: Calculate: 176 - 139\n",
+    "expression": "176 - 139",
+    "lhs": 176,
+    "rhs": 139,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0336",
+    "prompt": "Question: Calculate: 197 - 118\n",
+    "expression": "197 - 118",
+    "lhs": 197,
+    "rhs": 118,
+    "final_answer": "79",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0337",
+    "prompt": "Question: Calculate: 186 - 108\n",
+    "expression": "186 - 108",
+    "lhs": 186,
+    "rhs": 108,
+    "final_answer": "78",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0338",
+    "prompt": "Question: Calculate: 176 - 130\n",
+    "expression": "176 - 130",
+    "lhs": 176,
+    "rhs": 130,
+    "final_answer": "46",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0339",
+    "prompt": "Question: Calculate: 185 - 167\n",
+    "expression": "185 - 167",
+    "lhs": 185,
+    "rhs": 167,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0340",
+    "prompt": "Question: Calculate: 152 - 140\n",
+    "expression": "152 - 140",
+    "lhs": 152,
+    "rhs": 140,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0341",
+    "prompt": "Question: Calculate: 184 - 105\n",
+    "expression": "184 - 105",
+    "lhs": 184,
+    "rhs": 105,
+    "final_answer": "79",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0342",
+    "prompt": "Question: Calculate: 185 - 183\n",
+    "expression": "185 - 183",
+    "lhs": 185,
+    "rhs": 183,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0343",
+    "prompt": "Question: Calculate: 171 - 126\n",
+    "expression": "171 - 126",
+    "lhs": 171,
+    "rhs": 126,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0344",
+    "prompt": "Question: Calculate: 170 - 107\n",
+    "expression": "170 - 107",
+    "lhs": 170,
+    "rhs": 107,
+    "final_answer": "63",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0345",
+    "prompt": "Question: Calculate: 173 - 159\n",
+    "expression": "173 - 159",
+    "lhs": 173,
+    "rhs": 159,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0346",
+    "prompt": "Question: Calculate: 136 - 126\n",
+    "expression": "136 - 126",
+    "lhs": 136,
+    "rhs": 126,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0347",
+    "prompt": "Question: Calculate: 195 - 123\n",
+    "expression": "195 - 123",
+    "lhs": 195,
+    "rhs": 123,
+    "final_answer": "72",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0348",
+    "prompt": "Question: Calculate: 173 - 104\n",
+    "expression": "173 - 104",
+    "lhs": 173,
+    "rhs": 104,
+    "final_answer": "69",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0349",
+    "prompt": "Question: Calculate: 169 - 161\n",
+    "expression": "169 - 161",
+    "lhs": 169,
+    "rhs": 161,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0350",
+    "prompt": "Question: Calculate: 154 - 148\n",
+    "expression": "154 - 148",
+    "lhs": 154,
+    "rhs": 148,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0351",
+    "prompt": "Question: Calculate: 197 - 129\n",
+    "expression": "197 - 129",
+    "lhs": 197,
+    "rhs": 129,
+    "final_answer": "68",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0352",
+    "prompt": "Question: Calculate: 136 - 117\n",
+    "expression": "136 - 117",
+    "lhs": 136,
+    "rhs": 117,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0353",
+    "prompt": "Question: Calculate: 183 - 175\n",
+    "expression": "183 - 175",
+    "lhs": 183,
+    "rhs": 175,
+    "final_answer": "8",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0354",
+    "prompt": "Question: Calculate: 137 - 111\n",
+    "expression": "137 - 111",
+    "lhs": 137,
+    "rhs": 111,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0355",
+    "prompt": "Question: Calculate: 166 - 140\n",
+    "expression": "166 - 140",
+    "lhs": 166,
+    "rhs": 140,
+    "final_answer": "26",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0356",
+    "prompt": "Question: Calculate: 192 - 168\n",
+    "expression": "192 - 168",
+    "lhs": 192,
+    "rhs": 168,
+    "final_answer": "24",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0357",
+    "prompt": "Question: Calculate: 199 - 145\n",
+    "expression": "199 - 145",
+    "lhs": 199,
+    "rhs": 145,
+    "final_answer": "54",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0358",
+    "prompt": "Question: Calculate: 190 - 171\n",
+    "expression": "190 - 171",
+    "lhs": 190,
+    "rhs": 171,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0359",
+    "prompt": "Question: Calculate: 190 - 160\n",
+    "expression": "190 - 160",
+    "lhs": 190,
+    "rhs": 160,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0360",
+    "prompt": "Question: Calculate: 155 - 146\n",
+    "expression": "155 - 146",
+    "lhs": 155,
+    "rhs": 146,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0361",
+    "prompt": "Question: Calculate: 175 - 103\n",
+    "expression": "175 - 103",
+    "lhs": 175,
+    "rhs": 103,
+    "final_answer": "72",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0362",
+    "prompt": "Question: Calculate: 180 - 108\n",
+    "expression": "180 - 108",
+    "lhs": 180,
+    "rhs": 108,
+    "final_answer": "72",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0363",
+    "prompt": "Question: Calculate: 196 - 158\n",
+    "expression": "196 - 158",
+    "lhs": 196,
+    "rhs": 158,
+    "final_answer": "38",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0364",
+    "prompt": "Question: Calculate: 181 - 137\n",
+    "expression": "181 - 137",
+    "lhs": 181,
+    "rhs": 137,
+    "final_answer": "44",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0365",
+    "prompt": "Question: Calculate: 185 - 110\n",
+    "expression": "185 - 110",
+    "lhs": 185,
+    "rhs": 110,
+    "final_answer": "75",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0366",
+    "prompt": "Question: Calculate: 178 - 112\n",
+    "expression": "178 - 112",
+    "lhs": 178,
+    "rhs": 112,
+    "final_answer": "66",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0367",
+    "prompt": "Question: Calculate: 145 - 130\n",
+    "expression": "145 - 130",
+    "lhs": 145,
+    "rhs": 130,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0368",
+    "prompt": "Question: Calculate: 197 - 191\n",
+    "expression": "197 - 191",
+    "lhs": 197,
+    "rhs": 191,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0369",
+    "prompt": "Question: Calculate: 174 - 119\n",
+    "expression": "174 - 119",
+    "lhs": 174,
+    "rhs": 119,
+    "final_answer": "55",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0370",
+    "prompt": "Question: Calculate: 194 - 166\n",
+    "expression": "194 - 166",
+    "lhs": 194,
+    "rhs": 166,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0371",
+    "prompt": "Question: Calculate: 176 - 175\n",
+    "expression": "176 - 175",
+    "lhs": 176,
+    "rhs": 175,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0372",
+    "prompt": "Question: Calculate: 168 - 166\n",
+    "expression": "168 - 166",
+    "lhs": 168,
+    "rhs": 166,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0373",
+    "prompt": "Question: Calculate: 156 - 126\n",
+    "expression": "156 - 126",
+    "lhs": 156,
+    "rhs": 126,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0374",
+    "prompt": "Question: Calculate: 124 - 124\n",
+    "expression": "124 - 124",
+    "lhs": 124,
+    "rhs": 124,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0375",
+    "prompt": "Question: Calculate: 164 - 160\n",
+    "expression": "164 - 160",
+    "lhs": 164,
+    "rhs": 160,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0376",
+    "prompt": "Question: Calculate: 188 - 151\n",
+    "expression": "188 - 151",
+    "lhs": 188,
+    "rhs": 151,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0377",
+    "prompt": "Question: Calculate: 181 - 123\n",
+    "expression": "181 - 123",
+    "lhs": 181,
+    "rhs": 123,
+    "final_answer": "58",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0378",
+    "prompt": "Question: Calculate: 192 - 137\n",
+    "expression": "192 - 137",
+    "lhs": 192,
+    "rhs": 137,
+    "final_answer": "55",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0379",
+    "prompt": "Question: Calculate: 171 - 156\n",
+    "expression": "171 - 156",
+    "lhs": 171,
+    "rhs": 156,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0380",
+    "prompt": "Question: Calculate: 172 - 130\n",
+    "expression": "172 - 130",
+    "lhs": 172,
+    "rhs": 130,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0381",
+    "prompt": "Question: Calculate: 126 - 119\n",
+    "expression": "126 - 119",
+    "lhs": 126,
+    "rhs": 119,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0382",
+    "prompt": "Question: Calculate: 157 - 139\n",
+    "expression": "157 - 139",
+    "lhs": 157,
+    "rhs": 139,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0383",
+    "prompt": "Question: Calculate: 127 - 108\n",
+    "expression": "127 - 108",
+    "lhs": 127,
+    "rhs": 108,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0384",
+    "prompt": "Question: Calculate: 157 - 156\n",
+    "expression": "157 - 156",
+    "lhs": 157,
+    "rhs": 156,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0385",
+    "prompt": "Question: Calculate: 169 - 158\n",
+    "expression": "169 - 158",
+    "lhs": 169,
+    "rhs": 158,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0386",
+    "prompt": "Question: Calculate: 125 - 103\n",
+    "expression": "125 - 103",
+    "lhs": 125,
+    "rhs": 103,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0387",
+    "prompt": "Question: Calculate: 187 - 109\n",
+    "expression": "187 - 109",
+    "lhs": 187,
+    "rhs": 109,
+    "final_answer": "78",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0388",
+    "prompt": "Question: Calculate: 132 - 121\n",
+    "expression": "132 - 121",
+    "lhs": 132,
+    "rhs": 121,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0389",
+    "prompt": "Question: Calculate: 147 - 124\n",
+    "expression": "147 - 124",
+    "lhs": 147,
+    "rhs": 124,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0390",
+    "prompt": "Question: Calculate: 155 - 109\n",
+    "expression": "155 - 109",
+    "lhs": 155,
+    "rhs": 109,
+    "final_answer": "46",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0391",
+    "prompt": "Question: Calculate: 189 - 105\n",
+    "expression": "189 - 105",
+    "lhs": 189,
+    "rhs": 105,
+    "final_answer": "84",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0392",
+    "prompt": "Question: Calculate: 187 - 166\n",
+    "expression": "187 - 166",
+    "lhs": 187,
+    "rhs": 166,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0393",
+    "prompt": "Question: Calculate: 154 - 104\n",
+    "expression": "154 - 104",
+    "lhs": 154,
+    "rhs": 104,
+    "final_answer": "50",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0394",
+    "prompt": "Question: Calculate: 174 - 173\n",
+    "expression": "174 - 173",
+    "lhs": 174,
+    "rhs": 173,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0395",
+    "prompt": "Question: Calculate: 176 - 137\n",
+    "expression": "176 - 137",
+    "lhs": 176,
+    "rhs": 137,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0396",
+    "prompt": "Question: Calculate: 127 - 113\n",
+    "expression": "127 - 113",
+    "lhs": 127,
+    "rhs": 113,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0397",
+    "prompt": "Question: Calculate: 147 - 112\n",
+    "expression": "147 - 112",
+    "lhs": 147,
+    "rhs": 112,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0398",
+    "prompt": "Question: Calculate: 174 - 123\n",
+    "expression": "174 - 123",
+    "lhs": 174,
+    "rhs": 123,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0399",
+    "prompt": "Question: Calculate: 141 - 130\n",
+    "expression": "141 - 130",
+    "lhs": 141,
+    "rhs": 130,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0400",
+    "prompt": "Question: Calculate: 163 - 123\n",
+    "expression": "163 - 123",
+    "lhs": 163,
+    "rhs": 123,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0401",
+    "prompt": "Question: Calculate: 175 - 150\n",
+    "expression": "175 - 150",
+    "lhs": 175,
+    "rhs": 150,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0402",
+    "prompt": "Question: Calculate: 133 - 126\n",
+    "expression": "133 - 126",
+    "lhs": 133,
+    "rhs": 126,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0403",
+    "prompt": "Question: Calculate: 176 - 176\n",
+    "expression": "176 - 176",
+    "lhs": 176,
+    "rhs": 176,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0404",
+    "prompt": "Question: Calculate: 116 - 114\n",
+    "expression": "116 - 114",
+    "lhs": 116,
+    "rhs": 114,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0405",
+    "prompt": "Question: Calculate: 164 - 162\n",
+    "expression": "164 - 162",
+    "lhs": 164,
+    "rhs": 162,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0406",
+    "prompt": "Question: Calculate: 178 - 156\n",
+    "expression": "178 - 156",
+    "lhs": 178,
+    "rhs": 156,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0407",
+    "prompt": "Question: Calculate: 180 - 110\n",
+    "expression": "180 - 110",
+    "lhs": 180,
+    "rhs": 110,
+    "final_answer": "70",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0408",
+    "prompt": "Question: Calculate: 127 - 106\n",
+    "expression": "127 - 106",
+    "lhs": 127,
+    "rhs": 106,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0409",
+    "prompt": "Question: Calculate: 188 - 124\n",
+    "expression": "188 - 124",
+    "lhs": 188,
+    "rhs": 124,
+    "final_answer": "64",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0410",
+    "prompt": "Question: Calculate: 180 - 139\n",
+    "expression": "180 - 139",
+    "lhs": 180,
+    "rhs": 139,
+    "final_answer": "41",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0411",
+    "prompt": "Question: Calculate: 118 - 114\n",
+    "expression": "118 - 114",
+    "lhs": 118,
+    "rhs": 114,
+    "final_answer": "4",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0412",
+    "prompt": "Question: Calculate: 195 - 163\n",
+    "expression": "195 - 163",
+    "lhs": 195,
+    "rhs": 163,
+    "final_answer": "32",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0413",
+    "prompt": "Question: Calculate: 196 - 150\n",
+    "expression": "196 - 150",
+    "lhs": 196,
+    "rhs": 150,
+    "final_answer": "46",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0414",
+    "prompt": "Question: Calculate: 198 - 196\n",
+    "expression": "198 - 196",
+    "lhs": 198,
+    "rhs": 196,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0415",
+    "prompt": "Question: Calculate: 133 - 127\n",
+    "expression": "133 - 127",
+    "lhs": 133,
+    "rhs": 127,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0416",
+    "prompt": "Question: Calculate: 177 - 129\n",
+    "expression": "177 - 129",
+    "lhs": 177,
+    "rhs": 129,
+    "final_answer": "48",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0417",
+    "prompt": "Question: Calculate: 193 - 111\n",
+    "expression": "193 - 111",
+    "lhs": 193,
+    "rhs": 111,
+    "final_answer": "82",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0418",
+    "prompt": "Question: Calculate: 137 - 136\n",
+    "expression": "137 - 136",
+    "lhs": 137,
+    "rhs": 136,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0419",
+    "prompt": "Question: Calculate: 155 - 150\n",
+    "expression": "155 - 150",
+    "lhs": 155,
+    "rhs": 150,
+    "final_answer": "5",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0420",
+    "prompt": "Question: Calculate: 183 - 110\n",
+    "expression": "183 - 110",
+    "lhs": 183,
+    "rhs": 110,
+    "final_answer": "73",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0421",
+    "prompt": "Question: Calculate: 163 - 118\n",
+    "expression": "163 - 118",
+    "lhs": 163,
+    "rhs": 118,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0422",
+    "prompt": "Question: Calculate: 176 - 141\n",
+    "expression": "176 - 141",
+    "lhs": 176,
+    "rhs": 141,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0423",
+    "prompt": "Question: Calculate: 105 - 103\n",
+    "expression": "105 - 103",
+    "lhs": 105,
+    "rhs": 103,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0424",
+    "prompt": "Question: Calculate: 197 - 112\n",
+    "expression": "197 - 112",
+    "lhs": 197,
+    "rhs": 112,
+    "final_answer": "85",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0425",
+    "prompt": "Question: Calculate: 169 - 141\n",
+    "expression": "169 - 141",
+    "lhs": 169,
+    "rhs": 141,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0426",
+    "prompt": "Question: Calculate: 149 - 101\n",
+    "expression": "149 - 101",
+    "lhs": 149,
+    "rhs": 101,
+    "final_answer": "48",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0427",
+    "prompt": "Question: Calculate: 163 - 129\n",
+    "expression": "163 - 129",
+    "lhs": 163,
+    "rhs": 129,
+    "final_answer": "34",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0428",
+    "prompt": "Question: Calculate: 192 - 136\n",
+    "expression": "192 - 136",
+    "lhs": 192,
+    "rhs": 136,
+    "final_answer": "56",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0429",
+    "prompt": "Question: Calculate: 116 - 115\n",
+    "expression": "116 - 115",
+    "lhs": 116,
+    "rhs": 115,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0430",
+    "prompt": "Question: Calculate: 194 - 121\n",
+    "expression": "194 - 121",
+    "lhs": 194,
+    "rhs": 121,
+    "final_answer": "73",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0431",
+    "prompt": "Question: Calculate: 190 - 190\n",
+    "expression": "190 - 190",
+    "lhs": 190,
+    "rhs": 190,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0432",
+    "prompt": "Question: Calculate: 197 - 149\n",
+    "expression": "197 - 149",
+    "lhs": 197,
+    "rhs": 149,
+    "final_answer": "48",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0433",
+    "prompt": "Question: Calculate: 132 - 119\n",
+    "expression": "132 - 119",
+    "lhs": 132,
+    "rhs": 119,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0434",
+    "prompt": "Question: Calculate: 187 - 104\n",
+    "expression": "187 - 104",
+    "lhs": 187,
+    "rhs": 104,
+    "final_answer": "83",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0435",
+    "prompt": "Question: Calculate: 197 - 175\n",
+    "expression": "197 - 175",
+    "lhs": 197,
+    "rhs": 175,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0436",
+    "prompt": "Question: Calculate: 163 - 101\n",
+    "expression": "163 - 101",
+    "lhs": 163,
+    "rhs": 101,
+    "final_answer": "62",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0437",
+    "prompt": "Question: Calculate: 128 - 114\n",
+    "expression": "128 - 114",
+    "lhs": 128,
+    "rhs": 114,
+    "final_answer": "14",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0438",
+    "prompt": "Question: Calculate: 145 - 109\n",
+    "expression": "145 - 109",
+    "lhs": 145,
+    "rhs": 109,
+    "final_answer": "36",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0439",
+    "prompt": "Question: Calculate: 170 - 153\n",
+    "expression": "170 - 153",
+    "lhs": 170,
+    "rhs": 153,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0440",
+    "prompt": "Question: Calculate: 162 - 156\n",
+    "expression": "162 - 156",
+    "lhs": 162,
+    "rhs": 156,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0441",
+    "prompt": "Question: Calculate: 169 - 115\n",
+    "expression": "169 - 115",
+    "lhs": 169,
+    "rhs": 115,
+    "final_answer": "54",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0442",
+    "prompt": "Question: Calculate: 143 - 108\n",
+    "expression": "143 - 108",
+    "lhs": 143,
+    "rhs": 108,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0443",
+    "prompt": "Question: Calculate: 183 - 165\n",
+    "expression": "183 - 165",
+    "lhs": 183,
+    "rhs": 165,
+    "final_answer": "18",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0444",
+    "prompt": "Question: Calculate: 193 - 146\n",
+    "expression": "193 - 146",
+    "lhs": 193,
+    "rhs": 146,
+    "final_answer": "47",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0445",
+    "prompt": "Question: Calculate: 149 - 149\n",
+    "expression": "149 - 149",
+    "lhs": 149,
+    "rhs": 149,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0446",
+    "prompt": "Question: Calculate: 159 - 156\n",
+    "expression": "159 - 156",
+    "lhs": 159,
+    "rhs": 156,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0447",
+    "prompt": "Question: Calculate: 196 - 171\n",
+    "expression": "196 - 171",
+    "lhs": 196,
+    "rhs": 171,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0448",
+    "prompt": "Question: Calculate: 118 - 103\n",
+    "expression": "118 - 103",
+    "lhs": 118,
+    "rhs": 103,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0449",
+    "prompt": "Question: Calculate: 136 - 120\n",
+    "expression": "136 - 120",
+    "lhs": 136,
+    "rhs": 120,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0450",
+    "prompt": "Question: Calculate: 109 - 108\n",
+    "expression": "109 - 108",
+    "lhs": 109,
+    "rhs": 108,
+    "final_answer": "1",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0451",
+    "prompt": "Question: Calculate: 186 - 120\n",
+    "expression": "186 - 120",
+    "lhs": 186,
+    "rhs": 120,
+    "final_answer": "66",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0452",
+    "prompt": "Question: Calculate: 195 - 140\n",
+    "expression": "195 - 140",
+    "lhs": 195,
+    "rhs": 140,
+    "final_answer": "55",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0453",
+    "prompt": "Question: Calculate: 148 - 109\n",
+    "expression": "148 - 109",
+    "lhs": 148,
+    "rhs": 109,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0454",
+    "prompt": "Question: Calculate: 188 - 143\n",
+    "expression": "188 - 143",
+    "lhs": 188,
+    "rhs": 143,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0455",
+    "prompt": "Question: Calculate: 169 - 105\n",
+    "expression": "169 - 105",
+    "lhs": 169,
+    "rhs": 105,
+    "final_answer": "64",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0456",
+    "prompt": "Question: Calculate: 125 - 114\n",
+    "expression": "125 - 114",
+    "lhs": 125,
+    "rhs": 114,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0457",
+    "prompt": "Question: Calculate: 147 - 147\n",
+    "expression": "147 - 147",
+    "lhs": 147,
+    "rhs": 147,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0458",
+    "prompt": "Question: Calculate: 149 - 121\n",
+    "expression": "149 - 121",
+    "lhs": 149,
+    "rhs": 121,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0459",
+    "prompt": "Question: Calculate: 174 - 146\n",
+    "expression": "174 - 146",
+    "lhs": 174,
+    "rhs": 146,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0460",
+    "prompt": "Question: Calculate: 199 - 157\n",
+    "expression": "199 - 157",
+    "lhs": 199,
+    "rhs": 157,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0461",
+    "prompt": "Question: Calculate: 172 - 155\n",
+    "expression": "172 - 155",
+    "lhs": 172,
+    "rhs": 155,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0462",
+    "prompt": "Question: Calculate: 121 - 121\n",
+    "expression": "121 - 121",
+    "lhs": 121,
+    "rhs": 121,
+    "final_answer": "0",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0463",
+    "prompt": "Question: Calculate: 161 - 110\n",
+    "expression": "161 - 110",
+    "lhs": 161,
+    "rhs": 110,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0464",
+    "prompt": "Question: Calculate: 178 - 169\n",
+    "expression": "178 - 169",
+    "lhs": 178,
+    "rhs": 169,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0465",
+    "prompt": "Question: Calculate: 197 - 162\n",
+    "expression": "197 - 162",
+    "lhs": 197,
+    "rhs": 162,
+    "final_answer": "35",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0466",
+    "prompt": "Question: Calculate: 180 - 104\n",
+    "expression": "180 - 104",
+    "lhs": 180,
+    "rhs": 104,
+    "final_answer": "76",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0467",
+    "prompt": "Question: Calculate: 162 - 141\n",
+    "expression": "162 - 141",
+    "lhs": 162,
+    "rhs": 141,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0468",
+    "prompt": "Question: Calculate: 178 - 161\n",
+    "expression": "178 - 161",
+    "lhs": 178,
+    "rhs": 161,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0469",
+    "prompt": "Question: Calculate: 191 - 118\n",
+    "expression": "191 - 118",
+    "lhs": 191,
+    "rhs": 118,
+    "final_answer": "73",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0470",
+    "prompt": "Question: Calculate: 181 - 108\n",
+    "expression": "181 - 108",
+    "lhs": 181,
+    "rhs": 108,
+    "final_answer": "73",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0471",
+    "prompt": "Question: Calculate: 130 - 102\n",
+    "expression": "130 - 102",
+    "lhs": 130,
+    "rhs": 102,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0472",
+    "prompt": "Question: Calculate: 199 - 158\n",
+    "expression": "199 - 158",
+    "lhs": 199,
+    "rhs": 158,
+    "final_answer": "41",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0473",
+    "prompt": "Question: Calculate: 121 - 109\n",
+    "expression": "121 - 109",
+    "lhs": 121,
+    "rhs": 109,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0474",
+    "prompt": "Question: Calculate: 176 - 114\n",
+    "expression": "176 - 114",
+    "lhs": 176,
+    "rhs": 114,
+    "final_answer": "62",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0475",
+    "prompt": "Question: Calculate: 186 - 141\n",
+    "expression": "186 - 141",
+    "lhs": 186,
+    "rhs": 141,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0476",
+    "prompt": "Question: Calculate: 160 - 149\n",
+    "expression": "160 - 149",
+    "lhs": 160,
+    "rhs": 149,
+    "final_answer": "11",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0477",
+    "prompt": "Question: Calculate: 198 - 115\n",
+    "expression": "198 - 115",
+    "lhs": 198,
+    "rhs": 115,
+    "final_answer": "83",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0478",
+    "prompt": "Question: Calculate: 185 - 114\n",
+    "expression": "185 - 114",
+    "lhs": 185,
+    "rhs": 114,
+    "final_answer": "71",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0479",
+    "prompt": "Question: Calculate: 149 - 132\n",
+    "expression": "149 - 132",
+    "lhs": 149,
+    "rhs": 132,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0480",
+    "prompt": "Question: Calculate: 192 - 120\n",
+    "expression": "192 - 120",
+    "lhs": 192,
+    "rhs": 120,
+    "final_answer": "72",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0481",
+    "prompt": "Question: Calculate: 186 - 126\n",
+    "expression": "186 - 126",
+    "lhs": 186,
+    "rhs": 126,
+    "final_answer": "60",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0482",
+    "prompt": "Question: Calculate: 167 - 124\n",
+    "expression": "167 - 124",
+    "lhs": 167,
+    "rhs": 124,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0483",
+    "prompt": "Question: Calculate: 151 - 139\n",
+    "expression": "151 - 139",
+    "lhs": 151,
+    "rhs": 139,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0484",
+    "prompt": "Question: Calculate: 137 - 122\n",
+    "expression": "137 - 122",
+    "lhs": 137,
+    "rhs": 122,
+    "final_answer": "15",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0485",
+    "prompt": "Question: Calculate: 168 - 158\n",
+    "expression": "168 - 158",
+    "lhs": 168,
+    "rhs": 158,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0486",
+    "prompt": "Question: Calculate: 145 - 132\n",
+    "expression": "145 - 132",
+    "lhs": 145,
+    "rhs": 132,
+    "final_answer": "13",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0487",
+    "prompt": "Question: Calculate: 192 - 141\n",
+    "expression": "192 - 141",
+    "lhs": 192,
+    "rhs": 141,
+    "final_answer": "51",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0488",
+    "prompt": "Question: Calculate: 141 - 121\n",
+    "expression": "141 - 121",
+    "lhs": 141,
+    "rhs": 121,
+    "final_answer": "20",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0489",
+    "prompt": "Question: Calculate: 178 - 138\n",
+    "expression": "178 - 138",
+    "lhs": 178,
+    "rhs": 138,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0490",
+    "prompt": "Question: Calculate: 189 - 121\n",
+    "expression": "189 - 121",
+    "lhs": 189,
+    "rhs": 121,
+    "final_answer": "68",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0491",
+    "prompt": "Question: Calculate: 129 - 122\n",
+    "expression": "129 - 122",
+    "lhs": 129,
+    "rhs": 122,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0492",
+    "prompt": "Question: Calculate: 164 - 133\n",
+    "expression": "164 - 133",
+    "lhs": 164,
+    "rhs": 133,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0493",
+    "prompt": "Question: Calculate: 148 - 106\n",
+    "expression": "148 - 106",
+    "lhs": 148,
+    "rhs": 106,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0494",
+    "prompt": "Question: Calculate: 157 - 140\n",
+    "expression": "157 - 140",
+    "lhs": 157,
+    "rhs": 140,
+    "final_answer": "17",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0495",
+    "prompt": "Question: Calculate: 152 - 102\n",
+    "expression": "152 - 102",
+    "lhs": 152,
+    "rhs": 102,
+    "final_answer": "50",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0496",
+    "prompt": "Question: Calculate: 183 - 127\n",
+    "expression": "183 - 127",
+    "lhs": 183,
+    "rhs": 127,
+    "final_answer": "56",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0497",
+    "prompt": "Question: Calculate: 193 - 143\n",
+    "expression": "193 - 143",
+    "lhs": 193,
+    "rhs": 143,
+    "final_answer": "50",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0498",
+    "prompt": "Question: Calculate: 191 - 125\n",
+    "expression": "191 - 125",
+    "lhs": 191,
+    "rhs": 125,
+    "final_answer": "66",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0499",
+    "prompt": "Question: Calculate: 179 - 148\n",
+    "expression": "179 - 148",
+    "lhs": 179,
+    "rhs": 148,
+    "final_answer": "31",
+    "ans_digits": 2,
+    "operand_digits": 3
+  },
+  {
+    "example_id": "e3_iid3d_0500",
+    "prompt": "Question: Calculate: 168 - 131\n",
+    "expression": "168 - 131",
+    "lhs": 168,
+    "rhs": 131,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 3
+  }
+]

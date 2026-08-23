@@ -1,0 +1,40 @@
+{
+  "manifest_name": "Mini-R1 Val Shard Manifest",
+  "split": "val",
+  "creation_timestamp": "2026-08-17 06:30:44 UTC",
+  "tokenizer_path": "artifacts/tokenizer/tokenizer.model",
+  "tokenizer_md5": "e7ef63605f920bf411f0c897c44e31e3",
+  "vocab_size": 8000,
+  "source_dataset": "HuggingFaceTB/smollm-corpus",
+  "source_mixture": {
+    "cosmopedia-v2": 0.6,
+    "fineweb-edu-dedup": 0.4
+  },
+  "seed": 42,
+  "sequence_length": 512,
+  "total_shards": 2,
+  "total_sequences": 19532,
+  "total_tokens": 10000384,
+  "format": "uint16_binary_memmap",
+  "shards": [
+    {
+      "shard_id": 0,
+      "filename": "val_shard_00000.bin",
+      "num_sequences": 19531,
+      "num_tokens": 9999872,
+      "file_size_bytes": 19999744,
+      "sha256": "81dcb2ce83b128ec44fb822d431000120a0ad5ddc9bab4ab702fbeab2cd8845f",
+      "md5": "eff3d31259e671954b9fbfe683b99c88"
+    },
+    {
+      "shard_id": 1,
+      "filename": "val_shard_00001.bin",
+      "num_sequences": 1,
+      "num_tokens": 512,
+      "file_size_bytes": 1024,
+      "sha256": "9b166d23b6ff0a6ea198143360eed6d59530c1bf698a820e01de7ad36e5b47d4",
+      "md5": "3a6a543b7398cef0663cd2b9b621057b"
+    }
+  ],
+  "manifest_hash": "741adf7fe09cef527aee329153113d77780a4e68bb2ed181054d55c5f3bf7370"
+}

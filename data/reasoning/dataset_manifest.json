@@ -1,0 +1,146 @@
+{
+  "dataset_name": "Mini-R1 Reasoning SFT Dataset (Task 15A)",
+  "version": "1.0.0",
+  "source_dataset": "openai/gsm8k (main config)",
+  "split_seed": 42,
+  "counts": {
+    "total_raw_gsm8k_train": 7473,
+    "sft_train": 6973,
+    "sft_dev": 500,
+    "invalid_records": 0
+  },
+  "base_checkpoint": {
+    "path": "checkpoints/mini_r1_500m_pretrain/best.pt",
+    "step": 18000,
+    "val_loss": 2.8726,
+    "sha256": "f058a558edc2020b1a4a7a7b54312b97fb0b0a20e16c42da92018686e66462a4"
+  },
+  "tokenizer": {
+    "path": "artifacts/tokenizer/tokenizer.model",
+    "vocab_size": 8000,
+    "md5": "e7ef63605f920bf411f0c897c44e31e3"
+  },
+  "file_hashes": {
+    "gsm8k_sft_train.jsonl": "f040b181642281edd4354c2cd67f6ec0af1b922658d8ec3a28136b5ae5e1b6d6",
+    "gsm8k_sft_dev.jsonl": "8bd18a20db0a126b87f26ac18c0627a6eb72a222af7ba0016ac09c39fbfbdc7b",
+    "gsm8k_direct_train.jsonl": "8f5fcbfb48b0ff9a59596147cd90b6924f486d1757ee9e9534425fde5d88d765",
+    "gsm8k_direct_dev.jsonl": "d0ed361828ebffece4b5d42b964f74754aa4a815d0c15c20068ba8b6d8c3ef84"
+  },
+  "token_statistics": {
+    "direct_train": {
+      "total_tokens": 508894,
+      "num_examples": 6973,
+      "mean_tokens": 72.980639609924,
+      "std_tokens": 24.474550877668996,
+      "median_tokens": 68.0,
+      "p90_tokens": 106.0,
+      "p95_tokens": 118.39999999999964,
+      "min_tokens": 21,
+      "max_tokens": 255
+    },
+    "cot_train": {
+      "total_tokens": 1178275,
+      "num_examples": 6973,
+      "mean_tokens": 168.9767675319088,
+      "std_tokens": 60.60631345893571,
+      "median_tokens": 157.0,
+      "p90_tokens": 253.0,
+      "p95_tokens": 284.0,
+      "min_tokens": 56,
+      "max_tokens": 497
+    },
+    "direct_dev": {
+      "total_tokens": 35507,
+      "num_examples": 500,
+      "mean_tokens": 71.014,
+      "std_tokens": 22.193553208082747,
+      "median_tokens": 66.0,
+      "p90_tokens": 100.10000000000002,
+      "p95_tokens": 113.0,
+      "min_tokens": 29,
+      "max_tokens": 166
+    },
+    "cot_dev": {
+      "total_tokens": 81533,
+      "num_examples": 500,
+      "mean_tokens": 163.066,
+      "std_tokens": 52.090667532678054,
+      "median_tokens": 154.0,
+      "p90_tokens": 235.10000000000002,
+      "p95_tokens": 262.0999999999999,
+      "min_tokens": 74,
+      "max_tokens": 379
+    },
+    "cot_token_multiplier": 2.3154
+  },
+  "difficulty_distribution": {
+    "buckets": {
+      "1_step": {
+        "count": 464,
+        "pct": 6.65
+      },
+      "2_step": {
+        "count": 2022,
+        "pct": 29.0
+      },
+      "3_step": {
+        "count": 1989,
+        "pct": 28.52
+      },
+      "4plus_step": {
+        "count": 2498,
+        "pct": 35.82
+      }
+    },
+    "operations": {
+      "mean": 3.1802667431521585,
+      "median": 3.0,
+      "p90": 5.0,
+      "max": 9
+    },
+    "question_length_chars": {
+      "mean": 234.69840814570486,
+      "median": 217.0,
+      "p90": 362.0,
+      "max": 985
+    },
+    "answer_magnitude": {
+      "median": 45.0,
+      "p90": 1123.2000000000007,
+      "max": 192000000.0
+    }
+  },
+  "quality_check": {
+    "sample_size": 100,
+    "passed_count": 100,
+    "pass_rate_pct": 100.0,
+    "failures": []
+  },
+  "leakage_verification": {
+    "gsm8k_test": {
+      "test_size": 1319,
+      "exact_overlap_count": 0,
+      "is_clean": true
+    },
+    "svamp_test": {
+      "test_size": 300,
+      "exact_overlap_count": 0,
+      "is_clean": true
+    },
+    "aqua_test": {
+      "test_size": 254,
+      "exact_overlap_count": 0,
+      "is_clean": true
+    },
+    "limitation_note": "Verification is strictly based on exact string and normalized hash matching. Semantic near-duplicates or conceptual overlaps are not filtered by exact hashing."
+  },
+  "controlled_experiment_spec": {
+    "shared_problem_ids": true,
+    "shared_train_dev_split": true,
+    "shared_tokenizer": true,
+    "shared_seed": 42,
+    "target_effective_batch_size": 32,
+    "target_optimizer": "AdamW",
+    "target_learning_rate_schedule": "cosine_decay"
+  }
+}

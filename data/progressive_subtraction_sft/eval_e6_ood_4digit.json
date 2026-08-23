@@ -1,0 +1,5002 @@
+[
+  {
+    "example_id": "e6_ood4d_0001",
+    "prompt": "Question: Calculate: 2620 - 2268\n",
+    "expression": "2620 - 2268",
+    "lhs": 2620,
+    "rhs": 2268,
+    "final_answer": "352",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0002",
+    "prompt": "Question: Calculate: 2288 - 2105\n",
+    "expression": "2288 - 2105",
+    "lhs": 2288,
+    "rhs": 2105,
+    "final_answer": "183",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0003",
+    "prompt": "Question: Calculate: 2952 - 2017\n",
+    "expression": "2952 - 2017",
+    "lhs": 2952,
+    "rhs": 2017,
+    "final_answer": "935",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0004",
+    "prompt": "Question: Calculate: 2918 - 2764\n",
+    "expression": "2918 - 2764",
+    "lhs": 2918,
+    "rhs": 2764,
+    "final_answer": "154",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0005",
+    "prompt": "Question: Calculate: 2894 - 2688\n",
+    "expression": "2894 - 2688",
+    "lhs": 2894,
+    "rhs": 2688,
+    "final_answer": "206",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0006",
+    "prompt": "Question: Calculate: 2938 - 2170\n",
+    "expression": "2938 - 2170",
+    "lhs": 2938,
+    "rhs": 2170,
+    "final_answer": "768",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0007",
+    "prompt": "Question: Calculate: 2739 - 2231\n",
+    "expression": "2739 - 2231",
+    "lhs": 2739,
+    "rhs": 2231,
+    "final_answer": "508",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0008",
+    "prompt": "Question: Calculate: 2801 - 2516\n",
+    "expression": "2801 - 2516",
+    "lhs": 2801,
+    "rhs": 2516,
+    "final_answer": "285",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0009",
+    "prompt": "Question: Calculate: 2660 - 2492\n",
+    "expression": "2660 - 2492",
+    "lhs": 2660,
+    "rhs": 2492,
+    "final_answer": "168",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0010",
+    "prompt": "Question: Calculate: 2858 - 2231\n",
+    "expression": "2858 - 2231",
+    "lhs": 2858,
+    "rhs": 2231,
+    "final_answer": "627",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0011",
+    "prompt": "Question: Calculate: 2365 - 2084\n",
+    "expression": "2365 - 2084",
+    "lhs": 2365,
+    "rhs": 2084,
+    "final_answer": "281",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0012",
+    "prompt": "Question: Calculate: 2937 - 2550\n",
+    "expression": "2937 - 2550",
+    "lhs": 2937,
+    "rhs": 2550,
+    "final_answer": "387",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0013",
+    "prompt": "Question: Calculate: 2765 - 2698\n",
+    "expression": "2765 - 2698",
+    "lhs": 2765,
+    "rhs": 2698,
+    "final_answer": "67",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0014",
+    "prompt": "Question: Calculate: 2772 - 2716\n",
+    "expression": "2772 - 2716",
+    "lhs": 2772,
+    "rhs": 2716,
+    "final_answer": "56",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0015",
+    "prompt": "Question: Calculate: 2880 - 2416\n",
+    "expression": "2880 - 2416",
+    "lhs": 2880,
+    "rhs": 2416,
+    "final_answer": "464",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0016",
+    "prompt": "Question: Calculate: 2423 - 2317\n",
+    "expression": "2423 - 2317",
+    "lhs": 2423,
+    "rhs": 2317,
+    "final_answer": "106",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0017",
+    "prompt": "Question: Calculate: 2947 - 2887\n",
+    "expression": "2947 - 2887",
+    "lhs": 2947,
+    "rhs": 2887,
+    "final_answer": "60",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0018",
+    "prompt": "Question: Calculate: 2885 - 2508\n",
+    "expression": "2885 - 2508",
+    "lhs": 2885,
+    "rhs": 2508,
+    "final_answer": "377",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0019",
+    "prompt": "Question: Calculate: 2490 - 2309\n",
+    "expression": "2490 - 2309",
+    "lhs": 2490,
+    "rhs": 2309,
+    "final_answer": "181",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0020",
+    "prompt": "Question: Calculate: 2208 - 2097\n",
+    "expression": "2208 - 2097",
+    "lhs": 2208,
+    "rhs": 2097,
+    "final_answer": "111",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0021",
+    "prompt": "Question: Calculate: 2992 - 2092\n",
+    "expression": "2992 - 2092",
+    "lhs": 2992,
+    "rhs": 2092,
+    "final_answer": "900",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0022",
+    "prompt": "Question: Calculate: 2940 - 2208\n",
+    "expression": "2940 - 2208",
+    "lhs": 2940,
+    "rhs": 2208,
+    "final_answer": "732",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0023",
+    "prompt": "Question: Calculate: 2375 - 2078\n",
+    "expression": "2375 - 2078",
+    "lhs": 2375,
+    "rhs": 2078,
+    "final_answer": "297",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0024",
+    "prompt": "Question: Calculate: 2690 - 2517\n",
+    "expression": "2690 - 2517",
+    "lhs": 2690,
+    "rhs": 2517,
+    "final_answer": "173",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0025",
+    "prompt": "Question: Calculate: 2192 - 2008\n",
+    "expression": "2192 - 2008",
+    "lhs": 2192,
+    "rhs": 2008,
+    "final_answer": "184",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0026",
+    "prompt": "Question: Calculate: 2363 - 2144\n",
+    "expression": "2363 - 2144",
+    "lhs": 2363,
+    "rhs": 2144,
+    "final_answer": "219",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0027",
+    "prompt": "Question: Calculate: 2526 - 2382\n",
+    "expression": "2526 - 2382",
+    "lhs": 2526,
+    "rhs": 2382,
+    "final_answer": "144",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0028",
+    "prompt": "Question: Calculate: 2273 - 2200\n",
+    "expression": "2273 - 2200",
+    "lhs": 2273,
+    "rhs": 2200,
+    "final_answer": "73",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0029",
+    "prompt": "Question: Calculate: 2967 - 2922\n",
+    "expression": "2967 - 2922",
+    "lhs": 2967,
+    "rhs": 2922,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0030",
+    "prompt": "Question: Calculate: 2993 - 2428\n",
+    "expression": "2993 - 2428",
+    "lhs": 2993,
+    "rhs": 2428,
+    "final_answer": "565",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0031",
+    "prompt": "Question: Calculate: 2790 - 2325\n",
+    "expression": "2790 - 2325",
+    "lhs": 2790,
+    "rhs": 2325,
+    "final_answer": "465",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0032",
+    "prompt": "Question: Calculate: 2834 - 2547\n",
+    "expression": "2834 - 2547",
+    "lhs": 2834,
+    "rhs": 2547,
+    "final_answer": "287",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0033",
+    "prompt": "Question: Calculate: 2357 - 2080\n",
+    "expression": "2357 - 2080",
+    "lhs": 2357,
+    "rhs": 2080,
+    "final_answer": "277",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0034",
+    "prompt": "Question: Calculate: 2973 - 2215\n",
+    "expression": "2973 - 2215",
+    "lhs": 2973,
+    "rhs": 2215,
+    "final_answer": "758",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0035",
+    "prompt": "Question: Calculate: 2958 - 2636\n",
+    "expression": "2958 - 2636",
+    "lhs": 2958,
+    "rhs": 2636,
+    "final_answer": "322",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0036",
+    "prompt": "Question: Calculate: 2794 - 2539\n",
+    "expression": "2794 - 2539",
+    "lhs": 2794,
+    "rhs": 2539,
+    "final_answer": "255",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0037",
+    "prompt": "Question: Calculate: 2550 - 2373\n",
+    "expression": "2550 - 2373",
+    "lhs": 2550,
+    "rhs": 2373,
+    "final_answer": "177",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0038",
+    "prompt": "Question: Calculate: 2653 - 2171\n",
+    "expression": "2653 - 2171",
+    "lhs": 2653,
+    "rhs": 2171,
+    "final_answer": "482",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0039",
+    "prompt": "Question: Calculate: 2710 - 2121\n",
+    "expression": "2710 - 2121",
+    "lhs": 2710,
+    "rhs": 2121,
+    "final_answer": "589",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0040",
+    "prompt": "Question: Calculate: 2563 - 2500\n",
+    "expression": "2563 - 2500",
+    "lhs": 2563,
+    "rhs": 2500,
+    "final_answer": "63",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0041",
+    "prompt": "Question: Calculate: 2616 - 2335\n",
+    "expression": "2616 - 2335",
+    "lhs": 2616,
+    "rhs": 2335,
+    "final_answer": "281",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0042",
+    "prompt": "Question: Calculate: 2897 - 2351\n",
+    "expression": "2897 - 2351",
+    "lhs": 2897,
+    "rhs": 2351,
+    "final_answer": "546",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0043",
+    "prompt": "Question: Calculate: 2826 - 2637\n",
+    "expression": "2826 - 2637",
+    "lhs": 2826,
+    "rhs": 2637,
+    "final_answer": "189",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0044",
+    "prompt": "Question: Calculate: 2634 - 2059\n",
+    "expression": "2634 - 2059",
+    "lhs": 2634,
+    "rhs": 2059,
+    "final_answer": "575",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0045",
+    "prompt": "Question: Calculate: 2828 - 2591\n",
+    "expression": "2828 - 2591",
+    "lhs": 2828,
+    "rhs": 2591,
+    "final_answer": "237",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0046",
+    "prompt": "Question: Calculate: 2535 - 2310\n",
+    "expression": "2535 - 2310",
+    "lhs": 2535,
+    "rhs": 2310,
+    "final_answer": "225",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0047",
+    "prompt": "Question: Calculate: 2907 - 2722\n",
+    "expression": "2907 - 2722",
+    "lhs": 2907,
+    "rhs": 2722,
+    "final_answer": "185",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0048",
+    "prompt": "Question: Calculate: 2812 - 2693\n",
+    "expression": "2812 - 2693",
+    "lhs": 2812,
+    "rhs": 2693,
+    "final_answer": "119",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0049",
+    "prompt": "Question: Calculate: 2996 - 2077\n",
+    "expression": "2996 - 2077",
+    "lhs": 2996,
+    "rhs": 2077,
+    "final_answer": "919",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0050",
+    "prompt": "Question: Calculate: 2938 - 2174\n",
+    "expression": "2938 - 2174",
+    "lhs": 2938,
+    "rhs": 2174,
+    "final_answer": "764",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0051",
+    "prompt": "Question: Calculate: 2994 - 2567\n",
+    "expression": "2994 - 2567",
+    "lhs": 2994,
+    "rhs": 2567,
+    "final_answer": "427",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0052",
+    "prompt": "Question: Calculate: 2384 - 2338\n",
+    "expression": "2384 - 2338",
+    "lhs": 2384,
+    "rhs": 2338,
+    "final_answer": "46",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0053",
+    "prompt": "Question: Calculate: 2827 - 2369\n",
+    "expression": "2827 - 2369",
+    "lhs": 2827,
+    "rhs": 2369,
+    "final_answer": "458",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0054",
+    "prompt": "Question: Calculate: 2859 - 2531\n",
+    "expression": "2859 - 2531",
+    "lhs": 2859,
+    "rhs": 2531,
+    "final_answer": "328",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0055",
+    "prompt": "Question: Calculate: 2996 - 2908\n",
+    "expression": "2996 - 2908",
+    "lhs": 2996,
+    "rhs": 2908,
+    "final_answer": "88",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0056",
+    "prompt": "Question: Calculate: 2886 - 2113\n",
+    "expression": "2886 - 2113",
+    "lhs": 2886,
+    "rhs": 2113,
+    "final_answer": "773",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0057",
+    "prompt": "Question: Calculate: 2471 - 2385\n",
+    "expression": "2471 - 2385",
+    "lhs": 2471,
+    "rhs": 2385,
+    "final_answer": "86",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0058",
+    "prompt": "Question: Calculate: 2776 - 2353\n",
+    "expression": "2776 - 2353",
+    "lhs": 2776,
+    "rhs": 2353,
+    "final_answer": "423",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0059",
+    "prompt": "Question: Calculate: 2635 - 2182\n",
+    "expression": "2635 - 2182",
+    "lhs": 2635,
+    "rhs": 2182,
+    "final_answer": "453",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0060",
+    "prompt": "Question: Calculate: 2550 - 2220\n",
+    "expression": "2550 - 2220",
+    "lhs": 2550,
+    "rhs": 2220,
+    "final_answer": "330",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0061",
+    "prompt": "Question: Calculate: 2965 - 2210\n",
+    "expression": "2965 - 2210",
+    "lhs": 2965,
+    "rhs": 2210,
+    "final_answer": "755",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0062",
+    "prompt": "Question: Calculate: 2874 - 2099\n",
+    "expression": "2874 - 2099",
+    "lhs": 2874,
+    "rhs": 2099,
+    "final_answer": "775",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0063",
+    "prompt": "Question: Calculate: 2601 - 2225\n",
+    "expression": "2601 - 2225",
+    "lhs": 2601,
+    "rhs": 2225,
+    "final_answer": "376",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0064",
+    "prompt": "Question: Calculate: 2545 - 2318\n",
+    "expression": "2545 - 2318",
+    "lhs": 2545,
+    "rhs": 2318,
+    "final_answer": "227",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0065",
+    "prompt": "Question: Calculate: 2977 - 2780\n",
+    "expression": "2977 - 2780",
+    "lhs": 2977,
+    "rhs": 2780,
+    "final_answer": "197",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0066",
+    "prompt": "Question: Calculate: 2585 - 2093\n",
+    "expression": "2585 - 2093",
+    "lhs": 2585,
+    "rhs": 2093,
+    "final_answer": "492",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0067",
+    "prompt": "Question: Calculate: 2912 - 2560\n",
+    "expression": "2912 - 2560",
+    "lhs": 2912,
+    "rhs": 2560,
+    "final_answer": "352",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0068",
+    "prompt": "Question: Calculate: 2783 - 2733\n",
+    "expression": "2783 - 2733",
+    "lhs": 2783,
+    "rhs": 2733,
+    "final_answer": "50",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0069",
+    "prompt": "Question: Calculate: 2749 - 2042\n",
+    "expression": "2749 - 2042",
+    "lhs": 2749,
+    "rhs": 2042,
+    "final_answer": "707",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0070",
+    "prompt": "Question: Calculate: 2200 - 2056\n",
+    "expression": "2200 - 2056",
+    "lhs": 2200,
+    "rhs": 2056,
+    "final_answer": "144",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0071",
+    "prompt": "Question: Calculate: 2983 - 2545\n",
+    "expression": "2983 - 2545",
+    "lhs": 2983,
+    "rhs": 2545,
+    "final_answer": "438",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0072",
+    "prompt": "Question: Calculate: 2838 - 2066\n",
+    "expression": "2838 - 2066",
+    "lhs": 2838,
+    "rhs": 2066,
+    "final_answer": "772",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0073",
+    "prompt": "Question: Calculate: 2886 - 2264\n",
+    "expression": "2886 - 2264",
+    "lhs": 2886,
+    "rhs": 2264,
+    "final_answer": "622",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0074",
+    "prompt": "Question: Calculate: 2394 - 2193\n",
+    "expression": "2394 - 2193",
+    "lhs": 2394,
+    "rhs": 2193,
+    "final_answer": "201",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0075",
+    "prompt": "Question: Calculate: 2265 - 2130\n",
+    "expression": "2265 - 2130",
+    "lhs": 2265,
+    "rhs": 2130,
+    "final_answer": "135",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0076",
+    "prompt": "Question: Calculate: 2720 - 2621\n",
+    "expression": "2720 - 2621",
+    "lhs": 2720,
+    "rhs": 2621,
+    "final_answer": "99",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0077",
+    "prompt": "Question: Calculate: 2836 - 2177\n",
+    "expression": "2836 - 2177",
+    "lhs": 2836,
+    "rhs": 2177,
+    "final_answer": "659",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0078",
+    "prompt": "Question: Calculate: 2936 - 2319\n",
+    "expression": "2936 - 2319",
+    "lhs": 2936,
+    "rhs": 2319,
+    "final_answer": "617",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0079",
+    "prompt": "Question: Calculate: 2160 - 2105\n",
+    "expression": "2160 - 2105",
+    "lhs": 2160,
+    "rhs": 2105,
+    "final_answer": "55",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0080",
+    "prompt": "Question: Calculate: 2705 - 2622\n",
+    "expression": "2705 - 2622",
+    "lhs": 2705,
+    "rhs": 2622,
+    "final_answer": "83",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0081",
+    "prompt": "Question: Calculate: 2897 - 2378\n",
+    "expression": "2897 - 2378",
+    "lhs": 2897,
+    "rhs": 2378,
+    "final_answer": "519",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0082",
+    "prompt": "Question: Calculate: 2588 - 2474\n",
+    "expression": "2588 - 2474",
+    "lhs": 2588,
+    "rhs": 2474,
+    "final_answer": "114",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0083",
+    "prompt": "Question: Calculate: 2861 - 2762\n",
+    "expression": "2861 - 2762",
+    "lhs": 2861,
+    "rhs": 2762,
+    "final_answer": "99",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0084",
+    "prompt": "Question: Calculate: 2781 - 2247\n",
+    "expression": "2781 - 2247",
+    "lhs": 2781,
+    "rhs": 2247,
+    "final_answer": "534",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0085",
+    "prompt": "Question: Calculate: 2867 - 2053\n",
+    "expression": "2867 - 2053",
+    "lhs": 2867,
+    "rhs": 2053,
+    "final_answer": "814",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0086",
+    "prompt": "Question: Calculate: 2860 - 2601\n",
+    "expression": "2860 - 2601",
+    "lhs": 2860,
+    "rhs": 2601,
+    "final_answer": "259",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0087",
+    "prompt": "Question: Calculate: 2945 - 2753\n",
+    "expression": "2945 - 2753",
+    "lhs": 2945,
+    "rhs": 2753,
+    "final_answer": "192",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0088",
+    "prompt": "Question: Calculate: 2177 - 2104\n",
+    "expression": "2177 - 2104",
+    "lhs": 2177,
+    "rhs": 2104,
+    "final_answer": "73",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0089",
+    "prompt": "Question: Calculate: 2527 - 2064\n",
+    "expression": "2527 - 2064",
+    "lhs": 2527,
+    "rhs": 2064,
+    "final_answer": "463",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0090",
+    "prompt": "Question: Calculate: 2321 - 2158\n",
+    "expression": "2321 - 2158",
+    "lhs": 2321,
+    "rhs": 2158,
+    "final_answer": "163",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0091",
+    "prompt": "Question: Calculate: 2926 - 2483\n",
+    "expression": "2926 - 2483",
+    "lhs": 2926,
+    "rhs": 2483,
+    "final_answer": "443",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0092",
+    "prompt": "Question: Calculate: 2302 - 2197\n",
+    "expression": "2302 - 2197",
+    "lhs": 2302,
+    "rhs": 2197,
+    "final_answer": "105",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0093",
+    "prompt": "Question: Calculate: 2092 - 2089\n",
+    "expression": "2092 - 2089",
+    "lhs": 2092,
+    "rhs": 2089,
+    "final_answer": "3",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0094",
+    "prompt": "Question: Calculate: 2741 - 2302\n",
+    "expression": "2741 - 2302",
+    "lhs": 2741,
+    "rhs": 2302,
+    "final_answer": "439",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0095",
+    "prompt": "Question: Calculate: 2411 - 2090\n",
+    "expression": "2411 - 2090",
+    "lhs": 2411,
+    "rhs": 2090,
+    "final_answer": "321",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0096",
+    "prompt": "Question: Calculate: 2255 - 2201\n",
+    "expression": "2255 - 2201",
+    "lhs": 2255,
+    "rhs": 2201,
+    "final_answer": "54",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0097",
+    "prompt": "Question: Calculate: 2340 - 2085\n",
+    "expression": "2340 - 2085",
+    "lhs": 2340,
+    "rhs": 2085,
+    "final_answer": "255",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0098",
+    "prompt": "Question: Calculate: 2903 - 2656\n",
+    "expression": "2903 - 2656",
+    "lhs": 2903,
+    "rhs": 2656,
+    "final_answer": "247",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0099",
+    "prompt": "Question: Calculate: 2371 - 2364\n",
+    "expression": "2371 - 2364",
+    "lhs": 2371,
+    "rhs": 2364,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0100",
+    "prompt": "Question: Calculate: 2869 - 2200\n",
+    "expression": "2869 - 2200",
+    "lhs": 2869,
+    "rhs": 2200,
+    "final_answer": "669",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0101",
+    "prompt": "Question: Calculate: 2975 - 2055\n",
+    "expression": "2975 - 2055",
+    "lhs": 2975,
+    "rhs": 2055,
+    "final_answer": "920",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0102",
+    "prompt": "Question: Calculate: 2328 - 2064\n",
+    "expression": "2328 - 2064",
+    "lhs": 2328,
+    "rhs": 2064,
+    "final_answer": "264",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0103",
+    "prompt": "Question: Calculate: 2228 - 2039\n",
+    "expression": "2228 - 2039",
+    "lhs": 2228,
+    "rhs": 2039,
+    "final_answer": "189",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0104",
+    "prompt": "Question: Calculate: 2194 - 2060\n",
+    "expression": "2194 - 2060",
+    "lhs": 2194,
+    "rhs": 2060,
+    "final_answer": "134",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0105",
+    "prompt": "Question: Calculate: 2827 - 2314\n",
+    "expression": "2827 - 2314",
+    "lhs": 2827,
+    "rhs": 2314,
+    "final_answer": "513",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0106",
+    "prompt": "Question: Calculate: 2303 - 2010\n",
+    "expression": "2303 - 2010",
+    "lhs": 2303,
+    "rhs": 2010,
+    "final_answer": "293",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0107",
+    "prompt": "Question: Calculate: 2460 - 2451\n",
+    "expression": "2460 - 2451",
+    "lhs": 2460,
+    "rhs": 2451,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0108",
+    "prompt": "Question: Calculate: 2545 - 2090\n",
+    "expression": "2545 - 2090",
+    "lhs": 2545,
+    "rhs": 2090,
+    "final_answer": "455",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0109",
+    "prompt": "Question: Calculate: 2729 - 2687\n",
+    "expression": "2729 - 2687",
+    "lhs": 2729,
+    "rhs": 2687,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0110",
+    "prompt": "Question: Calculate: 2915 - 2102\n",
+    "expression": "2915 - 2102",
+    "lhs": 2915,
+    "rhs": 2102,
+    "final_answer": "813",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0111",
+    "prompt": "Question: Calculate: 2631 - 2048\n",
+    "expression": "2631 - 2048",
+    "lhs": 2631,
+    "rhs": 2048,
+    "final_answer": "583",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0112",
+    "prompt": "Question: Calculate: 2909 - 2758\n",
+    "expression": "2909 - 2758",
+    "lhs": 2909,
+    "rhs": 2758,
+    "final_answer": "151",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0113",
+    "prompt": "Question: Calculate: 2417 - 2369\n",
+    "expression": "2417 - 2369",
+    "lhs": 2417,
+    "rhs": 2369,
+    "final_answer": "48",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0114",
+    "prompt": "Question: Calculate: 2628 - 2562\n",
+    "expression": "2628 - 2562",
+    "lhs": 2628,
+    "rhs": 2562,
+    "final_answer": "66",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0115",
+    "prompt": "Question: Calculate: 2679 - 2310\n",
+    "expression": "2679 - 2310",
+    "lhs": 2679,
+    "rhs": 2310,
+    "final_answer": "369",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0116",
+    "prompt": "Question: Calculate: 2786 - 2320\n",
+    "expression": "2786 - 2320",
+    "lhs": 2786,
+    "rhs": 2320,
+    "final_answer": "466",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0117",
+    "prompt": "Question: Calculate: 2467 - 2327\n",
+    "expression": "2467 - 2327",
+    "lhs": 2467,
+    "rhs": 2327,
+    "final_answer": "140",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0118",
+    "prompt": "Question: Calculate: 2759 - 2416\n",
+    "expression": "2759 - 2416",
+    "lhs": 2759,
+    "rhs": 2416,
+    "final_answer": "343",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0119",
+    "prompt": "Question: Calculate: 2859 - 2724\n",
+    "expression": "2859 - 2724",
+    "lhs": 2859,
+    "rhs": 2724,
+    "final_answer": "135",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0120",
+    "prompt": "Question: Calculate: 2442 - 2243\n",
+    "expression": "2442 - 2243",
+    "lhs": 2442,
+    "rhs": 2243,
+    "final_answer": "199",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0121",
+    "prompt": "Question: Calculate: 2819 - 2767\n",
+    "expression": "2819 - 2767",
+    "lhs": 2819,
+    "rhs": 2767,
+    "final_answer": "52",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0122",
+    "prompt": "Question: Calculate: 2333 - 2312\n",
+    "expression": "2333 - 2312",
+    "lhs": 2333,
+    "rhs": 2312,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0123",
+    "prompt": "Question: Calculate: 2907 - 2310\n",
+    "expression": "2907 - 2310",
+    "lhs": 2907,
+    "rhs": 2310,
+    "final_answer": "597",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0124",
+    "prompt": "Question: Calculate: 2801 - 2122\n",
+    "expression": "2801 - 2122",
+    "lhs": 2801,
+    "rhs": 2122,
+    "final_answer": "679",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0125",
+    "prompt": "Question: Calculate: 2759 - 2571\n",
+    "expression": "2759 - 2571",
+    "lhs": 2759,
+    "rhs": 2571,
+    "final_answer": "188",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0126",
+    "prompt": "Question: Calculate: 2997 - 2188\n",
+    "expression": "2997 - 2188",
+    "lhs": 2997,
+    "rhs": 2188,
+    "final_answer": "809",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0127",
+    "prompt": "Question: Calculate: 2611 - 2605\n",
+    "expression": "2611 - 2605",
+    "lhs": 2611,
+    "rhs": 2605,
+    "final_answer": "6",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0128",
+    "prompt": "Question: Calculate: 2144 - 2100\n",
+    "expression": "2144 - 2100",
+    "lhs": 2144,
+    "rhs": 2100,
+    "final_answer": "44",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0129",
+    "prompt": "Question: Calculate: 2961 - 2416\n",
+    "expression": "2961 - 2416",
+    "lhs": 2961,
+    "rhs": 2416,
+    "final_answer": "545",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0130",
+    "prompt": "Question: Calculate: 2878 - 2628\n",
+    "expression": "2878 - 2628",
+    "lhs": 2878,
+    "rhs": 2628,
+    "final_answer": "250",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0131",
+    "prompt": "Question: Calculate: 2926 - 2612\n",
+    "expression": "2926 - 2612",
+    "lhs": 2926,
+    "rhs": 2612,
+    "final_answer": "314",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0132",
+    "prompt": "Question: Calculate: 2349 - 2273\n",
+    "expression": "2349 - 2273",
+    "lhs": 2349,
+    "rhs": 2273,
+    "final_answer": "76",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0133",
+    "prompt": "Question: Calculate: 2156 - 2056\n",
+    "expression": "2156 - 2056",
+    "lhs": 2156,
+    "rhs": 2056,
+    "final_answer": "100",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0134",
+    "prompt": "Question: Calculate: 2426 - 2314\n",
+    "expression": "2426 - 2314",
+    "lhs": 2426,
+    "rhs": 2314,
+    "final_answer": "112",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0135",
+    "prompt": "Question: Calculate: 2700 - 2084\n",
+    "expression": "2700 - 2084",
+    "lhs": 2700,
+    "rhs": 2084,
+    "final_answer": "616",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0136",
+    "prompt": "Question: Calculate: 2957 - 2632\n",
+    "expression": "2957 - 2632",
+    "lhs": 2957,
+    "rhs": 2632,
+    "final_answer": "325",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0137",
+    "prompt": "Question: Calculate: 2939 - 2751\n",
+    "expression": "2939 - 2751",
+    "lhs": 2939,
+    "rhs": 2751,
+    "final_answer": "188",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0138",
+    "prompt": "Question: Calculate: 2822 - 2105\n",
+    "expression": "2822 - 2105",
+    "lhs": 2822,
+    "rhs": 2105,
+    "final_answer": "717",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0139",
+    "prompt": "Question: Calculate: 2429 - 2023\n",
+    "expression": "2429 - 2023",
+    "lhs": 2429,
+    "rhs": 2023,
+    "final_answer": "406",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0140",
+    "prompt": "Question: Calculate: 2995 - 2107\n",
+    "expression": "2995 - 2107",
+    "lhs": 2995,
+    "rhs": 2107,
+    "final_answer": "888",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0141",
+    "prompt": "Question: Calculate: 2939 - 2711\n",
+    "expression": "2939 - 2711",
+    "lhs": 2939,
+    "rhs": 2711,
+    "final_answer": "228",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0142",
+    "prompt": "Question: Calculate: 2766 - 2391\n",
+    "expression": "2766 - 2391",
+    "lhs": 2766,
+    "rhs": 2391,
+    "final_answer": "375",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0143",
+    "prompt": "Question: Calculate: 2656 - 2389\n",
+    "expression": "2656 - 2389",
+    "lhs": 2656,
+    "rhs": 2389,
+    "final_answer": "267",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0144",
+    "prompt": "Question: Calculate: 2706 - 2630\n",
+    "expression": "2706 - 2630",
+    "lhs": 2706,
+    "rhs": 2630,
+    "final_answer": "76",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0145",
+    "prompt": "Question: Calculate: 2095 - 2017\n",
+    "expression": "2095 - 2017",
+    "lhs": 2095,
+    "rhs": 2017,
+    "final_answer": "78",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0146",
+    "prompt": "Question: Calculate: 2916 - 2060\n",
+    "expression": "2916 - 2060",
+    "lhs": 2916,
+    "rhs": 2060,
+    "final_answer": "856",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0147",
+    "prompt": "Question: Calculate: 2909 - 2771\n",
+    "expression": "2909 - 2771",
+    "lhs": 2909,
+    "rhs": 2771,
+    "final_answer": "138",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0148",
+    "prompt": "Question: Calculate: 2870 - 2860\n",
+    "expression": "2870 - 2860",
+    "lhs": 2870,
+    "rhs": 2860,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0149",
+    "prompt": "Question: Calculate: 2744 - 2719\n",
+    "expression": "2744 - 2719",
+    "lhs": 2744,
+    "rhs": 2719,
+    "final_answer": "25",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0150",
+    "prompt": "Question: Calculate: 2651 - 2539\n",
+    "expression": "2651 - 2539",
+    "lhs": 2651,
+    "rhs": 2539,
+    "final_answer": "112",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0151",
+    "prompt": "Question: Calculate: 2163 - 2135\n",
+    "expression": "2163 - 2135",
+    "lhs": 2163,
+    "rhs": 2135,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0152",
+    "prompt": "Question: Calculate: 2680 - 2256\n",
+    "expression": "2680 - 2256",
+    "lhs": 2680,
+    "rhs": 2256,
+    "final_answer": "424",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0153",
+    "prompt": "Question: Calculate: 2819 - 2137\n",
+    "expression": "2819 - 2137",
+    "lhs": 2819,
+    "rhs": 2137,
+    "final_answer": "682",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0154",
+    "prompt": "Question: Calculate: 2757 - 2126\n",
+    "expression": "2757 - 2126",
+    "lhs": 2757,
+    "rhs": 2126,
+    "final_answer": "631",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0155",
+    "prompt": "Question: Calculate: 2548 - 2414\n",
+    "expression": "2548 - 2414",
+    "lhs": 2548,
+    "rhs": 2414,
+    "final_answer": "134",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0156",
+    "prompt": "Question: Calculate: 2427 - 2144\n",
+    "expression": "2427 - 2144",
+    "lhs": 2427,
+    "rhs": 2144,
+    "final_answer": "283",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0157",
+    "prompt": "Question: Calculate: 2844 - 2515\n",
+    "expression": "2844 - 2515",
+    "lhs": 2844,
+    "rhs": 2515,
+    "final_answer": "329",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0158",
+    "prompt": "Question: Calculate: 2947 - 2128\n",
+    "expression": "2947 - 2128",
+    "lhs": 2947,
+    "rhs": 2128,
+    "final_answer": "819",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0159",
+    "prompt": "Question: Calculate: 2703 - 2155\n",
+    "expression": "2703 - 2155",
+    "lhs": 2703,
+    "rhs": 2155,
+    "final_answer": "548",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0160",
+    "prompt": "Question: Calculate: 2648 - 2085\n",
+    "expression": "2648 - 2085",
+    "lhs": 2648,
+    "rhs": 2085,
+    "final_answer": "563",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0161",
+    "prompt": "Question: Calculate: 2830 - 2511\n",
+    "expression": "2830 - 2511",
+    "lhs": 2830,
+    "rhs": 2511,
+    "final_answer": "319",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0162",
+    "prompt": "Question: Calculate: 2950 - 2364\n",
+    "expression": "2950 - 2364",
+    "lhs": 2950,
+    "rhs": 2364,
+    "final_answer": "586",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0163",
+    "prompt": "Question: Calculate: 2653 - 2411\n",
+    "expression": "2653 - 2411",
+    "lhs": 2653,
+    "rhs": 2411,
+    "final_answer": "242",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0164",
+    "prompt": "Question: Calculate: 2665 - 2174\n",
+    "expression": "2665 - 2174",
+    "lhs": 2665,
+    "rhs": 2174,
+    "final_answer": "491",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0165",
+    "prompt": "Question: Calculate: 2800 - 2390\n",
+    "expression": "2800 - 2390",
+    "lhs": 2800,
+    "rhs": 2390,
+    "final_answer": "410",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0166",
+    "prompt": "Question: Calculate: 2855 - 2633\n",
+    "expression": "2855 - 2633",
+    "lhs": 2855,
+    "rhs": 2633,
+    "final_answer": "222",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0167",
+    "prompt": "Question: Calculate: 2797 - 2582\n",
+    "expression": "2797 - 2582",
+    "lhs": 2797,
+    "rhs": 2582,
+    "final_answer": "215",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0168",
+    "prompt": "Question: Calculate: 2977 - 2390\n",
+    "expression": "2977 - 2390",
+    "lhs": 2977,
+    "rhs": 2390,
+    "final_answer": "587",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0169",
+    "prompt": "Question: Calculate: 2149 - 2031\n",
+    "expression": "2149 - 2031",
+    "lhs": 2149,
+    "rhs": 2031,
+    "final_answer": "118",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0170",
+    "prompt": "Question: Calculate: 2541 - 2198\n",
+    "expression": "2541 - 2198",
+    "lhs": 2541,
+    "rhs": 2198,
+    "final_answer": "343",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0171",
+    "prompt": "Question: Calculate: 2646 - 2277\n",
+    "expression": "2646 - 2277",
+    "lhs": 2646,
+    "rhs": 2277,
+    "final_answer": "369",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0172",
+    "prompt": "Question: Calculate: 2586 - 2508\n",
+    "expression": "2586 - 2508",
+    "lhs": 2586,
+    "rhs": 2508,
+    "final_answer": "78",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0173",
+    "prompt": "Question: Calculate: 2954 - 2818\n",
+    "expression": "2954 - 2818",
+    "lhs": 2954,
+    "rhs": 2818,
+    "final_answer": "136",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0174",
+    "prompt": "Question: Calculate: 2725 - 2088\n",
+    "expression": "2725 - 2088",
+    "lhs": 2725,
+    "rhs": 2088,
+    "final_answer": "637",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0175",
+    "prompt": "Question: Calculate: 2763 - 2003\n",
+    "expression": "2763 - 2003",
+    "lhs": 2763,
+    "rhs": 2003,
+    "final_answer": "760",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0176",
+    "prompt": "Question: Calculate: 2353 - 2011\n",
+    "expression": "2353 - 2011",
+    "lhs": 2353,
+    "rhs": 2011,
+    "final_answer": "342",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0177",
+    "prompt": "Question: Calculate: 2582 - 2235\n",
+    "expression": "2582 - 2235",
+    "lhs": 2582,
+    "rhs": 2235,
+    "final_answer": "347",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0178",
+    "prompt": "Question: Calculate: 2677 - 2142\n",
+    "expression": "2677 - 2142",
+    "lhs": 2677,
+    "rhs": 2142,
+    "final_answer": "535",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0179",
+    "prompt": "Question: Calculate: 2818 - 2649\n",
+    "expression": "2818 - 2649",
+    "lhs": 2818,
+    "rhs": 2649,
+    "final_answer": "169",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0180",
+    "prompt": "Question: Calculate: 2944 - 2648\n",
+    "expression": "2944 - 2648",
+    "lhs": 2944,
+    "rhs": 2648,
+    "final_answer": "296",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0181",
+    "prompt": "Question: Calculate: 2969 - 2959\n",
+    "expression": "2969 - 2959",
+    "lhs": 2969,
+    "rhs": 2959,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0182",
+    "prompt": "Question: Calculate: 2648 - 2360\n",
+    "expression": "2648 - 2360",
+    "lhs": 2648,
+    "rhs": 2360,
+    "final_answer": "288",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0183",
+    "prompt": "Question: Calculate: 2504 - 2132\n",
+    "expression": "2504 - 2132",
+    "lhs": 2504,
+    "rhs": 2132,
+    "final_answer": "372",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0184",
+    "prompt": "Question: Calculate: 2778 - 2135\n",
+    "expression": "2778 - 2135",
+    "lhs": 2778,
+    "rhs": 2135,
+    "final_answer": "643",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0185",
+    "prompt": "Question: Calculate: 2642 - 2564\n",
+    "expression": "2642 - 2564",
+    "lhs": 2642,
+    "rhs": 2564,
+    "final_answer": "78",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0186",
+    "prompt": "Question: Calculate: 2466 - 2050\n",
+    "expression": "2466 - 2050",
+    "lhs": 2466,
+    "rhs": 2050,
+    "final_answer": "416",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0187",
+    "prompt": "Question: Calculate: 2720 - 2206\n",
+    "expression": "2720 - 2206",
+    "lhs": 2720,
+    "rhs": 2206,
+    "final_answer": "514",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0188",
+    "prompt": "Question: Calculate: 2161 - 2149\n",
+    "expression": "2161 - 2149",
+    "lhs": 2161,
+    "rhs": 2149,
+    "final_answer": "12",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0189",
+    "prompt": "Question: Calculate: 2047 - 2031\n",
+    "expression": "2047 - 2031",
+    "lhs": 2047,
+    "rhs": 2031,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0190",
+    "prompt": "Question: Calculate: 2983 - 2660\n",
+    "expression": "2983 - 2660",
+    "lhs": 2983,
+    "rhs": 2660,
+    "final_answer": "323",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0191",
+    "prompt": "Question: Calculate: 2676 - 2474\n",
+    "expression": "2676 - 2474",
+    "lhs": 2676,
+    "rhs": 2474,
+    "final_answer": "202",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0192",
+    "prompt": "Question: Calculate: 2934 - 2865\n",
+    "expression": "2934 - 2865",
+    "lhs": 2934,
+    "rhs": 2865,
+    "final_answer": "69",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0193",
+    "prompt": "Question: Calculate: 2572 - 2273\n",
+    "expression": "2572 - 2273",
+    "lhs": 2572,
+    "rhs": 2273,
+    "final_answer": "299",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0194",
+    "prompt": "Question: Calculate: 2630 - 2347\n",
+    "expression": "2630 - 2347",
+    "lhs": 2630,
+    "rhs": 2347,
+    "final_answer": "283",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0195",
+    "prompt": "Question: Calculate: 2752 - 2505\n",
+    "expression": "2752 - 2505",
+    "lhs": 2752,
+    "rhs": 2505,
+    "final_answer": "247",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0196",
+    "prompt": "Question: Calculate: 2260 - 2131\n",
+    "expression": "2260 - 2131",
+    "lhs": 2260,
+    "rhs": 2131,
+    "final_answer": "129",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0197",
+    "prompt": "Question: Calculate: 2824 - 2195\n",
+    "expression": "2824 - 2195",
+    "lhs": 2824,
+    "rhs": 2195,
+    "final_answer": "629",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0198",
+    "prompt": "Question: Calculate: 2569 - 2474\n",
+    "expression": "2569 - 2474",
+    "lhs": 2569,
+    "rhs": 2474,
+    "final_answer": "95",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0199",
+    "prompt": "Question: Calculate: 2961 - 2125\n",
+    "expression": "2961 - 2125",
+    "lhs": 2961,
+    "rhs": 2125,
+    "final_answer": "836",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0200",
+    "prompt": "Question: Calculate: 2624 - 2148\n",
+    "expression": "2624 - 2148",
+    "lhs": 2624,
+    "rhs": 2148,
+    "final_answer": "476",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0201",
+    "prompt": "Question: Calculate: 2358 - 2090\n",
+    "expression": "2358 - 2090",
+    "lhs": 2358,
+    "rhs": 2090,
+    "final_answer": "268",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0202",
+    "prompt": "Question: Calculate: 2342 - 2302\n",
+    "expression": "2342 - 2302",
+    "lhs": 2342,
+    "rhs": 2302,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0203",
+    "prompt": "Question: Calculate: 2922 - 2190\n",
+    "expression": "2922 - 2190",
+    "lhs": 2922,
+    "rhs": 2190,
+    "final_answer": "732",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0204",
+    "prompt": "Question: Calculate: 2830 - 2734\n",
+    "expression": "2830 - 2734",
+    "lhs": 2830,
+    "rhs": 2734,
+    "final_answer": "96",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0205",
+    "prompt": "Question: Calculate: 2339 - 2045\n",
+    "expression": "2339 - 2045",
+    "lhs": 2339,
+    "rhs": 2045,
+    "final_answer": "294",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0206",
+    "prompt": "Question: Calculate: 2693 - 2524\n",
+    "expression": "2693 - 2524",
+    "lhs": 2693,
+    "rhs": 2524,
+    "final_answer": "169",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0207",
+    "prompt": "Question: Calculate: 2947 - 2905\n",
+    "expression": "2947 - 2905",
+    "lhs": 2947,
+    "rhs": 2905,
+    "final_answer": "42",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0208",
+    "prompt": "Question: Calculate: 2822 - 2657\n",
+    "expression": "2822 - 2657",
+    "lhs": 2822,
+    "rhs": 2657,
+    "final_answer": "165",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0209",
+    "prompt": "Question: Calculate: 2723 - 2023\n",
+    "expression": "2723 - 2023",
+    "lhs": 2723,
+    "rhs": 2023,
+    "final_answer": "700",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0210",
+    "prompt": "Question: Calculate: 2952 - 2150\n",
+    "expression": "2952 - 2150",
+    "lhs": 2952,
+    "rhs": 2150,
+    "final_answer": "802",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0211",
+    "prompt": "Question: Calculate: 2935 - 2646\n",
+    "expression": "2935 - 2646",
+    "lhs": 2935,
+    "rhs": 2646,
+    "final_answer": "289",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0212",
+    "prompt": "Question: Calculate: 2970 - 2528\n",
+    "expression": "2970 - 2528",
+    "lhs": 2970,
+    "rhs": 2528,
+    "final_answer": "442",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0213",
+    "prompt": "Question: Calculate: 2409 - 2016\n",
+    "expression": "2409 - 2016",
+    "lhs": 2409,
+    "rhs": 2016,
+    "final_answer": "393",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0214",
+    "prompt": "Question: Calculate: 2825 - 2389\n",
+    "expression": "2825 - 2389",
+    "lhs": 2825,
+    "rhs": 2389,
+    "final_answer": "436",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0215",
+    "prompt": "Question: Calculate: 2294 - 2044\n",
+    "expression": "2294 - 2044",
+    "lhs": 2294,
+    "rhs": 2044,
+    "final_answer": "250",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0216",
+    "prompt": "Question: Calculate: 2565 - 2029\n",
+    "expression": "2565 - 2029",
+    "lhs": 2565,
+    "rhs": 2029,
+    "final_answer": "536",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0217",
+    "prompt": "Question: Calculate: 2810 - 2177\n",
+    "expression": "2810 - 2177",
+    "lhs": 2810,
+    "rhs": 2177,
+    "final_answer": "633",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0218",
+    "prompt": "Question: Calculate: 2957 - 2851\n",
+    "expression": "2957 - 2851",
+    "lhs": 2957,
+    "rhs": 2851,
+    "final_answer": "106",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0219",
+    "prompt": "Question: Calculate: 2268 - 2186\n",
+    "expression": "2268 - 2186",
+    "lhs": 2268,
+    "rhs": 2186,
+    "final_answer": "82",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0220",
+    "prompt": "Question: Calculate: 2428 - 2013\n",
+    "expression": "2428 - 2013",
+    "lhs": 2428,
+    "rhs": 2013,
+    "final_answer": "415",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0221",
+    "prompt": "Question: Calculate: 2801 - 2367\n",
+    "expression": "2801 - 2367",
+    "lhs": 2801,
+    "rhs": 2367,
+    "final_answer": "434",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0222",
+    "prompt": "Question: Calculate: 2867 - 2307\n",
+    "expression": "2867 - 2307",
+    "lhs": 2867,
+    "rhs": 2307,
+    "final_answer": "560",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0223",
+    "prompt": "Question: Calculate: 2907 - 2488\n",
+    "expression": "2907 - 2488",
+    "lhs": 2907,
+    "rhs": 2488,
+    "final_answer": "419",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0224",
+    "prompt": "Question: Calculate: 2461 - 2269\n",
+    "expression": "2461 - 2269",
+    "lhs": 2461,
+    "rhs": 2269,
+    "final_answer": "192",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0225",
+    "prompt": "Question: Calculate: 2977 - 2823\n",
+    "expression": "2977 - 2823",
+    "lhs": 2977,
+    "rhs": 2823,
+    "final_answer": "154",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0226",
+    "prompt": "Question: Calculate: 2709 - 2408\n",
+    "expression": "2709 - 2408",
+    "lhs": 2709,
+    "rhs": 2408,
+    "final_answer": "301",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0227",
+    "prompt": "Question: Calculate: 2989 - 2621\n",
+    "expression": "2989 - 2621",
+    "lhs": 2989,
+    "rhs": 2621,
+    "final_answer": "368",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0228",
+    "prompt": "Question: Calculate: 2349 - 2042\n",
+    "expression": "2349 - 2042",
+    "lhs": 2349,
+    "rhs": 2042,
+    "final_answer": "307",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0229",
+    "prompt": "Question: Calculate: 2735 - 2593\n",
+    "expression": "2735 - 2593",
+    "lhs": 2735,
+    "rhs": 2593,
+    "final_answer": "142",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0230",
+    "prompt": "Question: Calculate: 2263 - 2023\n",
+    "expression": "2263 - 2023",
+    "lhs": 2263,
+    "rhs": 2023,
+    "final_answer": "240",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0231",
+    "prompt": "Question: Calculate: 2891 - 2085\n",
+    "expression": "2891 - 2085",
+    "lhs": 2891,
+    "rhs": 2085,
+    "final_answer": "806",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0232",
+    "prompt": "Question: Calculate: 2649 - 2514\n",
+    "expression": "2649 - 2514",
+    "lhs": 2649,
+    "rhs": 2514,
+    "final_answer": "135",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0233",
+    "prompt": "Question: Calculate: 2995 - 2746\n",
+    "expression": "2995 - 2746",
+    "lhs": 2995,
+    "rhs": 2746,
+    "final_answer": "249",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0234",
+    "prompt": "Question: Calculate: 2598 - 2517\n",
+    "expression": "2598 - 2517",
+    "lhs": 2598,
+    "rhs": 2517,
+    "final_answer": "81",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0235",
+    "prompt": "Question: Calculate: 2446 - 2338\n",
+    "expression": "2446 - 2338",
+    "lhs": 2446,
+    "rhs": 2338,
+    "final_answer": "108",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0236",
+    "prompt": "Question: Calculate: 2986 - 2401\n",
+    "expression": "2986 - 2401",
+    "lhs": 2986,
+    "rhs": 2401,
+    "final_answer": "585",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0237",
+    "prompt": "Question: Calculate: 2704 - 2265\n",
+    "expression": "2704 - 2265",
+    "lhs": 2704,
+    "rhs": 2265,
+    "final_answer": "439",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0238",
+    "prompt": "Question: Calculate: 2209 - 2036\n",
+    "expression": "2209 - 2036",
+    "lhs": 2209,
+    "rhs": 2036,
+    "final_answer": "173",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0239",
+    "prompt": "Question: Calculate: 2922 - 2096\n",
+    "expression": "2922 - 2096",
+    "lhs": 2922,
+    "rhs": 2096,
+    "final_answer": "826",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0240",
+    "prompt": "Question: Calculate: 2398 - 2337\n",
+    "expression": "2398 - 2337",
+    "lhs": 2398,
+    "rhs": 2337,
+    "final_answer": "61",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0241",
+    "prompt": "Question: Calculate: 2861 - 2642\n",
+    "expression": "2861 - 2642",
+    "lhs": 2861,
+    "rhs": 2642,
+    "final_answer": "219",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0242",
+    "prompt": "Question: Calculate: 2441 - 2362\n",
+    "expression": "2441 - 2362",
+    "lhs": 2441,
+    "rhs": 2362,
+    "final_answer": "79",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0243",
+    "prompt": "Question: Calculate: 2824 - 2137\n",
+    "expression": "2824 - 2137",
+    "lhs": 2824,
+    "rhs": 2137,
+    "final_answer": "687",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0244",
+    "prompt": "Question: Calculate: 2527 - 2225\n",
+    "expression": "2527 - 2225",
+    "lhs": 2527,
+    "rhs": 2225,
+    "final_answer": "302",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0245",
+    "prompt": "Question: Calculate: 2572 - 2503\n",
+    "expression": "2572 - 2503",
+    "lhs": 2572,
+    "rhs": 2503,
+    "final_answer": "69",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0246",
+    "prompt": "Question: Calculate: 2543 - 2520\n",
+    "expression": "2543 - 2520",
+    "lhs": 2543,
+    "rhs": 2520,
+    "final_answer": "23",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0247",
+    "prompt": "Question: Calculate: 2948 - 2522\n",
+    "expression": "2948 - 2522",
+    "lhs": 2948,
+    "rhs": 2522,
+    "final_answer": "426",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0248",
+    "prompt": "Question: Calculate: 2745 - 2453\n",
+    "expression": "2745 - 2453",
+    "lhs": 2745,
+    "rhs": 2453,
+    "final_answer": "292",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0249",
+    "prompt": "Question: Calculate: 2901 - 2390\n",
+    "expression": "2901 - 2390",
+    "lhs": 2901,
+    "rhs": 2390,
+    "final_answer": "511",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0250",
+    "prompt": "Question: Calculate: 2435 - 2355\n",
+    "expression": "2435 - 2355",
+    "lhs": 2435,
+    "rhs": 2355,
+    "final_answer": "80",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0251",
+    "prompt": "Question: Calculate: 2933 - 2713\n",
+    "expression": "2933 - 2713",
+    "lhs": 2933,
+    "rhs": 2713,
+    "final_answer": "220",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0252",
+    "prompt": "Question: Calculate: 2638 - 2628\n",
+    "expression": "2638 - 2628",
+    "lhs": 2638,
+    "rhs": 2628,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0253",
+    "prompt": "Question: Calculate: 2849 - 2243\n",
+    "expression": "2849 - 2243",
+    "lhs": 2849,
+    "rhs": 2243,
+    "final_answer": "606",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0254",
+    "prompt": "Question: Calculate: 2210 - 2075\n",
+    "expression": "2210 - 2075",
+    "lhs": 2210,
+    "rhs": 2075,
+    "final_answer": "135",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0255",
+    "prompt": "Question: Calculate: 2674 - 2398\n",
+    "expression": "2674 - 2398",
+    "lhs": 2674,
+    "rhs": 2398,
+    "final_answer": "276",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0256",
+    "prompt": "Question: Calculate: 2981 - 2053\n",
+    "expression": "2981 - 2053",
+    "lhs": 2981,
+    "rhs": 2053,
+    "final_answer": "928",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0257",
+    "prompt": "Question: Calculate: 2662 - 2426\n",
+    "expression": "2662 - 2426",
+    "lhs": 2662,
+    "rhs": 2426,
+    "final_answer": "236",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0258",
+    "prompt": "Question: Calculate: 2906 - 2131\n",
+    "expression": "2906 - 2131",
+    "lhs": 2906,
+    "rhs": 2131,
+    "final_answer": "775",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0259",
+    "prompt": "Question: Calculate: 2949 - 2141\n",
+    "expression": "2949 - 2141",
+    "lhs": 2949,
+    "rhs": 2141,
+    "final_answer": "808",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0260",
+    "prompt": "Question: Calculate: 2863 - 2605\n",
+    "expression": "2863 - 2605",
+    "lhs": 2863,
+    "rhs": 2605,
+    "final_answer": "258",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0261",
+    "prompt": "Question: Calculate: 2905 - 2023\n",
+    "expression": "2905 - 2023",
+    "lhs": 2905,
+    "rhs": 2023,
+    "final_answer": "882",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0262",
+    "prompt": "Question: Calculate: 2100 - 2090\n",
+    "expression": "2100 - 2090",
+    "lhs": 2100,
+    "rhs": 2090,
+    "final_answer": "10",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0263",
+    "prompt": "Question: Calculate: 2818 - 2744\n",
+    "expression": "2818 - 2744",
+    "lhs": 2818,
+    "rhs": 2744,
+    "final_answer": "74",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0264",
+    "prompt": "Question: Calculate: 2888 - 2198\n",
+    "expression": "2888 - 2198",
+    "lhs": 2888,
+    "rhs": 2198,
+    "final_answer": "690",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0265",
+    "prompt": "Question: Calculate: 2569 - 2391\n",
+    "expression": "2569 - 2391",
+    "lhs": 2569,
+    "rhs": 2391,
+    "final_answer": "178",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0266",
+    "prompt": "Question: Calculate: 2944 - 2009\n",
+    "expression": "2944 - 2009",
+    "lhs": 2944,
+    "rhs": 2009,
+    "final_answer": "935",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0267",
+    "prompt": "Question: Calculate: 2493 - 2286\n",
+    "expression": "2493 - 2286",
+    "lhs": 2493,
+    "rhs": 2286,
+    "final_answer": "207",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0268",
+    "prompt": "Question: Calculate: 2850 - 2603\n",
+    "expression": "2850 - 2603",
+    "lhs": 2850,
+    "rhs": 2603,
+    "final_answer": "247",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0269",
+    "prompt": "Question: Calculate: 2681 - 2283\n",
+    "expression": "2681 - 2283",
+    "lhs": 2681,
+    "rhs": 2283,
+    "final_answer": "398",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0270",
+    "prompt": "Question: Calculate: 2771 - 2457\n",
+    "expression": "2771 - 2457",
+    "lhs": 2771,
+    "rhs": 2457,
+    "final_answer": "314",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0271",
+    "prompt": "Question: Calculate: 2924 - 2903\n",
+    "expression": "2924 - 2903",
+    "lhs": 2924,
+    "rhs": 2903,
+    "final_answer": "21",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0272",
+    "prompt": "Question: Calculate: 2771 - 2081\n",
+    "expression": "2771 - 2081",
+    "lhs": 2771,
+    "rhs": 2081,
+    "final_answer": "690",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0273",
+    "prompt": "Question: Calculate: 2630 - 2591\n",
+    "expression": "2630 - 2591",
+    "lhs": 2630,
+    "rhs": 2591,
+    "final_answer": "39",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0274",
+    "prompt": "Question: Calculate: 2219 - 2015\n",
+    "expression": "2219 - 2015",
+    "lhs": 2219,
+    "rhs": 2015,
+    "final_answer": "204",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0275",
+    "prompt": "Question: Calculate: 2521 - 2017\n",
+    "expression": "2521 - 2017",
+    "lhs": 2521,
+    "rhs": 2017,
+    "final_answer": "504",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0276",
+    "prompt": "Question: Calculate: 2337 - 2212\n",
+    "expression": "2337 - 2212",
+    "lhs": 2337,
+    "rhs": 2212,
+    "final_answer": "125",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0277",
+    "prompt": "Question: Calculate: 2778 - 2124\n",
+    "expression": "2778 - 2124",
+    "lhs": 2778,
+    "rhs": 2124,
+    "final_answer": "654",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0278",
+    "prompt": "Question: Calculate: 2747 - 2738\n",
+    "expression": "2747 - 2738",
+    "lhs": 2747,
+    "rhs": 2738,
+    "final_answer": "9",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0279",
+    "prompt": "Question: Calculate: 2877 - 2262\n",
+    "expression": "2877 - 2262",
+    "lhs": 2877,
+    "rhs": 2262,
+    "final_answer": "615",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0280",
+    "prompt": "Question: Calculate: 2600 - 2533\n",
+    "expression": "2600 - 2533",
+    "lhs": 2600,
+    "rhs": 2533,
+    "final_answer": "67",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0281",
+    "prompt": "Question: Calculate: 2816 - 2783\n",
+    "expression": "2816 - 2783",
+    "lhs": 2816,
+    "rhs": 2783,
+    "final_answer": "33",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0282",
+    "prompt": "Question: Calculate: 2747 - 2330\n",
+    "expression": "2747 - 2330",
+    "lhs": 2747,
+    "rhs": 2330,
+    "final_answer": "417",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0283",
+    "prompt": "Question: Calculate: 2573 - 2251\n",
+    "expression": "2573 - 2251",
+    "lhs": 2573,
+    "rhs": 2251,
+    "final_answer": "322",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0284",
+    "prompt": "Question: Calculate: 2973 - 2172\n",
+    "expression": "2973 - 2172",
+    "lhs": 2973,
+    "rhs": 2172,
+    "final_answer": "801",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0285",
+    "prompt": "Question: Calculate: 2735 - 2583\n",
+    "expression": "2735 - 2583",
+    "lhs": 2735,
+    "rhs": 2583,
+    "final_answer": "152",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0286",
+    "prompt": "Question: Calculate: 2315 - 2296\n",
+    "expression": "2315 - 2296",
+    "lhs": 2315,
+    "rhs": 2296,
+    "final_answer": "19",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0287",
+    "prompt": "Question: Calculate: 2603 - 2075\n",
+    "expression": "2603 - 2075",
+    "lhs": 2603,
+    "rhs": 2075,
+    "final_answer": "528",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0288",
+    "prompt": "Question: Calculate: 2771 - 2728\n",
+    "expression": "2771 - 2728",
+    "lhs": 2771,
+    "rhs": 2728,
+    "final_answer": "43",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0289",
+    "prompt": "Question: Calculate: 2265 - 2124\n",
+    "expression": "2265 - 2124",
+    "lhs": 2265,
+    "rhs": 2124,
+    "final_answer": "141",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0290",
+    "prompt": "Question: Calculate: 2828 - 2470\n",
+    "expression": "2828 - 2470",
+    "lhs": 2828,
+    "rhs": 2470,
+    "final_answer": "358",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0291",
+    "prompt": "Question: Calculate: 2748 - 2576\n",
+    "expression": "2748 - 2576",
+    "lhs": 2748,
+    "rhs": 2576,
+    "final_answer": "172",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0292",
+    "prompt": "Question: Calculate: 2980 - 2048\n",
+    "expression": "2980 - 2048",
+    "lhs": 2980,
+    "rhs": 2048,
+    "final_answer": "932",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0293",
+    "prompt": "Question: Calculate: 2370 - 2238\n",
+    "expression": "2370 - 2238",
+    "lhs": 2370,
+    "rhs": 2238,
+    "final_answer": "132",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0294",
+    "prompt": "Question: Calculate: 2451 - 2315\n",
+    "expression": "2451 - 2315",
+    "lhs": 2451,
+    "rhs": 2315,
+    "final_answer": "136",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0295",
+    "prompt": "Question: Calculate: 2574 - 2131\n",
+    "expression": "2574 - 2131",
+    "lhs": 2574,
+    "rhs": 2131,
+    "final_answer": "443",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0296",
+    "prompt": "Question: Calculate: 2602 - 2245\n",
+    "expression": "2602 - 2245",
+    "lhs": 2602,
+    "rhs": 2245,
+    "final_answer": "357",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0297",
+    "prompt": "Question: Calculate: 2903 - 2367\n",
+    "expression": "2903 - 2367",
+    "lhs": 2903,
+    "rhs": 2367,
+    "final_answer": "536",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0298",
+    "prompt": "Question: Calculate: 2980 - 2095\n",
+    "expression": "2980 - 2095",
+    "lhs": 2980,
+    "rhs": 2095,
+    "final_answer": "885",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0299",
+    "prompt": "Question: Calculate: 2753 - 2418\n",
+    "expression": "2753 - 2418",
+    "lhs": 2753,
+    "rhs": 2418,
+    "final_answer": "335",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0300",
+    "prompt": "Question: Calculate: 2485 - 2220\n",
+    "expression": "2485 - 2220",
+    "lhs": 2485,
+    "rhs": 2220,
+    "final_answer": "265",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0301",
+    "prompt": "Question: Calculate: 2654 - 2057\n",
+    "expression": "2654 - 2057",
+    "lhs": 2654,
+    "rhs": 2057,
+    "final_answer": "597",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0302",
+    "prompt": "Question: Calculate: 2839 - 2577\n",
+    "expression": "2839 - 2577",
+    "lhs": 2839,
+    "rhs": 2577,
+    "final_answer": "262",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0303",
+    "prompt": "Question: Calculate: 2746 - 2339\n",
+    "expression": "2746 - 2339",
+    "lhs": 2746,
+    "rhs": 2339,
+    "final_answer": "407",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0304",
+    "prompt": "Question: Calculate: 2226 - 2129\n",
+    "expression": "2226 - 2129",
+    "lhs": 2226,
+    "rhs": 2129,
+    "final_answer": "97",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0305",
+    "prompt": "Question: Calculate: 2747 - 2673\n",
+    "expression": "2747 - 2673",
+    "lhs": 2747,
+    "rhs": 2673,
+    "final_answer": "74",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0306",
+    "prompt": "Question: Calculate: 2505 - 2403\n",
+    "expression": "2505 - 2403",
+    "lhs": 2505,
+    "rhs": 2403,
+    "final_answer": "102",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0307",
+    "prompt": "Question: Calculate: 2827 - 2008\n",
+    "expression": "2827 - 2008",
+    "lhs": 2827,
+    "rhs": 2008,
+    "final_answer": "819",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0308",
+    "prompt": "Question: Calculate: 2569 - 2261\n",
+    "expression": "2569 - 2261",
+    "lhs": 2569,
+    "rhs": 2261,
+    "final_answer": "308",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0309",
+    "prompt": "Question: Calculate: 2885 - 2522\n",
+    "expression": "2885 - 2522",
+    "lhs": 2885,
+    "rhs": 2522,
+    "final_answer": "363",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0310",
+    "prompt": "Question: Calculate: 2777 - 2529\n",
+    "expression": "2777 - 2529",
+    "lhs": 2777,
+    "rhs": 2529,
+    "final_answer": "248",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0311",
+    "prompt": "Question: Calculate: 2834 - 2413\n",
+    "expression": "2834 - 2413",
+    "lhs": 2834,
+    "rhs": 2413,
+    "final_answer": "421",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0312",
+    "prompt": "Question: Calculate: 2641 - 2541\n",
+    "expression": "2641 - 2541",
+    "lhs": 2641,
+    "rhs": 2541,
+    "final_answer": "100",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0313",
+    "prompt": "Question: Calculate: 2788 - 2766\n",
+    "expression": "2788 - 2766",
+    "lhs": 2788,
+    "rhs": 2766,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0314",
+    "prompt": "Question: Calculate: 2854 - 2423\n",
+    "expression": "2854 - 2423",
+    "lhs": 2854,
+    "rhs": 2423,
+    "final_answer": "431",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0315",
+    "prompt": "Question: Calculate: 2818 - 2339\n",
+    "expression": "2818 - 2339",
+    "lhs": 2818,
+    "rhs": 2339,
+    "final_answer": "479",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0316",
+    "prompt": "Question: Calculate: 2705 - 2389\n",
+    "expression": "2705 - 2389",
+    "lhs": 2705,
+    "rhs": 2389,
+    "final_answer": "316",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0317",
+    "prompt": "Question: Calculate: 2676 - 2152\n",
+    "expression": "2676 - 2152",
+    "lhs": 2676,
+    "rhs": 2152,
+    "final_answer": "524",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0318",
+    "prompt": "Question: Calculate: 2912 - 2607\n",
+    "expression": "2912 - 2607",
+    "lhs": 2912,
+    "rhs": 2607,
+    "final_answer": "305",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0319",
+    "prompt": "Question: Calculate: 2376 - 2170\n",
+    "expression": "2376 - 2170",
+    "lhs": 2376,
+    "rhs": 2170,
+    "final_answer": "206",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0320",
+    "prompt": "Question: Calculate: 2792 - 2679\n",
+    "expression": "2792 - 2679",
+    "lhs": 2792,
+    "rhs": 2679,
+    "final_answer": "113",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0321",
+    "prompt": "Question: Calculate: 2961 - 2678\n",
+    "expression": "2961 - 2678",
+    "lhs": 2961,
+    "rhs": 2678,
+    "final_answer": "283",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0322",
+    "prompt": "Question: Calculate: 2679 - 2547\n",
+    "expression": "2679 - 2547",
+    "lhs": 2679,
+    "rhs": 2547,
+    "final_answer": "132",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0323",
+    "prompt": "Question: Calculate: 2893 - 2190\n",
+    "expression": "2893 - 2190",
+    "lhs": 2893,
+    "rhs": 2190,
+    "final_answer": "703",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0324",
+    "prompt": "Question: Calculate: 2907 - 2162\n",
+    "expression": "2907 - 2162",
+    "lhs": 2907,
+    "rhs": 2162,
+    "final_answer": "745",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0325",
+    "prompt": "Question: Calculate: 2927 - 2538\n",
+    "expression": "2927 - 2538",
+    "lhs": 2927,
+    "rhs": 2538,
+    "final_answer": "389",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0326",
+    "prompt": "Question: Calculate: 2734 - 2168\n",
+    "expression": "2734 - 2168",
+    "lhs": 2734,
+    "rhs": 2168,
+    "final_answer": "566",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0327",
+    "prompt": "Question: Calculate: 2922 - 2549\n",
+    "expression": "2922 - 2549",
+    "lhs": 2922,
+    "rhs": 2549,
+    "final_answer": "373",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0328",
+    "prompt": "Question: Calculate: 2778 - 2001\n",
+    "expression": "2778 - 2001",
+    "lhs": 2778,
+    "rhs": 2001,
+    "final_answer": "777",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0329",
+    "prompt": "Question: Calculate: 2782 - 2113\n",
+    "expression": "2782 - 2113",
+    "lhs": 2782,
+    "rhs": 2113,
+    "final_answer": "669",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0330",
+    "prompt": "Question: Calculate: 2539 - 2223\n",
+    "expression": "2539 - 2223",
+    "lhs": 2539,
+    "rhs": 2223,
+    "final_answer": "316",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0331",
+    "prompt": "Question: Calculate: 2251 - 2157\n",
+    "expression": "2251 - 2157",
+    "lhs": 2251,
+    "rhs": 2157,
+    "final_answer": "94",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0332",
+    "prompt": "Question: Calculate: 2382 - 2214\n",
+    "expression": "2382 - 2214",
+    "lhs": 2382,
+    "rhs": 2214,
+    "final_answer": "168",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0333",
+    "prompt": "Question: Calculate: 2447 - 2042\n",
+    "expression": "2447 - 2042",
+    "lhs": 2447,
+    "rhs": 2042,
+    "final_answer": "405",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0334",
+    "prompt": "Question: Calculate: 2919 - 2522\n",
+    "expression": "2919 - 2522",
+    "lhs": 2919,
+    "rhs": 2522,
+    "final_answer": "397",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0335",
+    "prompt": "Question: Calculate: 2526 - 2351\n",
+    "expression": "2526 - 2351",
+    "lhs": 2526,
+    "rhs": 2351,
+    "final_answer": "175",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0336",
+    "prompt": "Question: Calculate: 2548 - 2437\n",
+    "expression": "2548 - 2437",
+    "lhs": 2548,
+    "rhs": 2437,
+    "final_answer": "111",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0337",
+    "prompt": "Question: Calculate: 2744 - 2305\n",
+    "expression": "2744 - 2305",
+    "lhs": 2744,
+    "rhs": 2305,
+    "final_answer": "439",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0338",
+    "prompt": "Question: Calculate: 2964 - 2697\n",
+    "expression": "2964 - 2697",
+    "lhs": 2964,
+    "rhs": 2697,
+    "final_answer": "267",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0339",
+    "prompt": "Question: Calculate: 2851 - 2432\n",
+    "expression": "2851 - 2432",
+    "lhs": 2851,
+    "rhs": 2432,
+    "final_answer": "419",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0340",
+    "prompt": "Question: Calculate: 2928 - 2496\n",
+    "expression": "2928 - 2496",
+    "lhs": 2928,
+    "rhs": 2496,
+    "final_answer": "432",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0341",
+    "prompt": "Question: Calculate: 2654 - 2419\n",
+    "expression": "2654 - 2419",
+    "lhs": 2654,
+    "rhs": 2419,
+    "final_answer": "235",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0342",
+    "prompt": "Question: Calculate: 2514 - 2507\n",
+    "expression": "2514 - 2507",
+    "lhs": 2514,
+    "rhs": 2507,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0343",
+    "prompt": "Question: Calculate: 2625 - 2018\n",
+    "expression": "2625 - 2018",
+    "lhs": 2625,
+    "rhs": 2018,
+    "final_answer": "607",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0344",
+    "prompt": "Question: Calculate: 2971 - 2408\n",
+    "expression": "2971 - 2408",
+    "lhs": 2971,
+    "rhs": 2408,
+    "final_answer": "563",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0345",
+    "prompt": "Question: Calculate: 2331 - 2285\n",
+    "expression": "2331 - 2285",
+    "lhs": 2331,
+    "rhs": 2285,
+    "final_answer": "46",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0346",
+    "prompt": "Question: Calculate: 2820 - 2564\n",
+    "expression": "2820 - 2564",
+    "lhs": 2820,
+    "rhs": 2564,
+    "final_answer": "256",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0347",
+    "prompt": "Question: Calculate: 2491 - 2224\n",
+    "expression": "2491 - 2224",
+    "lhs": 2491,
+    "rhs": 2224,
+    "final_answer": "267",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0348",
+    "prompt": "Question: Calculate: 2996 - 2275\n",
+    "expression": "2996 - 2275",
+    "lhs": 2996,
+    "rhs": 2275,
+    "final_answer": "721",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0349",
+    "prompt": "Question: Calculate: 2751 - 2287\n",
+    "expression": "2751 - 2287",
+    "lhs": 2751,
+    "rhs": 2287,
+    "final_answer": "464",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0350",
+    "prompt": "Question: Calculate: 2588 - 2333\n",
+    "expression": "2588 - 2333",
+    "lhs": 2588,
+    "rhs": 2333,
+    "final_answer": "255",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0351",
+    "prompt": "Question: Calculate: 2850 - 2588\n",
+    "expression": "2850 - 2588",
+    "lhs": 2850,
+    "rhs": 2588,
+    "final_answer": "262",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0352",
+    "prompt": "Question: Calculate: 2486 - 2342\n",
+    "expression": "2486 - 2342",
+    "lhs": 2486,
+    "rhs": 2342,
+    "final_answer": "144",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0353",
+    "prompt": "Question: Calculate: 2150 - 2081\n",
+    "expression": "2150 - 2081",
+    "lhs": 2150,
+    "rhs": 2081,
+    "final_answer": "69",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0354",
+    "prompt": "Question: Calculate: 2365 - 2236\n",
+    "expression": "2365 - 2236",
+    "lhs": 2365,
+    "rhs": 2236,
+    "final_answer": "129",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0355",
+    "prompt": "Question: Calculate: 2651 - 2205\n",
+    "expression": "2651 - 2205",
+    "lhs": 2651,
+    "rhs": 2205,
+    "final_answer": "446",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0356",
+    "prompt": "Question: Calculate: 2960 - 2083\n",
+    "expression": "2960 - 2083",
+    "lhs": 2960,
+    "rhs": 2083,
+    "final_answer": "877",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0357",
+    "prompt": "Question: Calculate: 2489 - 2330\n",
+    "expression": "2489 - 2330",
+    "lhs": 2489,
+    "rhs": 2330,
+    "final_answer": "159",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0358",
+    "prompt": "Question: Calculate: 2918 - 2352\n",
+    "expression": "2918 - 2352",
+    "lhs": 2918,
+    "rhs": 2352,
+    "final_answer": "566",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0359",
+    "prompt": "Question: Calculate: 2806 - 2700\n",
+    "expression": "2806 - 2700",
+    "lhs": 2806,
+    "rhs": 2700,
+    "final_answer": "106",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0360",
+    "prompt": "Question: Calculate: 2726 - 2337\n",
+    "expression": "2726 - 2337",
+    "lhs": 2726,
+    "rhs": 2337,
+    "final_answer": "389",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0361",
+    "prompt": "Question: Calculate: 2643 - 2614\n",
+    "expression": "2643 - 2614",
+    "lhs": 2643,
+    "rhs": 2614,
+    "final_answer": "29",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0362",
+    "prompt": "Question: Calculate: 2945 - 2162\n",
+    "expression": "2945 - 2162",
+    "lhs": 2945,
+    "rhs": 2162,
+    "final_answer": "783",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0363",
+    "prompt": "Question: Calculate: 2716 - 2515\n",
+    "expression": "2716 - 2515",
+    "lhs": 2716,
+    "rhs": 2515,
+    "final_answer": "201",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0364",
+    "prompt": "Question: Calculate: 2637 - 2500\n",
+    "expression": "2637 - 2500",
+    "lhs": 2637,
+    "rhs": 2500,
+    "final_answer": "137",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0365",
+    "prompt": "Question: Calculate: 2550 - 2281\n",
+    "expression": "2550 - 2281",
+    "lhs": 2550,
+    "rhs": 2281,
+    "final_answer": "269",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0366",
+    "prompt": "Question: Calculate: 2725 - 2468\n",
+    "expression": "2725 - 2468",
+    "lhs": 2725,
+    "rhs": 2468,
+    "final_answer": "257",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0367",
+    "prompt": "Question: Calculate: 2988 - 2283\n",
+    "expression": "2988 - 2283",
+    "lhs": 2988,
+    "rhs": 2283,
+    "final_answer": "705",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0368",
+    "prompt": "Question: Calculate: 2990 - 2089\n",
+    "expression": "2990 - 2089",
+    "lhs": 2990,
+    "rhs": 2089,
+    "final_answer": "901",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0369",
+    "prompt": "Question: Calculate: 2702 - 2065\n",
+    "expression": "2702 - 2065",
+    "lhs": 2702,
+    "rhs": 2065,
+    "final_answer": "637",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0370",
+    "prompt": "Question: Calculate: 2722 - 2651\n",
+    "expression": "2722 - 2651",
+    "lhs": 2722,
+    "rhs": 2651,
+    "final_answer": "71",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0371",
+    "prompt": "Question: Calculate: 2994 - 2298\n",
+    "expression": "2994 - 2298",
+    "lhs": 2994,
+    "rhs": 2298,
+    "final_answer": "696",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0372",
+    "prompt": "Question: Calculate: 2539 - 2395\n",
+    "expression": "2539 - 2395",
+    "lhs": 2539,
+    "rhs": 2395,
+    "final_answer": "144",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0373",
+    "prompt": "Question: Calculate: 2908 - 2700\n",
+    "expression": "2908 - 2700",
+    "lhs": 2908,
+    "rhs": 2700,
+    "final_answer": "208",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0374",
+    "prompt": "Question: Calculate: 2950 - 2160\n",
+    "expression": "2950 - 2160",
+    "lhs": 2950,
+    "rhs": 2160,
+    "final_answer": "790",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0375",
+    "prompt": "Question: Calculate: 2454 - 2438\n",
+    "expression": "2454 - 2438",
+    "lhs": 2454,
+    "rhs": 2438,
+    "final_answer": "16",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0376",
+    "prompt": "Question: Calculate: 2778 - 2330\n",
+    "expression": "2778 - 2330",
+    "lhs": 2778,
+    "rhs": 2330,
+    "final_answer": "448",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0377",
+    "prompt": "Question: Calculate: 2859 - 2123\n",
+    "expression": "2859 - 2123",
+    "lhs": 2859,
+    "rhs": 2123,
+    "final_answer": "736",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0378",
+    "prompt": "Question: Calculate: 2766 - 2667\n",
+    "expression": "2766 - 2667",
+    "lhs": 2766,
+    "rhs": 2667,
+    "final_answer": "99",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0379",
+    "prompt": "Question: Calculate: 2808 - 2120\n",
+    "expression": "2808 - 2120",
+    "lhs": 2808,
+    "rhs": 2120,
+    "final_answer": "688",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0380",
+    "prompt": "Question: Calculate: 2633 - 2631\n",
+    "expression": "2633 - 2631",
+    "lhs": 2633,
+    "rhs": 2631,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0381",
+    "prompt": "Question: Calculate: 2504 - 2434\n",
+    "expression": "2504 - 2434",
+    "lhs": 2504,
+    "rhs": 2434,
+    "final_answer": "70",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0382",
+    "prompt": "Question: Calculate: 2342 - 2263\n",
+    "expression": "2342 - 2263",
+    "lhs": 2342,
+    "rhs": 2263,
+    "final_answer": "79",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0383",
+    "prompt": "Question: Calculate: 2274 - 2229\n",
+    "expression": "2274 - 2229",
+    "lhs": 2274,
+    "rhs": 2229,
+    "final_answer": "45",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0384",
+    "prompt": "Question: Calculate: 2627 - 2416\n",
+    "expression": "2627 - 2416",
+    "lhs": 2627,
+    "rhs": 2416,
+    "final_answer": "211",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0385",
+    "prompt": "Question: Calculate: 2806 - 2364\n",
+    "expression": "2806 - 2364",
+    "lhs": 2806,
+    "rhs": 2364,
+    "final_answer": "442",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0386",
+    "prompt": "Question: Calculate: 2325 - 2073\n",
+    "expression": "2325 - 2073",
+    "lhs": 2325,
+    "rhs": 2073,
+    "final_answer": "252",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0387",
+    "prompt": "Question: Calculate: 2785 - 2366\n",
+    "expression": "2785 - 2366",
+    "lhs": 2785,
+    "rhs": 2366,
+    "final_answer": "419",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0388",
+    "prompt": "Question: Calculate: 2797 - 2656\n",
+    "expression": "2797 - 2656",
+    "lhs": 2797,
+    "rhs": 2656,
+    "final_answer": "141",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0389",
+    "prompt": "Question: Calculate: 2446 - 2318\n",
+    "expression": "2446 - 2318",
+    "lhs": 2446,
+    "rhs": 2318,
+    "final_answer": "128",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0390",
+    "prompt": "Question: Calculate: 2908 - 2114\n",
+    "expression": "2908 - 2114",
+    "lhs": 2908,
+    "rhs": 2114,
+    "final_answer": "794",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0391",
+    "prompt": "Question: Calculate: 2626 - 2412\n",
+    "expression": "2626 - 2412",
+    "lhs": 2626,
+    "rhs": 2412,
+    "final_answer": "214",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0392",
+    "prompt": "Question: Calculate: 2542 - 2451\n",
+    "expression": "2542 - 2451",
+    "lhs": 2542,
+    "rhs": 2451,
+    "final_answer": "91",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0393",
+    "prompt": "Question: Calculate: 2613 - 2437\n",
+    "expression": "2613 - 2437",
+    "lhs": 2613,
+    "rhs": 2437,
+    "final_answer": "176",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0394",
+    "prompt": "Question: Calculate: 2957 - 2243\n",
+    "expression": "2957 - 2243",
+    "lhs": 2957,
+    "rhs": 2243,
+    "final_answer": "714",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0395",
+    "prompt": "Question: Calculate: 2739 - 2008\n",
+    "expression": "2739 - 2008",
+    "lhs": 2739,
+    "rhs": 2008,
+    "final_answer": "731",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0396",
+    "prompt": "Question: Calculate: 2935 - 2828\n",
+    "expression": "2935 - 2828",
+    "lhs": 2935,
+    "rhs": 2828,
+    "final_answer": "107",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0397",
+    "prompt": "Question: Calculate: 2579 - 2051\n",
+    "expression": "2579 - 2051",
+    "lhs": 2579,
+    "rhs": 2051,
+    "final_answer": "528",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0398",
+    "prompt": "Question: Calculate: 2978 - 2211\n",
+    "expression": "2978 - 2211",
+    "lhs": 2978,
+    "rhs": 2211,
+    "final_answer": "767",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0399",
+    "prompt": "Question: Calculate: 2754 - 2359\n",
+    "expression": "2754 - 2359",
+    "lhs": 2754,
+    "rhs": 2359,
+    "final_answer": "395",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0400",
+    "prompt": "Question: Calculate: 2837 - 2516\n",
+    "expression": "2837 - 2516",
+    "lhs": 2837,
+    "rhs": 2516,
+    "final_answer": "321",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0401",
+    "prompt": "Question: Calculate: 2188 - 2062\n",
+    "expression": "2188 - 2062",
+    "lhs": 2188,
+    "rhs": 2062,
+    "final_answer": "126",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0402",
+    "prompt": "Question: Calculate: 2855 - 2112\n",
+    "expression": "2855 - 2112",
+    "lhs": 2855,
+    "rhs": 2112,
+    "final_answer": "743",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0403",
+    "prompt": "Question: Calculate: 2803 - 2405\n",
+    "expression": "2803 - 2405",
+    "lhs": 2803,
+    "rhs": 2405,
+    "final_answer": "398",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0404",
+    "prompt": "Question: Calculate: 2857 - 2196\n",
+    "expression": "2857 - 2196",
+    "lhs": 2857,
+    "rhs": 2196,
+    "final_answer": "661",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0405",
+    "prompt": "Question: Calculate: 2087 - 2038\n",
+    "expression": "2087 - 2038",
+    "lhs": 2087,
+    "rhs": 2038,
+    "final_answer": "49",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0406",
+    "prompt": "Question: Calculate: 2776 - 2754\n",
+    "expression": "2776 - 2754",
+    "lhs": 2776,
+    "rhs": 2754,
+    "final_answer": "22",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0407",
+    "prompt": "Question: Calculate: 2589 - 2335\n",
+    "expression": "2589 - 2335",
+    "lhs": 2589,
+    "rhs": 2335,
+    "final_answer": "254",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0408",
+    "prompt": "Question: Calculate: 2667 - 2486\n",
+    "expression": "2667 - 2486",
+    "lhs": 2667,
+    "rhs": 2486,
+    "final_answer": "181",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0409",
+    "prompt": "Question: Calculate: 2654 - 2158\n",
+    "expression": "2654 - 2158",
+    "lhs": 2654,
+    "rhs": 2158,
+    "final_answer": "496",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0410",
+    "prompt": "Question: Calculate: 2944 - 2176\n",
+    "expression": "2944 - 2176",
+    "lhs": 2944,
+    "rhs": 2176,
+    "final_answer": "768",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0411",
+    "prompt": "Question: Calculate: 2287 - 2148\n",
+    "expression": "2287 - 2148",
+    "lhs": 2287,
+    "rhs": 2148,
+    "final_answer": "139",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0412",
+    "prompt": "Question: Calculate: 2536 - 2129\n",
+    "expression": "2536 - 2129",
+    "lhs": 2536,
+    "rhs": 2129,
+    "final_answer": "407",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0413",
+    "prompt": "Question: Calculate: 2777 - 2287\n",
+    "expression": "2777 - 2287",
+    "lhs": 2777,
+    "rhs": 2287,
+    "final_answer": "490",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0414",
+    "prompt": "Question: Calculate: 2810 - 2554\n",
+    "expression": "2810 - 2554",
+    "lhs": 2810,
+    "rhs": 2554,
+    "final_answer": "256",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0415",
+    "prompt": "Question: Calculate: 2762 - 2220\n",
+    "expression": "2762 - 2220",
+    "lhs": 2762,
+    "rhs": 2220,
+    "final_answer": "542",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0416",
+    "prompt": "Question: Calculate: 2790 - 2312\n",
+    "expression": "2790 - 2312",
+    "lhs": 2790,
+    "rhs": 2312,
+    "final_answer": "478",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0417",
+    "prompt": "Question: Calculate: 2678 - 2614\n",
+    "expression": "2678 - 2614",
+    "lhs": 2678,
+    "rhs": 2614,
+    "final_answer": "64",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0418",
+    "prompt": "Question: Calculate: 2491 - 2171\n",
+    "expression": "2491 - 2171",
+    "lhs": 2491,
+    "rhs": 2171,
+    "final_answer": "320",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0419",
+    "prompt": "Question: Calculate: 2420 - 2390\n",
+    "expression": "2420 - 2390",
+    "lhs": 2420,
+    "rhs": 2390,
+    "final_answer": "30",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0420",
+    "prompt": "Question: Calculate: 2566 - 2049\n",
+    "expression": "2566 - 2049",
+    "lhs": 2566,
+    "rhs": 2049,
+    "final_answer": "517",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0421",
+    "prompt": "Question: Calculate: 2643 - 2581\n",
+    "expression": "2643 - 2581",
+    "lhs": 2643,
+    "rhs": 2581,
+    "final_answer": "62",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0422",
+    "prompt": "Question: Calculate: 2784 - 2532\n",
+    "expression": "2784 - 2532",
+    "lhs": 2784,
+    "rhs": 2532,
+    "final_answer": "252",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0423",
+    "prompt": "Question: Calculate: 2446 - 2260\n",
+    "expression": "2446 - 2260",
+    "lhs": 2446,
+    "rhs": 2260,
+    "final_answer": "186",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0424",
+    "prompt": "Question: Calculate: 2710 - 2670\n",
+    "expression": "2710 - 2670",
+    "lhs": 2710,
+    "rhs": 2670,
+    "final_answer": "40",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0425",
+    "prompt": "Question: Calculate: 2977 - 2050\n",
+    "expression": "2977 - 2050",
+    "lhs": 2977,
+    "rhs": 2050,
+    "final_answer": "927",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0426",
+    "prompt": "Question: Calculate: 2823 - 2084\n",
+    "expression": "2823 - 2084",
+    "lhs": 2823,
+    "rhs": 2084,
+    "final_answer": "739",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0427",
+    "prompt": "Question: Calculate: 2895 - 2648\n",
+    "expression": "2895 - 2648",
+    "lhs": 2895,
+    "rhs": 2648,
+    "final_answer": "247",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0428",
+    "prompt": "Question: Calculate: 2994 - 2518\n",
+    "expression": "2994 - 2518",
+    "lhs": 2994,
+    "rhs": 2518,
+    "final_answer": "476",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0429",
+    "prompt": "Question: Calculate: 2281 - 2034\n",
+    "expression": "2281 - 2034",
+    "lhs": 2281,
+    "rhs": 2034,
+    "final_answer": "247",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0430",
+    "prompt": "Question: Calculate: 2812 - 2008\n",
+    "expression": "2812 - 2008",
+    "lhs": 2812,
+    "rhs": 2008,
+    "final_answer": "804",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0431",
+    "prompt": "Question: Calculate: 2208 - 2201\n",
+    "expression": "2208 - 2201",
+    "lhs": 2208,
+    "rhs": 2201,
+    "final_answer": "7",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0432",
+    "prompt": "Question: Calculate: 2931 - 2307\n",
+    "expression": "2931 - 2307",
+    "lhs": 2931,
+    "rhs": 2307,
+    "final_answer": "624",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0433",
+    "prompt": "Question: Calculate: 2566 - 2005\n",
+    "expression": "2566 - 2005",
+    "lhs": 2566,
+    "rhs": 2005,
+    "final_answer": "561",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0434",
+    "prompt": "Question: Calculate: 2858 - 2073\n",
+    "expression": "2858 - 2073",
+    "lhs": 2858,
+    "rhs": 2073,
+    "final_answer": "785",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0435",
+    "prompt": "Question: Calculate: 2874 - 2341\n",
+    "expression": "2874 - 2341",
+    "lhs": 2874,
+    "rhs": 2341,
+    "final_answer": "533",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0436",
+    "prompt": "Question: Calculate: 2891 - 2224\n",
+    "expression": "2891 - 2224",
+    "lhs": 2891,
+    "rhs": 2224,
+    "final_answer": "667",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0437",
+    "prompt": "Question: Calculate: 2765 - 2449\n",
+    "expression": "2765 - 2449",
+    "lhs": 2765,
+    "rhs": 2449,
+    "final_answer": "316",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0438",
+    "prompt": "Question: Calculate: 2383 - 2247\n",
+    "expression": "2383 - 2247",
+    "lhs": 2383,
+    "rhs": 2247,
+    "final_answer": "136",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0439",
+    "prompt": "Question: Calculate: 2902 - 2813\n",
+    "expression": "2902 - 2813",
+    "lhs": 2902,
+    "rhs": 2813,
+    "final_answer": "89",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0440",
+    "prompt": "Question: Calculate: 2539 - 2408\n",
+    "expression": "2539 - 2408",
+    "lhs": 2539,
+    "rhs": 2408,
+    "final_answer": "131",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0441",
+    "prompt": "Question: Calculate: 2764 - 2409\n",
+    "expression": "2764 - 2409",
+    "lhs": 2764,
+    "rhs": 2409,
+    "final_answer": "355",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0442",
+    "prompt": "Question: Calculate: 2497 - 2106\n",
+    "expression": "2497 - 2106",
+    "lhs": 2497,
+    "rhs": 2106,
+    "final_answer": "391",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0443",
+    "prompt": "Question: Calculate: 2950 - 2354\n",
+    "expression": "2950 - 2354",
+    "lhs": 2950,
+    "rhs": 2354,
+    "final_answer": "596",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0444",
+    "prompt": "Question: Calculate: 2334 - 2267\n",
+    "expression": "2334 - 2267",
+    "lhs": 2334,
+    "rhs": 2267,
+    "final_answer": "67",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0445",
+    "prompt": "Question: Calculate: 2426 - 2279\n",
+    "expression": "2426 - 2279",
+    "lhs": 2426,
+    "rhs": 2279,
+    "final_answer": "147",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0446",
+    "prompt": "Question: Calculate: 2901 - 2016\n",
+    "expression": "2901 - 2016",
+    "lhs": 2901,
+    "rhs": 2016,
+    "final_answer": "885",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0447",
+    "prompt": "Question: Calculate: 2353 - 2250\n",
+    "expression": "2353 - 2250",
+    "lhs": 2353,
+    "rhs": 2250,
+    "final_answer": "103",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0448",
+    "prompt": "Question: Calculate: 2599 - 2157\n",
+    "expression": "2599 - 2157",
+    "lhs": 2599,
+    "rhs": 2157,
+    "final_answer": "442",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0449",
+    "prompt": "Question: Calculate: 2913 - 2402\n",
+    "expression": "2913 - 2402",
+    "lhs": 2913,
+    "rhs": 2402,
+    "final_answer": "511",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0450",
+    "prompt": "Question: Calculate: 2629 - 2041\n",
+    "expression": "2629 - 2041",
+    "lhs": 2629,
+    "rhs": 2041,
+    "final_answer": "588",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0451",
+    "prompt": "Question: Calculate: 2911 - 2447\n",
+    "expression": "2911 - 2447",
+    "lhs": 2911,
+    "rhs": 2447,
+    "final_answer": "464",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0452",
+    "prompt": "Question: Calculate: 2876 - 2496\n",
+    "expression": "2876 - 2496",
+    "lhs": 2876,
+    "rhs": 2496,
+    "final_answer": "380",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0453",
+    "prompt": "Question: Calculate: 2953 - 2273\n",
+    "expression": "2953 - 2273",
+    "lhs": 2953,
+    "rhs": 2273,
+    "final_answer": "680",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0454",
+    "prompt": "Question: Calculate: 2844 - 2765\n",
+    "expression": "2844 - 2765",
+    "lhs": 2844,
+    "rhs": 2765,
+    "final_answer": "79",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0455",
+    "prompt": "Question: Calculate: 2648 - 2412\n",
+    "expression": "2648 - 2412",
+    "lhs": 2648,
+    "rhs": 2412,
+    "final_answer": "236",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0456",
+    "prompt": "Question: Calculate: 2717 - 2141\n",
+    "expression": "2717 - 2141",
+    "lhs": 2717,
+    "rhs": 2141,
+    "final_answer": "576",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0457",
+    "prompt": "Question: Calculate: 2507 - 2139\n",
+    "expression": "2507 - 2139",
+    "lhs": 2507,
+    "rhs": 2139,
+    "final_answer": "368",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0458",
+    "prompt": "Question: Calculate: 2644 - 2049\n",
+    "expression": "2644 - 2049",
+    "lhs": 2644,
+    "rhs": 2049,
+    "final_answer": "595",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0459",
+    "prompt": "Question: Calculate: 2767 - 2340\n",
+    "expression": "2767 - 2340",
+    "lhs": 2767,
+    "rhs": 2340,
+    "final_answer": "427",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0460",
+    "prompt": "Question: Calculate: 2404 - 2211\n",
+    "expression": "2404 - 2211",
+    "lhs": 2404,
+    "rhs": 2211,
+    "final_answer": "193",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0461",
+    "prompt": "Question: Calculate: 2947 - 2713\n",
+    "expression": "2947 - 2713",
+    "lhs": 2947,
+    "rhs": 2713,
+    "final_answer": "234",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0462",
+    "prompt": "Question: Calculate: 2873 - 2812\n",
+    "expression": "2873 - 2812",
+    "lhs": 2873,
+    "rhs": 2812,
+    "final_answer": "61",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0463",
+    "prompt": "Question: Calculate: 2639 - 2306\n",
+    "expression": "2639 - 2306",
+    "lhs": 2639,
+    "rhs": 2306,
+    "final_answer": "333",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0464",
+    "prompt": "Question: Calculate: 2587 - 2064\n",
+    "expression": "2587 - 2064",
+    "lhs": 2587,
+    "rhs": 2064,
+    "final_answer": "523",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0465",
+    "prompt": "Question: Calculate: 2613 - 2109\n",
+    "expression": "2613 - 2109",
+    "lhs": 2613,
+    "rhs": 2109,
+    "final_answer": "504",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0466",
+    "prompt": "Question: Calculate: 2707 - 2156\n",
+    "expression": "2707 - 2156",
+    "lhs": 2707,
+    "rhs": 2156,
+    "final_answer": "551",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0467",
+    "prompt": "Question: Calculate: 2727 - 2543\n",
+    "expression": "2727 - 2543",
+    "lhs": 2727,
+    "rhs": 2543,
+    "final_answer": "184",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0468",
+    "prompt": "Question: Calculate: 2840 - 2357\n",
+    "expression": "2840 - 2357",
+    "lhs": 2840,
+    "rhs": 2357,
+    "final_answer": "483",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0469",
+    "prompt": "Question: Calculate: 2455 - 2418\n",
+    "expression": "2455 - 2418",
+    "lhs": 2455,
+    "rhs": 2418,
+    "final_answer": "37",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0470",
+    "prompt": "Question: Calculate: 2756 - 2641\n",
+    "expression": "2756 - 2641",
+    "lhs": 2756,
+    "rhs": 2641,
+    "final_answer": "115",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0471",
+    "prompt": "Question: Calculate: 2947 - 2699\n",
+    "expression": "2947 - 2699",
+    "lhs": 2947,
+    "rhs": 2699,
+    "final_answer": "248",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0472",
+    "prompt": "Question: Calculate: 2822 - 2157\n",
+    "expression": "2822 - 2157",
+    "lhs": 2822,
+    "rhs": 2157,
+    "final_answer": "665",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0473",
+    "prompt": "Question: Calculate: 2513 - 2373\n",
+    "expression": "2513 - 2373",
+    "lhs": 2513,
+    "rhs": 2373,
+    "final_answer": "140",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0474",
+    "prompt": "Question: Calculate: 2755 - 2043\n",
+    "expression": "2755 - 2043",
+    "lhs": 2755,
+    "rhs": 2043,
+    "final_answer": "712",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0475",
+    "prompt": "Question: Calculate: 2174 - 2087\n",
+    "expression": "2174 - 2087",
+    "lhs": 2174,
+    "rhs": 2087,
+    "final_answer": "87",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0476",
+    "prompt": "Question: Calculate: 2902 - 2900\n",
+    "expression": "2902 - 2900",
+    "lhs": 2902,
+    "rhs": 2900,
+    "final_answer": "2",
+    "ans_digits": 1,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0477",
+    "prompt": "Question: Calculate: 2972 - 2365\n",
+    "expression": "2972 - 2365",
+    "lhs": 2972,
+    "rhs": 2365,
+    "final_answer": "607",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0478",
+    "prompt": "Question: Calculate: 2993 - 2328\n",
+    "expression": "2993 - 2328",
+    "lhs": 2993,
+    "rhs": 2328,
+    "final_answer": "665",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0479",
+    "prompt": "Question: Calculate: 2907 - 2739\n",
+    "expression": "2907 - 2739",
+    "lhs": 2907,
+    "rhs": 2739,
+    "final_answer": "168",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0480",
+    "prompt": "Question: Calculate: 2870 - 2803\n",
+    "expression": "2870 - 2803",
+    "lhs": 2870,
+    "rhs": 2803,
+    "final_answer": "67",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0481",
+    "prompt": "Question: Calculate: 2858 - 2664\n",
+    "expression": "2858 - 2664",
+    "lhs": 2858,
+    "rhs": 2664,
+    "final_answer": "194",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0482",
+    "prompt": "Question: Calculate: 2672 - 2222\n",
+    "expression": "2672 - 2222",
+    "lhs": 2672,
+    "rhs": 2222,
+    "final_answer": "450",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0483",
+    "prompt": "Question: Calculate: 2570 - 2251\n",
+    "expression": "2570 - 2251",
+    "lhs": 2570,
+    "rhs": 2251,
+    "final_answer": "319",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0484",
+    "prompt": "Question: Calculate: 2881 - 2020\n",
+    "expression": "2881 - 2020",
+    "lhs": 2881,
+    "rhs": 2020,
+    "final_answer": "861",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0485",
+    "prompt": "Question: Calculate: 2689 - 2509\n",
+    "expression": "2689 - 2509",
+    "lhs": 2689,
+    "rhs": 2509,
+    "final_answer": "180",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0486",
+    "prompt": "Question: Calculate: 2464 - 2348\n",
+    "expression": "2464 - 2348",
+    "lhs": 2464,
+    "rhs": 2348,
+    "final_answer": "116",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0487",
+    "prompt": "Question: Calculate: 2895 - 2327\n",
+    "expression": "2895 - 2327",
+    "lhs": 2895,
+    "rhs": 2327,
+    "final_answer": "568",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0488",
+    "prompt": "Question: Calculate: 2562 - 2142\n",
+    "expression": "2562 - 2142",
+    "lhs": 2562,
+    "rhs": 2142,
+    "final_answer": "420",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0489",
+    "prompt": "Question: Calculate: 2936 - 2091\n",
+    "expression": "2936 - 2091",
+    "lhs": 2936,
+    "rhs": 2091,
+    "final_answer": "845",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0490",
+    "prompt": "Question: Calculate: 2395 - 2162\n",
+    "expression": "2395 - 2162",
+    "lhs": 2395,
+    "rhs": 2162,
+    "final_answer": "233",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0491",
+    "prompt": "Question: Calculate: 2426 - 2186\n",
+    "expression": "2426 - 2186",
+    "lhs": 2426,
+    "rhs": 2186,
+    "final_answer": "240",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0492",
+    "prompt": "Question: Calculate: 2266 - 2222\n",
+    "expression": "2266 - 2222",
+    "lhs": 2266,
+    "rhs": 2222,
+    "final_answer": "44",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0493",
+    "prompt": "Question: Calculate: 2965 - 2621\n",
+    "expression": "2965 - 2621",
+    "lhs": 2965,
+    "rhs": 2621,
+    "final_answer": "344",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0494",
+    "prompt": "Question: Calculate: 2407 - 2379\n",
+    "expression": "2407 - 2379",
+    "lhs": 2407,
+    "rhs": 2379,
+    "final_answer": "28",
+    "ans_digits": 2,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0495",
+    "prompt": "Question: Calculate: 2656 - 2489\n",
+    "expression": "2656 - 2489",
+    "lhs": 2656,
+    "rhs": 2489,
+    "final_answer": "167",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0496",
+    "prompt": "Question: Calculate: 2524 - 2273\n",
+    "expression": "2524 - 2273",
+    "lhs": 2524,
+    "rhs": 2273,
+    "final_answer": "251",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0497",
+    "prompt": "Question: Calculate: 2766 - 2295\n",
+    "expression": "2766 - 2295",
+    "lhs": 2766,
+    "rhs": 2295,
+    "final_answer": "471",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0498",
+    "prompt": "Question: Calculate: 2404 - 2002\n",
+    "expression": "2404 - 2002",
+    "lhs": 2404,
+    "rhs": 2002,
+    "final_answer": "402",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0499",
+    "prompt": "Question: Calculate: 2574 - 2456\n",
+    "expression": "2574 - 2456",
+    "lhs": 2574,
+    "rhs": 2456,
+    "final_answer": "118",
+    "ans_digits": 3,
+    "operand_digits": 4
+  },
+  {
+    "example_id": "e6_ood4d_0500",
+    "prompt": "Question: Calculate: 2795 - 2624\n",
+    "expression": "2795 - 2624",
+    "lhs": 2795,
+    "rhs": 2624,
+    "final_answer": "171",
+    "ans_digits": 3,
+    "operand_digits": 4
+  }
+]

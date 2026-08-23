@@ -1,0 +1,18 @@
+{
+  "model_name": "Model A (Arithmetic -> Compact GSM8K)",
+  "init_checkpoint": "artifacts/sft/progressive_subtraction/best.pt",
+  "init_checkpoint_sha256": "fdcecade71afafc1857d5ee56d221d31928ae1321d0f963dc0f566482af56d5c",
+  "best_checkpoint_sha256": "8c55e2d302fd2aed2a12dca3b381f33bf6eceae9058814c162401e8f8961fa0f",
+  "final_checkpoint_sha256": "2d27c55a6ce9f499c01faf47fdee687de23372827a3b61f60c66d4d19ca06624",
+  "max_steps": 650,
+  "peak_lr": 0.0001,
+  "min_lr": 1e-05,
+  "warmup_steps": 50,
+  "micro_batch_size": 8,
+  "grad_accum_steps": 4,
+  "effective_batch_size": 32,
+  "best_step": 600,
+  "best_dev_loss": 0.5587971360301082,
+  "best_dev_ppl": 1.748567945422783,
+  "total_active_tokens_trained": 986608
+}

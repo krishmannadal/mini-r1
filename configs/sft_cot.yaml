@@ -1,0 +1,48 @@
+# Mini-R1: Chain-of-Thought Supervised Fine-Tuning (Treatment Condition)
+# Base Checkpoint: Frozen best.pt (step 18,000, val loss 2.8726)
+
+experiment:
+  name: sft_cot
+  condition: cot
+  description: "Chain-of-Thought SFT treatment (Question -> <think>...</think><answer>...</answer>)"
+  seed: 42
+
+base_model:
+  checkpoint_path: checkpoints/mini_r1_500m_pretrain/best.pt
+  pretrain_step: 18000
+  best_val_loss: 2.8726
+
+model:
+  vocab_size: 8000
+  max_seq_len: 512
+  d_model: 512
+  n_layers: 12
+  n_heads: 8
+  d_ff: 2048
+  dropout: 0.0
+  bias: false
+  tie_word_embeddings: true
+
+training:
+  learning_rate: 0.0001        # Identical conservative 1e-4 peak LR
+  min_lr: 0.00001              # Identical 1e-5 min LR
+  warmup_steps: 50
+  max_steps: 650               # Exactly ~3.0 epochs over 6,973 GSM8K examples (eff_batch=32)
+  micro_batch_size: 8
+  gradient_accumulation_steps: 4
+  effective_batch_size: 32     # Identical effective batch size
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  amp_dtype: float16
+  
+  val_interval_steps: 50
+  checkpoint_interval_steps: 50
+  log_interval_steps: 10
+  retained_checkpoints: 3
+
+data:
+  train_path: data/reasoning/gsm8k_sft_train.jsonl
+  dev_path: data/reasoning/gsm8k_sft_dev.jsonl
+  tokenizer_path: artifacts/tokenizer/tokenizer.model
+  max_seq_len: 512
+  add_eos: true

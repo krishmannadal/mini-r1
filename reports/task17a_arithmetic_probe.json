@@ -1,0 +1,3195 @@
+{
+  "metadata": {
+    "task": "Task 17A: Arithmetic Capability Probe",
+    "date": "2026-08-19 23:35:07",
+    "dataset_path": "data\\eval\\synthetic_arithmetic.json",
+    "dataset_size": 9000,
+    "seed": 42,
+    "base_sha256": "f058a558edc2020b1a4a7a7b54312b97fb0b0a20e16c42da92018686e66462a4",
+    "direct_sha256": "79323e228f222da6f55ada9bccc84ea5c49d5bb1b0c0a1d20a3746b1b431dacd",
+    "cot_sha256": "0df4b0d86730e72c15e1cf8c3aaeebf58a834fc36232b804520760adb0311d93"
+  },
+  "evaluations": {
+    "base_pretrained": {
+      "prompt_format_1_plain": {
+        "model_name": "Base Pretrained",
+        "format_name": "Format 1: Plain (What is 3+2?)",
+        "total_samples": 9000,
+        "strict_correct": 16,
+        "strict_accuracy": 0.0017777777777777779,
+        "fallback_correct": 26,
+        "fallback_accuracy": 0.0028888888888888888,
+        "parse_rate": 0.30977777777777776,
+        "eos_rate": 0.0,
+        "repetition_rate": 0.136,
+        "think_tag_rate": 0.0,
+        "answer_tag_rate": 0.0,
+        "full_format_rate": 0.0,
+        "mean_tokens": 32.0,
+        "median_tokens": 32,
+        "p90_tokens": 32,
+        "elapsed_seconds": 174.71389700000873,
+        "category_stats": {
+          "A_single_addition": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "B_single_subtraction": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "C_single_multiplication": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "D_single_division": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "E_two_operation": {
+            "total": 1000,
+            "correct": 6,
+            "accuracy": 0.006
+          },
+          "F_three_operation": {
+            "total": 1000,
+            "correct": 6,
+            "accuracy": 0.006
+          },
+          "G_four_operation": {
+            "total": 1000,
+            "correct": 4,
+            "accuracy": 0.004
+          },
+          "H_sequential_state": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "I_word_wrapped": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "op_count_stats": {
+          "1": {
+            "total": 4804,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "2": {
+            "total": 1196,
+            "correct": 6,
+            "accuracy": 0.005016722408026756
+          },
+          "3": {
+            "total": 2000,
+            "correct": 6,
+            "accuracy": 0.003
+          },
+          "4": {
+            "total": 1000,
+            "correct": 4,
+            "accuracy": 0.004
+          }
+        },
+        "op_type_stats": {
+          "addition": {
+            "total": 5430,
+            "correct": 10,
+            "accuracy": 0.001841620626151013
+          },
+          "division": {
+            "total": 1226,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "multiplication": {
+            "total": 6132,
+            "correct": 20,
+            "accuracy": 0.0032615786040443573
+          },
+          "subtraction": {
+            "total": 4408,
+            "correct": 16,
+            "accuracy": 0.003629764065335753
+          }
+        }
+      },
+      "prompt_format_2_structured": {
+        "model_name": "Base Pretrained",
+        "format_name": "Format 2: Structured (Calculate: 3+2)",
+        "total_samples": 9000,
+        "strict_correct": 87,
+        "strict_accuracy": 0.009666666666666667,
+        "fallback_correct": 103,
+        "fallback_accuracy": 0.011444444444444445,
+        "parse_rate": 0.7485555555555555,
+        "eos_rate": 0.005666666666666667,
+        "repetition_rate": 0.718,
+        "think_tag_rate": 0.0,
+        "answer_tag_rate": 0.0,
+        "full_format_rate": 0.0,
+        "mean_tokens": 31.991,
+        "median_tokens": 32,
+        "p90_tokens": 32,
+        "elapsed_seconds": 198.15473639999982,
+        "category_stats": {
+          "A_single_addition": {
+            "total": 1000,
+            "correct": 20,
+            "accuracy": 0.02
+          },
+          "B_single_subtraction": {
+            "total": 1000,
+            "correct": 2,
+            "accuracy": 0.002
+          },
+          "C_single_multiplication": {
+            "total": 1000,
+            "correct": 1,
+            "accuracy": 0.001
+          },
+          "D_single_division": {
+            "total": 1000,
+            "correct": 27,
+            "accuracy": 0.027
+          },
+          "E_two_operation": {
+            "total": 1000,
+            "correct": 6,
+            "accuracy": 0.006
+          },
+          "F_three_operation": {
+            "total": 1000,
+            "correct": 14,
+            "accuracy": 0.014
+          },
+          "G_four_operation": {
+            "total": 1000,
+            "correct": 17,
+            "accuracy": 0.017
+          },
+          "H_sequential_state": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "I_word_wrapped": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "op_count_stats": {
+          "1": {
+            "total": 4804,
+            "correct": 50,
+            "accuracy": 0.010407993338884263
+          },
+          "2": {
+            "total": 1196,
+            "correct": 6,
+            "accuracy": 0.005016722408026756
+          },
+          "3": {
+            "total": 2000,
+            "correct": 14,
+            "accuracy": 0.007
+          },
+          "4": {
+            "total": 1000,
+            "correct": 17,
+            "accuracy": 0.017
+          }
+        },
+        "op_type_stats": {
+          "addition": {
+            "total": 5430,
+            "correct": 56,
+            "accuracy": 0.010313075506445672
+          },
+          "division": {
+            "total": 1226,
+            "correct": 27,
+            "accuracy": 0.02202283849918434
+          },
+          "multiplication": {
+            "total": 6132,
+            "correct": 52,
+            "accuracy": 0.008480104370515329
+          },
+          "subtraction": {
+            "total": 4408,
+            "correct": 37,
+            "accuracy": 0.00839382940108893
+          }
+        }
+      },
+      "prompt_format_3_reasoning": {
+        "model_name": "Base Pretrained",
+        "format_name": "Format 3: Reasoning (Question: What is 3+2?)",
+        "total_samples": 9000,
+        "strict_correct": 3,
+        "strict_accuracy": 0.0003333333333333333,
+        "fallback_correct": 3,
+        "fallback_accuracy": 0.0003333333333333333,
+        "parse_rate": 0.13077777777777777,
+        "eos_rate": 0.0,
+        "repetition_rate": 0.042222222222222223,
+        "think_tag_rate": 0.0,
+        "answer_tag_rate": 0.0,
+        "full_format_rate": 0.0,
+        "mean_tokens": 32.0,
+        "median_tokens": 32,
+        "p90_tokens": 32,
+        "elapsed_seconds": 182.4812879000092,
+        "category_stats": {
+          "A_single_addition": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "B_single_subtraction": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "C_single_multiplication": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "D_single_division": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "E_two_operation": {
+            "total": 1000,
+            "correct": 3,
+            "accuracy": 0.003
+          },
+          "F_three_operation": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "G_four_operation": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "H_sequential_state": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "I_word_wrapped": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "op_count_stats": {
+          "1": {
+            "total": 4804,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "2": {
+            "total": 1196,
+            "correct": 3,
+            "accuracy": 0.002508361204013378
+          },
+          "3": {
+            "total": 2000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "op_type_stats": {
+          "addition": {
+            "total": 5430,
+            "correct": 2,
+            "accuracy": 0.00036832412523020257
+          },
+          "division": {
+            "total": 1226,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "multiplication": {
+            "total": 6132,
+            "correct": 2,
+            "accuracy": 0.00032615786040443573
+          },
+          "subtraction": {
+            "total": 4408,
+            "correct": 2,
+            "accuracy": 0.00045372050816696913
+          }
+        }
+      }
+    },
+    "direct_sft": {
+      "prompt_format_1_plain": {
+        "model_name": "Direct SFT",
+        "format_name": "Format 1: Plain (What is 3+2?)",
+        "total_samples": 9000,
+        "strict_correct": 139,
+        "strict_accuracy": 0.015444444444444445,
+        "fallback_correct": 144,
+        "fallback_accuracy": 0.016,
+        "parse_rate": 0.882,
+        "eos_rate": 0.9904444444444445,
+        "repetition_rate": 0.009555555555555555,
+        "think_tag_rate": 0.0,
+        "answer_tag_rate": 0.882,
+        "full_format_rate": 0.0,
+        "mean_tokens": 5.902333333333333,
+        "median_tokens": 6,
+        "p90_tokens": 6,
+        "elapsed_seconds": 51.06069169999682,
+        "category_stats": {
+          "A_single_addition": {
+            "total": 1000,
+            "correct": 30,
+            "accuracy": 0.03
+          },
+          "B_single_subtraction": {
+            "total": 1000,
+            "correct": 11,
+            "accuracy": 0.011
+          },
+          "C_single_multiplication": {
+            "total": 1000,
+            "correct": 12,
+            "accuracy": 0.012
+          },
+          "D_single_division": {
+            "total": 1000,
+            "correct": 13,
+            "accuracy": 0.013
+          },
+          "E_two_operation": {
+            "total": 1000,
+            "correct": 11,
+            "accuracy": 0.011
+          },
+          "F_three_operation": {
+            "total": 1000,
+            "correct": 18,
+            "accuracy": 0.018
+          },
+          "G_four_operation": {
+            "total": 1000,
+            "correct": 28,
+            "accuracy": 0.028
+          },
+          "H_sequential_state": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "I_word_wrapped": {
+            "total": 1000,
+            "correct": 16,
+            "accuracy": 0.016
+          }
+        },
+        "op_count_stats": {
+          "1": {
+            "total": 4804,
+            "correct": 80,
+            "accuracy": 0.01665278934221482
+          },
+          "2": {
+            "total": 1196,
+            "correct": 13,
+            "accuracy": 0.010869565217391304
+          },
+          "3": {
+            "total": 2000,
+            "correct": 18,
+            "accuracy": 0.009
+          },
+          "4": {
+            "total": 1000,
+            "correct": 28,
+            "accuracy": 0.028
+          }
+        },
+        "op_type_stats": {
+          "addition": {
+            "total": 5430,
+            "correct": 86,
+            "accuracy": 0.01583793738489871
+          },
+          "division": {
+            "total": 1226,
+            "correct": 17,
+            "accuracy": 0.013866231647634585
+          },
+          "multiplication": {
+            "total": 6132,
+            "correct": 101,
+            "accuracy": 0.016470971950424004
+          },
+          "subtraction": {
+            "total": 4408,
+            "correct": 68,
+            "accuracy": 0.015426497277676952
+          }
+        }
+      },
+      "prompt_format_2_structured": {
+        "model_name": "Direct SFT",
+        "format_name": "Format 2: Structured (Calculate: 3+2)",
+        "total_samples": 9000,
+        "strict_correct": 15,
+        "strict_accuracy": 0.0016666666666666668,
+        "fallback_correct": 44,
+        "fallback_accuracy": 0.004888888888888889,
+        "parse_rate": 0.2222222222222222,
+        "eos_rate": 0.3263333333333333,
+        "repetition_rate": 0.6736666666666666,
+        "think_tag_rate": 0.0,
+        "answer_tag_rate": 0.2222222222222222,
+        "full_format_rate": 0.0,
+        "mean_tokens": 23.285444444444444,
+        "median_tokens": 32,
+        "p90_tokens": 32,
+        "elapsed_seconds": 144.49680399999488,
+        "category_stats": {
+          "A_single_addition": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "B_single_subtraction": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "C_single_multiplication": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "D_single_division": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "E_two_operation": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "F_three_operation": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "G_four_operation": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "H_sequential_state": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "I_word_wrapped": {
+            "total": 1000,
+            "correct": 15,
+            "accuracy": 0.015
+          }
+        },
+        "op_count_stats": {
+          "1": {
+            "total": 4804,
+            "correct": 13,
+            "accuracy": 0.0027060782681099086
+          },
+          "2": {
+            "total": 1196,
+            "correct": 2,
+            "accuracy": 0.0016722408026755853
+          },
+          "3": {
+            "total": 2000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "op_type_stats": {
+          "addition": {
+            "total": 5430,
+            "correct": 7,
+            "accuracy": 0.001289134438305709
+          },
+          "division": {
+            "total": 1226,
+            "correct": 3,
+            "accuracy": 0.0024469820554649264
+          },
+          "multiplication": {
+            "total": 6132,
+            "correct": 4,
+            "accuracy": 0.0006523157208088715
+          },
+          "subtraction": {
+            "total": 4408,
+            "correct": 3,
+            "accuracy": 0.0006805807622504537
+          }
+        }
+      },
+      "prompt_format_3_reasoning": {
+        "model_name": "Direct SFT",
+        "format_name": "Format 3: Reasoning (Question: What is 3+2?)",
+        "total_samples": 9000,
+        "strict_correct": 158,
+        "strict_accuracy": 0.017555555555555557,
+        "fallback_correct": 158,
+        "fallback_accuracy": 0.017555555555555557,
+        "parse_rate": 1.0,
+        "eos_rate": 1.0,
+        "repetition_rate": 0.0,
+        "think_tag_rate": 0.0,
+        "answer_tag_rate": 1.0,
+        "full_format_rate": 0.0,
+        "mean_tokens": 5.096333333333333,
+        "median_tokens": 5,
+        "p90_tokens": 5,
+        "elapsed_seconds": 30.375900000013644,
+        "category_stats": {
+          "A_single_addition": {
+            "total": 1000,
+            "correct": 26,
+            "accuracy": 0.026
+          },
+          "B_single_subtraction": {
+            "total": 1000,
+            "correct": 11,
+            "accuracy": 0.011
+          },
+          "C_single_multiplication": {
+            "total": 1000,
+            "correct": 26,
+            "accuracy": 0.026
+          },
+          "D_single_division": {
+            "total": 1000,
+            "correct": 17,
+            "accuracy": 0.017
+          },
+          "E_two_operation": {
+            "total": 1000,
+            "correct": 11,
+            "accuracy": 0.011
+          },
+          "F_three_operation": {
+            "total": 1000,
+            "correct": 19,
+            "accuracy": 0.019
+          },
+          "G_four_operation": {
+            "total": 1000,
+            "correct": 32,
+            "accuracy": 0.032
+          },
+          "H_sequential_state": {
+            "total": 1000,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "I_word_wrapped": {
+            "total": 1000,
+            "correct": 16,
+            "accuracy": 0.016
+          }
+        },
+        "op_count_stats": {
+          "1": {
+            "total": 4804,
+            "correct": 94,
+            "accuracy": 0.019567027477102414
+          },
+          "2": {
+            "total": 1196,
+            "correct": 13,
+            "accuracy": 0.010869565217391304
+          },
+          "3": {
+            "total": 2000,
+            "correct": 19,
+            "accuracy": 0.0095
+          },
+          "4": {
+            "total": 1000,
+            "correct": 32,
+            "accuracy": 0.032
+          }
+        },
+        "op_type_stats": {
+          "addition": {
+            "total": 5430,
+            "correct": 85,
+            "accuracy": 0.01565377532228361
+          },
+          "division": {
+            "total": 1226,
+            "correct": 21,
+            "accuracy": 0.017128874388254486
+          },
+          "multiplication": {
+            "total": 6132,
+            "correct": 125,
+            "accuracy": 0.020384866275277233
+          },
+          "subtraction": {
+            "total": 4408,
+            "correct": 74,
+            "accuracy": 0.01678765880217786
+          }
+        }
+      }
+    },
+    "cot_sft": {
+      "prompt_format_1_plain": {
+        "model_name": "CoT SFT",
+        "format_name": "Format 1: Plain (What is 3+2?)",
+        "total_samples": 9000,
+        "strict_correct": 115,
+        "strict_accuracy": 0.012777777777777779,
+        "fallback_correct": 135,
+        "fallback_accuracy": 0.015,
+        "parse_rate": 0.8835555555555555,
+        "eos_rate": 0.9763333333333334,
+        "repetition_rate": 0.10888888888888888,
+        "think_tag_rate": 0.7644444444444445,
+        "answer_tag_rate": 0.8835555555555555,
+        "full_format_rate": 0.7344444444444445,
+        "mean_tokens": 47.78277777777778,
+        "median_tokens": 45,
+        "p90_tokens": 72,
+        "elapsed_seconds": 2865.204461199988,
+        "category_stats": {
+          "A_single_addition": {
+            "total": 1000,
+            "correct": 18,
+            "accuracy": 0.018
+          },
+          "B_single_subtraction": {
+            "total": 1000,
+            "correct": 17,
+            "accuracy": 0.017
+          },
+          "C_single_multiplication": {
+            "total": 1000,
+            "correct": 12,
+            "accuracy": 0.012
+          },
+          "D_single_division": {
+            "total": 1000,
+            "correct": 19,
+            "accuracy": 0.019
+          },
+          "E_two_operation": {
+            "total": 1000,
+            "correct": 10,
+            "accuracy": 0.01
+          },
+          "F_three_operation": {
+            "total": 1000,
+            "correct": 9,
+            "accuracy": 0.009
+          },
+          "G_four_operation": {
+            "total": 1000,
+            "correct": 20,
+            "accuracy": 0.02
+          },
+          "H_sequential_state": {
+            "total": 1000,
+            "correct": 2,
+            "accuracy": 0.002
+          },
+          "I_word_wrapped": {
+            "total": 1000,
+            "correct": 8,
+            "accuracy": 0.008
+          }
+        },
+        "op_count_stats": {
+          "1": {
+            "total": 4804,
+            "correct": 73,
+            "accuracy": 0.015195670274771023
+          },
+          "2": {
+            "total": 1196,
+            "correct": 11,
+            "accuracy": 0.00919732441471572
+          },
+          "3": {
+            "total": 2000,
+            "correct": 11,
+            "accuracy": 0.0055
+          },
+          "4": {
+            "total": 1000,
+            "correct": 20,
+            "accuracy": 0.02
+          }
+        },
+        "op_type_stats": {
+          "addition": {
+            "total": 5430,
+            "correct": 57,
+            "accuracy": 0.010497237569060774
+          },
+          "division": {
+            "total": 1226,
+            "correct": 19,
+            "accuracy": 0.015497553017944535
+          },
+          "multiplication": {
+            "total": 6132,
+            "correct": 74,
+            "accuracy": 0.012067840834964122
+          },
+          "subtraction": {
+            "total": 4408,
+            "correct": 58,
+            "accuracy": 0.013157894736842105
+          }
+        }
+      },
+      "prompt_format_2_structured": {
+        "model_name": "CoT SFT",
+        "format_name": "Format 2: Structured (Calculate: 3+2)",
+        "total_samples": 9000,
+        "strict_correct": 47,
+        "strict_accuracy": 0.005222222222222222,
+        "fallback_correct": 102,
+        "fallback_accuracy": 0.011333333333333334,
+        "parse_rate": 0.5344444444444445,
+        "eos_rate": 0.9801111111111112,
+        "repetition_rate": 0.07011111111111111,
+        "think_tag_rate": 0.21033333333333334,
+        "answer_tag_rate": 0.5345555555555556,
+        "full_format_rate": 0.19855555555555557,
+        "mean_tokens": 29.25611111111111,
+        "median_tokens": 14,
+        "p90_tokens": 63,
+        "elapsed_seconds": 2468.0684583999973,
+        "category_stats": {
+          "A_single_addition": {
+            "total": 1000,
+            "correct": 5,
+            "accuracy": 0.005
+          },
+          "B_single_subtraction": {
+            "total": 1000,
+            "correct": 1,
+            "accuracy": 0.001
+          },
+          "C_single_multiplication": {
+            "total": 1000,
+            "correct": 8,
+            "accuracy": 0.008
+          },
+          "D_single_division": {
+            "total": 1000,
+            "correct": 3,
+            "accuracy": 0.003
+          },
+          "E_two_operation": {
+            "total": 1000,
+            "correct": 6,
+            "accuracy": 0.006
+          },
+          "F_three_operation": {
+            "total": 1000,
+            "correct": 4,
+            "accuracy": 0.004
+          },
+          "G_four_operation": {
+            "total": 1000,
+            "correct": 10,
+            "accuracy": 0.01
+          },
+          "H_sequential_state": {
+            "total": 1000,
+            "correct": 3,
+            "accuracy": 0.003
+          },
+          "I_word_wrapped": {
+            "total": 1000,
+            "correct": 7,
+            "accuracy": 0.007
+          }
+        },
+        "op_count_stats": {
+          "1": {
+            "total": 4804,
+            "correct": 24,
+            "accuracy": 0.004995836802664446
+          },
+          "2": {
+            "total": 1196,
+            "correct": 6,
+            "accuracy": 0.005016722408026756
+          },
+          "3": {
+            "total": 2000,
+            "correct": 7,
+            "accuracy": 0.0035
+          },
+          "4": {
+            "total": 1000,
+            "correct": 10,
+            "accuracy": 0.01
+          }
+        },
+        "op_type_stats": {
+          "addition": {
+            "total": 5430,
+            "correct": 30,
+            "accuracy": 0.0055248618784530384
+          },
+          "division": {
+            "total": 1226,
+            "correct": 4,
+            "accuracy": 0.0032626427406199023
+          },
+          "multiplication": {
+            "total": 6132,
+            "correct": 43,
+            "accuracy": 0.007012393998695368
+          },
+          "subtraction": {
+            "total": 4408,
+            "correct": 20,
+            "accuracy": 0.004537205081669692
+          }
+        }
+      },
+      "prompt_format_3_reasoning": {
+        "model_name": "CoT SFT",
+        "format_name": "Format 3: Reasoning (Question: What is 3+2?)",
+        "total_samples": 9000,
+        "strict_correct": 102,
+        "strict_accuracy": 0.011333333333333334,
+        "fallback_correct": 113,
+        "fallback_accuracy": 0.012555555555555556,
+        "parse_rate": 0.9391111111111111,
+        "eos_rate": 0.9911111111111112,
+        "repetition_rate": 0.09244444444444444,
+        "think_tag_rate": 0.991,
+        "answer_tag_rate": 0.9391111111111111,
+        "full_format_rate": 0.9376666666666666,
+        "mean_tokens": 50.83911111111111,
+        "median_tokens": 48,
+        "p90_tokens": 70,
+        "elapsed_seconds": 1981.357205999986,
+        "category_stats": {
+          "A_single_addition": {
+            "total": 1000,
+            "correct": 17,
+            "accuracy": 0.017
+          },
+          "B_single_subtraction": {
+            "total": 1000,
+            "correct": 14,
+            "accuracy": 0.014
+          },
+          "C_single_multiplication": {
+            "total": 1000,
+            "correct": 5,
+            "accuracy": 0.005
+          },
+          "D_single_division": {
+            "total": 1000,
+            "correct": 16,
+            "accuracy": 0.016
+          },
+          "E_two_operation": {
+            "total": 1000,
+            "correct": 9,
+            "accuracy": 0.009
+          },
+          "F_three_operation": {
+            "total": 1000,
+            "correct": 12,
+            "accuracy": 0.012
+          },
+          "G_four_operation": {
+            "total": 1000,
+            "correct": 18,
+            "accuracy": 0.018
+          },
+          "H_sequential_state": {
+            "total": 1000,
+            "correct": 3,
+            "accuracy": 0.003
+          },
+          "I_word_wrapped": {
+            "total": 1000,
+            "correct": 8,
+            "accuracy": 0.008
+          }
+        },
+        "op_count_stats": {
+          "1": {
+            "total": 4804,
+            "correct": 60,
+            "accuracy": 0.012489592006661115
+          },
+          "2": {
+            "total": 1196,
+            "correct": 9,
+            "accuracy": 0.007525083612040134
+          },
+          "3": {
+            "total": 2000,
+            "correct": 15,
+            "accuracy": 0.0075
+          },
+          "4": {
+            "total": 1000,
+            "correct": 18,
+            "accuracy": 0.018
+          }
+        },
+        "op_type_stats": {
+          "addition": {
+            "total": 5430,
+            "correct": 60,
+            "accuracy": 0.011049723756906077
+          },
+          "division": {
+            "total": 1226,
+            "correct": 18,
+            "accuracy": 0.01468189233278956
+          },
+          "multiplication": {
+            "total": 6132,
+            "correct": 65,
+            "accuracy": 0.010600130463144161
+          },
+          "subtraction": {
+            "total": 4408,
+            "correct": 52,
+            "accuracy": 0.011796733212341199
+          }
+        }
+      }
+    }
+  },
+  "cot_trace_validation": {
+    "sample_size": 100,
+    "taxonomy_counts": {
+      "1. Correct answer + correct arithmetic steps": 0,
+      "2. Correct answer + incorrect steps": 0,
+      "3. Incorrect answer + structured arithmetic": 82,
+      "4. Repetition": 14,
+      "5. Format failure": 4
+    },
+    "taxonomy_percentages": {
+      "1. Correct answer + correct arithmetic steps": 0.0,
+      "2. Correct answer + incorrect steps": 0.0,
+      "3. Incorrect answer + structured arithmetic": 82.0,
+      "4. Repetition": 14.000000000000002,
+      "5. Format failure": 4.0
+    },
+    "traces": [
+      {
+        "problem_id": "arith_a_0001",
+        "category": "A_single_addition",
+        "expression": "214 + 35",
+        "gold_answer": "249",
+        "strict_extracted": "48",
+        "classification": "4. Repetition",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "214 + 35 = 95",
+            "true_result": 249,
+            "stated_result": 95,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIn 214, 214 + 35 = 95\nIn 214, 95=48 years\n</think>\n<answer>48</answer>"
+      },
+      {
+        "problem_id": "arith_a_0002",
+        "category": "A_single_addition",
+        "expression": "381 + 260",
+        "gold_answer": "641",
+        "strict_extracted": "541",
+        "classification": "4. Repetition",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "381 + 260 = 981",
+            "true_result": 641,
+            "stated_result": 981,
+            "is_correct": false
+          },
+          {
+            "eq": "981 - 981 = 541",
+            "true_result": 0,
+            "stated_result": 541,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe total number of 381 + 260 = 981\nSo, 981 - 981 = 541\n</think>\n<answer>541</answer>"
+      },
+      {
+        "problem_id": "arith_a_0003",
+        "category": "A_single_addition",
+        "expression": "3 + 2",
+        "gold_answer": "5",
+        "strict_extracted": "80",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "50 - 50 = 80",
+            "true_result": 0,
+            "stated_result": 80,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 7 days in a week, so 4 x 10 = 50 minutes.\nSo there were 50 - 50 = 80 minutes left over to the end of the day.\n</think>\n<answer>80</answer>"
+      },
+      {
+        "problem_id": "arith_a_0004",
+        "category": "A_single_addition",
+        "expression": "858 + 923",
+        "gold_answer": "1781",
+        "strict_extracted": "188",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "4 * 72 = 188",
+            "true_result": 288,
+            "stated_result": 188,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe total number of people that are 60, the number of people who are 1/2, and 923 is 4*72 = 188.\n</think>\n<answer>188</answer>"
+      },
+      {
+        "problem_id": "arith_a_0005",
+        "category": "A_single_addition",
+        "expression": "189 + 614",
+        "gold_answer": "803",
+        "strict_extracted": null,
+        "classification": "5. Format failure",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "214 / 3 = 1089",
+            "true_result": 71,
+            "stated_result": 1089,
+            "is_correct": false
+          },
+          {
+            "eq": "189 - 614 = 789",
+            "true_result": -425,
+            "stated_result": 789,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe number of 214/3=1089\nSo the number of 189-614=789\n</think>789</answer>"
+      },
+      {
+        "problem_id": "arith_a_0006",
+        "category": "A_single_addition",
+        "expression": "14 + 4",
+        "gold_answer": "18",
+        "strict_extracted": "7",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "14 - 14 = 24",
+            "true_result": 0,
+            "stated_result": 24,
+            "is_correct": false
+          },
+          {
+            "eq": "14 + 4 = 7",
+            "true_result": 18,
+            "stated_result": 7,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you add the 14-14 = 24 numbers to find the total number of blocks in 5 blocks, then 14 + 4 = 7 blocks are equal.\n</think>\n<answer>7</answer>"
+      },
+      {
+        "problem_id": "arith_a_0007",
+        "category": "A_single_addition",
+        "expression": "4 + 4",
+        "gold_answer": "8",
+        "strict_extracted": "7",
+        "classification": "4. Repetition",
+        "total_equations_found": 2,
+        "valid_equations_found": 1,
+        "equation_details": [
+          {
+            "eq": "2 - 1 = 5",
+            "true_result": 1,
+            "stated_result": 5,
+            "is_correct": false
+          },
+          {
+            "eq": "4 + 3 = 7",
+            "true_result": 7,
+            "stated_result": 7,
+            "is_correct": true
+          }
+        ],
+        "trace_snippet": "<think>\nIf 1 pair of pairs of pairs of pairs of pairs of pairs of pairs of pairs of pairs, there are 2-1 = 5 pairs\nThe total number of pairs of pairs of pairs of pairs of pairs of pairs of pairs of pairs of pairs is 4+3 = 7\n</think>\n<answer>7</answer>"
+      },
+      {
+        "problem_id": "arith_a_0008",
+        "category": "A_single_addition",
+        "expression": "716 + 37",
+        "gold_answer": "753",
+        "strict_extracted": "8",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "716 - 37 = 52",
+            "true_result": 679,
+            "stated_result": 52,
+            "is_correct": false
+          },
+          {
+            "eq": "52 / 4 = 8",
+            "true_result": 13,
+            "stated_result": 8,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf the number of days in the morning is 716 - 37 = 52 months.\nThe total number of days in the afternoon is 52 / 4 = 8 days.\n</think>\n<answer>8</answer>"
+      },
+      {
+        "problem_id": "arith_a_0009",
+        "category": "A_single_addition",
+        "expression": "303 + 743",
+        "gold_answer": "1046",
+        "strict_extracted": "96",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "103 - 2 = 56",
+            "true_result": 101,
+            "stated_result": 56,
+            "is_correct": false
+          },
+          {
+            "eq": "303 + 56 = 96",
+            "true_result": 359,
+            "stated_result": 96,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe other 103 - 2 = 56.\nSo, 303 + 56 = 96.\n</think>\n<answer>96</answer>"
+      },
+      {
+        "problem_id": "arith_a_0010",
+        "category": "A_single_addition",
+        "expression": "818 + 568",
+        "gold_answer": "1386",
+        "strict_extracted": "336",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nThe total number of $20 per year is 818 / 4 months = 336/hour.\n</think>\n<answer>336</answer>"
+      },
+      {
+        "problem_id": "arith_a_0011",
+        "category": "A_single_addition",
+        "expression": "38 + 58",
+        "gold_answer": "96",
+        "strict_extracted": "9",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 1,
+        "equation_details": [
+          {
+            "eq": "38 - 58 = 24",
+            "true_result": -20,
+            "stated_result": 24,
+            "is_correct": false
+          },
+          {
+            "eq": "38 / 4 = 9",
+            "true_result": 9,
+            "stated_result": 9,
+            "is_correct": true
+          }
+        ],
+        "trace_snippet": "<think>\n38 - 58 = 24\nThere are 10 minutes in 38/4 = 9 days.\n</think>\n<answer>9</answer>"
+      },
+      {
+        "problem_id": "arith_a_0012",
+        "category": "A_single_addition",
+        "expression": "384 + 838",
+        "gold_answer": "1222",
+        "strict_extracted": "764",
+        "classification": "4. Repetition",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "384 / 2 = 6",
+            "true_result": 192,
+            "stated_result": 6,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nLet x be the number of 384 / 2 = 6.\nSo in 384, we have 6 - 384 + 12x = 764.\n</think>\n<answer>764</answer>"
+      },
+      {
+        "problem_id": "arith_a_0013",
+        "category": "A_single_addition",
+        "expression": "3 + 7",
+        "gold_answer": "10",
+        "strict_extracted": "20",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "5 - 6 = 20",
+            "true_result": -1,
+            "stated_result": 20,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are a total of 7 x 10 = 48 minutes in the morning.\nSo, 5 - 6 = 20 minutes have been added to the evening.\n</think>\n<answer>20</answer>"
+      },
+      {
+        "problem_id": "arith_a_0014",
+        "category": "A_single_addition",
+        "expression": "45 + 20",
+        "gold_answer": "65",
+        "strict_extracted": "9",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "1 / 3 = 6",
+            "true_result": 0,
+            "stated_result": 6,
+            "is_correct": false
+          },
+          {
+            "eq": "45 + 6 = 9",
+            "true_result": 51,
+            "stated_result": 9,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you add the 45 x 1/3 = 6 people to the 8 people who walked, 45 + 6 = 9 people walking.\n</think>\n<answer>9</answer>"
+      },
+      {
+        "problem_id": "arith_a_0015",
+        "category": "A_single_addition",
+        "expression": "6 + 2",
+        "gold_answer": "8",
+        "strict_extracted": "4",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet x be the number of sides of the equation.\nx+2x+3 = 7(x)=18 points.\n</think>\n<answer>4</answer>"
+      },
+      {
+        "problem_id": "arith_a_0016",
+        "category": "A_single_addition",
+        "expression": "7 + 2",
+        "gold_answer": "9",
+        "strict_extracted": "18",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 3,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "60 / 3 = 14",
+            "true_result": 20,
+            "stated_result": 14,
+            "is_correct": false
+          },
+          {
+            "eq": "7 + 5 = 8",
+            "true_result": 12,
+            "stated_result": 8,
+            "is_correct": false
+          },
+          {
+            "eq": "7 - 8 = 18",
+            "true_result": -1,
+            "stated_result": 18,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf there are 60 / 3 = 14 parts of the equation, then 7 + 5 = 8 parts.\nTherefore 7 - 8 = 18 parts are needed.\n</think>\n<answer>18</answer>"
+      },
+      {
+        "problem_id": "arith_a_0017",
+        "category": "A_single_addition",
+        "expression": "54 + 78",
+        "gold_answer": "132",
+        "strict_extracted": "4",
+        "classification": "4. Repetition",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "2 * 78 = 150",
+            "true_result": 156,
+            "stated_result": 150,
+            "is_correct": false
+          },
+          {
+            "eq": "150 / 60 = 4",
+            "true_result": 2,
+            "stated_result": 4,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf we add up the 100% of the first 3 months, then 2*78 = 150 years\nSince there are 60 days in a year, the 150-minute trip will take 150/60 = 4 trips.\n</think>\n<answer>4</answer>"
+      },
+      {
+        "problem_id": "arith_a_0018",
+        "category": "A_single_addition",
+        "expression": "15 + 94",
+        "gold_answer": "109",
+        "strict_extracted": "60",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "200 / 15 = 70",
+            "true_result": 13,
+            "stated_result": 70,
+            "is_correct": false
+          },
+          {
+            "eq": "80 - 70 = 60",
+            "true_result": 10,
+            "stated_result": 60,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you add 15 to the equation that leaves 200/15 = 70 parts, then 80-70 = 60 parts will be equal.\n</think>\n<answer>60</answer>"
+      },
+      {
+        "problem_id": "arith_a_0019",
+        "category": "A_single_addition",
+        "expression": "78 + 16",
+        "gold_answer": "94",
+        "strict_extracted": "248",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "78 + 3 = 248",
+            "true_result": 81,
+            "stated_result": 248,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 78 + 3 = 248 letters in 5 minutes.\n</think>\n<answer>248</answer>"
+      },
+      {
+        "problem_id": "arith_a_0020",
+        "category": "A_single_addition",
+        "expression": "20 + 71",
+        "gold_answer": "91",
+        "strict_extracted": "46",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "5 * 3 = 90",
+            "true_result": 15,
+            "stated_result": 90,
+            "is_correct": false
+          },
+          {
+            "eq": "80 + 90 = 46",
+            "true_result": 170,
+            "stated_result": 46,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe number of 5 * 3 = 90\nSo in total there are 80 + 90 = 46 more than 20\n</think>\n<answer>46</answer>"
+      },
+      {
+        "problem_id": "arith_a_0021",
+        "category": "A_single_addition",
+        "expression": "90 + 80",
+        "gold_answer": "170",
+        "strict_extracted": "374",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 3,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "3 * 12 = 64",
+            "true_result": 36,
+            "stated_result": 64,
+            "is_correct": false
+          },
+          {
+            "eq": "54 - 7 = 14",
+            "true_result": 47,
+            "stated_result": 14,
+            "is_correct": false
+          },
+          {
+            "eq": "14 + 80 = 33",
+            "true_result": 94,
+            "stated_result": 33,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 3 * 12 = 64 letters in the first letter.\nSo, there were a total of 54 - 7 = 14 + 90 + 14 + 80 = 33 + 64 = 374 letters.\n</think>\n<answer>374</answer>"
+      },
+      {
+        "problem_id": "arith_a_0022",
+        "category": "A_single_addition",
+        "expression": "83 + 25",
+        "gold_answer": "108",
+        "strict_extracted": "67",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "83 - 10 = 47",
+            "true_result": 73,
+            "stated_result": 47,
+            "is_correct": false
+          },
+          {
+            "eq": "47 / 4 = 67",
+            "true_result": 11,
+            "stated_result": 67,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 83 - 10 = 47 siblings in total.\nSo, there are 47 / 4 = 67 friends in the whole family.\n</think>\n<answer>67</answer>"
+      },
+      {
+        "problem_id": "arith_a_0023",
+        "category": "A_single_addition",
+        "expression": "171 + 56",
+        "gold_answer": "227",
+        "strict_extracted": "1480",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "171 - 56 = 371",
+            "true_result": 115,
+            "stated_result": 371,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nLet x represent the number of days in the equation.\nSo, 171 - 56 = 371 + 2x = 1480\n</think>\n<answer>1480</answer>"
+      },
+      {
+        "problem_id": "arith_a_0024",
+        "category": "A_single_addition",
+        "expression": "333 + 801",
+        "gold_answer": "1134",
+        "strict_extracted": "2016",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet x be the number of 3333 + 801.\n</think>\n<answer>x=2016\n</think>2016</answer>"
+      },
+      {
+        "problem_id": "arith_a_0025",
+        "category": "A_single_addition",
+        "expression": "20 + 30",
+        "gold_answer": "50",
+        "strict_extracted": "60",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "100 * 5 = 8",
+            "true_result": 500,
+            "stated_result": 8,
+            "is_correct": false
+          },
+          {
+            "eq": "8 / 20 = 60",
+            "true_result": 0,
+            "stated_result": 60,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf we divide 10 by 20, the number of degrees is 20/100 * 5 = 8.\nSo that means 8 / 20 = 60.\n</think>\n<answer>60</answer>"
+      },
+      {
+        "problem_id": "arith_a_0026",
+        "category": "A_single_addition",
+        "expression": "7 + 5",
+        "gold_answer": "12",
+        "strict_extracted": "88",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "35 - 7 = 21",
+            "true_result": 28,
+            "stated_result": 21,
+            "is_correct": false
+          },
+          {
+            "eq": "21 + 21 = 88",
+            "true_result": 42,
+            "stated_result": 88,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\n35 - 7 = 21\nThere are 21 + 21 = 88\n</think>\n<answer>88</answer>"
+      },
+      {
+        "problem_id": "arith_a_0027",
+        "category": "A_single_addition",
+        "expression": "91 + 47",
+        "gold_answer": "138",
+        "strict_extracted": "51",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "91 + 47 = 281",
+            "true_result": 138,
+            "stated_result": 281,
+            "is_correct": false
+          },
+          {
+            "eq": "36 / 2 = 51",
+            "true_result": 18,
+            "stated_result": 51,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you add 91 + 47 = 281 to the equation, then 36/2 = 51.\n</think>\n<answer>51</answer>"
+      },
+      {
+        "problem_id": "arith_a_0028",
+        "category": "A_single_addition",
+        "expression": "6 + 6",
+        "gold_answer": "12",
+        "strict_extracted": "7",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "6 - 6 = 12",
+            "true_result": 0,
+            "stated_result": 12,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\n6 - 6 = 12 are not in the original order\n4 x 3 = 7.\n</think>\n<answer>7</answer>"
+      },
+      {
+        "problem_id": "arith_a_0029",
+        "category": "A_single_addition",
+        "expression": "5 + 2",
+        "gold_answer": "7",
+        "strict_extracted": "70",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nThere are 10 x 3 = 8 x 6.\nSo, the total number of terms in the equation is 8 x 4 = 70.\n</think>\n<answer>70</answer>"
+      },
+      {
+        "problem_id": "arith_a_0030",
+        "category": "A_single_addition",
+        "expression": "750 + 185",
+        "gold_answer": "935",
+        "strict_extracted": "275",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "750 - 400 = 275",
+            "true_result": 350,
+            "stated_result": 275,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf 750 x 3 = 400.\nSo, 750 - 400 = 275.\n</think>\n<answer>275</answer>"
+      },
+      {
+        "problem_id": "arith_a_0031",
+        "category": "A_single_addition",
+        "expression": "846 + 260",
+        "gold_answer": "1106",
+        "strict_extracted": "16",
+        "classification": "4. Repetition",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "846 / 3 = 90",
+            "true_result": 282,
+            "stated_result": 90,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf 100% of 50% of 70% are (this means they're at least six), then 846/3 = 90% of 70% of 70% are at least one age.\nSo, 846 - 90% = 846 / 100% = 16 people are at least 70%.\n</think>\n<answer>16</answer>"
+      },
+      {
+        "problem_id": "arith_a_0032",
+        "category": "A_single_addition",
+        "expression": "8 + 7",
+        "gold_answer": "15",
+        "strict_extracted": "6",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "8 + 3 = 4",
+            "true_result": 11,
+            "stated_result": 4,
+            "is_correct": false
+          },
+          {
+            "eq": "8 - 4 = 6",
+            "true_result": 4,
+            "stated_result": 6,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\n8 + 3 = 4\nSo, 8 - 4 = 6\n</think>\n<answer>6</answer>"
+      },
+      {
+        "problem_id": "arith_a_0033",
+        "category": "A_single_addition",
+        "expression": "91 + 89",
+        "gold_answer": "180",
+        "strict_extracted": "24",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "3 + 8 = 24",
+            "true_result": 11,
+            "stated_result": 24,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 3+8 = 24 men at the end of the semester.\n</think>\n<answer>24</answer>"
+      },
+      {
+        "problem_id": "arith_a_0034",
+        "category": "A_single_addition",
+        "expression": "324 + 711",
+        "gold_answer": "1035",
+        "strict_extracted": "60",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "5 * 711 = 60",
+            "true_result": 3555,
+            "stated_result": 60,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe total number of days in the week is 5*711 = 60 days.\n</think>\n<answer>60</answer>"
+      },
+      {
+        "problem_id": "arith_a_0035",
+        "category": "A_single_addition",
+        "expression": "17 + 30",
+        "gold_answer": "47",
+        "strict_extracted": "60",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet X be the number of terms.\nThe equation for the first part is X + 2x = 4\n</think>\n<answer>X = 60</answer>"
+      },
+      {
+        "problem_id": "arith_a_0036",
+        "category": "A_single_addition",
+        "expression": "6 + 7",
+        "gold_answer": "13",
+        "strict_extracted": "44",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 3,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "20 - 1 = 32",
+            "true_result": 19,
+            "stated_result": 32,
+            "is_correct": false
+          },
+          {
+            "eq": "40 - 32 = 58",
+            "true_result": 8,
+            "stated_result": 58,
+            "is_correct": false
+          },
+          {
+            "eq": "7 + 58 = 44",
+            "true_result": 65,
+            "stated_result": 44,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\n20 - 1 = 32\n40 - 32 = 58\nThere are 7+58= 44\n</think>\n<answer>44</answer>"
+      },
+      {
+        "problem_id": "arith_a_0037",
+        "category": "A_single_addition",
+        "expression": "18 + 28",
+        "gold_answer": "46",
+        "strict_extracted": "5",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "4 / 3 = 7",
+            "true_result": 1,
+            "stated_result": 7,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nFirst find the total number of digits in a fraction: 4/3 = 7.\nThen divide that number by the fraction: 7/6 * (1/3) = 5\n</think>\n<answer>5</answer>"
+      },
+      {
+        "problem_id": "arith_a_0038",
+        "category": "A_single_addition",
+        "expression": "997 + 745",
+        "gold_answer": "1742",
+        "strict_extracted": "12",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "397 + 745 = 1206",
+            "true_result": 1142,
+            "stated_result": 1206,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 397 + 745 = 1206 people in 897.\n</think>\n<answer>12</answer>"
+      },
+      {
+        "problem_id": "arith_a_0039",
+        "category": "A_single_addition",
+        "expression": "37 + 84",
+        "gold_answer": "121",
+        "strict_extracted": "28",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 3,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "37 / 2 = 98",
+            "true_result": 18,
+            "stated_result": 98,
+            "is_correct": false
+          },
+          {
+            "eq": "6 * 15 = 70",
+            "true_result": 90,
+            "stated_result": 70,
+            "is_correct": false
+          },
+          {
+            "eq": "37 - 84 = 28",
+            "true_result": -47,
+            "stated_result": 28,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you have 37 / 2 = 98 questions, then 6 * 15 = 70.\nTherefore, 37 - 84 = 28 are 28 questions.\n</think>\n<answer>28</answer>"
+      },
+      {
+        "problem_id": "arith_a_0040",
+        "category": "A_single_addition",
+        "expression": "60 + 83",
+        "gold_answer": "143",
+        "strict_extracted": "83",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 3,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "60 - 15 = 48",
+            "true_result": 45,
+            "stated_result": 48,
+            "is_correct": false
+          },
+          {
+            "eq": "90 / 3 = 24",
+            "true_result": 30,
+            "stated_result": 24,
+            "is_correct": false
+          },
+          {
+            "eq": "60 / 15 = 24",
+            "true_result": 4,
+            "stated_result": 24,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nLet x be the number of sides and x be the number of sides. We know that x + 2x = 60, and 4x - 7 were 60.\n</think>\n<answer> x+83 = 15x\n60-15 = 48x\nThe equation for 60, we get x = 90/3 = 24 sides\nCombining like terms gives 60/15= 24 sides\n</think>\n<answer>24</answer>"
+      },
+      {
+        "problem_id": "arith_a_0041",
+        "category": "A_single_addition",
+        "expression": "28 + 34",
+        "gold_answer": "62",
+        "strict_extracted": "9",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "3 / 5 = 6",
+            "true_result": 0,
+            "stated_result": 6,
+            "is_correct": false
+          },
+          {
+            "eq": "28 + 34 = 9",
+            "true_result": 62,
+            "stated_result": 9,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 10 people in the 3/5 = 6 people in the morning.\nSo, 28 + 34 = 9 people in the evening\n</think>\n<answer>9</answer>"
+      },
+      {
+        "problem_id": "arith_a_0042",
+        "category": "A_single_addition",
+        "expression": "4 + 9",
+        "gold_answer": "13",
+        "strict_extracted": "172",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "5 * 4 = 27",
+            "true_result": 20,
+            "stated_result": 27,
+            "is_correct": false
+          },
+          {
+            "eq": "100 + 60 = 172",
+            "true_result": 160,
+            "stated_result": 172,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you add 4 to the equation 28, then 1/3 of the equation .5*4 = 27.\nSince there are 60 parts in 4, there will be 100+60=172 pieces of 4 parts.\n</think>\n<answer>172</answer>"
+      },
+      {
+        "problem_id": "arith_a_0043",
+        "category": "A_single_addition",
+        "expression": "369 + 774",
+        "gold_answer": "1143",
+        "strict_extracted": null,
+        "classification": "4. Repetition",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet x be the number of 120x20x20x20 = 5x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20y20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20x20"
+      },
+      {
+        "problem_id": "arith_a_0044",
+        "category": "A_single_addition",
+        "expression": "538 + 929",
+        "gold_answer": "1467",
+        "strict_extracted": null,
+        "classification": "4. Repetition",
+        "total_equations_found": 4,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "729 / 4 = 140",
+            "true_result": 182,
+            "stated_result": 140,
+            "is_correct": false
+          },
+          {
+            "eq": "538 - 929 = 299",
+            "true_result": -391,
+            "stated_result": 299,
+            "is_correct": false
+          },
+          {
+            "eq": "538 / 4 = 109",
+            "true_result": 134,
+            "stated_result": 109,
+            "is_correct": false
+          },
+          {
+            "eq": "538 - 538 = 109",
+            "true_result": 0,
+            "stated_result": 109,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf 60% of the 40% is 10%, then 729/4 = 140% are not.\nSo, 538 - 929 = 299 is not the same as 538/4 = 109% of 538-109% of 109% of 109% of 538-109% of 538-109% of 538-109% of 538-538 = 109% of 538-109% of 538-109% of 538% of 538-109% of 538% of 538-109% of 538"
+      },
+      {
+        "problem_id": "arith_a_0045",
+        "category": "A_single_addition",
+        "expression": "508 + 380",
+        "gold_answer": "888",
+        "strict_extracted": "40",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "508 / 12 = 400",
+            "true_result": 42,
+            "stated_result": 400,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 508 / 12 = 400 people.\n</think>\n<answer>40</answer>"
+      },
+      {
+        "problem_id": "arith_a_0046",
+        "category": "A_single_addition",
+        "expression": "3 + 9",
+        "gold_answer": "12",
+        "strict_extracted": "37",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 4,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "4 - 10 = 25",
+            "true_result": -6,
+            "stated_result": 25,
+            "is_correct": false
+          },
+          {
+            "eq": "5 * 8 = 37",
+            "true_result": 40,
+            "stated_result": 37,
+            "is_correct": false
+          },
+          {
+            "eq": "5 * 9 = 14",
+            "true_result": 45,
+            "stated_result": 14,
+            "is_correct": false
+          },
+          {
+            "eq": "37 + 9 = 37",
+            "true_result": 46,
+            "stated_result": 37,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\n4 - 10 = 25\n6.5 * 8 = 37\n6.5 * 9 = 14\nThe total number of 37 days in the whole was 37 + 9 = 37\n</think>\n<answer>37</answer>"
+      },
+      {
+        "problem_id": "arith_a_0047",
+        "category": "A_single_addition",
+        "expression": "21 + 97",
+        "gold_answer": "118",
+        "strict_extracted": "6",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet x be the number of terms in the equation.\nx + 97 = 60\n3x = 4x\n4(x)=x\n</think>\n<answer>6</answer>"
+      },
+      {
+        "problem_id": "arith_a_0048",
+        "category": "A_single_addition",
+        "expression": "2 + 3",
+        "gold_answer": "5",
+        "strict_extracted": "4",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet x be the number of sides of the equation.\nTherefore, 1/2x=4 sides.\n</think>\n<answer>4</answer>"
+      },
+      {
+        "problem_id": "arith_a_0049",
+        "category": "A_single_addition",
+        "expression": "263 + 821",
+        "gold_answer": "1084",
+        "strict_extracted": "763",
+        "classification": "4. Repetition",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "563 - 821 = 741",
+            "true_result": -258,
+            "stated_result": 741,
+            "is_correct": false
+          },
+          {
+            "eq": "741 / 741 = 763",
+            "true_result": 1,
+            "stated_result": 763,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 563 - 821 = 741 words in the whole book.\nSo, there are 741 / 741 = 763 words in the whole book.\n</think>\n<answer>763</answer>"
+      },
+      {
+        "problem_id": "arith_a_0050",
+        "category": "A_single_addition",
+        "expression": "532 + 620",
+        "gold_answer": "1152",
+        "strict_extracted": "84",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "1 / 3 = 84",
+            "true_result": 0,
+            "stated_result": 84,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe equation for 532 - 1/3 = 84.\n</think>\n<answer>84</answer>"
+      },
+      {
+        "problem_id": "arith_a_0051",
+        "category": "A_single_addition",
+        "expression": "7 + 7",
+        "gold_answer": "14",
+        "strict_extracted": null,
+        "classification": "5. Format failure",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\n</think>7</answer>"
+      },
+      {
+        "problem_id": "arith_a_0052",
+        "category": "A_single_addition",
+        "expression": "579 + 551",
+        "gold_answer": "1130",
+        "strict_extracted": "248",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "579 - 551 = 248",
+            "true_result": 28,
+            "stated_result": 248,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nLast year, 579 - 551 = 248 days were made.\n</think>\n<answer>248</answer>"
+      },
+      {
+        "problem_id": "arith_a_0053",
+        "category": "A_single_addition",
+        "expression": "80 + 2",
+        "gold_answer": "82",
+        "strict_extracted": "31",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "80 / 6 = 4",
+            "true_result": 13,
+            "stated_result": 4,
+            "is_correct": false
+          },
+          {
+            "eq": "70 - 80 = 31",
+            "true_result": -10,
+            "stated_result": 31,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you add the 80/6 = 4 to the equation, then 70 - 80 = 31.\n</think>\n<answer>31</answer>"
+      },
+      {
+        "problem_id": "arith_a_0054",
+        "category": "A_single_addition",
+        "expression": "838 + 127",
+        "gold_answer": "965",
+        "strict_extracted": "2336",
+        "classification": "4. Repetition",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "838 + 90 = 436",
+            "true_result": 928,
+            "stated_result": 436,
+            "is_correct": false
+          },
+          {
+            "eq": "838 + 436 = 2336",
+            "true_result": 1274,
+            "stated_result": 2336,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nLet x be the number of 838 + 4x = 60.\nSo, 838 - 5x = 90.\nTherefore, 838 + 90 = 436 are 838 + 436 = 2336\n</think>\n<answer>2336</answer>"
+      },
+      {
+        "problem_id": "arith_a_0055",
+        "category": "A_single_addition",
+        "expression": "649 + 778",
+        "gold_answer": "1427",
+        "strict_extracted": "128",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "778 - 100 = 236",
+            "true_result": 678,
+            "stated_result": 236,
+            "is_correct": false
+          },
+          {
+            "eq": "1 / 2 = 128",
+            "true_result": 0,
+            "stated_result": 128,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nTwo778 - 100 = 236\nThere are 236 x 1/2 = 128\n</think>\n<answer>128</answer>"
+      },
+      {
+        "problem_id": "arith_a_0056",
+        "category": "A_single_addition",
+        "expression": "92 + 44",
+        "gold_answer": "136",
+        "strict_extracted": "144",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "1 / 4 = 50",
+            "true_result": 0,
+            "stated_result": 50,
+            "is_correct": false
+          },
+          {
+            "eq": "92 - 50 = 72",
+            "true_result": 42,
+            "stated_result": 72,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 60 x 1/4 = 50 students in total.\nSo, 92 - 50 = 72 students from this 84 students will be able to express 92 x 3 = 144 students.\n</think>\n<answer>144</answer>"
+      },
+      {
+        "problem_id": "arith_a_0057",
+        "category": "A_single_addition",
+        "expression": "5 + 7",
+        "gold_answer": "12",
+        "strict_extracted": "67",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "2 * 7 = 36",
+            "true_result": 14,
+            "stated_result": 36,
+            "is_correct": false
+          },
+          {
+            "eq": "48 - 1 = 67",
+            "true_result": 47,
+            "stated_result": 67,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you add 10 to the equation, 2*7 = 36, you get 48-1=67 expressions.\n</think>\n<answer>67</answer>"
+      },
+      {
+        "problem_id": "arith_a_0058",
+        "category": "A_single_addition",
+        "expression": "8 + 1",
+        "gold_answer": "9",
+        "strict_extracted": "99",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "6 - 2 = 3",
+            "true_result": 4,
+            "stated_result": 3,
+            "is_correct": false
+          },
+          {
+            "eq": "8 + 3 = 99",
+            "true_result": 11,
+            "stated_result": 99,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you add 2 x 4 = 5 to the equation 8, then 6 - 2 = 3.\nThus, 8 + 3 = 99 are equal parts of 8 and 1.\n</think>\n<answer>99</answer>"
+      },
+      {
+        "problem_id": "arith_a_0059",
+        "category": "A_single_addition",
+        "expression": "996 + 746",
+        "gold_answer": "1742",
+        "strict_extracted": "9",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "398 / 10 = 2",
+            "true_result": 39,
+            "stated_result": 2,
+            "is_correct": false
+          },
+          {
+            "eq": "746 - 746 = 5",
+            "true_result": 0,
+            "stated_result": 5,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nLet x be the number of 398 / 10 = 2.\nWe know that x + 746 - 746 = 5x10 = 996\n</think>\n<answer>9</answer>"
+      },
+      {
+        "problem_id": "arith_a_0060",
+        "category": "A_single_addition",
+        "expression": "74 + 98",
+        "gold_answer": "172",
+        "strict_extracted": "5",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "74 + 3 = 120",
+            "true_result": 77,
+            "stated_result": 120,
+            "is_correct": false
+          },
+          {
+            "eq": "74 - 5 = 5",
+            "true_result": 69,
+            "stated_result": 5,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you add 74 to the equation 74 + 3 = 120, then 74 - 5 = 5\n</think>\n<answer>5</answer>"
+      },
+      {
+        "problem_id": "arith_a_0061",
+        "category": "A_single_addition",
+        "expression": "9 + 2",
+        "gold_answer": "11",
+        "strict_extracted": "10",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "4 + 5 = 10",
+            "true_result": 9,
+            "stated_result": 10,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 4+5 = 10 parts that do not contain 8 parts.\n</think>\n<answer>10</answer>"
+      },
+      {
+        "problem_id": "arith_a_0062",
+        "category": "A_single_addition",
+        "expression": "405 + 871",
+        "gold_answer": "1276",
+        "strict_extracted": "322",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet x be the number of days.\nSince 871-x = 60, we know that x + 871 = 3222.\n</think>\n<answer>322</answer>"
+      },
+      {
+        "problem_id": "arith_a_0063",
+        "category": "A_single_addition",
+        "expression": "619 + 633",
+        "gold_answer": "1252",
+        "strict_extracted": "4833",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "619 + 633 = 4833",
+            "true_result": 1252,
+            "stated_result": 4833,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nTheir 619 + 633 = 4833.\n</think>\n<answer>4833</answer>"
+      },
+      {
+        "problem_id": "arith_a_0064",
+        "category": "A_single_addition",
+        "expression": "3 + 6",
+        "gold_answer": "9",
+        "strict_extracted": "2",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "3 / 6 = 2",
+            "true_result": 0,
+            "stated_result": 2,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe number of numbers that are not currently currently is 3 \u00d7 4 = 5.\nThere are 2 \u00d7 4 = 18 different numbers.\nSo, 3/6 = 2 more have been added to the equation.\n</think>\n<answer>2</answer>"
+      },
+      {
+        "problem_id": "arith_a_0065",
+        "category": "A_single_addition",
+        "expression": "9 + 9",
+        "gold_answer": "18",
+        "strict_extracted": "5",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 1,
+        "equation_details": [
+          {
+            "eq": "9 + 9 = 12",
+            "true_result": 18,
+            "stated_result": 12,
+            "is_correct": false
+          },
+          {
+            "eq": "9 - 4 = 5",
+            "true_result": 5,
+            "stated_result": 5,
+            "is_correct": true
+          }
+        ],
+        "trace_snippet": "<think>\nLet x be the number of terms that are both sides.\nSo, 9 + 9 = 12 treatises.\nThus, 9 - 4 = 5 are the other words.\n</think>\n<answer>5</answer>"
+      },
+      {
+        "problem_id": "arith_a_0066",
+        "category": "A_single_addition",
+        "expression": "6 + 8",
+        "gold_answer": "14",
+        "strict_extracted": "190",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "6 + 24 = 190",
+            "true_result": 30,
+            "stated_result": 190,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\n4 x 3 = 24.\nSo, 6 + 24 = 190 degrees of 6.\n</think>\n<answer>190</answer>"
+      },
+      {
+        "problem_id": "arith_a_0067",
+        "category": "A_single_addition",
+        "expression": "2 + 6",
+        "gold_answer": "8",
+        "strict_extracted": "14",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "2 * 3 = 8",
+            "true_result": 6,
+            "stated_result": 8,
+            "is_correct": false
+          },
+          {
+            "eq": "8 + 8 = 14",
+            "true_result": 16,
+            "stated_result": 14,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe number of bits in the equation (1/2) and the value of 6 would be 2 * 3 = 8 b.\nSo, 2 + 8 + 8 = 14 b are 8 b.\n</think>\n<answer>14</answer>"
+      },
+      {
+        "problem_id": "arith_a_0068",
+        "category": "A_single_addition",
+        "expression": "40 + 8",
+        "gold_answer": "48",
+        "strict_extracted": "20",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "10 - 8 = 30",
+            "true_result": 2,
+            "stated_result": 30,
+            "is_correct": false
+          },
+          {
+            "eq": "40 + 5 = 20",
+            "true_result": 45,
+            "stated_result": 20,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 10 - 8 = 30 left.\nSo, 40 + 5 = 20 left.\n</think>\n<answer>20</answer>"
+      },
+      {
+        "problem_id": "arith_a_0069",
+        "category": "A_single_addition",
+        "expression": "2 + 2",
+        "gold_answer": "4",
+        "strict_extracted": "X",
+        "classification": "4. Repetition",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet X be the number of terms that the 3*number will be the number of words.\nThe number of terms that the 3-number is X*X+(X) = X+X\nThe total number of terms that the 3-number is X*X=X\n</think>\n<answer>X</answer>"
+      },
+      {
+        "problem_id": "arith_a_0070",
+        "category": "A_single_addition",
+        "expression": "597 + 845",
+        "gold_answer": "1442",
+        "strict_extracted": "167",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "597 - 845 = 167",
+            "true_result": -248,
+            "stated_result": 167,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe sum of the 597 - 845 = 167.\n</think>\n<answer>167</answer>"
+      },
+      {
+        "problem_id": "arith_a_0071",
+        "category": "A_single_addition",
+        "expression": "9 + 3",
+        "gold_answer": "12",
+        "strict_extracted": "40",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "9 + 10 = 25",
+            "true_result": 19,
+            "stated_result": 25,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you divide the number of 9 + 10 = 25, the total number of 8 x 4 = 60 is (between 7 and 10)\nThere are 25 x 60 = 400 female friends in total.\n</think>\n<answer>40</answer>"
+      },
+      {
+        "problem_id": "arith_a_0072",
+        "category": "A_single_addition",
+        "expression": "8 + 9",
+        "gold_answer": "17",
+        "strict_extracted": "64",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "5 + 1 = 24",
+            "true_result": 6,
+            "stated_result": 24,
+            "is_correct": false
+          },
+          {
+            "eq": "8 + 24 = 64",
+            "true_result": 32,
+            "stated_result": 64,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe total number of numbers is 5+1 = 24.\nSo, 8+24 = 64.\n</think>\n<answer>64</answer>"
+      },
+      {
+        "problem_id": "arith_a_0073",
+        "category": "A_single_addition",
+        "expression": "5 + 9",
+        "gold_answer": "14",
+        "strict_extracted": "68",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "100 - 3 = 68",
+            "true_result": 97,
+            "stated_result": 68,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 100 - 3 = 68 questions in total.\n</think>\n<answer>68</answer>"
+      },
+      {
+        "problem_id": "arith_a_0074",
+        "category": "A_single_addition",
+        "expression": "533 + 997",
+        "gold_answer": "1530",
+        "strict_extracted": "1837",
+        "classification": "4. Repetition",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "533 - 997 = 609",
+            "true_result": -464,
+            "stated_result": 609,
+            "is_correct": false
+          },
+          {
+            "eq": "6097 / 997 = 1837",
+            "true_result": 6,
+            "stated_result": 1837,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 533 - 997 = 609 people in total.\nSo 6097 is 6097/997 = 1837.\n</think>\n<answer>1837</answer>"
+      },
+      {
+        "problem_id": "arith_a_0075",
+        "category": "A_single_addition",
+        "expression": "9 + 4",
+        "gold_answer": "13",
+        "strict_extracted": "5",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "9 - 4 = 21",
+            "true_result": 5,
+            "stated_result": 21,
+            "is_correct": false
+          },
+          {
+            "eq": "6 - 2 = 5",
+            "true_result": 4,
+            "stated_result": 5,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nSo, 9 - 4 = 21 sides\nThere are 6-2 = 5 sides of the equation.\n</think>\n<answer>5</answer>"
+      },
+      {
+        "problem_id": "arith_a_0076",
+        "category": "A_single_addition",
+        "expression": "419 + 418",
+        "gold_answer": "837",
+        "strict_extracted": "519",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "419 + 418 = 216",
+            "true_result": 837,
+            "stated_result": 216,
+            "is_correct": false
+          },
+          {
+            "eq": "419 - 218 = 519",
+            "true_result": 201,
+            "stated_result": 519,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 419 + 418 = 216 people.\nSo, 419 - 218 = 519\n</think>\n<answer>519</answer>"
+      },
+      {
+        "problem_id": "arith_a_0077",
+        "category": "A_single_addition",
+        "expression": "765 + 392",
+        "gold_answer": "1157",
+        "strict_extracted": "1865",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "765 - 100 = 492",
+            "true_result": 665,
+            "stated_result": 492,
+            "is_correct": false
+          },
+          {
+            "eq": "765 / 492 = 1865",
+            "true_result": 1,
+            "stated_result": 1865,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\n765 - 100 = 492\nThere are 765/492 = 1865\n</think>\n<answer>1865</answer>"
+      },
+      {
+        "problem_id": "arith_a_0078",
+        "category": "A_single_addition",
+        "expression": "76 + 58",
+        "gold_answer": "134",
+        "strict_extracted": "90",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nIf there are 10 x 2 = 40 days in total, then 3 x 58 = 90 days.\n</think>\n<answer>90</answer>"
+      },
+      {
+        "problem_id": "arith_a_0079",
+        "category": "A_single_addition",
+        "expression": "4 + 4",
+        "gold_answer": "8",
+        "strict_extracted": "96",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "3 * 12 = 68",
+            "true_result": 36,
+            "stated_result": 68,
+            "is_correct": false
+          },
+          {
+            "eq": "5 + 68 = 96",
+            "true_result": 73,
+            "stated_result": 96,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 3 * 12 = 68 minutes in a day.\nSo, there are 5 + 68 = 96 minutes in one week.\n</think>\n<answer>96</answer>"
+      },
+      {
+        "problem_id": "arith_a_0080",
+        "category": "A_single_addition",
+        "expression": "6 + 1",
+        "gold_answer": "7",
+        "strict_extracted": "3",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet x be the number of sides\nx+2*x=3\n4x=3\n</think>\n<answer>3</answer>"
+      },
+      {
+        "problem_id": "arith_a_0081",
+        "category": "A_single_addition",
+        "expression": "667 + 245",
+        "gold_answer": "912",
+        "strict_extracted": "100",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "667 - 3 = 100",
+            "true_result": 664,
+            "stated_result": 100,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 667 - 3 = 100 people in the town.\n</think>\n<answer>100</answer>"
+      },
+      {
+        "problem_id": "arith_a_0082",
+        "category": "A_single_addition",
+        "expression": "325 + 17",
+        "gold_answer": "342",
+        "strict_extracted": "160",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "95 - 85 = 160",
+            "true_result": 10,
+            "stated_result": 160,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 4 x 3 = 85.\nSo, 95 - 85 = 160.\n</think>\n<answer>160</answer>"
+      },
+      {
+        "problem_id": "arith_a_0083",
+        "category": "A_single_addition",
+        "expression": "1 + 4",
+        "gold_answer": "5",
+        "strict_extracted": "9",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "4 - 4 = 9",
+            "true_result": 0,
+            "stated_result": 9,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nLet X be the number of students in X-Max. We know that X - 2 = 4.\nThus, there are 1/(X*X)*X = 6 students in Y.\nSo, 4 - 4 = 9 were to be 3.\n</think>\n<answer>9</answer>"
+      },
+      {
+        "problem_id": "arith_a_0084",
+        "category": "A_single_addition",
+        "expression": "1 + 6",
+        "gold_answer": "7",
+        "strict_extracted": null,
+        "classification": "5. Format failure",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "6 * 4 = 6",
+            "true_result": 24,
+            "stated_result": 6,
+            "is_correct": false
+          },
+          {
+            "eq": "6 / 8 = 10",
+            "true_result": 0,
+            "stated_result": 10,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nLet x be the number of terms.\n3x+2x=3x\n6*4=6\n6/8=10\n</think>"
+      },
+      {
+        "problem_id": "arith_a_0085",
+        "category": "A_single_addition",
+        "expression": "9 + 4",
+        "gold_answer": "13",
+        "strict_extracted": "3",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "6 - 1 = 2",
+            "true_result": 5,
+            "stated_result": 2,
+            "is_correct": false
+          },
+          {
+            "eq": "8 - 2 = 3",
+            "true_result": 6,
+            "stated_result": 3,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf you add the number of letters in the letter \"wa\" to the left, 6-1 = 2 letters.\nThe number of letters that do you can do is 8-2 = 3\n</think>\n<answer>3</answer>"
+      },
+      {
+        "problem_id": "arith_a_0086",
+        "category": "A_single_addition",
+        "expression": "95 + 63",
+        "gold_answer": "158",
+        "strict_extracted": "128",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "95 + 63 = 128",
+            "true_result": 158,
+            "stated_result": 128,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nFirst find the total number of sides of the equation: 95 + 63 = 128.\n</think>\n<answer>128</answer>"
+      },
+      {
+        "problem_id": "arith_a_0087",
+        "category": "A_single_addition",
+        "expression": "9 + 3",
+        "gold_answer": "12",
+        "strict_extracted": "5",
+        "classification": "4. Repetition",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "9 + 3 = 28",
+            "true_result": 12,
+            "stated_result": 28,
+            "is_correct": false
+          },
+          {
+            "eq": "9 - 1 = 5",
+            "true_result": 8,
+            "stated_result": 5,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 9 + 3 = 28 letters.\nThus, 9 - 1 = 5 islands of the 4th and 7 are the 6 islands of the 5 islands of the 5 islands of the 5 islands of the 5 islands of the 5 islands of the 5 islands of the 5 islands of the 5 islands of the 5 islands.\n</think>\n<answer>5</answer>"
+      },
+      {
+        "problem_id": "arith_a_0088",
+        "category": "A_single_addition",
+        "expression": "684 + 600",
+        "gold_answer": "1284",
+        "strict_extracted": "72",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "684 - 684 = 32",
+            "true_result": 0,
+            "stated_result": 32,
+            "is_correct": false
+          },
+          {
+            "eq": "32 - 32 = 72",
+            "true_result": 0,
+            "stated_result": 72,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe number of 684 - 684 = 32 years old\nSo there are 32-32=72 years old\n</think>\n<answer>72</answer>"
+      },
+      {
+        "problem_id": "arith_a_0089",
+        "category": "A_single_addition",
+        "expression": "41 + 61",
+        "gold_answer": "102",
+        "strict_extracted": "78",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "41 + 61 = 324",
+            "true_result": 102,
+            "stated_result": 324,
+            "is_correct": false
+          },
+          {
+            "eq": "324 - 61 = 78",
+            "true_result": 263,
+            "stated_result": 78,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 41 + 61 = 324 words in the equation.\nSo, 324 - 61 = 78 are the same as 58.\n</think>\n<answer>78</answer>"
+      },
+      {
+        "problem_id": "arith_a_0090",
+        "category": "A_single_addition",
+        "expression": "34 + 13",
+        "gold_answer": "47",
+        "strict_extracted": "82",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "2 * 34 = 67",
+            "true_result": 68,
+            "stated_result": 67,
+            "is_correct": false
+          },
+          {
+            "eq": "67 - 67 = 82",
+            "true_result": 0,
+            "stated_result": 82,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 2 * 34 = 67 days in 3 years.\nSo, 67 - 67 = 82 months in a year.\n</think>\n<answer>82</answer>"
+      },
+      {
+        "problem_id": "arith_a_0091",
+        "category": "A_single_addition",
+        "expression": "7 + 6",
+        "gold_answer": "13",
+        "strict_extracted": "96",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "3 * 12 = 488",
+            "true_result": 36,
+            "stated_result": 488,
+            "is_correct": false
+          },
+          {
+            "eq": "7 - 48 = 96",
+            "true_result": -41,
+            "stated_result": 96,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 3 * 12 = 488 letters.\nSo, 7 - 48 = 96 letters in 54 letters remain.\n</think>\n<answer>96</answer>"
+      },
+      {
+        "problem_id": "arith_a_0092",
+        "category": "A_single_addition",
+        "expression": "62 + 60",
+        "gold_answer": "122",
+        "strict_extracted": "16",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "62 / 3 = 16",
+            "true_result": 20,
+            "stated_result": 16,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nLet x be the number of points in the equation.\nx+60 = 16\n5x=6\nCombining like terms, we get 62/3=16 points.\n</think>\n<answer>16</answer>"
+      },
+      {
+        "problem_id": "arith_a_0093",
+        "category": "A_single_addition",
+        "expression": "155 + 699",
+        "gold_answer": "854",
+        "strict_extracted": "124",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet x be the number of terms.\nWe know that x=105-x\n3*x+6999/(2*155)=124\n</think>\n<answer>124</answer>"
+      },
+      {
+        "problem_id": "arith_a_0094",
+        "category": "A_single_addition",
+        "expression": "761 + 110",
+        "gold_answer": "871",
+        "strict_extracted": "9",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "761 + 110 = 2461",
+            "true_result": 871,
+            "stated_result": 2461,
+            "is_correct": false
+          },
+          {
+            "eq": "761 - 3 = 916",
+            "true_result": 758,
+            "stated_result": 916,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe 761 + 110 = 2461\nThere are 761 - 3 = 916 people.\n</think>\n<answer>9</answer>"
+      },
+      {
+        "problem_id": "arith_a_0095",
+        "category": "A_single_addition",
+        "expression": "7 + 6",
+        "gold_answer": "13",
+        "strict_extracted": "9",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 1,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "7 - 48 = 9",
+            "true_result": -41,
+            "stated_result": 9,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nIf we divide 3 \u00d7 1 = 5 to find the total number of sides that are 7.\nSince 7 \u00d7 12 = 48 sides, we have 7 - 48 = 9 sides.\n</think>\n<answer>9</answer>"
+      },
+      {
+        "problem_id": "arith_a_0096",
+        "category": "A_single_addition",
+        "expression": "4 + 4",
+        "gold_answer": "8",
+        "strict_extracted": "6",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "4 + 1 = 24",
+            "true_result": 5,
+            "stated_result": 24,
+            "is_correct": false
+          },
+          {
+            "eq": "4 - 4 = 6",
+            "true_result": 0,
+            "stated_result": 6,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThe equation 4 + 1 = 24\nSo, 4 - 4 = 6\n</think>\n<answer>6</answer>"
+      },
+      {
+        "problem_id": "arith_a_0097",
+        "category": "A_single_addition",
+        "expression": "9 + 8",
+        "gold_answer": "17",
+        "strict_extracted": null,
+        "classification": "4. Repetition",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet X be the number of sides that are 12.\n</think>\n<answer>X + (X+) = X+(Y+X+(Y-(X-(X-((Y-((Y-((Y-((Y-((Y-((Y-((Y-((Y-((Y-((Y-()./((Y-((Y-((Y-(()./((Y-(()./((Y-()./(()./()./(()./)./)./))))))))))))))) + X = X\nIf Y is X, then X = X(Y-((Y-((Y-((Y-((Y-(( steps*)))))))))"
+      },
+      {
+        "problem_id": "arith_a_0098",
+        "category": "A_single_addition",
+        "expression": "7 + 3",
+        "gold_answer": "10",
+        "strict_extracted": null,
+        "classification": "5. Format failure",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "7 + 1 = 6",
+            "true_result": 8,
+            "stated_result": 6,
+            "is_correct": false
+          },
+          {
+            "eq": "5 / 2 = 4",
+            "true_result": 2,
+            "stated_result": 4,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\nThere are 7+1 = 6 boxes in the equation.\nSo, 5/2 = 4 boxes have 8 boxes left to be filled.\n</think>"
+      },
+      {
+        "problem_id": "arith_a_0099",
+        "category": "A_single_addition",
+        "expression": "69 + 32",
+        "gold_answer": "101",
+        "strict_extracted": "77",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 2,
+        "valid_equations_found": 0,
+        "equation_details": [
+          {
+            "eq": "59 - 4 = 18",
+            "true_result": 55,
+            "stated_result": 18,
+            "is_correct": false
+          },
+          {
+            "eq": "69 + 18 = 77",
+            "true_result": 87,
+            "stated_result": 77,
+            "is_correct": false
+          }
+        ],
+        "trace_snippet": "<think>\n59 - 4 = 18 years ago.\nSo, 69 + 18 = 77 years ago.\n</think>\n<answer>77</answer>"
+      },
+      {
+        "problem_id": "arith_a_0100",
+        "category": "A_single_addition",
+        "expression": "8 + 9",
+        "gold_answer": "17",
+        "strict_extracted": "6",
+        "classification": "3. Incorrect answer + structured arithmetic",
+        "total_equations_found": 0,
+        "valid_equations_found": 0,
+        "equation_details": [],
+        "trace_snippet": "<think>\nLet x be the number of terms.\n2x/10 = 4x-10\n3y=4x-10\n4y= 6\n</think>\n<answer>6</answer>"
+      }
+    ]
+  }
+}

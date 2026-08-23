@@ -1,0 +1,3004 @@
+{
+  "metadata": {
+    "task": "Task 21B: Compact Verified Reasoning Transfer",
+    "timestamp": "2026-08-22 13:07:35",
+    "general_ppl_tracking": {
+      "base_pretrained_ppl": 17.6797,
+      "arithmetic_pre_transfer_ppl": 27.6278,
+      "model_a_compact_ppl": 43.87968481168208,
+      "model_b_compact_ppl": 21.84603227583772
+    },
+    "deltas": {
+      "delta_compact_a_minus_b": -0.30326004548900676,
+      "delta_vs_direct_a_minus_c": -1.4404852160727826,
+      "delta_vs_cot_a_minus_d": -0.15163002274450343,
+      "delta_compact_vs_verbose_transfer": -0.5307050796057619
+    },
+    "verdict_code": "C",
+    "verdict_text": "Conclusion C: No measurable transfer. Reasoning accuracy is similar between arithmetic-init and base-init."
+  },
+  "models": {
+    "Model_A_Compact_Transfer": {
+      "model_label": "Model A (Arithmetic -> Compact GSM8K)",
+      "checkpoint_path": "artifacts/sft/compact_transfer/arithmetic_init/best.pt",
+      "checkpoint_sha256": "8c55e2d302fd2aed2a12dca3b381f33bf6eceae9058814c162401e8f8961fa0f",
+      "gsm8k": {
+        "N": 1319,
+        "correct": 12,
+        "strict_accuracy": 0.9097801364670205,
+        "parse_rate": 97.8013646702047,
+        "think_compliance_rate": 97.8013646702047,
+        "answer_compliance_rate": 97.8013646702047,
+        "full_format_compliance_rate": 97.8013646702047,
+        "eos_rate": 97.8013646702047,
+        "repetition_rate": 96.36087945413192,
+        "generation_length": {
+          "mean": 62.9226686884003,
+          "p50": 57.0,
+          "p90": 82.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 315,
+            "correct": 3,
+            "accuracy": 0.9523809523809524
+          },
+          "3_step": {
+            "N": 360,
+            "correct": 3,
+            "accuracy": 0.8333333333333334
+          },
+          "4plus_step": {
+            "N": 644,
+            "correct": 6,
+            "accuracy": 0.9316770186335404
+          }
+        },
+        "samples": [
+          {
+            "id": "gsm8k_test_0",
+            "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+            "gold_answer": "18",
+            "extracted_answer": "44",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n16 * 2 = 12\n2 * 12 = 24\n24 + 12 = 24\n24 + 24 = 44\n</think>\n<answer>44</answer>"
+          },
+          {
+            "id": "gsm8k_test_1",
+            "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+            "gold_answer": "3",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n2 * 2 = 4\n2 * 2 = 4\n4 + 2 = 4\n4 + 4 + 4 = 12\n</think>\n<answer>12</answer>"
+          },
+          {
+            "id": "gsm8k_test_2",
+            "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+            "gold_answer": "70000",
+            "extracted_answer": "20000",
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<think>\n80000 - 50000 = 20000\n20000 - 20000 = 20000\n20000 - 2000 = 20000\n</think>\n<answer>20000</answer>"
+          },
+          {
+            "id": "gsm8k_test_3",
+            "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+            "gold_answer": "540",
+            "extracted_answer": "240",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n3 * 60 = 120\n120 + 60 = 120\n120 + 120 = 240\n120 + 240 = 240\n</think>\n<answer>240</answer>"
+          },
+          {
+            "id": "gsm8k_test_4",
+            "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+            "gold_answer": "20",
+            "extracted_answer": "50",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n20 * 3 = 60\n60 + 25 = 150\n150 / 3 = 50\n</think>\n<answer>50</answer>"
+          },
+          {
+            "id": "gsm8k_test_5",
+            "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+            "gold_answer": "64",
+            "extracted_answer": "4",
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "<think>\n16 * 2 = 20\n20 * 60 * 01 = 16\n20 + 16 = 24\n24 * 16 = 72\n72 - 24 = 4\n</think>\n<answer>4</answer>"
+          },
+          {
+            "id": "gsm8k_test_6",
+            "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+            "gold_answer": "260",
+            "extracted_answer": "240",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "<think>\n20 * 2 = 4\n4 * 20 = 40\n40 + 40 = 60\n40 + 60 = 120\n120 + 40 = 120\n120 + 40 + 120 = 240\n</think>\n<answer>240</answer>"
+          },
+          {
+            "id": "gsm8k_test_7",
+            "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+            "gold_answer": "160",
+            "extracted_answer": "360",
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<think>\n20 * 2 = 4\n40 * 2 = 4\n4 + 4 = 8\n8 + 4 = 10\n10 + 4 = 12\n12 * 20 = 240\n240 + 240 + 10 = 360\n</think>\n<answer>360</answer>"
+          },
+          {
+            "id": "gsm8k_test_8",
+            "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+            "gold_answer": "45",
+            "extracted_answer": "20",
+            "is_correct": false,
+            "step_complexity": 7,
+            "generation": "<think>\n3 * 60 = 120\n120 + 20 = 120\n120 + 4 = 240\n120 + 240 = 440\n440 - 440 = 20\n</think>\n<answer>20</answer>"
+          },
+          {
+            "id": "gsm8k_test_9",
+            "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+            "gold_answer": "460",
+            "extracted_answer": "21",
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "<think>\n45 * 2 = 8\n8 * 1.2 * 45 = 14\n14 + 8 = 14\n14 + 14 = 21\n21 + 14 = 21\n</think>\n<answer>21</answer>"
+          }
+        ],
+        "eval_time_sec": 982.5552370548248
+      },
+      "svamp": {
+        "N": 300,
+        "correct": 11,
+        "strict_accuracy": 3.6666666666666665,
+        "parse_rate": 99.66666666666667,
+        "think_compliance_rate": 99.66666666666667,
+        "answer_compliance_rate": 99.66666666666667,
+        "full_format_compliance_rate": 99.33333333333333,
+        "eos_rate": 99.66666666666667,
+        "repetition_rate": 78.66666666666666,
+        "generation_length": {
+          "mean": 42.95,
+          "p50": 40.0,
+          "p90": 56.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 300,
+            "correct": 11,
+            "accuracy": 3.6666666666666665
+          },
+          "3_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "chal-736",
+            "question": "Winter is almost here and most animals are migrating to warmer countries. There are 41 bird families living near the mountain. If 35 bird families fle",
+            "gold_answer": "27",
+            "extracted_answer": "372",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n41 + 62 = 112\n112 * 35 = 372\n</think>\n<answer>372</answer>"
+          },
+          {
+            "id": "chal-162",
+            "question": "Paige raised 7 goldfish and 12 catfish in the pond but stray cats loved eating them. Now she has 15 left. How many fishes disappeared?",
+            "gold_answer": "4",
+            "extracted_answer": "42",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n7 + 12 = 14\n14 + 12 = 24\n15 + 24 = 42\n</think>\n<answer>42</answer>"
+          },
+          {
+            "id": "chal-349",
+            "question": "Marco and his dad went strawberry picking. Together they collected strawberries that weighed 22 pounds. On the way back Marco ' dad found 30 more poun",
+            "gold_answer": "16",
+            "extracted_answer": "64",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n22 + 36 = 48\n48 + 36 = 64\n</think>\n<answer>64</answer>"
+          },
+          {
+            "id": "chal-390",
+            "question": "Debby bought 200 water bottles and 256 soda bottles when they were on sale. If she drank 312 water bottles and 4 soda bottles a day How many days woul",
+            "gold_answer": "64",
+            "extracted_answer": "150",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n200 / 2 = 100\n100 / 2 = 50\n50 + 20 = 150\n</think>\n<answer>150</answer>"
+          },
+          {
+            "id": "chal-781",
+            "question": "There were 106 dollars in Olivia's wallet. After she visited a supermarket and a showroom there were 26 dollars left. If she spent 49 dollars at the s",
+            "gold_answer": "31",
+            "extracted_answer": "20",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n106 - 49 = 20\n20 / 2 = 10\n10 + 10 = 20\n</think>\n<answer>20</answer>"
+          },
+          {
+            "id": "chal-575",
+            "question": "Faye was placing her pencils and crayons into 30 rows with 71 crayons and 24 pencils in each row. How many pencils does she have?",
+            "gold_answer": "720",
+            "extracted_answer": "40",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n30 * 2 = 60\n60 + 24 = 144\n144 / 2 = 124\n144 - 124 = 40\n</think>\n<answer>40</answer>"
+          },
+          {
+            "id": "chal-599",
+            "question": "Ed had 10 more marbles than Doug. Doug lost 11 of his marbles at the playground. If Ed had 45 marbles How many more marbles did Ed have than Doug then",
+            "gold_answer": "21",
+            "extracted_answer": "11",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n10 + 45 = 60\n60 + 11 = 110\n110 - 11 = 11\n</think>\n<answer>11</answer>"
+          },
+          {
+            "id": "chal-619",
+            "question": "26 children were riding on the bus. At the bus stop 38 more children got on the bus. How many children are on the bus now?",
+            "gold_answer": "64",
+            "extracted_answer": "48",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n26 - 3 = 22\n22 + 22 = 48\n</think>\n<answer>48</answer>"
+          },
+          {
+            "id": "chal-229",
+            "question": "Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 31 cookies yesterday 270 cookies this morning and 419 coo",
+            "gold_answer": "450",
+            "extracted_answer": "312",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n31 + 419 = 112\n112 + 319 = 312\n</think>\n<answer>312</answer>"
+          },
+          {
+            "id": "chal-725",
+            "question": "He then went to see the oranges being harvested. He found out that they harvest 66 sacks per day and that each sack containes 25 oranges. How many ora",
+            "gold_answer": "143550",
+            "extracted_answer": "2",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n66 / 2 = 32\n32 + 25 = 60\n60 / 25 = 2\n</think>\n<answer>2</answer>"
+          }
+        ],
+        "eval_time_sec": 47.612452030181885
+      },
+      "aqua": {
+        "N": 254,
+        "correct": 0,
+        "strict_accuracy": 0.0,
+        "parse_rate": 53.54330708661418,
+        "think_compliance_rate": 89.37007874015748,
+        "answer_compliance_rate": 53.54330708661418,
+        "full_format_compliance_rate": 0.0,
+        "eos_rate": 88.18897637795276,
+        "repetition_rate": 54.330708661417326,
+        "generation_length": {
+          "mean": 51.381889763779526,
+          "p50": 27.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "3_step": {
+            "N": 254,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "aqua_test_0",
+            "question": "A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car ",
+            "gold_answer": "A",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "</think>\n<answer>"
+          },
+          {
+            "id": "aqua_test_1",
+            "question": "The original price of an item is discounted 22%. A customer buys the item at this discounted price using a $20-off coupon. There is no tax on the item",
+            "gold_answer": "E",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 20\n- 20 + 1.90 = 10\n10 - 2 = 5\n5 * 2 = 5\n5 + 5 = 10\n</think>\n<answer>10</answer>"
+          },
+          {
+            "id": "aqua_test_2",
+            "question": "Find out which of the following values is the multiple of X, if it is divisible by 9 and 12?\nOptions:\n- A)36\n- B)15\n- C)17\n- D)5\n- E)7",
+            "gold_answer": "A",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 12\n- 2\n12 + 2 = 12\n</think>\n<answer>12</answer>"
+          },
+          {
+            "id": "aqua_test_3",
+            "question": "If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during t",
+            "gold_answer": "B",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "10.74\n</think>\n<answer>"
+          },
+          {
+            "id": "aqua_test_4",
+            "question": "A trader sold an article at a profit of 20% for Rs.360. What is the cost price of the article?\nOptions:\n- A)270\n- B)300\n- C)280\n- D)320\n- E)315",
+            "gold_answer": "B",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 200\n- 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 200 + 20"
+          },
+          {
+            "id": "aqua_test_5",
+            "question": "20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 w",
+            "gold_answer": "D",
+            "extracted_answer": "2",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 20 + 20 = 140\n- 140 + 20 = 240\n</think>\n<answer>240</answer>"
+          },
+          {
+            "id": "aqua_test_6",
+            "question": "Find the total no. of distinct bike no.'s that can beformed using 2 letters followed by 2 no.'s. How many letters need to be distinct?\nOptions:\n- A)74",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "</think>\n<answer>"
+          },
+          {
+            "id": "aqua_test_7",
+            "question": "A train running at a speed of 100 miles/hour, takes 10 hours to reach its destination. After covering quarter of the distance, it starts raining and t",
+            "gold_answer": "C",
+            "extracted_answer": "2",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 10 + 10 + 10 + 10 + 13.5\n10 + 13.5\n10 + 13.5\n10 + 10 + 13.5\n10 + 10 + 13.5\n10 + 13.5 + 75 + 10 + 13.5 = 20\n</think>\n<answer>20</answer>"
+          },
+          {
+            "id": "aqua_test_8",
+            "question": "Of the 200 students in a school, at least 45% attended the prom night and at least 35% took part in the debating session. What is the maximum number o",
+            "gold_answer": "E",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 45\n- 45\n- 45\n- 45\n- 45\n- 45\n- 45\n- 45\n- 45\n- 45\n- 45\n- 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 + 45 "
+          },
+          {
+            "id": "aqua_test_9",
+            "question": "A sales person gets a 10% commission on each sale he makes. How many sales of $250 each must he make in order to reach a salary of at least $1000?\nOpt",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 1000\n- 1000\n- 1000\n- 1000\n- 1000\n- 1000\n- 1000\n- 1000\n- 1000\n- 1000\n- 1000\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100"
+          }
+        ],
+        "eval_time_sec": 233.1488173007965
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 22,
+          "accuracy": 4.3999999999999995
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 26,
+          "accuracy": 5.2
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 3,
+          "accuracy": 0.6
+        }
+      },
+      "general_language": {
+        "val_loss": 3.781451452420477,
+        "perplexity": 43.87968481168208,
+        "tokens_per_sec": 15645.194602620359
+      },
+      "gsm8k_samples": [
+        {
+          "id": "gsm8k_test_0",
+          "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+          "gold_answer": "18",
+          "extracted_answer": "44",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\n16 * 2 = 12\n2 * 12 = 24\n24 + 12 = 24\n24 + 24 = 44\n</think>\n<answer>44</answer>"
+        },
+        {
+          "id": "gsm8k_test_1",
+          "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gold_answer": "3",
+          "extracted_answer": "12",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\n2 * 2 = 4\n2 * 2 = 4\n4 + 2 = 4\n4 + 4 + 4 = 12\n</think>\n<answer>12</answer>"
+        },
+        {
+          "id": "gsm8k_test_2",
+          "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+          "gold_answer": "70000",
+          "extracted_answer": "20000",
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<think>\n80000 - 50000 = 20000\n20000 - 20000 = 20000\n20000 - 2000 = 20000\n</think>\n<answer>20000</answer>"
+        },
+        {
+          "id": "gsm8k_test_3",
+          "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+          "gold_answer": "540",
+          "extracted_answer": "240",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\n3 * 60 = 120\n120 + 60 = 120\n120 + 120 = 240\n120 + 240 = 240\n</think>\n<answer>240</answer>"
+        },
+        {
+          "id": "gsm8k_test_4",
+          "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+          "gold_answer": "20",
+          "extracted_answer": "50",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\n20 * 3 = 60\n60 + 25 = 150\n150 / 3 = 50\n</think>\n<answer>50</answer>"
+        },
+        {
+          "id": "gsm8k_test_5",
+          "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+          "gold_answer": "64",
+          "extracted_answer": "4",
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "<think>\n16 * 2 = 20\n20 * 60 * 01 = 16\n20 + 16 = 24\n24 * 16 = 72\n72 - 24 = 4\n</think>\n<answer>4</answer>"
+        },
+        {
+          "id": "gsm8k_test_6",
+          "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+          "gold_answer": "260",
+          "extracted_answer": "240",
+          "is_correct": false,
+          "step_complexity": 3,
+          "generation": "<think>\n20 * 2 = 4\n4 * 20 = 40\n40 + 40 = 60\n40 + 60 = 120\n120 + 40 = 120\n120 + 40 + 120 = 240\n</think>\n<answer>240</answer>"
+        },
+        {
+          "id": "gsm8k_test_7",
+          "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+          "gold_answer": "160",
+          "extracted_answer": "360",
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<think>\n20 * 2 = 4\n40 * 2 = 4\n4 + 4 = 8\n8 + 4 = 10\n10 + 4 = 12\n12 * 20 = 240\n240 + 240 + 10 = 360\n</think>\n<answer>360</answer>"
+        },
+        {
+          "id": "gsm8k_test_8",
+          "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+          "gold_answer": "45",
+          "extracted_answer": "20",
+          "is_correct": false,
+          "step_complexity": 7,
+          "generation": "<think>\n3 * 60 = 120\n120 + 20 = 120\n120 + 4 = 240\n120 + 240 = 440\n440 - 440 = 20\n</think>\n<answer>20</answer>"
+        },
+        {
+          "id": "gsm8k_test_9",
+          "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+          "gold_answer": "460",
+          "extracted_answer": "21",
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "<think>\n45 * 2 = 8\n8 * 1.2 * 45 = 14\n14 + 8 = 14\n14 + 14 = 21\n21 + 14 = 21\n</think>\n<answer>21</answer>"
+        }
+      ]
+    },
+    "Model_B_Compact_Transfer": {
+      "model_label": "Model B (Base -> Compact GSM8K)",
+      "checkpoint_path": "artifacts/sft/compact_transfer/base_init/best.pt",
+      "checkpoint_sha256": "c1b3b28576244aee15cc006f52f6254fa1202148f5ef3bfce7659e50b76597aa",
+      "gsm8k": {
+        "N": 1319,
+        "correct": 16,
+        "strict_accuracy": 1.2130401819560273,
+        "parse_rate": 91.58453373768006,
+        "think_compliance_rate": 91.73616376042456,
+        "answer_compliance_rate": 91.58453373768006,
+        "full_format_compliance_rate": 91.58453373768006,
+        "eos_rate": 91.88779378316907,
+        "repetition_rate": 95.37528430629266,
+        "generation_length": {
+          "mean": 79.74222896133435,
+          "p50": 63.0,
+          "p90": 123.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 315,
+            "correct": 3,
+            "accuracy": 0.9523809523809524
+          },
+          "3_step": {
+            "N": 360,
+            "correct": 4,
+            "accuracy": 1.1111111111111112
+          },
+          "4plus_step": {
+            "N": 644,
+            "correct": 9,
+            "accuracy": 1.3975155279503106
+          }
+        },
+        "samples": [
+          {
+            "id": "gsm8k_test_0",
+            "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+            "gold_answer": "18",
+            "extracted_answer": "3",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n2 * 12 = 24\n24 + 1 = 12\n24 - 12 = 12\n12 - 1 = 1\n1 * 1 = 2\n2 * 1 = 2\n2 + 1 + 2 = 3\n1 + 2 + 1 = 3\n</think>\n<answer>3</answer>"
+          },
+          {
+            "id": "gsm8k_test_1",
+            "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+            "gold_answer": "3",
+            "extracted_answer": "112",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n2 * 12 = 24\n2 * 12 = 24\n24 + 24 + 1 = 112\n</think>\n<answer>112</answer>"
+          },
+          {
+            "id": "gsm8k_test_2",
+            "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+            "gold_answer": "70000",
+            "extracted_answer": "300000",
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<think>\n800000 * 2 = 100000\n10000 * 2 = 10000\n10000 + 10000 + 10000 = 300000\n</think>\n<answer>300000</answer>"
+          },
+          {
+            "id": "gsm8k_test_3",
+            "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+            "gold_answer": "540",
+            "extracted_answer": "136",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n2 * 60 = 120\n120 + 120 + 120 + 3 = 136\n</think>\n<answer>136</answer>"
+          },
+          {
+            "id": "gsm8k_test_4",
+            "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+            "gold_answer": "20",
+            "extracted_answer": "10",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n20 * 3 = 60\n60 * 3 = 180\n180 + 60 + 180 = 180\n180 - 180 = 10\n</think>\n<answer>10</answer>"
+          },
+          {
+            "id": "gsm8k_test_5",
+            "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+            "gold_answer": "64",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "<think>\n16 * 2 = 12\n12 * 2 = 36\n12 + 12 + 36 = 36\n12 + 36 = 36\n36 - 12 = 12\n</think>\n<answer>12</answer>"
+          },
+          {
+            "id": "gsm8k_test_6",
+            "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+            "gold_answer": "260",
+            "extracted_answer": "120",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "<think>\n20 * 2 = 40\n40 + 1 = 4\n4 * 20 = 10\n4 * 20 = 10\n4 + 10 + 10 = 120\n</think>\n<answer>120</answer>"
+          },
+          {
+            "id": "gsm8k_test_7",
+            "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+            "gold_answer": "160",
+            "extracted_answer": "6",
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<think>\n2 * 20 = 40\n40 / 100 = 2\n2 * 2 = 4\n40 + 2 = 6\n</think>\n<answer>6</answer>"
+          },
+          {
+            "id": "gsm8k_test_8",
+            "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+            "gold_answer": "45",
+            "extracted_answer": "60",
+            "is_correct": false,
+            "step_complexity": 7,
+            "generation": "<think>\n3 * 80 = 160\n160 + 30 = 180\n180 / 2 = 60\n180 + 60 + 180 = 180\n180 - 180 = 120\n120 / 4 = 60\n</think>\n<answer>60</answer>"
+          },
+          {
+            "id": "gsm8k_test_9",
+            "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+            "gold_answer": "460",
+            "extracted_answer": "360",
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "<think>\n10 * 40 = 400\n400 * 2 = 240\n240 + 120 = 360\n</think>\n<answer>360</answer>"
+          }
+        ],
+        "eval_time_sec": 1059.0102643966675
+      },
+      "svamp": {
+        "N": 300,
+        "correct": 7,
+        "strict_accuracy": 2.3333333333333335,
+        "parse_rate": 98.33333333333333,
+        "think_compliance_rate": 98.33333333333333,
+        "answer_compliance_rate": 98.33333333333333,
+        "full_format_compliance_rate": 98.0,
+        "eos_rate": 99.33333333333333,
+        "repetition_rate": 74.0,
+        "generation_length": {
+          "mean": 43.17333333333333,
+          "p50": 38.0,
+          "p90": 59.10000000000002
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 300,
+            "correct": 7,
+            "accuracy": 2.3333333333333335
+          },
+          "3_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "chal-736",
+            "question": "Winter is almost here and most animals are migrating to warmer countries. There are 41 bird families living near the mountain. If 35 bird families fle",
+            "gold_answer": "27",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n41 - 35 = 12\n12 / 2 = 6\n12 - 6 = 1\n</think>\n<answer>1</answer>"
+          },
+          {
+            "id": "chal-162",
+            "question": "Paige raised 7 goldfish and 12 catfish in the pond but stray cats loved eating them. Now she has 15 left. How many fishes disappeared?",
+            "gold_answer": "4",
+            "extracted_answer": "150",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n15 - 1 = 10\n10 * 1 = 10\n10 + 10 = 150\n</think>\n<answer>150</answer>"
+          },
+          {
+            "id": "chal-349",
+            "question": "Marco and his dad went strawberry picking. Together they collected strawberries that weighed 22 pounds. On the way back Marco ' dad found 30 more poun",
+            "gold_answer": "16",
+            "extracted_answer": "11",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n22 + 36 = 51\n51 - 30 = 11\n</think>\n<answer>11</answer>"
+          },
+          {
+            "id": "chal-390",
+            "question": "Debby bought 200 water bottles and 256 soda bottles when they were on sale. If she drank 312 water bottles and 4 soda bottles a day How many days woul",
+            "gold_answer": "64",
+            "extracted_answer": "1200",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n200 / 256 = 10\n10 * 312 = 1200\n</think>\n<answer>1200</answer>"
+          },
+          {
+            "id": "chal-781",
+            "question": "There were 106 dollars in Olivia's wallet. After she visited a supermarket and a showroom there were 26 dollars left. If she spent 49 dollars at the s",
+            "gold_answer": "31",
+            "extracted_answer": "208",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n106 / 2 = 12\n12 * 26 = 126\n12 * 26 = 186\n126 + 186 = 208\n</think>\n<answer>208</answer>"
+          },
+          {
+            "id": "chal-575",
+            "question": "Faye was placing her pencils and crayons into 30 rows with 71 crayons and 24 pencils in each row. How many pencils does she have?",
+            "gold_answer": "720",
+            "extracted_answer": "108",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n2 * 12 = 24\n24 - 1 = 12\n12 * 24 = 186\n186 - 12 = 108\n</think>\n<answer>108</answer>"
+          },
+          {
+            "id": "chal-599",
+            "question": "Ed had 10 more marbles than Doug. Doug lost 11 of his marbles at the playground. If Ed had 45 marbles How many more marbles did Ed have than Doug then",
+            "gold_answer": "21",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n11 + 11 = 21\n11 + 11 = 22\n22 - 11 = 1\n</think>\n<answer>1</answer>"
+          },
+          {
+            "id": "chal-619",
+            "question": "26 children were riding on the bus. At the bus stop 38 more children got on the bus. How many children are on the bus now?",
+            "gold_answer": "64",
+            "extracted_answer": "21",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n26 - 1 = 10\n10 + 1 = 12\n12 + 1 = 21\n</think>\n<answer>21</answer>"
+          },
+          {
+            "id": "chal-229",
+            "question": "Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 31 cookies yesterday 270 cookies this morning and 419 coo",
+            "gold_answer": "450",
+            "extracted_answer": "1200",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n31 - 270 = 10\n10 * 270 = 1200\n</think>\n<answer>1200</answer>"
+          },
+          {
+            "id": "chal-725",
+            "question": "He then went to see the oranges being harvested. He found out that they harvest 66 sacks per day and that each sack containes 25 oranges. How many ora",
+            "gold_answer": "143550",
+            "extracted_answer": "1250",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n25 * 2 = 100\n100 * 87 = 1250\n</think>\n<answer>1250</answer>"
+          }
+        ],
+        "eval_time_sec": 70.80099821090698
+      },
+      "aqua": {
+        "N": 254,
+        "correct": 2,
+        "strict_accuracy": 0.7874015748031495,
+        "parse_rate": 43.7007874015748,
+        "think_compliance_rate": 50.78740157480315,
+        "answer_compliance_rate": 43.7007874015748,
+        "full_format_compliance_rate": 0.0,
+        "eos_rate": 51.181102362204726,
+        "repetition_rate": 74.80314960629921,
+        "generation_length": {
+          "mean": 137.78346456692913,
+          "p50": 83.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "3_step": {
+            "N": 254,
+            "correct": 2,
+            "accuracy": 0.7874015748031495
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "aqua_test_0",
+            "question": "A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car ",
+            "gold_answer": "A",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "+ 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 "
+          },
+          {
+            "id": "aqua_test_1",
+            "question": "The original price of an item is discounted 22%. A customer buys the item at this discounted price using a $20-off coupon. There is no tax on the item",
+            "gold_answer": "E",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 1.25\n1.25\n2.45 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + 1.25 + "
+          },
+          {
+            "id": "aqua_test_2",
+            "question": "Find out which of the following values is the multiple of X, if it is divisible by 9 and 12?\nOptions:\n- A)36\n- B)15\n- C)17\n- D)5\n- E)7",
+            "gold_answer": "A",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 10\n10 + 10 + 2 = 12\n</think>\n<answer>12</answer>"
+          },
+          {
+            "id": "aqua_test_3",
+            "question": "If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during t",
+            "gold_answer": "B",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "1.40\n2.40\n1.40 + 0.74 = 12\n</think>\n<answer>12</answer>"
+          },
+          {
+            "id": "aqua_test_4",
+            "question": "A trader sold an article at a profit of 20% for Rs.360. What is the cost price of the article?\nOptions:\n- A)270\n- B)300\n- C)280\n- D)320\n- E)315",
+            "gold_answer": "B",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 1000\n1000\n</think>\n<answer>100</answer>"
+          },
+          {
+            "id": "aqua_test_5",
+            "question": "20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 w",
+            "gold_answer": "D",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 10000\n1000 / 20 = 100\n</think>\n<answer>100</answer>"
+          },
+          {
+            "id": "aqua_test_6",
+            "question": "Find the total no. of distinct bike no.'s that can beformed using 2 letters followed by 2 no.'s. How many letters need to be distinct?\nOptions:\n- A)74",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 100000\n- 100000\n- 1000000\n- 1000000\n- 1000000\n- 10000000\n- 10000000\n- 100000000\n- 10000000\n- 100000000\n- 100000000\n- 100000000\n- 1000000000\n- 100000000\n- 1000000000\n- 1000000000\n- 1000000000\n- 1000000000\n- 10000000000\n- 1000000000\n- 10000000000\n- 1"
+          },
+          {
+            "id": "aqua_test_7",
+            "question": "A train running at a speed of 100 miles/hour, takes 10 hours to reach its destination. After covering quarter of the distance, it starts raining and t",
+            "gold_answer": "C",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 100 + 13.5\n100 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + 13.5 + "
+          },
+          {
+            "id": "aqua_test_8",
+            "question": "Of the 200 students in a school, at least 45% attended the prom night and at least 35% took part in the debating session. What is the maximum number o",
+            "gold_answer": "E",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 110\n- 110\n- 110\n- 110\n- 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 110 + 11"
+          },
+          {
+            "id": "aqua_test_9",
+            "question": "A sales person gets a 10% commission on each sale he makes. How many sales of $250 each must he make in order to reach a salary of at least $1000?\nOpt",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 1000\n- 1000\n- 1000\n1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 1000 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100 + 100"
+          }
+        ],
+        "eval_time_sec": 233.85445880889893
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 3,
+          "accuracy": 0.6
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "general_language": {
+        "val_loss": 3.0840193158457714,
+        "perplexity": 21.84603227583772,
+        "tokens_per_sec": 13963.887439121041
+      },
+      "gsm8k_samples": [
+        {
+          "id": "gsm8k_test_0",
+          "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+          "gold_answer": "18",
+          "extracted_answer": "3",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\n2 * 12 = 24\n24 + 1 = 12\n24 - 12 = 12\n12 - 1 = 1\n1 * 1 = 2\n2 * 1 = 2\n2 + 1 + 2 = 3\n1 + 2 + 1 = 3\n</think>\n<answer>3</answer>"
+        },
+        {
+          "id": "gsm8k_test_1",
+          "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gold_answer": "3",
+          "extracted_answer": "112",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\n2 * 12 = 24\n2 * 12 = 24\n24 + 24 + 1 = 112\n</think>\n<answer>112</answer>"
+        },
+        {
+          "id": "gsm8k_test_2",
+          "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+          "gold_answer": "70000",
+          "extracted_answer": "300000",
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<think>\n800000 * 2 = 100000\n10000 * 2 = 10000\n10000 + 10000 + 10000 = 300000\n</think>\n<answer>300000</answer>"
+        },
+        {
+          "id": "gsm8k_test_3",
+          "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+          "gold_answer": "540",
+          "extracted_answer": "136",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\n2 * 60 = 120\n120 + 120 + 120 + 3 = 136\n</think>\n<answer>136</answer>"
+        },
+        {
+          "id": "gsm8k_test_4",
+          "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+          "gold_answer": "20",
+          "extracted_answer": "10",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\n20 * 3 = 60\n60 * 3 = 180\n180 + 60 + 180 = 180\n180 - 180 = 10\n</think>\n<answer>10</answer>"
+        },
+        {
+          "id": "gsm8k_test_5",
+          "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+          "gold_answer": "64",
+          "extracted_answer": "12",
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "<think>\n16 * 2 = 12\n12 * 2 = 36\n12 + 12 + 36 = 36\n12 + 36 = 36\n36 - 12 = 12\n</think>\n<answer>12</answer>"
+        },
+        {
+          "id": "gsm8k_test_6",
+          "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+          "gold_answer": "260",
+          "extracted_answer": "120",
+          "is_correct": false,
+          "step_complexity": 3,
+          "generation": "<think>\n20 * 2 = 40\n40 + 1 = 4\n4 * 20 = 10\n4 * 20 = 10\n4 + 10 + 10 = 120\n</think>\n<answer>120</answer>"
+        },
+        {
+          "id": "gsm8k_test_7",
+          "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+          "gold_answer": "160",
+          "extracted_answer": "6",
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<think>\n2 * 20 = 40\n40 / 100 = 2\n2 * 2 = 4\n40 + 2 = 6\n</think>\n<answer>6</answer>"
+        },
+        {
+          "id": "gsm8k_test_8",
+          "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+          "gold_answer": "45",
+          "extracted_answer": "60",
+          "is_correct": false,
+          "step_complexity": 7,
+          "generation": "<think>\n3 * 80 = 160\n160 + 30 = 180\n180 / 2 = 60\n180 + 60 + 180 = 180\n180 - 180 = 120\n120 / 4 = 60\n</think>\n<answer>60</answer>"
+        },
+        {
+          "id": "gsm8k_test_9",
+          "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+          "gold_answer": "460",
+          "extracted_answer": "360",
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "<think>\n10 * 40 = 400\n400 * 2 = 240\n240 + 120 = 360\n</think>\n<answer>360</answer>"
+        }
+      ]
+    },
+    "Model_C_Direct_SFT": {
+      "model_label": "Model C (Direct GSM8K SFT)",
+      "checkpoint_path": "artifacts/sft/direct/best.pt",
+      "checkpoint_sha256": "79323e228f222da6f55ada9bccc84ea5c49d5bb1b0c0a1d20a3746b1b431dacd",
+      "gsm8k": {
+        "N": 1319,
+        "correct": 31,
+        "strict_accuracy": 2.350265352539803,
+        "parse_rate": 100.0,
+        "think_compliance_rate": 0.0,
+        "answer_compliance_rate": 100.0,
+        "full_format_compliance_rate": 0.0,
+        "eos_rate": 100.0,
+        "repetition_rate": 0.530705079605762,
+        "generation_length": {
+          "mean": 4.589082638362396,
+          "p50": 4.0,
+          "p90": 6.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 315,
+            "correct": 10,
+            "accuracy": 3.1746031746031744
+          },
+          "3_step": {
+            "N": 360,
+            "correct": 9,
+            "accuracy": 2.5
+          },
+          "4plus_step": {
+            "N": 644,
+            "correct": 12,
+            "accuracy": 1.8633540372670807
+          }
+        },
+        "samples": [
+          {
+            "id": "gsm8k_test_0",
+            "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+            "gold_answer": "18",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>12</answer>"
+          },
+          {
+            "id": "gsm8k_test_1",
+            "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+            "gold_answer": "3",
+            "extracted_answer": "24",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>24</answer>"
+          },
+          {
+            "id": "gsm8k_test_2",
+            "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+            "gold_answer": "70000",
+            "extracted_answer": "15000",
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<answer>15000</answer>"
+          },
+          {
+            "id": "gsm8k_test_3",
+            "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+            "gold_answer": "540",
+            "extracted_answer": "1400",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>1400</answer>"
+          },
+          {
+            "id": "gsm8k_test_4",
+            "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+            "gold_answer": "20",
+            "extracted_answer": "15",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>15</answer>"
+          },
+          {
+            "id": "gsm8k_test_5",
+            "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+            "gold_answer": "64",
+            "extracted_answer": "168",
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "<answer>168</answer>"
+          },
+          {
+            "id": "gsm8k_test_6",
+            "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+            "gold_answer": "260",
+            "extracted_answer": "1400",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "<answer>1400</answer>"
+          },
+          {
+            "id": "gsm8k_test_7",
+            "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+            "gold_answer": "160",
+            "extracted_answer": "100",
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<answer>100</answer>"
+          },
+          {
+            "id": "gsm8k_test_8",
+            "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+            "gold_answer": "45",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 7,
+            "generation": "<answer>12</answer>"
+          },
+          {
+            "id": "gsm8k_test_9",
+            "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+            "gold_answer": "460",
+            "extracted_answer": "155",
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "<answer>155</answer>"
+          }
+        ],
+        "eval_time_sec": 16.83189630508423
+      },
+      "svamp": {
+        "N": 300,
+        "correct": 6,
+        "strict_accuracy": 2.0,
+        "parse_rate": 100.0,
+        "think_compliance_rate": 0.0,
+        "answer_compliance_rate": 100.0,
+        "full_format_compliance_rate": 0.0,
+        "eos_rate": 100.0,
+        "repetition_rate": 0.0,
+        "generation_length": {
+          "mean": 4.226666666666667,
+          "p50": 4.0,
+          "p90": 5.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 300,
+            "correct": 6,
+            "accuracy": 2.0
+          },
+          "3_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "chal-736",
+            "question": "Winter is almost here and most animals are migrating to warmer countries. There are 41 bird families living near the mountain. If 35 bird families fle",
+            "gold_answer": "27",
+            "extracted_answer": "16",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>16</answer>"
+          },
+          {
+            "id": "chal-162",
+            "question": "Paige raised 7 goldfish and 12 catfish in the pond but stray cats loved eating them. Now she has 15 left. How many fishes disappeared?",
+            "gold_answer": "4",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>12</answer>"
+          },
+          {
+            "id": "chal-349",
+            "question": "Marco and his dad went strawberry picking. Together they collected strawberries that weighed 22 pounds. On the way back Marco ' dad found 30 more poun",
+            "gold_answer": "16",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>12</answer>"
+          },
+          {
+            "id": "chal-390",
+            "question": "Debby bought 200 water bottles and 256 soda bottles when they were on sale. If she drank 312 water bottles and 4 soda bottles a day How many days woul",
+            "gold_answer": "64",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>12</answer>"
+          },
+          {
+            "id": "chal-781",
+            "question": "There were 106 dollars in Olivia's wallet. After she visited a supermarket and a showroom there were 26 dollars left. If she spent 49 dollars at the s",
+            "gold_answer": "31",
+            "extracted_answer": "14",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>14</answer>"
+          },
+          {
+            "id": "chal-575",
+            "question": "Faye was placing her pencils and crayons into 30 rows with 71 crayons and 24 pencils in each row. How many pencils does she have?",
+            "gold_answer": "720",
+            "extracted_answer": "144",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>144</answer>"
+          },
+          {
+            "id": "chal-599",
+            "question": "Ed had 10 more marbles than Doug. Doug lost 11 of his marbles at the playground. If Ed had 45 marbles How many more marbles did Ed have than Doug then",
+            "gold_answer": "21",
+            "extracted_answer": "14",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>14</answer>"
+          },
+          {
+            "id": "chal-619",
+            "question": "26 children were riding on the bus. At the bus stop 38 more children got on the bus. How many children are on the bus now?",
+            "gold_answer": "64",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>12</answer>"
+          },
+          {
+            "id": "chal-229",
+            "question": "Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 31 cookies yesterday 270 cookies this morning and 419 coo",
+            "gold_answer": "450",
+            "extracted_answer": "128",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>128</answer>"
+          },
+          {
+            "id": "chal-725",
+            "question": "He then went to see the oranges being harvested. He found out that they harvest 66 sacks per day and that each sack containes 25 oranges. How many ora",
+            "gold_answer": "143550",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<answer>12</answer>"
+          }
+        ],
+        "eval_time_sec": 1.4266979694366455
+      },
+      "aqua": {
+        "N": 254,
+        "correct": 0,
+        "strict_accuracy": 0.0,
+        "parse_rate": 4.330708661417323,
+        "think_compliance_rate": 0.0,
+        "answer_compliance_rate": 4.330708661417323,
+        "full_format_compliance_rate": 0.0,
+        "eos_rate": 76.37795275590551,
+        "repetition_rate": 28.74015748031496,
+        "generation_length": {
+          "mean": 66.78346456692914,
+          "p50": 7.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "3_step": {
+            "N": 254,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "aqua_test_0",
+            "question": "A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car ",
+            "gold_answer": "A",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- D)80</answer>"
+          },
+          {
+            "id": "aqua_test_1",
+            "question": "The original price of an item is discounted 22%. A customer buys the item at this discounted price using a $20-off coupon. There is no tax on the item",
+            "gold_answer": "E",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "</answer>27</answer>"
+          },
+          {
+            "id": "aqua_test_2",
+            "question": "Find out which of the following values is the multiple of X, if it is divisible by 9 and 12?\nOptions:\n- A)36\n- B)15\n- C)17\n- D)5\n- E)7",
+            "gold_answer": "A",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- D)128\n- D)128\n- D)128\n- D)1288\n- D)1288</answer>"
+          },
+          {
+            "id": "aqua_test_3",
+            "question": "If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during t",
+            "gold_answer": "B",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E)086</answer>"
+          },
+          {
+            "id": "aqua_test_4",
+            "question": "A trader sold an article at a profit of 20% for Rs.360. What is the cost price of the article?\nOptions:\n- A)270\n- B)300\n- C)280\n- D)320\n- E)315",
+            "gold_answer": "B",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- D)320</answer>"
+          },
+          {
+            "id": "aqua_test_5",
+            "question": "20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 w",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "</answer>100</answer>"
+          },
+          {
+            "id": "aqua_test_6",
+            "question": "Find the total no. of distinct bike no.'s that can beformed using 2 letters followed by 2 no.'s. How many letters need to be distinct?\nOptions:\n- A)74",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "</answer>25</answer>"
+          },
+          {
+            "id": "aqua_test_7",
+            "question": "A train running at a speed of 100 miles/hour, takes 10 hours to reach its destination. After covering quarter of the distance, it starts raining and t",
+            "gold_answer": "C",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E)125</answer>"
+          },
+          {
+            "id": "aqua_test_8",
+            "question": "Of the 200 students in a school, at least 45% attended the prom night and at least 35% took part in the debating session. What is the maximum number o",
+            "gold_answer": "E",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- D)990</answer>"
+          },
+          {
+            "id": "aqua_test_9",
+            "question": "A sales person gets a 10% commission on each sale he makes. How many sales of $250 each must he make in order to reach a salary of at least $1000?\nOpt",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- D)250</answer>"
+          }
+        ],
+        "eval_time_sec": 266.11453557014465
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 22,
+          "accuracy": 4.3999999999999995
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 8,
+          "accuracy": 1.6
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "general_language": {
+        "val_loss": 3.0834070553233723,
+        "perplexity": 21.83266090650266,
+        "tokens_per_sec": 10727.337118611758
+      },
+      "gsm8k_samples": [
+        {
+          "id": "gsm8k_test_0",
+          "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+          "gold_answer": "18",
+          "extracted_answer": "12",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<answer>12</answer>"
+        },
+        {
+          "id": "gsm8k_test_1",
+          "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gold_answer": "3",
+          "extracted_answer": "24",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<answer>24</answer>"
+        },
+        {
+          "id": "gsm8k_test_2",
+          "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+          "gold_answer": "70000",
+          "extracted_answer": "15000",
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<answer>15000</answer>"
+        },
+        {
+          "id": "gsm8k_test_3",
+          "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+          "gold_answer": "540",
+          "extracted_answer": "1400",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<answer>1400</answer>"
+        },
+        {
+          "id": "gsm8k_test_4",
+          "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+          "gold_answer": "20",
+          "extracted_answer": "15",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<answer>15</answer>"
+        },
+        {
+          "id": "gsm8k_test_5",
+          "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+          "gold_answer": "64",
+          "extracted_answer": "168",
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "<answer>168</answer>"
+        },
+        {
+          "id": "gsm8k_test_6",
+          "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+          "gold_answer": "260",
+          "extracted_answer": "1400",
+          "is_correct": false,
+          "step_complexity": 3,
+          "generation": "<answer>1400</answer>"
+        },
+        {
+          "id": "gsm8k_test_7",
+          "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+          "gold_answer": "160",
+          "extracted_answer": "100",
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<answer>100</answer>"
+        },
+        {
+          "id": "gsm8k_test_8",
+          "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+          "gold_answer": "45",
+          "extracted_answer": "12",
+          "is_correct": false,
+          "step_complexity": 7,
+          "generation": "<answer>12</answer>"
+        },
+        {
+          "id": "gsm8k_test_9",
+          "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+          "gold_answer": "460",
+          "extracted_answer": "155",
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "<answer>155</answer>"
+        }
+      ]
+    },
+    "Model_D_CoT_SFT": {
+      "model_label": "Model D (Original Verbose CoT SFT)",
+      "checkpoint_path": "artifacts/sft/cot/best.pt",
+      "checkpoint_sha256": "0df4b0d86730e72c15e1cf8c3aaeebf58a834fc36232b804520760adb0311d93",
+      "gsm8k": {
+        "N": 1319,
+        "correct": 14,
+        "strict_accuracy": 1.061410159211524,
+        "parse_rate": 40.40940106141016,
+        "think_compliance_rate": 42.00151630022744,
+        "answer_compliance_rate": 40.48521607278241,
+        "full_format_compliance_rate": 38.81728582259287,
+        "eos_rate": 42.53222137983321,
+        "repetition_rate": 98.33206974981046,
+        "generation_length": {
+          "mean": 201.76497346474602,
+          "p50": 256.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 315,
+            "correct": 4,
+            "accuracy": 1.2698412698412698
+          },
+          "3_step": {
+            "N": 360,
+            "correct": 6,
+            "accuracy": 1.6666666666666667
+          },
+          "4plus_step": {
+            "N": 644,
+            "correct": 4,
+            "accuracy": 0.6211180124223602
+          }
+        },
+        "samples": [
+          {
+            "id": "gsm8k_test_0",
+            "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+            "gold_answer": "18",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nShe makes 16 eggs per day and she makes 16 eggs per day so she makes 16*16 = 24 eggs\nShe makes 24 eggs per day and she makes 24 eggs so she makes 24/2 = 24 eggs\nShe makes 24 eggs so she makes 24/2 = 24 eggs\nShe makes 24 eggs so she makes 24/2"
+          },
+          {
+            "id": "gsm8k_test_1",
+            "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+            "gold_answer": "3",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n2 bolts of white fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half "
+          },
+          {
+            "id": "gsm8k_test_2",
+            "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+            "gold_answer": "70000",
+            "extracted_answer": "50000",
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<think>\nJosha bought a house for $50,000 and he bought a house for $50,000. </think>\nHe bought a house for $50,000 and bought a house for $50,000 so that's 50,000-50,000=50,000\nHe made $50,000 and spent $50,000 on a house for $50,000\nHe made $50,000 "
+          },
+          {
+            "id": "gsm8k_test_3",
+            "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+            "gold_answer": "540",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nJames runs 60*3=120 feet\nJames runs 120*3=120 feet\nJames runs 120*3=120 feet\nJames runs 120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+12"
+          },
+          {
+            "id": "gsm8k_test_4",
+            "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+            "gold_answer": "20",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nWendi's flock is 20+25=150 cups of feed.\nShe gives her flock 20+25=150 cups of feed.\nShe gives her flock 150/2=150 cups of feed.\nShe gives her flock 150/2=150 cups of feed.\nShe gives her flock 150/2=150 cups of feed.\nShe gives her flock 150/1"
+          },
+          {
+            "id": "gsm8k_test_5",
+            "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+            "gold_answer": "64",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "<think>\nKylar will need to buy 16 glasses so that's 16/2 = 16 glasses\nKylar will need 16 glasses so he will need 16/2 = 2 glasses\nKylar will need 2 glasses so he will need 2*2 = 2 glasses\nKylar will need 2 glasses so he will need 2*2 = 16 glasses\nKyl"
+          },
+          {
+            "id": "gsm8k_test_6",
+            "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+            "gold_answer": "260",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "<think>\nToulouse has 20 sheep + 4 times as many sheep as Seattle.\nSeattle has 20 sheep + 4 times as many sheep as Seattle.\nSeattle has 20 sheep + 4 times as many sheep as Seattle.\nSeattle has 20 sheep + 4 times as many sheep as Seattle.\nSeattle has 2"
+          },
+          {
+            "id": "gsm8k_test_7",
+            "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+            "gold_answer": "160",
+            "extracted_answer": "1200",
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<think>\nFirst find the total number of files: 20 minutes/minute * 20 minutes/minute = 120 minutes\nThen find the total number of files: 20 minutes/minute * 40 minutes/minute = 120 minutes\nThen find the total number of files: 120 minutes + 120 minutes "
+          },
+          {
+            "id": "gsm8k_test_8",
+            "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+            "gold_answer": "45",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 7,
+            "generation": "<think>\nHe trains 3 hours at 80 mph, so he trains 3*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours "
+          },
+          {
+            "id": "gsm8k_test_9",
+            "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+            "gold_answer": "460",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "<think>\nEliza's rate per hour is $10. She works for 45 hours.\nShe works for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a wee"
+          }
+        ],
+        "eval_time_sec": 1232.263127565384
+      },
+      "svamp": {
+        "N": 300,
+        "correct": 1,
+        "strict_accuracy": 0.33333333333333337,
+        "parse_rate": 61.66666666666667,
+        "think_compliance_rate": 62.33333333333333,
+        "answer_compliance_rate": 61.66666666666667,
+        "full_format_compliance_rate": 61.66666666666667,
+        "eos_rate": 63.0,
+        "repetition_rate": 99.66666666666667,
+        "generation_length": {
+          "mean": 162.19,
+          "p50": 133.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 300,
+            "correct": 1,
+            "accuracy": 0.33333333333333337
+          },
+          "3_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "chal-736",
+            "question": "Winter is almost here and most animals are migrating to warmer countries. There are 41 bird families living near the mountain. If 35 bird families fle",
+            "gold_answer": "27",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nThere are 41 bird families flew away to africa, so there are 41 bird families flew away to africa, so there are 41 bird families flew away to africa, so there are 41 bird families flew away to africa, so there are 41 bird families flew away t"
+          },
+          {
+            "id": "chal-162",
+            "question": "Paige raised 7 goldfish and 12 catfish in the pond but stray cats loved eating them. Now she has 15 left. How many fishes disappeared?",
+            "gold_answer": "4",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nPaige raised 15+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+1"
+          },
+          {
+            "id": "chal-349",
+            "question": "Marco and his dad went strawberry picking. Together they collected strawberries that weighed 22 pounds. On the way back Marco ' dad found 30 more poun",
+            "gold_answer": "16",
+            "extracted_answer": "240",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nMarco's dad found 30+30 = 120 pounds of strawberries.\nMarco's dad found 120+30 = 240 pounds of strawberries.\nMarco's total number of pounds of strawberries is 120+240 = 240\nMarco's total number of pounds of strawberries is 240+240 = 240\nMarco"
+          },
+          {
+            "id": "chal-390",
+            "question": "Debby bought 200 water bottles and 256 soda bottles when they were on sale. If she drank 312 water bottles and 4 soda bottles a day How many days woul",
+            "gold_answer": "64",
+            "extracted_answer": "125",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nDebby bought 256 soda bottles and 256 soda bottles so 256 soda bottles * 312 days = 225 days\nDebby bought 256 soda bottles and 256 soda bottles * 225 days = 225 days\nThe soda bottles were on sale 225 days + 225 days = 125 days\n</think>\n<answe"
+          },
+          {
+            "id": "chal-781",
+            "question": "There were 106 dollars in Olivia's wallet. After she visited a supermarket and a showroom there were 26 dollars left. If she spent 49 dollars at the s",
+            "gold_answer": "31",
+            "extracted_answer": "24",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nThe store had 49 dollars in total, so 49-49 = 24 dollars\nThe store had 24 dollars in total, so 24-24 = 24 dollars\nThe store had 24 dollars in total, so 24-24 = 24 dollars\nThe store had 24 dollars in total, so 24-24 = 24 dollars\nThe store had "
+          },
+          {
+            "id": "chal-575",
+            "question": "Faye was placing her pencils and crayons into 30 rows with 71 crayons and 24 pencils in each row. How many pencils does she have?",
+            "gold_answer": "720",
+            "extracted_answer": "240",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nFaye has 71 crayons and she has 71 crayons so she has 71+71 = 240 crayons\nFaye has 240 crayons and she has 240 crayons so she has 240/240 = 240 crayons\nFaye has 240 crayons and she has 240 crayons so she has 240/240 = 240 crayons\n</think>\n<an"
+          },
+          {
+            "id": "chal-599",
+            "question": "Ed had 10 more marbles than Doug. Doug lost 11 of his marbles at the playground. If Ed had 45 marbles How many more marbles did Ed have than Doug then",
+            "gold_answer": "21",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nEd had 45 marbles (1/2) = 12 marbles\nEd had 12 marbles (1/2) = 4 marbles\nEd had 4 marbles (1/2) = 4 marbles\nEd had 4 marbles (1/2) = 4 marbles\nEd had 4 marbles (1/2) = 4 marbles\nEd had 4 marbles (1/2) = 4 marbles\nEd had 4 marbles (1/2) = 4 ma"
+          },
+          {
+            "id": "chal-619",
+            "question": "26 children were riding on the bus. At the bus stop 38 more children got on the bus. How many children are on the bus now?",
+            "gold_answer": "64",
+            "extracted_answer": "10",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nAt the bus stop 38 more kids than than than than than, there are 26 - 3 = 12 children on the bus.\nAt the bus stop 38 more kids than than than, there are 12 / 3 = 10 children on the bus.\nAt the bus stop 3 more kids than than than or 10, there "
+          },
+          {
+            "id": "chal-229",
+            "question": "Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 31 cookies yesterday 270 cookies this morning and 419 coo",
+            "gold_answer": "450",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nAlan bake 319 cookies yesterday so he baked 319 cookies then 419 cookies so he baked 319 cookies so he baked 319 cookies so he baked 319 cookies so he baked 319 cookies so he baked 319 cookies so he baked 319 cookies so he baked 319 cookies s"
+          },
+          {
+            "id": "chal-725",
+            "question": "He then went to see the oranges being harvested. He found out that they harvest 66 sacks per day and that each sack containes 25 oranges. How many ora",
+            "gold_answer": "143550",
+            "extracted_answer": "25",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nThe oranges are harvested for 87 days, so 87-25 = 125 oranges are harvested\nThey will have 125 oranges, so 125-125 = 25 oranges will be harvested\nThey will have 25 oranges, so 25-125 = 25 oranges will be harvested\nThey will have 25 oranges, s"
+          }
+        ],
+        "eval_time_sec": 177.8036389350891
+      },
+      "aqua": {
+        "N": 254,
+        "correct": 0,
+        "strict_accuracy": 0.0,
+        "parse_rate": 6.692913385826772,
+        "think_compliance_rate": 9.84251968503937,
+        "answer_compliance_rate": 6.692913385826772,
+        "full_format_compliance_rate": 0.0,
+        "eos_rate": 8.661417322834646,
+        "repetition_rate": 97.63779527559055,
+        "generation_length": {
+          "mean": 239.38976377952756,
+          "p50": 256.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "3_step": {
+            "N": 254,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "aqua_test_0",
+            "question": "A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car ",
+            "gold_answer": "A",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None o"
+          },
+          {
+            "id": "aqua_test_1",
+            "question": "The original price of an item is discounted 22%. A customer buys the item at this discounted price using a $20-off coupon. There is no tax on the item",
+            "gold_answer": "E",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- "
+          },
+          {
+            "id": "aqua_test_2",
+            "question": "Find out which of the following values is the multiple of X, if it is divisible by 9 and 12?\nOptions:\n- A)36\n- B)15\n- C)17\n- D)5\n- E)7",
+            "gold_answer": "A",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E)17\n- E)17\n- E)17\n- E)17\n- E)17\n- E)17\n- E)17\n- E)17\n- E)17\n- E)17\n- E)17\n+ E)17\n+ E)17\n+ E)17\n+ E)17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n+ 17\n"
+          },
+          {
+            "id": "aqua_test_3",
+            "question": "If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during t",
+            "gold_answer": "B",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1."
+          },
+          {
+            "id": "aqua_test_4",
+            "question": "A trader sold an article at a profit of 20% for Rs.360. What is the cost price of the article?\nOptions:\n- A)270\n- B)300\n- C)280\n- D)320\n- E)315",
+            "gold_answer": "B",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n\nThe price of the article is 100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100+100"
+          },
+          {
+            "id": "aqua_test_5",
+            "question": "20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 w",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 10"
+          },
+          {
+            "id": "aqua_test_6",
+            "question": "Find the total no. of distinct bike no.'s that can beformed using 2 letters followed by 2 no.'s. How many letters need to be distinct?\nOptions:\n- A)74",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n- E)60000\n"
+          },
+          {
+            "id": "aqua_test_7",
+            "question": "A train running at a speed of 100 miles/hour, takes 10 hours to reach its destination. After covering quarter of the distance, it starts raining and t",
+            "gold_answer": "C",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E)15\n- E)15\n- E)15\n- E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)1"
+          },
+          {
+            "id": "aqua_test_8",
+            "question": "Of the 200 students in a school, at least 45% attended the prom night and at least 35% took part in the debating session. What is the maximum number o",
+            "gold_answer": "E",
+            "extracted_answer": "3",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n\nThus, the total number of students who could have neither attended the debate is 45/110+110+110+110=350.\n</think>\n<answer>350</answer>"
+          },
+          {
+            "id": "aqua_test_9",
+            "question": "A sales person gets a 10% commission on each sale he makes. How many sales of $250 each must he make in order to reach a salary of at least $1000?\nOpt",
+            "gold_answer": "D",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n\nIf you add up all sales of $1000 to find the total sales of $1000, you will have $1000-$1000 = $10000\n</think>\n<answer>1000</answer>"
+          }
+        ],
+        "eval_time_sec": 234.9055790901184
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 7,
+          "accuracy": 1.4000000000000001
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "general_language": {
+        "val_loss": 3.160298875968475,
+        "perplexity": 23.57764166660233,
+        "tokens_per_sec": 16842.53553411107
+      },
+      "gsm8k_samples": [
+        {
+          "id": "gsm8k_test_0",
+          "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+          "gold_answer": "18",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\nShe makes 16 eggs per day and she makes 16 eggs per day so she makes 16*16 = 24 eggs\nShe makes 24 eggs per day and she makes 24 eggs so she makes 24/2 = 24 eggs\nShe makes 24 eggs so she makes 24/2 = 24 eggs\nShe makes 24 eggs so she makes 24/2"
+        },
+        {
+          "id": "gsm8k_test_1",
+          "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gold_answer": "3",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\n2 bolts of white fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half fiber and half "
+        },
+        {
+          "id": "gsm8k_test_2",
+          "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+          "gold_answer": "70000",
+          "extracted_answer": "50000",
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<think>\nJosha bought a house for $50,000 and he bought a house for $50,000. </think>\nHe bought a house for $50,000 and bought a house for $50,000 so that's 50,000-50,000=50,000\nHe made $50,000 and spent $50,000 on a house for $50,000\nHe made $50,000 "
+        },
+        {
+          "id": "gsm8k_test_3",
+          "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+          "gold_answer": "540",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\nJames runs 60*3=120 feet\nJames runs 120*3=120 feet\nJames runs 120*3=120 feet\nJames runs 120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+12"
+        },
+        {
+          "id": "gsm8k_test_4",
+          "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+          "gold_answer": "20",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\nWendi's flock is 20+25=150 cups of feed.\nShe gives her flock 20+25=150 cups of feed.\nShe gives her flock 150/2=150 cups of feed.\nShe gives her flock 150/2=150 cups of feed.\nShe gives her flock 150/2=150 cups of feed.\nShe gives her flock 150/1"
+        },
+        {
+          "id": "gsm8k_test_5",
+          "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+          "gold_answer": "64",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "<think>\nKylar will need to buy 16 glasses so that's 16/2 = 16 glasses\nKylar will need 16 glasses so he will need 16/2 = 2 glasses\nKylar will need 2 glasses so he will need 2*2 = 2 glasses\nKylar will need 2 glasses so he will need 2*2 = 16 glasses\nKyl"
+        },
+        {
+          "id": "gsm8k_test_6",
+          "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+          "gold_answer": "260",
+          "extracted_answer": "1",
+          "is_correct": false,
+          "step_complexity": 3,
+          "generation": "<think>\nToulouse has 20 sheep + 4 times as many sheep as Seattle.\nSeattle has 20 sheep + 4 times as many sheep as Seattle.\nSeattle has 20 sheep + 4 times as many sheep as Seattle.\nSeattle has 20 sheep + 4 times as many sheep as Seattle.\nSeattle has 2"
+        },
+        {
+          "id": "gsm8k_test_7",
+          "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+          "gold_answer": "160",
+          "extracted_answer": "1200",
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<think>\nFirst find the total number of files: 20 minutes/minute * 20 minutes/minute = 120 minutes\nThen find the total number of files: 20 minutes/minute * 40 minutes/minute = 120 minutes\nThen find the total number of files: 120 minutes + 120 minutes "
+        },
+        {
+          "id": "gsm8k_test_8",
+          "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+          "gold_answer": "45",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 7,
+          "generation": "<think>\nHe trains 3 hours at 80 mph, so he trains 3*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours "
+        },
+        {
+          "id": "gsm8k_test_9",
+          "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+          "gold_answer": "460",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "<think>\nEliza's rate per hour is $10. She works for 45 hours.\nShe works for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a week for 45 hours a wee"
+        }
+      ]
+    },
+    "Model_A_21A_Verbose_Transfer": {
+      "model_label": "Model A (21A: Arithmetic -> Verbose GSM8K)",
+      "checkpoint_path": "artifacts/sft/arithmetic_transfer/best.pt",
+      "checkpoint_sha256": "e3cf5845b85c53d05738c6afb98a04cd2fdc1544f75ecd03bc20e090b540cb29",
+      "gsm8k": {
+        "N": 1319,
+        "correct": 19,
+        "strict_accuracy": 1.4404852160727823,
+        "parse_rate": 55.26914329037149,
+        "think_compliance_rate": 85.36770280515542,
+        "answer_compliance_rate": 55.34495830174374,
+        "full_format_compliance_rate": 14.632297194844579,
+        "eos_rate": 56.633813495072026,
+        "repetition_rate": 86.05003790750568,
+        "generation_length": {
+          "mean": 159.57771038665655,
+          "p50": 163.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 315,
+            "correct": 4,
+            "accuracy": 1.2698412698412698
+          },
+          "3_step": {
+            "N": 360,
+            "correct": 9,
+            "accuracy": 2.5
+          },
+          "4plus_step": {
+            "N": 644,
+            "correct": 6,
+            "accuracy": 0.9316770186335404
+          }
+        },
+        "samples": [
+          {
+            "id": "gsm8k_test_0",
+            "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+            "gold_answer": "18",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "</think>\nShe needs 16 eggs per day and she eats 16 eggs per day.\nShe eats 16 eggs per day and she eats 16 eggs per day.\nShe eats 16 eggs per day and she eats 16 eggs per day.\nShe eats 16 eggs per day and she eats 16 eggs per day.\nShe eats 16 eggs per"
+          },
+          {
+            "id": "gsm8k_test_1",
+            "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+            "gold_answer": "3",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "</think>\nA rodent of 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of re"
+          },
+          {
+            "id": "gsm8k_test_2",
+            "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+            "gold_answer": "70000",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "</think>\nThe house has 15000 houses and the house has 15000 houses.\nThe house has 15000 houses and the house has 15000 houses.\nThe house has 15000 houses and the house has 15000 houses.\nThe house has 15000 houses and the house has 15000 houses.\nThe h"
+          },
+          {
+            "id": "gsm8k_test_3",
+            "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+            "gold_answer": "540",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "</think>\nHe runs 3 sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each s"
+          },
+          {
+            "id": "gsm8k_test_4",
+            "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+            "gold_answer": "20",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "</think>\nShe gives her chickens 20 x 2 = 120 cups of feed.\nShe gives her chickens 20 x 2 = 120 cups of feed.\nShe gives her flock of 120 x 2 = 120 cups of feed.\nShe gives her flock of 120 x 2 = 120 cups of feed.\nShe gives her flock of 120 x 2 = 120 cu"
+          },
+          {
+            "id": "gsm8k_test_5",
+            "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+            "gold_answer": "64",
+            "extracted_answer": "16",
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "</think>\nKylar went to the store to buy 16 glasses so he needs to pay 16/160 = 16 glasses\nHe needs to pay 16 glasses so he needs to pay 16/16 = 16 glasses\n</think>\n<answer>16</answer>"
+          },
+          {
+            "id": "gsm8k_test_6",
+            "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+            "gold_answer": "260",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "</think>\nToulouse has 20 sheep + 4 times as many sheep as Seattle.\nG Charleston has 20 sheep + 4 times as many sheep as Seattle.\nG Charleston has 20 sheep + 4 times as many sheep as Seattle.\nG Charleston has 20 sheep + 4 times as many sheep as Seattl"
+          },
+          {
+            "id": "gsm8k_test_7",
+            "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+            "gold_answer": "160",
+            "extracted_answer": "10",
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<think>\nCarla has to restart the download and therefore has to restart the download to 40/100*20 = 10 minutes.\nCarla has to restart the download and therefore has to restart the download to 10 minutes.\nCarla has to restart the download and therefore "
+          },
+          {
+            "id": "gsm8k_test_8",
+            "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+            "gold_answer": "45",
+            "extracted_answer": "80",
+            "is_correct": false,
+            "step_complexity": 7,
+            "generation": "</think>\n<answer>80</answer>"
+          },
+          {
+            "id": "gsm8k_test_9",
+            "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+            "gold_answer": "460",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "</think>\n Eliza worked for 45 hours x 40 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hour"
+          }
+        ],
+        "eval_time_sec": 1228.7177753448486
+      },
+      "svamp": {
+        "N": 300,
+        "correct": 6,
+        "strict_accuracy": 2.0,
+        "parse_rate": 68.0,
+        "think_compliance_rate": 73.33333333333333,
+        "answer_compliance_rate": 68.0,
+        "full_format_compliance_rate": 57.99999999999999,
+        "eos_rate": 69.33333333333334,
+        "repetition_rate": 95.33333333333334,
+        "generation_length": {
+          "mean": 137.37333333333333,
+          "p50": 97.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 300,
+            "correct": 6,
+            "accuracy": 2.0
+          },
+          "3_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "chal-736",
+            "question": "Winter is almost here and most animals are migrating to warmer countries. There are 41 bird families living near the mountain. If 35 bird families fle",
+            "gold_answer": "27",
+            "extracted_answer": "10",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nThere are 41 bird families flew away to africa, so there are 41 bird families flew away to 62 birds / 35 bird families flew away to 62 birds / 35 bird families flew away to 62 birds / 35 bird families flew away to 62 birds / 35 bird families "
+          },
+          {
+            "id": "chal-162",
+            "question": "Paige raised 7 goldfish and 12 catfish in the pond but stray cats loved eating them. Now she has 15 left. How many fishes disappeared?",
+            "gold_answer": "4",
+            "extracted_answer": "16",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nPaige raised 15+12+12+12=12 fishes\n12+12=16 fishes\n16/2=16 fishes\n</think>\n<answer>16</answer>"
+          },
+          {
+            "id": "chal-349",
+            "question": "Marco and his dad went strawberry picking. Together they collected strawberries that weighed 22 pounds. On the way back Marco ' dad found 30 more poun",
+            "gold_answer": "16",
+            "extracted_answer": "18",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nMarco and his dad found 30+30 = 12 pounds of strawberries.\nMarco and his dad found 36+30 = 16 pounds of strawberries.\nMarco and his dad found 16+30 = 24 pounds of strawberries.\nMarco and his dad found 24+16 = 18 pounds of strawberries.\n</thin"
+          },
+          {
+            "id": "chal-390",
+            "question": "Debby bought 200 water bottles and 256 soda bottles when they were on sale. If she drank 312 water bottles and 4 soda bottles a day How many days woul",
+            "gold_answer": "64",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nThe soda bottles would last 200/256 soda and 4 soda bottles would last 200/256 soda and 4 soda bottles would last 200/4 = 12 days.\nThe soda bottles will last 12 days a day, so the soda bottles will last 12*12 = 125 days.\n</think>\n<answer>12</"
+          },
+          {
+            "id": "chal-781",
+            "question": "There were 106 dollars in Olivia's wallet. After she visited a supermarket and a showroom there were 26 dollars left. If she spent 49 dollars at the s",
+            "gold_answer": "31",
+            "extracted_answer": "26",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nShe visited the store and the showroom had 26 dollars left.\nShe visited the store and the showroom had 26 dollars left.\nShe visited the store and the showroom had 26 dollars left.\nShe visited the store and the showroom had 26 dollars left.\nSh"
+          },
+          {
+            "id": "chal-575",
+            "question": "Faye was placing her pencils and crayons into 30 rows with 71 crayons and 24 pencils in each row. How many pencils does she have?",
+            "gold_answer": "720",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nFaye is placing her pencils in 30 rows with 71 crayons and 24 pencils in each row with 71 crayons.\nShe has placing her crayons in 30 rows with 71 crayons and 24 pencils in each row with 24 pencils in each row with 24 pencils in each row with "
+          },
+          {
+            "id": "chal-599",
+            "question": "Ed had 10 more marbles than Doug. Doug lost 11 of his marbles at the playground. If Ed had 45 marbles How many more marbles did Ed have than Doug then",
+            "gold_answer": "21",
+            "extracted_answer": "2",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nEd has 10+11 = 45 marbles\nEd has 45-11 = 16 marbles\nDoug lost 16-11 = 2 more marbles than Doug.\nEd has 2 more marbles than Doug so Doug lost 16-2 = 2 more marbles than Doug.\n</think>\n<answer>2</answer>"
+          },
+          {
+            "id": "chal-619",
+            "question": "26 children were riding on the bus. At the bus stop 38 more children got on the bus. How many children are on the bus now?",
+            "gold_answer": "64",
+            "extracted_answer": "10",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n26 children are on the bus stop 38 / 38 = 12 children.\n26 children are on the bus stop 38 / 12 = 24 children.\n24 children are on the bus stop 38 / 24 = 10 children.\n</think>\n<answer>10</answer>"
+          },
+          {
+            "id": "chal-229",
+            "question": "Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 31 cookies yesterday 270 cookies this morning and 419 coo",
+            "gold_answer": "450",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n Helen baked 319 cookies today so that leaves 319/270 = 12 cookies\n319 cookies so Helen baked 12/270 = 12 cookies\n</think>\n<answer>12</answer>"
+          },
+          {
+            "id": "chal-725",
+            "question": "He then went to see the oranges being harvested. He found out that they harvest 66 sacks per day and that each sack containes 25 oranges. How many ora",
+            "gold_answer": "143550",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nHe found out that 66 sacks per day will have been harvested, so he has 66 sacks per day and he has 25 oranges in total so he has 66 sacks per day so he has 66 sacks per day so he has 25 oranges in total so he has 66 sacks per day so he has 25"
+          }
+        ],
+        "eval_time_sec": 181.87587904930115
+      },
+      "aqua": {
+        "N": 254,
+        "correct": 0,
+        "strict_accuracy": 0.0,
+        "parse_rate": 33.46456692913386,
+        "think_compliance_rate": 35.43307086614173,
+        "answer_compliance_rate": 33.46456692913386,
+        "full_format_compliance_rate": 0.0,
+        "eos_rate": 36.22047244094488,
+        "repetition_rate": 96.8503937007874,
+        "generation_length": {
+          "mean": 199.6496062992126,
+          "p50": 256.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "3_step": {
+            "N": 254,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "aqua_test_0",
+            "question": "A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car ",
+            "gold_answer": "A",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None o"
+          },
+          {
+            "id": "aqua_test_1",
+            "question": "The original price of an item is discounted 22%. A customer buys the item at this discounted price using a $20-off coupon. There is no tax on the item",
+            "gold_answer": "E",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- "
+          },
+          {
+            "id": "aqua_test_2",
+            "question": "Find out which of the following values is the multiple of X, if it is divisible by 9 and 12?\nOptions:\n- A)36\n- B)15\n- C)17\n- D)5\n- E)7",
+            "gold_answer": "A",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- "
+          },
+          {
+            "id": "aqua_test_3",
+            "question": "If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during t",
+            "gold_answer": "B",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.63\n11.6"
+          },
+          {
+            "id": "aqua_test_4",
+            "question": "A trader sold an article at a profit of 20% for Rs.360. What is the cost price of the article?\nOptions:\n- A)270\n- B)300\n- C)280\n- D)320\n- E)315",
+            "gold_answer": "B",
+            "extracted_answer": "2",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 20%\n- 20%\n- 20%\n- 20%\n- 20%\n- 20%\n- 20%\n- 20%\n</think>\n<answer>20</answer>"
+          },
+          {
+            "id": "aqua_test_5",
+            "question": "20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 w",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 10"
+          },
+          {
+            "id": "aqua_test_6",
+            "question": "Find the total no. of distinct bike no.'s that can beformed using 2 letters followed by 2 no.'s. How many letters need to be distinct?\nOptions:\n- A)74",
+            "gold_answer": "D",
+            "extracted_answer": "<",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 6000\n- 6000\n- 6000\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n- 600\n</think>\n<answer>\n<answer>200</answer>"
+          },
+          {
+            "id": "aqua_test_7",
+            "question": "A train running at a speed of 100 miles/hour, takes 10 hours to reach its destination. After covering quarter of the distance, it starts raining and t",
+            "gold_answer": "C",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- E\n- "
+          },
+          {
+            "id": "aqua_test_8",
+            "question": "Of the 200 students in a school, at least 45% attended the prom night and at least 35% took part in the debating session. What is the maximum number o",
+            "gold_answer": "E",
+            "extracted_answer": "1",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n</think>\n<answer>10</answer>"
+          },
+          {
+            "id": "aqua_test_9",
+            "question": "A sales person gets a 10% commission on each sale he makes. How many sales of $250 each must he make in order to reach a salary of at least $1000?\nOpt",
+            "gold_answer": "D",
+            "extracted_answer": "<",
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n</think>\n<answer>\n<answer>\n<answer>\n<answer>10</answer>"
+          }
+        ],
+        "eval_time_sec": 242.8364737033844
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 18,
+          "accuracy": 3.5999999999999996
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 3,
+          "accuracy": 0.6
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 2,
+          "accuracy": 0.4
+        }
+      },
+      "general_language": {
+        "val_loss": 3.3629562161922357,
+        "perplexity": 28.87442387298693,
+        "tokens_per_sec": 21539.732019842173
+      },
+      "gsm8k_samples": [
+        {
+          "id": "gsm8k_test_0",
+          "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+          "gold_answer": "18",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "</think>\nShe needs 16 eggs per day and she eats 16 eggs per day.\nShe eats 16 eggs per day and she eats 16 eggs per day.\nShe eats 16 eggs per day and she eats 16 eggs per day.\nShe eats 16 eggs per day and she eats 16 eggs per day.\nShe eats 16 eggs per"
+        },
+        {
+          "id": "gsm8k_test_1",
+          "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gold_answer": "3",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "</think>\nA rodent of 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of red fiber so 2 bolts of re"
+        },
+        {
+          "id": "gsm8k_test_2",
+          "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+          "gold_answer": "70000",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "</think>\nThe house has 15000 houses and the house has 15000 houses.\nThe house has 15000 houses and the house has 15000 houses.\nThe house has 15000 houses and the house has 15000 houses.\nThe house has 15000 houses and the house has 15000 houses.\nThe h"
+        },
+        {
+          "id": "gsm8k_test_3",
+          "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+          "gold_answer": "540",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "</think>\nHe runs 3 sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each sprint. 60 meters each s"
+        },
+        {
+          "id": "gsm8k_test_4",
+          "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+          "gold_answer": "20",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "</think>\nShe gives her chickens 20 x 2 = 120 cups of feed.\nShe gives her chickens 20 x 2 = 120 cups of feed.\nShe gives her flock of 120 x 2 = 120 cups of feed.\nShe gives her flock of 120 x 2 = 120 cups of feed.\nShe gives her flock of 120 x 2 = 120 cu"
+        },
+        {
+          "id": "gsm8k_test_5",
+          "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+          "gold_answer": "64",
+          "extracted_answer": "16",
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "</think>\nKylar went to the store to buy 16 glasses so he needs to pay 16/160 = 16 glasses\nHe needs to pay 16 glasses so he needs to pay 16/16 = 16 glasses\n</think>\n<answer>16</answer>"
+        },
+        {
+          "id": "gsm8k_test_6",
+          "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+          "gold_answer": "260",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 3,
+          "generation": "</think>\nToulouse has 20 sheep + 4 times as many sheep as Seattle.\nG Charleston has 20 sheep + 4 times as many sheep as Seattle.\nG Charleston has 20 sheep + 4 times as many sheep as Seattle.\nG Charleston has 20 sheep + 4 times as many sheep as Seattl"
+        },
+        {
+          "id": "gsm8k_test_7",
+          "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+          "gold_answer": "160",
+          "extracted_answer": "10",
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<think>\nCarla has to restart the download and therefore has to restart the download to 40/100*20 = 10 minutes.\nCarla has to restart the download and therefore has to restart the download to 10 minutes.\nCarla has to restart the download and therefore "
+        },
+        {
+          "id": "gsm8k_test_8",
+          "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+          "gold_answer": "45",
+          "extracted_answer": "80",
+          "is_correct": false,
+          "step_complexity": 7,
+          "generation": "</think>\n<answer>80</answer>"
+        },
+        {
+          "id": "gsm8k_test_9",
+          "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+          "gold_answer": "460",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "</think>\n Eliza worked for 45 hours x 40 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hour"
+        }
+      ]
+    },
+    "Model_B_21A_Verbose_Transfer": {
+      "model_label": "Model B (21A: Base -> Verbose GSM8K)",
+      "checkpoint_path": "artifacts/sft/base_transfer/best.pt",
+      "checkpoint_sha256": "2a589697db22f16900f35ee585b97dafb718296dcd9d1662c55273445cea6aaa",
+      "gsm8k": {
+        "N": 1319,
+        "correct": 14,
+        "strict_accuracy": 1.061410159211524,
+        "parse_rate": 34.34420015163002,
+        "think_compliance_rate": 37.90750568612585,
+        "answer_compliance_rate": 34.34420015163002,
+        "full_format_compliance_rate": 30.401819560272937,
+        "eos_rate": 35.860500379075056,
+        "repetition_rate": 96.28506444275968,
+        "generation_length": {
+          "mean": 211.1076573161486,
+          "p50": 256.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 315,
+            "correct": 6,
+            "accuracy": 1.9047619047619049
+          },
+          "3_step": {
+            "N": 360,
+            "correct": 2,
+            "accuracy": 0.5555555555555556
+          },
+          "4plus_step": {
+            "N": 644,
+            "correct": 6,
+            "accuracy": 0.9316770186335404
+          }
+        },
+        "samples": [
+          {
+            "id": "gsm8k_test_0",
+            "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+            "gold_answer": "18",
+            "extracted_answer": "1240",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nFirst find the total number of eggs in the chickens: 16 eggs * 16 eggs = 24 eggs\nThen find the total number of eggs in the chickens: 24 eggs + 24 eggs + 24 eggs + 24 eggs = 124 eggs\nThen find the total number of eggs in the chickens: 124 eggs"
+          },
+          {
+            "id": "gsm8k_test_1",
+            "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+            "gold_answer": "3",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nA rod of white fiber and half that is 2 bolts of fiber and half that is 2 bolts of fiber and half that is 2 bolts of fiber and half that is 2 bolts of fiber and half that is 2 bolts of fiber and half that is 2 bolts of fiber and half that is "
+          },
+          {
+            "id": "gsm8k_test_2",
+            "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+            "gold_answer": "70000",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<think>\nJosha bought a house for $50,000 and he bought a house for $50,000. 150,000*.150,000 = $1,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150"
+          },
+          {
+            "id": "gsm8k_test_3",
+            "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+            "gold_answer": "540",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nJames runs 3*60=120 meters\nJames runs 120*60=120 meters\nJames runs 120*60=120 meters\nJames runs 120*60=120 meters\nJames runs 120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+1"
+          },
+          {
+            "id": "gsm8k_test_4",
+            "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+            "gold_answer": "20",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nWendi feeds 25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25"
+          },
+          {
+            "id": "gsm8k_test_5",
+            "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+            "gold_answer": "64",
+            "extracted_answer": "2",
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "<think>\nKylar wants to buy 16 glasses so that's 16/2 = 16 glasses\nHe needs to buy 16 glasses so that's 16/2 = 16 glasses\nHe needs to pay 16/16 = 2 glasses\nHe needs to pay 16/2 = 2 glasses\n</think>\n<answer>2</answer>"
+          },
+          {
+            "id": "gsm8k_test_6",
+            "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+            "gold_answer": "260",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "</think>\nToulouse has 20 sheep + 4 times as many sheep as Seattle.\nMeleston, Seattle, and Seattle have 20 sheep + 4 times as many sheep as Seattle.\nThus, Toulouse, Seattle, and Seattle have 20 sheep + 4 times as many sheep as Seattle, 4 times as many"
+          },
+          {
+            "id": "gsm8k_test_7",
+            "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+            "gold_answer": "160",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 4,
+            "generation": "<think>\nCarla has already downloaded 200 GB file, so it will take 20 minutes.\nShe has already downloaded 200/20 = 10 minutes to download the file.\nShe has already downloaded 20 minutes, so she has already downloaded 20 minutes.\nShe has already downlo"
+          },
+          {
+            "id": "gsm8k_test_8",
+            "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+            "gold_answer": "45",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 7,
+            "generation": "<think>\nHe trains 3 hours at 80 mph, so he trains 3*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours "
+          },
+          {
+            "id": "gsm8k_test_9",
+            "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+            "gold_answer": "460",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 5,
+            "generation": "<think>\nEliza's rate per hour is $10. She works for 45 hours, so she works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hour"
+          }
+        ],
+        "eval_time_sec": 1270.4537770748138
+      },
+      "svamp": {
+        "N": 300,
+        "correct": 1,
+        "strict_accuracy": 0.33333333333333337,
+        "parse_rate": 58.333333333333336,
+        "think_compliance_rate": 59.0,
+        "answer_compliance_rate": 58.333333333333336,
+        "full_format_compliance_rate": 57.99999999999999,
+        "eos_rate": 60.333333333333336,
+        "repetition_rate": 99.33333333333333,
+        "generation_length": {
+          "mean": 171.44333333333333,
+          "p50": 158.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 300,
+            "correct": 1,
+            "accuracy": 0.33333333333333337
+          },
+          "3_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "chal-736",
+            "question": "Winter is almost here and most animals are migrating to warmer countries. There are 41 bird families living near the mountain. If 35 bird families fle",
+            "gold_answer": "27",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nThere are 41 bird families flew away to africa, so there are 41 bird families flew away to africa, so there are 41 bird families flew away to africa, so there are 41 bird families flew away to africa, so there are 41 bird families flew away t"
+          },
+          {
+            "id": "chal-162",
+            "question": "Paige raised 7 goldfish and 12 catfish in the pond but stray cats loved eating them. Now she has 15 left. How many fishes disappeared?",
+            "gold_answer": "4",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nPaigee raised 15+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+12+"
+          },
+          {
+            "id": "chal-349",
+            "question": "Marco and his dad went strawberry picking. Together they collected strawberries that weighed 22 pounds. On the way back Marco ' dad found 30 more poun",
+            "gold_answer": "16",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nMarco's dad found 36 pounds of strawberries that weighed 22 pounds.\nMarco's oranges that weighed 36 pounds of strawberries that weighed 36 pounds of strawberries.\nMarco's oranges that weighed 36 pounds of strawberries that weighed 36 pounds o"
+          },
+          {
+            "id": "chal-390",
+            "question": "Debby bought 200 water bottles and 256 soda bottles when they were on sale. If she drank 312 water bottles and 4 soda bottles a day How many days woul",
+            "gold_answer": "64",
+            "extracted_answer": "12560",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nDebby bought 256 soda bottles and 256 soda bottles a day so 256 soda bottles * 312 days = 12560 days\nShe bought 256 soda bottles and 4 soda bottles a day so 256 soda bottles * 1256 soda bottles = 12560 days\nThe soda bottles were on sale for 1"
+          },
+          {
+            "id": "chal-781",
+            "question": "There were 106 dollars in Olivia's wallet. After she visited a supermarket and a showroom there were 26 dollars left. If she spent 49 dollars at the s",
+            "gold_answer": "31",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nShe visited 106 dollars in the store and 49 dollars in the store so she had 106/2 = 49 dollars left\nShe visited 49 dollars in the store and 49 dollars in the store so she had 49/4 = 26 dollars left\nShe visited 26 dollars in the store and 26 d"
+          },
+          {
+            "id": "chal-575",
+            "question": "Faye was placing her pencils and crayons into 30 rows with 71 crayons and 24 pencils in each row. How many pencils does she have?",
+            "gold_answer": "720",
+            "extracted_answer": "286",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nFaye has 71 crayons and she has 71 crayons so she has 71 + 24 = 126 crayons\nShe has 126 crayons and she has 126 crayons so she has 126 + 126 = 246 crayons\nShe has 246 crayons and she has 246 crayons so she has 246 + 246 = 286 crayons\n</think>"
+          },
+          {
+            "id": "chal-599",
+            "question": "Ed had 10 more marbles than Doug. Doug lost 11 of his marbles at the playground. If Ed had 45 marbles How many more marbles did Ed have than Doug then",
+            "gold_answer": "21",
+            "extracted_answer": "12",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nEd had 10 more marbles than Doug, so he lost 10+11 = 22 marbles\nEd had 45-1 = 12 more marbles than Doug.\nEd had 12 more marbles than Doug, so Ed had 12+12 = 22 marbles\nEd had 22-22 = 12 more marbles than Doug.\nEd had 12 more marbles than Doug"
+          },
+          {
+            "id": "chal-619",
+            "question": "26 children were riding on the bus. At the bus stop 38 more children got on the bus. How many children are on the bus now?",
+            "gold_answer": "64",
+            "extracted_answer": "24",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\n26 children got on the bus stop 38 + 38 + 38 = 128 children.\n26 children got on the bus 38 + 128 = 24 children.\n</think>\n<answer>24</answer>"
+          },
+          {
+            "id": "chal-229",
+            "question": "Helen the hippo and her friends are preparing for thanksgiving at Helen's house. Helen baked 31 cookies yesterday 270 cookies this morning and 419 coo",
+            "gold_answer": "450",
+            "extracted_answer": "270",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nAlan bake 270 cookies yesterday 270 cookies yesterday so he baked 270/319 = 120 cookies yesterday.\nAlan bake 120 cookies today, so he baked 120/319 = 270 cookies today.\nAlan bake 270 cookies today, so he baked 270/270 = 270 cookies today.\n</t"
+          },
+          {
+            "id": "chal-725",
+            "question": "He then went to see the oranges being harvested. He found out that they harvest 66 sacks per day and that each sack containes 25 oranges. How many ora",
+            "gold_answer": "143550",
+            "extracted_answer": "25",
+            "is_correct": false,
+            "step_complexity": 2,
+            "generation": "<think>\nThe oranges are harvested in 87 days, so 87-25 = 125 oranges are harvested\nThey will have 125 oranges in 87 days, so 125-125 = 25 oranges will have been harvested\nThey will have 25 oranges in 87 days, so 25-25 = 25 oranges will have been harv"
+          }
+        ],
+        "eval_time_sec": 182.51708483695984
+      },
+      "aqua": {
+        "N": 254,
+        "correct": 0,
+        "strict_accuracy": 0.0,
+        "parse_rate": 4.724409448818897,
+        "think_compliance_rate": 11.023622047244094,
+        "answer_compliance_rate": 4.724409448818897,
+        "full_format_compliance_rate": 0.0,
+        "eos_rate": 9.448818897637794,
+        "repetition_rate": 96.8503937007874,
+        "generation_length": {
+          "mean": 236.71259842519686,
+          "p50": 256.0,
+          "p90": 256.0
+        },
+        "complexity_stratification": {
+          "2_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "3_step": {
+            "N": 254,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "4plus_step": {
+            "N": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          }
+        },
+        "samples": [
+          {
+            "id": "aqua_test_0",
+            "question": "A car is being driven, in a straight line and at a uniform speed, towards the base of a vertical tower. The top of the tower is observed from the car ",
+            "gold_answer": "A",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None of the car\n- E)None o"
+          },
+          {
+            "id": "aqua_test_1",
+            "question": "The original price of an item is discounted 22%. A customer buys the item at this discounted price using a $20-off coupon. There is no tax on the item",
+            "gold_answer": "E",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- $1.90\n- "
+          },
+          {
+            "id": "aqua_test_2",
+            "question": "Find out which of the following values is the multiple of X, if it is divisible by 9 and 12?\nOptions:\n- A)36\n- B)15\n- C)17\n- D)5\n- E)7",
+            "gold_answer": "A",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n- 17\n"
+          },
+          {
+            "id": "aqua_test_3",
+            "question": "If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during t",
+            "gold_answer": "B",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1.56\n- E + 1."
+          },
+          {
+            "id": "aqua_test_4",
+            "question": "A trader sold an article at a profit of 20% for Rs.360. What is the cost price of the article?\nOptions:\n- A)270\n- B)300\n- C)280\n- D)320\n- E)315",
+            "gold_answer": "B",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 10"
+          },
+          {
+            "id": "aqua_test_5",
+            "question": "20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 w",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 10"
+          },
+          {
+            "id": "aqua_test_6",
+            "question": "Find the total no. of distinct bike no.'s that can beformed using 2 letters followed by 2 no.'s. How many letters need to be distinct?\nOptions:\n- A)74",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 1000\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 1"
+          },
+          {
+            "id": "aqua_test_7",
+            "question": "A train running at a speed of 100 miles/hour, takes 10 hours to reach its destination. After covering quarter of the distance, it starts raining and t",
+            "gold_answer": "C",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- E)15\n- E)15\n- E)15\n- E)15\n- E)15\n- E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)15\n+ E)1"
+          },
+          {
+            "id": "aqua_test_8",
+            "question": "Of the 200 students in a school, at least 45% attended the prom night and at least 35% took part in the debating session. What is the maximum number o",
+            "gold_answer": "E",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n- 110\n\nThe total number of students who could have to answer the debate is 110+110+110+110+110+110+110+110+110+110+110+110+110+110+110+110+110"
+          },
+          {
+            "id": "aqua_test_9",
+            "question": "A sales person gets a 10% commission on each sale he makes. How many sales of $250 each must he make in order to reach a salary of at least $1000?\nOpt",
+            "gold_answer": "D",
+            "extracted_answer": null,
+            "is_correct": false,
+            "step_complexity": 3,
+            "generation": "- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 100\n- 10"
+          }
+        ],
+        "eval_time_sec": 241.0658848285675
+      },
+      "arithmetic_retention": {
+        "2D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "3D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "4D_subtraction": {
+          "N": 500,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "general_language": {
+        "val_loss": 3.158820702701032,
+        "perplexity": 23.54281557282306,
+        "tokens_per_sec": 19173.041974226562
+      },
+      "gsm8k_samples": [
+        {
+          "id": "gsm8k_test_0",
+          "question": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the rem",
+          "gold_answer": "18",
+          "extracted_answer": "1240",
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\nFirst find the total number of eggs in the chickens: 16 eggs * 16 eggs = 24 eggs\nThen find the total number of eggs in the chickens: 24 eggs + 24 eggs + 24 eggs + 24 eggs = 124 eggs\nThen find the total number of eggs in the chickens: 124 eggs"
+        },
+        {
+          "id": "gsm8k_test_1",
+          "question": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gold_answer": "3",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\nA rod of white fiber and half that is 2 bolts of fiber and half that is 2 bolts of fiber and half that is 2 bolts of fiber and half that is 2 bolts of fiber and half that is 2 bolts of fiber and half that is 2 bolts of fiber and half that is "
+        },
+        {
+          "id": "gsm8k_test_2",
+          "question": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%",
+          "gold_answer": "70000",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<think>\nJosha bought a house for $50,000 and he bought a house for $50,000. 150,000*.150,000 = $1,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150,000. 150"
+        },
+        {
+          "id": "gsm8k_test_3",
+          "question": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+          "gold_answer": "540",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\nJames runs 3*60=120 meters\nJames runs 120*60=120 meters\nJames runs 120*60=120 meters\nJames runs 120*60=120 meters\nJames runs 120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+120+1"
+        },
+        {
+          "id": "gsm8k_test_4",
+          "question": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  S",
+          "gold_answer": "20",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 2,
+          "generation": "<think>\nWendi feeds 25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25+25"
+        },
+        {
+          "id": "gsm8k_test_5",
+          "question": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to b",
+          "gold_answer": "64",
+          "extracted_answer": "2",
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "<think>\nKylar wants to buy 16 glasses so that's 16/2 = 16 glasses\nHe needs to buy 16 glasses so that's 16/2 = 16 glasses\nHe needs to pay 16/16 = 2 glasses\nHe needs to pay 16/2 = 2 glasses\n</think>\n<answer>2</answer>"
+        },
+        {
+          "id": "gsm8k_test_6",
+          "question": "Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle h",
+          "gold_answer": "260",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 3,
+          "generation": "</think>\nToulouse has 20 sheep + 4 times as many sheep as Seattle.\nMeleston, Seattle, and Seattle have 20 sheep + 4 times as many sheep as Seattle.\nThus, Toulouse, Seattle, and Seattle have 20 sheep + 4 times as many sheep as Seattle, 4 times as many"
+        },
+        {
+          "id": "gsm8k_test_7",
+          "question": "Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to instal",
+          "gold_answer": "160",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 4,
+          "generation": "<think>\nCarla has already downloaded 200 GB file, so it will take 20 minutes.\nShe has already downloaded 200/20 = 10 minutes to download the file.\nShe has already downloaded 20 minutes, so she has already downloaded 20 minutes.\nShe has already downlo"
+        },
+        {
+          "id": "gsm8k_test_8",
+          "question": "John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get ho",
+          "gold_answer": "45",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 7,
+          "generation": "<think>\nHe trains 3 hours at 80 mph, so he trains 3*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours at 80 mph, so he trains 4*80=1200 mph\nHe trains 4 hours "
+        },
+        {
+          "id": "gsm8k_test_9",
+          "question": "Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If El",
+          "gold_answer": "460",
+          "extracted_answer": null,
+          "is_correct": false,
+          "step_complexity": 5,
+          "generation": "<think>\nEliza's rate per hour is $10. She works for 45 hours, so she works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hours x 45 hours = $10.\nShe works for 45 hour"
+        }
+      ]
+    }
+  }
+}

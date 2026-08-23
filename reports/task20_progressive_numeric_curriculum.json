@@ -1,0 +1,1556 @@
+{
+  "metadata": {
+    "task": "Task 20 Progressive Numeric-Regime Generalization",
+    "timestamp": "2026-08-20 23:00:30",
+    "checkpoint": "artifacts/sft/progressive_subtraction/best.pt",
+    "checkpoint_sha256": "fdcecade71afafc1857d5ee56d221d31928ae1321d0f963dc0f566482af56d5c",
+    "base_checkpoint": "checkpoints/mini_r1_500m_pretrain/best.pt",
+    "base_sha256": "f058a558edc2020b1a4a7a7b54312b97fb0b0a20e16c42da92018686e66462a4",
+    "tokenizer_sha256": "c1143f6e3b1e45811301e4a11392acbe367083712056d19c41ad2fe7f29f7044",
+    "training_dev_loss": 0.014915230044345437,
+    "training_dev_ppl": 1.0150270171734177,
+    "training_best_step": 1125,
+    "training_token_exposure": {
+      "2D": 231480,
+      "3D": 259392,
+      "4D": 306810
+    },
+    "overlap_audit": {
+      "status": "PASSED_ZERO_OVERLAP",
+      "per_benchmark": {
+        "E1": {
+          "N": 275,
+          "train_overlap": 0,
+          "dev_overlap": 0,
+          "status": "PASS"
+        },
+        "E2": {
+          "N": 500,
+          "train_overlap": 0,
+          "dev_overlap": 0,
+          "status": "PASS"
+        },
+        "E3": {
+          "N": 500,
+          "train_overlap": 0,
+          "dev_overlap": 0,
+          "status": "PASS"
+        },
+        "E4": {
+          "N": 500,
+          "train_overlap": 0,
+          "dev_overlap": 0,
+          "status": "PASS"
+        },
+        "E5": {
+          "N": 500,
+          "train_overlap": 0,
+          "dev_overlap": 0,
+          "status": "PASS"
+        },
+        "E6": {
+          "N": 500,
+          "train_overlap": 0,
+          "dev_overlap": 0,
+          "status": "PASS"
+        },
+        "E7": {
+          "N": 500,
+          "train_overlap": 0,
+          "dev_overlap": 0,
+          "status": "PASS"
+        }
+      }
+    }
+  },
+  "generalization_summary": {
+    "e1_iid_2digit_acc": 100.0,
+    "e2_ood_2digit_acc": 18.2,
+    "e3_iid_3digit_acc": 99.8,
+    "e4_ood_3digit_acc": 26.200000000000003,
+    "e5_iid_4digit_acc": 67.2,
+    "e6_ood_4digit_acc": 8.6,
+    "e7_acid_5digit_acc": 0.0,
+    "g2_ratio": 0.182,
+    "g3_ratio": 0.26252505010020044,
+    "g4_ratio": 0.12797619047619047,
+    "verdict_code": "D",
+    "verdict_text": "Conclusion D: Inconclusive; intermediate generalization dynamics."
+  },
+  "benchmarks": {
+    "E1_IID_2digit": {
+      "N": 500,
+      "correct": 500,
+      "final_answer_accuracy": 100.0,
+      "parse_rate": 100.0,
+      "full_format_compliance_rate": 100.0,
+      "eos_termination_rate": 100.0,
+      "repetition_rate": 0.0,
+      "generation_length": {
+        "mean": 18.26,
+        "p50": 19.0,
+        "p90": 19.0,
+        "min": 17,
+        "max": 19
+      },
+      "step_level_metrics": {
+        "valid_equations": 500,
+        "total_equations": 500,
+        "equation_accuracy": 100.0
+      },
+      "answer_length_stratification": {
+        "1d_answers": {
+          "N": 185,
+          "correct": 185,
+          "accuracy": 100.0
+        },
+        "2d_answers": {
+          "N": 315,
+          "correct": 315,
+          "accuracy": 100.0
+        },
+        "3d_answers": {
+          "N": 0,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "4d_answers": {
+          "N": 0,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "first_10_samples": [
+        {
+          "example_id": "e1_iid2d_0001",
+          "prompt": "Question: Calculate: 96 - 68",
+          "lhs": 96,
+          "rhs": 68,
+          "gold": "28",
+          "ans_digits": 2,
+          "extracted": "28",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e1_iid2d_0002",
+          "prompt": "Question: Calculate: 99 - 98",
+          "lhs": 99,
+          "rhs": 98,
+          "gold": "1",
+          "ans_digits": 1,
+          "extracted": "1",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 17,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e1_iid2d_0003",
+          "prompt": "Question: Calculate: 91 - 62",
+          "lhs": 91,
+          "rhs": 62,
+          "gold": "29",
+          "ans_digits": 2,
+          "extracted": "29",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e1_iid2d_0004",
+          "prompt": "Question: Calculate: 96 - 73",
+          "lhs": 96,
+          "rhs": 73,
+          "gold": "23",
+          "ans_digits": 2,
+          "extracted": "23",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e1_iid2d_0005",
+          "prompt": "Question: Calculate: 88 - 50",
+          "lhs": 88,
+          "rhs": 50,
+          "gold": "38",
+          "ans_digits": 2,
+          "extracted": "38",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e1_iid2d_0006",
+          "prompt": "Question: Calculate: 53 - 50",
+          "lhs": 53,
+          "rhs": 50,
+          "gold": "3",
+          "ans_digits": 1,
+          "extracted": "3",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 17,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e1_iid2d_0007",
+          "prompt": "Question: Calculate: 82 - 61",
+          "lhs": 82,
+          "rhs": 61,
+          "gold": "21",
+          "ans_digits": 2,
+          "extracted": "21",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e1_iid2d_0008",
+          "prompt": "Question: Calculate: 80 - 69",
+          "lhs": 80,
+          "rhs": 69,
+          "gold": "11",
+          "ans_digits": 2,
+          "extracted": "11",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e1_iid2d_0009",
+          "prompt": "Question: Calculate: 99 - 88",
+          "lhs": 99,
+          "rhs": 88,
+          "gold": "11",
+          "ans_digits": 2,
+          "extracted": "11",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e1_iid2d_0010",
+          "prompt": "Question: Calculate: 98 - 80",
+          "lhs": 98,
+          "rhs": 80,
+          "gold": "18",
+          "ans_digits": 2,
+          "extracted": "18",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 1,
+          "total_eq": 1
+        }
+      ]
+    },
+    "E2_OOD_2digit": {
+      "N": 500,
+      "correct": 91,
+      "final_answer_accuracy": 18.2,
+      "parse_rate": 100.0,
+      "full_format_compliance_rate": 99.2,
+      "eos_termination_rate": 100.0,
+      "repetition_rate": 1.2,
+      "generation_length": {
+        "mean": 17.544,
+        "p50": 17.0,
+        "p90": 19.0,
+        "min": 13,
+        "max": 38
+      },
+      "step_level_metrics": {
+        "valid_equations": 89,
+        "total_equations": 473,
+        "equation_accuracy": 18.816067653276956
+      },
+      "answer_length_stratification": {
+        "1d_answers": {
+          "N": 192,
+          "correct": 57,
+          "accuracy": 29.6875
+        },
+        "2d_answers": {
+          "N": 308,
+          "correct": 34,
+          "accuracy": 11.03896103896104
+        },
+        "3d_answers": {
+          "N": 0,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "4d_answers": {
+          "N": 0,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "first_10_samples": [
+        {
+          "example_id": "e2_ood2d_0001",
+          "prompt": "Question: Calculate: 46 - 29",
+          "lhs": 46,
+          "rhs": 29,
+          "gold": "17",
+          "ans_digits": 2,
+          "extracted": "7",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 17,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e2_ood2d_0002",
+          "prompt": "Question: Calculate: 24 - 5",
+          "lhs": 24,
+          "rhs": 5,
+          "gold": "19",
+          "ans_digits": 2,
+          "extracted": "2",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 16,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e2_ood2d_0003",
+          "prompt": "Question: Calculate: 31 - 22",
+          "lhs": 31,
+          "rhs": 22,
+          "gold": "9",
+          "ans_digits": 1,
+          "extracted": "9",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 17,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e2_ood2d_0004",
+          "prompt": "Question: Calculate: 38 - 29",
+          "lhs": 38,
+          "rhs": 29,
+          "gold": "9",
+          "ans_digits": 1,
+          "extracted": "0",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 17,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e2_ood2d_0005",
+          "prompt": "Question: Calculate: 47 - 3",
+          "lhs": 47,
+          "rhs": 3,
+          "gold": "44",
+          "ans_digits": 2,
+          "extracted": "14",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e2_ood2d_0006",
+          "prompt": "Question: Calculate: 49 - 29",
+          "lhs": 49,
+          "rhs": 29,
+          "gold": "20",
+          "ans_digits": 2,
+          "extracted": "0",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 17,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e2_ood2d_0007",
+          "prompt": "Question: Calculate: 43 - 8",
+          "lhs": 43,
+          "rhs": 8,
+          "gold": "35",
+          "ans_digits": 2,
+          "extracted": "2",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 16,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e2_ood2d_0008",
+          "prompt": "Question: Calculate: 12 - 9",
+          "lhs": 12,
+          "rhs": 9,
+          "gold": "3",
+          "ans_digits": 1,
+          "extracted": "",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 14,
+          "valid_eq": 0,
+          "total_eq": 0
+        },
+        {
+          "example_id": "e2_ood2d_0009",
+          "prompt": "Question: Calculate: 38 - 36",
+          "lhs": 38,
+          "rhs": 36,
+          "gold": "2",
+          "ans_digits": 1,
+          "extracted": "12",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e2_ood2d_0010",
+          "prompt": "Question: Calculate: 26 - 21",
+          "lhs": 26,
+          "rhs": 21,
+          "gold": "5",
+          "ans_digits": 1,
+          "extracted": "23",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 0,
+          "total_eq": 1
+        }
+      ]
+    },
+    "E3_IID_3digit": {
+      "N": 500,
+      "correct": 499,
+      "final_answer_accuracy": 99.8,
+      "parse_rate": 100.0,
+      "full_format_compliance_rate": 100.0,
+      "eos_termination_rate": 100.0,
+      "repetition_rate": 0.0,
+      "generation_length": {
+        "mean": 20.664,
+        "p50": 21.0,
+        "p90": 21.0,
+        "min": 19,
+        "max": 21
+      },
+      "step_level_metrics": {
+        "valid_equations": 499,
+        "total_equations": 500,
+        "equation_accuracy": 99.8
+      },
+      "answer_length_stratification": {
+        "1d_answers": {
+          "N": 84,
+          "correct": 84,
+          "accuracy": 100.0
+        },
+        "2d_answers": {
+          "N": 416,
+          "correct": 415,
+          "accuracy": 99.75961538461539
+        },
+        "3d_answers": {
+          "N": 0,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "4d_answers": {
+          "N": 0,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "first_10_samples": [
+        {
+          "example_id": "e3_iid3d_0001",
+          "prompt": "Question: Calculate: 149 - 147",
+          "lhs": 149,
+          "rhs": 147,
+          "gold": "2",
+          "ans_digits": 1,
+          "extracted": "2",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 19,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e3_iid3d_0002",
+          "prompt": "Question: Calculate: 168 - 108",
+          "lhs": 168,
+          "rhs": 108,
+          "gold": "60",
+          "ans_digits": 2,
+          "extracted": "60",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e3_iid3d_0003",
+          "prompt": "Question: Calculate: 148 - 115",
+          "lhs": 148,
+          "rhs": 115,
+          "gold": "33",
+          "ans_digits": 2,
+          "extracted": "33",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e3_iid3d_0004",
+          "prompt": "Question: Calculate: 145 - 120",
+          "lhs": 145,
+          "rhs": 120,
+          "gold": "25",
+          "ans_digits": 2,
+          "extracted": "25",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e3_iid3d_0005",
+          "prompt": "Question: Calculate: 192 - 172",
+          "lhs": 192,
+          "rhs": 172,
+          "gold": "20",
+          "ans_digits": 2,
+          "extracted": "20",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e3_iid3d_0006",
+          "prompt": "Question: Calculate: 140 - 108",
+          "lhs": 140,
+          "rhs": 108,
+          "gold": "32",
+          "ans_digits": 2,
+          "extracted": "32",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e3_iid3d_0007",
+          "prompt": "Question: Calculate: 163 - 131",
+          "lhs": 163,
+          "rhs": 131,
+          "gold": "32",
+          "ans_digits": 2,
+          "extracted": "32",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e3_iid3d_0008",
+          "prompt": "Question: Calculate: 171 - 114",
+          "lhs": 171,
+          "rhs": 114,
+          "gold": "57",
+          "ans_digits": 2,
+          "extracted": "57",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e3_iid3d_0009",
+          "prompt": "Question: Calculate: 147 - 102",
+          "lhs": 147,
+          "rhs": 102,
+          "gold": "45",
+          "ans_digits": 2,
+          "extracted": "45",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e3_iid3d_0010",
+          "prompt": "Question: Calculate: 175 - 165",
+          "lhs": 175,
+          "rhs": 165,
+          "gold": "10",
+          "ans_digits": 2,
+          "extracted": "10",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 1,
+          "total_eq": 1
+        }
+      ]
+    },
+    "E4_OOD_3digit": {
+      "N": 500,
+      "correct": 131,
+      "final_answer_accuracy": 26.200000000000003,
+      "parse_rate": 100.0,
+      "full_format_compliance_rate": 100.0,
+      "eos_termination_rate": 100.0,
+      "repetition_rate": 0.0,
+      "generation_length": {
+        "mean": 20.404,
+        "p50": 21.0,
+        "p90": 21.0,
+        "min": 19,
+        "max": 21
+      },
+      "step_level_metrics": {
+        "valid_equations": 131,
+        "total_equations": 500,
+        "equation_accuracy": 26.200000000000003
+      },
+      "answer_length_stratification": {
+        "1d_answers": {
+          "N": 104,
+          "correct": 90,
+          "accuracy": 86.53846153846155
+        },
+        "2d_answers": {
+          "N": 396,
+          "correct": 41,
+          "accuracy": 10.353535353535353
+        },
+        "3d_answers": {
+          "N": 0,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "4d_answers": {
+          "N": 0,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "first_10_samples": [
+        {
+          "example_id": "e4_ood3d_0001",
+          "prompt": "Question: Calculate: 277 - 209",
+          "lhs": 277,
+          "rhs": 209,
+          "gold": "68",
+          "ans_digits": 2,
+          "extracted": "48",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e4_ood3d_0002",
+          "prompt": "Question: Calculate: 265 - 230",
+          "lhs": 265,
+          "rhs": 230,
+          "gold": "35",
+          "ans_digits": 2,
+          "extracted": "25",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e4_ood3d_0003",
+          "prompt": "Question: Calculate: 267 - 222",
+          "lhs": 267,
+          "rhs": 222,
+          "gold": "45",
+          "ans_digits": 2,
+          "extracted": "25",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e4_ood3d_0004",
+          "prompt": "Question: Calculate: 251 - 225",
+          "lhs": 251,
+          "rhs": 225,
+          "gold": "26",
+          "ans_digits": 2,
+          "extracted": "16",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e4_ood3d_0005",
+          "prompt": "Question: Calculate: 285 - 200",
+          "lhs": 285,
+          "rhs": 200,
+          "gold": "85",
+          "ans_digits": 2,
+          "extracted": "65",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e4_ood3d_0006",
+          "prompt": "Question: Calculate: 248 - 215",
+          "lhs": 248,
+          "rhs": 215,
+          "gold": "33",
+          "ans_digits": 2,
+          "extracted": "23",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e4_ood3d_0007",
+          "prompt": "Question: Calculate: 284 - 214",
+          "lhs": 284,
+          "rhs": 214,
+          "gold": "70",
+          "ans_digits": 2,
+          "extracted": "50",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e4_ood3d_0008",
+          "prompt": "Question: Calculate: 287 - 227",
+          "lhs": 287,
+          "rhs": 227,
+          "gold": "60",
+          "ans_digits": 2,
+          "extracted": "40",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e4_ood3d_0009",
+          "prompt": "Question: Calculate: 245 - 200",
+          "lhs": 245,
+          "rhs": 200,
+          "gold": "45",
+          "ans_digits": 2,
+          "extracted": "35",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e4_ood3d_0010",
+          "prompt": "Question: Calculate: 253 - 242",
+          "lhs": 253,
+          "rhs": 242,
+          "gold": "11",
+          "ans_digits": 2,
+          "extracted": "11",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 21,
+          "valid_eq": 1,
+          "total_eq": 1
+        }
+      ]
+    },
+    "E5_IID_4digit": {
+      "N": 500,
+      "correct": 336,
+      "final_answer_accuracy": 67.2,
+      "parse_rate": 100.0,
+      "full_format_compliance_rate": 100.0,
+      "eos_termination_rate": 100.0,
+      "repetition_rate": 0.2,
+      "generation_length": {
+        "mean": 24.612,
+        "p50": 25.0,
+        "p90": 25.0,
+        "min": 21,
+        "max": 25
+      },
+      "step_level_metrics": {
+        "valid_equations": 336,
+        "total_equations": 500,
+        "equation_accuracy": 67.2
+      },
+      "answer_length_stratification": {
+        "1d_answers": {
+          "N": 12,
+          "correct": 1,
+          "accuracy": 8.333333333333332
+        },
+        "2d_answers": {
+          "N": 83,
+          "correct": 49,
+          "accuracy": 59.036144578313255
+        },
+        "3d_answers": {
+          "N": 405,
+          "correct": 286,
+          "accuracy": 70.61728395061728
+        },
+        "4d_answers": {
+          "N": 0,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "first_10_samples": [
+        {
+          "example_id": "e5_iid4d_0001",
+          "prompt": "Question: Calculate: 1738 - 1538",
+          "lhs": 1738,
+          "rhs": 1538,
+          "gold": "200",
+          "ans_digits": 3,
+          "extracted": "200",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e5_iid4d_0002",
+          "prompt": "Question: Calculate: 1311 - 1266",
+          "lhs": 1311,
+          "rhs": 1266,
+          "gold": "45",
+          "ans_digits": 2,
+          "extracted": "45",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 23,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e5_iid4d_0003",
+          "prompt": "Question: Calculate: 1873 - 1226",
+          "lhs": 1873,
+          "rhs": 1226,
+          "gold": "647",
+          "ans_digits": 3,
+          "extracted": "647",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e5_iid4d_0004",
+          "prompt": "Question: Calculate: 1726 - 1304",
+          "lhs": 1726,
+          "rhs": 1304,
+          "gold": "422",
+          "ans_digits": 3,
+          "extracted": "422",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e5_iid4d_0005",
+          "prompt": "Question: Calculate: 1566 - 1275",
+          "lhs": 1566,
+          "rhs": 1275,
+          "gold": "291",
+          "ans_digits": 3,
+          "extracted": "291",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e5_iid4d_0006",
+          "prompt": "Question: Calculate: 1176 - 1122",
+          "lhs": 1176,
+          "rhs": 1122,
+          "gold": "54",
+          "ans_digits": 2,
+          "extracted": "55",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 23,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e5_iid4d_0007",
+          "prompt": "Question: Calculate: 1230 - 1047",
+          "lhs": 1230,
+          "rhs": 1047,
+          "gold": "183",
+          "ans_digits": 3,
+          "extracted": "183",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e5_iid4d_0008",
+          "prompt": "Question: Calculate: 1547 - 1244",
+          "lhs": 1547,
+          "rhs": 1244,
+          "gold": "303",
+          "ans_digits": 3,
+          "extracted": "303",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e5_iid4d_0009",
+          "prompt": "Question: Calculate: 1299 - 1041",
+          "lhs": 1299,
+          "rhs": 1041,
+          "gold": "258",
+          "ans_digits": 3,
+          "extracted": "258",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e5_iid4d_0010",
+          "prompt": "Question: Calculate: 1655 - 1152",
+          "lhs": 1655,
+          "rhs": 1152,
+          "gold": "503",
+          "ans_digits": 3,
+          "extracted": "503",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 1,
+          "total_eq": 1
+        }
+      ]
+    },
+    "E6_OOD_4digit": {
+      "N": 500,
+      "correct": 43,
+      "final_answer_accuracy": 8.6,
+      "parse_rate": 100.0,
+      "full_format_compliance_rate": 100.0,
+      "eos_termination_rate": 100.0,
+      "repetition_rate": 0.0,
+      "generation_length": {
+        "mean": 24.324,
+        "p50": 25.0,
+        "p90": 25.0,
+        "min": 20,
+        "max": 25
+      },
+      "step_level_metrics": {
+        "valid_equations": 43,
+        "total_equations": 500,
+        "equation_accuracy": 8.6
+      },
+      "answer_length_stratification": {
+        "1d_answers": {
+          "N": 9,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "2d_answers": {
+          "N": 83,
+          "correct": 26,
+          "accuracy": 31.32530120481928
+        },
+        "3d_answers": {
+          "N": 408,
+          "correct": 17,
+          "accuracy": 4.166666666666666
+        },
+        "4d_answers": {
+          "N": 0,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "first_10_samples": [
+        {
+          "example_id": "e6_ood4d_0001",
+          "prompt": "Question: Calculate: 2620 - 2268",
+          "lhs": 2620,
+          "rhs": 2268,
+          "gold": "352",
+          "ans_digits": 3,
+          "extracted": "162",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e6_ood4d_0002",
+          "prompt": "Question: Calculate: 2288 - 2105",
+          "lhs": 2288,
+          "rhs": 2105,
+          "gold": "183",
+          "ans_digits": 3,
+          "extracted": "183",
+          "correct": true,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 1,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e6_ood4d_0003",
+          "prompt": "Question: Calculate: 2952 - 2017",
+          "lhs": 2952,
+          "rhs": 2017,
+          "gold": "935",
+          "ans_digits": 3,
+          "extracted": "636",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e6_ood4d_0004",
+          "prompt": "Question: Calculate: 2918 - 2764",
+          "lhs": 2918,
+          "rhs": 2764,
+          "gold": "154",
+          "ans_digits": 3,
+          "extracted": "43",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 23,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e6_ood4d_0005",
+          "prompt": "Question: Calculate: 2894 - 2688",
+          "lhs": 2894,
+          "rhs": 2688,
+          "gold": "206",
+          "ans_digits": 3,
+          "extracted": "116",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e6_ood4d_0006",
+          "prompt": "Question: Calculate: 2938 - 2170",
+          "lhs": 2938,
+          "rhs": 2170,
+          "gold": "768",
+          "ans_digits": 3,
+          "extracted": "538",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e6_ood4d_0007",
+          "prompt": "Question: Calculate: 2739 - 2231",
+          "lhs": 2739,
+          "rhs": 2231,
+          "gold": "508",
+          "ans_digits": 3,
+          "extracted": "318",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e6_ood4d_0008",
+          "prompt": "Question: Calculate: 2801 - 2516",
+          "lhs": 2801,
+          "rhs": 2516,
+          "gold": "285",
+          "ans_digits": 3,
+          "extracted": "185",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e6_ood4d_0009",
+          "prompt": "Question: Calculate: 2660 - 2492",
+          "lhs": 2660,
+          "rhs": 2492,
+          "gold": "168",
+          "ans_digits": 3,
+          "extracted": "7",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 20,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e6_ood4d_0010",
+          "prompt": "Question: Calculate: 2858 - 2231",
+          "lhs": 2858,
+          "rhs": 2231,
+          "gold": "627",
+          "ans_digits": 3,
+          "extracted": "437",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 0,
+          "total_eq": 1
+        }
+      ]
+    },
+    "E7_Acid_5digit": {
+      "N": 500,
+      "correct": 0,
+      "final_answer_accuracy": 0.0,
+      "parse_rate": 98.6,
+      "full_format_compliance_rate": 98.6,
+      "eos_termination_rate": 98.6,
+      "repetition_rate": 1.2,
+      "generation_length": {
+        "mean": 25.29,
+        "p50": 25.0,
+        "p90": 27.0,
+        "min": 7,
+        "max": 27
+      },
+      "step_level_metrics": {
+        "valid_equations": 0,
+        "total_equations": 492,
+        "equation_accuracy": 0.0
+      },
+      "answer_length_stratification": {
+        "1d_answers": {
+          "N": 1,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "2d_answers": {
+          "N": 7,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "3d_answers": {
+          "N": 93,
+          "correct": 0,
+          "accuracy": 0.0
+        },
+        "4d_answers": {
+          "N": 399,
+          "correct": 0,
+          "accuracy": 0.0
+        }
+      },
+      "first_10_samples": [
+        {
+          "example_id": "e7_acid5d_0001",
+          "prompt": "Question: Calculate: 17873 - 10367",
+          "lhs": 17873,
+          "rhs": 10367,
+          "gold": "7506",
+          "ans_digits": 4,
+          "extracted": "712",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 27,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e7_acid5d_0002",
+          "prompt": "Question: Calculate: 15627 - 11347",
+          "lhs": 15627,
+          "rhs": 11347,
+          "gold": "4280",
+          "ans_digits": 4,
+          "extracted": "43",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 26,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e7_acid5d_0003",
+          "prompt": "Question: Calculate: 19331 - 19218",
+          "lhs": 19331,
+          "rhs": 19218,
+          "gold": "113",
+          "ans_digits": 3,
+          "extracted": "18",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e7_acid5d_0004",
+          "prompt": "Question: Calculate: 19948 - 11640",
+          "lhs": 19948,
+          "rhs": 11640,
+          "gold": "8308",
+          "ans_digits": 4,
+          "extracted": "824",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 27,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e7_acid5d_0005",
+          "prompt": "Question: Calculate: 18272 - 11060",
+          "lhs": 18272,
+          "rhs": 11060,
+          "gold": "7212",
+          "ans_digits": 4,
+          "extracted": "727",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 27,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e7_acid5d_0006",
+          "prompt": "Question: Calculate: 17918 - 17473",
+          "lhs": 17918,
+          "rhs": 17473,
+          "gold": "445",
+          "ans_digits": 3,
+          "extracted": "14",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 25,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e7_acid5d_0007",
+          "prompt": "Question: Calculate: 16139 - 16068",
+          "lhs": 16139,
+          "rhs": 16068,
+          "gold": "71",
+          "ans_digits": 2,
+          "extracted": "8",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 23,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e7_acid5d_0008",
+          "prompt": "Question: Calculate: 12510 - 11123",
+          "lhs": 12510,
+          "rhs": 11123,
+          "gold": "1387",
+          "ans_digits": 4,
+          "extracted": "13",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 23,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e7_acid5d_0009",
+          "prompt": "Question: Calculate: 19382 - 14544",
+          "lhs": 19382,
+          "rhs": 14544,
+          "gold": "4838",
+          "ans_digits": 4,
+          "extracted": "482",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 26,
+          "valid_eq": 0,
+          "total_eq": 1
+        },
+        {
+          "example_id": "e7_acid5d_0010",
+          "prompt": "Question: Calculate: 14898 - 11573",
+          "lhs": 14898,
+          "rhs": 11573,
+          "gold": "3325",
+          "ans_digits": 4,
+          "extracted": "33",
+          "correct": false,
+          "parsed": true,
+          "format_ok": true,
+          "gen_len": 26,
+          "valid_eq": 0,
+          "total_eq": 1
+        }
+      ]
+    }
+  },
+  "qualitative_audits": {
+    "e4_ood_3digit": {
+      "sample_size": 200,
+      "classification": {
+        "1_correct_arithmetic": {
+          "count": 50,
+          "pct": 25.0
+        },
+        "2_structured_but_incorrect": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "3_numeric_range_collapse": {
+          "count": 150,
+          "pct": 75.0
+        },
+        "4_repetition": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "5_format_failure": {
+          "count": 0,
+          "pct": 0.0
+        }
+      },
+      "output_digit_length_distribution": {
+        "1": 57,
+        "2": 143
+      },
+      "error_mechanisms": {
+        "total_errors_inspected": 150,
+        "correct_final_digit_pct": 78.0,
+        "correct_magnitude_pct": 13.333333333333334,
+        "collapsed_to_training_range_pct": 100.0
+      }
+    },
+    "e6_ood_4digit": {
+      "sample_size": 200,
+      "classification": {
+        "1_correct_arithmetic": {
+          "count": 17,
+          "pct": 8.5
+        },
+        "2_structured_but_incorrect": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "3_numeric_range_collapse": {
+          "count": 183,
+          "pct": 91.5
+        },
+        "4_repetition": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "5_format_failure": {
+          "count": 0,
+          "pct": 0.0
+        }
+      },
+      "output_digit_length_distribution": {
+        "1": 6,
+        "2": 55,
+        "3": 139
+      },
+      "error_mechanisms": {
+        "total_errors_inspected": 183,
+        "correct_final_digit_pct": 73.224043715847,
+        "correct_magnitude_pct": 19.12568306010929,
+        "collapsed_to_training_range_pct": 100.0
+      }
+    },
+    "e7_acid_5digit": {
+      "sample_size": 200,
+      "classification": {
+        "1_correct_arithmetic": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "2_structured_but_incorrect": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "3_numeric_range_collapse": {
+          "count": 198,
+          "pct": 99.0
+        },
+        "4_repetition": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "5_format_failure": {
+          "count": 2,
+          "pct": 1.0
+        }
+      },
+      "output_digit_length_distribution": {
+        "1": 17,
+        "2": 79,
+        "3": 102
+      },
+      "error_mechanisms": {
+        "total_errors_inspected": 198,
+        "correct_final_digit_pct": 17.67676767676768,
+        "correct_magnitude_pct": 0.0,
+        "collapsed_to_training_range_pct": 100.0
+      }
+    }
+  }
+}

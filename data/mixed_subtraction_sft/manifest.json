@@ -1,0 +1,57 @@
+{
+  "dataset_name": "Task 19D Mixed 2+3-Digit Subtraction SFT",
+  "seed": 42,
+  "training_composition": {
+    "2_digit_component": {
+      "range": "[50, 99]",
+      "count": 6000,
+      "unique_pairs": 1000
+    },
+    "3_digit_component": {
+      "range": "[101, 199]",
+      "count": 6000,
+      "unique_pairs": 4000
+    },
+    "total": 12000
+  },
+  "splits": {
+    "train": {
+      "file": "data/mixed_subtraction_sft\\train.jsonl",
+      "count": 12000,
+      "sha256": "f58dc0e5f536c80d06a0a409b1cac1f56276787520c072f46457d924850abc05"
+    },
+    "dev": {
+      "file": "data/mixed_subtraction_sft\\dev.jsonl",
+      "count": 1200,
+      "sha256": "a959156d644f3bb6aedad2e0e18a878643eae2059c2b78ae32d120b0059ed602"
+    },
+    "e1a_iid_2digit": {
+      "file": "data/mixed_subtraction_sft\\eval_e1a_iid_2digit.json",
+      "count": 500,
+      "sha256": "d70eff6fdf3e7907e2fa4e98cdb6e9a034530f8cd207080db85909a1c6236796"
+    },
+    "e1b_iid_3digit": {
+      "file": "data/mixed_subtraction_sft\\eval_e1b_iid_3digit.json",
+      "count": 500,
+      "sha256": "c93bd14c68dd03004ba980186f45c2ff250319fe4340b261ca634476b1c14e56"
+    },
+    "e2_ood_2digit": {
+      "file": "data/mixed_subtraction_sft\\eval_e2_ood_2digit.json",
+      "count": 500,
+      "sha256": "4416d5f74b4a71a4f4647d863a9517f09f1c8251ba83fbc750d81996add57f1d"
+    },
+    "e3_ood_3digit": {
+      "file": "data/mixed_subtraction_sft\\eval_e3_ood_3digit.json",
+      "count": 500,
+      "sha256": "eb338a4b64671c77ed86f5794462f5319a9b9ebdc73fb5a108e514127f5df874"
+    },
+    "e4_acid_4digit": {
+      "file": "data/mixed_subtraction_sft\\eval_e4_acid_4digit.json",
+      "count": 500,
+      "sha256": "79c39b780dee0a088e438a009ec7d65bb43ad1b9026d8f495f184293488212f1"
+    }
+  },
+  "overlap_audit": {
+    "status": "PASSED_ZERO_OVERLAP"
+  }
+}

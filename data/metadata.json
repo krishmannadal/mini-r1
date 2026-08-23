@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-08-16 17:56:44",
+  "random_seed": 42,
+  "pretrain_source": "HuggingFaceTB/smollm-corpus (cosmopedia-v2)",
+  "pretrain_samples_count": 1000,
+  "gsm8k_source": "openai/gsm8k (main)",
+  "gsm8k_train_count": 2000,
+  "gsm8k_test_count": 500,
+  "tokenizer_corpus_path": "data\\clean\\tokenizer_corpus.txt",
+  "tokenizer_corpus_bytes": 2574794,
+  "train_test_overlap_count": 0
+}
